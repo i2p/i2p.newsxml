@@ -1,27 +1,14 @@
 <!--
-<i2p.news date="$Date: 2010-06-07 00:00:00 $">
-<i2p.release version="0.7.14" date="2010/06/07" minVersion="0.6" />
+<i2p.news date="$Date: 2010-07-12 00:00:00 $">
+<i2p.release version="0.8" date="2010/07/12" minVersion="0.6" />
 -->
-<h4><ul><li>2010-07-01: <b>I2P  featured on cover CD/DVD of ComputerBild Italia</a></b></li></ul></h4>
+<div lang="en">
+<h4><ul><li>2010-07-12: <b>0.8 <a href="http://www.i2p2.i2p/release-0.8.html">Released</a></b></li></ul></h4>
 <p>
-I2P is featured on the cover CD/DVD of the current issue of ComputerBild Italia which is published today. If you're in Italy and speaka di lingo, go grab yourself a copy!
-</p>
-<h4><ul><li>2010-06-19: <b>I2P ad at <a href="http://meta.stackoverflow.com/questions/53346/open-source-advertising-sidebar-2h-2010/53978#53978">Stack Overflow</a></b></li></ul></h4>
-<p>
-I2P has applied at Stack Overflow for support with coders and translators. Please visit our I2P ad at <a href="http://meta.stackoverflow.com/questions/53346/open-source-advertising-sidebar-2h-2010/53978#53978">Stack Overflow</a> and vote it up!
-</p>
-<h4><ul><li>2010-06-07: <b>0.7.14 <a href="http://www.i2p2.i2p/release-0.7.14.html">Released</a></b></li></ul></h4>
-<p>
-The 0.7.14 release contains the usual collection of bug fixes and performance tweaks.
-There are also some i2psnark improvements and more fixes for plugins.
-Upgrading is recommended.
-</p><p>
-Important note: Due to a bug in 0.7.13 and earlier releases, clicking 'Download 0.7.14 Update'
-in your router console summary bar, when you have the summary bar refresh enabled,
-may result in multiple downloads of the update. Please disable the summary bar refresh
-before clicking the download button.
-If your update policy is set to 'Download and Verify Only' (the default) then
-you should not have a problem, the router will download the file once.
+The 0.8 release contains the usual collection of bug fixes,
+as well as completion of the German translation by eche|on and a complete Dutch translation by monkeybrains and duck.
+This release is fully compatible with the 0.7.x releases.
+As usual, upgrading is recommended.
 </p><p>
 Please help grow the network!
 Say hello to the volunteers on the new <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
@@ -33,3 +20,4 @@ and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
 We are still looking for volunteers to work on new and existing translations.
 Please volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a>.
 </p>
+</div>
