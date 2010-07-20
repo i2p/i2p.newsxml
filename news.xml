@@ -1,5 +1,5 @@
 <!--
-<i2p.news date="$Date: 2010-07-18 00:00:00 $">
+<i2p.news date="$Date: 2010-07-20 00:00:00 $">
 <i2p.release version="0.8" date="2010/07/12" minVersion="0.6" />
 -->
 <div lang="en">
@@ -7,8 +7,7 @@
 <p>
 A delegation of I2P developers and users has visited the <a
 href="http://thenexthope.org/">HOPE hackers conference</a> in New York City
-this weekend. Besides giving away cool stickers to Tor users, I2P project lead
-zzz has participated in a talk given by <a
+this weekend. I2P lead developer zzz has participated in a talk given by <a
 href="http://en.wikipedia.org/wiki/Adrian_Hong">Adrian Hong</a> about Hackers
 for Human Rights.
 </p><p>
@@ -24,9 +23,10 @@ the aim to operate successfully in hostile environments, even when an
 organization with substantial financial or political resources attacks it.
 </p><p>
 Since the goals of the Pegasus Project and I2P are so compatible, both projects
-have agreed to cooperate in their creation of technology to help combat
-oppressive forces, protect dissidents, journalists, and activists, and save
-lives.
+have agreed to collaborate on making tools available for dissidents, journalists and activists to evade censorship and oppression.
+</p>
+<p>
+<b>Update:</b> <a href="http://tracker2.postman.i2p/index.php?view=TorrentDetail&id=8453">Download the talk</a> with your I2P Bittorrent client.
 </p>
 <h4><ul><li>2010-07-12: <b>0.8 <a href="http://www.i2p2.i2p/release-0.8.html">Released</a></b></li></ul></h4>
 <p>
