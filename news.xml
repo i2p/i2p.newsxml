@@ -3,6 +3,15 @@
 <i2p.release version="0.8" date="2010/07/12" minVersion="0.6" />
 -->
 <div lang="en">
+<h4><ul><li>2010-07-21: <b>Effort for better webpage</b></li></ul></h4>
+<p>
+One result of HOPE conference is the strong need of a better webpage for the I2P project. Current setup
+is incomplete, out of date, poorly mashup of information. Over all: a bad state for all users wanting
+to dig deeper into the code.<br>
+As of this state, the I2P has taken a development moratorium: until the webpage is in a better shape no
+new release of I2P will be released.<br>
+WE need your help! Get in contact with us and help us setting up a better informational webpage!
+</p>
 <h4><ul><li>2010-07-18: <b>I2P at HOPE, Cooperation with Pegasus Project</b></li></ul></h4>
 <p>
 A delegation of I2P developers and users has visited the <a
