@@ -3,62 +3,16 @@
 <i2p.release version="0.8" date="2010/07/12" minVersion="0.6" />
 -->
 <div lang="en">
+<h4><ul><li>2010-11-06: <b>forum.i2p down</b></li></ul></h4>
+<p>
+The link to <a href="http://forum.i2p">forum.i2p</a> is currently down. As a result the forum is only reachable via
+<a href="http://forum.i2p2.de">http://www.i2p2.de</a> accross the usual internet connection.<br>
+The forum administrator is noticed and will bring up the in-I2P connection as soon as possible. We are sorry for the 
+inconvenience.
+</p>
 <h4><ul><li>2010-09-08: <b>Meeting 208 held in IRC</b></li></ul></h4>
 <p>
-After the call for a IRC dev meeting, Mathiasdm organized and managed the dev meeting held on september, 8th, 2010. A complete log of this meeting is to be find on our webpage: <a href="http://www.i2p2.i2p/meetings.html">I2P dev meeting 208</a>. </p>
-
-<h4><ul><li>2010-07-21: <b>I2P Coding Moratorium &amp; Appeal for Website Overhaul Help</b></li></ul></h4>
-<p>
-From our attendance at the HOPE conference, one thing became ever more clear: the need for a lucid, concise <a href="http://www.i2p2.i2p">website</a> with up-to-date documentation for developers and users alike. The current site needs a goodly amount of work to make it more coherent, so we've decided to enforce a temporary moratorium on I2P development while we work on bringing the website up to speed. If you'd like to help in this endeavour, please get in touch via <a href="irc://127.0.0.1:6668/i2p">IRC</a> and help us improve the website! Thanks in advance.
-</p>
-<h4><ul><li>2010-07-18: <b>I2P at HOPE, Cooperation with Pegasus Project</b></li></ul></h4>
-<p>
-A delegation of I2P developers and users has visited the <a
-href="http://thenexthope.org/">HOPE hackers conference</a> in New York City
-this weekend. I2P lead developer zzz has participated in a talk given by <a
-href="https://secure.wikimedia.org/wikipedia/en/wiki/Adrian_Hong">Adrian Hong</a> about Hackers
-for Human Rights.
-
-</p><p>
-Adrian is director of the <a
-href="http://www.tedafrica.org/fellows/view/id/22">Pegasus Project</a>, an
-initiative that uses cutting-edge technology to penetrate closed societies and
-empower people in those nations to communicate amongst  themselves, and with
-the outside world.
-</p><p>
-I2P supports the efforts of those trying to build a more free society by
-offering them an uncensorable, anonymous, and secure communication system. With
-the aim to operate successfully in hostile environments, even when an
-organization with substantial financial or political resources attacks it.
-</p><p>
-Since the goals of the Pegasus Project and I2P are so compatible, both projects
-have agreed to collaborate on making tools available for dissidents, journalists and activists to evade censorship and oppression.
-</p>
-<p>
-<b>Update:</b> <a href="http://tracker2.postman.i2p/index.php?view=TorrentDetail&amp;id=8453">Download the talk</a> with your I2P Bittorrent client.
+After the call for a IRC dev meeting, Mathiasdm organized and managed the dev meeting held on september, 8th, 2010. A complete log of this meeting is to be find on our webpage: <a href="http://www.i2p2.i2p/meetings.html">I2P dev meeting 208</a>. 
 </p>
 
-<h4><ul><li>2010-07-15: <b>Stack Overflow Success!</b></li></ul></h4>
-<p>
-Subsequent to our appeal to users to vote up our ad on <a href="http://meta.stackoverflow.com/questions/53346/open-source-advertising-sidebar-2h-2010">Stack Overflow</a>, we're happy to report that we've now reached the minimum threshold for inclusion in their open source advertizing campaign. <a href="http://zzz.i2p/files/StackOverflow_frontpage_I2P_ad.png">This</a> is how it looks. You can monitor how well the ad is doing <a href="http://rads.stackoverflow.com/ossads/all">here</a>. A big thanks to all who voted us up!</p>
-
-<h4><ul><li>2010-07-12: <b>0.8 <a href="http://www.i2p2.i2p/release-0.8.html">Released</a></b></li></ul></h4>
-
-<p>
-The 0.8 release contains the usual collection of bug fixes,
-as well as completion of the German translation by eche|on and a complete Dutch translation by monkeybrains and duck.
-This release is fully compatible with the 0.7.x releases.
-As usual, upgrading is recommended.
-</p><p>
-Please help grow the network!
-Say hello to the volunteers on the new <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
-Give the
-developers feedback on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a> or <a href="http://forum.i2p">forum.i2p</a>
-and <a href="http://www.i2p2.i2p/getinvolved.html">get involved</a>,
-spread the word,
-and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
-We are still looking for volunteers to work on new and existing translations.
-Please volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a>.
-
-</p>
 </div>
