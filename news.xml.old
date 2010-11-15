@@ -3,17 +3,17 @@
 <i2p.release version="0.8" date="2010/07/12" minVersion="0.6" />
 -->
 <div lang="en">
-<h4><ul><li>2010-11-06: <b>forum.i2p</b></li></ul></h4>
+<h4><ul><li>2010-11-10: <b>forum.i2p up again</b></li></ul></h4>
+<p>
+The I2P forum <a href="http://forum.i2p">forum.i2p</a> is up again.
+</p>
+<h4><ul><li>2010-11-06: <b>forum.i2p is down</b></li></ul></h4>
 <p>
 The link to <a href="http://forum.i2p">forum.i2p</a> is currently down. As a result the forum is only reachable via
 <a href="http://forum.i2p2.de">http://www.i2p2.de</a> accross the usual internet connection.<br>
 The forum administrator is noticed and will bring up the in-I2P connection as soon as possible. We are sorry for the inconvenience.<br>
 <br>
 While postmans mailservice was down you surely had a try on <a href="http://i2pbote.i2p/">I2P-Bote</a>, a alternative mail implementation inside of I2P.
-</p>
-<h4><ul><li>2010-09-08: <b>Meeting 208 held in IRC</b></li></ul></h4>
-<p>
-After the call for a IRC dev meeting, Mathiasdm organized and managed the dev meeting held on september, 8th, 2010. A complete log of this meeting is to be find on our webpage: <a href="http://www.i2p2.i2p/meetings.html">I2P dev meeting 208</a>. 
 </p>
 
 </div>
