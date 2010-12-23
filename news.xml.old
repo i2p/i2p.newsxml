@@ -3,7 +3,14 @@
 <i2p.release version="0.8.1" date="2010/11/15" minVersion="0.6" />
 -->
 <div lang="en">
-<h4><ul><li>2010-11-15: <b>0.8.1 <a href="http://www.i2p2.i2p/release-0.8.1.html">Released</a></b></li></ul></h4>
+<ul><li>2010-12-14: <b>I2P accept <a href="http://www.bitcoin.org">bitcoins</a></b></li></ul>
+<p>
+From today on I2P does accept donations in form of <a href="http://www.bitcoin.org">bitcoins</a>. Just transfer your
+amount of coins to the account with the ID <b>1HkJCceXf7of1sTNRVJbXiZHfDTLL71Siy</b> and it will be used
+for the benefit of I2P. If you want to be noted on the I2P <a href="http://www.i2p2.i2p/halloffame.html">hall of fame</a> 
+drop a note to <a href="mailto:echelon@i2pmail.org">echelon</a> with needed information.
+</p>
+<ul><li>2010-11-15: <b>0.8.1 <a href="http://www.i2p2.i2p/release-0.8.1.html">Released</a></b></li></ul>
 <p>
 The 0.8.1 release contains the usual collection of bug fixes,
 and a newly colorful i2psnark theme by dr|zed.
@@ -11,9 +18,10 @@ For increased security, files created by the router will now be readable only by
 As usual, upgrading is recommended.
 </p><p>
 We have updated all our <a href="http://www.i2p2.i2p/how">technical specifications</a>
-and <a href="http://docs.i2p2.de/javadoc/">Javadocs</a>, check them out.
+and <a href="http://docs.i2p2.de/javadoc/">Javadocs</a>, check them out.</p>
 
-Please help grow the network!
+<ul><li>Please help grow the network!</li></ul>
+<p>
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
 Give the
 developers feedback on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a> or <a href="http://forum.i2p">forum.i2p</a>
