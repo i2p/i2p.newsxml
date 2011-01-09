@@ -46,13 +46,12 @@ as well as completion of the German translation by eche|on and a complete Dutch 
 This release is fully compatible with the 0.7.x releases.
 As usual, upgrading is recommended.
 </p><p>
-Please help grow the network!
-Say hello to the volunteers on the new <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
-Give the
-developers feedback on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a> or <a href="http://forum.i2p">forum.i2p</a>
-and <a href="http://www.i2p2.i2p/getinvolved.html">get involved</a>,
+Please help grow the network.
+Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
+<a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
 spread the word,
 and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
+If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report/1">trac</a>.
 We are still looking for volunteers to work on new and existing translations.
 Please volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p</a>.
 
