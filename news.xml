@@ -5,10 +5,12 @@
 <div lang="en">
 <h3>2011-04-18: <b>0.8.5 <a href="http://www.i2p2.i2p/release-0.8.5.html">Released</a></b></h3>
 <p>
-The 0.8.5 release contains a few bug fixes and performance improvements, and lots of translation updates, eg complete french and spanish router console. And some water was added.
-Also some security holes were closed and new limits are established to prevent a DOS attack of the I2P network at whole.
-Tunnel building was modified not to build tunnels in the A-B-A or A-A-B orders to prevent some basic attacks.
-You see, as usual, upgrading is recommended. 
+New I2P version!
+¡Bienvenidos hispanohablantes et bienvenue les français! I2P router console is now fully translated for our French and Spanish speaking friends.
+The 0.8.5 release contains a few bug fixes and performance improvements, and lots of other translation updates. And some water was added.
+Also, some security holes were closed and new limits established in order to prevent a DOS attack on the I2P network, as shown by a research project by TU Munich that dealt with I2P.
+Tunnel building was modified not to create tunnels in the A-B-A or A-A-B peer order to prevent some basic attacks.
+So you see, as usual, upgrading is worthwhile and recommended. 
 </p><p>
 Please help grow the network.
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
@@ -17,6 +19,6 @@ spread the word,
 and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
 If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report/1">trac</a>.
 We are still looking for volunteers to work on new and existing translations.
-Please volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>.
+Please volunteer on <a href="irc://127.0.0.1:6668/i2p-dev">IRC #i2p-dev</a>.
 </p>
 </div>
