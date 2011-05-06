@@ -11,7 +11,7 @@ A new implementation of tahoe-lafs arrived for I2P. <a href="http://i2py-tahoe.i
 Latest <a href="http://stats.i2p/pix/total/routers2_1w.png">graph on stats.i2p</a> shows an estimated total active router count of 3000 hits at each day of last week. I2P is still growing.
 </p>
 <p>
-A new development version is available on <a href="http://echelon.i2p/0.8.5/0.8.5-2">echelons page</a>. It includes more tweaks in defense to a powerful attacker.
+A new development version is available on <a href="http://echelon.i2p/0.8.5/0.8.5-2">echelons page</a>. It includes more tweaks in defense against a powerful attacker.
 </p>
 <h3>2011-04-29: <b>0.8.5-1 - lazy guy <a href="http://echelon.i2p/0.8.5/0.8.5-1">available</a></b></h3>
 <p>
