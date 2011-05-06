@@ -5,13 +5,13 @@
 <div lang="en">
 <h3>2011-05-07: <b>i2py-tahoe and over 3000 active nodes each day</b></h3>
 <p>
-A new implementation of tahoe-lafs arrived for I2P. <a href="http://i2py-tahoe.i2p">I2Py-tahoe</a> uses BOB, has active development and has setup a second grid. Currently this version is not compatible with ducks implementation of tahoe-lafs.
+A new implementation of tahoe-lafs arrived for I2P. <a href="http://i2py-tahoe.i2p">I2Py-tahoe</a> uses BOB, has active development and has set up a second grid. Currently this version is not compatible with duck's implementation of tahoe-lafs.
 </p>
 <p>
-Latest <a href="http://stats.i2p/pix/total/routers2_1w.png">graph on stats.i2p</a> does show a estimated total active router count of 3000 hit at each day of last week. I2P is still growing.
+Latest <a href="http://stats.i2p/pix/total/routers2_1w.png">graph on stats.i2p</a> shows an estimated total active router count of 3000 hits at each day of last week. I2P is still growing.
 </p>
 <p>
-New development version is available on <a href="http://echelon.i2p/0.8.5/0.8.5-2">echelons page</a>. It includes more tweaks against a powerful attacker.
+A new development version is available on <a href="http://echelon.i2p/0.8.5/0.8.5-2">echelons page</a>. It includes more tweaks in defense to a powerful attacker.
 </p>
 <h3>2011-04-29: <b>0.8.5-1 - lazy guy <a href="http://echelon.i2p/0.8.5/0.8.5-1">available</a></b></h3>
 <p>
