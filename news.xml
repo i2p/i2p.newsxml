@@ -3,6 +3,20 @@
 <i2p.release version="0.8.6" date="2011/05/16" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2011-06-06: <b>ViaEuropa Summer of Code</b></h>
+<p>
+Hottuna have been commissioned to contribute code to I2P during the summer of 2011, implementing 
+a control protocol and a client for this protocol (similar to 
+<a href="https://www.torproject.org/projects/vidalia.html">Vidalia</a> for Tor).
+This work was the idea of Jan-Erik Fiske of <a href="http://viaeuropa.se">ViaEuropa</a> 
+and Peter Sunde of <a href="https://flattr.com">flattr</a> and 
+<a href="http://thepiratebay.org/">The Pirate Bay</a> fame and its funding will be generously 
+provided by <a href="https://www.relakks.com/?cid=gb">Relakks</a> and 
+<a href="https://www.ipredator.se/?lang=en">Ipredator</a>.
+</p><p>
+Current information can be found on <a href="http://zzz.i2p/topics/888">zzz's forum</a> 
+and <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>.
+</p>
 <h3>2011-05-16: <b>0.8.6 <a href="http://www.i2p2.i2p/release-0.8.6.html">Released</a></b></h3>
 <p>
 The 0.8.6 release contains more peer selection defenses to resist powerful attackers, and

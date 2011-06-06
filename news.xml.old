@@ -1,30 +1,13 @@
 <!--
-<i2p.news date="$Date: 2011-04-18 00:00:00 $">
-<i2p.release version="0.8.5" date="2011/04/18" minVersion="0.6" />
+<i2p.news date="$Date: 2011-05-16 00:00:00 $">
+<i2p.release version="0.8.6" date="2011/05/16" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2011-05-07: <b>i2py-tahoe released and over 3000 active nodes each day</b></h3>
+<h3>2011-05-16: <b>0.8.6 <a href="http://www.i2p2.i2p/release-0.8.6.html">Released</a></b></h3>
 <p>
-A new implementation of tahoe-lafs arrived for I2P. <a href="http://i2py-tahoe.i2p">I2Py-tahoe</a> uses BOB, has active development and has set up a second grid, which was initially incompatible with duck's implementation of tahoe-lafs. By now, both coöperate well.
-</p>
-<p>
-The latest <a href="http://stats.i2p/pix/total/routers2_1w.png">graph on stats.i2p</a> shows an estimated total active router count of 3000 hits each day of last week. I2P is still growing.
-</p>
-<p>
-A new development version is available on <a href="http://echelon.i2p/0.8.5/0.8.5-2">echelon's site</a>. It includes more tweaks that help defending against powerful attackers.
-</p>
-<h3>2011-04-29: <b>I2P 0.8.5-1 - "Lazy Guy" <a href="http://echelon.i2p/0.8.5/0.8.5-1">available</a></b></h3>
-<p>
-A new development version is available. It has minor changes including some enhancements to the UPnP code. 
-</p>
-<h3>2011-04-18: <b>I2P 0.8.5 - "Water" <a href="http://www.i2p2.i2p/release-0.8.5.html">Released</a></b></h3>
-<p>
-New I2P version!
-¡Bienvenidos hispanohablantes et bienvenue les français! I2P router console is now fully translated for our French and Spanish speaking friends.
-The 0.8.5 release contains a few bug fixes and performance improvements, and lots of other translation updates.
-Also, some security holes were closed and new limits established in order to prevent a DOS attack on the I2P network, as shown by a research project by TU Munich that dealt with I2P.
-Tunnel building was modified not to create tunnels in the A-B-A or A-A-B peer order to prevent some basic attacks.
-So you see, as usual, upgrading is worthwhile and recommended. 
+The 0.8.6 release contains more peer selection defenses to resist powerful attackers, and
+tweaks to adjust to the recent rapid growth in the network.
+Upgrading is recommended.
 </p><p>
 Please help grow the network.
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
@@ -33,6 +16,6 @@ spread the word,
 and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
 If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report/1">trac</a>.
 We are still looking for volunteers to work on new and existing translations.
-Please volunteer on <a href="irc://127.0.0.1:6668/i2p-dev">IRC #i2p-dev</a>.
+Please volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>.
 </p>
 </div>
