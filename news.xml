@@ -5,7 +5,7 @@
 <div lang="en">
 <h3>2011-06-06: <b>ViaEuropa Summer of Code</b></h>
 <p>
-Hottuna have been commissioned to contribute code to I2P during the summer of 2011, implementing 
+Hottuna has been commissioned to contribute code to I2P during the summer of 2011, implementing 
 a control protocol and a client for this protocol (similar to 
 <a href="https://www.torproject.org/projects/vidalia.html">Vidalia</a> for Tor).
 This work was the idea of Jan-Erik Fiske of <a href="http://viaeuropa.se">ViaEuropa</a> 
