@@ -3,6 +3,19 @@
 <i2p.release version="0.8.8" date="2011/08/23" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2011-10-10: Net growth and soon-to-come update</h3>
+<p>
+Сердечно приветствую наших новых русскоязычных пользователей! (A warm welcome to our new Russian users!)
+
+Due to rusleaks we've recently been experiencing a massive influx of many new routers.
+We have now hit the mark of 10,000 and later even the one of 12,000 active routers.
+This is currently making the ride a bit bumpy, but all is fine.
+This means a growth of the network, which comes accompanied by some growing pains, but it's nothing to worry about.
+Generally, growth is good for the network and good for your anonymity.
+So if you are having problems accessing some services, be patient.
+Not all eepsites are currently reachable on first attempt, but we hope that will level out soon.
+So again, be patient, don't leave straight away, and stay tuned for the soon-to-come I2P router update!
+</p>
 <h3>2011-08-23: <b>0.8.8 <a href="http://www.i2p2.i2p/release-0.8.8.html">Released</a></b></h3>
 
 <p>I2P release 0.8.8 enables the new hosts.txt database to speed hostname lookups
