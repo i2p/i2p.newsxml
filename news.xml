@@ -5,17 +5,24 @@
 <div lang="en">
 <h3>2011-10-17: Recent net growth and pledge to keep router running</h3>
 <p>
-Due to rusleaks we have recently been experiencing a massive influx of many new routers to I2P and have reached a mark of 12,000 active routers.
-This makes the ride a bit bumpy currently, but nothing to worry about. Generally, growth is good for the network and good for your anonymity.
-Not all eepsites are currently reachable on first attempt, but we hope that will level out soon.
-So, if you are having problems accessing some services, be patient and don't leave straight away!
-Leave your I2P router running even when you're not actually using it - ideally run it 24/7!
-This helps the network and is good for your own anonymity.
-Make sure you're not firewalled and have adjusted your bandwidth settings accordingly.
-Performance will then improve with these simple steps of yours.
+Due to rusleaks's recent moving of their operations to I2P, we have been
+experiencing a massive influx of many new routers, reaching a record of 12,000
+active routers. This has caused the ride to be bumpy but it is nothing to be
+concerned about.</p>
+<p>
+Generally speaking, growth is good for the network and good for your anonymity.
+Not all eepsites are currently reachable on the first attempt but we hope that
+will level out soon. So, if you are having problems accessing some services,
+please be patient and don't leave straight away! Leave your I2P router
+running, even when you're not actively using it &mdash; ideally your router
+should be left running 24/7! This helps the network and it is beneficial to
+your own anonymity. Take the time to ensure that you're not firewalled and that
+your bandwidth settings have beeen configured for your system. By following
+these simple steps performance will be improved for everyone.
 </p><p>
-In the meantime you maybe want to try out <a href="http://echelon.i2p/i2phex">I2Phex</a>,
-<a href="http://echelon.i2p/imule">iMule</a> or <a href="http://127.0.0.1:7657/i2psnark/">I2Psnark</a> to make use of the running I2P router?
+In the meantime, perhaps you'd care to try out <a href="http://echelon.i2p/i2phex">I2Phex</a>,
+<a href="http://echelon.i2p/imule">iMule</a> or <a href="http://127.0.0.1:7657/i2psnark/">I2Psnark</a>
+to make use of the running I2P router?
 </p>
 
 <h3>2011-10-11: <b>0.8.9 <a href="http://www.i2p2.i2p/release-0.8.9.html">Released</a></b></h3>
