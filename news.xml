@@ -3,8 +3,14 @@
 <i2p.release version="0.8.10" date="2011/10/20" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2011-11-01: <b>0.8.10-5 <a href="http://echelon.i2p/0.8.10/0.8.10-5">dev version</a> for testing</b></h3>
+<p>
+As the last version 0.8.10 has shown some effect on network health and better tunnel built rates, it did not show as much
+effect as we hoped. Our effort has gone on and some more tweaks, bugfixes and changes were integrated.
+We are confident this latest development beta built shows more effect and will help I2P router to integrate better
+into the I2P net in shorter time. We encourage our I2P users to test this development built!
+</p>
 <h3>2011-10-20: <b>0.8.10 <a href="http://www.i2p2.i2p/release-0.8.10.html">Released</a></b></h3>
-
 <p>
 Release 0.8.10 includes two changes intended to reduce the number of router-to-router connections,
 and therefore improve tunnel build success rates and general reliability.
