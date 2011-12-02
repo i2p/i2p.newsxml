@@ -3,6 +3,12 @@
 <i2p.release version="0.8.11" date="2011/11/08" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2011-12-02: <b>New IRC2P server irc.echelon.i2p available</b></h3>
+<p>
+The new server irc.echelon.i2p (or ez2czsvej5p3z5bquue5q3thujcodfze7ptybctqhnqc7hms5uzq.b32.i2p) has been linked
+to the IRC2P network and will provide its services to the I2P users. This will provide more capacity and more stability
+to the IRC2P network for future user growth.
+</p>
 <h3>2011-11-30: <b>New link in <a href="http://www.i2p2.i2p/papers.html">press and paper references</a> of I2P</b></h3>
 <p>
 A new link was added to list of <a href="http://www.i2p2.i2p/papers.html">I2P references in press and academic reviews</a>. 
