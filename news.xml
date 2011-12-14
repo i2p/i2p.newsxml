@@ -3,6 +3,16 @@
 <i2p.release version="0.8.11" date="2011/11/08" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2011-12-14: <b>MTN version <a href="http://echelon.i2p/0.8.11/0.8.11-21">0.8.11-21</a> available</b></h3>
+<p>
+Since the release of <a href="http://www.i2p2.i2p/release-0.8.11.html">0.8.11</a> some quite big transport bugs were
+resolved and CPU usage was reduced in a lot of parts of code. These changes are reflected by different MTN versions
+of the I2P router software. Those test versions are build from MTN source repository and are e.g. available from
+http://echelon.i2p as update files. If you want to test all these bugfixes and changes ahead of a I2P 0.8.12 release, 
+follow the link in headline, grab the <a href="http://echelon.i2p/0.8.11/0.8.11-21/i2pupdate.zip">i2pupdate.zip</a>
+file, copy it into your I2P folder without expanding it and click restart in your <a href="http://127.0.0.1:7657">
+I2P router console</a>. The update will be applied automatic with the restart of I2P.
+</p>
 <h3>2011-12-02: <b>New IRC2P server irc.echelon.i2p available</b></h3>
 <p>
 The new server irc.echelon.i2p (or ez2czsvej5p3z5bquue5q3thujcodfze7ptybctqhnqc7hms5uzq.b32.i2p) has been linked
