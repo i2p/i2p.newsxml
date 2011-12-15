@@ -11,7 +11,8 @@ of the I2P router software. Those test versions are build from MTN source reposi
 http://echelon.i2p as update files. If you want to test all these bugfixes and changes ahead of a I2P 0.8.12 release, 
 follow the link in headline, grab the <a href="http://echelon.i2p/0.8.11/0.8.11-21/i2pupdate.zip">i2pupdate.zip</a>
 file, copy it into your I2P folder without expanding it and click restart in your <a href="http://127.0.0.1:7657">
-I2P router console</a>. The update will be applied automatic with the restart of I2P.
+I2P router console</a>. The update will be applied automatic with the restart of I2P.<br>
+For users who did installed the deb package, use this <a href="http://update.killyourtv.i2p/mtn/">guide</a> instead.
 </p>
 <h3>2011-12-02: <b>New IRC2P server irc.echelon.i2p available</b></h3>
 <p>
