@@ -1,60 +1,15 @@
 <!--
-<i2p.news date="$Date: 2011-11-08 00:00:00 $">
-<i2p.release version="0.8.11" date="2011/11/08" minVersion="0.6" />
+<i2p.news date="$Date: 2012-01-06 00:00:00 $">
+<i2p.release version="0.8.12" date="2012/01/06" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2011-12-24: <b>Merry Christmas everyone!</b></h3>
-<p> 
-The I2P team wishes everyone a Merry Christmas and a Happy New Year! May all your dreams come true.
-</p>
-<h3>2011-12-14: <b>MTN version <a href="http://echelon.i2p/0.8.11/0.8.11-21">0.8.11-21</a> available</b></h3>
-<p>
-Since the release of <a href="http://www.i2p2.i2p/release-0.8.11.html">0.8.11</a>, some very important transport bugs have
-been fixed, as well as a reduction in CPU usage. These improvements can be seen in the development versions in MTN.
-Update files for these builds are available from <a href="http://echelon.i2p">http://echelon.i2p</a>. To ensure that 0.8.12
-is a success, please help test by following the link in headline, grabbing the <a href="http://echelon.i2p/0.8.11/0.8.11-21/i2pupdate.zip">i2pupdate.zip</a>
-file, copying it into your I2P folder (without expanding it), and clicking restart in your <a href="http://127.0.0.1:7657">
-I2P router console</a>. The update will be applied automatically once I2P restarts.</p>
-<p>Debian packages of the MTN builds can be found <a href="http://update.killyourtv.i2p/mtn/">here</a>.</p>
-<h3>2011-12-02: <b>New IRC2P server irc.echelon.i2p available</b></h3>
-<p>
-The new server irc.echelon.i2p (or ez2czsvej5p3z5bquue5q3thujcodfze7ptybctqhnqc7hms5uzq.b32.i2p) has been linked
-to the IRC2P network and will provide its services to the I2P users. This will provide more capacity and more stability
-to the IRC2P network for future user growth.
-</p>
-<h3>2011-11-30: <b>New link in <a href="http://www.i2p2.i2p/papers.html">press and paper references</a> of I2P</b></h3>
-<p>
-A new link was added to list of <a href="http://www.i2p2.i2p/papers.html">I2P references in press and academic reviews</a>. 
-If you think we missed a reference, get into contact with us on IRC or with a bug ticket on our <a href="http://trac.i2p2.i2p/">
-bug tracking system</a>.
-</p>
-<h3>2011-11-16: <b><a href="http://forum.i2p2.de/viewtopic.php?p=37300">Report on network status</a></b></h3>
-<p>
-Echelon has written a short report on current network status on the <a href="http://forum.i2p/viewtopic.php?p=37300">I2P forum</a>. 
-It includes some background information and is open for discussion.
-</p>
-<h3>2011-11-08: <b>0.8.11 <a href="http://www.i2p2.i2p/release-0.8.11.html">Released</a></b></h3>
+<h3>2012-01-06: <b>0.8.12 <a href="http://www.i2p2.i2p/release-0.8.12.html">Released</a></b></h3>
 
 <p>
-The unprecedented network growth starting October 5th
-has dramatically increased network congestion, especially on evenings (UTC)
-and weekends. The last two releases contained a few changes that we hoped
-would relieve the pressure, but unfortunately these measures have been only
-modest successes. The primary issue is to limit the number of direct router
-to-router connections in the network. This isn't a new problem; we've been
-working on it for several years, usually with good results. However, the recent
-growth pushed us over the edge once again.
-</p><p>
-Release 0.8.11 includes several more changes to reduce the number of router-to-router
-connections and increase connection and tunnel build capacity. The goal, of course,
-is to improve tunnel build success rates and general reliability. As always, there's
-a few bug fixes and translation updates.
-</p><p>
-We welcome all our new users. Please be patient as we work to improve network
-performance. Debugging congestion problems in a distributed anonymous network
-is a continuing challenge. Please help improve the network
-by restarting your router once the upgrade is downloaded.
-
+The 0.8.12 release fixes several serious message corruption bugs.
+It also contains a redesign of the router's congestion control, and continued
+optimization of CPU and memory usage. We are hopeful that these changes will
+improve network performance. Upgrading is recommended.
 </p><p>
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
 <a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
