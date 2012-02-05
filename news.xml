@@ -3,10 +3,18 @@
 <i2p.release version="0.8.12" date="2012/01/06" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2012-02-06: <b>Net Status Update </b></h3>
+<h3>2012-02-06: <b>Net Status Update</b></h3>
 <p>
-Just a short update on current net status: yesterday we have had a new record day in lifetime of I2P. <a href="http://stats.i2p/cgi-bin/total_routers_week.cgi">stats.i2p</a> did show a new high of over 14.000 active router, and echelons news.xml fetch count did show a number of over 12.000 unique news.xml fetches per day. Despite this high number the I2P behave very well and tunnel built success did not drop below 50 percent. I2P does grow and can cope very well with this growth. The fixes in <a href="http://www.i2p2.i2p/release-0.8.12.html">Version 0.8.12</a> did helped a lot.
-</p>
+Just a quick update on the current network status: On February 5th, a record
+number of active routers were seen on I2P.  The graphs on
+<a href="http://stats.i2p/cgi-bin/total_routers_week.cgi">stats.i2p</a>
+show that the network has grown to over 14,000 active routers. In
+addition, statistics generated from I2P-news fetches show that there have been
+more than 12,000 unique requests. Even with this record number of routers, the
+success rates for tunnel-building have stayed above 50%.  The fixes included in
+<a href="http://www.i2p2.i2p/release-0.8.12.html">version 0.8.12</a> have
+had a tremendous impact on network stability.</p>
+
 <h3>2012-01-24: <b>I2P Bounty Unit Tests</b></h3>
 <p>
 The I2P project got a nice donation of 1500 &euro; to setup a bounty of unit tests. Also a nice sum of 100 BTC was donated to the I2P bitcoin client bounty.<br>
