@@ -10,7 +10,7 @@ number of active routers were seen on I2P.  The graphs on
 <a href="http://stats.i2p/cgi-bin/total_routers_week.cgi">stats.i2p</a>
 show that the network has grown to over 14,000 active routers. In
 addition, statistics generated from I2P-news fetches show that there have been
-more than 12,000 unique requests. Even with this record number of routers, the
+more than 12,600 unique requests. Even with this record number of routers, the
 success rates for tunnel-building have stayed above 50%.  The fixes included in
 <a href="http://www.i2p2.i2p/release-0.8.12.html">version 0.8.12</a> have
 had a tremendous impact on network stability.</p>
