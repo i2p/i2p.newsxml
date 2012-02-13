@@ -6,7 +6,7 @@
 <h3>2012-02-13: <b>0.8.12-13 <a href="http://echelon.i2p/0.8.12/0.8.12-13">test version</a></b></h3>
 <p>
 As the end of dev cycle towards 0.8.13 is near, a new dev version <a href="http://echelon.i2p/0.8.12/0.8.12-13">0.8.12-13</a>
-was built by echelon. It includes a new I2PTunnel creation wizard by str4d. If you want to help the I2P dev team, please
+was built by echelon.  For the Debian and Ubuntu packages have a look at <a hrfe="http://update.killyourtv.i2p/mtn/">update.killyourtv.i2p/mtn/</a>. It includes a new I2PTunnel creation wizard by str4d. If you want to help the I2P dev team, please
 update your router to this version and report any bugs on <a href="http://trac.i2p2.i2p">trac.i2p2.i2p</a>.
 </p>
 
