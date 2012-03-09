@@ -3,9 +3,14 @@
 <i2p.release version="0.8.13" date="2012/02/27" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2012-03-08: <b>Security issues announcement</b></h3>
+<h3>2012-03-08: <b>Announcement of a potential security issue</b></h3>
 <p>
-As noted in <a href="http://zzz.i2p/topics/1112">zzz forum</a>, all installations of active eepsites with version 0.8.12 or earlier do transmit time of installation of the I2P router to a requesting client. Version <a href="http://www.i2p2.i2p/release-0.8.13.html">0.8.13</a> does resolve this for new installs. Old installations should touch or remove these files: robots.txt, index.html, favicon.ico, help/*, help/lib/*.
+As has been reported on <a href="http://zzz.i2p/topics/1112">zzz's forum</a>, it is possible to determine the date that I2P 0.8.12 or earlier
+was installed by examining an eepsite's <em>Last-Modified</em> header. Version
+<a href="http://www.i2p2.i2p/release-0.8.13.html">0.8.13</a> resolves this issue for new installations
+by setting the eepsite's files' modification date to the year 2006.
+Users that initially installed I2P 0.8.12 or earlier can resolve this by <code>touch</code>ing or removing
+<code>robots.txt</code>, <code>index.html</code>, <code>favicon.ico</code>, <code>help/*</code>, and <code>help/lib/*</code>.
 </p>
 <h3>2012-02-27: <b>0.8.13 <a href="http://www.i2p2.i2p/release-0.8.13.html">Released</a></b></h3>
 
