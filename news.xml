@@ -3,6 +3,12 @@
 <i2p.release version="0.8.13" date="2012/02/27" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2012-03-24: <b>I2P dev build <a href="http://echelon.i2p/0.8.13/0.8.13-20/i2pupdate.zip">0.8.13-20</a> for public beta test</b></h3>
+<p>	
+After the big change of router console and migration of jetty 5 to jetty 6 the latest builds has reached a quite stable state again. With this stable state users of I2P could public beta test latest dev build 0.8.13-20 and check if the upgrade does work flawless.<br>
+<b>ATTENTION</b>After update, the router will migrate your jetty.xml files to the new Jetty 6 format. The migration sets the port to 7658. If you have more than one Jetty eepsite, OR your eepsite is NOT on port 7658, OR you have made other modifications to jetty.xml (for example changing the listen address from 127.0.0.1 to 0.0.0.0), you MUST edit ALL your jetty.xml files to fix them up after updating, and restart again.<br>
+The 0.8.13-20 i2pupdate.zip update file is available from <a href="http://echelon.i2p/0.8.13/0.8.13-20/i2pupdate.zip">echelon.i2p</a> as the debian/ubuntu packages are reachable via ....
+</p>	
 <h3>2012-03-08: <b>Announcement of a potential security issue</b></h3>
 <p>
 As has been reported on <a href="http://zzz.i2p/topics/1112">zzz's forum</a>, it is possible to determine the date that I2P 0.8.12 or earlier
