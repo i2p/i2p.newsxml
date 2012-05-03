@@ -1,62 +1,43 @@
 <!--
 <i2p.news date="$Date: 2012-01-06 00:00:00 $">
-<i2p.release version="0.8.13" date="2012/02/27" minVersion="0.6" />
+<i2p.release version="0.9" date="2012/05/02" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2012-03-24: <b>I2P dev build <a href="http://echelon.i2p/0.8.13/0.8.13-20/i2pupdate.zip">0.8.13-20</a> for public beta test</b></h3>
-<p>After going through a brief period of "growing pains" (with both the router console updates and
-the transition to <a href="http://jetty.codehaus.org/jetty/">Jetty 6</a>), we feel that the dev
-builds are currently stable enough for widespread use. Please help by testing the latest dev build
-(currently 0.8.13-20) and reporting any issues that you experience with the upgrade.</p>
-<p><b>ATTENTION:</b> As part of the upgrade, the router will migrate your Jetty files to the new Jetty 6
-format, setting the port back to 7658. This means that if you have more than one Jetty eepsite,
-your eepsite is not on port 7658, or you have made other modifications to the Jetty configuration
-files, it will be necessary to make those modifications again. Any changes made to the Jetty config files
-will not take effect until the router is restarted.</p>
-<p>The 0.8.13-20 <code>i2pupdate.zip</code> update file is available from
-<a href="http://echelon.i2p/0.8.13/0.8.13-20/i2pupdate.zip">echelon.i2p</a> and
-<a href="http://update.killyourtv.i2p/mtn/200/i2pupdate.zip">update.killyourtv.i2p</a>.
-Those that use the Debian/Ubuntu package can help test the dev build by downloading the
-<a href="http://update.killyourtv.i2p/mtn/i2p-router_0.8.13-20-1_all.deb">Debian package</a>
-and following the instructions <a href="http://update.killyourtv.i2p/mtn/#instructions">here</a>.
-</p>
-<h3>2012-03-08: <b>Announcement of a potential security issue</b></h3>
-<p>
-As has been reported on <a href="http://zzz.i2p/topics/1112">zzz's forum</a>, it is possible to determine the date that I2P 0.8.12 or earlier
-was installed by examining an eepsite's <em>Last-Modified</em> header. Version
-<a href="http://www.i2p2.i2p/release-0.8.13.html">0.8.13</a> resolves this issue for new installations
-by setting the eepsite's files' modification date to the year 2006.
-Users that initially installed I2P 0.8.12 or earlier can resolve this by <code>touch</code>ing or removing
-<code>robots.txt</code>, <code>index.html</code>, <code>favicon.ico</code>, <code>help/*</code>, and <code>help/lib/*</code>.
-</p>
-<h3>2012-02-27: <b>0.8.13 <a href="http://www.i2p2.i2p/release-0.8.13.html">Released</a></b></h3>
+<h3>2012-05-02: <b>0.9 <a href="http://www.i2p2.i2p/release-0.9.html">Released</a></b></h3>
 
 <p>
-The 0.8.13 release contains several bug fixes and a couple of new features.
-We are pleased that the last release significantly improved performance,
-and the network is running well despite continued rapid growth.
+In the 0.9 release we migrate to Jetty 6 for the console and eepsite web server,
+and introduce a simplified router console home page.
+This release is network-compatible with prior releases, however see below for important
+information on compatibility with existing eepsites, plugins, and webapps.
 Upgrading is recommended.
-</p><p>
-This is likely to be the last release before 0.9, in which we will migrate to Jetty 6,
-and introduce a simplified router console home page. Monitor the news section of
-your the router console in the coming weeks for more information on the next release.
-</p><p>
-Starting with this release, the router will
-check for and install plugin updates shortly upon restarting after a router update.
-To prevent this, add the <a href="/configadvanced">advanced configuration</a>
-<tt>plugins.autoUpdate=false</tt> before restarting.
-There is also a new update-all button on <a href="/configclients#plugin">the client configuration page</a>.
-</p><p>
-Routers in certain countries will now automatically enable hidden mode for increased protection.
-However, hidden mode may have lower performance or reliability, and is still a work in progress.
-To disable hidden mode before restarting, add the <a href="/configadvanced">advanced configuration</a>
-<tt>router.isHidden=false</tt>.
-To disable hidden mode later, select <i>use all auto-detect methods</i> under <i>IP Configuration</i> on the
-<a href="/confignet">network configuration page</a>.
-For the list of countries see <a href="http://zzz.i2p/topics/969">this thread on zzz.i2p</a>.
-The only country on the list that has more than one or two I2P users is China.
-</p><p>
-After you have upgraded, check out the <a href="/i2ptunnel/wizard">new tunnel creation wizard</a>.
+</p>
+
+<p><strong>Update info</strong></p>
+
+<p>  In-network updates and new installs will include Jetty 6, Tomcat, and JSTL.
+ PPA (Ubuntu/Debian) updates will have new dependencies for these packages.</p>
+
+<p> If you have not enabled or modified your eepsite settings, the update should automatically migrate you to Jetty 6.
+If you do not use Jetty for your eepsite, the update will not affect it.
+</p>
+
+<p> If you have more than one Jetty eepsite or you have changed the local port (7658 by default) or otherwise edited jetty.xml,
+ you must manually edit the new jetty configuration files after updating, and then restart. </p>
+
+<p>For those with Jetty-based eepsites, we recommend that you verify that the upgrade
+was successful and the eepsites are operational after the router restarts.
+
+<p>   Plugin information:
+<br />     Plugins not listed below should continue to work under Jetty 6.
+<br />     The following plugins require updates for Jetty 6. The router will download and install them a few minutes
+      after upgrading: i2pbote, pebble, zzzot
+<br />     The following plugins have been renamed and for Jetty 6. Users must manually remove them and download the new versions
+      after upgrading: neodatis, seedless
+</p>
+
+<p>   Other non-standard console and eepsite webapps not packaged by the I2P development team may or may not
+      require modifications.
 </p><p>
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
 <a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
