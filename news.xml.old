@@ -3,6 +3,20 @@
 <i2p.release version="0.9" date="2012/05/02" minVersion="0.6" />
 -->
 <div lang="en">
+<h3>2012-06-13: <b>Important Oracle Java JRE/JDK updates</b></h3>
+	<p>
+		As noted in this <a href="http://www.oracle.com/technetwork/topics/security/javacpujun2012-1515912.html">Oracle Java Advisory</a>
+		new updates to Oracle Java are available. OpenJDK and IcedTea are also suceptible to this bug.  Anyone using Oracle Java, OpenJDK,
+		or IcedTea is advised to update their java software as soon as possible.
+	</p>
+<h3>2012-06-13: <b>New I2P P2P applications <a href="http://echelon.i2p/ofs/">OurFileSystem</a> and <a href="http://echelon.i2p/nachtblitz/">Nachtblitz</a></b></h3>
+	<p>
+		Two new P2P file sharing applications have recently come to the I2P network. One of them is <a href="http://ourfilesystem.sourceforge.net">OFS - OurFileSystem</a>,
+		a application allowing peers to share files and posts, based on a cryptographic system. It seems to be a bit like <a href="http://syndie.i2p2.de">Syndie</a>.<br>
+		The other one is <a href="http://echelon.i2p/nachtblitz/">Nachtblitz</a>, a file sharing application that is compatible <a href="http://echelon.i2p/imule">iMule</a>.
+		It requires .NET on windows and it has been reported to work in Linux using Wine.
+	</p>
+
 <h3>2012-05-02: <b>0.9 <a href="http://www.i2p2.i2p/release-0.9.html">Released</a></b></h3>
 
 <p>
