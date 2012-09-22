@@ -1,26 +1,16 @@
 <!--
-<i2p.news date="$Date: 2012-07-30 00:00:00 $">
-<i2p.release version="0.9.1" date="2012/07/30" minVersion="0.6" />
+<i2p.news date="$Date: 2012-09-21 00:00:00 $">
+<i2p.release version="0.9.2" date="2012/09/21" minVersion="0.6" />
 -->
 <div lang="en">
-<h3>2012-08-26: <b>I2P dev build <a href="http://echelon.i2p/0.9.1/0.9.1-18/i2pupdate200.zip">0.9.1-18</a> for public beta test</b></h3>
-<p>
-After some profile of the I2P code is underway, lots of changes to I2P was implemented into the I2P 0.9.2 dev cycle. Also DHT mode was added to I2Psnark. 
-If you want to test the latest enhancements and get the advantages of DHT in I2P, grab your update and install it! Disclaimer: this is still a development
-version and may contain bugs, though it does run fine on our routers.<br>
-The 0.9.1-18 <code>i2pupdate200.zip</code> update file is available from
-<a href="http://echelon.i2p/0.9.1/0.9.1-18/i2pupdate200.zip">echelon.i2p</a> and
-<a href="http://update.killyourtv.i2p/mtn/200/i2pupdate.zip">update.killyourtv.i2p</a>.
-Those that use the Debian/Ubuntu package can help test the dev build by downloading the
-<a href="http://update.killyourtv.i2p/mtn/i2p-router_0.9.1-18-1_all.deb">Debian package</a>
-and following the instructions <a href="http://update.killyourtv.i2p/mtn/#instructions">here</a>.
-</p>
-<h3>2012-07-30: <b>0.9.1 <a href="http://www.i2p2.i2p/release-0.9.1.html">Released</a></b></h3>
+<h3>2012-09-21: <b>0.9.2 <a href="http://www.i2p2.i2p/release-0.9.2.html">Released</a></b></h3>
 
 <p>
-0.9.1 includes a large number of bug fixes and improvements in i2psnark, streaming, and elsewhere.
-There are also home page changes, new themes, and translation updates.
-Upgrading is recommended.
+0.9.2 includes extensive low-level changes to improve the performance and efficiency of the router.
+We have updated our UPnP library, to hopefully make UPnP work for more people.
+I2PSnark now has DHT support, but it is not yet enabled by default, as we plan to do more
+testing during the upcoming 0.9.3 development cycle.
+As usual, there's also lots of bug fixes in this release, so updating is recommended. 
 </p><p>
 Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
 <a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
