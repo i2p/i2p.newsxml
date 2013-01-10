@@ -3,44 +3,28 @@
 <i2p.release version="0.9.4" date="2012/12/17" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:096ba629147b15f6f839d71b1cd954fe6063ec7c&dn=i2pupdate-0.9.4.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:f0d8271757cf46839e6d9e3fd8f8852a63ba5256&dn=i2pupdate-0.9.4.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-<h3>2012-12-29: <b>I2P on <a href="http://events.ccc.de/category/29c3/">29C3 in Hamburg, 2nd</a> and call for UCSB</b></h3>
+    <h3>2013-01-10: <b><a title="Hackfest!!!!!!!" href="http://zzz.i2p/topics/1306">Syndie Hackfest</a> / Call for Testers</b></h3>
 <p>
-We took part in a nice crypto party yesterday evening and showed I2P to a group of 40 people. Nice success.
-I2P needs a banner, a poster,a flyer, and handouts for interested users. We call out a contest for this material! The user who did the winning layout of each of this needed material gets 10 BTC and a T-shirt. Contact echelon@mail.i2p for your idea or more information! Also have a look on <a href="http://echelon.i2p/29c3/">http://echelon.i2p/29c3/</a>.
+    We're a week into the &quot;Syndie Hackfest&quot; and there's been a great
+    deal of progress! After years of drowning in the fetid swamp of neglect,
+    our beloved Syndie is getting some much needed attention, resulting in many long
+    standing bugs being fixed.
 </p>
-<p>
-If you are the researchers running the I2P hosts at the 192.35.222.1/24 subnet, please get in contact with us on IRC2p, on <a href="http://zzz.i2p">zzz.i2p</a> or with email. 
+<p>You can join the fun by pulling the code from <a href="http://www.i2p2.i2p/monotone">Monotone</a> from the
+    <code>i2p.syndie</code> branch, or by trying one of the new installers built by <a href="http://Killyourtv.i2p/syndie">kytv</a>.
+    Coding, testing, or even just making comments or suggestions would be great help.
 </p>
-<h3>2012-12-27: <b>I2P on <a href="http://events.ccc.de/category/29c3/">29C3 in Hamburg</a></b></h3>	
-<p>
-	We are at 29C3 currently. Come meet us at assembly 1b. 
+<h3>2013-01-10: <b>Unit Test Successes</b></h3>
+<p>Thanks to the hard work of zab, zzz, and str4d the Junit tests are all
+   passing for the first time in years&mdash;if ever!  Zab stuck with it until the
+   very last test had been fixed. Thanks zab! And thank you to everyone that took
+   part in reaching this milestone.
 </p>
-<h3>2012-12-17: <b>0.9.4 <a href="http://www.i2p2.i2p/release-0.9.4.html">Released</a></b></h3>
 
-<p>0.9.4 includes a fix for a network capacity bug, introduced in 0.9.2,
- that was reducing network performance and reliability. It also includes
- major changes in the in-network update system, and adds the capability
- to update via in-network torrents. </p>
+<h3>2013-01-10: <b>ATTN: UCSB Reserchers</b></h3>
 
-<p>We fixed several bugs in the i2psnark DHT implementation that was introduced
- last release. For those of you using console or http proxy passwords,
- we converted to the more-secure digest method and improved the security for console forms.</p>
-
-<p>For those of you already running development builds, your router should automatically
-update to 0.9.4-0 using the new in-network torrent facility.
-For those running 0.9.3-0, you will update normally using in-network HTTP, and
-we will have more information for you when we release 0.9.5.</p>
-
-<p>
-As usual, there's also lots of bug fixes in this release, so updating is recommended.
-</p><p>
-Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
-<a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
-spread the word,
-and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
-If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report/1">trac</a>.
-To help on translations,
-volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>
-or sign up on <a href="https://www.transifex.net/projects/p/I2P/">Transifex</a>.
+<p>If you are one of the researchers running the I2P hosts on the 192.35.222.1/24 subnet,
+  please get in contact with us on IRC2p, <a href="http://zzz.i2p">zzz.i2p</a>
+  or via email.
 </p>
 </div>
