@@ -3,28 +3,19 @@
 <i2p.release version="0.9.4" date="2012/12/17" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:096ba629147b15f6f839d71b1cd954fe6063ec7c&dn=i2pupdate-0.9.4.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:f0d8271757cf46839e6d9e3fd8f8852a63ba5256&dn=i2pupdate-0.9.4.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-    <h3>2013-01-10: <b><a title="Hackfest!!!!!!!" href="http://zzz.i2p/topics/1306">Syndie Hackfest</a> / Call for Testers</b></h3>
+<h3>2013-02-04: <b><a title="Syndie 1.103b is now available" href="http://syndie-project.i2p">Syndie 1.103b is now available</a></b></h3>
 <p>
-    We're a week into the &quot;Syndie Hackfest&quot; and there's been a great
-    deal of progress! After years of drowning in the fetid swamp of neglect,
-    our beloved Syndie is getting some much needed attention, resulting in many long
-    standing bugs being fixed.
-</p>
-<p>You can join the fun by pulling the code from <a href="http://www.i2p2.i2p/monotone">Monotone</a> from the
-    <code>i2p.syndie</code> branch, or by trying one of the new installers built by <a href="http://Killyourtv.i2p/syndie">kytv</a>.
-    Coding, testing, or even just making comments or suggestions would be great help.
-</p>
-<h3>2013-01-10: <b>Unit Test Successes</b></h3>
-<p>Thanks to the hard work of zab, zzz, and str4d the Junit tests are all
-   passing for the first time in years&mdash;if ever!  Zab stuck with it until the
-   very last test had been fixed. Thanks zab! And thank you to everyone that took
-   part in reaching this milestone.
+    Thanks to the work of zzz and the help of many testers during the month-long
+    "hackfest", we've got the first new Syndie release in nearly 6 years! Syndie 1.103b is now available
+    for download from <a href="http://syndie-project.i2p/download.html">syndie-project.i2p</a>,
+    <a href="http://syndie-project.org/download.html">syndie-project.org</a>, and the
+    <a href="https://launchpad.net/~i2p-maintainers/+archive/i2p">I2P PPA</a>.
+    Additionally, I2P-hosted torrents are <a href="http://tracker2.postman.i2p/index.php?view=TPoolDetail&amp;id=571">also available</a>
+    If you wanted to try Syndie but were intimiated to build it yourself from source (or you previously tried
+    it and you were frustrated by bugs) give this new version a try!
 </p>
 
-<h3>2013-01-10: <b>ATTN: UCSB Reserchers</b></h3>
-
-<p>If you are one of the researchers running the I2P hosts on the 192.35.222.1/24 subnet,
-  please get in contact with us on IRC2p, <a href="http://zzz.i2p">zzz.i2p</a>
-  or via email.
+<p>
+    <b>Note:</b> A full-time maintainer is still sought. Please get in touch if you can help!
 </p>
 </div>
