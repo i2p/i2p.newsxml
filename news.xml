@@ -3,6 +3,12 @@
 <i2p.release version="0.9.5" date="2013/03/08" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:98b8b69b5aacda5267f4b05236a85248819b2228&dn=i2pupdate-0.9.5.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:5cc8a837b2fa9c80429a1672d34280ad17bbd740&dn=i2pupdate-0.9.5.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
+<h3>2013-04-06: <b><a title="29C3 contest results" href="http://echelon.i2p/29c3/">29c3 contest results</a></b></h3>
+<p>
+	Now the voting frame is done and the result of the vote is now visible on the <a href="http://echelon.i2p/29c3/">29c3 website</a>. 15 Users did send in a mail and vote for the different designs on <a href="http://echelon.i2p/29c3/">http://echelon.i2p/29c3/</a>. The winners will be notificated via mail. Thank you all!<br>
+</p>
+</div>
+<div lang="en">
 <h3>2013-03-08: <b>0.9.5 <a href="http://www.i2p2.i2p/release-0.9.5.html">Released</a></b></h3>
 
 <p>0.9.5 includes several bug fixes and defenses for some issues and vulnerabilities
@@ -25,14 +31,5 @@ If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report
 To help on translations,
 volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>
 or sign up on <a href="https://www.transifex.net/projects/p/I2P/">Transifex</a>.
-</p>
-</div>
-<div lang="en">
-<h3>2013-03-07: <b><a title="29C3 contest vote open" href="http://echelon.i2p/29c3/">29c3 contest vote open</a></b></h3>
-<p> 
-    After all material for the <a href="http://echelon.i2p/29c3/">29c3 contest</a> did arrive and time is up, it is 
-    now on you, the I2P users, to vote for the best design.
-    Have a look on the designs on <a href="http://echelon.i2p/29c3/">http://echelon.i2p/29c3/</a> and vote!
-    Disclaimer: all material were sent in by non I2P-team members! The I2P team is not responsible for these designs!
 </p>
 </div>
