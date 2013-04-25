@@ -2,6 +2,17 @@
 <i2p.news date="$Date: 2013-03-08 00:00:00 $">
 <i2p.release version="0.9.5" date="2013/03/08" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:98b8b69b5aacda5267f4b05236a85248819b2228&dn=i2pupdate-0.9.5.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:5cc8a837b2fa9c80429a1672d34280ad17bbd740&dn=i2pupdate-0.9.5.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
+<div lang="en"><h3>2013-04-25: <b><a href="http://www.i2p2.i2p/halloffame.html">funding on hold</a></b></h3>
+<p>
+Due to the closing down of <a href="http://bitcoin-24.com">Bitcoin 24.com</a> a amount of 7899&euro; is currently on hold and not reachable.
+We put parts of our I2P general fund BTC into different exchange platforms for not being dependant on one of them and minimizing the risk of lost.
+With the raising value of BTC the core team of I2P decided to exchange the BTC into &euro; to have these safe in our account, as the exchange rate of 
+BTC was to volatile and looked like a big bulb.
+These 7899&euro; are currently on hold and we need to wait until bitcoin 24 will release these money. Some chances are for total loss of this money.
+Echelon will count this as a loss in the <a href="http://www.i2p2.i2p/halloffame.html">hall of fame</a> until the money does arrive on I2P account.
+</p>
+</div>
+
 <div lang="en"><h3>2013-04-20: <b><a href="http://www.i2p2.i2p/ticket919">Workaround for Windows-only bug, introduced in 0.9.5</a></b></h3>
 <p>A change was introduced during the 0.9.5 cycle to allow configuration files to be edited with the standard
    Windows text editor.  This change had the unfortunate side-effect of causing our eepsite migration code to
