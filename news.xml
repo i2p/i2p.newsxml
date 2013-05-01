@@ -2,6 +2,16 @@
 <i2p.news date="$Date: 2013-03-08 00:00:00 $">
 <i2p.release version="0.9.5" date="2013/03/08" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:98b8b69b5aacda5267f4b05236a85248819b2228&dn=i2pupdate-0.9.5.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:5cc8a837b2fa9c80429a1672d34280ad17bbd740&dn=i2pupdate-0.9.5.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
+<div lang="en"><h3>2013-05-01: <b><a href="http://www.i2p2.i2p/halloffame">I2P finance status update</a></b></h3>
+<p>
+Latest actions on <a href="http://bitcoin-24.com">Bitcoin-24</a> did allow a withdrawl of BTC only, not Euro. For
+bad sake I2P did not have had much BTC in that exchange, almost only Euro. But as echelons personal account did
+have had some BTC in Bitcoin-24, echelon does pay now the missing 7899&euro; into I2P funds and in the event of
+Bitcoin-24 pay out the money, cash the sum in later on. Currently NO LOSS for I2P.<br>
+Echelon did also update the I2P finance status overview on <a href="http://echelon.i2p/donations/index.html">echelon.i2p</a>.
+Please do have a look and recalc of these numbers on you own for a check of these amounts.
+</p>
+</div>
 <div lang="en"><h3>2013-04-25: <b><a href="http://www.i2p2.i2p/halloffame">Some I2P funding on hold</a></b></h3>
 <p>
 With the recent rise in value of BTC, the core I2P team decided to exchange some of the I2P general fund BTC reserves
