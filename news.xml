@@ -3,6 +3,23 @@
 <i2p.release version="0.9.6" date="2013/05/28" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:04db7bbdb2d294ae356a3ae7dadf7b8fda73de3a&dn=i2pupdate-0.9.6.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:9318bcfcf1f2242f219d9e1c0bdb73c415190de4&dn=i2pupdate-0.9.6.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
+<h3>2013-07-05: <b>0.9.6-17-rc and paper about a practical attack on I2P published</b></h3>
+
+<p>
+A few days ago a new paper about practical attacks on I2P was published. Read it on this
+<a href="http://wwwcip.informatik.uni-erlangen.de/~spjsschl/i2p.pdf">external link</a>. Also do read
+the replies of the I2P devs on <a href="http://zzz.i2p/topics/1414">zzz.i2p forum</a>. Think about it, 
+solve the outstanding issues, help us. Also take care of the other <a href="http://zzz.i2p/topics/1416">
+high level outstanding issues on I2P</a>.
+</p>
+<p>
+To get rid of some issues and solve other bugs, the MTN development RC edition 0.9.6-17-rc was tagged and echelon has
+built a updater and installer of this version. Read about it on <a href="http://zzz.i2p/topics/1419?page=1">zzz.i2p forum</a>.
+Grab it on e.g. <a href="echelon.i2p/0.9.6/0.9.6-17rc">echelon.i2p</a>, update and test it. This will be 
+I2P version 0.9.7 in short time.<br>
+</p>
+</div>
+<div lang="en">
 <h3>2013-05-28: <b>0.9.6 <a href="http://www.i2p2.i2p/release-0.9.6.html">Released</a></b></h3>
 
 <p>0.9.6 includes bug fixes and an update from Jetty 6.1.26 (2010-11-10) to Jetty 7.6.10 (2013-03-12).

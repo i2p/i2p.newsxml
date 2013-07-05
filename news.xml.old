@@ -1,36 +1,68 @@
 <!--
-<i2p.news date="$Date: 2013-03-08 00:00:00 $">
-<i2p.release version="0.9.5" date="2013/03/08" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:98b8b69b5aacda5267f4b05236a85248819b2228&dn=i2pupdate-0.9.5.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:5cc8a837b2fa9c80429a1672d34280ad17bbd740&dn=i2pupdate-0.9.5.sud&tr=http://tracker2.postman.i2p/announce.php" />
+<i2p.news date="$Date: 2013-05-28 00:00:00 $">
+<i2p.release version="0.9.6" date="2013/05/28" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:04db7bbdb2d294ae356a3ae7dadf7b8fda73de3a&dn=i2pupdate-0.9.6.su2&tr=http://tracker2.postman.i2p/announce.php" sudTorrent="magnet:?xt=urn:btih:9318bcfcf1f2242f219d9e1c0bdb73c415190de4&dn=i2pupdate-0.9.6.sud&tr=http://tracker2.postman.i2p/announce.php" />
 -->
-<div lang="en"><h3>2013-05-01: <b><a href="http://www.i2p2.i2p/halloffame">I2P finance status update</a></b></h3>
-<p>
-Latest actions on <a href="http://bitcoin-24.com">Bitcoin-24</a> did allow a withdrawl of BTC only, not Euro. Unfortunately
-I2P did not have had much BTC in that exchange, almost only Euro. But as echelon´s personal account did
-have had some BTC in Bitcoin-24, echelon paid now the missing 7899&euro; into I2P funds and in the event of
-Bitcoin-24 pay out the money, cash the sum in later on. Currently NO LOSS for I2P.<br>
-Echelon did also update the I2P finance status overview on <a href="http://echelon.i2p/donations/index.html">echelon.i2p</a>.
-Please do have a look and recalc of these numbers on you own for a check of these amounts.
-</p>
-</div>
-<div lang="en"><h3>2013-04-25: <b><a href="http://www.i2p2.i2p/halloffame">Some I2P funding on hold</a></b></h3>
-<p>
-With the recent rise in value of BTC, the core I2P team decided to exchange some of the I2P general fund BTC reserves
-into &euro; to have these safe in our account, as the exchange rate of BTC was too volatile and the price increase
-was unlikely to last. We put parts of the I2P general fund BTC into different exchange platforms to ensure we were
-not dependent on any one of them, minimizing the risk of loss. It is both fortunate and unlucky that we did this -
-one of these platforms was <a href="http://bitcoin-24.com">Bitcoin-24</a>, which has since been frozen. Because of
-this, 7899&euro; of the I2P general fund is currently on hold and not reachable. We are now waiting for Bitcoin-24
-to release the money, but there is a chance that this money is lost. Echelon will count this as a loss in the
-<a href="http://www.i2p2.i2p/halloffame">hall of fame</a> until the money does arrive in the I2P account.
-</p>
-</div>
+<div lang="en">
+<h3>2013-05-28: <b>0.9.6 <a href="http://www.i2p2.i2p/release-0.9.6.html">Released</a></b></h3>
 
-<div lang="en"><h3>2013-04-20: <b><a href="http://www.i2p2.i2p/ticket919">Workaround for Windows-only bug, introduced in 0.9.5</a></b></h3>
-<p>A change was introduced during the 0.9.5 cycle to allow configuration files to be edited with the standard
-   Windows text editor.  This change had the unfortunate side-effect of causing our eepsite migration code to
-   fail to run on Windows systems. Only original installations of 0.9.5 on Windows are affected by this issue.
-</p>
-<p>Instructions for resolving this issue can be found on <a href="http://www.i2p2.i2p/ticket919">our website</a>.
+<p>0.9.6 includes bug fixes and an update from Jetty 6.1.26 (2010-11-10) to Jetty 7.6.10 (2013-03-12).
+ See below for important information on the Jetty update. The Jetty 7 series is actively maintained and
+ we plan to stay current with it in future I2P releases.</p>
+
+<p>Most users will update via HTTP. Those running development builds will attempt to update via the
+ experimental in-network bittorrent with i2psnark. We've fixed some bugs that will enable more users
+ to update via torrent in the 0.9.7 update cycle.</p>
+
+<p><strong>Important fix for Windows Eepsites, first install 0.9.5 only</strong></p>
+
+<p>If you first installed I2P with version 0.9.5, on Windows only, we recommend that you follow the
+ following instructions to fix your eepsite location <strong>before</strong> you update to 0.9.6.
+ Only original installations of 0.9.5-0 on Windows are affected by this issue. If your router version
+ is 0.9.5-0-win1, you already have the fix and need not take any action.
+<br />See <a href="http://www.i2p2.i2p/ticket919">www.i2p2.i2p/ticket919</a>
+ or <a href="http://www.i2p2.de/ticket919">www.i2p2.de/ticket919</a> for instructions.</p>
+
+<p><strong>Jetty 7 Migration Details</strong></p>
+
+<p><strong> For most people, the update should just work. If you have multiple Jetty eepsites,
+ OR have made changes to jetty.xml or other Jetty configuration files, including changing the port
+ from 7658, you MUST take manual action AFTER updating.</strong></p>
+
+<p>* After update, the router will migrate your jetty.xml files to the new Jetty 7 format.</p>
+
+<p>* The migration resets the port to 7658. If you have more than one Jetty eepsite, OR your eepsite
+ is NOT on port 7658, OR you have made other modifications to jetty.xml (for example changing the
+ listen address from 127.0.0.1 to 0.0.0.0), you MUST edit the jetty.xml file for each eepsite to fix them up
+ after updating, and restart again.</p>
+
+<p><strong>The following files will be backed up with a &quot;.jetty6&quot; suffix and then migrated.</strong>
+ If you have made local changes, you may have to edit them manually and restart.
+ See <a href="http://wiki.eclipse.org/Jetty">http://wiki.eclipse.org/Jetty</a> for assistance
+ in configuring Jetty 7.</p>
+
+<p>* ~/.i2p/clients.config
+<br />* ~/.i2p/eepsite/jetty.xml
+<br />* ~/.i2p/eepsite/jetty-rewrite.xml
+<br />* ~/.i2p/eepsite/jetty-ssl.xml
+<br />* ~/.i2p/eepsite/contexts/base-context.xml
+<br />* ~/.i2p/eepsite/contexts/cgi-context.xml
+<br />* ~/.i2p/eepsite/etc/webdefault.xml</p>
+
+<p><strong>Plugins</strong></p>
+
+<p>Most plugins should work fine with Jetty 7.
+ The I2PControl and zzzot plugins must be updated. Your router should download and install
+ the new versions shortly after starting 0.9.6.
+ If a plugin does not work, please contact the maintainer for that plugin.
+
+</p><p>
+Say hello to the volunteers on the <a href="irc://127.0.0.1:6668/i2p-help">#i2p-help IRC channel</a>.
+<a href="http://www.i2p2.i2p/getinvolved.html">Get involved</a>,
+spread the word,
+and <a href="http://www.i2p2.i2p/donate.html">donate</a>!
+If you find a bug, please enter a report on <a href="http://trac.i2p2.i2p/report/1">trac</a>.
+To help on translations,
+volunteer on <a href="irc://127.0.0.1:6668/i2p">IRC #i2p-dev</a>
+or sign up on <a href="https://www.transifex.net/projects/p/I2P/">Transifex</a>.
 </p>
 </div>
-
