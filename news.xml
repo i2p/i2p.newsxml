@@ -3,9 +3,9 @@
 <i2p.release version="0.9.7.1" date="2013/08/10" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:837087d7817bc9ca35174e03d1b32ce774c3cc62&dn=i2pupdate-0.9.7.1.su2&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-<h3>2013-09-20: <b>IPv6 bounty meshup with forthcoming I2P 0.9.8</b></h3>	
+<h3>2013-09-20: <b>IPv6 bounty chance with forthcoming I2P 0.9.8</b></h3>	
 
-<p>I2P 0.9.8 will bring us IPv6 enabled by default, solving the I2P IPv6 bounty as solved. To celebrate 
+<p>I2P 0.9.8 will bring us IPv6 enabled by default, fullfilling the I2P IPv6 bounty. To celebrate 
 this and promoting IPv6, we as I2P will provide the first 100 I2P router running on IPv6 native (no tunnels, 
 no toredo, no IPv4/IPv6 translation) and being floodfill during the last 3 month (october till december)
 of 2013 a 25 € support. This special event starts with the release of I2P 0.9.8 (running IPv6 with 
