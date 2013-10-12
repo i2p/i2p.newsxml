@@ -3,6 +3,15 @@
 <i2p.release version="0.9.8.1" date="2013/10/02" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:a5beacbfb0eee65b895de956d39ace48ed17e68f&dn=i2pupdate-0.9.8.1.su2&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
+<h3>2013-10-12: <b>Latest <a href="http://echelon.i2p/docs/announcements.html">announcements</a> around I2P</b>
+
+<p>As this news area is to short and not suiteable for all longer announcements, we 
+placed the latest announcements on <a href="http://echelon.i2p/docs/announcements.html">echelon.i2p</a>.
+Click on the link and read more about I2P needing help on <a href="https://www.transifex.com/projects/p/I2P/">Transifex</a>,
+I2P progress on <a href="https://tahoe-lafs.org/">Tahoe-LAFS</a> and the 
+<a href="http://echelon.i2p/bounty/ipv6bounty.txt">IPv6 bounty</a> for I2P users running I2P on IPv6.
+</p>
+
 <h3>2013-10-02: <b>0.9.8.1 <a href="http://www.i2p2.i2p/release-0.9.8.1.html">Released</a></b></h3>
 
 <p>0.9.8.1 fixes a problem with updating to 0.9.8 on Windows for some people.
