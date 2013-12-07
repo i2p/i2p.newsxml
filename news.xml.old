@@ -2,7 +2,16 @@
 <i2p.news date="$Date: 2013-10-02 00:00:00 $">
 <i2p.release version="0.9.8.1" date="2013/10/02" minVersion="0.6" su2Torrent="magnet:?xt=urn:btih:a5beacbfb0eee65b895de956d39ace48ed17e68f&dn=i2pupdate-0.9.8.1.su2&tr=http://tracker2.postman.i2p/announce.php" />
 -->
+
 <div lang="en">
+<h3>2013-11-07: <b>CTS IV <a href="https://openitp.org/pdfs/CTS4Reportweb3.pdf">report</a> is out!</b></h3>
+
+<p>OpenITP has announced the availablity of the <a href="https://openitp.org/pdfs/CTS4Reportweb3.pdf">CTS IV report</a>
+on their <a href="https://openitp.org/news-events/cts-iv-report-is-out.html">website</a>. Read it! 
+Echelon attended to this event in Berlin on September 29 to October 1, 3013 and had some talks with Tor, Freenet and other
+folks all over the event. 
+</p>
+
 <h3>2013-10-12: <b>Latest <a href="http://echelon.i2p/docs/announcements.html">announcements</a> around I2P</b></h3>
 
 <p>As this news area is too short and not suitable for all longer announcements, we 
