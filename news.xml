@@ -3,11 +3,23 @@
 <i2p.release version="0.9.9" date="2013/12/07" minVersion="0.6.1.10" minJavaVersion="1.5" su2Torrent="magnet:?xt=urn:btih:1b7c65123b9edb8fce7fda3fd90aa87bf77805ca&dn=i2pupdate-0.9.9.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:8dd078d9cc284e899943e9bfaffb046cdbe24a05&dn=i2pupdate-0.9.9.su3&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-<h3>2013-12-27: <b>I2P on 30C3 - visit us!</b></h3>
+	<h3>2014-01-04: <bt>I2P on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> was a full success!</b></h3>
+	
+
+<p>Those who followed our twitter channels and the different IRC channels during the last 6 days does already know:
+The table of I2P devs and fellows on the <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> event was a full success! 
+Nearly all the time we were asked about I2P, its functions, its benefit and the technical stuff behind. Also lots
+of in detail discussions were started and cooperation with other projects were discussed or even started!<br>
+The translations of our new webpage <a href="https://geti2p.net">geti2p.net</a> are in need of more love and translators. The majority of users
+already knowing and tested I2P were telling us: you need better docs! So, please get on <a href="https://www.transifex.com/projects/p/I2P/">Transifex</a>, register 
+and apply for the language you want to translate. We need more help to get a nice webpage for all interested users out there!
+</p>
+	
+<h3>2013-12-27: <b>I2P on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> - visit us!</b></h3>
 
 <p>
-I2P got a table in first floor on 30C3, just get into building and one stairs up on the right side - and you will hit us directly!<br>
-	Visit us, get your sweets, get your stickers, ask us. A lot of I2P knowledge is around at thte table!<br>
+	I2P got a table in first floor on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a>, just get into building and one stairs up on the right side - and you will hit us directly!<br>
+	Visit us, get your sweets, get your stickers, ask us. A lot of I2P knowledge is around at the table!<br>
 </p>
 <h3>2013-12-07: <b>0.9.9 <a href="http://www.i2p2.i2p/release-0.9.9.html">Released</a></b></h3>
 
