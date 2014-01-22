@@ -1,40 +1,19 @@
 <!--
-<i2p.news date="$Date: 2013-12-07 00:00:00 $">
-<i2p.release version="0.9.9" date="2013/12/07" minVersion="0.6.1.10" minJavaVersion="1.5" su2Torrent="magnet:?xt=urn:btih:1b7c65123b9edb8fce7fda3fd90aa87bf77805ca&dn=i2pupdate-0.9.9.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:8dd078d9cc284e899943e9bfaffb046cdbe24a05&dn=i2pupdate-0.9.9.su3&tr=http://tracker2.postman.i2p/announce.php" />
+<i2p.news date="$Date: 2014-01-22 00:00:00 $">
+<i2p.release version="0.9.10" date="2014/01/22" minVersion="0.6.1.10" minJavaVersion="1.5" su2Torrent="magnet:?xt=urn:btih:b9b8c2649f527fd163d96bfaeb307ea87328bbbc&dn=i2pupdate-0.9.10.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:e9e8e3d0f3ad30130a475afbae54ca4a0e774c6a&dn=i2pupdate-0.9.10.su3&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-	<h3>2014-01-04: <bt>I2P on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> was a full success!</b></h3>
-	
-
-<p>Those who followed our twitter channels and the different IRC channels during the last 6 days does already know:
-The table of I2P devs and fellows on the <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> event was a full success! 
-Nearly all the time we were asked about I2P, its functions, its benefit and the technical stuff behind. Also lots
-of in detail discussions were started and cooperation with other projects were discussed or even started!<br>
-The translations of our new webpage <a href="https://geti2p.net">geti2p.net</a> are in need of more love and translators. The majority of users
-already knowing and tested I2P were telling us: you need better docs! So, please get on <a href="https://www.transifex.com/projects/p/I2P/">Transifex</a>, register 
-and apply for the language you want to translate. We need more help to get a nice webpage for all interested users out there!
-</p>
-	
-<h3>2013-12-27: <b>I2P on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> - visit us!</b></h3>
-
+<h3>2014-01-22: <b>0.9.10 <a href="http://i2p-projekt.i2p/release-0.9.10.html">Released</a></b></h3>
 <p>
-	I2P got a table in first floor on <a href="http://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a>, just get into building and one stairs up on the right side - and you will hit us directly!<br>
-	Visit us, get your sweets, get your stickers, ask us. A lot of I2P knowledge is around at the table!<br>
+0.9.10 changes the mechanism for doing LeaseSet lookups, making it more difficult for an attacker
+to correlate a Destination with a Router. It also fixes character encoding bugs in susimail,
+and includes lots of other bug fixes and translation updates.
+Most of you will update via torrent, using the new "su3" update format using stronger keys.
+We recommend that all users update.
+</p><p>
+We recently attended <a href="https://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a>
+and <a href="http://realworldcrypto.wordpress.com/">Real World Crypto</a>,
+making several new connections and formulating <a href="http://zzz.i2p/">big plans</a> for 2014.
+Thanks to those who supported our attendance with their <a href="http://i2p-projekt.i2p/donate">donations</a>!
 </p>
-<h3>2013-12-07: <b>0.9.9 <a href="http://www.i2p2.i2p/release-0.9.9.html">Released</a></b></h3>
-
-<p>0.9.9 fixes a number of bugs in the netdb, streaming, and i2ptunnel,
-and starts work on a year-long plan to increase the strength
-of the cryptographic signing algorithms used in the router, and support multiple algorithms
-and key lengths simultaneously. Automatic update files will now be signed with 4096-bit keys.
-We now support SSL between your router and your servers for security.
-See <a href="http://zzz.i2p/topics/1495">http://zzz.i2p/topics/1495</a> for more information.</p>
-
-<p>
-Several of us will be at <a href="https://events.ccc.de/congress/2013/wiki/Main_Page">30C3</a> this year.
-Look for us under the I2P banner or at the
-<a href="https://events.ccc.de/congress/2013/wiki/Assembly:Youbroketheinternet">YBTI Assembly</a>.
-Come say hi and ask for stickers!
-</p>
-
 </div>
