@@ -3,6 +3,15 @@
 <i2p.release version="0.9.10" date="2014/01/22" minVersion="0.6.1.10" minJavaVersion="1.5" su2Torrent="magnet:?xt=urn:btih:b9b8c2649f527fd163d96bfaeb307ea87328bbbc&dn=i2pupdate-0.9.10.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:e9e8e3d0f3ad30130a475afbae54ca4a0e774c6a&dn=i2pupdate-0.9.10.su3&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
+<h3>2014-02-10: <b><a href="http://echelon.i2p/docs/IRC2p/irc2p_userguide.txt">IRC2p Migration</a></b></h3>
+<p>
+After some work and weeks of preparation, the IRC2p team is ready to switch the operating servers to a new
+setup and new version of Unreal IRCd. Also a new IRC server is added to the network.
+This switch is a "flag day" and needs a complete shutdown of the current IRC2p network and restart shortly
+after with a complete new IRCd and new services.
+Due to this new setup, some changes for users do apply. Read more about this migration on the
+<a href="http://echelon.i2p/docs/IRC2p/irc2p_userguide.txt">IRC2p migration guide</a>.
+</p>
 <h3>2014-01-22: <b>0.9.10 <a href="http://i2p-projekt.i2p/release-0.9.10.html">Released</a></b></h3>
 <p>
 0.9.10 changes the mechanism for doing LeaseSet lookups, making it more difficult for an attacker
