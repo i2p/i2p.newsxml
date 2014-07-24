@@ -9,4 +9,13 @@
 Of course, there's also the usual collection of bug fixes and translation updates.
 All users should update.
 </p>
+<h3>2014-07-24: <b>Vulnerability found in I2P based on JS and XSS</b></h3>
+<p>
+	The Exploit Dealer Exodus Intelligence has found a vulnerability in I2P and made this public after trying to sell it.
+	The I2P team got notice of this issue today and works on a fix to be included in next stable I2P version 0.9.14.
+	The issue is based on JS and XSS, so disable Javascript in your browser or using NoScript will render this exploit
+	useless on a quick fix. I2P base function is NOT afflected by this issue, it is a pure browser based problem.
+</p>
 </div>
+
+

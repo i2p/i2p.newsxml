@@ -1,36 +1,12 @@
 <!--
-<i2p.news date="$Date: 2014-02-08 00:00:00 $">
-<i2p.release version="0.9.11" date="2014/02/08" minVersion="0.6.1.10" minJavaVersion="1.5" su2Torrent="magnet:?xt=urn:btih:f7c9da818af6c90c0f7e4f9f8cd09dd79fa61bb9&dn=i2pupdate-0.9.11.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:5a0c3de0eec2b27b6008d392439fa58c00ad74cf&dn=i2pupdate-0.9.11.su3&tr=http://tracker2.postman.i2p/announce.php" />
+<i2p.news date="$Date: 2014-05-22 00:00:00 $">
+<i2p.release version="0.9.13" date="2014/05/22" minVersion="0.6.1.10" minJavaVersion="1.6" su2Torrent="magnet:?xt=urn:btih:d035e0df1ad623daa9e8783d48b31b1acd2e7b04&dn=i2pupdate-0.9.13.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:3c66dea129ea3a900faf96472e585513452c868c&dn=i2pupdate-0.9.13.su3&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
-<h3>2014-02-20: <b>New Bitcoin and Litecoin donation addresses for I2P</b></h3>	
+<h3>2014-05-22: <b>0.9.13 <a href="http://i2p-projekt.i2p/en/blog/post/2014/05/22/0.9.13-Release">Released</a></b></h3>
 <p>
-After a security breach on eche|ons systems we decided to genereate new addresses
-for the I2P Bitcoin and Litecoin donations.
-The new addresses are already noted on our <a href="http://i2p-projekt.i2p/en/get-involved/donate">Donate</a>
-website. Please do use the new addresses from today on! The old addresses will still be checked 
-on a regular base for some time.
-</p>
-<h3>2014-02-19: <b>false.i2p down for a while</b></h3>
-<p>
-For private reasons the outproxy false.i2p will be down for some indefinite time.
-For a replacement do have a look into <a href="http://forum.i2p">forum.i2p</a> or do use the new
-<a href="http://plugins.i2p/plugins/orchid/">orchid</a> plugin, which setups a Java Tor client
-into your I2P installation.
-</p>
-<h3>2014-02-18: <b>Java 6 or Higher Required as of Release 0.9.12</b></h3>
-<p>
-This is our first increase in the minimum Java requirement since the I2P 0.6.5 release on Dec. 1, 2008.
-Java 5 is very old and is unsupported by Oracle and most other suppliers.
-If you are still running Java 5, please update to 6 or higher as soon as possible. Java 7 is strongly recommended for most platforms. For Raspberry Pi, we recommend Oracle Early Access 8.
-</p>	
-<h3>2014-02-07: <b><a href="http://echelon.i2p/docs/IRC2p/irc2p_userguide.txt">IRC2p Migration</a></b></h3>
-<p>
-After some work and weeks of preparation, the IRC2p team is ready to switch the operating servers to a new
-setup and an upgraded IRCd/services. A new IRC server (irc.dg.i2p) is also joining the network!
-The transition will occur on 2014-02-23 between 1:00PM UTC and 4:00PM UTC. During this time, the IRC2P will be
-inaccessible and upgraded.
-The new setup involves changes that may affect users. Read more about this migration on the
-<a href="http://echelon.i2p/docs/IRC2p/irc2p_userguide.txt">IRC2p migration guide</a>.
+0.9.13 includes fixes for firewalled routers, netdb lookup improvements, and a big SusiMail update.
+Of course, there's also the usual collection of bug fixes and translation updates.
+All users should update.
 </p>
 </div>
