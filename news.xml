@@ -19,4 +19,11 @@ Of course, there's also the usual collection of minor bug fixes and translation 
 </p><p>
 All users should update immediately.
 </p>
+<h3>2014-07-27: <b>I2PSnark 'Add Torrent' form broken in 0.9.14</b></h3>
+<p> 
+	A new <a href="http://trac.i2p2.i2p/ticket/1339">problem</a> with the add torrent function in I2P 0.9.14 was reported.
+	This bug does not allow you to add torrent links with special characters to I2PSnark. A work around is to download the torrent file itself 
+	and place this into the I2PSnark folder. For magnet links, paste in only the 40-character info hash, i.e. the part between "btih:" and "&dn".
+</p>
+
 </div>
