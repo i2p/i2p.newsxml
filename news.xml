@@ -25,5 +25,9 @@ All users should update immediately.
 	This bug does not allow you to add torrent links with special characters to I2PSnark. A work around is to download the torrent file itself 
 	and place this into the I2PSnark folder. For magnet links, paste in only the 40-character info hash, i.e. the part between "btih:" and "&dn".
 </p>
-
+<h3>2014-07-29: <b>Installing plugins and other tasks with 0.9.14</b></h3>
+<p>
+	Due to the security issues some features are currently disabled in router console until a full review has been done.
+	ZZZ has written a short howto <a href="http://zzz.i2p/topics/1674">install Plugins</a> and other disabled jobs in 0.9.14.
+</p>
 </div>
