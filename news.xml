@@ -3,14 +3,27 @@
 <i2p.release version="0.9.14.1" date="2014/08/09" minVersion="0.6.1.10" minJavaVersion="1.6" su2Torrent="magnet:?xt=urn:btih:3dfd95ed4022fb4064173db7917d5afbb2ba8f58&dn=i2pupdate-0.9.14.1.su2&tr=http://tracker2.postman.i2p/announce.php" su3Torrent="magnet:?xt=urn:btih:6112d803f2c285043d1bd44a4dda6da643fb79ee&dn=i2pupdate-0.9.14.1.su3&tr=http://tracker2.postman.i2p/announce.php" />
 -->
 <div lang="en">
+	<h3>2014-09-13: <b>Call for <a href="http://killyourtv.i2p/tahoe-lafs/">I2P-tahoe-lafs</a> server</b></h3>
+<p>
+	<a href="http://killyourtv.i2p/tahoe-lafs/">I2P-tahoe-lafs</a> is a distributed filesystem on <a href="http://www.i2p-projekt.i2p">I2P</a>.
+	It is a slightly modified packaged based on <a href="https://tahoe-lafs.org">Tahoe-lafs</a>. Due to the nature of a distributed
+	filesystem with more than one copy of data in the cloud, it needs storage servers. The (anonymous, secure) I2P tahoe-lafs cloud
+	is currently based on 20 storage servers with rather low space. We need more space and more servers to be able to serve the users
+	wish for a universal storage container in I2P. If you can help out with some space (20-500 GB) on a stable server (nearly 24/7
+	uptime), please setup a storage node as noted in the <a href="http://killyourtv.i2p/tahoe-lafs/install/">installation</a> guide.
+	If you have questions or need help, get into the channel #tahoe-lafs on the IRC2p network.
+</p>
+
 	<h3>2014-08-31: <b>Monotone server mtn.i2p-projekt.i2p has moved</b></h3>
 <p>
 	The user echelon has migrated his monotone server "mtn://mtn.i2p-projekt.i2p" to a new hardware and changed the fingerprint of the
-	server key. If you have enabled this server in your I2P tunnel, you need to remove the old fingerprint. The old server fingerprint was: 
-	faa8753c514e24f90155bbc49567a96a0e563e5e<br>
-        New server fingerprint is: a8b0b9ec6120e1aa173a9658ec71293e3d81ae79<br>
+	server key. If you have enabled this server in your I2P tunnel, you need to remove the old fingerprint. 
+	The old server fingerprint was: <b>faa8753c514e24f90155bbc49567a96a0e563e5e</b><br>
+	The new server fingerprint is: <b>a8b0b9ec6120e1aa173a9658ec71293e3d81ae79</b><br>
 	To set the new server fingerprint, use the "mtn unset known-servers <hostname>" command, while hostname is the name it is used on your setup, 
-        mostly mtn://127.0.0.1 for in-I2P-setup. If you used the public reachable address mtn.i2p-projekt.de, use this name instead.
+	mostly <b>mtn://127.0.0.1</b> for in-I2P-setup. If you used the public reachable address <b>mtn://mtn.i2p-projekt.de</b>, use this name instead.<br>
+	Also echelon did migrate the GPG keyserver and added a sync with other keyservers. If you want to request GPG keys, you can now ask
+	<a href="http://keys.echelon.i2p">keys.echelon.i2p</a> for recent gpg keys inside of I2P!
 
 </p>
 	<h3>2014-08-09: <b>0.9.14.1 <a href="http://i2p-projekt.i2p/en/blog/post/2014/08/09/0.9.14.1-Release">Released</a></b></h3>
