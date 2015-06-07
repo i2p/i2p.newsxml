@@ -2,8 +2,7 @@
 from feedgen.feed import FeedGenerator
 import json
 
-if __name__ == '__main__':
-    fg = FeedGenerator()
+def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
     fg.title('I2P News')
     fg.subtitle('News feed, and router updates')
@@ -12,6 +11,7 @@ if __name__ == '__main__':
     fg.link( href='http://psi.i2p/news/news.xml', rel='alternate' )
     fg.language('en')
 
+def load_entries(fg):
     fe = fg.add_entry()
     fe.id('urn:uuid:1225c695-cfb8-4ebb-aaaa-7805333efa6a')
     fe.title('0.9.20 Released')
@@ -34,6 +34,7 @@ As usual, we recommend that you update to this release. The best way to
 maintain security and help the network is to run the latest release.
 </p>''', type='xhtml')
 
+def load_releases(fg):
     fg.load_extension('i2p')
     with open('releases.json') as json_data:
         d = json.load(json_data)
@@ -60,4 +61,9 @@ maintain security and help the network is to run the latest release.
                     for url in update['url']:
                         u.url(url)
 
+if __name__ == '__main__':
+    fg = FeedGenerator()
+    load_feed_metadata(fg)
+    load_entries(fg)
+    load_releases(fg
     fg.atom_file('news.atom.xml', pretty=True)
