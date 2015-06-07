@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from feedgen.feed import FeedGenerator
-import sys
+import json
 
 if __name__ == '__main__':
     fg = FeedGenerator()
@@ -35,18 +35,29 @@ maintain security and help the network is to run the latest release.
 </p>''', type='xhtml')
 
     fg.load_extension('i2p')
-    r = fg.i2p.add_release()
-    r.date('2015-06-02')
-    r.version('0.9.20')
-    r.min_version('0.6.1.10')
-    r.min_java_version('1.6')
-    u = r.add_update('su3')
-    u.torrent('magnet:?xt=urn:btih:4b8b4c161f1829004627963b930d45f67f523b2e&amp;dn=i2pupdate-0.9.20.su3&amp;tr=http://tracker2.postman.i2p/announce.php')
-    u.url('http://stats.i2p/i2p/0.9.20/i2pupdate.su3')
-    u = r.add_update('su2')
-    u.torrent('magnet:?xt=urn:btih:3aba5739b585f5d7a46aec6095b0c6f8471f93cc&amp;dn=i2pupdate-0.9.20.su2&amp;tr=http://tracker2.postman.i2p/announce.php')
-    u.url('http://stats.i2p/i2p/0.9.20/i2pupdate.su2')
-    u = r.add_update('sud')
-    u.url('http://stats.i2p/i2p/0.9.20/i2pupdate.sud')
+    with open('releases.json') as json_data:
+        d = json.load(json_data)
+        for release in d:
+            r = fg.i2p.add_release()
+            r.date(release['date'])
+            r.version(release['version'])
+            if release.has_key('minVersion'):
+                r.min_version(release['minVersion'])
+            if release.has_key('minJavaVersion'):
+                r.min_java_version(release['minJavaVersion'])
+
+            for update_type, update in release['updates'].iteritems():
+                u = r.add_update(update_type)
+                if update.has_key('clearnet'):
+                    for url in update['clearnet']:
+                        u.clearnet(url)
+                if update.has_key('clearnetssl'):
+                    for url in update['clearnetssl']:
+                        u.clearnetssl(url)
+                if update.has_key('torrent'):
+                    u.torrent(update['torrent'])
+                if update.has_key('url'):
+                    for url in update['url']:
+                        u.url(url)
 
     fg.atom_file('news.atom.xml', pretty=True)

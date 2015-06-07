@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2015-06-02",
+    "version": "0.9.20",
+    "minVersion": "0.6.1.10",
+    "minJavaVersion": "1.6",
+    "updates": {
+      "su3": {
+        "torrent": "magnet:?xt=urn:btih:4b8b4c161f1829004627963b930d45f67f523b2e&amp;dn=i2pupdate-0.9.20.su3&amp;tr=http://tracker2.postman.i2p/announce.php",
+        "url": [
+          "http://stats.i2p/i2p/0.9.20/i2pupdate.su3"
+        ]
+      },
+      "su2": {
+        "torrent": "magnet:?xt=urn:btih:3aba5739b585f5d7a46aec6095b0c6f8471f93cc&amp;dn=i2pupdate-0.9.20.su2&amp;tr=http://tracker2.postman.i2p/announce.php",
+        "url": [
+          "http://stats.i2p/i2p/0.9.20/i2pupdate.su2"
+        ]
+      },
+      "sud": {
+        "url": [
+          "http://stats.i2p/i2p/0.9.20/i2pupdate.sud"
+        ]
+      }
+    }
+  }
+]
