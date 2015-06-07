@@ -12,27 +12,20 @@ def load_feed_metadata(fg):
     fg.language('en')
 
 def load_entries(fg):
-    fe = fg.add_entry()
-    fe.id('urn:uuid:1225c695-cfb8-4ebb-aaaa-7805333efa6a')
-    fe.title('0.9.20 Released')
-    fe.summary(u'0.9.20 released with performance improvements and bug fixes.')
-    fe.link( href='http://i2p-projekt.i2p/en/blog/post/2015/06/02/0.9.20-Release' )
-    fe.author( name='zzz' )
-    fe.content('''<p>
-0.9.20 contains many important bug fixes, and several changes to increase floodfill capacity in the network.
-</p><p>
-Routers configured for 32-64 KB of shared bandwidth may now become floodfill,
-and routers configured for 512 KB or more of shared bandwidth will have higher connection limits.
-These changes may cause your router to use more resources.
-If the router becomes too busy, the best way to reduce usage is to reduce the <a href="/config">bandwidth settings</a>.
-If that doesn't help, you may now disable automatic floodfill on the <a href="/configadvanced">advanced configuration page</a>.
-</p><p>
-We're hopeful that these changes will increase network capacity and performance,
-and reduce the congestion that's been affecting the network the last three months.
-</p><p>
-As usual, we recommend that you update to this release. The best way to
-maintain security and help the network is to run the latest release.
-</p>''', type='xhtml')
+    with open('entries.html') as f:
+        entries_data = f.read().strip('\n')
+        entries = entries_data.split('</article>')
+        # split() creates an empty final element
+        for entry_str in entries[:-1]:
+            entry_parts = entry_str.split('>', 1)
+
+            fe = fg.add_entry()
+            fe.id('urn:uuid:1225c695-cfb8-4ebb-aaaa-7805333efa6a')
+            fe.title('0.9.20 Released')
+            fe.summary(u'0.9.20 released with performance improvements and bug fixes.')
+            fe.link( href='http://i2p-projekt.i2p/en/blog/post/2015/06/02/0.9.20-Release' )
+            fe.author( name='zzz' )
+            fe.content(entry_parts[1], type='xhtml')
 
 def load_releases(fg):
     fg.load_extension('i2p')
