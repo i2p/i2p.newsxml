@@ -1,0 +1,11 @@
+To use:
+
+./setup_venv.sh
+. env/bin/activate
+pip install .
+
+
+To upgrade:
+
+pip uninstall feedgen-i2p
+pip install .
