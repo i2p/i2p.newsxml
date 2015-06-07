@@ -27,6 +27,8 @@ def load_entries(fg):
             fe.summary(metadata['summary'])
             fe.link( href=metadata['href'] )
             fe.author( name=metadata['author'] )
+            fe.published(metadata['published'])
+            fe.updated(metadata['updated'])
             fe.content(entry_parts[1], type='xhtml')
 
 def extract_entry_metadata(s):
