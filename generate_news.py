@@ -9,7 +9,7 @@ def load_feed_metadata(fg):
     fg.subtitle('News feed, and router updates')
     fg.link( href='http://i2p-projekt.i2p/' )
     fg.link( href='http://echelon.i2p/news/news.atom.xml', rel='self' )
-    fg.link( href='http://psi.i2p/news/news.xml', rel='alternate' )
+    fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
     fg.language('en')
 
 def load_entries(fg):
