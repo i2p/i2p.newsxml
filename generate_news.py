@@ -18,7 +18,7 @@ def load_entries(fg):
         entries = entries_data.split('</article>')
         # split() creates an empty final element
         for entry_str in entries[:-1]:
-            entry_parts = entry_str.split('>', 1)
+            entry_parts = entry_str.split('</details>', 1)
             metadata = extract_entry_metadata(entry_parts[0])
 
             fe = fg.add_entry()
@@ -30,7 +30,9 @@ def load_entries(fg):
             fe.content(entry_parts[1], type='xhtml')
 
 def extract_entry_metadata(s):
-    return {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', s)}
+    m = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', s)}
+    m['summary'] = re.findall(r'<summary>(.*)</summary>', s)[0]
+    return m
 
 def load_releases(fg):
     fg.load_extension('i2p')
