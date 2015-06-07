@@ -58,5 +58,5 @@ if __name__ == '__main__':
     fg = FeedGenerator()
     load_feed_metadata(fg)
     load_entries(fg)
-    load_releases(fg
+    load_releases(fg)
     fg.atom_file('news.atom.xml', pretty=True)
