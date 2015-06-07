@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from feedgen.feed import FeedGenerator
 import json
+import re
 
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
@@ -18,14 +19,18 @@ def load_entries(fg):
         # split() creates an empty final element
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('>', 1)
+            metadata = extract_entry_metadata(entry_parts[0])
 
             fe = fg.add_entry()
-            fe.id('urn:uuid:1225c695-cfb8-4ebb-aaaa-7805333efa6a')
-            fe.title('0.9.20 Released')
-            fe.summary(u'0.9.20 released with performance improvements and bug fixes.')
-            fe.link( href='http://i2p-projekt.i2p/en/blog/post/2015/06/02/0.9.20-Release' )
-            fe.author( name='zzz' )
+            fe.id(metadata['id'])
+            fe.title(metadata['title'])
+            fe.summary(metadata['summary'])
+            fe.link( href=metadata['href'] )
+            fe.author( name=metadata['author'] )
             fe.content(entry_parts[1], type='xhtml')
+
+def extract_entry_metadata(s):
+    return {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', s)}
 
 def load_releases(fg):
     fg.load_extension('i2p')
