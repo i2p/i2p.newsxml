@@ -2,6 +2,11 @@
 from feedgen.feed import FeedGenerator
 import json
 import re
+import os.path
+
+DATA_DIR = 'data'
+ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
+RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
 
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
@@ -13,7 +18,7 @@ def load_feed_metadata(fg):
     fg.language('en')
 
 def load_entries(fg):
-    with open('entries.html') as f:
+    with open(ENTRIES_FILE) as f:
         entries_data = f.read().strip('\n')
         entries = entries_data.split('</article>')
         # split() creates an empty final element
@@ -38,7 +43,7 @@ def extract_entry_metadata(s):
 
 def load_releases(fg):
     fg.load_extension('i2p')
-    with open('releases.json') as json_data:
+    with open(RELEASES_FILE) as json_data:
         d = json.load(json_data)
         for release in d:
             r = fg.i2p.add_release()
