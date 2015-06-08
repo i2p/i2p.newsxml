@@ -15,10 +15,9 @@ def load_feed_metadata(fg):
     fg.link( href='http://i2p-projekt.i2p/' )
     fg.link( href='http://echelon.i2p/news/news.atom.xml', rel='self' )
     fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
-    fg.language('en')
 
-def load_entries(fg):
-    with open(ENTRIES_FILE) as f:
+def load_entries(fg, entries_file):
+    with open(entries_file) as f:
         entries_data = f.read().strip('\n')
         entries = entries_data.split('</article>')
         # split() creates an empty final element
@@ -70,7 +69,8 @@ def load_releases(fg):
 
 if __name__ == '__main__':
     fg = FeedGenerator()
+    fg.language('en')
     load_feed_metadata(fg)
-    load_entries(fg)
+    load_entries(fg, ENTRIES_FILE)
     load_releases(fg)
     fg.atom_file('news.atom.xml', pretty=True)
