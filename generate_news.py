@@ -8,6 +8,9 @@ DATA_DIR = 'data'
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
 RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
 
+BUILD_DIR = 'build'
+NEWS_FILE = os.path.join(BUILD_DIR, 'news.atom.xml')
+
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
     fg.title('I2P News')
@@ -73,4 +76,7 @@ if __name__ == '__main__':
     load_feed_metadata(fg)
     load_entries(fg, ENTRIES_FILE)
     load_releases(fg)
-    fg.atom_file('news.atom.xml', pretty=True)
+
+    if not os.path.exists(BUILD_DIR):
+        os.mkdir(BUILD_DIR)
+    fg.atom_file(NEWS_FILE, pretty=True)
