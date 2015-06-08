@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
 from feedgen.feed import FeedGenerator
+import glob
 import json
 import re
 import os.path
 
 DATA_DIR = 'data'
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
+TRANSLATED_ENTRIES_FILES = os.path.join(DATA_DIR, 'translations/entries.*.html')
 RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
 
 BUILD_DIR = 'build'
 NEWS_FILE = os.path.join(BUILD_DIR, 'news.atom.xml')
+TRANSLATED_NEWS_FILE = os.path.join(BUILD_DIR, 'news_%s.atom.xml')
 
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
@@ -70,13 +73,22 @@ def load_releases(fg):
                     for url in update['url']:
                         u.url(url)
 
-if __name__ == '__main__':
+def generate_feed(entries_file=None):
+    language = entries_file and entries_file.split('.')[1] or 'en'
+
     fg = FeedGenerator()
-    fg.language('en')
+    fg.language(language)
     load_feed_metadata(fg)
-    load_entries(fg, ENTRIES_FILE)
+    load_entries(fg, entries_file and entries_file or ENTRIES_FILE)
     load_releases(fg)
 
     if not os.path.exists(BUILD_DIR):
         os.mkdir(BUILD_DIR)
-    fg.atom_file(NEWS_FILE, pretty=True)
+    fg.atom_file(entries_file and TRANSLATED_NEWS_FILE % language or NEWS_FILE, pretty=True)
+
+if __name__ == '__main__':
+    # Standard feed
+    generate_feed()
+    # Translated feeds
+    for entries_file in glob.glob(TRANSLATED_ENTRIES_FILES):
+        generate_feed(entries_file)

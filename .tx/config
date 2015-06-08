@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+lang_map = ru_RU: ru, sv_SE: sv, tr_TR: tr, uk_UA: uk, zh_CN: zh
+
+[I2P.website_about]
+file_filter = data/translations/entries.<lang>.html
+source_file = data/entries.html
+source_lang = en
+type = HTML
+minimum_perc = 50
