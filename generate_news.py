@@ -16,8 +16,6 @@ TRANSLATED_NEWS_FILE = os.path.join(BUILD_DIR, 'news_%s.atom.xml')
 
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
-    fg.title('I2P News')
-    fg.subtitle('News feed, and router updates')
     fg.link( href='http://i2p-projekt.i2p/' )
     fg.link( href='http://echelon.i2p/news/news.atom.xml', rel='self' )
     fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
@@ -25,7 +23,12 @@ def load_feed_metadata(fg):
 def load_entries(fg, entries_file):
     with open(entries_file) as f:
         entries_data = f.read().strip('\n')
-        entries = entries_data.split('</article>')
+        entries_parts = entries_data.split('</header>')
+
+        fg.title(re.findall(r'title="(.*?)"', entries_parts[0])[0])
+        fg.subtitle(entries_parts[0].split('>')[1])
+
+        entries = entries_parts[1].split('</article>')
         # split() creates an empty final element
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('</details>', 1)
