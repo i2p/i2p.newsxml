@@ -1,11 +1,22 @@
-To use:
+To set up:
 
-./setup_venv.sh
-. env/bin/activate
-pip install .
+$ ./setup_venv.sh
+$ . env/bin/activate
+$ pip install .
 
 
-To upgrade:
+To upgrade after changes to the I2P Atom extension:
 
-pip uninstall feedgen-i2p
-pip install .
+$ . env/bin/activate
+$ pip uninstall feedgen-i2p
+$ pip install .
+
+
+To write a news entry:
+
+$ EDITOR=vim ./create_new_entry.sh
+
+
+To build the feeds:
+
+$ ./generate_news.py

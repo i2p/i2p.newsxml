@@ -1,3 +1,4 @@
+#!./env/bin/python
 # -*- coding: utf-8 -*-
 from feedgen.feed import FeedGenerator
 import glob
