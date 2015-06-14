@@ -6,9 +6,9 @@
 #
 
 # input Atom format
-IN=news.atom.xml
+IN=$1
 # output su3 format
-OUT=news.su3
+OUT=$2
 
 . ./etc/su3.vars
 [ -f ./etc/su3.vars.custom ] && . ./etc/su3.vars.custom
