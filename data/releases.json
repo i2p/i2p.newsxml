@@ -16,11 +16,6 @@
         "url": [
           "http://stats.i2p/i2p/0.9.20/i2pupdate.su2"
         ]
-      },
-      "sud": {
-        "url": [
-          "http://stats.i2p/i2p/0.9.20/i2pupdate.sud"
-        ]
       }
     }
   }
