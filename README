@@ -17,6 +17,6 @@ To write a news entry:
 $ EDITOR=vim ./create_new_entry.sh
 
 
-To build the feeds:
+To pull translations and build the feeds:
 
-$ ./generate_news.py
+$ ./pull_and_build.sh
