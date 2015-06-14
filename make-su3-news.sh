@@ -1,3 +1,4 @@
+#!/bin/sh
 #
 # Make a signed news.su3 file
 # Requires I2P 0.9.17 or higher
@@ -8,13 +9,10 @@
 IN=news.atom.xml
 # output su3 format
 OUT=news.su3
-# Install dir
-I2P=$HOME/i2p
-# private key keystore
-KS=su3keystore.ks
-# signer
-SIGNER=yourname@mail.i2p
-#
+
+. ./etc/su3.vars
+[ -f ./etc/su3.vars.custom ] && . ./etc/su3.vars.custom
+
 TMP=/tmp/su3tmp$$.gz
 
 # Verify it is valid XML using our parser
