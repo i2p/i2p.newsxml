@@ -23,9 +23,11 @@ def load_feed_metadata(fg):
 
 def load_entries(fg, entries_file):
     with open(entries_file) as f:
-        entries_data = f.read().strip('\n')
-        entries_parts = entries_data.split('</header>')
+        entries_data = f.read().decode('utf8').strip('\n')
+        # Replace HTML non-breaking space with unicode
+        entries_data = entries_data.replace('&nbsp;', u'\u00a0')
 
+        entries_parts = entries_data.split('</header>')
         fg.title(re.findall(r'title="(.*?)"', entries_parts[0])[0])
         fg.subtitle(entries_parts[0].split('>')[1])
 
