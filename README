@@ -1,8 +1,18 @@
+Package Requirements:
+	python
+	python-dev
+	python-virtualenv
+	libxml2-dev
+	libxslt1-dev
+
 To set up:
 
 $ ./setup_venv.sh
 $ . env/bin/activate
 $ pip install .
+
+Copy etc/su3.vars to etc/su3.vars.custom
+Change settings for your signing key name and keystore location
 
 
 To upgrade after changes to the I2P Atom extension:
