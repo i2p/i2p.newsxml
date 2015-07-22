@@ -27,6 +27,12 @@ To write a news entry:
 $ EDITOR=vim ./create_new_entry.sh
 
 
+To push the new entry into translations:
+
+$ tx push -s
+$ tx pull -a
+
+
 To pull translations:
 
 $ tx pull -a
