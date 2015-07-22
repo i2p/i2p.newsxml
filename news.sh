@@ -4,7 +4,6 @@ BUILD=./build
 NEWS_PREFIX=$BUILD/news_
 ATOM_SUFFIX=.atom.xml
 
-tx pull -a
 ./generate_news.py
 ./make-su3-news.sh $BUILD/news.atom.xml $BUILD/news.su3
 for file in `ls $NEWS_PREFIX*$ATOM_SUFFIX`; do
