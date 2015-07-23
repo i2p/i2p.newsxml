@@ -26,13 +26,17 @@ def load_entries(fg, entries_file):
         entries_data = f.read().decode('utf8').strip('\n')
         # Replace HTML non-breaking space with unicode
         entries_data = entries_data.replace('&nbsp;', u'\u00a0')
+        # Strip the leading <div> from translations
+        if entries_data.startswith('<div>'):
+            entries_data = entries_data[5:]
 
         entries_parts = entries_data.split('</header>')
         fg.title(re.findall(r'title="(.*?)"', entries_parts[0])[0])
         fg.subtitle(entries_parts[0].split('>')[1])
 
         entries = entries_parts[1].split('</article>')
-        # split() creates an empty final element
+        # split() creates an empty final element for source,
+        # and a junk final element for translations
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('</details>', 1)
             metadata = extract_entry_metadata(entry_parts[0])
