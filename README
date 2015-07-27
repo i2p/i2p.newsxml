@@ -4,6 +4,7 @@ Package Requirements:
 	python-virtualenv
 	libxml2-dev
 	libxslt1-dev
+	tx client to push/pull translations
 
 To set up:
 
