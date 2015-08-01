@@ -6,13 +6,13 @@
     "minJavaVersion": "1.6",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:f81f9b091b32eee6a91010ec38bfafc31ee77cb7&amp;dn=i2pupdate-0.9.21.su3&amp;tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:f81f9b091b32eee6a91010ec38bfafc31ee77cb7&dn=i2pupdate-0.9.21.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
           "http://stats.i2p/i2p/0.9.21/i2pupdate.su3"
         ]
       },
       "su2": {
-        "torrent": "magnet:?xt=urn:btih:462cec0860d24476bbd428a8d76297c239354808&amp;dn=i2pupdate-0.9.21.su2&amp;tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:462cec0860d24476bbd428a8d76297c239354808&dn=i2pupdate-0.9.21.su2&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
           "http://stats.i2p/i2p/0.9.21/i2pupdate.su2"
         ]
