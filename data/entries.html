@@ -1,5 +1,30 @@
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43"
+  title="0.9.22 Released"
+  href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release"
+  author="zzz"
+  published="2015-09-12T18:00:00Z"
+  updated="2015-09-12T18:00:00Z">
+<details>
+<summary>0.9.22 with bug fixes and starts Ed25519 migration</summary>
+</details>
+<p>
+0.9.22 contains fixes for i2psnark getting stuck before completion, and begins the migration of router infos to new, stronger Ed25519 signatures.
+To reduce network churn, your router will have only a small probability of converting to Ed25519 at each restart.
+When it does rekey, expect to see lower bandwidth usage for a couple of days as it reintegrates into the network with its new identity.
+If all goes well, we will accelerate the rekeying process in the next release.
+</p><p>
+I2PCon Toronto was a big success!
+All the presentations and videos are listed on the <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon page</a>.
+</p><p>
+As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.
+</p>
+</article>
+
+
+<article
   id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a"
   title="0.9.21 Released"
   href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release"

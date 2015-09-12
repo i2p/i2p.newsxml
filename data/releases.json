@@ -1,20 +1,20 @@
 [
   {
-    "date": "2015-07-31",
-    "version": "0.9.21",
+    "date": "2015-09-12",
+    "version": "0.9.22",
     "minVersion": "0.6.1.10",
     "minJavaVersion": "1.6",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:f81f9b091b32eee6a91010ec38bfafc31ee77cb7&dn=i2pupdate-0.9.21.su3&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:2c120e7f83860173e11678c73ed3cfc6c674a6e3&dn=i2pupdate-0.9.22.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
-          "http://stats.i2p/i2p/0.9.21/i2pupdate.su3"
+          "http://stats.i2p/i2p/0.9.22/i2pupdate.su3"
         ]
       },
       "su2": {
-        "torrent": "magnet:?xt=urn:btih:462cec0860d24476bbd428a8d76297c239354808&dn=i2pupdate-0.9.21.su2&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:9a08081fcc7e282b72f2f985e8d64798231392e4&dn=i2pupdate-0.9.22.su2&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
-          "http://stats.i2p/i2p/0.9.21/i2pupdate.su2"
+          "http://stats.i2p/i2p/0.9.22/i2pupdate.su2"
         ]
       }
     }

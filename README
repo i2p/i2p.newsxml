@@ -27,6 +27,8 @@ To write a news entry:
 
 $ EDITOR=vim ./create_new_entry.sh
 
+If it's an I2P release, edit data/releases.json as well.
+
 
 To push the new entry into translations:
 
