@@ -1,30 +1,15 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 Released" href="http://i2p-projekt.i2p/en/blog/post/2015/11/18/0.9.23-Release" author="str4d" published="2015-11-18T18:00:00Z" updated="2015-11-18T18:00:00Z"><details><summary>0.9.23 contains a variety of bug fixes, and some minor improvements in I2PSnark</summary></details><p>Hello I2P! This is the first release signed by me (str4d), after 49 releases
-signed by zzz. This is an important test of our redundancy for all things,
-including people.</p>
-<h2>Housekeeping</h2>
-<p>My signing key has been in router updates for over two years (since 0.9.9), so
-if you are on a recent version of I2P this update should be just as easy as
-every other update. However, if you are running an older version than 0.9.9, you
-will first need to manually update to a recent version. Update files for recent
-versions can be downloaded <a href="https://download.i2p2.de/releases/">here</a>,
-and instructions on how to manually update are provided
-<a href="https://geti2p.net/en/download#update">here</a>. Once you have manually
-updated, your router will then find and download the 0.9.23 update as usual.</p>
-<p>If you installed I2P via a package manager, you are not affected by the change,
-and can update as usual.</p>
-<h2>Update details</h2>
-<p>The migration of RouterInfos to new, stronger Ed25519 signatures is going well,
-with at least half of the network already estimated to have rekeyed. This
-release accelerates the rekeying process. To reduce network churn, your router
-will have a small probability of converting to Ed25519 at each restart. When it
-does rekey, expect to see lower bandwidth usage for a couple of days as it
-reintegrates into the network with its new identity.</p>
-<p>Note that this will be the last release to support Java 6. Please update to
-Java 7 or 8 as soon as possible. We are already working to make I2P compatible
-with the upcoming Java 9, and some of that work is in this release.</p>
-<p>We have also made some minor improvements in I2PSnark, and added a new page in
-the routerconsole for viewing older news items.</p>
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2015/11/18/0.9.23-Release" author="str4d" published="2015-11-18T18:00:00Z" updated="2015-11-18T18:00:00Z"><details><summary>Version 0.9.23 enthält verschiedene Fehlerkorrekturen und kleine Verbesserungen in I2PSnark</summary></details><p>Hallo I2P!
+Dieses ist nach 49 von zzz signierten Versionen die erste, die von mir (str4d) signiert wird. Dieses ist ein wichtiger Test für Redundanz in allen Bereich, auch für Personen.
+  </p>
+<h2>Aufräumarbeiten</h2>
+<p>Mein Signierschlüssel ist seit über 2 Jahren (Version 0.9.9) in den Router Updates, somit sollte das Update gleich funktionieren wie die anderen auch, solange ihr Router aktuelle genug ist. Falls Sie jedoch eine Version vor 0.9.9 nutzen, müssen sie manuell auf die aktuelle Version aktualisieren. Das Update hierzu kann <a href="https://download.i2p2.de/releases/">hier</a>, heruntergeladen werden, ein Anleitung finden Sie <a href="https://geti2p.net/de/download#update">dort</a>.
+Nach einem manuellen Update findet Ihr Router wieder die aktuellen Updates und aktualisiert sich automatisch.</p>
+<p>Falls Sie I2P mit einem Paket Manager installiert haben, ändert sich für Sie nichts und Sie können wie gewohnt aktualisieren.</p>
+<h2>Aktualisierungsdetails</h2>
+<p>Die Migration der RouterInformationen auf die neuen, stärkeren Ed25519 Signaturen funktioniert gut, die Hälfte des Netzwerkes ist schätzungsweise schon migriert. Diese Version beschleunigt den Migrationsvorgang. Um die Belastung im Netzwerk gering zu halten, wird Ihr Router nur zu einer geringen Wahrscheinlichkeit bei einem Neustart migriert. Nach der Migration werden Sie für eine gewisse Zeit eine geringere Bandbreite sehen, da der Router sich neu ins Netzwerk integrieren muss.</p>
+<p>Beachten Sie, das dieses die letzte Version sein wird, die Java 6 unterstützen wird. Bitte steigen Sie auf Java 7 oder 8 um, sobald es ihnen möglich ist. Wir arbeiten schon daran, I2P auf Java 9 lauffähig zu haben. Dieses wird in der nächsten Version integriert sein.</p>
+<p>Wir haben auch einige kleinere Verbesserungen in I2PSnark eingebaut, ebenso eine neue Seite in der Router Konsole, welche die älteren Neuigkeiten Einträge anzeigt.</p>
 <p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren.
 Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
 </article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22  Veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 mit Fehlerkorrekturen und dem Start der Migration zur Nutzung von Ed25519</summary></details><p>0.9.22 enthält Korrekturen zum I2PSnark Problem der kurz vorm Ende festhängenden Torrents und beginnt die Migration der Router zu neueren, sicheren Ed25519 Signaturen.
