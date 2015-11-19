@@ -33,6 +33,9 @@ for now use <p><b>.
 If it's an I2P release, edit data/releases.json as well.
 
 
+**WARNING:** *NEVER* push translations from here (tx push -t)! The strings will
+*NOT* match, and *ALL* translations will get out-of-sync!
+
 To push the new entry into translations:
 
 $ tx push -s

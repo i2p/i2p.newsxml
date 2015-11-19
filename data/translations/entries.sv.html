@@ -1,37 +1,16 @@
 <div>
-<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 Release" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 innehåller en mängd olika buggfixar och några mindre förbättringar i I2PSnark</summary></details><p>Hej I2P! Det här den första release som är signerad av mig (str4d), efter 49 releaser
-signerade zzz. Detta är ett viktigt test av vår redundans för allting,
-inklusive människor.</p>
+<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 Release" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 innehåller en mängd olika buggfixar och några mindre förbättringar i I2PSnark</summary></details><p>Hej I2P! Det här den första release som är signerad av mig (str4d), efter 49 releaser signerade zzz. Detta är ett viktigt test av vår redundans för allting, inklusive människor.</p>
 <p><b>Hushållning</b></p>
-<p>Min signeringsnyckel har funnits med i routeruppdateringarna i över två år (sedan 0.9.9), så
-om du har en ny version av I2P  kommer denna uppdatering att vara lika enkel som
-alla andra uppdateringar. Emellertid, om du kör en äldre version än 0.9.9 så
-måste du först uppdatera manuellt till en senare version. Uppdateringsfiler för nyare
-versioner kan laddas ner <a href="https://download.i2p2.de/releases/">här</a>,
-och instruktioner för manuell uppdatering finns <a href="https://geti2p.net/en/download#update">här</a>.
-När du har uppdaterat manuellt kommer routern själv att hitta och ladda ner 0.9.23 som vanligt. </p>
-<p>Om du har installerat I2P via en pakethanterare påverkas du inte av förändringen
-och kan uppdatera som vanligt.</p>
+<p>Min signeringsnyckel har funnits med i routeruppdateringarna i över två år (sedan 0.9.9), så om du har en ny version av I2P kommer denna uppdatering att vara lika enkel som alla andra uppdateringar. Emellertid, om du kör en äldre version än 0.9.9 så måste du först uppdatera manuellt till en senare version. Uppdateringsfiler för nyare versioner kan laddas ner <a href="https://download.i2p2.de/releases/">här</a>, och instruktioner för manuell uppdatering finns <a href="https://geti2p.net/en/download#update">här</a>. När du har uppdaterat manuellt kommer routern själv att hitta och ladda ner 0.9.23 som vanligt.</p>
+<p>Om du har installerat I2P via en pakethanterare påverkas du inte av förändringen och kan uppdatera som vanligt.</p>
 <p><b>Uppdateringsdetaljer</b></p>
-<p>Migrationen av RouterInfos till en ny, starkare Ed25519-signatur går bra,
-uppskattningsvis halva nätverket använder redan de nya nycklarna. Denna release
-snabbar upp processen ytterligare. För att reducera svallet i nätverket, kommer din router att ha en liten chans att konvertera till Ed25519 vid varje omstart. När den
-slutligen konverterar kommer du att se lägre bandbreddsanvändning i några dagar
-medans den återintegreras i nätverket med en ny identitet. </p>
-<p>Notera att detta är den sista release som stöder Java 6. Uppgradera till Java 7 eller 8 så snart som möjligt. Vi arbetar redan med att göra I2P kompatibelt med
-den kommande Java 9, och en del av det arbetet finns med redan i denna release.</p>
-<p>Vi har också gjort några mindre förbättringar i I2PSnark, och lagt till en ny sida i
-routerkonsollen för att läsa äldre nyheter.</p>
-<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att
-upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
-</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22 Släppt" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 med buggfixar och påbörjar Ed25519-migrationen</summary></details><p>0.9.22 innehåller fixar för att lösa problemet med att i2psnark fastnar innan den blir klar, och påbörjar migrationen av routerinfo till nya starkare Ed25519-signaturer.
-För att minska nätverksbelastningen har din router bara en liten chans att konvertera till Ed25519 vid varje uppstart.
-När den beräknar om sina nycklar, räkna med att se minskad användning av bandbredd under ett par dagar medan den återansluter till nätverket med sin nya identitet.
-Om allt går som det ska, kommer vi accelerera den nya beräkningen i nästa version.</p>
-<p>I2PCon Toronto var lyckad!
-Alla presentationer och videofilmer finns listade på <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon-sidan</a>.</p>
-<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att
-upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
+<p>Migrationen av RouterInfos till en ny, starkare Ed25519-signatur går bra, uppskattningsvis halva nätverket använder redan de nya nycklarna. Denna release snabbar upp processen ytterligare. För att reducera svallet i nätverket, kommer din router att ha en liten chans att konvertera till Ed25519 vid varje omstart. När den slutligen konverterar kommer du att se lägre bandbreddsanvändning i några dagar medans den återintegreras i nätverket med en ny identitet.</p>
+<p>Notera att detta är den sista release som stöder Java 6. Uppgradera till Java 7 eller 8 så snart som möjligt. Vi arbetar redan med att göra I2P kompatibelt med den kommande Java 9, och en del av det arbetet finns med redan i denna release.</p>
+<p>Vi har också gjort några mindre förbättringar i I2PSnark, och lagt till en ny sida i routerkonsollen för att läsa äldre nyheter.</p>
+<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
+</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22 Släppt" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 med buggfixar och påbörjar Ed25519-migrationen</summary></details><p>0.9.22 innehåller fixar för att lösa problemet med att i2psnark fastnar innan den blir klar, och påbörjar migrationen av routerinfo till nya starkare Ed25519-signaturer. För att minska nätverksbelastningen har din router bara en liten chans att konvertera till Ed25519 vid varje uppstart. När den beräknar om sina nycklar, räkna med att se minskad användning av bandbredd under ett par dagar medan den återansluter till nätverket med sin nya identitet. Om allt går som det ska, kommer vi accelerera den nya beräkningen i nästa version.</p>
+<p>I2PCon Toronto var lyckad! Alla presentationer och videofilmer finns listade på <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon-sidan</a>.</p>
+<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
 </article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21 Färdig" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 släppt med prestandaförbättringar och rättningar.</summary></details><p>0.9.21 innehåller  flera förändringar för att öka nätverkets kapacitet, förbättra effektiviteten hos floodfills,
 och använda bandbredden mer effektivt.
 Vi har migrerat de delade klienttunnlarna till ECDSA signaturer och lagt till DSA som fallback
@@ -39,8 +18,7 @@ genom att använda den nya "multisession" möjligheten för de sajter som inte s
 <p>Talarna och schemat för I2PCon i Toronto 2015 är klara.
 Titta på  <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon p</a> för mer information.
 Reservera plats på <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
-<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att
-upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
+<p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
 </article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="I2PCon Toronto. Talare och schema offentliga." href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>I2PCon Toronto 2015. Talare och schema offentliga.</summary></details><p>Talarna och schemat för I2PCon i Toronto 2015 är klara.
 Titta på  <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon p</a> för mer information.
 Reservera plats på <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
