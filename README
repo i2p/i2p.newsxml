@@ -27,6 +27,9 @@ To write a news entry:
 
 $ EDITOR=vim ./create_new_entry.sh
 
+The highest-level heading that can be used is <h4>, but it looks bad in CSS, so
+for now use <p><b>.
+
 If it's an I2P release, edit data/releases.json as well.
 
 
