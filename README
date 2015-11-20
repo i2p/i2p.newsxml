@@ -23,6 +23,7 @@ $ pip uninstall feedgen-i2p
 $ pip install .
 
 
+
 To write a news entry:
 
 $ EDITOR=vim ./create_new_entry.sh
@@ -31,6 +32,18 @@ The highest-level heading that can be used is <h4>, but it looks bad in CSS, so
 for now use <p><b>.
 
 If it's an I2P release, edit data/releases.json as well.
+
+NOTE: Only the following XHTML entities are allowed in news entries.
+Strict XHTML is required. This is enforced in NewsXMLParser.
+
+    "a", "b", "br", "div", "i", "p", "span", "font", "blockquote", "hr",
+    "del", "ins", "em", "strong", "mark", "sub", "sup", "tt", "code", "strike", "s", "u",
+    "h4", "h5", "h6",
+    "ol", "ul", "li", "dl", "dt", "dd",
+    "table", "tr", "td", "th"
+
+Please use .i2p links instead of clearnet links in news entries if possible.
+
 
 
 **WARNING:** *NEVER* push translations from here (tx push -t)! The strings will
