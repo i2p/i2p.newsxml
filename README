@@ -63,3 +63,17 @@ $ tx pull -a
 To build the feeds:
 
 $ ./news.sh
+
+
+Example rewrite rules for lighttpd to host the feeds:
+
+    url.rewrite-repeat = (
+        "^/news/news.atom.xml\?lang=([a-z]+(_[A-Za-z]+)?)" => "/news/news_$1.atom.xml",
+        "^/news/news.su3\?lang=([a-z]+(_[A-Za-z]+)?)" => "/news/news_$1.su3",
+    )
+    url.rewrite-repeat-if-not-file = (
+        "^/news/news_([a-z]+)_[A-Za-z]+.atom.xml" => "/news/news_$1.atom.xml",
+        "^/news/news_([a-z]+)_[A-Za-z]+.su3" => "/news/news_$1.su3",
+        "^/news/news_[a-z]+.atom.xml" => "/news/news.atom.xml",
+        "^/news/news_[a-z]+.su3" => "/news/news.su3",
+    )
