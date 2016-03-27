@@ -32,6 +32,16 @@ prepare_lang_gz () {
     gzip -c -n $file > "$TMP_PREFIX$lang$XML_GZ_SUFFIX"
 }
 
+show_su3_and_mv () {
+    local file=$1
+
+    echo
+    echo "$file:"
+    java -cp $I2P/lib/i2p.jar net.i2p.crypto.SU3File \
+        showversion $file
+    mv $file $BUILD
+}
+
 
 ./generate_news.py
 
@@ -53,11 +63,11 @@ then
     exit 1
 fi
 
+show_su3_and_mv "$TMP/news$SU3_SUFFIX"
 for file in `ls $TMP_PREFIX*$SU3_SUFFIX`; do
-    java -cp $I2P/lib/i2p.jar net.i2p.crypto.SU3File \
-        showversion $file
-    mv $file $BUILD
+    show_su3_and_mv $file
 done
 
 rm -r $TMP
+echo
 ls -l $BUILD
