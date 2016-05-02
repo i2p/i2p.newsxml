@@ -1,5 +1,6 @@
 #!./env/bin/python
 # -*- coding: utf-8 -*-
+from datetime import datetime
 from feedgen.feed import FeedGenerator
 import glob
 import json
@@ -10,6 +11,7 @@ DATA_DIR = 'data'
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
 TRANSLATED_ENTRIES_FILES = os.path.join(DATA_DIR, 'translations/entries.*.html')
 RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
+CRL_FILES = os.path.join(DATA_DIR, 'crls/*.crl')
 
 BUILD_DIR = 'build'
 NEWS_FILE = os.path.join(BUILD_DIR, 'news.atom.xml')
@@ -57,7 +59,6 @@ def extract_entry_metadata(s):
     return m
 
 def load_releases(fg):
-    fg.load_extension('i2p')
     with open(RELEASES_FILE) as json_data:
         d = json.load(json_data)
         for release in d:
@@ -83,14 +84,30 @@ def load_releases(fg):
                     for url in update['url']:
                         u.url(url)
 
+def load_revocations(fg):
+    # Only add a revocations element if there are CRLs
+    r = None
+    for crl in glob.glob(CRL_FILES):
+        if r is None:
+            r = fg.i2p.add_revocations()
+        crl_id = os.path.splitext(os.path.basename(crl))[0]
+        c = r.add_crl(crl_id)
+        c.updated(datetime.fromtimestamp(os.path.getmtime(crl)))
+        with open(crl) as f:
+            crl_content = f.read().decode('utf8').strip()
+            c.content('\n%s\n' % crl_content)
+        
+
 def generate_feed(entries_file=None):
     language = entries_file and entries_file.split('.')[1] or 'en'
 
     fg = FeedGenerator()
+    fg.load_extension('i2p')
     fg.language(language)
     load_feed_metadata(fg)
     load_entries(fg, entries_file and entries_file or ENTRIES_FILE)
     load_releases(fg)
+    load_revocations(fg)
 
     if not os.path.exists(BUILD_DIR):
         os.mkdir(BUILD_DIR)

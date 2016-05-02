@@ -6,6 +6,7 @@ I2P_NS = 'http://geti2p.net/en/docs/spec/updates'
 class I2pExtension(BaseExtension):
     def __init__(self):
         self.__i2p_releases = []
+        self.__i2p_revocations = None
 
     def extend_ns(self):
         return {'i2p': I2P_NS}
@@ -14,6 +15,9 @@ class I2pExtension(BaseExtension):
         for release in self.__i2p_releases:
             release = release.to_atom()
             atom_feed.append(release)
+        if self.__i2p_revocations is not None:
+            revocations = self.__i2p_revocations.to_atom()
+            atom_feed.append(revocations)
         return atom_feed
 
     def add_release(self, release=None):
@@ -21,6 +25,12 @@ class I2pExtension(BaseExtension):
             release = Release()
         self.__i2p_releases.append(release)
         return release
+
+    def add_revocations(self, revocations=None):
+        if revocations is None:
+            revocations = Revocations()
+        self.__i2p_revocations = revocations
+        return revocations
 
 class I2pEntryExtension():
     def extend_atom(self, atom_feed):
@@ -128,3 +138,46 @@ class Update(object):
         if url is not None:
             self.__update_url.append(url)
         return self.__update_url
+
+class Revocations(object):
+    def __init__(self):
+        # required
+        self.__revocations_crls = {}
+
+    def to_atom(self):
+        if not self.__revocations_crls:
+            raise ValueError('Required fields not set')
+
+        revocations = etree.Element('{%s}revocations' % I2P_NS)
+
+        for crl_id, crl in self.__revocations_crls.iteritems():
+            crl_node = etree.SubElement(revocations, '{%s}crl' % I2P_NS)
+            crl_node.attrib['id'] = crl_id
+            crl_node.attrib['updated'] = crl.updated().isoformat()
+            crl_node.text = crl.content()
+
+        return revocations
+
+    def add_crl(self, crl_id, crl=None, replace=False):
+        if crl is None:
+            crl = Crl()
+        if self.__revocations_crls.has_key(crl_id) and not replace:
+            raise ValueError('CRL ID %s is already defined' % crl_id)
+        self.__revocations_crls[crl_id] = crl
+        return crl
+
+class Crl(object):
+    def __init__(self):
+        # required
+        self.__crl_updated = None
+        self.__crl_content = None
+
+    def updated(self, updated=None):
+        if updated is not None:
+            self.__crl_updated = updated
+        return self.__crl_updated
+
+    def content(self, content=None):
+        if content is not None:
+            self.__crl_content = content
+        return self.__crl_content
