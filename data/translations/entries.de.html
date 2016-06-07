@@ -1,5 +1,40 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>Version 0.9.23 enthält verschiedene Fehlerkorrekturen und kleine Verbesserungen in I2PSnark</summary></details><p>Hallo I2P! Dieses ist nach 49 von zzz signierten Versionen die erste, die von mir (str4d) signiert wird. Dieses ist ein wichtiger Test für Redundanz in allen Bereich, auch für Personen.</p>
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P Stack Exchange proposal" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P is now a proposed site on Stack Exchange!</summary></details><p>I2P is now a proposed site on Stack Exchange!
+Please <a href="https://area51.stackexchange.com/proposals/99297/i2p">commit to using it</a> so the beta phase can begin.</p>
+</article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26 contains crypto updates, Debian packaging improvements, and bug fixes</summary></details><p>0.9.26 contains a major upgrade to our native crypto library,
+a new addressbook subscription protocol with signatures,
+and major improvements to the Debian/Ubuntu packaging.</p>
+<p>For crypto, we have upgraded to GMP 6.0.0, and added support for newer processors,
+which will speed up crypto operations considerably.
+Also, we are now using constant-time GMP functions to prevent side-channel attacks.
+For caution, the GMP changes are enabled for new installs and Debian/Ubuntu builds only;
+we will include them for in-net updates in the 0.9.27 release.</p>
+<p>For Debian/Ubuntu builds, we have added dependencies on several packages,
+including Jetty 8 and geoip, and removed the equivalent bundled code.</p>
+<p>There's a collection of bug fixes also, including a fix for a timer bug
+that caused instability and performance degradations over time.
+As usual, we recommend that all users update to this release.
+The best way to help the network and stay secure is to run the latest release.</p>
+</article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25 enthält SAM 3.3, QR Bilder und Fehlerkorrekturen</summary></details><p>0.9.25 enthält eine neue Hauptversion von SAM, v3.3, um Multiprotokoll Anwendungen zu unterstützen.
+Sie fügt QR Bilder zum Austausch von Hidden Services Adressen mit anderen hinzu, ebenso "Identifikation" Bilder, um Adressen visuell zu unterscheiden.</p>
+<p>Wir haben eine neue "Router Familie" Einstellungsseite in der Konsole hinzugefügt, um es einfacher zu machen, zusammengehörige Router einer Person oder Gruppe zu kennzeichnen.
+Es gibt mehrere Änderungen um die Kapazität des Netzwerkes zu steigern und, hoffentlich, auch die erfolgreiche Tunnel Erstellungsrate zu erhöhen.</p>
+<p>Wir immer empfehlen wir allen Benutzern, auf diese Version zu aktualisieren.
+Der Beste Weg, dem Netzwerk zu helfen und sicher zu bleiben, ist die aktuelleste Version zu nutzen.</p>
+</article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 enthält diverse Fehlerkorrekturen und Verbesserungen</summary></details><p>0.9.24 enthält eine neue SAM Version (v3.2) und diverse Fehlerkorrekturen und Verbesserungen der Effizienz.
+Bitte beachten Sie, das dies die erste Version ist, die Java 7 benötigt.
+Bitte aktualisieren Sie ihre Java Installation auf Version 7 oder 8 sobald wie möglich.
+Ihr I2P Router wird nicht automatisch aktualisiert, solange Sie Java 6 nutzen.</p>
+<p>Um Probleme mit der antiken Commons-Logging Bibliothek zu vermeiden, haben wir diese entfernt.
+Dieses wird einige uralte I2P-Bote Plugin-Versionen (0.2.10 und älter, signiert von HungryHobo) abstürzen lassen, falls IMAP aktiviert ist.
+Der empfohlene Fix für dieses Problem ist die Installation des aktuellen Plugins, welches von str4d signiert wurde.
+Schauen Sie auf  <a href="http://bote.i2p/news/0.4.3">diesen Eintrag</a> für mehr Informationen.</p>
+<p>Wir hatten einen großartigen <a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">32C3 Kongress</a> und haben guten Fortschritt an unserem Projektplan für 2016 gemacht.
+Echelon hat einen Vortrag über I2Ps Geschichte und derzeitigen Status gehalten, die Folien sind  <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">hier</a> (pdf).
+Str4d besuchte die  <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Crypto</a> und hat einen Talk über die Migration von Kryptographie gegeben, seine Folien sind <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">hier</a> (pdf).</p>
+<p>Wir immer empfehlen wir allen Benutzern, auf diese Version zu aktualisieren.
+Der Beste Weg, dem Netzwerk zu helfen und sicher zu bleiben, ist die aktuelleste Version zu nutzen.</p>
+</article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>Version 0.9.23 enthält verschiedene Fehlerkorrekturen und kleine Verbesserungen in I2PSnark</summary></details><p>Hallo I2P! Dieses ist nach 49 von zzz signierten Versionen die erste, die von mir (str4d) signiert wird. Dieses ist ein wichtiger Test für Redundanz in allen Bereich, auch für Personen.</p>
 <p><b>Aufräumarbeiten</b></p>
 <p>Mein Signierschlüssel ist seit über 2 Jahren (Version 0.9.9) in den Router Updates, somit sollte das Update gleich funktionieren wie die anderen auch, solange ihr Router aktuelle genug ist. Falls Sie jedoch eine Version vor 0.9.9 nutzen, müssen sie manuell auf die aktuelle Version aktualisieren. Das Update hierzu kann <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">hier</a>, heruntergeladen werden, ein Anleitung finden Sie <a href="http://i2p-projekt.i2p/de/download#update">dort</a>. Nach einem manuellen Update findet Ihr Router wieder die aktuellen Updates und aktualisiert sich automatisch.</p>
 <p>Falls Sie I2P mit einem Paket Manager installiert haben, ändert sich für Sie nichts und Sie können wie gewohnt aktualisieren.</p>

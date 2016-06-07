@@ -1,0 +1,66 @@
+<div>
+<header title="I2P 新聞">新聞提要和路由器更新</header><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P Stack Exchange proposal" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P is now a proposed site on Stack Exchange!</summary></details><p>I2P is now a proposed site on Stack Exchange!
+Please <a href="https://area51.stackexchange.com/proposals/99297/i2p">commit to using it</a> so the beta phase can begin.</p>
+</article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26 contains crypto updates, Debian packaging improvements, and bug fixes</summary></details><p>0.9.26 contains a major upgrade to our native crypto library,
+a new addressbook subscription protocol with signatures,
+and major improvements to the Debian/Ubuntu packaging.</p>
+<p>For crypto, we have upgraded to GMP 6.0.0, and added support for newer processors,
+which will speed up crypto operations considerably.
+Also, we are now using constant-time GMP functions to prevent side-channel attacks.
+For caution, the GMP changes are enabled for new installs and Debian/Ubuntu builds only;
+we will include them for in-net updates in the 0.9.27 release.</p>
+<p>For Debian/Ubuntu builds, we have added dependencies on several packages,
+including Jetty 8 and geoip, and removed the equivalent bundled code.</p>
+<p>There's a collection of bug fixes also, including a fix for a timer bug
+that caused instability and performance degradations over time.
+As usual, we recommend that all users update to this release.
+The best way to help the network and stay secure is to run the latest release.</p>
+</article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 釋出" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25版包含了 SAM 3.3，QR codes，和錯誤修復</summary></details><p>0.9.25包含了SAM的重要新版本-v3.3，支援複雜多協議的應用。
+它加入了QR codes以便與他人分享隱藏伺服的地址，
+還有可以用視覺區別地址的"身分圖"。</p>
+<p>我們在控制台的配置頁面加上"路由家族"，
+可以更簡單的聲明您的路由器群組是由單人運行。
+有些改變是為了增加網路的容量，希望能增進隧道建置的成功。</p>
+<p>一如往常的，我們建議您更新到這個版本。要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 釋出" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24包含了一些漏洞修補和加速器</summary></details><p>0.9.24 包含了新版的 SAM(v3.2) 和許多的漏洞修復，以及效率的增進。
+注意這是首次需要Java 7的釋出版本。
+請盡速升級到Java 7或8。
+因為若您使用Java 6，您的路由器便不會自動更新。</p>
+<p>為了避免古早的共享資料庫造成麻煩，我們要把它移除。
+如果某些古早I2P-Bote外掛(0.2.10以下，飢餓流浪漢所簽屬)，允許互動郵件存取協定，那移除後它們會崩潰。
+比較建議的修復是，用當今str4d簽署的I2P-Bote外掛來取代古早的。
+更多細節請參考 <a href="http://bote.i2p/news/0.4.3">這篇</a>。</p>
+<p>我們舉辦了完美的<a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">32C3-30號混沌通訊大會</a>，而且對於我們2016的計畫有順利進展。
+Echelon的演講包括了I2P的歷史和現狀，他的投影片在 <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">這裡</a>(PDF)。
+Str4d出席了<a href="http://www.realworldcrypto.com/rwc2016/program">現實世界加密</a>也演說了我們的加密遷移，他的投影片在<a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">這裡</a> (PDF)。</p>
+<p>一如往常的，我們建議您更新到這個版本。要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 釋出" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 版本修正個數個程式錯誤，並且對於 I2PSnark 做了些許的改良</summary></details><p>嗨，I2P！這是在由 zzz 簽署發行的49個版本之後，由我(str4d)簽署的第一份發行版。這是個是對於所有人員與事物的重要冗餘測試。</p>
+<p><b>做點家事</b></p>
+<p>我的簽名金鑰已經在路由更新上超過兩年了(自 0.9.9)，所以如果您正在使用這版本的I2P，那麼這個更新應該就像之前的一樣簡單。不過若您使用的是早於0.9.9的版本，您必須手動更新至目前版本。目前版本的更新資料夾可以在<a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">這裡</a>下載，而手動更新的介紹則在<a href="http://i2p-projekt.i2p/en/download#update">此處</a>。
+一旦您完成手動更新，您的路由器便會像往常一樣，找到0.9.23更新並下載。</p>
+<p>若您的 I2P 是經用套件管理系統安裝的話，那您並不會被這次變更所影響，可以如往常一般繼續更新。</p>
+<p><b>更新資訊</b></p>
+<p>路由資訊的遷移-更強的Ed25519簽署，進行得很順利，估計至少一半的網路已經更新密鑰了。
+這次釋出可以加快更新密鑰。為了減少網路擾動，您的路由器每次重啟只有一些機率會轉換至Ed25519。
+一旦密鑰更新了，您可以期待在幾天內看到更少的頻寬使用，因為它用了新身分重新融合到了網路中。</p>
+<p>請注意，這是支援 Java 6 的最後一個版本，煩請盡速將您的 Java 更新到 7 或 8 版本。目前我們已經在處理 I2P 與 Java 9 的相容性問題，部分的成果會隨著此次的改版釋出。</p>
+<p>我們也有針對 I2PSnark 做了一些改善，也在路由控制台新增了一個可以查看舊聞的頁面。</p>
+<p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22 釋出" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>帶著漏洞修復的0.9.22 開始轉移至 Ed25519</summary></details><p>0.9.22包含了修復i2psnark未完成便卡住的問題，和開始將路由資訊轉移至新的、更強的Ed25519簽署。
+為了減少網路擾動，您的路由器每次重啟只有一些機率會轉換至Ed25519。
+一旦密鑰更新了，您可以期待在幾天內看到更少的頻寬使用，因為它用了新身分重新融合到了網路中。
+如果一切順利，我們會在下個釋出版本加速更新密鑰的速率。</p>
+<p>在多倫多舉辦的 I2PCon 研討會完美結束了！
+所有的簡報以及影片皆以陳列於 <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon 頁面</a>。</p>
+<p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21釋出" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21釋出版本帶著增進的效能與漏洞的修復。</summary></details><p>0.9.21 包含了ㄧ些改變。增加網路的容量，增進Flood Fill運算的效率，也改善頻寬的使用效率。
+我們把客戶端的分享隧道，轉移到 ECDSA橢圓曲線數位簽名演算法， 也使用『多協議』讓不支援ECDSA的網站有繼續使用DSA的退路。</p>
+<p>2015年多倫多I2PCon的演講者和時間表已經宣布。
+細節請看<a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon</a> 。
+在<a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>預定您的席次。</p>
+<p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="多倫多I2PCon的演講者和時間表已經宣布。" href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>2015年多倫多I2PCon的演講者和時間表已經宣布。</summary></details><p>2015年多倫多I2PCon的演講者和時間表已經宣布。
+細節請看<a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon</a> 。
+在<a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>預定您的席次。</p>
+</article>
+</div>
