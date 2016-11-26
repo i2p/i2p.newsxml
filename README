@@ -77,3 +77,28 @@ Example rewrite rules for lighttpd to host the feeds:
         "^/news/news_[a-z]+.atom.xml" => "/news/news.atom.xml",
         "^/news/news_[a-z]+.su3" => "/news/news.su3",
     )
+
+
+To generate a new signed blocklist:
+
+You must have router signing privileges (i.e. a certificate in $I2P/certificates/router)
+for routers to verify the signature. If you do not have privileges, ask somebody that
+does to generate it and check it in.
+Generation requires I2P 0.9.27-12 or higher.
+
+Input file is blocklist.txt. Format:
+One IPv4 or IPv6 address or base 64 router hash per line.
+No host names or netmasks (e.g. /24) are allowed.
+Comments start with # in column 1.
+To unblock an address or hash blocked in a previous blocklist, prefix with !
+
+Example blocklist.txt:
+# comment
+1.2.3.4
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+!5.6.7.8
+
+$ java -jar /path/to/routerconsole.jar blocklistentries [-p keystorepassword] /path/to/blocklist.txt /path/to/su3keystore.ks you@mail.i2p > data/blocklist.xml
+
+Review output file to see if it looks right.
+Don't forget to check in data/blocklist.xml.
