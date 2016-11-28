@@ -1,6 +1,12 @@
 <div>
-<header title="I2P News">Flux d'actualités et mises à jour du routeur</header><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P Stack Exchange proposal" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P is now a proposed site on Stack Exchange!</summary></details><p>I2P is now a proposed site on Stack Exchange!
-Please <a href="https://area51.stackexchange.com/proposals/99297/i2p">commit to using it</a> so the beta phase can begin.</p>
+<header title="I2P News">Flux d'actualités et mises à jour du routeur</header><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="Version 0.9.27" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary></summary><summary>La version 0.9.27 contient des corrections de bug</summary></details><p>La version 0.9.27 contient de nombreuses corrections de bugs.
+La bibliothèque GMP a été mise à jour pour accélérer la crypto, elle était disponible dans la version 0.9.26 uniquement pour les nouvelles installations et pour les paquets Debian, elle est désormais incluse dans la mise à jour intra-réseau pour la 0.9.27.
+Il y a eu des améliorations des transports IPv6, du test de pair SSU et du mode caché.</p>
+<p>Nous avons mis à jour de nombreux plugins durant l'<a href="http://i2p-projekt.i2p/fr/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> et le routeur devrait les mettre à jour automatiquement après avoir redémarré.</p>
+<p>Comme d'habitude, nous recommandons que tous les utilisateurs fassent la mise à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d'aider le réseau consiste à exécuter la dernière version sortie.</p>
+</article><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="Proposition de Stack Exchange I2P" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P est maintenant un site proposé sur Stack Exchange !</summary></details><p>I2P est maintenant un site proposé sur Stack Exchange !
+Veuillez <a href="https://area51.stackexchange.com/proposals/99297/i2p">participer en l'utilisant</a> afin que la phase beta puisse commencer.</p>
 </article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="Version 0.9.26" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>La version 0.9.26 contient des mises à jour de crypto, des améliorations de l'empaquetage pour Debian, et des corrections d'erreur</summary></details><p>La version 0.9.26 contient une amélioration majeure concernant notre bibliothèque crypto native,
 un nouveau protocole d'abonnement au carnet d'adresses avec signatures,
 et des améliorations majeures concernant l'empaquetage Debian/Ubuntu.</p>
@@ -10,7 +16,7 @@ De plus, nous utilisons maintenant des fonctions GMP en temps constant afin d'em
 Par précaution, les changements concernant GMP sont activés seulement pour les nouvelles installations et les builds Debian/Ubuntu ;
 nous les inclurons avec les mises à jour intra-réseau à partir de la version 0.9.27.</p>
 <p>Concernant les builds Debian/Ubuntu, nous avons ajouté des dépendances sur plusieurs paquets,
-incluant Jetty 8 et Geoip, et enlevé le code équivalent qui était auparavant inclus.</p>
+incluant Jetty 8 et geoip, et enlevé le code équivalent qui était auparavant inclus.</p>
 <p>Il y a aussi une collection de corrections d'erreurs, y compris une correction de bogue du minuteur
 qui causait de l'instabilité et des dégradations de performance au fil du temps.
 Comme d'habitude, nous recommandons que tous les utilisateurs mettent à niveau vers cette version.
@@ -27,9 +33,9 @@ La meilleure façon de maintenir la sécurité et d'aider le réseau consiste à
 Notez que cette version est la première à nécessiter Java 7.
 Veuillez mettre à niveau vers Java 7 ou 8 dès que possible.
 Votre routeur ne pourra pas se mettre à jour automatiquement si vous utilisez Java 6.</p>
-<p>Pour empêcher les problèmes causés par l'ancienne bibliothèque "commons-logging", nous l'avons enlevée.
-Ceci causera le plantage des très vieux plug-ins I2P-Bote (0.2.10 et précédents, signés par HungryHobo) s'ils ont IMAP d'activé.
-La correction recommandée consiste à remplacer votre vieux plug-in I2P-Bote par l'actuel signé par str4d.
+<p>Pour empêcher les problèmes causés par l'ancienne bibliothèque commons-logging, nous l'avons enlevée.
+Ceci causera le plantage des très vieux plugins I2P-Bote (0.2.10 et précédents, signés par HungryHobo) s'ils ont IMAP activé.
+La correction recommandée consiste à remplacer votre vieux plugin I2P-Bote par l'actuel signé par str4d.
 Pour plus de détails, voir <a href="http://bote.i2p/news/0.4.3">ce message</a>.</p>
 <p>Nous avons eu un super <a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">congrès 32C3</a> et faisons de bons progrès concernant nos projets pour 2016.
 Echelon a donné une conférence concernant l'histoire d'I2P et son statut actuel, ses diaporamas sont <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">ici</a> (pdf).
