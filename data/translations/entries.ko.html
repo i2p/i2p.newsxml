@@ -1,0 +1,101 @@
+<div>
+<header title="I2P 뉴스">뉴스 피드와 라우터 업데이트</header><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="I2P-Bote Security Vulnerability" href="http://i2pbote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 fixes a security vulnerability present in all earlier versions of the
+I2P-Bote plugin. The Android app was not affected.</p>
+<p>A lack of CSRF protection meant that if a user was running I2P-Bote and then loaded a
+malicious site in a browser with JavaScript enabled, the adversary could trigger actions
+in I2P-Bote on behalf of the user, such as sending messages. This might also have enabled
+extraction of private keys for I2P-Bote addresses, however no proof-of-exploit was tested
+for this.</p>
+<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
+after I2P 0.9.28 is released in mid-December. However, for safety we recommend that you
+<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
+upgrade manually if you plan on using I2P or I2P-Bote in the intervening time. You should
+also consider generating new I2P-Bote addresses if you regularly browse sites with
+JavaScript enabled while running I2P-Bote.</p>
+</article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="0.9.27 가 릴리즈 되었습니다!" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary></summary><summary>0.9.27 버전은 버그 픽스를 포함하고 있습니다</summary></details><p>0.9.27 은 많은 버그픽스를 포함합니다.
+이미 0.9.26 버전의 새 설치판과 데비안 빌드에서는 포함되었던 암호화 가속을 위한 GMP 라이브러리 업데이트가 인-네트워크 업데이트 판에도 포함됩니다.
+또한 IPv6 프랜스포트, SS 피어 테스팅, 히든 모드의 성능을 향상시켰습니다.</p>
+<p><a href="http://i2p-projekt.i2p/en/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> 동안 많은 수의 플러그인들을 업데이트 했으며 재시작 이후 자동으로 업데이트 될것입니다.</p>
+<p>보통처럼, 우리는 모든 유저가 이 릴리즈로 업데이트 하는것을 권장합니다.
+최신 버전을 운영하는 것은 네트워크를 돕고 안전한 상태로 유지하는 것을 돕는 가장 좋은 방법입니다.</p>
+</article><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P를 스택 익스체인지에 제안해주세요" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P가 스택 익스체인지에 제안되었습니다!</summary></details><p>I2P가 스택 익스체인지에 제안되었습니다.
+<a href="https://area51.stackexchange.com/proposals/99297/i2p">활동을 해주시면</a> 스택 익스체인지의 베타 과정으로 넘어가게 됩니다.</p>
+</article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26가 릴리즈 되었습니다" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26은 암호화 업데이트, 데비안 패키지 향상, 몇몇 버그 픽스가 포함됩니다.</summary></details><p>0.9.26에는 암호화 라이브러리의 주요 업데이트가 들어가 있습니다.
+그리고 서명된 새 주소록 구독 프로토콜과, 데비안/안드로이드 패키징에 관한 주요 업데이트가 포함됩니다.</p>
+<p>암호화에 관련해 말씀드리면 라이브러리를 GMP 6.0.0 버전으로 업그레이드 하였고 새로 나온 프로세서에 대한 지원을 추가하였습니다.
+암호화 성능에 많은 도움을 줄것으로 기대됩니다.
+그리고, side-channel attacks를 막기 위해 GMP의 constant-time 기능을 사용하기로 하였습니다.
+그러나 이 GMP 변경 사항은 새로 설치하거나 데비안/우분투 빌드에서만 사용 가능합니다.
+in-net 업데이트에서는 0.9.27에 포함할 것입니다.</p>
+<p>데비안/우분투 빌드에 새로운 의존성 패키지들을 추가했습니다.
+Jetty 8, geoip를 추가하고 같은 역할을 하던 내장 코드들은 제거했습니다.</p>
+<p>몇몇 버그들도 같이 해결하였습니다. 성능과 안전성을 악화시키던 timer bug를 포함해서 말이죠.
+언제나 우리는 모든 유저가 이 릴리즈로 업데이트 하는것을 권장합니다. 최신 버전을 운영하는 것은 네트워크를 돕고 안전한 상태로 유지하는 것을 돕는 가장 좋은 방법입니다.</p>
+</article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 릴리즈 됨" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25 패치는 SAM 3.3, QR codes, 몇가지 버그 픽스를 포함합니다.</summary></details><p>0.9.25는 복잡한 멀티프로토콜 어플리케이션 지원을 위해, 새 메이저 버전의 SAM, v3.3를 포함합니다.
+숨겨진 서비스 주소들을 QR코드를 통해 타인과 공유할 수 있고, 주소 구별을 시각적으로 구별하기 위해 "인식표" 이미지를 추가했습니다.</p>
+<p>우리는 콘솔에 새 "라우터 제품군" 페이지를 콘솔에 추가해서,
+한 사람이 라우터 그룹을 운영하는 것을 쉽게 알아볼 수 있게 했습니다.
+네트워크의 가용성을 올리고 터널 생성 성공률을 올리기 위해 몇가지 수정이 가해졌습니다.</p>
+<p>보통처럼, 우리는 모든 유저가 이 릴리즈로 업데이트 하는것을 권장합니다.
+최신 버전을 운영하는 것은 네트워크를 돕고 안전한 상태로 유지하는 것을 돕는 가장 좋은 방법입니다.</p>
+</article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 는 몇가지 버그패치 및 속도상향을 이루었습니다.</summary></details><p>0.9.24 는 새 SAM (v3.2) 과 버그 픽스, 성능향상이 포함됩니다.
+이 릴리즈는 처음으로 JAVA7을 요구하게 됩니다. 
+JAVA7이나 JAVA8로 업그레이드 하시기 바랍니다.
+JAVA6을 사용하고 있다면 라우터가 자동으로 업데이트가 되지 않습니다.</p>
+<p>오래된 로그 라이브러리가 문제를 일으켜 삭제하기로 결정했습니다.
+IMAP이 활성화되있다면, 매우 오래된 버전의 I2P-Bote 플러그인 (0.2.10 이하, HungryHobo에 의해 서명된 버전)은 문제를 일으킬 겁니다.
+str4d에 의해 서명된 현재의 버전으로 교체하는 것을 권장합니다.
+더 많은 정보를 보시려면, <a href="http://bote.i2p/news/0.4.3">이 포스트를</a> 보십시오.</p>
+<p>전에 열렸었던 <a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">32C3 회의</a>는 매우 뜻깊었으며 그에 따라 2016년의 계획들을 만들고 있습니다.
+Echelon는 I2P의 역사와 현재의 상황들을 이야기 해주었고, 그의 자료들은 <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">여기</a> (pdf)서 볼 수 있습니다.
+Str4d는 <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Crypto</a> 를 주제로 이야기했으며, 우리의 암호화 마이그레이션에 대해 이야기했습니다, 
+그의 자료들은 <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">여기</a> (pdf) 있습니다.</p>
+<p>보통처럼, 우리는 모든 유저가 이 릴리즈로 업데이트 하는것을 권장합니다.
+최신 버전을 운영하는 것은 네트워크를 돕고 안전한 상태로 유지하는 것을 돕는 가장 좋은 방법입니다.</p>
+</article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 는 여러 버그 픽스와 함께 I2PSnark의 작은 성능향상을 포함합니다.</summary></details><p>안녕하세요! I2P 사용자 여러분. 이 릴리즈는 제가 서명한 첫번째 릴리즈입니다 (str4d). zzz가 서명한 49개의 릴리즈를 거쳐서 말이죠. 
+이는 모든것에 대한 정리, 감원에 중요한 테스트가 될 것입니다. 사람들을 포함해서요.</p>
+<p><b>보안</b></p>
+<p>제 서명 키는 2년동안 I2P 릴리즈에 포함되어 있었으므로 (0.9.9 이후), 만약 최근의 I2P 버전을 사용하시고 계시다면 자동 업데이트가 쉬울겁니다.
+하지만, 만약 0.9.9 이하의 오래된 I2P 버전을 이용하고 계시다면 수동으로 업데이트를 시켜줘야 합니다.
+업데이트 파일들은
+<a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">여기서</a> 다운받을 수 있습니다,
+그리고 어떻게 수동 업데이트를 하는지는 
+<a href="http://i2p-projekt.i2p/en/download#update">여기</a> 있습니다.
+만약 수동으로 업데이트 되었다면, I2P는 자동으로 0.9.23 최신 버전을 찾아 업데이트 할것입니다.</p>
+<p>만약 패키지 관리자를 통해 I2P를 설치했다면, 그냥 평소대로 업데이트 하시면 됩니다.</p>
+<p><b>업데이트 상세</b></p>
+<p>The migration of RouterInfos to new, stronger Ed25519 signatures is going well,
+with at least half of the network already estimated to have rekeyed. This
+release accelerates the rekeying process. To reduce network churn, your router
+will have a small probability of converting to Ed25519 at each restart. When it
+does rekey, expect to see lower bandwidth usage for a couple of days as it
+reintegrates into the network with its new identity.</p>
+<p>Note that this will be the last release to support Java 6. Please update to
+Java 7 or 8 as soon as possible. We are already working to make I2P compatible
+with the upcoming Java 9, and some of that work is in this release.</p>
+<p>We have also made some minor improvements in I2PSnark, and added a new page in
+the routerconsole for viewing older news items.</p>
+<p>As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22가 릴리즈 되었습니다" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22에는 버그 픽스와 Ed25519 마이그레이션이 포함됩니다</summary></details><p>0.9.22 contains fixes for i2psnark getting stuck before completion, and begins the migration of router infos to new, stronger Ed25519 signatures.
+To reduce network churn, your router will have only a small probability of converting to Ed25519 at each restart.
+When it does rekey, expect to see lower bandwidth usage for a couple of days as it reintegrates into the network with its new identity.
+If all goes well, we will accelerate the rekeying process in the next release.</p>
+<p>I2PCon Toronto was a big success!
+All the presentations and videos are listed on the <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon page</a>.</p>
+<p>As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 버전에는 버그 수정과 함께 성능 향상이 이루어졌습니다.</summary></details><p>0.9.21 contains several changes to add capacity to the network, increase the efficiency of the floodfills,
+and use bandwidth more effectively.
+We have migrated the shared clients tunnels to ECDSA signatures and added a DSA fallback
+using the new "multisession" capability for those sites that don't support ECDSA.</p>
+<p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
+Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
+Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
+<p>As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="I2PCon 토론토의 연설자와 스케줄이 공표됩니다" href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>I2PCon 토론토 2015 연설자와 스케줄이 공표됩니다</summary></details><p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
+Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
+Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
+</article>
+</div>
