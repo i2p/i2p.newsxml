@@ -92,6 +92,12 @@ No host names or netmasks (e.g. /24) are allowed.
 Comments start with # in column 1.
 To unblock an address or hash blocked in a previous blocklist, prefix with !
 
+Blocking/unblocking guidelines: Do not add blocks already in the release
+blocklist (installer/resources/blocklist.txt in the source, or
+$I2P/blocklist.txt in the installation directory).
+Unblocks only work if blocked in a previous feed; they will not override
+the release blocklist.
+
 Example blocklist.txt:
 # comment
 1.2.3.4
