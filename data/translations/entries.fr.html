@@ -1,18 +1,16 @@
 <div>
-<header title="I2P News">Flux d'actualités et mises à jour du routeur</header><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
-<p>A lack of CSRF protection meant that if a user was running I2P-Bote and then loaded a
-malicious site in a browser with JavaScript enabled, the adversary could trigger actions
-in I2P-Bote on behalf of the user, such as sending messages. This might also have enabled
-extraction of private keys for I2P-Bote addresses, however no proof-of-exploit was tested
-for this.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.28 is released in mid-December. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time. You should
-also consider generating new I2P-Bote addresses if you regularly browse sites with
-JavaScript enabled while running I2P-Bote.</p>
-</article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="Version 0.9.27" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary></summary><summary>La version 0.9.27 contient des corrections de bug</summary></details><p>La version 0.9.27 contient de nombreuses corrections de bugs.
+<header title="I2P News">Flux d'actualités et mises à jour du routeur</header><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="La version 0.9.28 est sortie" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>La version 0.9.28 contient des corrrections de bugs</summary></details><p>La version 0.9.28 contient des corrections pour plus de 25 tickets Trac, et des mises à jour pour un certain nombre de logiciels inclus, y compris Jetty.
+Il y a des corrections pour la fonction de test de pairs en IPv6, qui a été incluse lors de la précédente version.
+Nous continuons à améliorer la détection et le blocage de pairs qui seraient potentiellement malveillants.
+Il y a aussi des corrections préliminaires pour Java 9, bien que nous ne recommandions pas encore Java 9 pour un usage général.</p>
+<p>I2P sera au 33C3, veuillez faire un détour par notre table et nous donner vos idées sur comment améliorer le réseau.
+Lors du congrès nous examinerons notre feuille de route 2017 et nos priorités 2017.</p>
+<p>Comme d'habitude, nous recommandons que tous les utilisateurs fassent la mise à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d'aider le réseau consiste à exécuter la dernière version sortie.</p>
+</article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="Faille de sécurité I2P-Bote" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 corrige une faille de sécurité présente dans toutes les versions précédentes du plug-in I2P-Bot. L'application Android n'était pas affectée.</p>
+<p>Un manque de protection CSRF, ceci signifiant que si un utilisateur exécutait I2P-Bote et a ensuite chargeait sur un site malveillant dans un navigateur en ayant Javascript permis, l'adversaire pourrait déclencher des actions dans I2P-Bote pour le compte de l'utilisateur, comme faire de l'envoi de messages. Ceci pourrait aussi avoir permis l'extraction de clés privées de l'adresse d'I2P-Bote, cependant aucune preuve d'exploit n'a été testée pour ceci.</p>
+<p>Tous les utilisateurs d'I2P-Bote seront mis à niveau automatiquement la première fois qu'ils redémarreront leur routeur après que I2P v0.9.28 soit sorti mi-décembre. Cependant, pour la sécurité nous recommandons de <a href="http://bote.i2p/install/">suivre les instructions de la page d'installation</a> afin de mettre à niveau manuellement si vous prévoyez d'utiliser I2P ou I2P-Bote durant cet intervalle. Vous devriez envisagez aussi de générer une nouvelle adresse I2P-Bote si vous naviguez régulièrement sur des sites sur lesquels Javascript est permis tout en exécutant I2P-Bote.</p>
+</article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="Version 0.9.27" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary>La version 0.9.27 contient des corrections de bug</summary></details><p>La version 0.9.27 contient de nombreuses corrections de bugs.
 La bibliothèque GMP a été mise à jour pour accélérer la crypto, elle était disponible dans la version 0.9.26 uniquement pour les nouvelles installations et pour les paquets Debian, elle est désormais incluse dans la mise à jour intra-réseau pour la 0.9.27.
 Il y a eu des améliorations des transports IPv6, du test de pair SSU et du mode caché.</p>
 <p>Nous avons mis à jour de nombreux plugins durant l'<a href="http://i2p-projekt.i2p/fr/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> et le routeur devrait les mettre à jour automatiquement après avoir redémarré.</p>
