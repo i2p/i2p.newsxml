@@ -1,0 +1,17 @@
+  <i2p:blocklist updated="2016-12-28T12:31:25Z" signed-by="str4d@mail.i2p" sig="6:mL~OjVdUdrezxrMm~QDyN0KuGBAL6PgKdBDUreO9rXt-BYHgRk-PvGAihL2f2xx0TMeT05H9pLVBEO3QRUXEPrZDeEY~Kk2enSibPnHQPNfbZEOQqMxx15ZdTledS80GIKpfN5ZlxbYHhtCFJo4BcwV8kCszOd2QJmya8kUBAkruT20lb1QhA5I7~srgE1k0de2IbGlo0KjBCQYPJFw3c0ptJYi8jeGkwgoueXLqtssWA8xfjTzZm1OJAMoJu-upZ~RbPmyRucC~c2a2Og0n4Tbn6M2hKUg0N2Z472wvShxmvzWV-a8OGGX4zc72PPmK8ckyZS2ZBxbjCcq3AgXRUxAugKA-uyVV1-NEn-AdGVbFnNj2FiSdFHKyYLuSlfsIXO94kEc37Ng62iib6zf5ev5JnJkpNWXvHhX8xzYS7~8rqV~1SyhmHemiHEZ19uOcZg7-aPYxqnQzkkeoLrQOHobEarvFqxNfyLBKh-0yK9i6M5sXYPJzS4QMqymK11qjWjZtpMUTjxs7kXr2CSnJ-w9LBsDZmSMxu3WrFvWlg4HmXXRKBHwghLSx1EOyYFD9RMxoiQ5g8Am1UF8a2ACaAZs8G8cQ3ashEuPhvlu7lOmFii2dIViX3phGe2TDVpUCEE9BnjScMlCeFThIRupiF7EvF-9thI0PdtJpjOla6qo=">
+    <i2p:block>45.32.152.247</i2p:block>
+    <i2p:block>45.63.76.128</i2p:block>
+    <i2p:block>45.76.98.64</i2p:block>
+    <i2p:block>45.76.152.150</i2p:block>
+    <i2p:block>104.156.254.54</i2p:block>
+    <i2p:block>108.61.251.143</i2p:block>
+    <i2p:block>133.130.124.185</i2p:block>
+    <i2p:block>163.44.149.31</i2p:block>
+    <i2p:block>2001:df6:b800:1128:a163:44:149:310</i2p:block>
+    <i2p:block>2001:19f0:4400:4376:5400:ff:fe47:bcbd</i2p:block>
+    <i2p:block>2001:19f0:5801:1d4:5400:ff:fe38:a26e</i2p:block>
+    <i2p:block>2001:19f0:5c01:1df:5400:ff:fe3e:ba8f</i2p:block>
+    <i2p:block>2001:19f0:7001:cb:5400:ff:fe47:c952</i2p:block>
+    <i2p:block>2400:8500:1302:816:a150:95:128:1656</i2p:block>
+    <i2p:block>2400:8500:1302:802:a133:130:124:1855</i2p:block>
+  </i2p:blocklist>
