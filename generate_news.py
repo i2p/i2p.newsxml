@@ -4,6 +4,7 @@ from datetime import datetime
 from feedgen.feed import FeedGenerator
 import glob
 import json
+from lxml import etree
 import re
 import os.path
 
@@ -12,6 +13,7 @@ ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
 TRANSLATED_ENTRIES_FILES = os.path.join(DATA_DIR, 'translations/entries.*.html')
 RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
 CRL_FILES = os.path.join(DATA_DIR, 'crls/*.crl')
+BLOCKLIST_FILE = os.path.join(DATA_DIR, 'blocklist.xml')
 
 BUILD_DIR = 'build'
 NEWS_FILE = os.path.join(BUILD_DIR, 'news.atom.xml')
@@ -96,7 +98,18 @@ def load_revocations(fg):
         with open(crl) as f:
             crl_content = f.read().decode('utf8').strip()
             c.content('\n%s\n' % crl_content)
-        
+
+
+def load_blocklist(fg):
+    # Only add a blocklist element if there is content
+    b = None
+    if os.path.isfile(BLOCKLIST_FILE):
+        with open(BLOCKLIST_FILE) as f:
+            content = '<xml xmlns:i2p="http://geti2p.net/en/docs/spec/updates">%s</xml>' % f.read()
+            root = etree.fromstring(content)
+            b = fg.i2p.add_blocklist()
+            b.from_xml(root.getchildren()[0])
+
 
 def generate_feed(entries_file=None):
     language = entries_file and entries_file.split('.')[1] or 'en'
@@ -108,6 +121,7 @@ def generate_feed(entries_file=None):
     load_entries(fg, entries_file and entries_file or ENTRIES_FILE)
     load_releases(fg)
     load_revocations(fg)
+    load_blocklist(fg)
 
     if not os.path.exists(BUILD_DIR):
         os.mkdir(BUILD_DIR)

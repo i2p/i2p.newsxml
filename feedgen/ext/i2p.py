@@ -18,6 +18,9 @@ class I2pExtension(BaseExtension):
         if self.__i2p_revocations is not None:
             revocations = self.__i2p_revocations.to_atom()
             atom_feed.append(revocations)
+        if self.__i2p_blocklist is not None:
+            blocklist = self.__i2p_blocklist.to_atom()
+            atom_feed.append(blocklist)
         return atom_feed
 
     def add_release(self, release=None):
@@ -31,6 +34,12 @@ class I2pExtension(BaseExtension):
             revocations = Revocations()
         self.__i2p_revocations = revocations
         return revocations
+
+    def add_blocklist(self, blocklist=None):
+        if blocklist is None:
+            blocklist = Blocklist()
+        self.__i2p_blocklist = blocklist
+        return blocklist
 
 class I2pEntryExtension():
     def extend_atom(self, atom_feed):
@@ -181,3 +190,94 @@ class Crl(object):
         if content is not None:
             self.__crl_content = content
         return self.__crl_content
+
+class Blocklist(object):
+    def __init__(self):
+        # required
+        self.__blocklist_signed_by = None
+        self.__blocklist_sig = None
+        self.__blocklist_updated = None
+
+        # one or more of both
+        self.__blocklist_blocks = []
+        self.__blocklist_unblocks = []
+
+    def from_xml(self, root):
+        self.__blocklist_signed_by = root.attrib['signed-by']
+        self.__blocklist_sig = root.attrib['sig']
+        self.__blocklist_updated = root.attrib['updated']
+
+        for child in root:
+            if child.tag == '{%s}block' % I2P_NS:
+                b = self.add_block()
+                b.content(child.text)
+            elif child.tag == '{%s}block' % I2P_NS:
+                b = self.add_unblock()
+                b.content(child.text)
+
+    def to_atom(self):
+        if not (self.__blocklist_signed_by and self.__blocklist_sig and
+                self.__blocklist_updated and (self.__blocklist_blocks or self._blocklist_unblocks)):
+            raise ValueError('Required fields not set')
+
+        blocklist = etree.Element('{%s}blocklist' % I2P_NS)
+        blocklist.attrib['signed-by'] = self.__blocklist_signed_by
+        blocklist.attrib['sig'] = self.__blocklist_sig
+        blocklist.attrib['updated'] = self.__blocklist_updated
+
+        for block in self.__blocklist_blocks:
+            block_node = etree.SubElement(blocklist, '{%s}block' % I2P_NS)
+            block_node.text = block.content()
+
+        for unblock in self.__blocklist_unblocks:
+            unblock_node = etree.SubElement(blocklist, '{%s}unblock' % I2P_NS)
+            unblock_node.text = unblock.content()
+
+        return blocklist
+
+    def signed_by(self, signed_by=None):
+        if signed_by is not None:
+            self.__signed_by = signed_by
+        return self.__signed_by
+
+    def sig(self, sig=None):
+        if sig is not None:
+            self.__sig = sig
+        return self.__sig
+
+    def updated(self, updated=None):
+        if updated is not None:
+            self.__updated = updated
+        return self.__updated
+
+    def add_block(self, block=None):
+        if block is None:
+            block = Block()
+        self.__blocklist_blocks.append(block)
+        return block
+
+    def add_unblock(self, unblock=None):
+        if unblock is None:
+            unblock = Unblock()
+        self.__blocklist_unblocks.append(unblock)
+        return unblock
+
+class Block(object):
+    def __init__(self):
+        # required
+        self.__block_content = None
+
+    def content(self, content=None):
+        if content is not None:
+            self.__block_content = content
+        return self.__block_content
+
+class Unblock(object):
+    def __init__(self):
+        # required
+        self.__unblock_content = None
+
+    def content(self, content=None):
+        if content is not None:
+            self.__unblock_content = content
+        return self.__unblock_content
