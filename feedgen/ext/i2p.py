@@ -194,7 +194,7 @@ class Crl(object):
 class Blocklist(object):
     def __init__(self):
         # required
-        self.__blocklist_signed_by = None
+        self.__blocklist_signer = None
         self.__blocklist_sig = None
         self.__blocklist_updated = None
 
@@ -203,12 +203,13 @@ class Blocklist(object):
         self.__blocklist_unblocks = []
 
     def from_xml(self, root):
-        self.__blocklist_signed_by = root.attrib['signed-by']
+        self.__blocklist_signer = root.attrib['signer']
         self.__blocklist_sig = root.attrib['sig']
-        self.__blocklist_updated = root.attrib['updated']
 
         for child in root:
-            if child.tag == '{%s}block' % I2P_NS:
+            if child.tag == 'updated':
+                self.__blocklist_updated = child.text
+            elif child.tag == '{%s}block' % I2P_NS:
                 b = self.add_block()
                 b.content(child.text)
             elif child.tag == '{%s}block' % I2P_NS:
@@ -216,14 +217,16 @@ class Blocklist(object):
                 b.content(child.text)
 
     def to_atom(self):
-        if not (self.__blocklist_signed_by and self.__blocklist_sig and
+        if not (self.__blocklist_signer and self.__blocklist_sig and
                 self.__blocklist_updated and (self.__blocklist_blocks or self._blocklist_unblocks)):
             raise ValueError('Required fields not set')
 
         blocklist = etree.Element('{%s}blocklist' % I2P_NS)
-        blocklist.attrib['signed-by'] = self.__blocklist_signed_by
+        blocklist.attrib['signer'] = self.__blocklist_signer
         blocklist.attrib['sig'] = self.__blocklist_sig
-        blocklist.attrib['updated'] = self.__blocklist_updated
+
+        updated_node = etree.SubElement(blocklist, 'updated')
+        updated_node.text = self.__blocklist_updated
 
         for block in self.__blocklist_blocks:
             block_node = etree.SubElement(blocklist, '{%s}block' % I2P_NS)
@@ -235,20 +238,20 @@ class Blocklist(object):
 
         return blocklist
 
-    def signed_by(self, signed_by=None):
-        if signed_by is not None:
-            self.__signed_by = signed_by
-        return self.__signed_by
+    def signer(self, signer=None):
+        if signer is not None:
+            self.__blocklist_signer = signer
+        return self.__blocklist_signer
 
     def sig(self, sig=None):
         if sig is not None:
-            self.__sig = sig
-        return self.__sig
+            self.__blocklist_sig = sig
+        return self.__blocklist_sig
 
     def updated(self, updated=None):
         if updated is not None:
-            self.__updated = updated
-        return self.__updated
+            self.__blocklist_updated = updated
+        return self.__blocklist_updated
 
     def add_block(self, block=None):
         if block is None:
