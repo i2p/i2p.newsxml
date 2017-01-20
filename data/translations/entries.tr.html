@@ -1,5 +1,15 @@
 <div>
-<header title="I2P Haberleri">Haber akışı ve yöneltici güncellemeleri</header><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contains bug fixes</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
+<header title="I2P Haberleri">Haber akışı ve yöneltici güncellemeleri</header><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
+I2P-Bote plugin. The Android app was not affected.</p>
+<p>When showing emails to the user, most fields were being escaped. However, the filenames
+of attachments were not escaped, and could be used to execute malicious code in a browser
+with JavaScript enabled. These are now escaped, and additionally a Content Security Policy
+has been implemented for all pages.</p>
+<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
+after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
+<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
+upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
+</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contains bug fixes</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
 There are fixes for the IPv6 peer testing feature introduced last release.
 We continue improvements to detect and block peers that are potentially malicious.
 There are preliminary fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
