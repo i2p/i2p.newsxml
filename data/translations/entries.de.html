@@ -1,14 +1,15 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote Sicherheitslücke" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
-<p>When showing emails to the user, most fields were being escaped. However, the filenames
-of attachments were not escaped, and could be used to execute malicious code in a browser
-with JavaScript enabled. These are now escaped, and additionally a Content Security Policy
-has been implemented for all pages.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 enthält Fehlerkorrekturen</summary></details><p>0.9.29 enthält Korrekturen für verschiedene Trac Tickets, inclusive einem Workaround für falsch komprimierte Nachrichten im nativem Datenstrom.
+Wir unterstützen nun NTP via IPv6.
+Wir haben vorläufigen Docker Support inkludiert.
+Wir haben jetzt übersetzte Man-Pages.
+Wir reichen jetzt den Same-Origin Referer Header durch den HTTP Proxy durch.
+Weitere Java 9 Anpassungen sind auch enthalten, jedoch empfehlen wir noch nicht den generellen Gebrauch von Java 9.</p>
+<p>Wir immer empfehlen wir allen Benutzern, auf diese Version zu aktualisieren.
+Der Beste Weg, dem Netzwerk zu helfen und sicher zu bleiben, ist die aktuelleste Version zu nutzen.</p>
+</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote Sicherheitslücke" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 korrigiert eine Sicherheitslücke, die in allen vorherigen Versionen des i2P-Bote-Plugins vorhanden war. Die Android-App war nicht betroffen.</p>
+<p>Beim Anzeigen von E-Mails waren die meisten Felder gekapselt. Jedoch waren die Dateinamen der Anhänge nicht gekapselt und konnten so zum Einbringen von Schadcode in Browser mit aktiviertem Javascript genutzt werden. Dieses wurde nun korrigiert und zusätzlich wurden Content Security Policies auf allen Seiten implementiert. </p>
+<p>Mit Einspielen der Mitte Februar erwartetem I2P-Aktualisierung 0.9.29 werden alle I2P-Bote Plugins automatisch nach einem I2P Neustart aktualisiert. Dennoch empfehlen wir aus Gründen der Sicherheit eine Manuelle Aktualisierung laut <a href="http://bote.i2p/install/">den Instruktionen auf der Installations Seite</a>, falls sie I2P-Bote bis zum nächsten I2P Update nutzen möchten.</p>
 </article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 enthält Fehlerkorrekturen</summary></details><p>Version 0.9.28 enthält Korrekturen aus mehr als 25 Trac Tickets neben diversen Aktualisierungen inkludierter Software wie Jetty.
 Das in 0.9.27 implementierte IPv6 Peer Testing bekam auch Verbesserungen.
 Unsere Bemühungen zum Erkennen und exkludieren von bösartigen I2P Teilnehemern wurden weitergeführt.

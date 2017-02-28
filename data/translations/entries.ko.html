@@ -1,14 +1,19 @@
 <div>
-<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote 보안 취약점" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
-<p>When showing emails to the user, most fields were being escaped. However, the filenames
-of attachments were not escaped, and could be used to execute malicious code in a browser
-with JavaScript enabled. These are now escaped, and additionally a Content Security Policy
-has been implemented for all pages.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
+<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 contains bug fixes</summary></details><p>0.9.29 contains fixes for numerous Trac tickets, including workarounds for corrupt compressed messages.
+We now support NTP over IPv6.
+We've added preliminary Docker support.
+We now have translated man pages.
+We now pass same-origin Referer headers through the HTTP proxy.
+There are more fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
+<p>보통처럼, 우리는 모든 유저가 이 릴리즈로 업데이트 하는것을 권장합니다.
+최신 버전을 운영하는 것은 네트워크를 돕고 안전한 상태로 유지하는 것을 돕는 가장 좋은 방법입니다.</p>
+</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote 보안 취약점" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5는 I2P-Bote 플러그인의 이전 버전에 존재하던 보안 취약점을 픽스합니다. 안드로이드 앱은 영향을 받지 않았습니다.</p>
+<p>유저에게 이메일을 보여줄 때, 대부분의 필드들은 이스케이스 되었습니다. 그러나, 첨부 파일의 파일명은 
+이스케이프 되지 않았으며, JavaScript가 활성화 된 브라우저에서 악성 코드를 실행하는데 
+쓰일 수 있었습니다. 이제는 이스케이프되고, 추가로 콘텐츠 보안 정책이 모든 페이지에 적용되었습니다.</p>
+<p>모든 I2P-Bote 유저들은 2월 중순 쯤 릴리즈 될 I2P 0.9.29 이후 라우터를 재시작 할때 
+자동적으로 업그레이드됩니다. 그러나, 안전을 위해 그 사이 동안에 I2P나 I2P-Bote를 
+사용하고자 하는 경우 <a href="http://bote.i2p/install/">설치 페이지에 있는 절차를 따라</a> 수동으로 업그레이드를 하는것을 권장합니다.</p>
 </article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28이 릴리즈 되었습니다" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28는 버그 픽스를 포함하고 있습니다</summary></details><p>0.9.28에서는 25 Trac이 넘는 Ticket들을 픽스했으며, Jetty를 포함한 많은 수의 소프트웨어 패키지를 업데이트 하였습니다.
 해당 픽스들은 지난 릴리즈에 소개됬었던 IPv6 피어 테스트 기능을 위한 것입니다.
 또한 위험할 수 있는 피어들을 감지하고 차단하는 기능에도 향상을 거듭하고 있습니다.
@@ -78,21 +83,21 @@ release accelerates the rekeying process. To reduce network churn, your router
 will have a small probability of converting to Ed25519 at each restart. When it
 does rekey, expect to see lower bandwidth usage for a couple of days as it
 reintegrates into the network with its new identity.</p>
-<p>Note that this will be the last release to support Java 6. Please update to
-Java 7 or 8 as soon as possible. We are already working to make I2P compatible
-with the upcoming Java 9, and some of that work is in this release.</p>
-<p>We have also made some minor improvements in I2PSnark, and added a new page in
-the routerconsole for viewing older news items.</p>
-<p>As usual, we recommend that you update to this release. The best way to
-maintain security and help the network is to run the latest release.</p>
+<p>이 릴리즈는 Java 6를 지원하는 마지막 릴리즈가 될 것입니다. Java 7 혹은 8로 
+빠른 시일안에 업데이트 해주세요. 우리는 곧 나올 Java 9에 I2P가 호환 가능하도록 
+하는 작업을 이미 시작했으며, 일부는 이 릴리즈에 포함되었습니다.</p>
+<p>우리는 I2PSnark에 사소한 개선을 했으며, routerconsole에 이전 뉴스 항목을 볼 수 있게 
+새로운 페이지를 추가했습니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
 </article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22가 릴리즈 되었습니다" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22에는 버그 픽스와 Ed25519 마이그레이션이 포함됩니다</summary></details><p>0.9.22 contains fixes for i2psnark getting stuck before completion, and begins the migration of router infos to new, stronger Ed25519 signatures.
 To reduce network churn, your router will have only a small probability of converting to Ed25519 at each restart.
 When it does rekey, expect to see lower bandwidth usage for a couple of days as it reintegrates into the network with its new identity.
 If all goes well, we will accelerate the rekeying process in the next release.</p>
-<p>I2PCon Toronto was a big success!
-All the presentations and videos are listed on the <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon page</a>.</p>
-<p>As usual, we recommend that you update to this release. The best way to
-maintain security and help the network is to run the latest release.</p>
+<p>I2PCon Toronto는 대성공이였습니다!
+모든 프리젠테이션과 비디오는 <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon 페이지</a>에 있습니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
 </article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 버전에는 버그 수정과 함께 성능 향상이 이루어졌습니다.</summary></details><p>0.9.21 contains several changes to add capacity to the network, increase the efficiency of the floodfills,
 and use bandwidth more effectively.
 We have migrated the shared clients tunnels to ECDSA signatures and added a DSA fallback
@@ -100,8 +105,8 @@ using the new "multisession" capability for those sites that don't support ECDSA
 <p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
 Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
 Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
-<p>As usual, we recommend that you update to this release. The best way to
-maintain security and help the network is to run the latest release.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
 </article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="I2PCon 토론토의 연설자와 스케줄이 공표됩니다" href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>I2PCon 토론토 2015 연설자와 스케줄이 공표됩니다</summary></details><p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
 Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
 Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>

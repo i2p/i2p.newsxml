@@ -1,6 +1,14 @@
 <div>
-<header title="I2P 新闻">新闻信息、路由器更新信息&lt;br&gt;</header><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote 安全漏洞" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
+<header title="I2P 新闻">新闻信息、路由器更新信息&lt;br&gt;</header><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29发布" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29包含缺陷修复</summary></details><p>0.9.29版本包含大量Trac工单的修复，包括针对错误压缩的消息的变通方案。
+我们现在在IPv6上提供对NTP的支持。
+我们对Docker加入了初步的支持。
+我们翻译了手册页。
+我们现在通过HTTP代理传输same-origin Referer标头。
+我们为Java 9进行了更多的修复，然而我们尚不推荐将Java 9用作一般用途。</p>
+<p>如往常一样，我们建议所有用户升级到此发布版本。
+帮助网络和保持安全的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote 安全漏洞" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5修复了一个在所有早期版本的I2P-Bote插件中
+出现的安全漏洞。安卓平台的应用不受影响。</p>
 <p>When showing emails to the user, most fields were being escaped. However, the filenames
 of attachments were not escaped, and could be used to execute malicious code in a browser
 with JavaScript enabled. These are now escaped, and additionally a Content Security Policy
@@ -18,17 +26,17 @@ We will review our 2017 roadmap and priorities 2017 at the Congress.</p>
 <p>如往常一样，我们建议所有用户升级到此发布版本。
 帮助网络和保持安全的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="I2P-Bote 安全漏洞" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 修复了一个存在于 I2P-Bote 插件所有早期版本的漏洞。Android 版应用不受影响。</p>
-<p>A lack of CSRF protection meant that if a user was running I2P-Bote and then loaded a
-malicious site in a browser with JavaScript enabled, the adversary could trigger actions
-in I2P-Bote on behalf of the user, such as sending messages. This might also have enabled
-extraction of private keys for I2P-Bote addresses, however no proof-of-exploit was tested
-for this.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.28 is released in mid-December. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time. You should
-also consider generating new I2P-Bote addresses if you regularly browse sites with
-JavaScript enabled while running I2P-Bote.</p>
+<p>缺乏对于CSRF的保护意味着如果用户在运行I2P-Bote时在一个浏览器中
+加载了一个恶意网站，并且允许了JavaScript，攻击者可以以用户的身份
+在I2P-Bote中触发行为，例如发出信息。这也可能会允许
+提取I2P-Bote中的私钥，但是对于这个可能尚且没有
+验证。</p>
+<p>在I2P 0.9.28于十二月中旬发布后，所有I2P-Bote的用户
+都会在他们第一次重启路由器时自动更新。但是，如果您要在这期间使用I2P或者I2P Bote，
+为了安全，我们建议您<a href="http://bote.i2p/install/">跟随安装页面上的指示</a>
+手动升级。如果您经常在
+允许Javascript的时候浏览网页，并且打开了I2P-Bote，
+您也需要考虑生成新的I2P-Bote地址。</p>
 </article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="0.9.25 发布" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary>0.9.27 包含缺陷修复</summary></details><p>0.9.27 包含一些缺陷修复。
 更新的 GMP 程序库为加密提速了，这在新安装的 0.9.26 版本及 Debian 版本中启用，网络更新用户将在 0.9.27 时享用到它。
 IPv6 传输、SSU 对等端测试、隐身模式等也有改进。</p>
