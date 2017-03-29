@@ -1,12 +1,17 @@
-  <i2p:blocklist signer="str4d@mail.i2p" sig="6:nigtZzhTaHLRC8GnrGC7mZ2evVqPaqmHBCRRxiAa9Vquzg0-Tzhz6rWdaRgrrvkmbMkmyjYQ27DrNm5Q8kYbYdSfzH6G8211ecScDl-PRl~D22EKLPZRgUcdF8YkFqSIxAxKZ~rAZkAbT3N0MESBzsnAJhV-McLQlfjj9W0ggHB6H9h9uqtbQFUF8FkUZDePUi8JeDyx09JVJa4xNpEcoa4Ih8BMOgyTd2qD-1~okwRSzk0RDwn4uCOo5vysRTusXt4HxZkan3npRn6UC401pN2yMchhfDktxZBCAEphDW51dIm5GEVu6IwxehM6g1ua1-2OFzdE2~y1gwNukJNZemGhOLEUv9CRfPegT2oTbjBBsjgb3tq0PJxEbDUiPDjarAG5qMGutxtQV6uL2o2wNVRYUvhFSHrnnOXSpIf3v7i~4GNML7LJas1D8sjIoQN-vo7vURQzIRSFdlr5aMQdus8w78Z4eSKA53Ao5Yjsth5YeRfaFe6d0TYz~CEYIEUprHhqBvGZLRaUpO4B7o6TYKzZXZWKG4ihX6YTkPHJzh~vqQ~y~5s4nwGgoYzPfO~Mq1IoW68i~JJq-Lpy-Pc~kDTBf-bInjVWfErRJy8RvPnwDDF-SqMJQjLwYTvdiAHWIH~5zEx5b8N1cCVW0JkEWMy1MM-SfD4dsuOFU7w38IY=">
-    <updated>2016-12-28T23:32:06Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:EKnW86rWMLvG8KtYbB6cEG96QHZDGJ9pr51sGrhFTQzG4VGhXUnWZ4OWSihaf3hok5UpuEJSldZgqULLRNH2Nb~insGspOK46UMqw6jtw5RlsKNlXckTvhAytqTTM3UOlZi5j0AZURG4xP0BrSgAqvU68ATYYBRe9Np1dFxdqx3djpZSa5XiimGkJDJrS~-uT8pm2ZPArpFXZEdfdTK1ptCuZ99BurfTt~itrQ41EFstIQGpz29K2Xa4kkpxmhBCMekeOmtgEObwDaG~b9Hd4MlLpv3EKQ1uW9XAAB1ao8NSTrhZ7-v05t3dKhy4cg~v4AAMHx4PgOIMzsHjLSKLWHrAWDEmV61-9UOOrYv2HR45hEVscRMZF214wRaRtetFzHEM244YYWhm2aSWXG3ef7SYRrGmdDNK92WExdwG~AimKPm0XC1RypN8V40MvElLYRF-DjE3ZWPLgszTCkbvMgmnVSillc4h0M1CHa5~xoQpNsnIt9wDj9JBqsMrAiF11vgW~dFErWfncJBTPfBxz6ajBe4AF7~uy~LvzLO6qlHWWDxNZAwXTqrSKLQLLY0Ojls~lsbl1gmH4JzLAMl~d5NI7jtFUGbqbXceYieNJM8zVzzeG3uFgzvJr-Irbw3oG5asy9JdtQkR8fOOziFgX4pQxjzZwV~ETxZJoqAbOp8=">
+    <updated>2017-03-29T19:59:47Z</updated>
     <i2p:block>45.32.152.247</i2p:block>
     <i2p:block>45.63.76.128</i2p:block>
     <i2p:block>45.76.98.64</i2p:block>
     <i2p:block>45.76.152.150</i2p:block>
+    <i2p:block>47.90.120.30</i2p:block>
     <i2p:block>104.156.254.54</i2p:block>
     <i2p:block>108.61.251.143</i2p:block>
     <i2p:block>133.130.124.185</i2p:block>
+    <i2p:block>150.95.134.159</i2p:block>
+    <i2p:block>150.95.144.95</i2p:block>
+    <i2p:block>150.95.147.89</i2p:block>
+    <i2p:block>150.95.153.220</i2p:block>
     <i2p:block>163.44.149.31</i2p:block>
     <i2p:block>2001:df6:b800:1128:a163:44:149:310</i2p:block>
     <i2p:block>2001:19f0:4400:4376:5400:ff:fe47:bcbd</i2p:block>
@@ -15,4 +20,8 @@
     <i2p:block>2001:19f0:7001:cb:5400:ff:fe47:c952</i2p:block>
     <i2p:block>2400:8500:1302:816:a150:95:128:1656</i2p:block>
     <i2p:block>2400:8500:1302:802:a133:130:124:1855</i2p:block>
+    <i2p:block>2400:8500:1302:819:a150:95:134:1590</i2p:block>
+    <i2p:block>2400:8500:1302:824:a150:95:144:951</i2p:block>
+    <i2p:block>2400:8500:1302:825:150:95:147:89</i2p:block>
+    <i2p:block>2400:8500:1302:828:a150:95:153:2202</i2p:block>
   </i2p:blocklist>
