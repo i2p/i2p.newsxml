@@ -1,5 +1,47 @@
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f"
+  title=""
+  href=""
+  author=""
+  published=""
+  updated="">
+  title="0.9.30 Released"
+  href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release"
+  author="zzz"
+  published="2017-05-03T12:00:00Z"
+  updated="2017-05-03T12:00:00Z">
+<details>
+<summary>0.9.30 updates to Jetty 9</summary>
+</details>
+<p>
+0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
+The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
+The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
+This should work for recent, unmodified configurations but may not work for modified or very old setups.
+Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.
+</p><p>
+Several plugins are not compatible with Jetty 9 and must be updated.
+The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
+i2pbote 0.4.6; zzzot 0.15.0.
+The following plugins (with current versions listed) will not work with 0.9.30.
+Contact the appropriate plugin developer for the status of new versions:
+BwSchedule 0.0.36; i2pcontrol 0.11.
+</p><p>
+This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
+See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.
+</p><p>
+Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
+Please be patient.
+</p><p>
+As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7"
   title="0.9.29 Released"
   href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release"
