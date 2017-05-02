@@ -39,8 +39,7 @@ def load_entries(fg, entries_file):
         fg.subtitle(entries_parts[0].split('>')[1])
 
         entries = entries_parts[1].split('</article>')
-        # split() creates an empty final element for source,
-        # and a junk final element for translations
+        # split() creates a junk final element with trailing </div>
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('</details>', 1)
             metadata = extract_entry_metadata(entry_parts[0])
