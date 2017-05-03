@@ -1,19 +1,18 @@
 <div>
-<header title="Wiadomości I2P">Kanał wiadomości i aktualizacji routera</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
-The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
-The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
-This should work for recent, unmodified configurations but may not work for modified or very old setups.
-Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.</p>
-<p>Several plugins are not compatible with Jetty 9 and must be updated.
-The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
-i2pbote 0.4.6; zzzot 0.15.0.
-The following plugins (with current versions listed) will not work with 0.9.30.
-Contact the appropriate plugin developer for the status of new versions:
-BwSchedule 0.0.36; i2pcontrol 0.11.</p>
-<p>This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
-See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.</p>
-<p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
-Please be patient.</p>
+<header title="Wiadomości I2P">Kanał wiadomości i aktualizacji routera</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="Wersja 0.9.30 wydana" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 aktualizuje do Jetty 9</summary></details><p>0.9.30 zawiera aktualizację Jetty do wersji 9 i Tomcat do wersji 8.
+Poprzednie wersje nie są już wspierane i nie są dostępne w kolejnych wydaniach Debiana Stretch i Ubuntu Zesty.
+Węzeł uaktualni plik konfiguracyjny jetty.xml dla każdej hostowanej strony do wersji Jetty 9. To powinno działać dla świeżych i niemodyfikowanych konfiguracji, ale może nie działać w nietypowych i bardzo starych konfiguracjach.
+Sprawdź, czy Twoja strona Jetty działa po aktualizacji i skontaktuj się z nami przez IRC jeżeli potrzebujesz pomocy.</p>
+<p>Kilka wtyczek nie jest zgodnych z Jetty 9 i muszą zostać zaktualizowane.
+Następujące wtyczki zostały uaktualnione, aby działały z wersją 0.9.30 i Twój węzeł powinien zaktualizować je po restarcie:
+I2P-Bote 0.4.6, zzzot 0.15.0.
+Następujące wtyczki (w poniższych wersjach) nie będą działać z 0.9.30.
+Zapytaj ich programistów co z nowymi wersjami:
+BwSchedule 0.0.36, i2pcontrol 0.11.</p>
+<p>To wydanie także wspiera przejście ze starych (2014 i wcześniejszy) ukrytych usług DSA-SHA1 do bezpieczniejszych typów sygnatur EdDSA.
+Zobacz <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> po dalsze informacje, a także poradnik i FAQ.</p>
+<p>Uwaga: na nie-Androidowych platformach ARM takich jak Raspberry PI, baza danych blockfile zostanie zaktualizowana po restarcie, co może zająć kilka minut.
+Prosimy o cierpliwość.</p>
 <p>Jak zwykle, zalecamy aktualizację programu do niniejszej wersji. Nie musimy dodawać, że służy to zachowaniu bezpieczeństwa sieci oraz jej uczestników.</p>
 </article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="Wersja 0.9.29 wydana" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 zawiera poprawki błędów</summary></details><p>Wersja 0.9.29 zawiera poprawki różnych błędów, wliczając obejścia dla uszkodzonych skompresowanych wiadomości. Teraz wspieramy NTP przez IPv6. Dodano wstępne wparcie dla Dockera. Dodano wsparcie językowe dla stron instrukcji. Nagłówki Referer z tego samego źródła są teraz przepuszczane przez proxy HTTP. Pojawiło się więcej poprawek dla Javy 9, jednakże nie zalecamy używania Javy 9 do codziennego stosowania.</p>
 <p>Jak zwykle, zalecamy aktualizację programu do niniejszej wersji. Nie musimy dodawać, że służy to zachowaniu bezpieczeństwa sieci oraz jej uczestników.</p>

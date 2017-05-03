@@ -1,19 +1,19 @@
 <div>
-<header title="I2P-nieuws">Nieuwsoverzicht en routerupdates</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
-The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
-The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
-This should work for recent, unmodified configurations but may not work for modified or very old setups.
-Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.</p>
-<p>Several plugins are not compatible with Jetty 9 and must be updated.
-The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
+<header title="I2P-nieuws">Nieuwsoverzicht en routerupdates</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 uitgebracht" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updatet naar Jetty 9</summary></details><p>0.9.30 bevat een update naar Jetty 9 en Tomcat 8.
+De vorige versies worden niet meer ondersteund en zijn niet meer beschikbaar in Debian Stretch en Ubuntu Zesty.
+De router zal het jetty.xml-configuratiebestand voor elke Jetty-website overzetten naar de nieuwe Jetty 9-instellingen.
+Dit zou moeten werken voor recente, niet aangepaste configuraties, maar werkt misschien niet voor aangepaste of erg oude configuraties.
+Controleer of je Jetty-website correct werkt na de update, en contacteer ons op IRC als je hulp nodig hebt.</p>
+<p>Verschillende plug-ins zijn niet compatibel met Jetty 9 en moeten bijgewerkt worden.
+De volgende plug-ins zijn bijgewerkt om met 0.9.30 te werken, en na herstarten zou je router ze moeten bijwerken:
 i2pbote 0.4.6; zzzot 0.15.0.
-The following plugins (with current versions listed) will not work with 0.9.30.
-Contact the appropriate plugin developer for the status of new versions:
+De volgende plug-ins (met huidige versies) zullen niet werken met 0.9.30.
+Neem contact op met de ontwikkelaars ervan om meer informatie over bijgewerkte versies te verkrijgen:
 BwSchedule 0.0.36; i2pcontrol 0.11.</p>
-<p>This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
-See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.</p>
-<p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
-Please be patient.</p>
+<p>Deze uitgave bevat ook migratie van oude (2014 en vroeger) DSA-SHA1-verborgen diensten naar het veiligere EdDSA-ondertekeningstype.
+Zie <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> voor meer informatie, inclusief een gids en veelgestelde vragen.</p>
+<p>Let op: op ARM-platformen die niet op Android draaien, zoals de Raspberry Pi, zal de blokbestanddatabase bijgewerkt worden bij het herstarten, wat enkele minuten kan duren.
+Wees hierbij geduldig.</p>
 <p>Zoals gewoonlijk raden we aan om bij te werken naar deze uitgave. De beste manier om veiligheid te onderhouden en het netwerk te helpen is om de laatste uitgave te gebruiken.</p>
 </article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 uitgebracht" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 bevat oplossingen voor programmafouten</summary></details><p>0.9.29 bevat oplossingen voor een heleboel Trac-tickets, inclusief manieren om rond corrupte gecomprimeerde berichten te werken.
 We ondersteunen nu NTP over IPv6.
@@ -33,7 +33,7 @@ has been implemented for all pages.</p>
 after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
 <a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
 upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
-</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contains bug fixes</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
+</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 uitgebracht" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 bevat oplossingen voor programmafouten</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
 There are fixes for the IPv6 peer testing feature introduced last release.
 We continue improvements to detect and block peers that are potentially malicious.
 There are preliminary fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
@@ -125,7 +125,7 @@ using the new "multisession" capability for those sites that don't support ECDSA
 Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
 Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
 <p>Zoals gewoonlijk raden we aan om bij te werken naar deze uitgave. De beste manier om veiligheid te onderhouden en het netwerk te helpen is om de laatste uitgave te gebruiken.</p>
-</article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="I2PCon Toronto speakers and schedule announced" href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>I2PCon Toronto 2015 speakers and schedule announced</summary></details><p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
+</article><article id="urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141" title="Sprekers en planning voor I2PCon Toronto aangekondigd" href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon" author="echelon" published="2015-07-19T18:00:00Z" updated="2015-07-22T12:00:00Z"><details><summary>Sprekers en planning voor I2PCon Toronto 2015 aangekondigd</summary></details><p>The speakers and the schedule of the I2PCon in Toronto 2015 have been announced.
 Have a look on the <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PCon page</a> for details.
 Reserve your seat on <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a>.</p>
 </article>

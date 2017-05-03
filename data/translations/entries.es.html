@@ -1,19 +1,19 @@
 <div>
-<header title="Noticias de I2P">Suscripción (feed) de noticias, y actualizaciones del router I2P</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
-The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
-The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
-This should work for recent, unmodified configurations but may not work for modified or very old setups.
-Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.</p>
-<p>Several plugins are not compatible with Jetty 9 and must be updated.
-The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
+<header title="Noticias de I2P">Suscripción (feed) de noticias, y actualizaciones del router I2P</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="Versión 0.9.30" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>La versión 0.9.30 actualiza a Jetty 9</summary></details><p>La 0.9.30 contiene una actualización a Jetty 9 y Tomcat 8.
+Las versiones anteriores ya no están soportadas, y no están disponibles en las próximas versiones Debian Stretch y Ubuntu Zesty.
+El router I2P migrará el fichero de configuración jetty.xml para cada sitio web Jetty a la nueva instalación de Jetty 9.
+Esto debe funcionar para configuraciones recientes inalteradas, pero puede no funcionar para instalaciones modificadas o muy antiguas.
+Verifique que su sitio web Jetty funciona tras actualizar, y contacte con nosotros en el IRC si necesita asistencia.</p>
+<p>Varios complementos no son compatibles con Jetty 9 y deben ser actualizados.
+Los siguientes complementos se han puesto al día para funcionar con la 0.9.30, y su router I2P debe actualizarlos tras reiniciar:
 i2pbote 0.4.6; zzzot 0.15.0.
-The following plugins (with current versions listed) will not work with 0.9.30.
-Contact the appropriate plugin developer for the status of new versions:
+Los siguientes complementos (versiones actuales listadas) no funcionarán con la 0.9.30.
+Contacte con el desarrollador de complementos correspondiente para conocer el estado de nuevas versiones:
 BwSchedule 0.0.36; i2pcontrol 0.11.</p>
-<p>This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
-See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.</p>
-<p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
-Please be patient.</p>
+<p>Esta versión también soporta la migración de los antiguos (2014 y anteriores) servicios ocultos DSA-SHA1 al tipo de firma EdDSA más seguro.
+Vea <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> para más información, incluyendo una guía y preguntas frecuentes (FAQ).</p>
+<p>Nota: Sobre plataformas ARM no-Android como Rapsberry Pi, la base de datos de blockfile (servicio de nombres) se actualizará al reiniciar, lo que puede tardar varios minutos.
+Por favor, tenga paciencia.</p>
 <p>Como es habitual, recomendamos que actualice a esta versión. La mejor manera
 de mantener la seguridad y ayudar a la red, es ejecutar la última versión.</p>
 </article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="Se ha publicado la 0.9.29" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 contiene correcciones de fallos</summary></details><p>0.9.29 contiene correcciones para numerosos tickets de Trac, incluyendo apaños para mensajes comprimidos corruptos.
