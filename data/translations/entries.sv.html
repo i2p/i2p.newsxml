@@ -1,5 +1,5 @@
 <div>
-<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
+<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Utgiven" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 uppdaterar till Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
 The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
 The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
 This should work for recent, unmodified configurations but may not work for modified or very old setups.
@@ -89,7 +89,7 @@ Observera att den här versionen är den första som kräver Java 7.
 Vänligen uppdatera till Java 7 eller 8 så snart som möjligt.
 Din router kommer inte uppdateras automatiskt om du använder Java 6.</p>
 <p>För att förhindra de problem som orsakats av gamla commons-logging-biblioteket har vi tagit bort det.
-Detta innebär att väldigt gamla I2P-Bote insticksprogram (0.2.10 och tidigare, signerade av HungryHobo) kommer krasha om de har IMAP aktiverat.
+Detta innebär att väldigt gamla I2P-Bote insticksmodul (0.2.10 och tidigare, signerade av HungryHobo) kommer krasha om de har IMAP aktiverat.
 Det rekommenderade är att byta ut din gamla I2P-Bote-plugin med den nya som är signerad av str4d.
 För ytterligare detaljer, se <a href="http://bote.i2p/news/0.4.3">detta inlägg</a>.
 </p>
@@ -110,7 +110,7 @@ Det bästa sättet att hjälpa nätverket och hålla sig själv säker är att a
 </article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22 Släppt" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 med felkorrigeringar och påbörjar Ed25519-migrationen</summary></details><p>0.9.22 innehåller fixar för att lösa problemet med att i2psnark fastnar innan den blir klar, och påbörjar migrationen av routerinfo till nya starkare Ed25519-signaturer. För att minska nätverksbelastningen har din router bara en liten chans att konvertera till Ed25519 vid varje uppstart. När den beräknar om sina nycklar, räkna med att se minskad användning av bandbredd under ett par dagar medan den återansluter till nätverket med sin nya identitet. Om allt går som det ska, kommer vi accelerera den nya beräkningen i nästa version.</p>
 <p>I2PCon Toronto var lyckad! Alla presentationer och videofilmer finns listade på <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon-sidan</a>.</p>
 <p>Som vanligt rekommenderar vi att du uppdaterar till denna version. Det bästa sättet att upprätthålla säkerhet och hjälpa nätverket är att köra den senaste versionen.</p>
-</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21 Färdig" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 släppt med prestandaförbättringar och rättningar.</summary></details><p>0.9.21 innehåller  flera förändringar för att öka nätverkets kapacitet, förbättra effektiviteten hos floodfills,
+</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21 Utgiven" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 släppt med prestandaförbättringar och rättningar.</summary></details><p>0.9.21 innehåller  flera förändringar för att öka nätverkets kapacitet, förbättra effektiviteten hos floodfills,
 och använda bandbredden mer effektivt.
 Vi har migrerat de delade klienttunnlarna till ECDSA signaturer och lagt till DSA som fallback
 genom att använda den nya "multisession" möjligheten för de sajter som inte stödjer ECDSA. </p>
