@@ -1,29 +1,35 @@
 <div>
-<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Call for Translators" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>The upcoming 0.9.31 release has more untranslated strings than usual</summary></details><p>In preparation for the 0.9.31 release, which brings with it significant updates
-to the user interface, we have a larger than normal collection of untranslated
-strings that need attention. If you're a translator, we would greatly appreciate
-it if you could set aside a little more time than usual during this release cycle
-in order to bring the translations up to speed. We have pushed the strings early
-to give you three weeks to work on them.</p>
-<p>If you're not currently an I2P translator, now would be a great time to get
-involved! Please see the
-<a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">New Translator's Guide</a>
-for information on how to get started.</p>
-</article><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
-The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
-The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
-This should work for recent, unmodified configurations but may not work for modified or very old setups.
-Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.</p>
-<p>Several plugins are not compatible with Jetty 9 and must be updated.
-The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
+<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce" title="0.9.31 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/08/07/0.9.31-Release" author="zzz" published="2017-08-07T12:00:00Z" updated="2017-08-07T12:00:00Z"><details><summary>0.9.31 with console updates</summary></details><p>The changes in this release are much more noticeable than usual!
+We have refreshed the router console to make it easier to understand,
+improved accessibility and cross-browser support,
+and generally tidied things up.
+This is the first step in a longer-term plan to make the router console more user-friendly.
+We have also added torrent ratings and comments support to i2psnark.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Apel pentru traducători" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>Versiunea 0.9.31, care urmează, are mai multe șiruri de caractere netraduse decât de obicei</summary></details><p>În pregătirea pentru lansarea versiunii 0.9.31, care aduce cu ea actualizări semnificative
+ la interfața cu utilizatorul, avem o colecție mai mare decât cea normală de siruri de caractere netraduse
+care au nevoie de atentie. Dacă sunteți un traducător, am aprecia foarte mult
+dacă ai putea să oferi puțin mai mult timp decât de obicei, în timpul acestui ciclu de lansare,
+in scopul de a aduce traducerile la zi. Am încarcat sirurile de caractere mai devreme
+pentru ca dvs. să aveti trei săptămâni timp să lucrați la ele.</p>
+<p>Dacă nu sunteți în prezent un translator I2P, acum ar fi un moment bun pentru a vă implica! Consultați secțiunea
+<a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">Noul ghid al traducătorului</a>
+pentru informații despre cum să începeți.</p>
+</article><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Lansat" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 actualizări la Jetty 9</summary></details><p>0.9.30 conține un upgrade pentru Jetty 9 și Tomcat 8.
+Versiunile anterioare nu mai sunt acceptate și nu sunt disponibile în versiunile Debian Stretch și Ubuntu Zesty.
+Router-ul va migra fișierul de configurare jetty.xml pentru fiecare site Web Jetty în noua configurație Jetty 9.
+Acest lucru ar trebui să funcționeze pentru configurații recente, nemodificate, dar poate să nu funcționeze pentru setări modificate sau foarte vechi.
+Verificați că site-ul dvs. Jetty funcționează după actualizare și contactați-ne pe IRC dacă aveți nevoie de asistență.</p>
+<p>Mai multe pluginuri nu sunt compatibile cu Jetty 9 și trebuie actualizate.
+Următoarele pluginuri au fost actualizate pentru a funcționa cu 0.9.30, iar ruterul ar trebui să le actualizeze după repornire:
 i2pbote 0.4.6; zzzot 0.15.0.
-The following plugins (with current versions listed) will not work with 0.9.30.
-Contact the appropriate plugin developer for the status of new versions:
+Următoarele pluginuri (cu versiunile curente enumerate) nu vor funcționa cu 0.9.30.
+Contactați dezvoltatorul pluginului corespunzător pentru starea noilor versiuni:
 BwSchedule 0.0.36; i2pcontrol 0.11.</p>
-<p>This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
-See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.</p>
-<p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
-Please be patient.</p>
+<p>Această versiune acceptă, de asemenea, migrarea serviciilor ascunse DSA-SHA1 vechi (2014 și anterioare) la tipul de semnătură EdDSA mai sigur.
+Vezi <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> pentru informații suplimentare, inclusiv un ghid și întrebări frecvente.</p>
+<p>Notă: pe platforme non-Android ARM, cum ar fi Raspberry Pi, baza de date blocfile va face upgrade la repornire, ceea ce poate dura câteva minute.
+Te rog fii rabdator.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
 </article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 Lansat" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 conține remedieri de erori</summary></details><p>0.9.29 conține remedieri pentru numeroase bilete Trac, inclusiv soluții pentru mesajele comprimate corupte.
 Acum suportăm NTP peste IPv6.

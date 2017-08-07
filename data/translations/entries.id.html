@@ -1,113 +1,75 @@
 <div>
-<header title="Berita I2P">Umpan berita, dan pembaruan router</header><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Call for Translators" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>The upcoming 0.9.31 release has more untranslated strings than usual</summary></details><p>In preparation for the 0.9.31 release, which brings with it significant updates
-to the user interface, we have a larger than normal collection of untranslated
-strings that need attention. If you're a translator, we would greatly appreciate
-it if you could set aside a little more time than usual during this release cycle
-in order to bring the translations up to speed. We have pushed the strings early
-to give you three weeks to work on them.</p>
-<p>If you're not currently an I2P translator, now would be a great time to get
-involved! Please see the
-<a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">New Translator's Guide</a>
-for information on how to get started.</p>
-</article><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 updates to Jetty 9</summary></details><p>0.9.30 contains an upgrade to Jetty 9 and Tomcat 8.
-The previous versions are no longer supported, and are not available in the upcoming Debian Stretch and Ubuntu Zesty releases.
-The router will migrate the jetty.xml configuration file for each Jetty website to the new Jetty 9 setup.
-This should work for recent, unmodified configurations but may not work for modified or very old setups.
-Verify that your Jetty website works after upgrading, and contact us on IRC if you need assistance.</p>
-<p>Several plugins are not compatible with Jetty 9 and must be updated.
-The following plugins have been updated to work with 0.9.30, and your router should update them after restart:
-i2pbote 0.4.6; zzzot 0.15.0.
-The following plugins (with current versions listed) will not work with 0.9.30.
-Contact the appropriate plugin developer for the status of new versions:
-BwSchedule 0.0.36; i2pcontrol 0.11.</p>
-<p>This release also supports migration of old (2014 and earlier) DSA-SHA1 hidden services to the more-secure EdDSA signature type.
-See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, including a guide and FAQ.</p>
-<p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
-Please be patient.</p>
+<header title="Berita I2P">Umpan berita, dan pembaruan router</header><article id="urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce" title="Versi 0.9.31 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2017/08/07/0.9.31-Release" author="zzz" published="2017-08-07T12:00:00Z" updated="2017-08-07T12:00:00Z"><details><summary>Versi 0.9.31 dirilis dengan pembaruan console</summary></details><p>Perubahan dalam rilis ini jauh lebih terlihat dari biasanya!Kami telah menyegarkan konsol router agar lebih mudah dipahami, peningkatan aksesibilitas dan dukungan lintas browser, dan umumnya merapikan segalanya.Ini adalah langkah pertama dalam rencana jangka panjang untuk membuat console router lebih user-friendly. Kami juga menambahkan fitur torrent dan dukungan komentar ke i2psnark.</p>
 <p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik untuk mengelola keamanan dan bantuan pada jaringan adalah dengan menjalankan rilis terbaru.</p>
-</article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 contains bug fixes</summary></details><p>0.9.29 contains fixes for numerous Trac tickets, including workarounds for corrupt compressed messages.
-We now support NTP over IPv6.
-We've added preliminary Docker support.
-We now have translated man pages.
-We now pass same-origin Referer headers through the HTTP proxy.
-There are more fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
-<p>As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
-<p>When showing emails to the user, most fields were being escaped. However, the filenames
-of attachments were not escaped, and could be used to execute malicious code in a browser
-with JavaScript enabled. These are now escaped, and additionally a Content Security Policy
-has been implemented for all pages.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
-</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contains bug fixes</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
-There are fixes for the IPv6 peer testing feature introduced last release.
-We continue improvements to detect and block peers that are potentially malicious.
-There are preliminary fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
-<p>I2P will be at 33C3, please stop by our table and give us your ideas on how to improve the network.
-We will review our 2017 roadmap and priorities 2017 at the Congress.</p>
-<p>As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 fixes a security vulnerability present in all earlier versions of the
-I2P-Bote plugin. The Android app was not affected.</p>
-<p>A lack of CSRF protection meant that if a user was running I2P-Bote and then loaded a
-malicious site in a browser with JavaScript enabled, the adversary could trigger actions
-in I2P-Bote on behalf of the user, such as sending messages. This might also have enabled
-extraction of private keys for I2P-Bote addresses, however no proof-of-exploit was tested
-for this.</p>
-<p>All I2P-Bote users will be upgraded automatically the first time they restart their router
-after I2P 0.9.28 is released in mid-December. However, for safety we recommend that you
-<a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
-upgrade manually if you plan on using I2P or I2P-Bote in the intervening time. You should
-also consider generating new I2P-Bote addresses if you regularly browse sites with
-JavaScript enabled while running I2P-Bote.</p>
-</article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="0.9.27 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary>0.9.27 contains bug fixes</summary></details><p>0.9.27 contains a number of bug fixes.
-The updated GMP library for crypto acceleration, which was bundled in the 0.9.26 release for new installs and Debian builds only, is now included in the in-network update for 0.9.27.
-There are improvements in IPv6 transports, SSU peer testing, and hidden mode.</p>
-<p>We updated a number of plugins during <a href="http://i2p-projekt.i2p/en/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> and your router will automatically update them after restart.</p>
-<p>As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P Stack Exchange proposal" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P is now a proposed site on Stack Exchange!</summary></details><p>I2P is now a proposed site on Stack Exchange!
-Please <a href="https://area51.stackexchange.com/proposals/99297/i2p">commit to using it</a> so the beta phase can begin.</p>
-</article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26 contains crypto updates, Debian packaging improvements, and bug fixes</summary></details><p>0.9.26 contains a major upgrade to our native crypto library,
-a new addressbook subscription protocol with signatures,
-and major improvements to the Debian/Ubuntu packaging.</p>
-<p>For crypto, we have upgraded to GMP 6.0.0, and added support for newer processors,
-which will speed up crypto operations considerably.
-Also, we are now using constant-time GMP functions to prevent side-channel attacks.
-For caution, the GMP changes are enabled for new installs and Debian/Ubuntu builds only;
-we will include them for in-net updates in the 0.9.27 release.</p>
-<p>For Debian/Ubuntu builds, we have added dependencies on several packages,
-including Jetty 8 and geoip, and removed the equivalent bundled code.</p>
-<p>There's a collection of bug fixes also, including a fix for a timer bug
-that caused instability and performance degradations over time.
-As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25 contains SAM 3.3, QR codes, and bug fixes</summary></details><p>0.9.25 contains a major new version of SAM, v3.3, to support sophisticated multiprotocol applications.
-It adds QR codes for sharing hidden service addresses with others,
-and "identicon" images for visually distinguishing addresses.</p>
-<p>We've added a new "router family" configuration page in the console,
-to make it easier to declare that your group of routers is run by a single person.
-There are several changes to increase the capacity of the network and hopefully improve tunnel build success.</p>
-<p>As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 Released" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 contains several bug fixes and speedups</summary></details><p>0.9.24 contains a new version of SAM (v3.2) and numerous bug fixes and efficiency improvements.
-Note that this release is the first to require Java 7.
-Please update to Java 7 or 8 as soon as possible.
-Your router will not automatically update if you are using Java 6.</p>
-<p>To prevent the problems caused by the ancient commons-logging library, we have removed it.
-This will cause very old I2P-Bote plugins (0.2.10 and below, signed by HungryHobo) to crash if they have IMAP enabled.
-The recommended fix is to replace your old I2P-Bote plugin with the current one signed by str4d.
-For more details, see <a href="http://bote.i2p/news/0.4.3">this post</a>.</p>
-<p>We had a great <a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">32C3 Congress</a> and are making good progress on our 2016 project plans.
-Echelon gave a talk on I2P's history and current status, and his slides are <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">here</a> (pdf).
-Str4d attended <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Crypto</a> and gave a talk on our crypto migration, 
-his slides are <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">here</a> (pdf).</p>
-<p>As usual, we recommend that all users update to this release.
-The best way to help the network and stay secure is to run the latest release.</p>
+</article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Lowongan untuk Penerjemah Baru" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>Versi 0.9.31 yang akan datang mempunyai lebih banyak teks yang belum diterjemahkan</summary></details><p>Dalam persiapan untuk rilis 0.9.31 yang mempunyai pembaruan yang signifikan terhadap antar muka, kami memiliki lebih banyak jumlah teks yang belum diterjemahkan. Jika Anda seorang penerjemah, kami akan sangat menghargai jika Anda dapat menyisihkan sedikit waktu lebih banyak dari biasanya untuk menerjemahkan lebih cepat. Kami telah merilis teks-teks yang harus diterjemahkan secara lebih awal untuk memberi Anda tiga minggu untuk mengerjakannya.</p>
+<p>Jika anda saat ini belum menjadi penerjemah I2P, sekarang adalah waktu yang baik untuk ikut terlibat! Mohon lihat <a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">Panduan Penerjemah Baru</a>untuk mengetahui info tentang cara untuk memulainya.</p>
+</article><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 diperbaharui ke Jetty 9</summary></details><p>0.9.30 mempunyai pembaharuan ke Jetty 9 dan Tomcat 8
+Versi-versi sebelumnya tidak didukung lagi dan tidak tersedia di rilis Debian Stretch and Ubuntu Zesty mendatang.
+Router akan memigrasikan file konfigurasi jetty.xml untuk setiap situs Jetty ke setup Jetty 9 yang baru. 
+Ini seharusnya berfungsi untuk konfigurasi yang baru dan tidak dimodifikasi, namun mungkin tidak berfungsi untuk pengaturan yang dimodifikasi atau yang sangat lama. 
+Pastikan situs web Jetty Anda berfungsi setelah melakukan pembaruan, dan hubungi kami di IRC jika memerlukan bantuan.
+</p>
+<p>Beberapa plugin tidak kompatibel dengan Jetty 9 sehingga harus diperbarui. 
+Plugin-plugin berikut telah diperbarui untuk bekerja dengan 0.9.30, dan router Anda harus memperbaruinya setelah restart: 
+I2pbote 0.4.6; Zzzot 0.15.0 
+Plugin berikut (dengan versi terbaru yang tercantum) tidak akan berfungsi dengan 0.9.30. 
+Hubungi pengembang plugin berikut ini untuk status versi baru: 
+BwSchedule 0.0.36; I2pcontrol 0.11.</p>
+<p>Rilis ini juga mendukung migrasi hidden service DSA-SHA1 lama (2014 dan sebelumnya) ke tipe signature EdDSA yang lebih aman. 
+Lihat <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> untuk informasi lebih lanjut, termasuk panduan dan FAQ.</p>
+<p>Catatan: Pada platform ARM non-Android seperti Raspberry Pi, database blockfile akan diupgrade saat restart, yang mungkin memakan waktu beberapa menit. 
+Harap bersabar.</p>
+<p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik untuk mengelola keamanan dan bantuan pada jaringan adalah dengan menjalankan rilis terbaru.</p>
+</article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 memiliki perbaikan bug</summary></details><p>0.9.29 berisi perbaikan untuk berbagai tiket Trac, termasuk workarounds untuk pesan terkompresi yang korup. 
+Kami sekarang mendukung NTP melalui IPv6. 
+Kami telah menambahkan dukungan awal Docker. 
+Kami sekarang telah menerjemahkan halaman manual. 
+Kami sekarang melewatkan same-origin Referer headers melalui proxy HTTP. 
+Ada lebih banyak perbaikan untuk Java 9, walaupun kami belum merekomendasikan Java 9 untuk penggunaan umum.</p>
+<p>Seperti biasa, kami menyarankan agar semua pengguna mengupdate ke rilis ini. Cara terbaik untuk membantu jaringan dan untuk tetap aman adalah dengan menggunakan rilis terbaru.</p>
+</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="Kerentanan Keamanan I2P-Bote" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.5 memperbaiki kerentanan keamanan yang ada di semua versi sebelumnya di 
+plugin I2P-Bote. Aplikasi Android tidak terpengaruh.</p>
+<p>Saat menampilkan email ke pengguna, sebagian besar field telah diloloskan. Namun, nama file Lampiran 
+tidak lolos dan bisa digunakan untuk mengeksekusi kode berbahaya di browser
+ yang JavaScript diaktifkan. Ini sekarang berhasil diloloskan, dan Kebijakan Keamanan Konten 
+telah diimplementasikan untuk semua halaman.</p>
+<p>Semua pengguna I2P-Bote akan diupgrade secara otomatis saat pertama kali me-restart router setelah I2P versi 0.9.29 dirilis pada pertengahan Februari. Namun, untuk keamanan kami merekomendasikan Anda untuk <a href="http://bote.i2p/install/">mengikuti petunjuk di halaman instalasi</a> untuk mengupgrade secara manual jika Anda berencana untuk menggunakan I2P atau I2P-Bote pada waktu sebelum Februari ini.</p>
+</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 memiliki perbaikan bug</summary></details><p>0.9.28 berisi perbaikan untuk lebih dari 25 tiket Trac, dan update untuk sejumlah paket perangkat lunak paket termasuk Jetty. 
+Ada perbaikan untuk fitur IPv6 peer testing yang diperkenalkan rilis terakhir. 
+Kami melanjutkan perbaikan untuk mendeteksi dan memblokir peer yang berpotensi merusak. 
+Ada perbaikan awal untuk Java 9, walaupun kami belum merekomendasikan Java 9 untuk penggunaan umum.</p>
+<p>I2P akan berada di 33C3, silakan mampir ke meja kami dan beri kami ide untuk memperbaiki jaringan I2P. 
+Kami akan meninjau roadmap prioritas 2017 kami di Congress.</p>
+<p>Seperti biasa, kami menyarankan agar semua pengguna mengupdate ke rilis ini. Cara terbaik untuk membantu jaringan dan untuk tetap aman adalah dengan menggunakan rilis terbaru.</p>
+</article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="Kerentanan Keamanan I2P-Bote" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary></summary></details><p>I2P-Bote 0.4.4 memperbaiki kerentanan keamanan yang ada di semua versi 
+Plugin I2P-Bote sebelumnya. Aplikasi Android tidak terpengaruh.</p>
+<p>Kurangnya perlindungan CSRF berarti jika pengguna menjalankan I2P-Bote dan kemudian memuat sebuah situs berbahaya di browser dengan JavaScript diaktifkan, musuh bisa memicu aksi di I2P-Bote atas nama pengguna seperti mengirim pesan. Ini mungkin juga telah mengaktifkan ekstraksi private keys untuk alamat I2P-Bote, namun tidak ada bukti eksploitasi yang diuji untuk ini.</p>
+<p>Semua user I2P-Bote akan diperbarui secara otomatis saat pertama kali me-restart router, 
+setelah I2P 0.9.28 dirilis pada pertengahan Desember. Namun, untuk keamanan kami merekomendasikan 
+Anda untuk mengikuti <a href="http://bote.i2p/install/">petunjuk di halaman instalasi </a> untuk 
+memperbarui secara manual jika Anda berencana untuk menggunakan I2P atau I2P-Bote pada waktu sebelum pertengahan Desember. Anda harus 
+juga mempertimbangkan untuk membuat alamat I2P-Bote baru jika Anda secara teratur melihat-lihat situs dengan 
+JavaScript diaktifkan saat menjalankan I2P-Bote.</p>
+</article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="0.9.27 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary>0.9.27 memiliki perbaikan bug</summary></details><p>0.9.27 memiliki beberapa perbaikan bug.
+Library GMP yang diperbarui untuk percepatan crypto, yang dibundel dalam rilis 0.9.26 untuk pemasangan baru dan versi Debian saja, sekarang dimasukkan ke pembaruan jaringan untuk 0.9.27. 
+Ada peningkatan dalam IPv6 transport, pengujian peer SSU, dan hidden mode.</p>
+<p>Kami memperbarui sejumlah plugin selama <a href="http://i2p-projekt.i2p/en/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> dan router Anda akan memperbaruinya secara otomatis setelah restart.</p>
+<p>Seperti biasa, kami menyarankan agar semua pengguna mengupdate ke rilis ini. Cara terbaik untuk membantu jaringan dan untuk tetap aman adalah dengan menggunakan rilis terbaru.</p>
+</article><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="Proposal untuk I2P Stack Exchange " href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P sekarang diusulkan di Stack Exchange!</summary></details><p>I2P sekarang diusulkan di Stack Exchange!
+Silahkan <a href="https://area51.stackexchange.com/proposals/99297/i2p">berikan komitmen</a> untuk menggunakannya sehingga fase beta bisa dimulai.</p>
+</article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26 dirilis dengan pembaruan crypto, peningkatan kinerja untuk Debian, dan perbaikan bug.</summary></details><p>0.9.26 berisi pembaruan besar ke crypto library asli kami, 
+protokol baru untuk addressbook subscription protocol with signatures, 
+dan peningkatan besar pada paket Debian/Ubuntu.</p>
+<p>Untuk kripto, kami telah memperbarui ke GMP 6.0.0 dan menambahkan dukungan untuk prosesor yang lebih baru, yang akan mempercepat operasi crypto secara signifikan. Selain itu, kami sekarang menggunakan GMP constant-time untuk mencegah serangan side-channel. Untuk kehatihatian, perubahan GMP diaktifkan hanya untuk pemasangan baru di Debian/Ubuntu; Kami akan menyertakan mereka untuk pembaruan in-net dalam rilis 0.9.27.</p>
+<p>Untuk versi Debian/Ubuntu, kami telah menambahkan dependensi pada beberapa paket, termasuk Jetty 8 dan geoip, dan menghapus kode paket yang setara.</p>
+<p>Ada juga koleksi perbaikan bug, termasuk perbaikan bug timer yang menyebabkan ketidakstabilan dan penurunan kinerja dari waktu ke waktu. Seperti biasa, kami menyarankan agar semua pengguna untuk memperbarui ke rilis ini. Cara terbaik untuk membantu jaringan dan tetap aman adalah dengan menjalankan rilis terbaru.</p>
+</article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25 berisi SAM 3.3, kode QR, dan perbaikan bug.</summary></details><p>0.9.25 berisi versi baru SAM v3.3 untuk mendukung aplikasi multiprotocol yang canggih. Rilis ini menambahkan kode QR untuk berbagi alamat hidden service dengan orang lain, dan gambar "identicon" untuk membedakan alamat secara visual.</p>
+<p>Kami telah menambahkan halaman konfigurasi "router family" baru di console, untuk memudahkan untuk menyatakan bahwa kelompok router Anda dijalankan oleh satu orang. Ada beberapa perubahan untuk meningkatkan kapasitas jaringan dan semoga hal ini meningkatkan kesuksesan dalam membangun tunnel.</p>
+<p>Seperti biasa, kami menyarankan agar semua pengguna mengupdate ke rilis ini. Cara terbaik untuk membantu jaringan dan untuk tetap aman adalah dengan menggunakan rilis terbaru.</p>
+</article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 dirilis" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 memiliki perbaikan bug dan penambahan kecepatan</summary></details><p>0.9.24 berisi versi baru SAM (v3.2), banyak perbaikan bug, dan peningkatan efisiensi. Perhatikan bahwa rilis ini adalah yang pertama membutuhkan Java 7. Silahkan perbarui ke Java 7 atau 8 sesegera mungkin. Router Anda tidak akan secara otomatis memperbarui jika Anda menggunakan Java 6.</p>
+<p>Untuk mencegah masalah yang disebabkan oleh commons-logging library yang kuno, kami telah menghapusnya. Ini akan menyebabkan plugin I2P-Bote yang sangat tua (0.2.10 dan yang lebih rendah, signed oleh HungryHobo) untuk crash jika IMAP diaktifkan. Perbaikan yang disarankan adalah mengganti plugin I2P-Bote lama Anda dengan yang sekarang di-signed oleh str4d. Untuk lebih jelasnya, lihat <a href="http://bote.i2p/news/0.4.3">posting ini</a>.</p>
+<p>Kami mengalami <a href="http://i2p-projekt.i2p/en/blog/post/2016/01/23/32C3">32C3 Congress</a> yang hebat dan membuat kemajuan yang baik dalam rencana proyek 2016 kami. Echelon memberi ceramah tentang sejarah dan status I2P sekarang, dan slide-nya <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">ada di sini (pdf)</a>. Str4d menghadiri <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Crypto</a> dan memberikan ceramah tentang migrasi crypto kami, Slide-nya <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">ada di sini (pdf)</a>.</p>
+<p>Seperti biasa, kami menyarankan agar semua pengguna mengupdate ke rilis ini. Cara terbaik untuk membantu jaringan dan untuk tetap aman adalah dengan menggunakan rilis terbaru.</p>
 </article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 Sudah rilis" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 berisi berbagai perbaikan bugs, dan beberapa peningkatan kecil di I2PSnark</summary></details><p>Halo I2P! Ini adalah rilis pertama yang ditandai oleh saya (str4d), setelah 49 rilis sebelumnya ditandai oleh zzz. Ini adalah percobaan penting redundansi kami untuk semua hal, termasuk orang-orang.</p>
 <p><b>Bersih-bersih</b></p>
 <p>Key penandaan saya telah disertakan dalam pembaruan router untuk lebih dari dua tahun (sejak 0.9.9), jadi jika Anda berada pada I2P versi terbaru maka pembaruan ini akan menjadi mudah seperti pada pembaruan lainnya. Namun demikian, jika Anda menjalankan versi yang lebih lawas dari 0.9.9, Anda terlebih dahulu perlu melakukan pembaruan manual ke versi terbaru. File pembaruan untuk versi terbaru dapat diunduh <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">disini</a>, dan instruksi mengenai bagaimana cara melakukan pembaruan manual dapat dilihat <a href="http://i2p-projekt.i2p/en/download#update">disini</a>. Setelah Anda melakukan pembaruan manual, router Anda kemudian akan menemukan dan mengunduh pembaruan 0.9.23 seperti biasanya.</p>
