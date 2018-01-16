@@ -1,9 +1,13 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:hRL4wJvP0YQ3Ngg0~rEnJYHlP~gsIRXgsfBhLt3X9DwyE4cNH1GEbRn5rmoVZLWJjF3CyuyPxNmg71Akw9wkpuqU1FvHo~28TxuZ0GItufUnbwXgiZKKFSG-eBFVIMZ0Kb4ItenX00I4gOdPJ6aEAx9Zodv~oaPsw53FhsvLDGOLr4CrO025ZHREfgDJCwv5xtKNUSp6koqzgX6wElJpxrD7cf2nlrUHqcFcSu05vCN9vVYdHmCi8ZVvks1GJe0U3CZtdv5z3n174Tmv~UqMoekzkTlhAfN1C3MROqGLE2ICyzbpf2~AUzI4h1MJ6QZhHWsvnQtPNLaGbsx1w~Z0qblHzeye~P-L~IeHZksknG54U~AFhff~SHtBoXur~~cezn4X2-KzpLyySZzDbqLIj9oE1v59p8jvmmNRP59ayhKbNK-YPXVU5vQPfjnEN6FKt2CTjOdf36cR9kjevsPn55qFr7LwScCB9C~wSA8Rfz3bBikwceL0HH3~Prstu1ZSR2BpKn4ajCYzZi~F8wln8CXHUPNqxYVbWrKOlT3C9eLPxe93l7zisNfGirbKWaZ~JK5EkQ9K3gWT2FK7QFsM-TeyRhMk5ATYvO1CV1YafECmHmcCwIqW0RcI9a2aSaJYkeTtUvjZMl4O6mWJ5mD5y2rEAYDspQxfbYFMyvdvDhk=">
-    <updated>2017-12-18T01:05:31Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:VcVUUf4a1yQ0QFqbI1Mm~CLEd5r9tJo2V~LeVv8WJyipHn9GzqH2H2JC9qnD5~kfirjFZdoxzLP5ac5u6JoQH7ahMBZVkBgVM-TjTOkYLCiREus3rWY~t6-Kq4EvaAopdtxoNXJBRfPcYenryOlDcNSEalS2AUFM5rBIgh6X1xTcbDNqemhr7Q8WWi3VWvUK8moNpPZopNgYWsd~t8bo3xS0AJch9l2bSsgCIcLcZ9M9A3AgKFq2w~L43afOJkMk4tvDnFoSjEid9IUHmAFzKViuvjP7Dql7~3Q1eMp7Mp62iAaM-9fO506E8bpCKqDv4A9wBt5besdWwud2oNAdQrmuaQ6Pdq5U7bpIQpySvQOt1MswHuCsf4im9LOu3rQcrIwBqtdLw9k4EB6mmBEEyV7szYyNDSUC4bq2UrQiqR5rGwVkGrFINSI53nG0a9Viu8kDczfawKSE0A5pX78niZST6owkR9KD5Hy0e5wd1VjEY5VjF2m~if37WhXE-dus0RVicLr1TgybLT3OFIbTKocrRkDwEkI26IvcosIScFEsBHYRTcN9rG0Yz9vMx9SK1QA6D-2gFqzXwL1t1EedPZmR4sgEOiLdn8xwPcN0yoZK5i39AUL~NdV6LZuc36vRyAERoS~C1MmPdS5z6ULW5ROl5to6Xgp4UJuLYA4NC1M=">
+    <updated>2018-01-16T14:49:01Z</updated>
     <i2p:block>45.32.62.37</i2p:block>
+    <i2p:block>45.32.125.149</i2p:block>
     <i2p:block>45.32.152.247</i2p:block>
+    <i2p:block>45.63.50.207</i2p:block>
     <i2p:block>45.63.76.128</i2p:block>
+    <i2p:block>45.76.47.3</i2p:block>
     <i2p:block>45.76.98.64</i2p:block>
+    <i2p:block>45.76.112.208</i2p:block>
     <i2p:block>45.76.152.150</i2p:block>
     <i2p:block>45.77.29.172</i2p:block>
     <i2p:block>45.77.132.75</i2p:block>
@@ -11,6 +15,7 @@
     <i2p:block>47.88.169.149</i2p:block>
     <i2p:block>47.90.120.30</i2p:block>
     <i2p:block>104.156.254.54</i2p:block>
+    <i2p:block>104.207.153.96</i2p:block>
     <i2p:block>108.61.251.143</i2p:block>
     <i2p:block>133.130.124.185</i2p:block>
     <i2p:block>150.95.134.159</i2p:block>
