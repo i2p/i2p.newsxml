@@ -1,5 +1,5 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:VcVUUf4a1yQ0QFqbI1Mm~CLEd5r9tJo2V~LeVv8WJyipHn9GzqH2H2JC9qnD5~kfirjFZdoxzLP5ac5u6JoQH7ahMBZVkBgVM-TjTOkYLCiREus3rWY~t6-Kq4EvaAopdtxoNXJBRfPcYenryOlDcNSEalS2AUFM5rBIgh6X1xTcbDNqemhr7Q8WWi3VWvUK8moNpPZopNgYWsd~t8bo3xS0AJch9l2bSsgCIcLcZ9M9A3AgKFq2w~L43afOJkMk4tvDnFoSjEid9IUHmAFzKViuvjP7Dql7~3Q1eMp7Mp62iAaM-9fO506E8bpCKqDv4A9wBt5besdWwud2oNAdQrmuaQ6Pdq5U7bpIQpySvQOt1MswHuCsf4im9LOu3rQcrIwBqtdLw9k4EB6mmBEEyV7szYyNDSUC4bq2UrQiqR5rGwVkGrFINSI53nG0a9Viu8kDczfawKSE0A5pX78niZST6owkR9KD5Hy0e5wd1VjEY5VjF2m~if37WhXE-dus0RVicLr1TgybLT3OFIbTKocrRkDwEkI26IvcosIScFEsBHYRTcN9rG0Yz9vMx9SK1QA6D-2gFqzXwL1t1EedPZmR4sgEOiLdn8xwPcN0yoZK5i39AUL~NdV6LZuc36vRyAERoS~C1MmPdS5z6ULW5ROl5to6Xgp4UJuLYA4NC1M=">
-    <updated>2018-01-16T14:49:01Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:W8URwmziHEU2GgkK0NckUql6J-oCRERrWCFpwvya4soCg2mZqKCx9UlSxBU3HhjwltpdPATACIA-Ij6lZ4tZ1ktZhNCfWf6nSEXjsw77Ol~vYBaXd5ITtjNK2NjFbvIzbJ5XMkoaS7VEJeJtVfeXFxXauKW8Svmn~Nc4pgV0nN5GJOgyEb~kWA17gpqsS5423Gs8HMmw250v1Etn-OR-BaDTTqGGr1zvHKBsRaz-suOh3kpsF4YtfEyW9SwSIX6cr4aDcqh5mXnRQGgGjI88YS7ZzlVkOTkrqKMYB1ZPRWafrhVVSlda52di5yXaav4zPXuDjC232eCfcKGqEreZrPs4~t9HvNyFJMThUoq7nLT3s5LvppUVc~xRtxNYTofbEieYuKNnNtfmqZ-2AhlyKog~6sMybV9yhNV142ktYYITJ5pb~dYDWUE-AWOag5ChfhjML2aHO7mC8Lq9Doazy-cjYMK-xf0uIhXMQz7uoaICrywqKGXal3TqZmxT~4K~5QaJ0tC7DInjTzrGkCYdpIpKOf6j5m6TKPOV3-5hmVC1rSo37XXhykLN5NlpiKDqkH-2cvdLVpsfIWOY-bKXSkUldjrzfsYV9fnTtaqtC~i-aDSEHVLmLOrzQZ1dysYTU0q3OEWtpgazOLGnR8LLK0CrBEKRz4M2GLdwTw9gfS0=">
+    <updated>2018-04-07T13:35:15Z</updated>
     <i2p:block>45.32.62.37</i2p:block>
     <i2p:block>45.32.125.149</i2p:block>
     <i2p:block>45.32.152.247</i2p:block>
@@ -14,6 +14,7 @@
     <i2p:block>47.88.159.58</i2p:block>
     <i2p:block>47.88.169.149</i2p:block>
     <i2p:block>47.90.120.30</i2p:block>
+    <i2p:block>47.208.97.112</i2p:block>
     <i2p:block>104.156.254.54</i2p:block>
     <i2p:block>104.207.153.96</i2p:block>
     <i2p:block>108.61.251.143</i2p:block>
