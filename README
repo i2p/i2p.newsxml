@@ -65,6 +65,15 @@ To build the feeds:
 $ ./news.sh
 
 
+Server requirements:
+
+Server MUST send Last-Modified or Etag header, and respond correctly
+to conditional headers in the request, so that unmodified
+files are not re-downloaded and re-displayed in the router console.
+For lighttpd, these headers are NOT set unless mime types are
+configured for .su3 and .xml files; they are NOT configured by default.
+
+
 Example rewrite rules for lighttpd to host the feeds:
 
     url.rewrite-repeat = (
