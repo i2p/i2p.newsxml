@@ -67,12 +67,26 @@ $ ./news.sh
 
 Server requirements:
 
+We recommend that the news server be run on its own
+tunnels and website, not combined with anything else,
+so the traffic and connection limits may be managed separately.
+
 Server MUST send Last-Modified or Etag header, and respond correctly
 to conditional headers in the request, so that unmodified
 files are not re-downloaded and re-displayed in the router console.
 For lighttpd, these headers are NOT set unless mime types are
 configured for .su3 and .xml files; they are NOT configured by default.
 
+For languages other than English, the router appends a ?lang=xx parameter
+to the URL, where xx is two or more lower-case letters (language code)
+possibly followed by an underscore and two or more upper-case letters (country code).
+The server must map this request to the correct file, if available,
+with fallback to a file that is available.
+
+
+There are two supported hosting solutions:
+
+1) lighttpd
 
 Example rewrite rules for lighttpd to host the feeds:
 
@@ -86,6 +100,13 @@ Example rewrite rules for lighttpd to host the feeds:
         "^/news/news_[a-z]+.atom.xml" => "/news/news.atom.xml",
         "^/news/news_[a-z]+.su3" => "/news/news.su3",
     )
+
+
+2) flask
+
+For an alternative implementation using an apache reverse proxy and flask,
+see the newsxml-flask/ directory in the i2p.scripts branch in monotone
+for the code and instructions.
 
 
 To generate a new signed blocklist:
