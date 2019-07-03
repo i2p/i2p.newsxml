@@ -1,14 +1,14 @@
 [
   {
-    "date": "2019-05-07",
-    "version": "0.9.40",
+    "date": "2019-07-02",
+    "version": "0.9.41",
     "minVersion": "0.9.9",
     "minJavaVersion": "1.7",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:7fd06cf1d94b0a01bd6a30c13b2bea642c79a0cb&dn=i2pupdate-0.9.40.su3&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:058fec34ceda4e0585950a757e84433fc9d2b40b&dn=i2pupdate-0.9.41.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
-          "http://stats.i2p/i2p/0.9.40/i2pupdate.su3"
+          "http://stats.i2p/i2p/0.9.41/i2pupdate.su3"
         ]
       }
     }
