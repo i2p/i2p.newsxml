@@ -7,7 +7,11 @@ if [ ! $venv ]; then
     exit 1
 else
     if [ ! -d $venv_dir ] ; then
-        $venv --distribute $venv_dir
+        if $venv --version | grep '[2-9][0-9].0.*'; then
+            $venv $venv_dir
+        else
+            $venv --distribute $venv_dir
+        fi
     fi
 
     . $venv_dir/bin/activate
