@@ -1,12 +1,12 @@
 [
   {
-    "date": "2020-08-24",
-    "version": "0.9.47",
+    "date": "2020-12-01",
+    "version": "0.9.48",
     "minVersion": "0.9.9",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:eee79f2407a9e43c9e3c58365a2997c8dce79312&dn=i2pupdate-0.9.47.su3&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:7b5fff00044a5f16d4de4e40968c5b6a3bae6e1a&dn=i2pupdate-0.9.48.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
           "http://stats.i2p/i2p/0.9.47/i2pupdate.su3"
         ]
