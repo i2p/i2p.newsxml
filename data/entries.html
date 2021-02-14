@@ -1,6 +1,41 @@
 <div>
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3"
+  title="0.9.49 Released"
+  href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release"
+  author="zzz"
+  published="2021-02-17T12:00:00Z"
+  updated="2021-02-17T12:00:00Z">
+<details>
+<summary>0.9.49 Released</summary>
+</details>
+<p>
+0.9.49 continues the work to make I2P faster and more secure.
+We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
+This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
+(Destinations have been using this encryption for a few releases now)
+We've been working on the specifications and protocols for new encryption for several years,
+and we are getting close to the end of it! The migration will take several releases to complete.
+</p><p>
+For this release, to minimize disruption, only new installs and a very small percentage of existing installs
+(randomly selected at restart) will be using the new encryption.
+If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
+This is normal, because your router has generated a new identity.
+Your performance should recover after a while.
+</p><p>
+We have "rekeyed" the network twice before, when changing the default signature type,
+but this is the first time we've changed the default encryption type.
+Hopefully it will all go smoothly, but we're starting slowly to be sure.
+</p><p>
+As usual, we recommend that you update to this release. The best way to
+maintain security and help the network is to run the latest release.
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:2f702241-c585-4151-a364-76c561621989"
   title="0.9.48 Released"
   href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release"
