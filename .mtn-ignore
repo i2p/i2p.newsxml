@@ -1,6 +1,0 @@
-^build
-^env
-^etc/.*.custom
-# Accidentally checking in a working transifexrc would be extremely bad!
-.transifexrc
-^logs
