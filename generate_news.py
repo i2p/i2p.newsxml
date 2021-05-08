@@ -27,7 +27,7 @@ def load_feed_metadata(fg):
 
 def load_entries(fg, entries_file):
     with open(entries_file) as f:
-        entries_data = f.read().decode('utf8').strip('\n')
+        entries_data = f.read().strip('\n')
         # Replace HTML non-breaking space with unicode
         entries_data = entries_data.replace('&nbsp;', u'\u00a0')
         # Strip the leading <div> from translations
@@ -66,22 +66,22 @@ def load_releases(fg):
             r = fg.i2p.add_release()
             r.date(release['date'])
             r.version(release['version'])
-            if release.has_key('minVersion'):
+            if 'minVersion' in release:
                 r.min_version(release['minVersion'])
-            if release.has_key('minJavaVersion'):
+            if 'minJavaVersion' in release:
                 r.min_java_version(release['minJavaVersion'])
 
-            for update_type, update in release['updates'].iteritems():
+            for update_type, update in release['updates'].items():
                 u = r.add_update(update_type)
-                if update.has_key('clearnet'):
+                if 'clearnet' in update:
                     for url in update['clearnet']:
                         u.clearnet(url)
-                if update.has_key('clearnetssl'):
+                if 'clearnetssl' in update:
                     for url in update['clearnetssl']:
                         u.clearnetssl(url)
-                if update.has_key('torrent'):
+                if 'torrent' in update:
                     u.torrent(update['torrent'])
-                if update.has_key('url'):
+                if 'url' in update:
                     for url in update['url']:
                         u.url(url)
 
