@@ -43,7 +43,8 @@ show_su3_and_mv () {
 }
 
 
-./generate_news.py
+python2 ./generate_news.py
+sleep 20s
 
 mkdir -p $TMP
 

@@ -1,0 +1,27 @@
+FROM debian:stable
+ENV PATH=/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PYTHONPATH=/opt/newsxml
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8   
+RUN apt-get update 
+RUN apt-get install -y python \
+	python-dev \
+	python-virtualenv \
+	python-pip \
+	libxml2-dev \
+	libxslt1-dev \
+	default-jdk \
+	locales
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen
+COPY . /opt/i2p.newsxml
+RUN mkdir -p /.local /.cache/pip/
+RUN chown -R 1000:1000 /opt/i2p.newsxml /.local /.cache/pip/
+RUN chmod -R o+rw /opt/i2p.newsxml /.local /.cache/pip/
+WORKDIR /opt/i2p.newsxml
+RUN ./setup_venv.sh && \
+	. env/bin/activate && \
+	pip install .
+CMD . env/bin/activate && \
+	 ./news.sh
