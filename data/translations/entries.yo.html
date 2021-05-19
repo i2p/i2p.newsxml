@@ -1,5 +1,54 @@
 <div>
-<header title="Ìròyìn 12P">Gbàgede Ìròyìn, àti àfikún-un apínṣẹ̀ìsopọ̀ká</header><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 with bug fixes</summary></details><p>0.9.44 contains an important fix for a denial of service issue in hidden services handling of new encryption types.
+<header title="Ìròyìn 12P">Gbàgede Ìròyìn, àti àfikún-un apínṣẹ̀ìsopọ̀ká</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
+We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
+There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
+<p>We have finally fixed some longstanding SusiMail corruption bugs.
+Changes to the bandwidth limiter should improve network tunnel performance.
+There are several improvements in our Docker containers.
+We have improved our defenses for possible malicious and buggy routers in the network.</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
+We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
+This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
+(Destinations have been using this encryption for a few releases now)
+We've been working on the specifications and protocols for new encryption for several years,
+and we are getting close to the end of it! The migration will take several releases to complete.</p>
+<p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
+(randomly selected at restart) will be using the new encryption.
+If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
+This is normal, because your router has generated a new identity.
+Your performance should recover after a while.</p>
+<p>We have "rekeyed" the network twice before, when changing the default signature type,
+but this is the first time we've changed the default encryption type.
+Hopefully it will all go smoothly, but we're starting slowly to be sure.</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 with performance enhancements</summary></details><p>0.9.48 enables our new end-to-end encryption protocol (proposal 144) for most services.
+We have added preliminary support for new tunnel build message encryption (proposal 152).
+There are significant performance improvements throughout the router.</p>
+<p>Packages for Ubuntu Xenial (16.04 LTS) are no longer supported.
+Users on that platform should upgrade so you may continue to receive I2P updates.</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 enables new encryption</summary></details><p>0.9.47 enables our new end-to-end encryption protocol (proposal 144) by default for some services.
+The Sybil analysis and blocking tool is now enabled by default.</p>
+<p>Java 8 or higher is now required.
+Debian packages for Wheezy and Stretch, and for Ubuntu Trusty and Precise, are no longer supported.
+Users on those platforms should upgrade so you may continue to receive I2P updates.</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 with bug fixes</summary></details><p>0.9.46 contains significant performance improvements in the streaming library.
+We have completed development of ECIES encryption (proposal 144) and there is now an option to enable it for testing.</p>
+<p>Windows users only:
+This release fixes a local privilege escalation vulnerability
+which could be exploited by a local user.
+Please apply the update as soon as possible.
+Thanks to Blaze Infosec for responsible disclosure of the issue.</p>
+<p>This is the last release to support Java 7, Debian packages Wheezy and Stretch, and Ubuntu packages Precise and Trusty.
+Users on those platforms must upgrade to receive future I2P updates.</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 with bug fixes</summary></details><p>0.9.45 contains important fixes for hidden mode and the bandwidth tester.
+There's an update to the console dark theme.
+We continue work on improving performance and the development of new end-to-end encryption (proposal 144).</p>
+<p>Bíi ìṣe, a gbà ó níyànjú kí o s'àfikún sí àgbéjáde yìí. Ọ̀nà ìdáààbòbò tó dáa jù àti ìrànwọ́ fún ẹ̀rọ-ayélukára ni lílo àgbéjáde tuntun. </p>
+</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 with bug fixes</summary></details><p>0.9.44 contains an important fix for a denial of service issue in hidden services handling of new encryption types.
 All users should update as soon as possible.</p>
 <p>The release includes initial support for new end-to-end encryption (proposal 144).
 Work continues on this project, and it is not yet ready for use.

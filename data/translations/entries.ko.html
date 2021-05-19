@@ -1,31 +1,154 @@
 <div>
-<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 with SusiMail folders and SSL Wizard</summary></details><p>0.9.35 adds support for folders in SusiMail, and a new SSL Wizard for setting up HTTPS on your Hidden Service website.
-We also have the usual collection of bug fixes, especially in SusiMail.</p>
-<p>We're hard at work on several things for 0.9.36, including a new OSX installer and a faster, more secure transport protocol called NTCP2.</p>
-<p>I2P will be at HOPE in New York City, July 20-22. Find us and say hello!</p>
+<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
+We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
+There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
+<p>We have finally fixed some longstanding SusiMail corruption bugs.
+Changes to the bandwidth limiter should improve network tunnel performance.
+There are several improvements in our Docker containers.
+We have improved our defenses for possible malicious and buggy routers in the network.</p>
 <p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
 네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
-</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 with bug fixes</summary></details><p>0.9.34 contains a lot of bug fixes!
-It also has improvements in SusiMail, IPv6 handling, and tunnel peer selection.
-We add support for IGD2 schemas in UPnP.
-There's also preparation for more improvements you will see in future releases.</p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
+We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
+This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
+(Destinations have been using this encryption for a few releases now)
+We've been working on the specifications and protocols for new encryption for several years,
+and we are getting close to the end of it! The migration will take several releases to complete.</p>
+<p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
+(randomly selected at restart) will be using the new encryption.
+If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
+This is normal, because your router has generated a new identity.
+Your performance should recover after a while.</p>
+<p>We have "rekeyed" the network twice before, when changing the default signature type,
+but this is the first time we've changed the default encryption type.
+Hopefully it will all go smoothly, but we're starting slowly to be sure.</p>
 <p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
 네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
-</article><article id="urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c" title="0.9.33 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/01/30/0.9.33-Release" author="zzz" published="2018-01-30T12:00:00Z" updated="2018-01-30T12:00:00Z"><details><summary>0.9.33 with bug fixes</summary></details><p>0.9.33 contains a large number of bug fixes, including i2psnark, i2ptunnel, streaming, and SusiMail.
-For those who cannot access the reseed sites directly, we now support several types of proxies for reseeding.
-We now set rate limits by default in the hidden services manager.
-For those that run high-traffic servers, please review and adjust the limits as necessary.</p>
+</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 with performance enhancements</summary></details><p>0.9.48 enables our new end-to-end encryption protocol (proposal 144) for most services.
+We have added preliminary support for new tunnel build message encryption (proposal 152).
+There are significant performance improvements throughout the router.</p>
+<p>Packages for Ubuntu Xenial (16.04 LTS) are no longer supported.
+Users on that platform should upgrade so you may continue to receive I2P updates.</p>
 <p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
 네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
-</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown and Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Security issues found in nearly every system</summary></details><p>A very serious issue has been found in modern CPUs which are found in nearly all sold computers worldwide, including mobiles. Those security issues are named "Kaiser", "Meltdown", and "Spectre".</p>
-<p>The whitepaper for KAISER/KPTI can be found under <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a>, Meltdown under <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, and SPECTRE under <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>. Intels first response is listed under <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">Intels response</a>.</p>
-<p>It is important for our I2P users to update your system, as long as updates are available. Windows 10 patches are availble from now on, Windows 7 and 8 will follow soon. MacOS patches are already available, to. Lots of Linux systems have a newer Kernel with a included fix available, too. Same applies to Android, which security fix of 2nd Jan 2018 includes a patch for this issues.
-Please update your systems as soon as available and possible.</p>
-</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="Happy new year! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>New year and I2P at 34C3</summary></details><p>Happy new year from the I2P team to everyone!</p>
-<p>No less than 7 I2P team members did meet at the 34C3 in Leipzig from 27th til 30th december 2017. Beside the <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">meetings</a> at our table we did meet lots of friends of I2P all over the place. 
-Results of the meetings are posted on <a href="http://zzz.i2p" target="_blank">zzz.i2p</a> already.</p>
-<p>Also we did hand out lots of stickers and gave information about our project to anyone asking. 
-Our annual I2P dinner was a full success as a thank you to all attendees for ongoing support of I2P.</p>
+</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 enables new encryption</summary></details><p>0.9.47 enables our new end-to-end encryption protocol (proposal 144) by default for some services.
+The Sybil analysis and blocking tool is now enabled by default.</p>
+<p>Java 8 or higher is now required.
+Debian packages for Wheezy and Stretch, and for Ubuntu Trusty and Precise, are no longer supported.
+Users on those platforms should upgrade so you may continue to receive I2P updates.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 with bug fixes</summary></details><p>0.9.46 contains significant performance improvements in the streaming library.
+We have completed development of ECIES encryption (proposal 144) and there is now an option to enable it for testing.</p>
+<p>Windows users only:
+This release fixes a local privilege escalation vulnerability
+which could be exploited by a local user.
+Please apply the update as soon as possible.
+Thanks to Blaze Infosec for responsible disclosure of the issue.</p>
+<p>This is the last release to support Java 7, Debian packages Wheezy and Stretch, and Ubuntu packages Precise and Trusty.
+Users on those platforms must upgrade to receive future I2P updates.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 with bug fixes</summary></details><p>0.9.45 contains important fixes for hidden mode and the bandwidth tester.
+There's an update to the console dark theme.
+We continue work on improving performance and the development of new end-to-end encryption (proposal 144).</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 with bug fixes</summary></details><p>0.9.44 contains an important fix for a denial of service issue in hidden services handling of new encryption types.
+All users should update as soon as possible.</p>
+<p>The release includes initial support for new end-to-end encryption (proposal 144).
+Work continues on this project, and it is not yet ready for use.
+There are changes to the console home page, and new embedded HTML5 media players in i2psnark.
+Additional fixes for firewalled IPv6 networks are included.
+Tunnel build fixes should result in faster startup for some users.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b" title="0.9.43 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/10/22/0.9.43-Release" author="zzz" published="2019-10-22T12:00:00Z" updated="2019-10-22T12:00:00Z"><details><summary>0.9.43 with bug fixes</summary></details><p>In the 0.9.43 release, we continue work on stronger security and privacy features and performance improvements.
+Our implementation of the new leaseset specification (LS2) is now complete.
+We are beginning our implementation of stronger and faster end-to-end encryption (proposal 144) for a future release.
+Several IPv6 address detection issues have been fixed, and there of course are several other bug fixes.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319" title="0.9.42 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/08/27/0.9.42-Release" author="zzz" published="2019-08-27T12:00:00Z" updated="2019-08-27T12:00:00Z"><details><summary>0.9.42 with bug fixes</summary></details><p>0.9.42 continues the work to make I2P faster and more reliable.
+It includes several changes to speed up our UDP transport.
+We have split up the configuration files to enable future work for more modular packaging.
+We continue work to implement new proposals for faster and more secure encryption.
+There are, of course, a lot of bug fixes also.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f" title="0.9.41 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/07/02/0.9.41-Release" author="zzz" published="2019-07-02T12:00:00Z" updated="2019-07-02T12:00:00Z"><details><summary>0.9.41 with bug fixes</summary></details><p>0.9.41 continues the work to implement new features for proposal 123,
+including per-client authentication for encrypted leasesets.
+The console has an updated I2P logo and several new icons.
+We've updated the Linux installer.</p>
+<p>Startup should be faster on platforms such as Raspberry Pi.
+We've fixed several bugs, including some serious ones affecting low-level network messages.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 with new icons</summary></details><p>0.9.40 includes support for the new encrypted leaseset format.
+We disabled the old NTCP 1 transport protocol.
+There's a new SusiDNS import feature, and a new scripted filtering mechanism for incoming connections.</p>
+<p>We've made a lot of improvements to the OSX native installer, and we've updated the IzPack installer as well.
+The work continues on refreshing the console with new icons.
+As usual, we've fixed lots of bugs also!</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e" title="0.9.39가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2019/03/21/0.9.39-Release" author="zzz" published="2019-03-21T12:00:00Z" updated="2019-03-21T12:00:00Z"><details><summary>0.9.39에서 성능이 개선되었습니다</summary></details><p>0.9.39에서는 새로운 네트워크 데이터베이스 타입 (proposal 123)을 위한 대규모 변경을 포함합니다.
+저희는 RPC 어플리케이션 개발을 지원하기 위해 i2pcontrol 플러그인을 웹 앱으로 포함했습니다.
+많은 성능 개선과 버그 수정이 이루어졌습니다.</p>
+<p>저희는 유지보수 부담을 줄이기 위해 미드나잇과 클래식 테마를 제거했습니다;
+이전에 이 테마들을 사용하시던 유저분들은 다크 혹은 라이트 테마를 보시게 될 것입니다.
+콘솔 업데이트의 첫 시작으로, 새로운 홈 페이지 아이콘들도 보시게 될 겁니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219" title="0.9.38가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2019/01/22/0.9.38-Release" author="zzz" published="2019-01-22T12:00:00Z" updated="2019-01-22T12:00:00Z"><details><summary>0.9.38에서 새로운 시작 마법사를 포함합니다</summary></details><p>0.9.38에서는 대역폭 테스터가 있는 새로운 첫 설치 마법사를 포함합니다.
+저희는 최신 버전의 GeoIP 데이터베이스 포맷 지원을 추가했습니다.
+새로운 파이어폭스 프로파일 설치 프로그램과 네이티브 Mac OSX 설치 프로그램이 웹 사이트에 생겼습니다.
+새 "LS2" netdb 포맷 지원을 위한 작업이 계속됩니다.</p>
+<p>또한 이 릴리즈는 susimail 첨부파일에 관련된 여러 문제들과, IPv6 전용 라우터를 위한 수정 사항을 포함한 다양한 버그 수정을 포함합니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="35C3 여행 리포트" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>35C3으로 간 I2P</summary></details><p>I2P 팀은 Leipzig에서 열린 35C3에 대부분 참석했습니다.
+일일 미팅을 통해 지난 해를 돌아보고 2019년의 디자인 목표와 개발을 다뤘습니다.</p>
+<p>프로젝트 비전과 새 로드맵은 <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">여기</a>에서 검토하실 수 있습니다.</p>
+<p>테스트넷인 LS2와 웹사이트와 콘솔에 대한 사용성 개선을 위한 작업이 계속됩니다.
+계획은 Tails, Debian, Ubuntu Disco에 준비하는 것입니다.
+저희는 아직 Android와 I2P_Bote 수정에 대해 작업할 분들이 필요합니다.</p>
+</article><article id="urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e" title="0.9.37이 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2018/10/04/0.9.37-Release" author="zzz" published="2018-10-04T12:00:00Z" updated="2018-10-04T12:00:00Z"><details><summary>0.9.37에서 NTCP2가 활성화되었습니다.</summary></details><p>0.9.37에서는 NTCP2라 불리는 더 빠르고, 더 안전한 전송 프로토콜이 활성화됩니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774" title="0.9.36이 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2018/08/23/0.9.36-Release" author="zzz" published="2018-08-23T12:00:00Z" updated="2018-08-23T12:00:00Z"><details><summary>0.9.36에서 NTCP2와 버그 수정이 이루어졌습니다.</summary></details><p>0.9.36은 NTCP2라 불리는 더 안전한 새로운 전송 프로토콜이 포함되었습니다.
+기본값으로 비활성화되어있지만, 테스트를 위해 <a href="/configadvanced">고급 설정</a>에서 <tt>i2np.ntcp2.enable=true</tt>를 추가하고 재시작 해 활성화 할 수 있습니다.
+NTCP2는 다음 릴리즈에서 활성화 될 것입니다.</p>
+<p>이 릴리즈는 여러 성능 개선과 버그 수정을 포함합니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35가 릴리즈 되었습니다." href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35에서 SusiMail 폴더와 SSL 마법사 추가</summary></details><p>0.9.35에서 SusiMail 폴더 지원과 히든 서비스 웹사이트를 위한 HTTPS를 설정하는 SSL 마법사가 추가되었습니다.
+또한 특히 SusiMail에서, 평소처럼 버그 수정을 했습니다.</p>
+<p>저희는 0.9.36을 위해, NTCP2라 불리는 더 빠르고 안전한 전송 프로토콜과 새 OSX 설치 프로그램을 포함한 여러가지를 열심히 작업 중입니다.</p>
+<p>I2P는 7월 20-22일에 New York City에서 열리는 HOPE에 있을 예정입니다. 저희를 찾아서 반가운 인사 남겨주세요!</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 릴리즈 됨." href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34는 버그 수정을 포함합니다.</summary></details><p>0.9.34는 엄청 많은 버그 수정을 포함합니다!
+또한 SusiMail과 IPv6 처리, 터널 피어 선택에 관련해 개선이 이루어졌습니다.
+UPnP의 IGD2 스키마 지원을 추가했습니다.
+그리고 추후 릴리즈에서 보게 될 여러 개선사항을 위해 준비를 했습니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c" title="0.9.33 릴리즈 됨." href="http://i2p-projekt.i2p/en/blog/post/2018/01/30/0.9.33-Release" author="zzz" published="2018-01-30T12:00:00Z" updated="2018-01-30T12:00:00Z"><details><summary>0.9.33은 버그 수정을 포함합니다.</summary></details><p>0.9.33은 i2psnark, i2ptunnel, 스트리밍, SusiMail을 포함한 많은 수의 버그 수정을 포함합니다.
+재시딩된 사이트를 바로 접근하지 못하는 분들을 위해, 이제 재시딩을 위한 여러 종류의 프록시를 지원합니다.
+히든 서비스 매니저는 이제 전송 제한을 기본으로 설정합니다.
+높은 트래픽 서버들을 운영하는 경우, 검토 후에 필요에 맞게 다시 제한을 조절하시기 바랍니다.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown 그리고 Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>보안 문제가 거의 모든 시스템에 발견되었습니다.</summary></details><p>모바일 폰들을 포함해서, 전 세계에 팔리고 있는 컴퓨터에 탑재된 현대 CPU들에서 매우 심각한 문제가 발견되었습니다. 이 보안 문제들은 "Kaiser", "Meltdown", "Spectre"로 명명되었습니다.</p>
+<p>KAISER/KPTI에 관한 백서는 <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a>에서, Meltdown은 <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, SPECTRE는 <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>에서 보실 수 있습니다. Intel의 첫 답변은 <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">인텔의 답변</a>에 있습니다.</p>
+<p>업데이트가 가능한 한, I2P 유저분들이 시스템을 업데이트 하는것은 매우 중요합니다. Windows 10 패치는 현재 가능하며, Windows 7과 8은 곧 지원 될 것입니다. MacOS 패치는 이미 가능합니다. 많은 리눅스 시스템들도 수정이 포함된 새 커널들을 사용 가능합니다. Android도 적용되며, 2018년 1월 2일자 보안 업데이트에서 이 문제의 패치를 포함합니다.
+가능한 한 빨리 시스템을 업데이트 하시기 바랍니다.</p>
+</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="새해 복 많이 받으세요! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>새해, 그리고 34C3에서 I2P가</summary></details><p>I2P 팀이 모든 분들에게 즐거운 신년을 기원합니다!</p>
+<p>2017년 12월 17일부터 30일까지 Leipzig에서 열린 34C3에서 최소 7명의 I2P 팀 멤버들이 미팅했습니다. 저희 테이블에서 이루어진<a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">미팅</a>을 제외하고도 다양한 곳에 있는 I2P 친구분들을 만났습니다.
+미팅 결과는 <a href="http://zzz.i2p" target="_blank">zzz.i2p</a>에 이미 포스팅되었습니다.</p>
+<p>또한 저희는 많은 스티커를 전달해 드렸으며 프로젝트에 대해 물어보는 분들께 정보를 드렸습니다.
+저희 연례 I2P 디너는 완전한 성공이였으며 계속되는 I2P 지원에 참여해주신 분들께 감사인사 드립니다.</p>
 </article><article id="urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345" title="0.9.32가 릴리즈 되었습니다" href="http://i2p-projekt.i2p/en/blog/post/2017/11/07/0.9.32-Release" author="zzz" published="2017-11-07T12:00:00Z" updated="2017-11-07T12:00:00Z"><details><summary>0.9.32 콘솔 업데이트 포함</summary></details><p>0.9.32는 라우터 콘솔 그리고 관련된 웹 앱 (주소록, i2psnark, susimail)의 수정을 포함합니다.
 또한 DNS를 통한 몇몇 네트워크 열거 공격을 제거하기 위해, 게시된 라우터 정보를 위해 설정된 호스트 이름을 처리하는 방법을 변경했습니다.
 리바인딩 공격에 저항하기 위해 콘솔에 몇몇 검사들을 추가했습니다.</p>

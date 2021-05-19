@@ -1,38 +1,146 @@
 <div>
-<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 with SusiMail folders and SSL Wizard</summary></details><p>0.9.35 adds support for folders in SusiMail, and a new SSL Wizard for setting up HTTPS on your Hidden Service website.
-We also have the usual collection of bug fixes, especially in SusiMail.</p>
-<p>We're hard at work on several things for 0.9.36, including a new OSX installer and a faster, more secure transport protocol called NTCP2.</p>
-<p>I2P will be at HOPE in New York City, July 20-22. Find us and say hello!</p>
+<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
+We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
+There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
+<p>We have finally fixed some longstanding SusiMail corruption bugs.
+Changes to the bandwidth limiter should improve network tunnel performance.
+There are several improvements in our Docker containers.
+We have improved our defenses for possible malicious and buggy routers in the network.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
-</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 with bug fixes</summary></details><p>0.9.34 contains a lot of bug fixes!
-It also has improvements in SusiMail, IPv6 handling, and tunnel peer selection.
-We add support for IGD2 schemas in UPnP.
-There's also preparation for more improvements you will see in future releases.</p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
+We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
+This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
+(Destinations have been using this encryption for a few releases now)
+We've been working on the specifications and protocols for new encryption for several years,
+and we are getting close to the end of it! The migration will take several releases to complete.</p>
+<p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
+(randomly selected at restart) will be using the new encryption.
+If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
+This is normal, because your router has generated a new identity.
+Your performance should recover after a while.</p>
+<p>We have "rekeyed" the network twice before, when changing the default signature type,
+but this is the first time we've changed the default encryption type.
+Hopefully it will all go smoothly, but we're starting slowly to be sure.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
-</article><article id="urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c" title="0.9.33 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/01/30/0.9.33-Release" author="zzz" published="2018-01-30T12:00:00Z" updated="2018-01-30T12:00:00Z"><details><summary>0.9.33 with bug fixes</summary></details><p>0.9.33 contains a large number of bug fixes, including i2psnark, i2ptunnel, streaming, and SusiMail.
-For those who cannot access the reseed sites directly, we now support several types of proxies for reseeding.
-We now set rate limits by default in the hidden services manager.
-For those that run high-traffic servers, please review and adjust the limits as necessary.</p>
+</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 with performance enhancements</summary></details><p>0.9.48 enables our new end-to-end encryption protocol (proposal 144) for most services.
+We have added preliminary support for new tunnel build message encryption (proposal 152).
+There are significant performance improvements throughout the router.</p>
+<p>Packages for Ubuntu Xenial (16.04 LTS) are no longer supported.
+Users on that platform should upgrade so you may continue to receive I2P updates.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
-</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown and Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Security issues found in nearly every system</summary></details><p>A very serious issue has been found in modern CPUs which are found in nearly all sold computers worldwide, including mobiles. Those security issues are named "Kaiser", "Meltdown", and "Spectre".</p>
-<p>The whitepaper for KAISER/KPTI can be found under <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a>, Meltdown under <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, and SPECTRE under <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>. Intels first response is listed under <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">Intels response</a>.</p>
-<p>It is important for our I2P users to update your system, as long as updates are available. Windows 10 patches are availble from now on, Windows 7 and 8 will follow soon. MacOS patches are already available, to. Lots of Linux systems have a newer Kernel with a included fix available, too. Same applies to Android, which security fix of 2nd Jan 2018 includes a patch for this issues.
-Please update your systems as soon as available and possible.</p>
-</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="Happy new year! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>New year and I2P at 34C3</summary></details><p>Happy new year from the I2P team to everyone!</p>
-<p>No less than 7 I2P team members did meet at the 34C3 in Leipzig from 27th til 30th december 2017. Beside the <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">meetings</a> at our table we did meet lots of friends of I2P all over the place. 
-Results of the meetings are posted on <a href="http://zzz.i2p" target="_blank">zzz.i2p</a> already.</p>
-<p>Also we did hand out lots of stickers and gave information about our project to anyone asking. 
-Our annual I2P dinner was a full success as a thank you to all attendees for ongoing support of I2P.</p>
-</article><article id="urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345" title="0.9.32 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/11/07/0.9.32-Release" author="zzz" published="2017-11-07T12:00:00Z" updated="2017-11-07T12:00:00Z"><details><summary>0.9.32 with console updates</summary></details><p>0.9.32 contains a number of fixes in the router console and associated webapps (addressbook, i2psnark, and susimail).
-We have also changed the way we handle configured hostnames for published router infos, to eliminate some network enumeration attacks via DNS.
-We have added some checks in the console to resist rebinding attacks.</p>
+</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 enables new encryption</summary></details><p>0.9.47 enables our new end-to-end encryption protocol (proposal 144) by default for some services.
+The Sybil analysis and blocking tool is now enabled by default.</p>
+<p>Java 8 or higher is now required.
+Debian packages for Wheezy and Stretch, and for Ubuntu Trusty and Precise, are no longer supported.
+Users on those platforms should upgrade so you may continue to receive I2P updates.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
-</article><article id="urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce" title="0.9.31 Released" href="http://i2p-projekt.i2p/en/blog/post/2017/08/07/0.9.31-Release" author="zzz" published="2017-08-07T12:00:00Z" updated="2017-08-07T12:00:00Z"><details><summary>0.9.31 with console updates</summary></details><p>The changes in this release are much more noticeable than usual!
-We have refreshed the router console to make it easier to understand,
-improved accessibility and cross-browser support,
-and generally tidied things up.
-This is the first step in a longer-term plan to make the router console more user-friendly.
-We have also added torrent ratings and comments support to i2psnark.</p>
+</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 with bug fixes</summary></details><p>0.9.46 contains significant performance improvements in the streaming library.
+We have completed development of ECIES encryption (proposal 144) and there is now an option to enable it for testing.</p>
+<p>Windows users only:
+This release fixes a local privilege escalation vulnerability
+which could be exploited by a local user.
+Please apply the update as soon as possible.
+Thanks to Blaze Infosec for responsible disclosure of the issue.</p>
+<p>This is the last release to support Java 7, Debian packages Wheezy and Stretch, and Ubuntu packages Precise and Trusty.
+Users on those platforms must upgrade to receive future I2P updates.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 with bug fixes</summary></details><p>0.9.45 contains important fixes for hidden mode and the bandwidth tester.
+There's an update to the console dark theme.
+We continue work on improving performance and the development of new end-to-end encryption (proposal 144).</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Eliberat" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 cu remedieri de erori</summary></details><p>0.9.44 conține o soluție importantă pentru o problemă de refuz a serviciului în gestionarea serviciilor ascunse de noi tipuri de criptare.
+Toți utilizatorii ar trebui să se actualizeze cât mai curând posibil.</p>
+<p>Versiunea include suportul inițial pentru noua criptare end-to-end (propunerea 144).
+Lucrările continuă pentru acest proiect și încă nu este gata de utilizare.
+Există modificări la pagina principală a consolei și la noi playere HTML5 integrate în i2psnark.
+Sunt incluse soluții suplimentare pentru rețelele IPv6 firewalled.
+Corecțiile de construire a tunelului ar trebui să conducă la o pornire mai rapidă pentru unii utilizatori.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b" title="0.9.43 Eliberat" href="http://i2p-projekt.i2p/en/blog/post/2019/10/22/0.9.43-Release" author="zzz" published="2019-10-22T12:00:00Z" updated="2019-10-22T12:00:00Z"><details><summary>0.9.43 cu remedieri de erori</summary></details><p>În versiunea 0.9.43, continuăm să lucrăm la caracteristici mai puternice de securitate și confidențialitate și îmbunătățiri ale performanței.
+Implementarea noastră a noului caiet de sarcini (LS2) este acum completă.
+Începem implementarea noastră pentru o criptare end-to-end mai puternică și mai rapidă (propunerea 144) pentru o versiune viitoare.
+Mai multe probleme de detectare a adreselor IPv6 au fost remediate, și există, desigur, câteva alte remedieri ale erorilor.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319" title="0.9.42 Lansat " href="http://i2p-projekt.i2p/en/blog/post/2019/08/27/0.9.42-Release" author="zzz" published="2019-08-27T12:00:00Z" updated="2019-08-27T12:00:00Z"><details><summary>0.9.42 cu remedierea erorilor </summary></details><p>0.9.42 continuă activitatea pentru ca I2P să fie mai rapid și mai fiabil.
+Acesta include mai multe modificări pentru a accelera transportul nostru UDP.
+Am împărțit fișierele de configurare pentru a permite lucrările viitoare pentru ambalaje mai modulare.
+Continuăm munca pentru implementarea de noi propuneri pentru o criptare mai rapidă și mai sigură.
+Există, de asemenea, o mulțime de remedieri de erori.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f" title="0.9.41 Lansat" href="http://i2p-projekt.i2p/en/blog/post/2019/07/02/0.9.41-Release" author="zzz" published="2019-07-02T12:00:00Z" updated="2019-07-02T12:00:00Z"><details><summary>0.9.41 remedierea erorilor </summary></details><p>0.9.41 continuă lucrările pentru implementarea noilor funcții pentru propunerea 123,
+inclusiv autentificarea per client pentru închirieri criptate.
+Consola are un logo I2P actualizat și câteva pictograme noi.
+Am actualizat instalatorul Linux.</p>
+<p>Pornirea ar trebui să fie mai rapidă pe platforme precum Raspberry Pi.
+Am rezolvat mai multe bug-uri, inclusiv unele grave care afectează mesaje de rețea la nivel scăzut.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 Lansat" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 cu pictograme noi</summary></details><p>0.9.40 include suport pentru noul format de închiriere criptat.
+Am dezactivat vechiul protocol de transport NTCP 1.
+Există o nouă caracteristică de import SusiDNS și un nou mecanism de filtrare scriptic pentru conexiunile primite.</p>
+<p>Am adus o mulțime de îmbunătățiri la instalatorul autohton OSX și am actualizat și instalatorul IzPack.
+Lucrarea continuă la reîmprospătarea consolei cu pictograme noi.
+Ca de obicei, am rezolvat și multe bug-uri!</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e" title="0.9.39 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2019/03/21/0.9.39-Release" author="zzz" published="2019-03-21T12:00:00Z" updated="2019-03-21T12:00:00Z"><details><summary>0.9.39 cu îmbunătățiri de performanță</summary></details><p>
+0.9.39 include schimbări extensive pentru noile tipuri de baze de date de rețea (propunerea 123).
+Am legat pluginul i2pcontrol ca un webapp pentru a sprijini dezvoltarea aplicațiilor.
+Există numeroase îmbunătățiri de performanță și corecții de erori.</p>
+<p>Am eliminat temele midnight și clasic pentru a reduce povara întreținerii;
+utilizatorii anteriori ai acestor teme vor vedea acum tema întunecată sau luminoasă.
+Există și noi pictograme pentru pagina de pornire, un prim pas în actualizarea consolei.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219" title="0.9.38 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2019/01/22/0.9.38-Release" author="zzz" published="2019-01-22T12:00:00Z" updated="2019-01-22T12:00:00Z"><details><summary>0.9.38 cu un nou asistent de configurare</summary></details><p>0.9.38 include un nou asistent de configurare la prima instalare cu un tester pentru lățimea de bandă.
+Am adăugat suport pentru cel mai recent format de bază de date GeoIP.
+Există un nou program de instalare a profilului Firefox și un nou instalator Mac OSX nativ pe site-ul nostru.
+Lucrul continuă la sprijinirea noului format netdb "LS2".</p>
+<p>Această versiune conține, de asemenea, o mulțime de corecții de erori, inclusiv câteva probleme cu atașamentele susimail și o remediere pentru routerele numai cu IPv6.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="35C3 Trip Report" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>I2P at 35C3</summary></details><p>Echipa I2P a participat în cea mai mare parte la 35C3 la Leipzig.
+Au avut loc întâlniri zilnice de revizuire a anului trecut și pentru acoperirea obiectivelor noastre de dezvoltare și proiectare pentru anul 2019.</p>
+<p>Proiectul Vision și Noua foaie de parcurs pot fi <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">revizuite aici</a>.</p>
+<p>Lucrările vor continua la LS2, pe testnet și pe îmbunătățiri de utilizare a site-ului și consolei noastre.
+Un plan este disponibil pentru a fi în Tails, Debian și Distribuția Ubuntu. Încă mai avem nevoie de oameni pentru a lucra la corecțiile pentru Android și I2P_Bote.</p>
+</article><article id="urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e" title="0.9.37 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2018/10/04/0.9.37-Release" author="zzz" published="2018-10-04T12:00:00Z" updated="2018-10-04T12:00:00Z"><details><summary>0.9.37 cu NTCP2 activat</summary></details><p>0.9.37 permite un protocol de transport mai rapid și mai sigur, denumit NTCP2.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774" title="0.9.36 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2018/08/23/0.9.36-Release" author="zzz" published="2018-08-23T12:00:00Z" updated="2018-08-23T12:00:00Z"><details><summary>0.9.36 cu NTCP2 și corecții de erori</summary></details><p>0.9.36 conține un nou protocol de transport mai sigur numit NTCP2.
+Este dezactivat în mod prestabilit, dar este posibil să îl activați pentru testare adăugând  <a href="/configadvanced">configurație avansată</a><tt>i2np.ntcp2.enable=true</tt> și repornind.
+NTCP2 va fi disponibil în următoarea versiune.</p>
+<p>Această versiune conține, de asemenea, mai multe îmbunătățiri de performanță și corecții de erori.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 cu dosare SusiMail și Expert SSL</summary></details><p>0.9.35 adaugă suport pentru dosare în SusiMail și un nou expert SSL pentru configurarea HTTPS pe site-ul dvs. de servicii ascunse.
+De asemenea, avem colecția uzuală pentru remedierea erorilor, în special în SusiMail.</p>
+<p>Lucram din greu la mai multe lucruri pentru 0.9.36, incluzând un nou program de instalare OSX și un protocol de transport mai rapid și mai sigur, numit NTCP2.</p>
+<p>I2P va fi la HOPE în New York City, 20-22 iulie. Găsiți-ne și salutați-ne!</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 cu remedierea erorilor</summary></details><p>0.9.34 conține o mulțime de remedieri a erorilor!
+De asemenea, are îmbunătățiri pentru SusiMail, manipularea IPv6 și selecția peer-tunel.
+Adăugăm suport pentru schemele IGD2 în UPnP.
+Există, de asemenea, pregătiri pentru mai multe îmbunătățiri pe care le veți vedea în versiunile viitoare.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c" title="0.9.33 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2018/01/30/0.9.33-Release" author="zzz" published="2018-01-30T12:00:00Z" updated="2018-01-30T12:00:00Z"><details><summary>0.9.33 cu remedierea erorilor</summary></details><p>0.9.33 conține un număr mare de remediere a erorilor, incluzând i2psnark, i2ptunnel, streaming și SusiMail.
+Pentru cei care nu pot accesa direct site-urile  de reseed, suportăm acum mai multe tipuri de proxy-uri pentru reseeding.
+Acum setăm limitele ratei în mod implicit în managerul de servicii ascunse.
+Pentru cei care rulează servere cu trafic ridicat, vă rugăm să consultați și să ajustați limitele după cum este necesar.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown și Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Probleme de securitate găsite în aproape toate sistemele</summary></details><p>O problemă foarte serioasă a fost găsită în procesoarele moderne care se găsesc în aproape toate calculatoarele vândute la nivel mondial, inclusiv pe cele mobile. Aceste probleme de securitate sunt numite "Kaiser", "Meltdown", și "Spectre".</p>
+<p>Documentaţia pentru KAISER/KPTI poate fi găsită sub <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a>, Meltdown sub <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, și SPECTRE sub <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>. Primul raspuns Intel este listat sub <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">Intels response</a>.</p>
+<p>Este important ca utilizatorii noștri I2P să actualizeze sistemul, atâta timp cât sunt disponibile actualizări. Patch-uri Windows 10 sunt disponibile de acum încolo, Windows 7 și 8 va urma în curând. Patch-urile MacOS sunt deja disponibile, de asemenea. O mulțime de sisteme Linux au un nou Kernel cu o soluție disponibilă. Același lucru este valabil și pentru Android, care  include un patch de securitate din 2 ianuarie 2018,  pentru aceste probleme.
+Actualizați-vă sistemele cât mai curând posibil.</p>
+</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="La mulţi ani! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>An nou și I2P la 34C3</summary></details><p>An nou fericit tuturor din partea echipei I2P!</p>
+<p>Nu mai puțin de 7 membri ai echipei I2P s-au întâlnit la 34C3 din Leipzig de la 27 până la 30 decembrie 2017. În afară de <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">meetings</a> la masa noastră am întâlnit mulți prieteni ai I2P de peste tot.
+Rezultatele întâlnirilor sunt postate deja pe <a href="http://zzz.i2p" target="_blank">zzz.i2p</a>.</p>
+<p>De asemenea, am făcut o mulțime de autocolante și am dat informații despre proiectul nostru oricui a cerut.
+Cina noastră anuală oferită de I2P a fost un succes deplin, ca o mulțumire tuturor participanților pentru sprijinul permanent acordat la I2P.</p>
+</article><article id="urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345" title="0.9.32 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2017/11/07/0.9.32-Release" author="zzz" published="2017-11-07T12:00:00Z" updated="2017-11-07T12:00:00Z"><details><summary>0.9.32 cu actualizări ale consolei</summary></details><p>0.9.32 conține un număr de remedii în consola routerului și în aplicațiile web asociate (addressbook, i2psnark și susimail).
+De asemenea, am schimbat modul în care gestionăm numele de gazdă configurat pentru informațiile publicate despre router, pentru a elimina unele atacuri de enumerare a rețelei prin DNS.
+Am adăugat câteva verificări în consola pentru a rezista atacurilor de reconectare.</p>
+<p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
+</article><article id="urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce" title="0.9.31 Lansată" href="http://i2p-projekt.i2p/en/blog/post/2017/08/07/0.9.31-Release" author="zzz" published="2017-08-07T12:00:00Z" updated="2017-08-07T12:00:00Z"><details><summary>0.9.31 cu actualizări ale consolei</summary></details><p>Modificările din această versiune sunt mult mai vizibile decât de obicei!
+Am reînnoit consola de router pentru a face mai ușor de înțeles,
+îmbunătățirea accesibilității și a suportului de tip cross-browser,
+și, în general, lucrurile s-au ordonat.
+Acesta este primul pas într-un plan pe termen lung pentru a face consola router-ului mai ușor de utilizat.
+De asemenea, am adăugat rating pentru torrent și comentarii de sprijin pentru i2psnark.</p>
 <p>Ca de obicei, vă recomandăm ca toți utilizatorii să actualizeze la această versiune. Cel mai bun mod de a ajuta rețeua și a rămâne securizat este de a rula ultima versiune.</p>
 </article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Apel pentru traducători" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>Versiunea 0.9.31, care urmează, are mai multe șiruri de caractere netraduse decât de obicei</summary></details><p>În pregătirea pentru lansarea versiunii 0.9.31, care aduce cu ea actualizări semnificative
  la interfața cu utilizatorul, avem o colecție mai mare decât cea normală de siruri de caractere netraduse

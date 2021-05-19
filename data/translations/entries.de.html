@@ -1,20 +1,117 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 Veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 enthält jetzt SusiMail Verzeichnisse und einen SSL Wizzard</summary></details><p>0.9.35 fügt nun Support für EMail Verzeichnisse in SusiMail hinzu und einen neuen SSL Wizzard zum aktivieren von HTTPS auf ihren Versteckten Services Webseite.
-Desweiteren wurden wie üblich jede Menge Fehler, besonders in SusiMail, behoben.</p>
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 enthält Korrekturen für IPv6</summary></details><p>0.9.50 führt die Transition fort hinr zu ECIES-X25519 Router Verschlüsselung.
+DNS über HTTPS wurde für das Reseeding aktiviert, dieses schützt BenutzerInnen vor passivem DNS Snooping.
+Neben einem neuen UPnP Support wurden zahlreiche Korrekturen und Verbesserungen für IPv6 Adressen inkludiert.</p>
+<p>Endlich wurden auch einige lang ausstehende SusiMail Korruptionsfehler behoben. 
+Änderungen an den Bandbreitenlimitern sollte die Netzwerk Tunnel Performance verbessern.
+Es gibt diverse Verbesserungen für die Docker Container.
+Diverse Abwehrmaßnahemen gegenüber möglichen feindseeligen und gefährlichen Router im I2P Netzwerk wurden verbessert.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 mit SSU Korrekturen und schnelleren Kryptographieoperationen</summary></details><p>0.9.49 führt die Arbeiten zum Beschleuningen und besseren Absicherung von I2P fort. 
+Es gibt diverse Verbesserungen und Korrekturen für den SSU (UDP) Transport, aus denen höhere Geschwindigkeiten resultieren sollten.
+Diese Version startet auch die Migration zur neuen, schnelleren ECIES-X25519 Verschlüsselung für die Router.
+(Destinationen nutzen diese Verschlüsselung schon seit einigen Versionen)
+Wir haben seit einigen Jahren an den Spezifikationen und Implementationen für die neue Verschlüsselung gearbeitet und kommen dem Abschluß dieser Arbeiten nahe! Diese Migration wird einige Versionen bis zum Abschluß benötigen.</p>
+<p>Zur Vermeidung von großen Unterbrechungen werden mit dieser Version nur neue Installationen und ein kleiner Teil der bestehenden Installationen (beim Neustart zufällig ausgewählt) die neue Verschlüsselung nutzen.
+Falls Ihr Router auf die neue Verschlüsselung umstellt, wird dieser wahrscheinlich einige Tage nach dem Neustart weniger stabil sein und weniger Bandbreite nutzen.
+Dieses ist normal, da ihr Router eine neue Identifikation bekommt. Ihre Router-Performance wird nach einer Weile wieder erholt sein.</p>
+<p>Wir haben das I2P Netzwerk schon 2 mal dieser Prozdeur unterzogen, beim Ändern des Stanardsignatur Typus, aber dieses ist das erste Mal, das wir den Standard Verschlüsselung Typus ändern-
+Es sollte problemfrei funktionieren, zur Sicherheit starten wir mit einer kleiner Anzahl an Migrationen.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 mit Performanceerbesserungen</summary></details><p>0.9.48 aktiviert das neue Ende-zu-Ende Verschlüsselungsprotokoll (Vorschlag 144) fur fast alle Services.
+Vorläufige Unterstützung für die neue Verschlüsselung der Tunnelaufbaunachrichten (Vorschlag 152) wurde auch hinzugefügt.
+Es gibt signifikante Verbesserung der Perforamnce im gesamten Routerr.</p>
+<p>Pakete für Ubuntu Xenial (16.04 LTS) werden nicht mehr unterstützt und zur Verfügung gestellt.
+BenutzerInnen dieser Plattform sollten diese aktualisieren um die letzten I2P Aktualisierungen bekommen zu können. </p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 aktiviert die neue Verschlüsselung</summary></details><p>0.9.47 aktiviert das neue Ende-zu-Ende Verschlüsselungsprotokoll (Vorschalg 144) als Standard für einige Services.
+Das Sybil Analyse- und Blockierungsprogramm ist nun standardmässig aktiviert.</p>
+<p>Java 8 oder höher ist nun notwendig.
+Debian Pakete für Wheezy und Stretch, als auch Pakete für Ubuntu Trusty und Precise werden nicht mehr unterstützt oder zur Verfügung gestellt.
+BenutzerInnen dieser Plattformen sollten diese aktualisieren um die letzten I2P Aktualisierungen zu bekommen</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 enthält Fehlerkorrekturen</summary></details><p>0.9.46 enthält signifikante Performanceverbesserungen in der Streaming Bibliothek
+Wir haben die Entwicklung der ECIES Verschlüsselung (Proposal 144) vervollständigt und es gibt jetzt eine Möglichkeit zur Aktivierung und testen dieser.</p>
+<p>Nur für Windows AnwenderInnen:
+Diese Version behebt eine lokale Privilegieneskalation welche von einem lokalen Nutzer ausgenutzt werden konnte.
+Bitte spielen Sie dieses Update so schnell wie möglich ein.
+Vielen Dank an Blaze Infosec fürs verantwortungsbewusste Melden der Schwachstelle.</p>
+<p>Dieses ist die letzt Version mit Java 7 Support, Distributionspakete für Debian Wheezy und Stretch, Ubuntu Precise und Trusty.
+AnwenderInnen dieser Plattformen sollten diese Upgraden um zukünftige I2P Versionen zu erhalten.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 enthält Fehlerkorrekturen</summary></details><p>0.9.45 enthält wichtige Korrekturen für den "Versteckten Modus" und dem Bandbreitentester.
+Es gibt eine Aktualisierung für das dunkle Konsolenthema.
+Auch wurden die Arbeiten an Performanceverbesserungen weitergeführt und die Entwicklung der neuen Ende-zu-Ende Verschlüsselung (Proposal 144).</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 mit Bug Fixes</summary></details><p>0.9.44 beinhaltet ein wichtiges Fix für eine Denialof Service Problem innerhalb der internen Dienste, bei denen neue Verschlüsselungsalgorythmen eingesetzt werden. Alle User sollten so schnell wie möglich updaten! </p>
+<p>Die Veröffentlichung beinhaltet initialen Support für neue Ende-zu-Ende Verschlüsselung (proposal 144). Die Arbeit an diesem Projekt geht weiter und es ist noch nicht einsatzbereit. Es gibt Änderung an der Homepage der Konsole und neue eingebettete HTML5 Media Player in i2psnark. Darüber hinaus gehende Korrekturen an firewalled IPv6 Netzwerken sind eingeschlossen. Korrekturen beim Aufbau der Tunnel sollten sich für einige User in einem schnelleren Aufbau bemerkbar machen. </p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b" title="0.9.43 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/10/22/0.9.43-Release" author="zzz" published="2019-10-22T12:00:00Z" updated="2019-10-22T12:00:00Z"><details><summary>0.9.43 mit Fehlerkorrekturen</summary></details><p>In der 0.9.43 Version wird die Arbeit an starker Verschlüsselung, Privacy Funktionen und Performance Verbesserungen. weitergeführt.
+Unsere Implementation der neuen LeaseSet Spezifikation (LS2) ist jetzt komplett.
+Wir beginnen somit unsere Implementierung der schnelleren und stärkeren Ende-zu-Ende Verschlüsselung (Proposal 144) für eine zukünftige Version.
+Diverse IPv6 Adressen Detektierungen wurden Fehlerbereinigt und natürlich wurden weitere Fehler behoben.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319" title="0.9.42 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/08/27/0.9.42-Release" author="zzz" published="2019-08-27T12:00:00Z" updated="2019-08-27T12:00:00Z"><details><summary>0.9.42 mit Fehlerkorrekturen</summary></details><p>Version 0.9.42 ist ein weiterer Schritt auf dem Weg, I2P schneller und zuverlässiger zu machen.
+Es gab mehrere Änderungen, um UDP-Übertragungen zu beschleunigen.
+Wir haben die Konfigurationsdateien aufgeteilt, um in Zukunft die Paketierung modularer gestalten zu können.
+Wir arbeiten weiterhin daran, neue Ansätze für schnellere und sicherere Verschlüsselung einzubauen.
+Selbstverständlich gibt es auch viele Fehlerkorrekturen.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f" title="0.9.41 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/07/02/0.9.41-Release" author="zzz" published="2019-07-02T12:00:00Z" updated="2019-07-02T12:00:00Z"><details><summary>0.9.41 mit Fehlerkorrekturen</summary></details><p>Mit der 0.9.41 setzen wir die Arbeit an an Vorschlag 123 fort,
+mit Authentifizierung pro Client bei verschlüsselten Leasesets.
+Die Konsole hat ein aktuelles I2P-Logo und mehrere neue Icons.
+Wir haben das Linux-Installationsprogramm aktualisiert.</p>
+<p>Der Start sollte auf Platformen wie dem Raspberry Pi schneller sein.
+Wir haben mehrere Fehler behoben, darunter einige sehr gravierende, die Low-Level-Netzwerkmeldungen betrafen.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 mit neuen Icons</summary></details><p>0.9.40 bringt Unterstützung für das neue, verschlüsselte Leaseset-Format.
+Wir haben das alte Transportprotokoll NTCP 1 deaktiviert.
+Bei SusiDNS gibt es eine neue Import-Funktion und einen neuen, Skript-basierten Filtermechanismus für eingehende Verbindungen.</p>
+<p>Wir haben große Fortschritte bei der nativen OSX-Installation gemacht, und wir haben die IzPack-Installation ebenfalls aktualisiert.
+Weiterhin wird die Konsole durch neue Icons aufgefrischt.
+Wie üblich haben wir auch viele Fehler behoben!</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e" title="0.9.39 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/03/21/0.9.39-Release" author="zzz" published="2019-03-21T12:00:00Z" updated="2019-03-21T12:00:00Z"><details><summary>0.9.39 mit Performanceverbesserungen</summary></details><p>0.9.39 enthält weitreichende Veränderungen für die neuen Typen der Netzwerkdatenbank (Proposal 123).
+Wir bündeln das I2PControl Plugin als eine WebApplikation zur Unterstützung der Entwicklung von RPC Anwendungen.
+Desweiteren gibt es zahlreiche Performanceverbesserungen und Fehlerbehebungen. </p>
+<p>Die Midnight und Classic Themen wurden zur Verbesserung der Wartungsfreundlichkeit entfernt;
+Nutzer dieser Themes werden nun das dark oder light Theme sehen.
+Auch gibt es neue Homepage Icons als ersten Schritt zur Aktualisierung der Konsole.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219" title="0.9.38 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2019/01/22/0.9.38-Release" author="zzz" published="2019-01-22T12:00:00Z" updated="2019-01-22T12:00:00Z"><details><summary>0.9.38 mit neuem Installationsassistenten</summary></details><p>0.9.38 enthält einen neuen Assistenten zur Erstinstallation und mit Bandbreiten-Tester.
+Wir haben Unterstützung für das neueste GeoIP-Datenbankformat eingebaut.
+Es gibt ein neues Installationsprogramm für Firefox-Profile und ein neues, natives Installationsprogramm für Mac OSX auf unserer Webseite.
+Die Arbeiten zur Unterstützung des neuen NetDB-Format "LS2" dauern an.</p>
+<p>Diese Version behebt auch viele Fehler, darunter mehrere Probleme mit Susimail-Anhängen und eines mit  Nur-IPv6-Routern.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="Bericht vom 35C3-Besuch" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>I2P beim 35C3</summary></details><p>Die meisten Mitglieder des I2P-Teams waren beim 35C3 in Leipzig anwesend.
+Bei täglichen Treffen wurden das vergangene Jahr sowie unsere Entwicklungs- und Designziele für 2019 besprochen.</p>
+<p>Die Projektübersicht und der neue Entwicklungsplan können <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">hier</a> begutachtet werden.</p>
+<p>Wir arbeiten weiter an LS2, dem Testnet und an Benutzbarkeitsverbesserungen für unsere Website und die Konsole.
+Es ist geplant, in Tails, Debian und Ubuntu Disco zu sein. Wir brauchen noch Leute, die Fehler an Android und I2P_Bote beheben.</p>
+</article><article id="urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e" title="0.9.37 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/10/04/0.9.37-Release" author="zzz" published="2018-10-04T12:00:00Z" updated="2018-10-04T12:00:00Z"><details><summary>0.9.37 mit aktiviertem NTCP2</summary></details><p>0.9.37 aktiviert das schnellere, sicherere Transportprotokoll namens NTCP2.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774" title="0.9.36 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/08/23/0.9.36-Release" author="zzz" published="2018-08-23T12:00:00Z" updated="2018-08-23T12:00:00Z"><details><summary>0.9.36 mit NTCP2 und Fehlerkorrekturen</summary></details><p>0.9.36 führt ein neues, sichereres Transportprotokoll namens NTCP2 ein.
+Es ist standardmäßig deaktiviert, kann aber zum Testen eingeschaltet werden, indem man in der <a href="/configadvanced">erweiterten Konfiguration</a> <tt>i2np.ntcp2.enable=true</tt> setzt und neu startet.
+NTCP2 wird in der kommenden Version standardmäßig aktiv sein.</p>
+<p>Diese Version enthält auch mehrere Geschwindigkeitsverbesserungen und Fehlerkorrekturen.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 mit Ordnern in SusiMail und einem SSL-Assistenten</summary></details><p>0.9.35 fügt Unterstützung für E-Mail-Ordner in SusiMail hinzu sowie einen neuen SSL-Assistenten zum Einrichten von HTTPS für deine versteckte Website.
+Ansonsten wurden wie üblich jede Menge Fehler, besonders in SusiMail, behoben.</p>
 <p>Wir arbeiten weiter hart an diversen Verbesserungen für 0.9.36, inklusiv einem neuem OSX Installer und einem schnelleren, sichreren Transportprotokoll, welches sich NTCP2 nennt.</p>
 <p>I2P wird auf der HOPE Konferenz in New York City, vom 20. bis zum 22. July, sein. Finden Sie und und sagen Sie uns Hallo!</p>
 <p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
-</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 enthält Fehlerkorrekturen</summary></details><p>0.9.34 enthält viele Fehlekorrekturen!
+</article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 enthält Fehlerkorrekturen</summary></details><p>0.9.34 enthält viele Fehlerkorrekturen!
 Diese Version verbessert ausserdem SusiMail, das Arbeiten mit IPv6 und die Auswahl der Tunnelteilnehmer.
-In UPnP wurde Unterstützung für IGD2 implementiert.
-Desweiteren wurden Vorbereitungen für weitere Verbesserungen implementiert, die in den nächsten Versionen aufscheinenwerden.</p>
+Für UPnP wurde Unterstützung von IGD2 implementiert.
+Außerdem wurden Vorbereitungen für weitere Verbesserungen implementiert, die in die nächsten Versionen einfließen werden.</p>
 <p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
 </article><article id="urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c" title="0.9.33 Veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2018/01/30/0.9.33-Release" author="zzz" published="2018-01-30T12:00:00Z" updated="2018-01-30T12:00:00Z"><details><summary>0.9.33 mit Fehlerkorrekturen</summary></details><p>0.9.33 enthält eine große Anzahl an Fehlerkorrekturen, unter anderen für I2PSnark, I2PTunnel, Streaming und SusiMail.
 Für diejenigen, die die Reseed Server nicht direkt erreichen können, unterstützen wir jetzt diverse Arten von Proxies zum reseeden.
 Jetzt setzen wir auch standardmässig die Zugriffslimits im Hidden Service Manager.
 Falls Sie einen Server mit hoher Bandbreite betreiben, kontrollieren Sie bitte diese Limits und passen Sie diese ggf. an.</p>
 <p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
-</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown und Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Sicherheits Probleme in nahezu jedem System gefunden</summary></details><p>Ein sehr gravierendes Problem wurde in modernen CPUS gefunden, welches nahezu alle verkauften Computer und Mobilgeräte betrifft.
+</article><article id="urn:uuid:dc95b7d9-0c55-472e-8cd9-cf485a495c2c" title="KAISER, Meltdown und Spectre" href="https://gruss.cc/files/kaiser.pdf" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Sicherheitsprobleme in nahezu jedem System gefunden</summary></details><p>Ein sehr gravierendes Problem wurde in modernen CPUS gefunden, welches nahezu alle verkauften Computer und Mobilgeräte betrifft.
 Diese Probleme wurden "Kaiser", "Meltdown" und "Spectre" benannt.</p>
 <p>Das Whitepaper zu KAISER/KPTI kann under <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a> gelesen werden, Meltdown unter <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, und SPECTRE unter <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>. Intels erste Reaktion ist auf <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">Intels Anwort</a>zu finden.</p>
 <p>Für unsere I2P Nutzer ist es wichtig, aktuelle Updates einzuspielen und das System aktuell zu halten. Patches für Windows 10 existieren bereits, Windows 7 und 8 werden rasch folgen. Ebenso gibt es schon Patches für MacOS. Für viele Linux Systeme  existieren schon aktuelle Kernel Pakete mit den nötigen Fixes, ebenso für Android, der Security Fix vom 2. Januar 2018 enthält den nötigen Fix.
