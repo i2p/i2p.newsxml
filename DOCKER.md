@@ -8,7 +8,7 @@ distributions where Python2 support is limited or unavailable.
 ## To build the signing container, use:
 
 ``` sh
-docker build -t i2p.newsxml.signing -f Dockerfile.signing .
+docker build --no-cache -t i2p.newsxml.signing -f Dockerfile.signing .
 ```
 
 To run news.sh in the container, prepare your etc/su3.vars.custom file as if your
@@ -30,6 +30,19 @@ Then, extract the built feeds from the container:
 docker cp i2p.newsxml.signing:/opt/i2p.newsxml/build build
 ```
 
+``` sh
+docker build --no-cache -t i2p.newsxml.signing -f Dockerfile.signing .
+docker rm -f i2p.newsxml.signing
+docker run -it \
+  -u $(id -u):$(id -g) \
+  --name i2p.newsxml.signing \
+  -v $HOME/.i2p-plugin-keys/:/.i2p-plugin-keys/:ro \
+  -v $HOME/i2p/:/i2p/:ro \
+  i2p.newsxml.signing
+docker cp i2p.newsxml.signing:/opt/i2p.newsxml/build build
+```
+
+
 ## Now, you're ready to build the hosting container:
 
 With the feeds in `build` from the previous step, run:
@@ -41,5 +54,11 @@ docker build -t i2p.newsxml .
 then, to serve the files on a local port:
 
 ``` sh
-docker run -d --restart=always -p 127.0.0.1:3000 i2p.newsxml
+docker run -d --restart=always --name newsxml -p 127.0.0.1:3000:3000 i2p.newsxml
+```
+
+``` sh
+docker build -t i2p.newsxml .
+docker rm -f i2p.newsxml
+docker run -d --restart=always --name newsxml -p 127.0.0.1:3000:3000 i2p.newsxml
 ```
