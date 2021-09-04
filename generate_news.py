@@ -27,7 +27,7 @@ def load_feed_metadata(fg):
 
 def load_entries(fg, entries_file):
     with open(entries_file) as f:
-        entries_data = f.read().decode('utf8').strip('\n')
+        entries_data = f.read().strip('\n')
         # Replace HTML non-breaking space with unicode
         entries_data = entries_data.replace('&nbsp;', '\u00a0')
         # Strip the leading <div> from translations
