@@ -69,7 +69,7 @@ class Release(object):
         if self.__release_min_java_version is not None:
             release.attrib['minJavaVersion'] = self.__release_min_java_version
 
-        for update_type, update in self.__release_updates.iteritems():
+        for update_type, update in self.__release_updates.items():
             update_node = etree.SubElement(release, '{%s}update' % I2P_NS)
             update_node.attrib['type'] = update_type
 
@@ -116,7 +116,7 @@ class Release(object):
             raise ValueError('update_type must be one of sud, su2 or su3')
         if update is None:
             update = Update()
-        if self.__release_updates.has_key(update_type) and not replace:
+        if update_type in self.__release_updates and not replace:
             raise ValueError('Update type %s is already defined' % update_type)
         self.__release_updates[update_type] = update
         return update
@@ -159,7 +159,7 @@ class Revocations(object):
 
         revocations = etree.Element('{%s}revocations' % I2P_NS)
 
-        for crl_id, crl in self.__revocations_crls.iteritems():
+        for crl_id, crl in self.__revocations_crls.items():
             crl_node = etree.SubElement(revocations, '{%s}crl' % I2P_NS)
             crl_node.attrib['id'] = crl_id
             crl_node.attrib['updated'] = crl.updated().isoformat()
@@ -170,7 +170,7 @@ class Revocations(object):
     def add_crl(self, crl_id, crl=None, replace=False):
         if crl is None:
             crl = Crl()
-        if self.__revocations_crls.has_key(crl_id) and not replace:
+        if crl_id in self.__revocations_crls and not replace:
             raise ValueError('CRL ID %s is already defined' % crl_id)
         self.__revocations_crls[crl_id] = crl
         return crl

@@ -7,7 +7,7 @@ if [ ! $venv ]; then
     exit 1
 else
     if [ ! -d $venv_dir ] ; then
-        if $venv --version | grep '[2-9][0-9].0.*'; then
+        if $venv --version | awk -F: '{if($2>20)print$2}' ; then
             $venv $venv_dir
         else
             $venv --distribute $venv_dir

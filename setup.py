@@ -9,6 +9,6 @@ setup(
     description='I2P Atom extension for feedgen',
     author='str4d',
 
-    install_requires="feedgen==0.3.1",
+    install_requires="feedgen>=0.3.1",
     packages=['feedgen.ext'],
 )
