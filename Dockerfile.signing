@@ -1,4 +1,4 @@
-FROM debian:oldstable
+FROM debian:stable
 ENV PATH=/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV PYTHONPATH=/opt/newsxml
 ENV LANG en_US.UTF-8  
@@ -7,8 +7,8 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get update 
 RUN apt-get install -y python \
 	python-dev \
-	python-virtualenv \
-	python-pip \
+	virtualenv \
+	pip \
 	libxml2-dev \
 	libxslt1-dev \
 	default-jdk \
