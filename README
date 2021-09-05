@@ -32,6 +32,13 @@ The highest-level heading that can be used is <h4>, but it looks bad in CSS, so
 for now use <p><b>.
 
 If it's an I2P release, edit data/releases.json as well.
+Valid su3 map entries in releases.json are:
+
+   torrent:     A single magnet link
+   url:         A list of in-i2p http URLs, supported in I2P as of 1.6.0
+   clearnet:    A list of non-i2p http URLs, not currently supported in I2P
+   clearnetssl: A list of non-i2p https URLs, not currently supported in I2P
+
 
 NOTE: Only the following XHTML entities are allowed in news entries.
 Strict XHTML is required. This is enforced in NewsXMLParser.
