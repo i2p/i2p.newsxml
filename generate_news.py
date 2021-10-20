@@ -8,10 +8,13 @@ from lxml import etree
 import re
 import os.path
 
-DATA_DIR = 'data'
+I2P_OS = os.getenv("I2POS", "")
+I2P_BRANCH = os.getenv("I2PBRANCH", "")
+DATA_DIR = os.path.join('data')
+RELEASE_DIR = os.path.join(DATA_DIR, I2P_OS, I2P_BRANCH)
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
 TRANSLATED_ENTRIES_FILES = os.path.join(DATA_DIR, 'translations/entries.*.html')
-RELEASES_FILE = os.path.join(DATA_DIR, 'releases.json')
+RELEASES_FILE = os.path.join(RELEASE_DIR, 'releases.json')
 CRL_FILES = os.path.join(DATA_DIR, 'crls/*.crl')
 BLOCKLIST_FILE = os.path.join(DATA_DIR, 'blocklist.xml')
 

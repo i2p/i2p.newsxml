@@ -42,33 +42,36 @@ show_su3_and_mv () {
     mv $file $BUILD
 }
 
+final_generate_signed_feeds () {
+    python3 ./generate_news.py
+    sleep 20s
 
-python3 ./generate_news.py
-sleep 20s
+    mkdir -p $TMP
 
-mkdir -p $TMP
+    verify_xml $BUILD/news.atom.xml
+    gzip -c -n $BUILD/news.atom.xml > "$TMP/news$XML_GZ_SUFFIX"
+    for file in `ls $NEWS_PREFIX*$ATOM_SUFFIX`; do
+        prepare_lang_gz $file
+    done
 
-verify_xml $BUILD/news.atom.xml
-gzip -c -n $BUILD/news.atom.xml > "$TMP/news$XML_GZ_SUFFIX"
-for file in `ls $NEWS_PREFIX*$ATOM_SUFFIX`; do
-    prepare_lang_gz $file
-done
+    NOW=`date +%s`
+    java -cp $I2P/lib/i2p.jar net.i2p.crypto.SU3File \
+        bulksign -c NEWS -f XML_GZ -t RSA_SHA512_4096 $TMP $KS $NOW $SIGNER
 
-NOW=`date +%s`
-java -cp $I2P/lib/i2p.jar net.i2p.crypto.SU3File \
-    bulksign -c NEWS -f XML_GZ -t RSA_SHA512_4096 $TMP $KS $NOW $SIGNER
+    if [ $? -ne 0 ]
+    then
+        echo "Failed to bulksign news files"
+        exit 1
+    fi
 
-if [ $? -ne 0 ]
-then
-    echo "Failed to bulksign news files"
-    exit 1
-fi
+    show_su3_and_mv "$TMP/news$SU3_SUFFIX"
+    for file in `ls $TMP_PREFIX*$SU3_SUFFIX`; do
+        show_su3_and_mv $file
+    done
 
-show_su3_and_mv "$TMP/news$SU3_SUFFIX"
-for file in `ls $TMP_PREFIX*$SU3_SUFFIX`; do
-    show_su3_and_mv $file
-done
+    rm -r $TMP
+    echo
+    ls -l $BUILD
+}
 
-rm -r $TMP
-echo
-ls -l $BUILD
+final_generate_signed_feeds

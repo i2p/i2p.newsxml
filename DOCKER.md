@@ -3,7 +3,9 @@ Signing News and Hosting a News Server with Docker
 
 i2p.newsxml has two containers, one for hosting the news itself, and one which
 is used for running `news.sh` and `generate_news.py` in a container on Linux
-distributions where Python2 support is limited or unavailable.
+distributions where Python2 support is limited or unavailable. It's also useful
+if you simply prefer to manage Docker containers using Docker's or related
+project's tooling(Portainer or sen for instance).
 
 ## To build the signing container, use:
 
