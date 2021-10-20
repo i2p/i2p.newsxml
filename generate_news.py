@@ -18,7 +18,7 @@ RELEASES_FILE = os.path.join(RELEASE_DIR, 'releases.json')
 CRL_FILES = os.path.join(DATA_DIR, 'crls/*.crl')
 BLOCKLIST_FILE = os.path.join(DATA_DIR, 'blocklist.xml')
 
-BUILD_DIR = 'build'
+BUILD_DIR = os.path.join('build', I2P_OS, I2P_BRANCH)
 NEWS_FILE = os.path.join(BUILD_DIR, 'news.atom.xml')
 TRANSLATED_NEWS_FILE = os.path.join(BUILD_DIR, 'news_%s.atom.xml')
 
