@@ -1,6 +1,7 @@
 #!/bin/sh
 
-BUILD=./build
+BUILD=./build/"$I2P_OS"/"$I2P_BRANCH"
+RELEASES=./data/"$I2P_OS"/"$I2P_BRANCH"/releases.json
 NEWS_PREFIX=$BUILD/news_
 ATOM_SUFFIX=.atom.xml
 TMP=$BUILD/tmp
@@ -74,4 +75,23 @@ final_generate_signed_feeds () {
     ls -l $BUILD
 }
 
-final_generate_signed_feeds
+I2P_OSS="win osx"
+I2P_BRANCHES="beta stable testing"
+
+if [ -z $I2P_OS ]; then
+  if [ -z $I2P_BRANCH ]; then
+    for I2P_OS in $I2P_OSS; do
+      for I2P_BRANCH in $I2P_BRANCHES; do
+        echo "building news for: $I2P_OS, $I2P_BRANCH."
+        export I2P_OS
+        export I2P_BRANCH
+        ./news.sh
+      done
+    done
+  fi
+else
+  if [ -f $RELEASES ]; then
+    final_generate_signed_feeds
+  fi
+fi
+

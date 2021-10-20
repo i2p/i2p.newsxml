@@ -8,8 +8,8 @@ from lxml import etree
 import re
 import os.path
 
-I2P_OS = os.getenv("I2POS", "")
-I2P_BRANCH = os.getenv("I2PBRANCH", "")
+I2P_OS = os.getenv("I2P_OS", "")
+I2P_BRANCH = os.getenv("I2P_BRANCH", "")
 DATA_DIR = os.path.join('data')
 RELEASE_DIR = os.path.join(DATA_DIR, I2P_OS, I2P_BRANCH)
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
@@ -126,7 +126,7 @@ def generate_feed(entries_file=None):
     load_blocklist(fg)
 
     if not os.path.exists(BUILD_DIR):
-        os.mkdir(BUILD_DIR)
+        os.makedirs(BUILD_DIR)
     fg.atom_file(entries_file and TRANSLATED_NEWS_FILE % language or NEWS_FILE, pretty=True)
 
 if __name__ == '__main__':
