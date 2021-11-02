@@ -44,8 +44,9 @@ show_su3_and_mv () {
 }
 
 final_generate_signed_feeds () {
+    echo "Generating signed feeds"
     python3 ./generate_news.py
-    sleep 20s
+    #sleep 20s
 
     mkdir -p $TMP
 
@@ -80,6 +81,7 @@ I2P_BRANCHES="beta stable testing"
 
 if [ -z $I2P_OS ]; then
   if [ -z $I2P_BRANCH ]; then
+    final_generate_signed_feeds
     for I2P_OS in $I2P_OSS; do
       for I2P_BRANCH in $I2P_BRANCHES; do
         echo "building news for: $I2P_OS, $I2P_BRANCH."
@@ -88,7 +90,7 @@ if [ -z $I2P_OS ]; then
         ./news.sh
       done
     done
-  fi
+  fi  
 else
   if [ -f $RELEASES ]; then
     final_generate_signed_feeds

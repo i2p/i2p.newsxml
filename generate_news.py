@@ -13,7 +13,9 @@ I2P_BRANCH = os.getenv("I2P_BRANCH", "")
 DATA_DIR = os.path.join('data')
 RELEASE_DIR = os.path.join(DATA_DIR, I2P_OS, I2P_BRANCH)
 ENTRIES_FILE = os.path.join(DATA_DIR, 'entries.html')
+PLATFORM_ENTRIES_FILE = os.path.join(DATA_DIR, I2P_OS, I2P_BRANCH, 'entries.html')
 TRANSLATED_ENTRIES_FILES = os.path.join(DATA_DIR, 'translations/entries.*.html')
+TRANSLATED_PLATFORM_ENTRIES_FILES = os.path.join(DATA_DIR, I2P_OS, I2P_BRANCH, 'translations/entries.*.html')
 RELEASES_FILE = os.path.join(RELEASE_DIR, 'releases.json')
 CRL_FILES = os.path.join(DATA_DIR, 'crls/*.crl')
 BLOCKLIST_FILE = os.path.join(DATA_DIR, 'blocklist.xml')
@@ -28,21 +30,10 @@ def load_feed_metadata(fg):
     fg.link( href='http://echelon.i2p/news/news.atom.xml', rel='self' )
     fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
 
-def load_entries(fg, entries_file):
-    with open(entries_file) as f:
-        entries_data = f.read().strip('\n')
-        # Replace HTML non-breaking space with unicode
-        entries_data = entries_data.replace('&nbsp;', '\u00a0')
-        # Strip the leading <div> from translations
-        if entries_data.startswith('<div>'):
-            entries_data = entries_data[5:]
-
-        entries_parts = entries_data.split('</header>')
-        fg.title(re.findall(r'title="(.*?)"', entries_parts[0])[0])
-        fg.subtitle(entries_parts[0].split('>')[1])
-
-        entries = entries_parts[1].split('</article>')
-        # split() creates a junk final element with trailing </div>
+def load_entries(fg, entries_file, platform_entries_file=None):
+    if os.path.exists(platform_entries_file) and platform_entries_file != entries_file and platform_entries_file is not None and platform_entries_file != "data/entries.html":
+        print('Loading platform entries from %s' % platform_entries_file)
+        entries = prepare_entries_file(fg, platform_entries_file)
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('</details>', 1)
             metadata = extract_entry_metadata(entry_parts[0])
@@ -56,6 +47,43 @@ def load_entries(fg, entries_file):
             fe.published(metadata['published'])
             fe.updated(metadata['updated'])
             fe.content(entry_parts[1], type='xhtml')
+
+    print('Loading entries from %s' % entries_file)
+    entries = prepare_entries_file(fg, entries_file)
+    
+    # split() creates a junk final element with trailing </div>
+    for entry_str in entries[:-1]:
+        entry_parts = entry_str.split('</details>', 1)
+        metadata = extract_entry_metadata(entry_parts[0])
+
+        fe = fg.add_entry()
+        fe.id(metadata['id'])
+        fe.title(metadata['title'])
+        fe.summary(metadata['summary'])
+        fe.link( href=metadata['href'] )
+        fe.author( name=metadata['author'] )
+        fe.published(metadata['published'])
+        fe.updated(metadata['updated'])
+        fe.content(entry_parts[1], type='xhtml')
+
+
+
+def prepare_entries_file(fg, entries_file=None):
+    with open(entries_file) as f:
+        entries_data = f.read().strip('\n')
+        # Replace HTML non-breaking space with unicode
+        entries_data = entries_data.replace('&nbsp;', '\u00a0')
+        # Strip the leading <div> from translations
+        if entries_data.startswith('<div>'):
+            entries_data = entries_data[5:]
+
+        entries_parts = entries_data.split('</header>')
+        fg.title(re.findall(r'title="(.*?)"', entries_parts[0])[0])
+        fg.subtitle(entries_parts[0].split('>')[1])
+
+        entries = entries_parts[1].split('</article>')
+        return entries
+
 
 def extract_entry_metadata(s):
     m = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', s)}
@@ -113,14 +141,14 @@ def load_blocklist(fg):
             b.from_xml(root.getchildren()[0])
 
 
-def generate_feed(entries_file=None):
+def generate_feed(entries_file=None, platform_entries_file=None):
     language = entries_file and entries_file.split('.')[1] or 'en'
 
     fg = FeedGenerator()
     fg.load_extension('i2p')
     fg.language(language)
     load_feed_metadata(fg)
-    load_entries(fg, entries_file and entries_file or ENTRIES_FILE)
+    load_entries(fg, entries_file and entries_file or ENTRIES_FILE, platform_entries_file and platform_entries_file or PLATFORM_ENTRIES_FILE)
     load_releases(fg)
     load_revocations(fg)
     load_blocklist(fg)
