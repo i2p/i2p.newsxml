@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2021-11-02",
+    "version": "1.5.1",
+    "minVersion": "0.9.9",
+    "minJavaVersion": "1.8",
+    "updates": {
+      "su3": {
+        "torrent": "magnet:?xt=urn:btih:183b0f37aa1173da29acdb7250e8666b29dc8d7d&dn=I2P-1.5.1+Mac+DMG+update&tr=http://tracker2.postman.i2p/announce.php",
+        "url": [
+          "http://n4xen5sohufgjhv327ex4qra77f4tpqohlcyoa3atoboknzqazeq.b32.i2p/i2pmacupdate-1.5.1.su3"
+        ]
+      }
+    }
+  }
+]
