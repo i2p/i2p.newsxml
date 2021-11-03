@@ -1,6 +1,7 @@
 #!./env/bin/python
 # -*- coding: utf-8 -*-
 from datetime import datetime
+import collections
 from feedgen.feed import FeedGenerator
 import glob
 import json
@@ -31,22 +32,8 @@ def load_feed_metadata(fg):
     fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
 
 def load_entries(fg, entries_file, platform_entries_file=None):
-    if os.path.exists(platform_entries_file) and platform_entries_file != entries_file and platform_entries_file is not None and platform_entries_file != "data/entries.html":
-        print('Loading platform entries from %s' % platform_entries_file)
-        entries = prepare_entries_file(fg, platform_entries_file)
-        for entry_str in entries[:-1]:
-            entry_parts = entry_str.split('</details>', 1)
-            metadata = extract_entry_metadata(entry_parts[0])
-
-            fe = fg.add_entry()
-            fe.id(metadata['id'])
-            fe.title(metadata['title'])
-            fe.summary(metadata['summary'])
-            fe.link( href=metadata['href'] )
-            fe.author( name=metadata['author'] )
-            fe.published(metadata['published'])
-            fe.updated(metadata['updated'])
-            fe.content(entry_parts[1], type='xhtml')
+    metadatas = {}
+    finalentries = {}
 
     print('Loading entries from %s' % entries_file)
     entries = prepare_entries_file(fg, entries_file)
@@ -54,8 +41,22 @@ def load_entries(fg, entries_file, platform_entries_file=None):
     # split() creates a junk final element with trailing </div>
     for entry_str in entries[:-1]:
         entry_parts = entry_str.split('</details>', 1)
-        metadata = extract_entry_metadata(entry_parts[0])
+        md = extract_entry_metadata(entry_parts[0])
+        metadatas[md['published']] = md
+        finalentries[md['id']] = entry_parts[1]
 
+    if os.path.exists(platform_entries_file) and platform_entries_file != entries_file and platform_entries_file is not None and platform_entries_file != "data/entries.html":
+        print('Loading platform entries from %s' % platform_entries_file)
+        entries = prepare_entries_file(fg, platform_entries_file)
+        for entry_str in entries[:-1]:
+            entry_parts = entry_str.split('</details>', 1)
+            md = extract_entry_metadata(entry_parts[0])
+            metadatas[md['updated']] = md
+            finalentries[md['id']] = entry_parts[1]
+
+    sorted_metadata = collections.OrderedDict(reversed(sorted(metadatas.items())))
+
+    for metadata in sorted_metadata.values():
         fe = fg.add_entry()
         fe.id(metadata['id'])
         fe.title(metadata['title'])
@@ -64,7 +65,7 @@ def load_entries(fg, entries_file, platform_entries_file=None):
         fe.author( name=metadata['author'] )
         fe.published(metadata['published'])
         fe.updated(metadata['updated'])
-        fe.content(entry_parts[1], type='xhtml')
+        fe.content(finalentries[metadata['id']], type='xhtml')
 
 
 
