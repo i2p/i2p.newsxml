@@ -1,5 +1,30 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 enthält Korrekturen für IPv6</summary></details><p>0.9.50 führt die Transition fort hinr zu ECIES-X25519 Router Verschlüsselung.
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 aktiviert neue Tunnelaufbau-Nachrichten</summary></details><p>Diese Version komplementiert den Rollout von 2 großen Protokoll Aktualisierungen, die in 2021 entwickelt wurden.
+Die Migration zur X25519 Verschlüsselung wird beschleunigt und wir erwarten bis zum Ende des Jahres die Schlüssel-Umstellung nahezu aller Router.
+Kurze Tunnelaufbau-Nachrichten werden aktiviert und bieten eine erhebliche Reduzierung der Bandbreitennutzung jener.</p>
+<p>Wir haben ein Panel zur Auswahl eines Themes im Neue-Installation Wizzard inkludiert.
+Wir haben die Performance von SSU verbessert und einen Fehler in den SSP Peer Test Nachrichten behoben.
+Der Tunnelaufbau Bloom-Filter wurde auch adaptiert um weniger Speicher zu nutzen.
+Wir haben den Support von Nicht-Java-Erweiterungen verbessert.</p>
+<p>In weiteren Neueigkeiten: we machen sehr gute Fortschritte beim Design unseres neuen UDP Transports SSU2 und erwarten den Start der Implementierung im nächsten Jahr.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 mit neuen Tunnelaufbau Nachrichten</summary></details><p>Ja, richtig gelesen, nach 9 Jahren von 0.9.x Versionen wechseln wir direkt von 0.9.50 zu Version 1.5.0.
+Dieses impliziert jedoch keine große Änderung an der API or eine Behauptung, die Entwicklung sei jetzt fertig.
+Es ist nur eine Feststellung von 20 Jahren Arbeit um Anonymität uind Sicherheit unseren Nutzenden anzubieten.</p>
+<p>Diese Version komplementiert die Implementierung von kleinere Tunnelaufbau Nachrichten um die Bandbreitennutzung jener zu reduzieren.
+Wir verfolgen weiter die Umstellung der Netzwerk-Router zur X25519 Verschlüsselung.
+Natürlich gibt es diverse Fehlerverbesserungen und Performance Verbesserungen.</p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire Desktop Schwachstelle" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>MuWire Desktop Schwachstelle</summary></details><p>Eine Sicherheits Schwachstelle wurde im Muwire Standalone Desktop Klienten entdeckt.
+Diese betrifft nicht das Konsolen-Plugin und steht nicht in Verbindung mit der kürzlich veröffentlichten Plugin Schwachstelle.
+Falls Sie die Muwire Desktop Anwendung nutzen, sollten Sie sofort <a href="http://muwire.i2p/">auf Version 0.8.8</a> aktualisieren.</p>
+<p>Details zu diesem Problem wird auf <a href="http://muwire.i2p/security.html">muwire.i2p</a> zum 15.July 2021 veröffentlicht.</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire Plugin Schwachstelle" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>MuWire Plugin Schwachstelle</summary></details><p>Eine Sicherheits Schwachstelle wurde im MuWire Plugin entdeckt.
+Diese betrifft nicht den Standalone Desktop Klienten.
+Falls Sie das MuWire Plugin nutzeen, sollten Sie sofott auf <a href="/configplugins">Version 0.8.7-b1 aktualisieren.</a> </p>
+<p>Schaue auf<a href="http://muwire.i2p/security.html">muwire.i2p</a>
+für mehr Informationen zu dieser Schwachstelle und aktualisierte Sicherheits Empfehlungen.</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 enthält Korrekturen für IPv6</summary></details><p>0.9.50 führt die Transition fort hinr zu ECIES-X25519 Router Verschlüsselung.
 DNS über HTTPS wurde für das Reseeding aktiviert, dieses schützt BenutzerInnen vor passivem DNS Snooping.
 Neben einem neuen UPnP Support wurden zahlreiche Korrekturen und Verbesserungen für IPv6 Adressen inkludiert.</p>
 <p>Endlich wurden auch einige lang ausstehende SusiMail Korruptionsfehler behoben. 

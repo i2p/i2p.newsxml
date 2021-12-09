@@ -13,9 +13,9 @@ project's tooling(Portainer or sen for instance).
 docker build --no-cache -t i2p.newsxml.signing -f Dockerfile.signing .
 ```
 
-To run news.sh in the container, prepare your etc/su3.vars.custom file as if your
-signing keys directory were mounted at `/.i2p-plugin-keys`. No other differences
-should be required between a Docker and non-docker `news.sh` run
+To run news.sh in the container, prepare your etc/su3.vars.custom.docker file as
+if your signing keys directory were mounted at `/.i2p-plugin-keys`. No other
+differences should be required between a Docker and non-docker `news.sh` run
 
 ``` sh
 docker run -it \

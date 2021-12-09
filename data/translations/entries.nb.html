@@ -1,5 +1,33 @@
 <div>
-<header title="I2P-nyheter">Nyhetsstrøm og ruteroppdateringer</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
+<header title="I2P-nyheter">Nyhetsstrøm og ruteroppdateringer</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
+The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
+Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
+<p>We added a theme selection panel to the new install wizard.
+We've improved SSU performance and fixed an issue with SSU peer test messages.
+The tunnel build Bloom filter was adjusted to reduce memory usage.
+We have enhanced support for non-Java plugins.</p>
+<p>In other news, we are making excellent progress on the design of our new UDP transport SSU2 and expect to start implementation early next year.</p>
+<p>Som vanlig, anbefales det at du oppdaterer til denne utgaven. Den beste måten
+å ta hånd om sikkerheten og å hjelpe nettverket ved å kjøre siste utgave.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 with new tunnel build messages</summary></details><p>Yes, that's right, after 9 years of 0.9.x releases, we are going straight from 0.9.50 to 1.5.0.
+This does not signify a major API change, or a claim that development is now complete.
+It is simply a recognition of almost 20 years of work to provide anonymity and security for our users.</p>
+<p>This release finishes implementation of smaller tunnel build messages to reduce bandwidth.
+We continue the transition of the network's routers to X25519 encryption.
+Of course there are also numerous bug fixes and performance improvements.</p>
+<p>Som vanlig, anbefales det at du oppdaterer til denne utgaven. Den beste måten
+å ta hånd om sikkerheten og å hjelpe nettverket ved å kjøre siste utgave.</p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire Desktop Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire Desktop Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire standalone desktop application.
+It does not affect the console plugin, and is not related to the previously-announced plugin issue.
+If you are running the MuWire desktop application you should <a href="http://muwire.i2p/">update to version 0.8.8</a> immediately.</p>
+<p>Details of the issue will be published on <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+on July 15, 2021.</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire Plugin Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire Plugin Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire plugin.
+It does not affect the standalone desktop client.
+If you are running the MuWire plugin you should <a href="/configplugins">update to version 0.8.7-b1</a> immediately.</p>
+<p>See <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+for more information about the vulnerability and updated security recommendations.</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
 We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
 There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
 <p>We have finally fixed some longstanding SusiMail corruption bugs.

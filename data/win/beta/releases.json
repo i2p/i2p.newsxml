@@ -1,12 +1,12 @@
 [
   {
-    "date": "2021-10-20",
-    "version": "1.5.0",
+    "date": "2021-12-08",
+    "version": "1.6.1",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:bdb468987cf66212609a84c1aadde17b457d21d8&dn=i2pwinupdate.su3&tr=http%3A%2F%2Fmb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p%2Fa",
+        "torrent": "magnet:?xt=urn:btih:677b789f5521002d9530efe9485e0f0692cd5097&dn=i2pwinupdate.su3&tr=http%3A%2F%2Fmb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p%2Fa",
         "url": [
           "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
         ]

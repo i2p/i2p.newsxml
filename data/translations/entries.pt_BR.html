@@ -1,5 +1,31 @@
 <div>
-<header title="Notícias no I2P">Feed de notícias e atualizações do roteador</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
+<header title="Notícias no I2P">Feed de notícias e atualizações do roteador</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 permite novas mensagens de construção do túnel</summary></details><p>Este lançamento completa a implementação de duas grandes atualizações do protocolo desenvolvidas em 2021.
+A transição para a criptografia X25519 para roteadores é acelerada, e esperamos que quase todos os roteadores sejam chaveados novamente até o final do ano.
+As mensagens de construção dos túneis curtos são habilitadas para uma redução significativa da largura de banda.</p>
+<p>Adicionamos um painel de seleção de temas ao novo assistente de instalação.
+Melhoramos o desempenho da SSU e corrigimos um problema com as mensagens de teste dos pares da SSU.
+O filtro Bloom construído no túnel foi ajustado para reduzir o uso de memória.
+Melhoramos o suporte para plugins não-Java.</p>
+<p>Em outras palavras, estamos fazendo excelentes progressos no projeto de nosso novo SSU2 de transporte UDP e esperamos começar a implementação no início do próximo ano.</p>
+<p>Como de costume, recomendamos que você atualize para esse lançamento. A melhor maneira de manter a segurança e ajudar a rede é rodar a última versão lançada.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 com novas mensagens de construção do túnel</summary></details><p>Yes, that's right, after 9 years of 0.9.x releases, we are going straight from 0.9.50 to 1.5.0.
+This does not signify a major API change, or a claim that development is now complete.
+It is simply a recognition of almost 20 years of work to provide anonymity and security for our users.</p>
+<p>This release finishes implementation of smaller tunnel build messages to reduce bandwidth.
+We continue the transition of the network's routers to X25519 encryption.
+Of course there are also numerous bug fixes and performance improvements.</p>
+<p>Como de costume, recomendamos que você atualize para esse lançamento. A melhor maneira de manter a segurança e ajudar a rede é rodar a última versão lançada.</p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire Desktop Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire Desktop Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire standalone desktop application.
+It does not affect the console plugin, and is not related to the previously-announced plugin issue.
+If you are running the MuWire desktop application you should <a href="http://muwire.i2p/">update to version 0.8.8</a> immediately.</p>
+<p>Details of the issue will be published on <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+on July 15, 2021.</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire Plugin Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire Plugin Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire plugin.
+It does not affect the standalone desktop client.
+If you are running the MuWire plugin you should <a href="/configplugins">update to version 0.8.7-b1</a> immediately.</p>
+<p>See <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+for more information about the vulnerability and updated security recommendations.</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 com correções do IPv6</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
 We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
 There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
 <p>We have finally fixed some longstanding SusiMail corruption bugs.
@@ -7,7 +33,7 @@ Changes to the bandwidth limiter should improve network tunnel performance.
 There are several improvements in our Docker containers.
 We have improved our defenses for possible malicious and buggy routers in the network.</p>
 <p>Como de costume, recomendamos que você atualize para esse lançamento. A melhor maneira de manter a segurança e ajudar a rede é rodar a última versão lançada.</p>
-</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0,9,49 com correções do SSU e criptografia mais rápida</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
 We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
 This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
 (Destinations have been using this encryption for a few releases now)
@@ -125,7 +151,7 @@ For those that run high-traffic servers, please review and adjust the limits as 
 <p>The whitepaper for KAISER/KPTI can be found under <a href="https://gruss.cc/files/kaiser.pdf" target="_blank">KAISER.pdf</a>, Meltdown under <a href="https://meltdownattack.com/meltdown.pdf" target="_blank">Meltdown.pdf</a>, and SPECTRE under <a href="https://spectreattack.com/spectre.pdf" target="_blank">Spectre.pdf</a>. Intels first response is listed under <a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank">Intels response</a>.</p>
 <p>It is important for our I2P users to update your system, as long as updates are available. Windows 10 patches are availble from now on, Windows 7 and 8 will follow soon. MacOS patches are already available, to. Lots of Linux systems have a newer Kernel with a included fix available, too. Same applies to Android, which security fix of 2nd Jan 2018 includes a patch for this issues.
 Please update your systems as soon as available and possible.</p>
-</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="Feliz ano novo! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Ano novo e I2P no 34C3</summary></details><p>Happy new year from the I2P team to everyone!</p>
+</article><article id="urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440" title="Feliz ano novo! - 34C3" href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" author="echelon" published="2018-01-04T12:00:00Z" updated="2018-01-04T12:00:00Z"><details><summary>Ano novo e I2P no 34C3</summary></details><p>Feliz ano novo da equipe do I2P para todos!</p>
 <p>No less than 7 I2P team members did meet at the 34C3 in Leipzig from 27th til 30th december 2017. Beside the <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">meetings</a> at our table we did meet lots of friends of I2P all over the place. 
 Results of the meetings are posted on <a href="http://zzz.i2p" target="_blank">zzz.i2p</a> already.</p>
 <p>Also we did hand out lots of stickers and gave information about our project to anyone asking. 
@@ -141,7 +167,7 @@ and generally tidied things up.
 This is the first step in a longer-term plan to make the router console more user-friendly.
 We have also added torrent ratings and comments support to i2psnark.</p>
 <p>Como de costume, recomendamos que você atualize para esse lançamento. A melhor maneira de manter a segurança e ajudar a rede é rodar a última versão lançada.</p>
-</article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Call for Translators" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>The upcoming 0.9.31 release has more untranslated strings than usual</summary></details><p>In preparation for the 0.9.31 release, which brings with it significant updates
+</article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="Chamada para tradutores" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>The upcoming 0.9.31 release has more untranslated strings than usual</summary></details><p>In preparation for the 0.9.31 release, which brings with it significant updates
 to the user interface, we have a larger than normal collection of untranslated
 strings that need attention. If you're a translator, we would greatly appreciate
 it if you could set aside a little more time than usual during this release cycle
@@ -167,7 +193,7 @@ See <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> for further information, in
 <p>Note: On non-Android ARM platforms such as the Raspberry Pi, the blockfile database will upgrade on restart, which may take several minutes.
 Please be patient.</p>
 <p>Como de costume, recomendamos que você atualize para esse lançamento. A melhor maneira de manter a segurança e ajudar a rede é rodar a última versão lançada.</p>
-</article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 contains bug fixes</summary></details><p>0.9.29 contains fixes for numerous Trac tickets, including workarounds for corrupt compressed messages.
+</article><article id="urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7" title="0.9.29 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2017/02/27/0.9.29-Release" author="zzz" published="2017-02-27T12:00:00Z" updated="2017-02-27T12:00:00Z"><details><summary>0.9.29 contém correções de falha</summary></details><p>0.9.29 contains fixes for numerous Trac tickets, including workarounds for corrupt compressed messages.
 We now support NTP over IPv6.
 We've added preliminary Docker support.
 We now have translated man pages.
@@ -175,7 +201,7 @@ We now pass same-origin Referer headers through the HTTP proxy.
 There are more fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
 <p>As usual, we recommend that all users update to this release.
 The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary>I2P-Bote Security Vulnerability</summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
+</article><article id="urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b" title="Vulnerabilidade de Segurança do I2P-Bote" href="http://bote.i2p/news/0.4.5/" author="str4d" published="2017-01-20T12:00:00Z" updated="2017-01-20T12:00:00Z"><details><summary>Vulnerabilidade de Segurança do I2P-Bote</summary></details><p>I2P-Bote 0.4.5 fixes a security vulnerability present in all earlier versions of the
 I2P-Bote plugin. The Android app was not affected.</p>
 <p>When showing emails to the user, most fields were being escaped. However, the filenames
 of attachments were not escaped, and could be used to execute malicious code in a browser
@@ -185,7 +211,7 @@ has been implemented for all pages.</p>
 after I2P 0.9.29 is released in mid-February. However, for safety we recommend that you
 <a href="http://bote.i2p/install/">follow the instructions on the installation page</a> to
 upgrade manually if you plan on using I2P or I2P-Bote in the intervening time.</p>
-</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contains bug fixes</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
+</article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 Lançado" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 contém correções de falha</summary></details><p>0.9.28 contains fixes for over 25 Trac tickets, and updates for a number of bundled software packages including Jetty.
 There are fixes for the IPv6 peer testing feature introduced last release.
 We continue improvements to detect and block peers that are potentially malicious.
 There are preliminary fixes for Java 9, although we do not yet recommend Java 9 for general use.</p>
@@ -193,7 +219,7 @@ There are preliminary fixes for Java 9, although we do not yet recommend Java 9 
 We will review our 2017 roadmap and priorities 2017 at the Congress.</p>
 <p>As usual, we recommend that all users update to this release.
 The best way to help the network and stay secure is to run the latest release.</p>
-</article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="I2P-Bote Security Vulnerability" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary>I2P-Bote Security Vulnerability</summary></details><p>I2P-Bote 0.4.4 fixes a security vulnerability present in all earlier versions of the
+</article><article id="urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a" title="Vulnerabilidade de Segurança do I2P-Bote" href="http://bote.i2p/news/0.4.4/" author="str4d" published="2016-11-28T12:00:00Z" updated="2016-11-28T12:00:00Z"><details><summary>Vulnerabilidade de Segurança do I2P-Bote</summary></details><p>I2P-Bote 0.4.4 fixes a security vulnerability present in all earlier versions of the
 I2P-Bote plugin. The Android app was not affected.</p>
 <p>A lack of CSRF protection meant that if a user was running I2P-Bote and then loaded a
 malicious site in a browser with JavaScript enabled, the adversary could trigger actions

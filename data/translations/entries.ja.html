@@ -1,13 +1,39 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルータのアップデート</header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6 の修正</summary></details><p>0.9.50 では、ルータの暗号化鍵を ECIES-X25519 に移行しました。
-受動的な DNS 詮索からユーザーを保護するため、再シードに DNS over HTTPS を有効にしました。
-新しい UPnP のサポートを含む、 IPv6 アドレスに多数の修正と改善が行われています。</p>
-<p>長年にわたり発生していた SusiMail の破損バグをようやく修正しました。
+<header title="I2P ニュース">ニュースフィードとルータのアップデート</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 新トンネルの構築メッセージを有効化</summary></details><p>今回のリリースでは、2021年に開発された2つのメジャーなプロトコルアップデートの展開が完了しました。
+ルーターのX25519暗号化への移行が加速され、年内にほぼすべてのルーターが再キーされる見込みです。
+短いトンネル構築メッセージが有効になり、大幅な帯域幅の削減が可能になりました。</p>
+<p>新規インストールウィザードにテーマ選択パネルを追加しました。
+SSUのパフォーマンスを改善し、SSUのピアテストメッセージに関する問題を修正しました。
+トンネル構築のBloomフィルタを調整し、メモリ使用量を削減しました。
+Java以外のプラグインのサポートを強化しました。</p>
+<p>その他のニュースとしては、新しいUDP transport SSU2の設計が順調に進んでおり、来年初めには実装を開始できる見込みです。</p>
+<p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 新トンネルの構築メッセージ</summary></details><p>はい、そうです。9年間に渡って0.9.xをリリースしてきましたが、0.9.50から1.5.0に移行します。
+これは、APIの大幅な変更を意味するものではなく、また、開発が完了したことを示すものでもありません。
+これは、ユーザーの皆様に匿名性と安全を提供するための約20年間の努力が認められたことを意味しています。</p>
+<p>このリリースでは、帯域幅を削減するためにトンネルの構築メッセージを小さくする実装が終了しました。
+また、ネットワークルータのX25519暗号化への移行も継続しています。
+もちろん、多数のバグ修正やパフォーマンスの改善も行われています。</p>
+<p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire デスクトップ脆弱性" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire デスクトップ脆弱性</summary></details><p>MuWireのスタンドアロンデスクトップアプリケーションにセキュリティ上の脆弱性が発見されました。
+なお、コンソールのプラグインには影響がなく、先に告知されたプラグインの問題とは関係ありません。
+MuWireのデスクトップアプリケーションを使用している場合は、直ちに<a href="http://muwire.i2p/">バージョン0.8.8にアップデートしてください</a>。</p>
+<p>2021年7月15日に、
+<a href="http://muwire.i2p/security.html">muwire.i2p</a>で問題の詳細が公開されます。</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire プラグイン脆弱性" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire プラグイン脆弱性</summary></details><p>MuWireプラグインにセキュリティ上の脆弱性が発見されました。
+なお、スタンドアロンのデスクトップクライアントには影響ありません。
+MuWireプラグインを使用している場合は、直ちに<a href="/configplugins">バージョン0.8.7-b1にアップデートしてください</a>。</p>
+<p>脆弱性の詳細および最新のセキュリティ推奨事項に関する更新については
+<a href="http://muwire.i2p/security.html">muwire.i2p</a>をご覧ください。</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6の修正</summary></details><p>0.9.50では、ルータの暗号化鍵をECIES-X25519に移行しました。
+受動的なDNS詮索からユーザーを保護するため、再シードにDNS over HTTPSを有効にしました。
+新しいUPnPのサポートを含む、IPv6アドレスに多数の修正と改善が行われています。</p>
+<p>長年にわたり発生していたSusiMailの破損バグをようやく修正しました。
 帯域幅制限の変更により、ネットワークトンネルのパフォーマンスが向上しました。
-我々の Docker コンテナにいくつかの改善があります。
+我々のDockerコンテナにいくつかの改善があります。
 ネットワーク上の悪意のある、あるいはバグのあるルータの可能性に対する防御機能を改善しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
-</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 SSUの修正と高速な暗号法</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
 We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
 This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
 (Destinations have been using this encryption for a few releases now)

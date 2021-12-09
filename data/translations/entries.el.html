@@ -1,18 +1,44 @@
 <div>
-<header title="Νέα I2P">Ροή νέων, και ενημέρωσης δρομολογητών </header><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Κυκλοφόρησε " href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
-We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
-There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
-<p>We have finally fixed some longstanding SusiMail corruption bugs.
-Changes to the bandwidth limiter should improve network tunnel performance.
-There are several improvements in our Docker containers.
-We have improved our defenses for possible malicious and buggy routers in the network.</p>
+<header title="Νέα I2P">Ροή νέων, και ενημέρωσης δρομολογητών </header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
+The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
+Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
+<p>We added a theme selection panel to the new install wizard.
+We've improved SSU performance and fixed an issue with SSU peer test messages.
+The tunnel build Bloom filter was adjusted to reduce memory usage.
+We have enhanced support for non-Java plugins.</p>
+<p>In other news, we are making excellent progress on the design of our new UDP transport SSU2 and expect to start implementation early next year.</p>
 <p>Όπως συνήθως, συνιστούμε το να ενημερώνεται σε αυτήν την κυκλοφορία. Ο καλύτερος τρόπος να διατηρήσετε ασφάλεια και να βοηθήσετε το δίκτυο είναι να τρέχετε την τελευταία έκδοση. </p>
-</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
-We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
-This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
-(Destinations have been using this encryption for a few releases now)
-We've been working on the specifications and protocols for new encryption for several years,
-and we are getting close to the end of it! The migration will take several releases to complete.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 with new tunnel build messages</summary></details><p>Yes, that's right, after 9 years of 0.9.x releases, we are going straight from 0.9.50 to 1.5.0.
+This does not signify a major API change, or a claim that development is now complete.
+It is simply a recognition of almost 20 years of work to provide anonymity and security for our users.</p>
+<p>This release finishes implementation of smaller tunnel build messages to reduce bandwidth.
+We continue the transition of the network's routers to X25519 encryption.
+Of course there are also numerous bug fixes and performance improvements.</p>
+<p>Όπως συνήθως, συνιστούμε το να ενημερώνεται σε αυτήν την κυκλοφορία. Ο καλύτερος τρόπος να διατηρήσετε ασφάλεια και να βοηθήσετε το δίκτυο είναι να τρέχετε την τελευταία έκδοση. </p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire Desktop Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire Desktop Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire standalone desktop application.
+It does not affect the console plugin, and is not related to the previously-announced plugin issue.
+If you are running the MuWire desktop application you should <a href="http://muwire.i2p/">update to version 0.8.8</a> immediately.</p>
+<p>Details of the issue will be published on <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+on July 15, 2021.</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire Plugin Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire Plugin Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire plugin.
+It does not affect the standalone desktop client.
+If you are running the MuWire plugin you should <a href="/configplugins">update to version 0.8.7-b1</a> immediately.</p>
+<p>See <a href="http://muwire.i2p/security.html">muwire.i2p</a>
+for more information about the vulnerability and updated security recommendations.</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="Η έκλδοση 0.9.50 Κυκλοφόρησε " href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>Έκδοση 0.9.50 και βελτιώσεις σχετικά με IPv6</summary></details><p>Η έκδοση 0.9.50 συνεχίζει με την μετάβαση σε ECIES-X25519 για τα κλειδιά κρυπτογράφησης των δρομολογητών.
+Ενεργοποιήσαμε την δυνατότητα DNS μέσω HTTPS για επαναδιασπορά προκειμένου να προστατεύσουμε τους χρήστες απο παθητηκή κατασκοπεία DNS.
+Υπάρχουν πολλές διορθώσεις και βελτιώσεις για τις IPv6 διευθύνσεις, συμπεριλαμβανομένης της νέας υποστήριξης UPnP.</p>
+<p>Φιάξαμε επιτέλους κάποια επίμονα σφάλματα διαφθοράς του SusiMail.
+Ευελπιστούμε οι αλλαγές στον περιοριστή του bandwidth βελτιώσουν την απόδωση της σήραγγας δυκτίου.
+Πραγματοποιήθηκαν μερικές βελτιώσεις στους Docker containers μας.
+Βελτιώσαμε τις άμυνές μας για πιθανούς κακόβουλους και προβληματικούς δρομολογητές εντός του δικτύου</p>
+<p>Όπως συνήθως, συνιστούμε το να ενημερώνεται σε αυτήν την κυκλοφορία. Ο καλύτερος τρόπος να διατηρήσετε ασφάλεια και να βοηθήσετε το δίκτυο είναι να τρέχετε την τελευταία έκδοση. </p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="Η έκδοση 0.9.49 Κυκλοφόρησε " href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>Έκδοση 0.9.49 και βελτιώσεις SSU για γρηορότερη κρυπτογράφηση</summary></details><p>Στην έκδοση 0.9.49 συνεχίζουμε την δουλειά προκειμένου να κάνουμε το I2P γρηγορότερο και ασφαλέστερο
+Έχουμε κάνει μερικές βελτιώσεις και διορθώσεις για την SSU (UDP) μεταφορά οι οποίες ευελπιστούμε να οδηγήσουν σε μεγαλύτερες ταχύτητες.
+Σε αυτή την έκδοση ξεκινήσαμε την ενσωμάτωση της καινούριας, γρηγορότερης ECIES-X25519 κρυπτογράφησης για τους δρομολογητές.
+(Προορισμοί χρησιμοποιούν την συγκεκριμένη κρυπρογράφηση εδώ και μερικές εκδώσεις)
+Δουλεύουμε τις προδιαγραφές και τα προτόκολα  για την νέα κρυπτογράφηση εδώ και μερικά χρόνια,
+και βρισκόμαστε κοντά στην τελειοποίησή τους. Αυτή ενσωμάτωση θα χρειαστεί μερικές εκδώσεις προκειμένου να ολοκληρωθεί.</p>
 <p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
 (randomly selected at restart) will be using the new encryption.
 If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.

@@ -18,6 +18,7 @@ RUN apt-get install -y python \
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
     locale-gen
 COPY . /opt/i2p.newsxml
+COPY etc/su3.vars.custom.docker /opt/i2p.newsxml/etc/su3.vars.custom
 RUN mkdir -p /.local /.cache/pip/
 RUN chown -R 1000:1000 /opt/i2p.newsxml /.local /.cache/pip/
 RUN chmod -R o+rw /opt/i2p.newsxml /.local /.cache/pip/
