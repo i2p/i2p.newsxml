@@ -4,3 +4,7 @@
 # Accidentally checking in a working transifexrc would be extremely bad!
 .transifexrc
 ^logs
+build
+logs
+etc/*custom*
+.gitleaks.toml
