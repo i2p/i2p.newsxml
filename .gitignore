@@ -7,4 +7,3 @@
 build
 logs
 etc/*custom*
-.gitleaks.toml

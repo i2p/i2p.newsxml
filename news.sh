@@ -90,10 +90,15 @@ if [ -z $I2P_OS ]; then
         ./news.sh
       done
     done
-  fi  
+  else
+    if [ -f $RELEASES ]; then
+      final_generate_signed_feeds
+    fi
+  fi
 else
   if [ -f $RELEASES ]; then
     final_generate_signed_feeds
   fi
-fi
+fi  
+
 
