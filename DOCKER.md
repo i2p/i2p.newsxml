@@ -44,7 +44,6 @@ docker run -it \
 docker cp i2p.newsxml.signing:/opt/i2p.newsxml/build build
 ```
 
-
 ## Now, you're ready to build the hosting container:
 
 With the feeds in `build` from the previous step, run:

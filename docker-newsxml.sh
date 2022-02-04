@@ -20,7 +20,7 @@ if [ -d "$dir/build" ]; then
     echo "Removing old newsxml container"
     docker rm -f newsxml
     echo "Running newsxml container"
-    docker run -d --restart=always --name newsxml -p 127.0.0.1:"$SERVEPORT":3000 i2p.newsxml
+    docker run -d --restart=always --name "$DOCKERNAME" -p 127.0.0.1:"$SERVEPORT":3000 i2p.newsxml
 else 
     echo "No build directory found. Perform the signing procedure with news.sh or docker-news.sh."
     exit 1
