@@ -51,7 +51,8 @@ Strict XHTML is required. This is enforced in NewsXMLParser.
 
 Please use .i2p links instead of clearnet links in news entries if possible.
 
-
+**Important:** Validate your XHTML with
+$ xmllint data/entries.html > /dev/null || echo FAIL
 
 **WARNING:** *NEVER* push translations from here (tx push -t)! The strings will
 *NOT* match, and *ALL* translations will get out-of-sync!
