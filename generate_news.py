@@ -54,7 +54,7 @@ def load_entries(fg, entries_file, platform_entries_file=None):
             metadatas[md['updated']] = md
             finalentries[md['id']] = entry_parts[1]
 
-    sorted_metadata = collections.OrderedDict(reversed(sorted(metadatas.items())))
+    sorted_metadata = collections.OrderedDict(sorted(metadatas.items()))
 
     for metadata in sorted_metadata.values():
         fe = fg.add_entry()
