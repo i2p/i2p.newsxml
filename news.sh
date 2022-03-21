@@ -76,8 +76,8 @@ final_generate_signed_feeds () {
     ls -l $BUILD
 }
 
-I2P_OSS="win mac"
-I2P_BRANCHES="beta stable testing"
+I2P_OSS="win mac $I2P_OSS"
+I2P_BRANCHES="beta stable testing $I2P_BRANCHES"
 
 if [ -z $I2P_OS ]; then
   if [ -z $I2P_BRANCH ]; then
