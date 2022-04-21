@@ -1,5 +1,25 @@
 <div>
-<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 aktiviert neue Tunnelaufbau-Nachrichten</summary></details><p>Diese Version komplementiert den Rollout von 2 großen Protokoll Aktualisierungen, die in 2021 entwickelt wurden.
+<header title="I2P - Nachrichten">Neuigkeiten und Router-Aktualisierungen</header><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 Veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 mit Zuverlässigkeits- und Leistungsverbesserungen</summary></details><p>Das 1.7.0 Update enthält verschiedenen Zuverlässigkeits- und Leistungsverbesserungen. </p>
+<p>Es gibt nun Popup-Benachrichtigungen für die Plattformen, die sie unterstützen. 
+i2psnark hat einen neuen Torrent Editor. 
+Der NTCP2 Transport lastet den CPU weniger aus. </p>
+<p>Die völlig veraltete BOB Schnittstelle ist bei einer Neuinstallation nicht mehr dabei sein. 
+Es wird aber weiterhin in bereits bestehenden Installation funktionieren, mit Ausnahme von Debian-Paketen. 
+Alle verbleibenden Nurten der BOB Anwendung sollten die Entwickler bitten, auf das SAMv3 Protokoll umzustellen. </p>
+<p>Wir wissen, dass sich die Netzwerkleistung seit dem 1.6.1 Update immer weiter verschlechtert hat. 
+Wir waren uns den Problems gleich nach der Veröffentlichung bewusst, aber es dauerte fast zwei Monate, bis wir die Ursache fanden. 
+Wir haben es schließlich als Fehler i2pd 2.40.0 identifiziert, 
+und der Fix wird in der der Version 2.41.0 verfügbar sein, welche ungefähr zur gleichen Zeit wie diese Version erscheinen wird. 
+Außerdem haben wird mehrere Änderungen auf der Java I2P-Seite vorgenommen, um die 
+Robustheit von Netzwerkdatenbanksuchen und -speichern und die Vermeidung schlechter Ergebnisse bei der Auswahl von Tunnel Peers zu verbessern. 
+Dies soll die Robustheit auch bei der Gegenwart von fehlerhaften oder bösartigen Routern sicherstellen. 
+Darüber hinaus starten wir ein gemeinsames Programm zum Testen von Vorabversionen der i2pd- und Java i2P-Routern zusammen in einem isolierten Testnetzwerk, so dass wir mehr Probleme vor der Veröffentlichung finden können, nicht danach. </p>
+<p>Außerdem machen wir weiterhin große Fortschritte, was die Gestaltung unseres neuen UDP-Transports "SSU2" (Vorschlag Nr. 159) angeht uns haben mit der Implementierung begonnen. 
+SSU2 wird erhebliche Leistungs- und Sicherheitsverbesserungen bringen. 
+Es wird uns auch die Möglichkeit schaffen, die sehr langsamen ElGamal-Verschlüsslung endlich zu ersetzten, damit wir den Abschluss eines vollständigen Kryptographie-Upgrade, das vor etwa 9 Jahren begann erreichen können. 
+Wir gehen davon aus, dass wir bald mit gemeinsamen Tests mit i2pd beginnen können und Änderungen später in diesem Jahr auf das Netzwerk ausweiten können. </p>
+<p>Wir empfehlen wie immer, baldmöglichst auf die neue Routerversion zu aktualisieren. Ihrer eigenen Sicherheit und dem Netz ist am besten gedient, wenn Sie stets die neueste stabile Version von I2P verwenden.</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 veröffentlicht" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 aktiviert neue Tunnelaufbau-Nachrichten</summary></details><p>Diese Version komplementiert den Rollout von 2 großen Protokoll Aktualisierungen, die in 2021 entwickelt wurden.
 Die Migration zur X25519 Verschlüsselung wird beschleunigt und wir erwarten bis zum Ende des Jahres die Schlüssel-Umstellung nahezu aller Router.
 Kurze Tunnelaufbau-Nachrichten werden aktiviert und bieten eine erhebliche Reduzierung der Bandbreitennutzung jener.</p>
 <p>Wir haben ein Panel zur Auswahl eines Themes im Neue-Installation Wizzard inkludiert.
