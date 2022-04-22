@@ -1,14 +1,16 @@
-[{
-    "date": "2022-02-25",
-    "version": "1.7.0",
+[
+  {
+    "date": "2022-04-22",
+    "version": "1.7.4",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
-        "su3": {
-            "torrent": "magnet:?xt=urn:btih:953c4cb8e134668217ba71ffe1f80e4de3b10562&dn=i2pwinupdate.su3&tr=http://tracker2.postman.i2p/announce.php&tr=http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a&tr=http://mb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p/a",
-            "url": [
-                "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
-            ]
-        }
+      "su3": {
+        "torrent": "magnet:?xt=urn:btih:09978ac2fade6ca82304bdc9fadd9eebf46d80d0&dn=i2pwinupdate.su3&tr=http://tracker2.postman.i2p/announce.php&tr=http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a&tr=http://mb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p/a",
+        "url": [
+          "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
+        ]
+      }
     }
-}]
+  }
+]
