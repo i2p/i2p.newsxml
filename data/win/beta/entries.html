@@ -1,8 +1,22 @@
 <div>
     <header title="I2P News">News feed, and router updates</header>
+    <article id="urn:uuid:690fddd1-2f40-4a15-9491-5db2413ad6ec" title="Update for Windows Jpackage 1.7.6" href="http://i2p-projekt.i2p/en/blog/post/2022/05/08/CHANGEME_URL_HERE" author="idk" published="2022-05-08T22:00:00Z" updated="2022-05-08T22:00:00Z">
+        <details>
+            <summary>Fixes a missing config file, temporary unsigned exe</summary>
+        </details>
+        <p>
+            This release will show a warning that the .exe is un-signed. This is normal and temporary. The relase is verified by I2P's update mechanism instead.
+        </p>
+        <p>
+            This release makes sure that new configuration files, which are essential to supporting multiple I2P routers, are included in the final build.
+        </p>
+    </article>
+
+
+
     <article id="urn:uuid:6ee4b12e-dc0b-4928-9409-886896f60105" title="Update for Windows Jpackage 1.7.5" href="http://git.idk.i2p/i2p-hackers/i2p.firefox/-/issues/17" author="idk" published="2022-05-05T19:00:00Z" updated="2022-05-05T19:00:00Z">
         <details>
-            <summary></summary>
+            <summary>Fixes a broken priority when a non-jpackaged router is in use</summary>
         </details>
         <p>
             This release fixes an issue where the a jpackaged I2P router was prioritized over a non-jpackaged I2P router when the non-jpackaged router should have been preferred.
