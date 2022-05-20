@@ -15,8 +15,10 @@ DATE=$(date +%Y-%m-%dT%H:00:00Z)
 if [ -z "$HREF" ]; then
     HREF="http://i2p-projekt.i2p/en/blog/post/"$(date +%Y)/$(date +%m)/$(date +%d)"/CHANGEME_URL_HERE"
 fi
+TITLE=${TITLE:-TITLE_HERE}
+AUTHOR=${AUTHOR:-AUTHOR_HERE}
 
-sed -i "3i <article\n  id=\"urn:uuid:`$UUIDGEN`\"\n  title=\"$TITLE\"\n  href=\"$HREF\"\n  author=\"$AUTHOR\"\n  published=\"$DATE\"\n  updated=\"$DATE\">\n<details>\n<summary></summary>\n</details>\n<p>\n\n</p>\n</article>\n\n\n" $ENTRIES
+sed -i "3i <article\n  id=\"urn:uuid:`$UUIDGEN`\"\n  title=\"$TITLE\"\n  href=\"$HREF\"\n  author=\"$AUTHOR\"\n  published=\"$DATE\"\n  updated=\"$DATE\">\n<details>\n<summary>SUMMARY_HERE</summary>\n</details>\n<p>\n\n</p>\n</article>\n\n\n" $ENTRIES
 
 if [ ! -z "$EDITOR" ]; then
     case "$EDITOR" in
