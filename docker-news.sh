@@ -7,7 +7,7 @@ rm "$dir/build.old" -rf
 echo "Moving build directory to build.old"
 mv "$dir/build" "$dir/build.old"
 echo "Building signing container i2p.newsxml"
-docker build --no-cache -t i2p.newsxml.signing -f Dockerfile.signing .
+docker build -t i2p.newsxml.signing -f Dockerfile.signing .
 echo "Removing old signing container"
 docker rm -f i2p.newsxml.signing
 echo "Running signing container"

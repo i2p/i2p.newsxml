@@ -1,141 +1,166 @@
 <div>
-<header title="I2P 新聞">新聞提要和路由器更新</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
-The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
-Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
-<p>We added a theme selection panel to the new install wizard.
-We've improved SSU performance and fixed an issue with SSU peer test messages.
-The tunnel build Bloom filter was adjusted to reduce memory usage.
-We have enhanced support for non-Java plugins.</p>
-<p>In other news, we are making excellent progress on the design of our new UDP transport SSU2 and expect to start implementation early next year.</p>
+<header title="I2P 新聞">新聞提要和路由器更新</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 包含错误修复</summary></details><p>本发布包含i2psnark，
+路由器，I2CP和UPnP的错误修复。
+修复了路由器软重启、IPv6、SSU 对等测试、网络数据库存储和隧道构建中的地址错误。
+路由家族处理和Sybil分级也明显改善了。</p>
+<p>和i2pd一起，我们开发了新的UDP传输，SSU2。
+SSU2将带来实质性的性能和安全性改进。
+它还将让我们最终替换我们最后使用的非常慢的 ElGamal 加密，
+完成我们从9年前开始的加密的完全升级。
+本发布包含一个默认关闭的初步推行。
+如果你想参与测试，请关注zzz.i2p的当前消息。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 with new tunnel build messages</summary></details><p>Yes, that's right, after 9 years of 0.9.x releases, we are going straight from 0.9.50 to 1.5.0.
-This does not signify a major API change, or a claim that development is now complete.
-It is simply a recognition of almost 20 years of work to provide anonymity and security for our users.</p>
-<p>This release finishes implementation of smaller tunnel build messages to reduce bandwidth.
-We continue the transition of the network's routers to X25519 encryption.
-Of course there are also numerous bug fixes and performance improvements.</p>
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="安装必要的Java/Jpackage升级" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>最近Java的“Psychic Signatures”漏洞影响到I2P。当前Linux的I2P用户，或任何正在使用非捆绑JVM的I2P用户应当升级
+他们的JVM或切换到 Java 15 以下
+不包含该漏洞的版本。</p>
+<p>新的I2P易安装包已使用
+JVM的最新发布生成。更多详情已发布在各
+同捆包的新闻源中。</p>
+</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 包含可靠性和性能提升</summary></details><p>1.7.0 发布包含若干性能和可靠性的改善。</p>
+<p>对于支持的平台，现在系统托盘中会弹出信息。
+i2psnark 现在有一个新的种子编辑器。
+现在大大降低了 NTCP2 的CPU占用。</p>
+<p>在新安装中，长期不受支持的 BOB 接口已被移除。
+除了 Debian 包以外，现有的安装将继续使用之。
+其余任何 BOB 应用的用户都应该要求开发人员切换到SAMv3协议。</p>
+<p>我们得知自 1.6.1 发布以来，网络可靠性不断恶化。
+我们在发布以后很快就意识到了这个问题，然而我们花了近两个月才找到原因。
+我们最终确认为 i2pd 2.40.0 中的一个bug，
+这个修复将在 2.41.0 中和这个版本几乎同时发布。
+在此过程中，我们在 Java I2P 中做了一些修改，以改善
+网络数据库查找和存储的健壮性，并在隧道节点选择中避开性能较差的对等节点。
+这将使网络在存在异常路由或恶意路由的情况下更健壮。
+此外，我们正在启动一个联合项目，在同一个隔离的测试网络中测试 i2pd 和 Java I2P 路由
+的预发布版本，这样我们就可以在发布前而不是发布以后发现更多问题。</p>
+<p>其他方面，我们在设计新的 UDP 传输“SSU2”（提案159）
+中继续取得重大进展并开始推行。
+SSU2 将带来实质上的性能和安全提升。
+这还将让我们能最终取代最后使用的，非常慢的 ElGamal 加密，
+完成约9年前开始的全加密升级。
+我们预计很快就会开始和 i2pd 进行联合测试，并在今年晚些时候向网络推出。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire Desktop Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire Desktop Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire standalone desktop application.
-It does not affect the console plugin, and is not related to the previously-announced plugin issue.
-If you are running the MuWire desktop application you should <a href="http://muwire.i2p/">update to version 0.8.8</a> immediately.</p>
-<p>Details of the issue will be published on <a href="http://muwire.i2p/security.html">muwire.i2p</a>
-on July 15, 2021.</p>
-</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="MuWire Plugin Vulnerability" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire Plugin Vulnerability</summary></details><p>A security vulnerability has been discovered in the MuWire plugin.
-It does not affect the standalone desktop client.
-If you are running the MuWire plugin you should <a href="/configplugins">update to version 0.8.7-b1</a> immediately.</p>
-<p>See <a href="http://muwire.i2p/security.html">muwire.i2p</a>
-for more information about the vulnerability and updated security recommendations.</p>
-</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 with IPv6 fixes</summary></details><p>0.9.50 continues the transition to ECIES-X25519 for router encryption keys.
-We have enabled DNS over HTTPS for reseeding to protect users from passive DNS snooping.
-There are numerous fixes and improvements for IPv6 addresses, including new UPnP support.</p>
-<p>We have finally fixed some longstanding SusiMail corruption bugs.
-Changes to the bandwidth limiter should improve network tunnel performance.
-There are several improvements in our Docker containers.
-We have improved our defenses for possible malicious and buggy routers in the network.</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 启用新的隧道搭建信息</summary></details><p>该发布完成了2021年开发的两个主要协议更新的推出。
+为路由迁移至 X25519 加密的步伐加快了，我们预计绝大部分路由在今年年底能完成切换。
+短隧道构建信息已启用以减少带宽使用。</p>
+<p>我们为新安装向导增添了一个主题选择面板。
+我们改善了SSU表现，修复了一个SSU对等节点测试信息的问题。
+调整了隧道构建Bloom过滤器以降低内存使用。
+我们改善了非Java插件的支持。</p>
+<p>另外，我们在设计新的UDP传输SSU2方面取得了重大进展，预计明年年初开始推行。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 with SSU fixes and faster crypto</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
-We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
-This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
-(Destinations have been using this encryption for a few releases now)
-We've been working on the specifications and protocols for new encryption for several years,
-and we are getting close to the end of it! The migration will take several releases to complete.</p>
-<p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
-(randomly selected at restart) will be using the new encryption.
-If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
-This is normal, because your router has generated a new identity.
-Your performance should recover after a while.</p>
-<p>We have "rekeyed" the network twice before, when changing the default signature type,
-but this is the first time we've changed the default encryption type.
-Hopefully it will all go smoothly, but we're starting slowly to be sure.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 包含新的隧道搭建信息</summary></details><p>是的没错，在 0.9.x 发布9年后，我们直接从 0.9.50 跳到 1.5.0。
+这并不意味着有重大的API更改，也不意味着开发已经完成。
+这仅仅是对近20年来为我们的用户提供匿名和安全的工作的认可。</p>
+<p>此发布完成了更小的隧道构建消息的实现从而减少带宽使用。
+我们继续迁移网络的路由至 X25519 加密。
+当然也有许多错误修复和性能提升。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 with performance enhancements</summary></details><p>0.9.48 enables our new end-to-end encryption protocol (proposal 144) for most services.
-We have added preliminary support for new tunnel build message encryption (proposal 152).
-There are significant performance improvements throughout the router.</p>
-<p>Packages for Ubuntu Xenial (16.04 LTS) are no longer supported.
-Users on that platform should upgrade so you may continue to receive I2P updates.</p>
+</article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="Muwire 桌面版漏洞" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire 桌面版漏洞</summary></details><p>Muwire 桌面版应用的独立安装包中发现一个安全漏洞。
+其不影响控制台插件，并和以往发现的插件问题无关。
+如果你正在运行 Muwire桌面版应用，你应当立即<a href="http://muwire.i2p/">升级到 0.8.8</a>。</p>
+<p>问题详情将在2021年7月15日于<a href="http://muwire.i2p/security.html">muwire.i2p</a>公布。</p>
+</article><article id="urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387" title="Muwire 插件漏洞" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-07T11:00:00Z" updated="2021-07-07T11:00:00Z"><details><summary>Muwire 插件漏洞</summary></details><p>Muwire 插件中发现一个安全漏洞。
+其不影响桌面客户端的独立安装包。
+如果你正在运行 Muwire 插件，你应当立即<a href="/configplugins">升级到 0.8.7-b1</a>。</p>
+<p>更多有关漏洞和及时的安全建议的信息见于<a href="http://muwire.i2p/security.html">muwire.i2p</a>。</p>
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 包含 IPv6 修复</summary></details><p>0.9.50 继续为路由加密密钥迁移至 ECIES-X25519。
+我们已为补种启用 DNS over HTTPS 以保护用户免受被动 DNS 窥探。
+还有若干对 IPv6 地址的修复和提升，包括新的 UPnP 支持。</p>
+<p>我们终于修复了一些 SusiMail 长期存在的错误。
+对带宽限制器的修改应该能改善网络隧道表现。
+在我们的 Docker 容器有几处改善。
+我们已经提升了对网络中可能的恶意和异常路由的防御。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 enables new encryption</summary></details><p>0.9.47 enables our new end-to-end encryption protocol (proposal 144) by default for some services.
-The Sybil analysis and blocking tool is now enabled by default.</p>
-<p>Java 8 or higher is now required.
-Debian packages for Wheezy and Stretch, and for Ubuntu Trusty and Precise, are no longer supported.
-Users on those platforms should upgrade so you may continue to receive I2P updates.</p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 包含SSU修复及更快速的加密</summary></details><p>0.9.49 继续使 I2P 更快更安全。
+我们对 SSU (UDP) 传输做了若干改进和修复，速度应有所提高。
+同时此发布开始为路由迁移至新的，更快的 ECIES-X25519 加密。
+（至今目标地址采用此加密已有数个发布）
+这几年，我们一直致力于新加密的规范和协议，
+现已经接近尾声了！迁移会在数个发布中完成。</p>
+<p>对于此发布，为尽量减少中断，只有新安装的以及极小比例的现有安装
+（重启时随机选择）会采用新加密。
+如果你的路由确实“重新键入”以使用新加密，在你重启后的几天内，它可能会比平时流量更少或可靠性更低。
+这是正常现象，因为你的路由生成了一个新的身份。
+你的路由性能随后会恢复正常。</p>
+<p>以往我们在改变默认签名类型时已两次“重新键入”网络，
+但这是首次更改默认加密方式。
+希望一切都能顺利进行，我们正逐步确定。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 with bug fixes</summary></details><p>0.9.46 contains significant performance improvements in the streaming library.
-We have completed development of ECIES encryption (proposal 144) and there is now an option to enable it for testing.</p>
-<p>Windows users only:
-This release fixes a local privilege escalation vulnerability
-which could be exploited by a local user.
-Please apply the update as soon as possible.
-Thanks to Blaze Infosec for responsible disclosure of the issue.</p>
-<p>This is the last release to support Java 7, Debian packages Wheezy and Stretch, and Ubuntu packages Precise and Trusty.
-Users on those platforms must upgrade to receive future I2P updates.</p>
+</article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 发布" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 包含性能提升</summary></details><p>0.9.48 在大多数服务上启用了我们的新端到端加密协议（提案144）。
+我们已经添加对新隧道建立的信息加密（提案152）的初步支持。
+整个路由的性能都有显著提高。</p>
+<p>Ubuntu Xenial (16.04 长期支持版) 的软件包已不再支持。
+使用该平台的用户应当升级以继续获得 I2P 更新。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 Released" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 with bug fixes</summary></details><p>0.9.45 contains important fixes for hidden mode and the bandwidth tester.
-There's an update to the console dark theme.
-We continue work on improving performance and the development of new end-to-end encryption (proposal 144).</p>
+</article><article id="urn:uuid:12c0f414-175a-401e-a35c-47307627a050" title="0.9.47 发布" href="http://i2p-projekt.i2p/en/blog/post/2020/08/24/0.9.47-Release" author="zzz" published="2020-08-24T12:00:00Z" updated="2020-08-24T12:00:00Z"><details><summary>0.9.47 启用了新的加密</summary></details><p>0.9.47 在一些服务中默认启用了我们的新端到端加密协议（提案 144）。
+Sybil 分析和屏蔽工具现在已默认启用。</p>
+<p>现在需要 Java 8 或更高版本。
+Debian 软件包 Wheezy 和 Stretch，以及 Ubuntu 软件包 Trusty 和 Precise 现已不再支持。
+使用上述平台的用户需要升级以继续获得 I2P 更新。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 with bug fixes</summary></details><p>0.9.44 contains an important fix for a denial of service issue in hidden services handling of new encryption types.
-All users should update as soon as possible.</p>
-<p>The release includes initial support for new end-to-end encryption (proposal 144).
-Work continues on this project, and it is not yet ready for use.
-There are changes to the console home page, and new embedded HTML5 media players in i2psnark.
-Additional fixes for firewalled IPv6 networks are included.
-Tunnel build fixes should result in faster startup for some users.</p>
+</article><article id="urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9" title="0.9.46 发布" href="http://i2p-projekt.i2p/en/blog/post/2020/05/25/0.9.46-Release" author="zzz" published="2020-05-25T12:00:00Z" updated="2020-05-25T12:00:00Z"><details><summary>0.9.46 包含错误修复</summary></details><p>0.9.46 包含 streaming 库显著的性能提升。
+我们已经完成了 ECIES 加密（提案144）的开发，现在可以选择启用它以进行测试。</p>
+<p>仅 Windows 用户：
+本发布修复了一个可被本地用户利用的本地提权漏洞。
+请尽快应用更新。
+感谢 Blaze Infosec 披露此问题。</p>
+<p>这是最后一个支持 Java 7、Debian 软件包 Wheezy 和 Stretch 以及 Ubuntu 软件包 Precise 和 Trusty 的发布。
+使用上述平台的用户务必升级以获得未来的 I2P 更新。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b" title="0.9.43 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/10/22/0.9.43-Release" author="zzz" published="2019-10-22T12:00:00Z" updated="2019-10-22T12:00:00Z"><details><summary>0.9.43 with bug fixes</summary></details><p>In the 0.9.43 release, we continue work on stronger security and privacy features and performance improvements.
-Our implementation of the new leaseset specification (LS2) is now complete.
-We are beginning our implementation of stronger and faster end-to-end encryption (proposal 144) for a future release.
-Several IPv6 address detection issues have been fixed, and there of course are several other bug fixes.</p>
+</article><article id="urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869" title="0.9.45 发布" href="http://i2p-projekt.i2p/en/blog/post/2020/02/25/0.9.45-Release" author="zzz" published="2020-02-25T12:00:00Z" updated="2020-02-25T12:00:00Z"><details><summary>0.9.45 包含了错误修复</summary></details><p>0.9.45包含了隐身模式和带宽测试的重要修复。
+这是一个对于控制台暗色主题的更新。
+我们继续努力提高性能并开发新的端到端加密(提案 144)。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319" title="0.9.42 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/08/27/0.9.42-Release" author="zzz" published="2019-08-27T12:00:00Z" updated="2019-08-27T12:00:00Z"><details><summary>0.9.42 with bug fixes</summary></details><p>0.9.42 continues the work to make I2P faster and more reliable.
-It includes several changes to speed up our UDP transport.
-We have split up the configuration files to enable future work for more modular packaging.
-We continue work to implement new proposals for faster and more secure encryption.
-There are, of course, a lot of bug fixes also.</p>
+</article><article id="urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5" title="0.9.44 发布" href="http://i2p-projekt.i2p/en/blog/post/2019/12/01/0.9.44-Release" author="zzz" published="2019-12-01T12:00:00Z" updated="2019-12-01T12:00:00Z"><details><summary>0.9.44 包含了错误修复</summary></details><p>0.9.44 包含一个隐藏服务处理新加密类型中拒绝服务问题的重要修复。所有用户都应尽快更新。</p>
+<p>发布版本包含新端到端加密的初始支持（提案 144）。此项目上的工作仍在继续，尚未准备好使用。有一些控制台主页的更改，及 i2psnark 中新的嵌入式 HTML5 媒体播放器。包含对受到防火墙限制的 IPv6 网络的额外修复。隧道建立的修复应当使得一些用户更快的启动。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f" title="0.9.41 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/07/02/0.9.41-Release" author="zzz" published="2019-07-02T12:00:00Z" updated="2019-07-02T12:00:00Z"><details><summary>0.9.41 with bug fixes</summary></details><p>0.9.41 continues the work to implement new features for proposal 123,
-including per-client authentication for encrypted leasesets.
-The console has an updated I2P logo and several new icons.
-We've updated the Linux installer.</p>
-<p>Startup should be faster on platforms such as Raspberry Pi.
-We've fixed several bugs, including some serious ones affecting low-level network messages.</p>
+</article><article id="urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b" title="0.9.43 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/10/22/0.9.43-Release" author="zzz" published="2019-10-22T12:00:00Z" updated="2019-10-22T12:00:00Z"><details><summary>0.9.43 包含了错误修复</summary></details><p>在 0.9.43 发布版本中，我们继续致力于更强的安全性，隐私功能和性能提升。我们的新的租契集规范 (LS2) 实现现在已完成。我们正在开始用于未来发布版本的更强大快速的端到端加密（提案 144）实现。一些 IPv6 探测问题已修复，当然还有一些其他错误修复。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 with new icons</summary></details><p>0.9.40 includes support for the new encrypted leaseset format.
-We disabled the old NTCP 1 transport protocol.
-There's a new SusiDNS import feature, and a new scripted filtering mechanism for incoming connections.</p>
-<p>We've made a lot of improvements to the OSX native installer, and we've updated the IzPack installer as well.
-The work continues on refreshing the console with new icons.
-As usual, we've fixed lots of bugs also!</p>
+</article><article id="urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319" title="0.9.42 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/08/27/0.9.42-Release" author="zzz" published="2019-08-27T12:00:00Z" updated="2019-08-27T12:00:00Z"><details><summary>0.9.42 包含了错误修复</summary></details><p>0.9.42 继续使 I2P 更快更稳定.
+此版本包含了几处改动以提高 UDP 传输速度。
+我们拆分了设置文件，以便将来进一步模块化。
+我们将继续努力，将关于更快、更安全的加密的建议付诸实践。
+理所当然地， 还有许多错误修复。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e" title="0.9.39 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/03/21/0.9.39-Release" author="zzz" published="2019-03-21T12:00:00Z" updated="2019-03-21T12:00:00Z"><details><summary>0.9.39 with performance improvements</summary></details><p>0.9.39 includes extensive changes for the new network database types (proposal 123).
-We've bundled the i2pcontrol plugin as a webapp to support development of RPC applications.
-There are numerous performance improvements and bug fixes.</p>
-<p>We've removed the midnight and classic themes to reduce the maintenance burden;
-previous users of those themes will now see the dark or light theme.
-There's also new home page icons, a first step in updating the console.</p>
+</article><article id="urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f" title="0.9.41 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/07/02/0.9.41-Release" author="zzz" published="2019-07-02T12:00:00Z" updated="2019-07-02T12:00:00Z"><details><summary>0.9.41 包含了错误修复</summary></details><p>0.9.41 继续着手落实提案 123 引入的新功能，
+包括对加密的租契集做客户端级别的身份验证。
+控制台的 I2P 标志及若干图标已更新。
+更新了 Linux 安装程序。</p>
+<p>启动速度在树莓派（Raspberry Pi）等平台上更快了。
+已修正若干缺陷，包括部分严重影响底层网络消息的问题。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219" title="0.9.38 Released" href="http://i2p-projekt.i2p/en/blog/post/2019/01/22/0.9.38-Release" author="zzz" published="2019-01-22T12:00:00Z" updated="2019-01-22T12:00:00Z"><details><summary>0.9.38 with new setup wizard</summary></details><p>0.9.38 includes a new first-install wizard with a bandwidth tester.
-We've added support for the latest GeoIP database format.
-There's a new Firefox profile installer and a new, native Mac OSX installer on our website.
-Work continues on supporting the new "LS2" netdb format.</p>
-<p>This release also contains plenty of bug fixes, including several issues with susimail attachments, and a fix for IPv6-only routers.</p>
+</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 有新的图标</summary></details><p>0.9.40 支持新的租契集格式。
+我们已禁用旧的 NTCP 1 传输协议。
+有一个新的 SusiDNS 导入功能，以及一个用于传入连接的新的脚本化过滤机制。</p>
+<p>我们对 OSX 原生的安装程序做了很多改进，以及更新了 IzPack 安装程序。
+继续使用新的图标焕新控制台。
+如往常一样，我们还修复了许多缺陷！</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="35C3 Trip Report" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>I2P at 35C3</summary></details><p>The I2P team was mostly all in attendance at 35C3 in Leipzig.
-Daily meetings were held to review the past year and cover our development and design goals for 2019.</p>
-<p>The Project Vision and new Roadmap can be <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">reviewed here</a>.</p>
-<p>Work will continue on LS2, the Testnet, and usability improvements to our website and console.
-A plan is in place to be in Tails, Debian and Ubuntu Disco. We still need people to work on Android and I2P_Bote fixes.</p>
-</article><article id="urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e" title="0.9.37 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/10/04/0.9.37-Release" author="zzz" published="2018-10-04T12:00:00Z" updated="2018-10-04T12:00:00Z"><details><summary>0.9.37 with NTCP2 enabled</summary></details><p>0.9.37 enables a faster, more secure transport protocol called NTCP2.</p>
+</article><article id="urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e" title="0.9.39 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/03/21/0.9.39-Release" author="zzz" published="2019-03-21T12:00:00Z" updated="2019-03-21T12:00:00Z"><details><summary>0.9.39 带有性能提升</summary></details><p>0.9.39 包含了针对新网络库格式的大量更新(proposal 123).
+我们将 i2pcontrol 插件作为一个 webapp 打包进来从而支持 RPC 应用的开发.
+另外还有众多的性能提升和bug修复.</p>
+<p>我们移除了午夜和经典主题以减轻维护压力.
+之前使用这些主题的用户现在将会看到暗或者亮色调主题.
+另外主页有了新的的图标，这是控制台更新的第一步.</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774" title="0.9.36 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/08/23/0.9.36-Release" author="zzz" published="2018-08-23T12:00:00Z" updated="2018-08-23T12:00:00Z"><details><summary>0.9.36 with NTCP2 and bug fixes</summary></details><p>0.9.36 contains a new, more secure transport protocol called NTCP2.
-It is disabled by default, but you may enable it for testing by adding the <a href="/configadvanced">advanced configuration</a> <tt>i2np.ntcp2.enable=true</tt> and restarting.
-NTCP2 will be enabled in the next release.</p>
-<p>This release also contains several performance improvements and bug fixes.</p>
+</article><article id="urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219" title="0.9.38 已发布" href="http://i2p-projekt.i2p/en/blog/post/2019/01/22/0.9.38-Release" author="zzz" published="2019-01-22T12:00:00Z" updated="2019-01-22T12:00:00Z"><details><summary>0.9.38 含有全新安装向导</summary></details><p>0.9.38 含有一个若为首次安装则会启动的向导，还有一个带宽测试器。我们已经支持最新的GeoIP数据库格式。我们的网站上有一个新的配置Firefox的安装包和一个新的本地Mac OSX安装包。我们继续努力支持新的“LS2”网络数据库格式。</p>
+<p>这次发布还有大量的bug修复，包括修复了susimail附件的一些问题，还含有针对纯IPv6路由器的一个修复。</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
-</article><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 Released" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35 with SusiMail folders and SSL Wizard</summary></details><p>0.9.35 adds support for folders in SusiMail, and a new SSL Wizard for setting up HTTPS on your Hidden Service website.
-We also have the usual collection of bug fixes, especially in SusiMail.</p>
-<p>We're hard at work on several things for 0.9.36, including a new OSX installer and a faster, more secure transport protocol called NTCP2.</p>
-<p>I2P will be at HOPE in New York City, July 20-22. Find us and say hello!</p>
+</article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="35C3 旅行报告" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>35C3 会议上的I2P</summary></details><p>I2P 团队大多数人出席了莱比锡的 35C3 会议。每天都开会，回顾上一年，阐述了我们2019年的发展和设计目标。</p>
+<p>项目愿景和新的路线图见<a href="http://i2p-projekt.i2p/en/get-involved/roadmap">此文</a>。</p>
+<p>我们为网页和控制台在LS2，Testnet和可用性提升上继续努力。
+一个计划已在Tails，Debian和Ubuntu Disco中就位。我们在安卓和I2P_Bote的修复上仍需要人手。</p>
+</article><article id="urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e" title="0.9.37 已发布" href="http://i2p-projekt.i2p/en/blog/post/2018/10/04/0.9.37-Release" author="zzz" published="2018-10-04T12:00:00Z" updated="2018-10-04T12:00:00Z"><details><summary>0.9.37，NTCP2 已启用</summary></details><p>0.9.37版启用了更快更安全的传输协议NTCP2。</p>
+<p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774" title="0.9.36 已发布" href="http://i2p-projekt.i2p/en/blog/post/2018/08/23/0.9.36-Release" author="zzz" published="2018-08-23T12:00:00Z" updated="2018-08-23T12:00:00Z"><details><summary>0.9.36，NTCP2 及缺陷修复</summary></details><p>0.9.36包含一个新的，更安全的传输协议，叫作NTCP2。
+此协议默认禁用，但是您可以启用它。在<a href="/configadvanced">高级设置</a>中设置 <tt>i2np.ntcp2.enable=true</tt>，然后重新启动。
+在下个发布中，NTCP2将被启用。</p>
+<p>此发布也包含性能优化和缺陷修复</p>
+<p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
+</article><article id="urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4" title="0.9.35 发布" href="http://i2p-projekt.i2p/en/blog/post/2018/06/26/0.9.35-Release" author="zzz" published="2018-06-26T12:00:00Z" updated="2018-06-26T12:00:00Z"><details><summary>0.9.35，SusiMail 文件夹及 SSL 向导</summary></details><p>0.9.35 在Susimail中加入了文件夹的支持，以及在您的隐藏服务页面用于建立HTTPS的新SSL向导。
+我们如同往常一样收集错误修复，尤其是在Susimail中。</p>
+<p>我们正在为0.9.36中的几部分而努力，包括新的OSX安装包以及更快、更安全的被称为NTCP2的传输协议。</p>
+<p>7月20-22号 I2P 将在纽约市HOPE。欢迎拜访并打招呼！</p>
 <p>一如往常一般，我們建議您更新到這個版本，要確保安全性以及協助貢獻此互連網路的最好方式就是保持使用最新的版本。</p>
 </article><article id="urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a" title="0.9.34 版本發佈" href="http://i2p-projekt.i2p/en/blog/post/2018/04/10/0.9.34-Release" author="zzz" published="2018-04-10T12:00:00Z" updated="2018-04-10T12:00:00Z"><details><summary>0.9.34 包含問題修復</summary></details><p>0.9.34 版修復了許多問題！
 此版本還改進了 SusiMail、IPv6 handling 和 tunnel peer 自選的功能。

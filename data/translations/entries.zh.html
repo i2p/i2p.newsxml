@@ -1,5 +1,45 @@
 <div>
-<header title="I2P 新闻">新闻订阅和路由更新</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 启用新的隧道搭建信息</summary></details><p>该发布完成了2021年开发的两个主要协议更新的推出。
+<header title="I2P 新闻">新闻订阅和路由更新</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 包含错误修复</summary></details><p>本发布包含i2psnark，
+路由器，I2CP和UPnP的错误修复。
+修复了路由器软重启、IPv6、SSU 对等节点测试、网络数据库存储和隧道构建中的地址错误。
+路由家族处理和Sybil分级也明显改善了。</p>
+<p>和i2pd一起，我们开发了新的UDP传输，SSU2。
+SSU2将带来实质性的性能和安全性改进。
+它还将让我们最终替换我们最后使用的非常慢的 ElGamal 加密，
+完成我们从约9年前开始的加密的完全升级。
+本发布包含一个默认关闭的初步推行。
+如果你想参与测试，请关注zzz.i2p的当前消息。</p>
+<p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="安装必要的Java/Jpackage升级" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>最近Java的“Psychic Signatures”漏洞影响到I2P。当前Linux的I2P用户，或任何正在使用非捆绑JVM的I2P用户应当更新
+他们的JVM或切换到 Java 15 以下
+不包含该漏洞的版本。</p>
+<p>新的I2P易安装包已使用
+JVM的最新发布生成。更多详情已发布在各
+同捆包的新闻源中。</p>
+</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 包含可靠性和性能提升</summary></details><p>1.7.0 发布包含若干性能和可靠性的改善。</p>
+<p>对于支持的平台，现在系统托盘中会弹出信息。
+i2psnark 现在有一个新的种子编辑器。
+现在大大降低了 NTCP2 的CPU占用。</p>
+<p>在新安装中，长期不受支持的 BOB 接口已被移除。
+除了 Debian 包以外，现有的安装将继续使用之。
+其余任何 BOB 应用的用户都应该要求开发人员切换到SAMv3协议。</p>
+<p>我们得知自 1.6.1 发布以来，网络可靠性不断恶化。
+我们在发布以后很快就意识到了这个问题，然而我们花了近两个月才找到原因。
+我们最终确认为 i2pd 2.40.0 中的一个bug，
+这个修复将在 2.41.0 中和这个版本几乎同时发布。
+在此过程中，我们在 Java I2P 中做了一些修改，以改善
+网络数据库查找和存储的健壮性，并在隧道节点选择中避开性能较差的对等节点。
+这将使网络在存在异常路由或恶意路由的情况下更健壮。
+此外，我们正在启动一个联合项目，在同一个隔离的测试网络中测试 i2pd 和 Java I2P 路由
+的预发布版本，这样我们就可以在发布前而不是发布以后发现更多问题。</p>
+<p>其他方面，我们在设计新的 UDP 传输“SSU2”（提案159）
+中继续取得重大进展并开始推行。
+SSU2 将带来实质上的性能和安全提升。
+这还将让我们能最终取代最后使用的，非常慢的 ElGamal 加密，
+完成约9年前开始的全加密升级。
+我们预计很快就会开始和 i2pd 进行联合测试，并在今年晚些时候向网络推出。</p>
+<p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 启用新的隧道搭建信息</summary></details><p>该发布完成了2021年开发的两个主要协议更新的推出。
 为路由迁移至 X25519 加密的步伐加快了，我们预计绝大部分路由在今年年底能完成切换。
 短隧道构建信息已启用以减少带宽使用。</p>
 <p>我们为新安装向导增添了一个主题选择面板。

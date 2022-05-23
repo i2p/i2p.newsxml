@@ -7,7 +7,7 @@
 # HREF, and AUTHOR to set the title, href, and author of the entry.
 #
 # Example usage:
-# TITLE="Update for Windows Jpackage 1.5.1" AUTHOR=idk EDITOR=mousepad I2P_OS=win I2P_BRANCH=beta ./create_new_entry.sh
+# TITLE="Title Here" AUTHOR=idk EDITOR=mousepad I2P_OS=win I2P_BRANCH=beta ./create_new_entry.sh
 
 ENTRIES=data/$I2P_OS/$I2P_BRANCH/entries.html
 UUIDGEN="`which uuidgen || which uuid`"
