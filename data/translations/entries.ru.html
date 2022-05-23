@@ -1,12 +1,47 @@
 <div>
-<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
-The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
-Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
-<p>We added a theme selection panel to the new install wizard.
-We've improved SSU performance and fixed an issue with SSU peer test messages.
-The tunnel build Bloom filter was adjusted to reduce memory usage.
-We have enhanced support for non-Java plugins.</p>
-<p>In other news, we are making excellent progress on the design of our new UDP transport SSU2 and expect to start implementation early next year.</p>
+<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 with bug fixes</summary></details><p>This release includes bug fixes in i2psnark,
+the router, I2CP, and UPnP.
+Router fixes address bugs in soft restart, IPv6, SSU peer testing,
+network database stores, and tunnel building.
+Router family handling and Sybil classification have also been
+significantly improved.</p>
+<p>Together with i2pd, we are developing our new UDP transport, SSU2.
+SSU2 will bring substantial performance and security improvements.
+It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
+completing the full cryptography upgrade we started about 9 years ago.
+This release contains a preliminary implementation which is disabled by default.
+If you wish to participate in testing, please look for current information
+on zzz.i2p.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="Install essential Java/Jpackage updates" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>The recent Java "Psychic Signatues" vulnerability affects I2P. Current users of
+I2P on Linux, or any users of I2P who are using a non-bundled JVM should update
+their JVM or switch to a version which does not contain the vulnerability, below
+Java 15.</p>
+<p>New I2P Easy-Install bundles have been generated using the latest release of the
+Java Virtual Machine. Further details have been published in the respective
+bundle newsfeeds.</p>
+</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="Вышла версия 1.7.0" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 с улучшенной производительностью и повышенной надежностью</summary></details><p>Версия 1.7.0 содержит ряд улучшений в части производительности и надежности</p>
+<p>Теперь в системном лотке появляются всплывающие сообщения для платформ, поддерживающих его. В i2psnark есть новый редактор торрентов. Транспорт NTCP2 теперь реже, чем раньше, использует центральный процессор.</p>
+<p>Давно устаревшего интерфейса BOB не будет в новой версии. Он продолжит работать в уже установленных приложениях, за исключением пакетов Debian. Все, кто продолжает пользоваться BOB, должны попросить разработчиков конвертировать BOB в протокол SAMv3.</p>
+<p>Мы в курсе, что с момента выпуска версии 1.6.1 надежность сети неуклонно понижалась.
+Мы узнали о проблеме вскоре после выпуска версии, но нам потребовалось почти два месяца, чтобы выявить причину неисправности.
+В конце концов мы поняли, что причина — в ошибке в i2pd 2.40.0,
+и эта ошибка будет исправлена в версии 2.41.0, которая выйдет примерно в то же время, что и нынешняя версия.
+Попутно мы внесли несколько изменений в Java I2P, чтобы повысить
+надежность поиска и хранения сетевых баз данных и избежать неэффективных одноранговых узлов при выборе узлов в туннеле.
+Эти меры должны укрепить надежность сети при наличии неисправных или вредоносных маршрутизаторов.
+Кроме того, мы начинаем совместную программу по тестированию предварительных версий маршрутизаторов i2pd и Java I2P
+в изолированной тестовой сети, чтобы у нас была возможность выявить больше проблем до выхода версии, а не после него.</p>
+<p>Что еще нового? Мы продолжаем улучшать наш UDP-транспорт SSU2 (предложение 159) и уже начали его использовать. SSU2 станет эффективнее и безопаснее. Это позволит нам отказаться от невероятного медленного шифрования ElGamal, завершив полное обновление криптографии, которое началось около 9 лет назад. Мы надеемся вскоре начать совместное с i2pd тестирование и запустить обновления в Cети в этом году.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="Вышла версия 1.6.0" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>Версия 1.6.0 позволяет создавать новые типы пакетов для построения туннелей.</summary></details><p>Эта версия — последний шаг на пути к запуску двух основных обновлений протоколов, разработанных в 2021 году.
+Переход к шифрованию X25519 для маршрутизаторов ускорен, и мы ожидаем, что почти все маршрутизаторы будут перезапущены к концу года.
+Для значительного сокращения пропускной способности используются небольшие пакеты для построения туннелей.</p>
+<p>Мы добавили панель выбора темы в мастер установки.
+Мы улучшили производительность SSU и исправили проблему с одноранговыми тестовыми сообщениями SSU.
+Туннельная сборка фильтра Bloom была скорректирована для того, чтобы снизить нагрузку на память.
+Мы осуществляем расширенную поддержку плагинов, не связанных с Java .</p>
+<p>Помимо этого, мы продвинулись в разработке нашего нового UDP-транспорта SSU2 и надеемся начать его внедрение в начале следующего года.</p>
 <p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
 </article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="Вышла версия 1.5.0" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 с новыми типами пакетов для построения туннелей</summary></details><p>Да, вам не привиделось — после 9 лет разработки 0.9.x мы переходим сразу с 0.9.50 на 1.5.0.
 Это не привело к значительному изменению API, как и не означает, что разработка завершена.

@@ -1,5 +1,51 @@
 <div>
-<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
+<header title="I2P 뉴스">뉴스 및 라우터 업데이트 사항</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 with bug fixes</summary></details><p>This release includes bug fixes in i2psnark,
+the router, I2CP, and UPnP.
+Router fixes address bugs in soft restart, IPv6, SSU peer testing,
+network database stores, and tunnel building.
+Router family handling and Sybil classification have also been
+significantly improved.</p>
+<p>Together with i2pd, we are developing our new UDP transport, SSU2.
+SSU2 will bring substantial performance and security improvements.
+It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
+completing the full cryptography upgrade we started about 9 years ago.
+This release contains a preliminary implementation which is disabled by default.
+If you wish to participate in testing, please look for current information
+on zzz.i2p.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="Install essential Java/Jpackage updates" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>The recent Java "Psychic Signatues" vulnerability affects I2P. Current users of
+I2P on Linux, or any users of I2P who are using a non-bundled JVM should update
+their JVM or switch to a version which does not contain the vulnerability, below
+Java 15.</p>
+<p>New I2P Easy-Install bundles have been generated using the latest release of the
+Java Virtual Machine. Further details have been published in the respective
+bundle newsfeeds.</p>
+</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 with reliability and performance improvements</summary></details><p>The 1.7.0 release contains several performance and reliability improvements.</p>
+<p>There are now popup messages in the system tray, for those platforms that support it.
+i2psnark has a new torrent editor.
+The NTCP2 transport now uses much less CPU.</p>
+<p>The long-deprecated BOB interface is removed for new installs.
+It will continue to work in existing installs, except for Debian packages.
+Any remaining users of BOB applications should ask the developers to convert to the SAMv3 protocol.</p>
+<p>We know that since our 1.6.1 release, network reliability has steadily deteriorated.
+We were aware of the problem soon after the release, but it took us almost two months to find the cause.
+We eventually identified it as a bug in i2pd 2.40.0,
+and the fix will be in their 2.41.0 release coming out about the same time as this release.
+Along the way, we've made several changes on the Java I2P side to improve the
+robustness of network database lookups and stores, and avoid poorly-performing peers in tunnel peer selection.
+This should help the network be more robust even in the presence of buggy or malicious routers.
+Additionally, we're starting a joint program to test pre-release i2pd and Java I2P routers
+together in an isolated test network, so we can find more problems before the releases, not after.</p>
+<p>In other news, we continue to make great progress on the design of our new UDP transport "SSU2" (proposal 159)
+and have started implementation.
+SSU2 will bring substantial performance and security improvements.
+It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
+completing a full cryptography upgrade that started about 9 years ago.
+We expect to start joint testing with i2pd soon, and roll it out to the network later this year.</p>
+<p>평소와 같이, 이 릴리즈로 업데이트하는 것을 권장합니다. 보안을 유지하고
+네트워크를 돕기 위한 가장 좋은 것은 최신 릴리즈를 사용하는 것입니다.</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
 The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
 Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
 <p>We added a theme selection panel to the new install wizard.
