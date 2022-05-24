@@ -1,7 +1,7 @@
 [
   {
     "date": "2022-05-24",
-    "version": "",
+    "version": "1.8.0",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
