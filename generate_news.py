@@ -28,8 +28,8 @@ TRANSLATED_NEWS_FILE = os.path.join(BUILD_DIR, 'news_%s.atom.xml')
 def load_feed_metadata(fg):
     fg.id('urn:uuid:60a76c80-d399-11d9-b91C-543213999af6')
     fg.link( href='http://i2p-projekt.i2p/' )
-    fg.link( href='http://echelon.i2p/news/news.atom.xml', rel='self' )
-    fg.link( href='http://psi.i2p/news/news.atom.xml', rel='alternate' )
+    fg.link( href='http://tc73n4kivdroccekirco7rhgxdg5f3cjvbaapabupeyzrqwv5guq.b32.i2p/news.atom.xml', rel='self' )
+    fg.link( href='http://dn3tvalnjz432qkqsvpfdqrwpqkw3ye4n4i2uyfr4jexvo3sp5ka.b32.i2p/news/news.atom.xml', rel='alternate' )
 
 def load_entries(fg, entries_file, platform_entries_file=None):
     metadatas = {}
