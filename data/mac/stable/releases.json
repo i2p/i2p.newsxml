@@ -1,14 +1,14 @@
 [
   {
-    "date": "2022-05-24",
-    "version": "1.8.0",
+    "date": "2022-08-22",
+    "version": "1.9.0",
     "minVersion": "0.9.9",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:608d4571157f41c788ce79d2e5b1f6c5e289afbd&dn=I2P-1.8.0+Mac+DMG+update&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:6b3a14d6482583ca97ae9fe5203cd41f0526da5b&dn=I2P-1.9.0+Mac+DMG+update&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
-          "http://n4xen5sohufgjhv327ex4qra77f4tpqohlcyoa3atoboknzqazeq.b32.i2p/i2pmacupdate-1.8.0.su3"
+          "http://n4xen5sohufgjhv327ex4qra77f4tpqohlcyoa3atoboknzqazeq.b32.i2p/i2pmacupdate-1.9.0.su3"
         ]
       }
     }
