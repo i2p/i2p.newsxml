@@ -1,5 +1,25 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルータのアップデート</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 バグ修正</summary></details><p>このリリースはi2psnark、ルーター、I2CPとUPnPにバグ修正が含まれています。
+<header title="I2P ニュース">ニュースフィードとルータのアップデート</header><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>1.9.0 with SSU2 for testing</summary></details><p>We have spent the last three months working on our new UDP transport protocol "SSU2"
+with a small number of volunteer testers.
+This release completes the implementation, including relay and peer testing.
+We are enabling it by default for Android and ARM platforms, and a small percentage of other routers at random.
+This will allow us to do much more testing in the next three months, finish the connection migration feature,
+and fix any remaining issues.
+We plan to enable it for everyone in the next release scheduled for November.
+No manual configuration is necessary.</p>
+<p>Of course, there's the usual collection of bug fixes in this release as well.
+We also added an automatic deadlock detector that has already found a rare deadlock that is now fixed.</p>
+<p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="新しいアウトプロキシ exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>新しいアウトプロキシ</summary></details><p>I2P"アウトプロキシ"（出口ノード）は、HTTPプロキシトンネルを介してインターネットにアクセスする為に使われているかもしれません。
+我々の<a href="http://i2p-projekt.i2p/en/meetings/314">毎月の会合</a>で公認され、今、<b>exit.stormycloud.i2p</b>は我々の公式推奨アウトプロキシであり、長期間不能な<b>false.i2p</b>を置き換えます。
+更なる情報は<a href="http://stormycloud.i2p/">団体</a>StormyCloud、<a href="http://stormycloud.i2p/outproxy.html">アウトプロキシ</a>、<a href="http://stormycloud.i2p/tos.html">利用規約</a>上にあり、<a href="http://stormycloud.i2p/">StormyCloudウェブサイト</a>をご覧下さい。</p>
+<p>我々は<a href="/i2ptunnel/edit?tunnel=0">秘匿サービスマネージャー設定</a>で、<b>アウトプロキシ</b>と<b>SSLアウトプロキシ</b>の二箇所に、<b>exit.stormycloud.i2p</b>を指定するよう提案します。
+編集後、<b>下にスクロールして、保存をクリックしてください</b>。
+<a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">スクリーンショットは我々のブログ投稿</a>でご覧下さい。
+Android用の説明とスクリーンショットは、<a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbobのブログ</a>をご覧下さい。</p>
+<p>ルーターアップデートは設定をアップデートしませんので、手動でそれを変更する必要があります。
+StormyCloudには、これらの支援について、感謝します。<a href="http://stormycloud.i2p/donate.html">寄付</a>をご検討下さい。</p>
+</article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 バグ修正</summary></details><p>このリリースはi2psnark、ルーター、I2CPとUPnPにバグ修正が含まれています。
 ルーターはソフト再起動、IPv6、SSUピア検査、ネットワークデータベース保管とトンネル構築にてアドレスのバグを修正しました。
 ルーターファミリー取り扱いとSybil区分は大幅に改善しています。</p>
 <p>i2pdと共に、我々は新しいUDPトランスポートSSU2を開発中です。
@@ -46,7 +66,7 @@ Java以外のプラグインのサポートを強化しました。</p>
 これは、APIの大幅な変更を意味するものではなく、また、開発が完了したことを示すものでもありません。
 これは、ユーザーの皆様に匿名性と安全を提供するための約20年間の努力が認められたことを意味しています。</p>
 <p>このリリースでは、帯域幅を削減するためにトンネルの構築メッセージを小さくする実装が終了しました。
-また、ネットワークルータのX25519暗号化への移行も継続しています。
+また、ネットワークルーターのX25519暗号化への移行も継続しています。
 もちろん、多数のバグ修正やパフォーマンスの改善も行われています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="MuWire デスクトップ脆弱性" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Muwire デスクトップ脆弱性</summary></details><p>MuWireのスタンドアロンデスクトップアプリケーションにセキュリティ上の脆弱性が発見されました。
@@ -59,32 +79,33 @@ MuWireのデスクトップアプリケーションを使用している場合�
 MuWireプラグインを使用している場合は、直ちに<a href="/configplugins">バージョン0.8.7-b1にアップデートしてください</a>。</p>
 <p>脆弱性の詳細および最新のセキュリティ推奨事項に関する更新については
 <a href="http://muwire.i2p/security.html">muwire.i2p</a>をご覧ください。</p>
-</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6の修正</summary></details><p>0.9.50では、ルータの暗号化鍵をECIES-X25519に移行しました。
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6の修正</summary></details><p>0.9.50では、ルーターの暗号化鍵をECIES-X25519に移行しました。
 受動的なDNS詮索からユーザーを保護するため、再シードにDNS over HTTPSを有効にしました。
 新しいUPnPのサポートを含む、IPv6アドレスに多数の修正と改善が行われています。</p>
 <p>長年にわたり発生していたSusiMailの破損バグをようやく修正しました。
 帯域幅制限の変更により、ネットワークトンネルのパフォーマンスが向上しました。
 我々のDockerコンテナにいくつかの改善があります。
-ネットワーク上の悪意のある、あるいはバグのあるルータの可能性に対する防御機能を改善しました。</p>
+ネットワーク上の悪意のある、あるいはバグのあるルーターの可能性に対する防御機能を改善しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
-</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 SSUの修正と高速な暗号法</summary></details><p>0.9.49 continues the work to make I2P faster and more secure.
-We have several improvements and fixes for the SSU (UDP) transport that should result in faster speeds.
-This release also starts the migration to new, faster ECIES-X25519 encryption for routers.
-(Destinations have been using this encryption for a few releases now)
-We've been working on the specifications and protocols for new encryption for several years,
-and we are getting close to the end of it! The migration will take several releases to complete.</p>
-<p>For this release, to minimize disruption, only new installs and a very small percentage of existing installs
-(randomly selected at restart) will be using the new encryption.
-If your router does "rekey" to use the new encryption, it may have lower traffic or less reliability than usual for several days after you restart.
-This is normal, because your router has generated a new identity.
-Your performance should recover after a while.</p>
-<p>We have "rekeyed" the network twice before, when changing the default signature type,
-but this is the first time we've changed the default encryption type.
-Hopefully it will all go smoothly, but we're starting slowly to be sure.</p>
+</article><article id="urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3" title="0.9.49 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/02/17/0.9.49-Release" author="zzz" published="2021-02-17T12:00:00Z" updated="2021-02-17T12:00:00Z"><details><summary>0.9.49 SSUの修正と高速な暗号法</summary></details><p>0.9.49 では、I2P をより速く、より安全にするための作業を続けています。
+
+SSU (UDP) トランスポートに関するいくつかの改善と修正により、より速い速度が得られるはずです。
+このリリースでは、ルーター用の新しい高速なECIES-X25519暗号への移行も開始します。
+(送信先では、数回前のリリースからこの暗号を使用しています。）
+新しい暗号の仕様とプロトコルは数年前から取り組んできました。
+そして、完成に近づいています！移行が完了するまでには、数回のリリースが必要です。</p>
+<p>今回のリリースでは、混乱を最小限に抑えるため、新規インストールと既存のインストールのごく一部のみが新しい暗号化を使用します。
+(再起動時にランダムに選択) は新しい暗号化を使用します。
+ルーターが新しい暗号を使用するために「再キー」した場合、再起動後数日間は通常よりもトラフィックや信頼性が低下することがあります。
+これは、 ルーターが新しいアイデンティティを生成したためで、正常な動作です。
+しばらくすると、パフォーマンスが回復するはずです。</p>
+<p>過去に2回、デフォルトの署名の種類を変更する際に、ネットワークを「再キー」したことがあります。
+今回は初めてデフォルトの暗号化タイプを変更しました。
+うまくいけばスムーズにいくのですが、念のためゆっくり始めています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:2f702241-c585-4151-a364-76c561621989" title="0.9.48 リリース" href="http://i2p-projekt.i2p/en/blog/post/2020/11/30/0.9.48-Release" author="zzz" published="2020-12-01T12:00:00Z" updated="2020-12-01T12:00:00Z"><details><summary>0.9.48 パフォーマンス増強</summary></details><p>0.9.48では我々の新しいエンドツーエンド暗号プロトコル（提案144）が大部分のサービスでデフォルトで有効になっています。
 トンネル構築メッセージの新しい暗号化（提案152）の予備的サポートも追加しました。
-ルータの至る所で著しいパフォーマンス改善があります。</p>
+ルーターの至る所で著しいパフォーマンス改善があります。</p>
 <p>Ubuntu Xenial (16.04 LTS) 用のパッケージはもはやサポートされません。
 このプラットフォームのユーザがI2Pアップデートを受け取り続けるためにはアップグレードが必要です。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
@@ -133,9 +154,10 @@ Linux用インストーラを更新しました。</p>
 <p>Raspberry Piのようなプラットフォームでの起動が速くなりました。
 低水準ネットワークメッセージに影響する重大なバグなど、いくつかの不具合を修正しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
-</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 リリース" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 新アイコン</summary></details><p>0.9.40 includes support for the new encrypted leaseset format.
-We disabled the old NTCP 1 transport protocol.
-There's a new SusiDNS import feature, and a new scripted filtering mechanism for incoming connections.</p>
+</article><article id="urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f" title="0.9.40 リリース" href="http://i2p-projekt.i2p/en/blog/post/2019/05/07/0.9.40-Release" author="zzz" published="2019-05-07T12:00:00Z" updated="2019-05-07T12:00:00Z"><details><summary>0.9.40 新アイコン</summary></details><p>0.9.40 は新しい暗号化されたリースセット形式をサポートします。
+
+古い NTCP 1 トランスポートプロトコルを無効にしました。
+新しい SusiDNS のインポート機能と、新しいスクリプトによる着信接続のフィルタリングメカニズムがあります。</p>
 <p>OSXネイティブインストーラに対して大幅な改善を行い、また IzPackインストーラも更新しました。
 新アイコンによるコンソールの新調は継続しています。
 またいつものように多くのバグを修正しました！</p>
@@ -152,7 +174,7 @@ i2pコントロールプラグインをWebアプリとしてバンドルしま�
 Firefoxプロファイルの新インストーラと、新しいMac OSXネイティブインストーラをWebサイトに置きました。
 新しい「LS2」NetDB形式のサポート作業を継続しています。</p>
 <p>またこのリリースでは大量のバグ修正が行われています。
-SusiMailの添付ファイルに関するいくつかの問題や、IPv6限定ルータ用の修正です。</p>
+SusiMailの添付ファイルに関するいくつかの問題や、IPv6限定ルーター用の修正です。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a" title="35C3 出張報告" href="http://i2p-projekt.i2p/en/get-involved/roadmap" author="sadie" published="2019-01-21T12:00:00Z" updated="2019-01-21T12:00:00Z"><details><summary>35C3でのI2P</summary></details><p>I2Pチームはライプツィヒの35C3でのほとんど全てに参加しました。
 日ごとに会合が開かれ、昨年の振り返り、2019年の開発設計の目標の講義が行われました。</p>
@@ -191,13 +213,13 @@ UPnPのIGD2スキーマのサポートを追加しました。
 会議の結果は <a href="http://zzz.i2p" target="_blank">zzz.i2p</a> に既に投稿済みです。</p>
 <p>また、たくさんのステッカーを配布したり、質問してくれた方全てに我々のプロジェクトの情報提供などしました。
 我々I2Pの年1度の晩餐会は、全ての参加者に対しI2P継続的支援への感謝表現として大成功でした。</p>
-</article><article id="urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345" title="0.9.32 リリース" href="http://i2p-projekt.i2p/en/blog/post/2017/11/07/0.9.32-Release" author="zzz" published="2017-11-07T12:00:00Z" updated="2017-11-07T12:00:00Z"><details><summary>0.9.32 コンソールの更新</summary></details><p>0.9.32では、ルータコンソールと関連Webアプリ（アドレス帳、I2PSnark、SusiMail）で多数のバグ修正を行いました。
+</article><article id="urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345" title="0.9.32 リリース" href="http://i2p-projekt.i2p/en/blog/post/2017/11/07/0.9.32-Release" author="zzz" published="2017-11-07T12:00:00Z" updated="2017-11-07T12:00:00Z"><details><summary>0.9.32 コンソールの更新</summary></details><p>0.9.32では、ルーターコンソールと関連Webアプリ（アドレス帳、I2PSnark、SusiMail）で多数のバグ修正を行いました。
 また、発行されたRouterInfo用の設定ホスト名の取り扱い方法を変更しました。DNSを介したネットワーク列挙攻撃を軽減するためです。
 コンソールにDNSリバインディング攻撃防止のためチェックをいくつか追加しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce" title="0.9.31 リリース" href="http://i2p-projekt.i2p/en/blog/post/2017/08/07/0.9.31-Release" author="zzz" published="2017-08-07T12:00:00Z" updated="2017-08-07T12:00:00Z"><details><summary>0.9.31 コンソールの更新</summary></details><p>今回のリリースの変更点はいつもよりずいぶん顕著です！
-ルータコンソールを新調し、理解をしやすく、使い勝手を改善、クロスブラウザサポート、そして全体的に整頓を行いました。
-これはルータコンソールをよりユーザーフレンドリーにする長期計画の第一歩です。
+ルーターコンソールを新調し、理解をしやすく、使い勝手を改善、クロスブラウザサポート、そして全体的に整頓を行いました。
+これはルーターコンソールをよりユーザーフレンドリーにする長期計画の第一歩です。
 また I2PSnark に Torrent のレーティングとコメントのサポートを追加しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b" title="翻訳者求む" href="https://www.transifex.com/otf/I2P/announcements/7243/" author="str4d" published="2017-06-10T12:00:00Z" updated="2017-06-10T12:00:00Z"><details><summary>来たる0.9.31のリリースは普段より未翻訳文章が多い</summary></details><p>0.9.31リリースの準備の際、これはUIの大幅なアップデートが含まれるのですが、
@@ -209,11 +231,11 @@ UPnPのIGD2スキーマのサポートを追加しました。
 どうやって始めたらいいかについての情報は <a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">新規翻訳者向けガイド</a> を参照。</p>
 </article><article id="urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f" title="0.9.30 リリース" href="http://i2p-projekt.i2p/en/blog/post/2017/05/03/0.9.30-Release" author="zzz" published="2017-05-03T12:00:00Z" updated="2017-05-03T12:00:00Z"><details><summary>0.9.30 Jetty 9 へのアップデート</summary></details><p>0.9.30 には Jetty 9 と Tomcat 8 へのアップグレードが含まれます。
 以前のバージョンはもはやサポートされないほか、来たる Debian Stretch、Ubuntu Zesty では利用できません。
-ルータは 設定ファイル jetty.xml を Jetty Webサイトそれぞれについて 新しい Jetty 9 設定に移行します。
+ルーターは 設定ファイル jetty.xml を Jetty Webサイトそれぞれについて 新しい Jetty 9 設定に移行します。
 これは直近・無修正の設定ならばうまくいくはずですが、修正版もしくは極めて古い設定では動かないかもしれません。
 あなたのJetty Webサイトがアップグレード後でも動くことを確認してください。またサポートが必要な場合はIRCで我々に連絡してください。</p>
 <p>一部のプラグインは Jetty 9 と互換性がなくアップデートが必要です。
-以下のプラグインは 0.9.30 で動くよう更新されており、ルータは再起動後にこれらをアップデートするでしょう： i2pbote 0.4.6、zzzot 0.15.0
+以下のプラグインは 0.9.30 で動くよう更新されており、ルーターは再起動後にこれらをアップデートするでしょう： i2pbote 0.4.6、zzzot 0.15.0
 以下のプラグイン（現バージョンを記載）は 0.9.30 では動かないでしょう。当該プラグイン開発者に新バージョンについての進捗を確認してください： BwSchedule 0.0.36、i2pcontrol 0.11</p>
 <p>またこのリリースでは 古い（2014年以前の）DSA-SHA1秘匿サービスから より安全な EdDSA署名型への移行をサポートしています。
 ガイドやFAQなどの詳しい情報は <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> を参照。</p>
@@ -231,7 +253,7 @@ Androidアプリへの影響はありません。</p>
 <p>メールをユーザに表示する際、大部分のフィールドはエスケープされていました。
 しかし、添付ファイルのファイル名はエスケープされておらず、JavaScript有効のブラウザ上での悪意あるコード実行に使用される可能性がありました。
 今ではエスケープされており、さらに Content Security Policy が全てのページに実装されています。</p>
-<p>全I2P-Boteユーザは2月半ばにリリースされた I2P 0.9.29 以降、初回のルータ再起動で自動更新されるでしょう。
+<p>全I2P-Boteユーザは2月半ばにリリースされた I2P 0.9.29 以降、初回のルーター再起動で自動更新されるでしょう。
 しかし移行期にI2P・I2P-Bote を使用するつもりならば、安全のために、<a href="http://bote.i2p/install/">インストールページの指示に従い</a>、手動でアップグレードすることを推奨します。</p>
 </article><article id="urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c" title="0.9.28 リリース" href="http://i2p-projekt.i2p/en/blog/post/2016/12/12/0.9.28-Release" author="zzz" published="2016-12-12T12:00:00Z" updated="2016-12-12T12:00:00Z"><details><summary>0.9.28 バグ修正</summary></details><p>0.9.28では、25以上のTracチケットに対する修正を行いました。また、Jettyなどバンドルされている多数のソフトウェアパッケージの更新を行いました。
 前リリースで導入された IPv6ピアのテスト機能の修正を行いました。
@@ -245,13 +267,13 @@ Androidアプリへの影響はありません。</p>
 <p>CSRF保護の不足のため、ユーザがI2P-Bote起動中にJavaScript有効のブラウザ上で悪意のあるサイトを読み込むと、
 敵対者がI2P-Bote上で当該ユーザとしてメッセージ送信などのアクションを発火できてしまっていました。
 I2P-Boteアドレスの秘密キーの抽出もできていた可能性がありますが、これについての実証は行われていません。</p>
-<p>全I2P-Boteユーザは12月半ばにリリースされた I2P 0.9.28 以降、初回のルータ再起動で自動更新されるでしょう。
+<p>全I2P-Boteユーザは12月半ばにリリースされた I2P 0.9.28 以降、初回のルーター再起動で自動更新されるでしょう。
 しかし移行期にI2P・I2P-Bote を使用するつもりならば、安全のために、<a href="http://bote.i2p/install/">インストールページの指示に従い</a>、手動でアップグレードすることを推奨します。
 また、あなたが日ごろI2P-Bote起動中にJavaScript有効でサイトを閲覧している場合、新たな I2P-Boteアドレスの生成を検討すべきです。</p>
 </article><article id="urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3" title="0.9.27 リリース" href="http://i2p-projekt.i2p/en/blog/post/2016/10/17/0.9.27-Release" author="zzz" published="2016-10-17T12:00:00Z" updated="2016-10-17T12:00:00Z"><details><summary>0.9.27 バグ修正</summary></details><p>0.9.27では多数のバグ修正が行われました。
 暗号加速のための 更新されたGMPライブラリ、これは 0.9.26 の新規インストール用とDebianビルドのみにバンドルされていましたが、0.9.27ではネットワーク内アップデートに含められました。
 IPv6転送、SSUピアテスト、秘匿モードへの改善を行いました。</p>
-<p><a href="http://i2p-projekt.i2p/en/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> のあいだ多数のプラグインの更新を行いました。それらはルータ再起動後に自動アップデートされるでしょう。</p>
+<p><a href="http://i2p-projekt.i2p/en/blog/post/2016/06/01/I2P-Summer-Dev">I2P Summer</a> のあいだ多数のプラグインの更新を行いました。それらはルーター再起動後に自動アップデートされるでしょう。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d" title="I2P の Stack Exchange が提案" href="https://area51.stackexchange.com/proposals/99297/i2p" author="zzz" published="2016-06-07T13:00:00Z" updated="2016-06-07T13:00:00Z"><details><summary>I2P が Stack Exchange の提案サイトに挙げられています！</summary></details><p>I2P が Stack Exchange の提案サイトに挙げられています！ベータフェーズが開始できるよう<a href="https://area51.stackexchange.com/proposals/99297/i2p">利用に努めて</a>ください。</p>
 </article><article id="urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621" title="0.9.26 リリース" href="http://i2p-projekt.i2p/en/blog/post/2016/06/07/0.9.26-Release" author="zzz" published="2016-06-07T12:00:00Z" updated="2016-06-07T12:00:00Z"><details><summary>0.9.26 暗号更新、Debianパッケージの改善、バグ修正</summary></details><p>0.9.26 では、組み込みの暗号ライブラリの大きなアップグレード、新しい署名付きアドレス帳購読プロトコル、Debian/Ubuntuパッケージの大幅な改善を行いました。</p>
@@ -265,7 +287,7 @@ IPv6転送、SSUピアテスト、秘匿モードへの改善を行いました�
 例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b" title="0.9.25 リリース" href="http://i2p-projekt.i2p/en/blog/post/2016/03/22/0.9.25-Release" author="zzz" published="2016-03-22T12:00:00Z" updated="2016-03-22T12:00:00Z"><details><summary>0.9.25 SAM 3.3、QRコード、バグ修正</summary></details><p>0.9.25では メジャー新バージョンのSAM v3.3 が含まれ、洗練されたマルチプロトコルのアプリケーションをサポートしています。
 秘匿サービスアドレス共有用のQRコードと、アドレスを視覚的に区別するための「identicon」画像を追加しました。</p>
-<p>「ルータファミリー」設定ページをコンソールに追加しました。あなたのルータグループが1人の人間により運用されていることを簡単に示せます。
+<p>「ルーターファミリー」設定ページをコンソールに追加しました。あなたのルーターグループが1人の人間により運用されていることを簡単に示せます。
 ネットワーク容量を増やし、うまくいけばトンネル構築が成功しやすくなるいくつかの変更が行われました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 リリース" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 いくつかのバグ修正と速度向上</summary></details><p>0.9.24 では、新バージョンのSAM（v3.2）の搭載、多数のバグ修正、効率改善を行いました。
@@ -283,11 +305,11 @@ Str4d は <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Cr
 </article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 リリース" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 様々なバグ修正、I2PSnarkの細かな改善</summary></details><p>こんにちはI2P！ zzzがこれまで49のリリースに署名してきましたが、これは初めて私（str4d）が署名したリリースです。
 これは人員を含めたあらゆる事柄に関する冗長性の重要なテストです。</p>
 <p><b>保全作業</b></p>
-<p>私の署名キーは2年以上（0.9.9以降）にわたってルータアップデート内にあります。
+<p>私の署名キーは2年以上（0.9.9以降）にわたってルーターアップデート内にあります。
 ですから、最近のバージョンのI2Pを使用中なら、このアップデートは他の更新と変わらず簡単に済みます。
 しかし、0.9.9よりも古いバージョンを動かしている場合、まず手動で最近のものにアップデートする必要があります。
 最近のバージョン向けのアップデートファイルは <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">こちら</a> でダウンロードでき、手動でのアップデート方法の説明は <a href="http://i2p-projekt.i2p/en/download#update">こちら</a> で閲覧できます。
-手動アップデートが終われば、ルータが 0.9.23 のアップデートを通常通り探し出しダウンロードします。</p>
+手動アップデートが終われば、ルーターが 0.9.23 のアップデートを通常通り探し出しダウンロードします。</p>
 <p>パッケージマネージャ経由でI2Pをインストールしている場合はこの変更の影響を受けません。いつも通りアップデートできます。</p>
 <p><b>アップデート詳細</b></p>
 <p>RouterInfoを 強固な新署名 Ed25519 に移行することはうまくいっており、少なくともネットワークの半分はキーが再発行されたと既に見られています。
@@ -297,7 +319,7 @@ Str4d は <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Cr
 <p>これが Java 6 をサポートする最後のリリースであることに注意してください。
 Java 7 または 8 にできるだけ早く更新してください。
 来たる Java 9 とI2Pを互換にすべく作業を既に行っており、一部の作業はこのリリースに含まれています。</p>
-<p>また、I2PSnarkの細かな改善を行い、またルータコンソールに過去のニュース項目閲覧のための新ページを追加しました。</p>
+<p>また、I2PSnarkの細かな改善を行い、またルーターコンソールに過去のニュース項目閲覧のための新ページを追加しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22がリリースされました" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 バグ修正とEd25519への移行を開始</summary></details><p>0.9.22 では、I2PSnark が完了前に固まることに対する修正を行いました。また RouterInfoを 強固な新署名 Ed25519 に移行し始めました。
 ネットワークチャーンを減らすため、各々の再起動時でEd25519に変換する確率は少なくなります。
@@ -306,10 +328,11 @@ Java 7 または 8 にできるだけ早く更新してください。
 <p>I2PCon Toronto は大成功でした！
 プレゼンテーションと動画の全ては <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PConページ</a> に一覧されています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
-</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21がリリースされました" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 バグ修正とパフォーマンス向上</summary></details><p>0.9.21 contains several changes to add capacity to the network, increase the efficiency of the floodfills,
-and use bandwidth more effectively.
-We have migrated the shared clients tunnels to ECDSA signatures and added a DSA fallback
-using the new "multisession" capability for those sites that don't support ECDSA.</p>
+</article><article id="urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a" title="0.9.21がリリースされました" href="http://i2p-projekt.i2p/en/blog/post/2015/07/31/0.9.21-Release" author="zzz" published="2015-07-31T18:00:00Z" updated="2015-07-31T18:00:00Z"><details><summary>0.9.21 バグ修正とパフォーマンス向上</summary></details><p>0.9.21では、ネットワークに容量を追加し、フラッドフィルの効率を向上させるためのいくつかの変更が含まれています。
+
+帯域幅をより効果的に使用するための変更が含まれています。
+共有クライアントトンネルをECDSA署名に移行し、DSA フォールバックを追加しました。
+ECDSA をサポートしないサイトのでは、新しい「マルチセッション」機能を使用してDSAフォールバックを使用します。</p>
 <p>I2PCon Toronto 2015の登壇者と予定が告知されました。詳しくは <a href="http://i2p-projekt.i2p/en/blog/post/2015/07/16/I2PCon">I2PConページ</a> を参照。
 <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a> で席を予約してください。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>

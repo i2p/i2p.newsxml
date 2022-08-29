@@ -1,5 +1,32 @@
 <div>
-<header title="I2P Habarlary">Habarlar lentasy we router täzelemeleri</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 with bug fixes</summary></details><p>This release includes bug fixes in i2psnark,
+<header title="I2P Habarlary">Habarlar lentasy we router täzelemeleri</header><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>1.9.0 with SSU2 for testing</summary></details><p>We have spent the last three months working on our new UDP transport protocol "SSU2"
+with a small number of volunteer testers.
+This release completes the implementation, including relay and peer testing.
+We are enabling it by default for Android and ARM platforms, and a small percentage of other routers at random.
+This will allow us to do much more testing in the next three months, finish the connection migration feature,
+and fix any remaining issues.
+We plan to enable it for everyone in the next release scheduled for November.
+No manual configuration is necessary.</p>
+<p>Of course, there's the usual collection of bug fixes in this release as well.
+We also added an automatic deadlock detector that has already found a rare deadlock that is now fixed.</p>
+<p>Adatça bolşy ýaly bu wersiýa çenli täzelemekligi maslahat berýäris. Howpsuzlygy üpjün etmegiň we ulgama kömek etmegiň iň gowy ýoly - iň soňky wersiýany ulanmak.</p>
+</article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="New Outproxy exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>New Outproxy</summary></details><p>I2P "outproxies" (exit nodes) may be used to access the internet through
+your HTTP proxy tunnel.
+As approved at our <a href="http://i2p-projekt.i2p/en/meetings/314">monthly meeting</a>,
+<b>exit.stormycloud.i2p</b> is now our official, recommended outproxy, replacing the long-dead <b>false.i2p</b>.
+For more information on the StormyCloud <a href="http://stormycloud.i2p/">organization</a>,
+<a href="http://stormycloud.i2p/outproxy.html">outproxy</a>,
+and <a href="http://stormycloud.i2p/tos.html">terms of service</a>,
+see the <a href="http://stormycloud.i2p/">StormyCloud website</a>.</p>
+<p>We suggest you change your <a href="/i2ptunnel/edit?tunnel=0">Hidden Services Manager configuration</a>
+to specify <b>exit.stormycloud.i2p</b>
+in two places: <b>Outproxies</b> and <b>SSL Outproxies</b>.
+After editing, <b>scroll down and click Save</b>.
+See our <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">blog post for a screenshot</a>.
+For Android instructions and screenshots see <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob's blog</a>.</p>
+<p>Router updates will not update your configuration, you must edit it manually.
+Thanks to StormyCloud for their support, and please consider a <a href="http://stormycloud.i2p/donate.html">donation</a>.</p>
+</article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 with bug fixes</summary></details><p>This release includes bug fixes in i2psnark,
 the router, I2CP, and UPnP.
 Router fixes address bugs in soft restart, IPv6, SSU peer testing,
 network database stores, and tunnel building.

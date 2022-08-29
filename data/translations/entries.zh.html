@@ -1,5 +1,28 @@
 <div>
-<header title="I2P 新闻">新闻订阅和路由更新</header><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 包含错误修复</summary></details><p>本发布包含i2psnark，
+<header title="I2P 新闻">新闻订阅和路由更新</header><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 已发布" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>带SSU2测试的1.9.0</summary></details><p>在过去的三个月里，我们花了很多时间与小规模志愿者一起研究我们新的UDP传输协议 "SSU2"
+这个版本完成了实现，包括中继和对等节点测试。
+我们默认在安卓和ARM平台上启用它，并在一小部分其它路由器上随机启用。
+这将使我们能够在未来三个月内做更多的测试，完成连接迁移功能
+并修复任何剩余的问题。
+我们计划在11月发布的下一个发布版本中为所有人启用该功能。
+无需手动配置。</p>
+<p>当然，这个发布版本也包含了一些日常的错误修复。
+我们还增加了一个自动死锁检测器，它已经找出一个很少见的死锁。这个死锁已经被修复。</p>
+<p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="新出口代理 exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>新出口代理</summary></details><p>I2P出口代理（exit nodes）可以使你通过一个HTTP代理隧道访问互联网。
+在我们的 <a href="http://i2p-projekt.i2p/en/meetings/314">月度会议</a>上,
+<b>exit.stormycloud.i2p</b> 已经成为我们官方推荐的出口代理，替代早已死去的 <b>false.i2p</b>。
+欲了解 <a href="http://stormycloud.i2p/"> StormyCloud 组织</a>的更多信息，请访问
+<a href="http://stormycloud.i2p/outproxy.html">出口代理</a>、
+<a href="http://stormycloud.i2p/tos.html">服务条款</a>、
+<a href="http://stormycloud.i2p/">StormyCloud 网站</a>。 </p>
+<p>我们建议你修改 <a href="/i2ptunnel/edit?tunnel=0">匿名服务管理器配置</a>来确保 <b>exit.stormycloud.i2p</b>存在于两个地方： <b>出口代理</b> 和 <b>SSL出口代理</b>。
+修改之后，<b>s向下滑、点击保存</b>。
+ <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">在我们的博客文章上查看截图</a>。
+你可以在 <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob的博客</a>上查看Android版的说明和截图。</p>
+<p>路由器更新不会更新你的配置，你必须手动修改。
+非常感谢StormyCloud的支持。如果可能的话，请考虑<a href="http://stormycloud.i2p/donate.html">给他们捐赠</a>。</p>
+</article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 包含错误修复</summary></details><p>本发布包含i2psnark，
 路由器，I2CP和UPnP的错误修复。
 修复了路由器软重启、IPv6、SSU 对等节点测试、网络数据库存储和隧道构建中的地址错误。
 路由家族处理和Sybil分级也明显改善了。</p>
