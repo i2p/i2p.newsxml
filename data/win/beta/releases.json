@@ -1,16 +1,14 @@
-[
-  {
+[{
     "date": "2022-08-29",
-    "version": "1.9.0",
+    "version": "1.9.5",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
-      "su3": {
-        "torrent": "magnet:?xt=urn:btih:246da493954fdf38ef7f794691ba96b36821141f&dn=i2pwinupdate.su3&tr=http://tracker2.postman.i2p/announce.php&tr=http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a&tr=http://mb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p/a",
-        "url": [
-          "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
-        ]
-      }
+        "su3": {
+            "torrent": "magnet:?xt=urn:btih:486f408ea29a3f85c7bd527c9d49a73d039d97b4&tr=http://tracker2.postman.i2p/announce.php",
+            "url": [
+                "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
+            ]
+        }
     }
-  }
-]
+}]
