@@ -1,12 +1,21 @@
 <div>
-<header title="I2P 新闻">新闻订阅和路由更新</header><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 已发布" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>带SSU2测试的1.9.0</summary></details><p>在过去的三个月里，我们花了很多时间与小规模志愿者一起研究我们新的UDP传输协议 "SSU2"
-这个版本完成了实现，包括中继和对等节点测试。
-我们默认在安卓和ARM平台上启用它，并在一小部分其它路由器上随机启用。
-这将使我们能够在未来三个月内做更多的测试，完成连接迁移功能
+<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:adf95235-a183-4870-b5fa-99752e3657d2" title="2.0.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/11/21/2.0.0-Release" author="zzz" published="2022-11-21T12:00:00Z" updated="2022-11-21T12:00:00Z"><details><summary>SSU2 全面启用</summary></details><p>I2P 2.0.0版本在完成了小特性开发、测试和若干错误修复以后还为所有用户启用了我们新的SSU2协议。</p>
+<p>我们也修复了各种问题，包括安装包、网络数据库、私有地址簿添加，Windows浏览器启动程序，和IPv6 UPnP。</p>
+<p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:65da828c-43de-49a4-98e7-b8bfeed8d341" title="最近的博客文章" href="http://i2p-projekt.i2p/en/blog/" author="zzz" published="2022-10-12T12:00:00Z" updated="2022-10-12T12:00:00Z"><details><summary>部分最近的博客文章</summary></details><p>这是我们网站部分最近的博客文章的链接：</p>
+<ul>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/10/11/SSU2-Transport">有关我们新的SSU2 协议的概述</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/i2p-safety-reminder">有关I2P币及其他骗局的警告</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/meet-your-maintainer-divaexchange">与divs.exchange的Konrad的访谈</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/07/Meet_your_Maintainer_StormyCloud">与StormyCloud的Dustin的访谈</a></li>
+</ul></article><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>1.9.0 包含 SSU2 测试</summary></details><p>我们在过去的三个月里与少量志愿测试者一起研究我们新的UDP传输协议 "SSU2"
+这个版本完成了完整的实现，包括中继和对等节点测试。
+我们默认在安卓和ARM平台上启用它，并在一小部分其它路由上随机启用。
+这将使我们能够在未来三个月内做更多的测试，完成连接迁移功能，
 并修复任何剩余的问题。
-我们计划在11月发布的下一个发布版本中为所有人启用该功能。
+我们计划在11月发布的下一个发布版本中为所有人启用该功能，
 无需手动配置。</p>
-<p>当然，这个发布版本也包含了一些日常的错误修复。
+<p>当然，这个发布版本也包含了一些常见的错误修复。
 我们还增加了一个自动死锁检测器，它已经找出一个很少见的死锁。这个死锁已经被修复。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="新出口代理 exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>新出口代理</summary></details><p>I2P出口代理（exit nodes）可以使你通过一个HTTP代理隧道访问互联网。
@@ -17,7 +26,7 @@
 <a href="http://stormycloud.i2p/tos.html">服务条款</a>、
 <a href="http://stormycloud.i2p/">StormyCloud 网站</a>。 </p>
 <p>我们建议你修改 <a href="/i2ptunnel/edit?tunnel=0">匿名服务管理器配置</a>来确保 <b>exit.stormycloud.i2p</b>存在于两个地方： <b>出口代理</b> 和 <b>SSL出口代理</b>。
-修改之后，<b>s向下滑、点击保存</b>。
+修改之后，<b>向下滑、点击保存</b>。
  <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">在我们的博客文章上查看截图</a>。
 你可以在 <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob的博客</a>上查看Android版的说明和截图。</p>
 <p>路由器更新不会更新你的配置，你必须手动修改。
@@ -29,20 +38,20 @@
 <p>和i2pd一起，我们开发了新的UDP传输，SSU2。
 SSU2将带来实质性的性能和安全性改进。
 它还将让我们最终替换我们最后使用的非常慢的 ElGamal 加密，
-完成我们从约9年前开始的加密的完全升级。
-本发布包含一个默认关闭的初步推行。
+完成我们从约9年前开始的加密升级。
+本发布包含一个默认关闭的初步发行。
 如果你想参与测试，请关注zzz.i2p的当前消息。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="安装必要的Java/Jpackage升级" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>最近Java的“Psychic Signatures”漏洞影响到I2P。当前Linux的I2P用户，或任何正在使用非捆绑JVM的I2P用户应当更新
 他们的JVM或切换到 Java 15 以下
 不包含该漏洞的版本。</p>
-<p>新的I2P易安装包已使用
+<p>新的I2P一键安装包已使用
 JVM的最新发布生成。更多详情已发布在各
 同捆包的新闻源中。</p>
 </article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 包含可靠性和性能提升</summary></details><p>1.7.0 发布包含若干性能和可靠性的改善。</p>
 <p>对于支持的平台，现在系统托盘中会弹出信息。
 i2psnark 现在有一个新的种子编辑器。
-现在大大降低了 NTCP2 的CPU占用。</p>
+还大大降低了 NTCP2 的CPU占用。</p>
 <p>在新安装中，长期不受支持的 BOB 接口已被移除。
 除了 Debian 包以外，现有的安装将继续使用之。
 其余任何 BOB 应用的用户都应该要求开发人员切换到SAMv3协议。</p>
@@ -52,7 +61,7 @@ i2psnark 现在有一个新的种子编辑器。
 这个修复将在 2.41.0 中和这个版本几乎同时发布。
 在此过程中，我们在 Java I2P 中做了一些修改，以改善
 网络数据库查找和存储的健壮性，并在隧道节点选择中避开性能较差的对等节点。
-这将使网络在存在异常路由或恶意路由的情况下更健壮。
+这将使网络在存在异常路由或恶意路由的情况下更稳定。
 此外，我们正在启动一个联合项目，在同一个隔离的测试网络中测试 i2pd 和 Java I2P 路由
 的预发布版本，这样我们就可以在发布前而不是发布以后发现更多问题。</p>
 <p>其他方面，我们在设计新的 UDP 传输“SSU2”（提案159）
@@ -60,7 +69,7 @@ i2psnark 现在有一个新的种子编辑器。
 SSU2 将带来实质上的性能和安全提升。
 这还将让我们能最终取代最后使用的，非常慢的 ElGamal 加密，
 完成约9年前开始的全加密升级。
-我们预计很快就会开始和 i2pd 进行联合测试，并在今年晚些时候向网络推出。</p>
+我们预计很快就会开始和 i2pd 进行联合测试，并在今年晚些时候向全网络推出。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 启用新的隧道搭建信息</summary></details><p>该发布完成了2021年开发的两个主要协议更新的推出。
 为路由迁移至 X25519 加密的步伐加快了，我们预计绝大部分路由在今年年底能完成切换。
@@ -69,7 +78,7 @@ SSU2 将带来实质上的性能和安全提升。
 我们改善了SSU表现，修复了一个SSU对等节点测试信息的问题。
 调整了隧道构建Bloom过滤器以降低内存使用。
 我们改善了非Java插件的支持。</p>
-<p>另外，我们在设计新的UDP传输SSU2方面取得了重大进展，预计明年年初开始推行。</p>
+<p>另外，我们在设计新的UDP传输协议SSU2方面取得了重大进展，预计明年年初开始推行。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 包含新的隧道搭建信息</summary></details><p>是的没错，在 0.9.x 发布9年后，我们直接从 0.9.50 跳到 1.5.0。
 这并不意味着有重大的API更改，也不意味着开发已经完成。
@@ -298,8 +307,8 @@ IPv6 传输、SSU 对等端测试、隐身模式等也有改进。</p>
 增加了 QR 码用于与其他人分享隐身服务。
 增加了“身份”图像用于视觉上区分地址。</p>
 <p>我们在控制台中添加了新的“路由器家族”配置页面，
-这可以让您更容易的声明您的一组路由器是由一个人运行。
-有一些变更以增加网络容量，并希望能够提升隧道构建成功率。</p>
+这可以让您更容易的声明您的一组路由器是由同一个人运行。
+这会添加一些变更以增加网络容量，并能提升隧道构建成功率。</p>
 <p>如往常一样，我们建议所有用户升级到此发布版本。
 帮助网络和保持安全的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e" title="0.9.24 发布" href="http://i2p-projekt.i2p/en/blog/post/2016/01/27/0.9.24-Release" author="zzz" published="2016-01-27T18:00:00Z" updated="2016-01-27T18:00:00Z"><details><summary>0.9.24 包含几个问题修复和更快速度</summary></details><p>0.9.24 包含新版本的 SAM (v3.2) 和众多问题修复和效率改进。

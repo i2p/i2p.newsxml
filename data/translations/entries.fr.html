@@ -1,90 +1,98 @@
 <div>
-<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>1.9.0 with SSU2 for testing</summary></details><p>We have spent the last three months working on our new UDP transport protocol "SSU2"
-with a small number of volunteer testers.
-This release completes the implementation, including relay and peer testing.
-We are enabling it by default for Android and ARM platforms, and a small percentage of other routers at random.
-This will allow us to do much more testing in the next three months, finish the connection migration feature,
-and fix any remaining issues.
-We plan to enable it for everyone in the next release scheduled for November.
-No manual configuration is necessary.</p>
-<p>Of course, there's the usual collection of bug fixes in this release as well.
-We also added an automatic deadlock detector that has already found a rare deadlock that is now fixed.</p>
+<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:adf95235-a183-4870-b5fa-99752e3657d2" title="2.0.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/11/21/2.0.0-Release" author="zzz" published="2022-11-21T12:00:00Z" updated="2022-11-21T12:00:00Z"><details><summary>SSU2 Transport Enabled</summary></details><p>I2P release 2.0.0 enables our new UDP transport SSU2 for all users, after completion of minor features, testing, and numerous bug fixes.</p>
+<p>We also have fixes all over, including for the installer, network database, adding to the private address book, the Windows browser launcher, and IPv6 UPnP.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
-</article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="New Outproxy exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>New Outproxy</summary></details><p>I2P "outproxies" (exit nodes) may be used to access the internet through
-your HTTP proxy tunnel.
-As approved at our <a href="http://i2p-projekt.i2p/en/meetings/314">monthly meeting</a>,
-<b>exit.stormycloud.i2p</b> is now our official, recommended outproxy, replacing the long-dead <b>false.i2p</b>.
-For more information on the StormyCloud <a href="http://stormycloud.i2p/">organization</a>,
-<a href="http://stormycloud.i2p/outproxy.html">outproxy</a>,
-and <a href="http://stormycloud.i2p/tos.html">terms of service</a>,
-see the <a href="http://stormycloud.i2p/">StormyCloud website</a>.</p>
-<p>We suggest you change your <a href="/i2ptunnel/edit?tunnel=0">Hidden Services Manager configuration</a>
-to specify <b>exit.stormycloud.i2p</b>
-in two places: <b>Outproxies</b> and <b>SSL Outproxies</b>.
-After editing, <b>scroll down and click Save</b>.
-See our <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">blog post for a screenshot</a>.
-For Android instructions and screenshots see <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob's blog</a>.</p>
-<p>Router updates will not update your configuration, you must edit it manually.
-Thanks to StormyCloud for their support, and please consider a <a href="http://stormycloud.i2p/donate.html">donation</a>.</p>
-</article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 with bug fixes</summary></details><p>This release includes bug fixes in i2psnark,
-the router, I2CP, and UPnP.
-Router fixes address bugs in soft restart, IPv6, SSU peer testing,
-network database stores, and tunnel building.
-Router family handling and Sybil classification have also been
-significantly improved.</p>
-<p>Together with i2pd, we are developing our new UDP transport, SSU2.
-SSU2 will bring substantial performance and security improvements.
-It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
-completing the full cryptography upgrade we started about 9 years ago.
-This release contains a preliminary implementation which is disabled by default.
-If you wish to participate in testing, please look for current information
-on zzz.i2p.</p>
+</article><article id="urn:uuid:65da828c-43de-49a4-98e7-b8bfeed8d341" title="Recent Blog Posts" href="http://i2p-projekt.i2p/en/blog/" author="zzz" published="2022-10-12T12:00:00Z" updated="2022-10-12T12:00:00Z"><details><summary>A few recent blog posts</summary></details><p>Here's links to several recent blog posts on our website:</p>
+<ul>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/10/11/SSU2-Transport">Overview of our new SSU2 transport</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/i2p-safety-reminder">A warning about I2P coins and other scams</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/meet-your-maintainer-divaexchange">An interview with Konrad from diva.exchange</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/07/Meet_your_Maintainer_StormyCloud">An interview with Dustin from StormyCloud</a></li>
+</ul></article><article id="urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5" title="1.9.0 sortie" href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release" author="zzz" published="2022-08-22T12:00:00Z" updated="2022-08-22T12:00:00Z"><details><summary>1.9.0 avec SSU2 pour tester</summary></details><p>Nous avons passé les trois dernier mois à travailler sur notre nouveau protocole de transport UDP "SSU2"
+avec un petit nombre de testeurs bénévole.
+Cette sortie complète l'implémentation incluant le relai et le test de pair.
+Nous l'activerons par défaut pour les plateformes Android et ARM et aléatoirement sur un petit pourcentage d'autres réseaux.
+Cela nous permettra de faire beaucoup plus de tests dans les trois prochain mois, finaliser la fonction de migration de connexion et corriger les problèmes restants.
+Nous prévoyons de l'activer pour tout le monde dans la prochaine Version prévue pour novembre.
+Une configuration manuelle n'est pas nécessaire.</p>
+<p>Naturellement, il y a aussi la collection habituelle de correctifs de bogue dans cette version.
+Nous avons aussi ajouté un détecteur d'impasse automatique qui a déjà trouvé une impasse rare qui est désormais corrigée.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
-</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="Install essential Java/Jpackage updates" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>The recent Java "Psychic Signatues" vulnerability affects I2P. Current users of
-I2P on Linux, or any users of I2P who are using a non-bundled JVM should update
-their JVM or switch to a version which does not contain the vulnerability, below
+</article><article id="urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7" title="Nouveau mandataire sortant exit.stormycloud.i2p" href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud" author="zzz" published="2022-08-05T11:00:00Z" updated="2022-08-05T11:00:00Z"><details><summary>Nouveau mandataire sortant</summary></details><p>Des "mandataires sortants" I2P (nœuds de sortie) peuvent être utilisés pour accéder à Internet à travers
+votre tunnel mandataire HTML.
+Tel qu'approuvé dans notre <a href="http://i2p-projekt.i2p/en/meetings/314">rendez-vous mensuel</a>, 
+<b>exit.stormycloud.i2p</b> est désormais notre mandataire sortant officiel et recommandé, remplaçant le <b>false.i2p</b> mort depuis longtemps.
+Pour plus d'information sur <a href="http://stormycloud.i2p/">l'organisation</a> StormyCloud,
+<a href="http://stormycloud.i2p/outproxy.html">le mandataire sortant</a>,
+et les <a href="http://stormycloud.i2p/tos.html">conditions générales d'utilisation</a>,
+voir le <a href="http://stormycloud.i2p/">site web StormyCloud</a>.</p>
+<p>Nous suggérons que vous changiez votre <a href="/i2ptunnel/edit?tunnel=0">configuration du Gestionnaire de Services Cachés</a>
+pour spécifier <b>exit.stormycloud.i2p</b>
+en 2 endroits : <b>mandataires sortant</b> et <b>mandataire sortant SSL</b>.
+Après modification, <b>défilez vers le bas et cliquer Enregistrer</b>.
+Voir notre <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">billet de blogue pour une capture d'écran</a>.
+Pour les instructions Android et les capture d'écrans, voir <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">le blogue de notbob</a>.</p>
+<p>Les mises à jour de routeur ne se mettront pas à jour avec votre configuration, vous devez la modifier manuellement.
+Merci à StormyCloud pour leur soutien, et s'il-vous plaît, veuillez considérer à faire un <a href="http://stormycloud.i2p/donate.html">don</a>.</p>
+</article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 sortie" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 avec des correctifs de bogue</summary></details><p>Cette version inclut des correctifs de bogue dans i2psnark,
+le routeur, I2CP et UPnP.
+Les correctifs de routeur adresse les bogues des redémarrages rapides, IPv6, test de pair SSU,
+marchés de base de données de réseau et de construction de tunnel.
+Le traitement de la famille de routeur et la classification Sybil ont aussi été
+significativement améliorés.</p>
+<p>Ensemble avec i2pd, nous sommes en train de développer notre nouveau transport UDP, SSU2.
+SSU2 amènera des améliorations substantielles à la performance et la sécurité.
+Il nous permettra aussi de remplacer enfin notre dernier usage du chiffrement extrêmement lent de ElGamal,
+complétant la mise à niveau de la cryptographie entière que nous avions commencé il y a maintenant 9 ans.
+Cette sortie contient aussi une implémentation préliminaire qui est désactivé par défaut.
+Si vous souhaitez participer au test, veuillez voir nos informations actuelles
+sur zzz.i2p.</p>
+<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="Installer la mise à jour indispensable Java/Jpackage" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>La vulnérabilité récente des "Signatures Psychiques" Java ont affecté I2P. Les utilisateurs actuels de
+I2P sur Linux, ou n'importe quel utilisateur d'I2P qui utilise un MVJ non groupé devrait mettre à jour
+son MVJ ou basculer vers une version qui ne contient pas la vulnérabilité, en dessous de
 Java 15.</p>
-<p>New I2P Easy-Install bundles have been generated using the latest release of the
-Java Virtual Machine. Further details have been published in the respective
-bundle newsfeeds.</p>
-</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 with reliability and performance improvements</summary></details><p>The 1.7.0 release contains several performance and reliability improvements.</p>
-<p>There are now popup messages in the system tray, for those platforms that support it.
-i2psnark has a new torrent editor.
-The NTCP2 transport now uses much less CPU.</p>
-<p>The long-deprecated BOB interface is removed for new installs.
-It will continue to work in existing installs, except for Debian packages.
-Any remaining users of BOB applications should ask the developers to convert to the SAMv3 protocol.</p>
-<p>We know that since our 1.6.1 release, network reliability has steadily deteriorated.
-We were aware of the problem soon after the release, but it took us almost two months to find the cause.
-We eventually identified it as a bug in i2pd 2.40.0,
-and the fix will be in their 2.41.0 release coming out about the same time as this release.
-Along the way, we've made several changes on the Java I2P side to improve the
-robustness of network database lookups and stores, and avoid poorly-performing peers in tunnel peer selection.
-This should help the network be more robust even in the presence of buggy or malicious routers.
-Additionally, we're starting a joint program to test pre-release i2pd and Java I2P routers
-together in an isolated test network, so we can find more problems before the releases, not after.</p>
-<p>In other news, we continue to make great progress on the design of our new UDP transport "SSU2" (proposal 159)
-and have started implementation.
-SSU2 will bring substantial performance and security improvements.
-It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
-completing a full cryptography upgrade that started about 9 years ago.
-We expect to start joint testing with i2pd soon, and roll it out to the network later this year.</p>
+<p>Les nouveaux paquets I2P facile d'installation ont été généré en utilisant la dernière version de la
+Machine Java Virtuelle. Plus de détails ont été publiés dans les fils de nouveautés des paquets
+respectifs</p>
+</article><article id="urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228" title="1.7.0 sorti" href="http://i2p-projekt.i2p/en/blog/post/2022/02/21/1.7.0-Release" author="zzz" published="2022-02-21T12:00:00Z" updated="2022-02-21T12:00:00Z"><details><summary>1.7.0 avec améliorations de performance et de fiabilité</summary></details><p>La version 1.7.0 contient plusieurs améliorations de performance et de fiabilité.</p>
+<p>Il y a désormais des messages contextuels dans la zone de notification, pour les plateformes qui ne les prenait pas en charge.
+i2psnarka un nouvel éditeur torrent.
+Le transport NTCP2 utilise maintenant beaucoup moins d'UCT.</p>
+<p>L'interface BOB depuis longtemps obsolète a été retirée pour de nouvelles installations.
+Elle continuera de fonctionner sur les installations existantes, à part les paquets Debian.
+Les utilisateurs des applications BOB restants devrait demander aux développeurs de convertir au protocole SAMv3.</p>
+<p>Nous savons que depuis notre version 1.6.1, la fiabilité du réseau s'est régulièrement détérioré.
+Nous étions conscient du problème peu après la sortie mais cela nous a pris presque deux mois pour trouver la cause.
+Nous l'avons éventuellement identifié comme un bogue dans i2pd 2.40.0,
+et le correctif sera dans la version 2.41.0 qui sortira à peu près en même temps que cette sortie.
+Sur le chemin, nous avons fait plusieurs changement du côté de l'I2P Java pour améliorer la
+robustesse des recherches et marchés de la base de donnée de réseau et éviter les pairs peu performants dans la sélection tunnel de pair.
+Cela devrait aider le réseau à être plus robuste même en présence de routeurs boghei ou malicieux.
+De plus, nous commençons un programme joint pour tester une pré-sortie des routeurs i2pd et Java I2P
+ensemble dans un test réseau isolé pour que nous trouvions plus de problèmes avant les sorties et pas après.</p>
+<p>Dans d'autres nouvelles, nous continuons à beaucoup progresser sur le design de notre nouveau transport UDP "SSU2 (suggestion 159)
+et avons commencer l'implémentation.
+SSU2 amènera des améliorations substantielles à la performance et la sécurité.
+Cela nous permettra aussi de remplacer enfin notre dernier usage du chiffrement extrêmement lent ElGamal,
+complétant la mise à niveau de la cryptographie entière que nous avions commencé il y a maintenant 9 ans.
+Nous nous attendons a commencer les tests joints avec i2pd bientôt, et le sortir sur le réseau plus tard cette année.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
-</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
-The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
-Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
-<p>We added a theme selection panel to the new install wizard.
-We've improved SSU performance and fixed an issue with SSU peer test messages.
-The tunnel build Bloom filter was adjusted to reduce memory usage.
-We have enhanced support for non-Java plugins.</p>
-<p>In other news, we are making excellent progress on the design of our new UDP transport SSU2 and expect to start implementation early next year.</p>
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 sortie" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 permet de nouveaux messages de construction de tunnel</summary></details><p>Cette version complète la sortie de deux protocoles majeurs développé en 2021.
+La transition au chiffrage X25519 pour les routeurs est accéléré et nous nous attendons à ce que presque tout les routeurs soit ressaisis d'ici la fin de l'année.
+Les messages de construction de tunnel courts sont activés pour un réduction importante de bande passante.</p>
+<p>Nous avons ajouté une sélection de panneau de thème au nouveau sorcier d'installation.
+Nous avons amélioré la performance SSU et corrigé un problème avec les messages de test pair SSU.
+Le filtre de construction de tunnel Bloom a été ajusté pour réduire l'utilisation de la mémoire.
+Nous avons amélioré la prise en charge pour les greffons non Java.</p>
+<p>Par ailleurs, nous faisons de l'excellent progrès sur le design de notre nouveau transport UDP "SSU2" et l'implémentation devrait débuter tôt dans l'année prochaine.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
-</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 with new tunnel build messages</summary></details><p>Yes, that's right, after 9 years of 0.9.x releases, we are going straight from 0.9.50 to 1.5.0.
-This does not signify a major API change, or a claim that development is now complete.
-It is simply a recognition of almost 20 years of work to provide anonymity and security for our users.</p>
-<p>This release finishes implementation of smaller tunnel build messages to reduce bandwidth.
-We continue the transition of the network's routers to X25519 encryption.
-Of course there are also numerous bug fixes and performance improvements.</p>
+</article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 sortie" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 avec des nouveaux messages de construction de tunnel</summary></details><p>C'est bien ça, après 9 ans de versions 0.9.x, nous allons directement de 0.9.50 à 1.5.0.
+Cela ne signifiera pas un changement majeur d'API ou une affirmation que le développement est terminé.
+C'est simplement une reconnaissance de presque 20 ans de travail pour fournir de l'anonymat et de la sécurité à nos utilisateurs.</p>
+<p>Cette version finalise enfin l'implémentation de plus petits messages de construction de tunnel pour réduire la bande passante.
+Nous continuons de transitionner les routeurs réseaux au chiffrement X25519.
+Bien sûr il y a aussi de nombreux correctifs de bogues et améliorations de performance.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version. La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version.</p>
 </article><article id="urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560" title="Vulnérabilité de MuWire pour ordinateur" href="http://muwire.i2p/security.html" author="zlatinb" published="2021-07-09T15:00:00Z" updated="2021-07-09T15:00:00Z"><details><summary>Vulnérabilité de MuWire pour ordinateur</summary></details><p>Une faille de sécurité a été découverte dans l’application MuWire pour ordinateur.
 Elle n’affecte pas le greffon de la console et n’est pas liée au problème de greffon annoncé précédemment.
