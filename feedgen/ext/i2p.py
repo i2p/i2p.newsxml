@@ -69,7 +69,7 @@ class Release(object):
         if self.__release_min_java_version is not None:
             release.attrib['minJavaVersion'] = self.__release_min_java_version
 
-        for update_type, update in self.__release_updates.items():
+        for update_type, update in list(self.__release_updates.items()):
             update_node = etree.SubElement(release, '{%s}update' % I2P_NS)
             update_node.attrib['type'] = update_type
 
@@ -159,7 +159,7 @@ class Revocations(object):
 
         revocations = etree.Element('{%s}revocations' % I2P_NS)
 
-        for crl_id, crl in self.__revocations_crls.items():
+        for crl_id, crl in list(self.__revocations_crls.items()):
             crl_node = etree.SubElement(revocations, '{%s}crl' % I2P_NS)
             crl_node.attrib['id'] = crl_id
             crl_node.attrib['updated'] = crl.updated().isoformat()

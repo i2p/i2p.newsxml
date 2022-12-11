@@ -35,7 +35,7 @@ def load_entries(fg, entries_file, platform_entries_file=None):
     metadatas = {}
     finalentries = {}
 
-    print('Loading entries from %s' % entries_file)
+    print(('Loading entries from %s' % entries_file))
     entries = prepare_entries_file(fg, entries_file)
     
     # split() creates a junk final element with trailing </div>
@@ -46,7 +46,7 @@ def load_entries(fg, entries_file, platform_entries_file=None):
         finalentries[md['id']] = entry_parts[1]
 
     if os.path.exists(platform_entries_file) and platform_entries_file != entries_file and platform_entries_file is not None and platform_entries_file != "data/entries.html":
-        print('Loading platform entries from %s' % platform_entries_file)
+        print(('Loading platform entries from %s' % platform_entries_file))
         entries = prepare_entries_file(fg, platform_entries_file)
         for entry_str in entries[:-1]:
             entry_parts = entry_str.split('</details>', 1)
@@ -56,7 +56,7 @@ def load_entries(fg, entries_file, platform_entries_file=None):
 
     sorted_metadata = collections.OrderedDict(sorted(metadatas.items()))
 
-    for metadata in sorted_metadata.values():
+    for metadata in list(sorted_metadata.values()):
         fe = fg.add_entry()
         fe.id(metadata['id'])
         fe.title(metadata['title'])
@@ -73,7 +73,7 @@ def prepare_entries_file(fg, entries_file=None):
     with open(entries_file) as f:
         entries_data = f.read().strip('\n')
         # Replace HTML non-breaking space with unicode
-        entries_data = entries_data.replace('&nbsp;', '\u00a0')
+        entries_data = entries_data.replace('&nbsp;', '\\u00a0')
         # Strip the leading <div> from translations
         if entries_data.startswith('<div>'):
             entries_data = entries_data[5:]
@@ -103,7 +103,7 @@ def load_releases(fg):
             if 'minJavaVersion' in release:
                 r.min_java_version(release['minJavaVersion'])
 
-            for update_type, update in release['updates'].items():
+            for update_type, update in list(release['updates'].items()):
                 u = r.add_update(update_type)
                 if 'clearnet' in update:
                     for url in update['clearnet']:
