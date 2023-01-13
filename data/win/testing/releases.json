@@ -1,12 +1,12 @@
 [
   {
-    "date": "2022-02-09",
-    "version": "1.6.1",
+    "date": "2023-01-12",
+    "version": "2.1.0",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:239e24b612e737ca69bfea29bf539633eb07ba7a&dn=i2pwinupdate.su3&tr=http://tracker2.postman.i2p/announce.php&tr=http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a&tr=http://mb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p/a",
+        "torrent": "magnet:?xt=urn:btih:9fb32f4ad273c0535a665df218ca3eca554b69f5&dn=i2pwinupdate.su3&tr=http://tracker2.postman.i2p/announce.php&tr=http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a&tr=http://mb5ir7klpc2tj6ha3xhmrs3mseqvanauciuoiamx2mmzujvg67uq.b32.i2p/a",
         "url": [
           "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
         ]

@@ -13,7 +13,12 @@ ENTRIES=data/$I2P_OS/$I2P_BRANCH/entries.html
 UUIDGEN="`which uuidgen || which uuid`"
 DATE=$(date +%Y-%m-%dT%H:00:00Z)
 if [ -z "$HREF" ]; then
-    HREF="http://i2p-projekt.i2p/en/blog/post/"$(date +%Y)/$(date +%-m)/$(date +%-d)"/CHANGEME_URL_HERE"
+    if [ ! -z "$CHANGEME_URL_HERE" ]; then
+        CHANGEME_URL_HERE=CHANGEME_URL_HERE
+    else
+        CHANGEME_URL_HERE=$(echo "$TITLE" | tr "[:upper:]" "[:lower:]" | sed 's| |_|g')
+    fi
+    HREF="http://i2p-projekt.i2p/en/blog/post/"$(date +%Y)/$(date +%-m)/$(date +%-d)"/$CHANGEME_URL_HERE"
 fi
 TITLE=${TITLE:-TITLE_HERE}
 AUTHOR=${AUTHOR:-AUTHOR_HERE}
