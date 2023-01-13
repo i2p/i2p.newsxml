@@ -88,7 +88,9 @@ def prepare_entries_file(fg, entries_file=None):
 
 def extract_entry_metadata(s):
     m = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', s)}
-    m['summary'] = re.findall(r'<summary>(.*)</summary>', s)[0]
+    summary = re.findall(r'<summary>(.*)</summary>', s, re.DOTALL)
+    if len(summary) > 0:
+        m['summary'] = summary[0]
     return m
 
 def load_releases(fg):
