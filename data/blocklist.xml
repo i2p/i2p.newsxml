@@ -1,10 +1,21 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:d~SO0AXc5B4suD-m9edoJZz0c82KiyXU9o9FhWPplypuw0qXVRbCCLegnfF6t6gLH4noEx6cwqqywKW0BnsUzlb-jJqdfcj1DIR9R7DZw4nkwUTwEnJoocuasH84x74MiG2vputQ0KRfBtveY2UpgpViv6LlIv2kGjwgnDUuZdUiecfGoWO9BJe9QW3~KGOBjfGEVe9qbIVYygprdLvmFQ09ikC025DONHcFsf6J9lDPCLHOCLz42P9ZF4K41bhmZlTLGqpuI0xjMNwZwMeHhClNcDxRFkA9FgQSxGJcidFKbmUr8Gdz8d0daoM0y425OqtkWsXmn3qfWBO7seb1JKsr5wL29S0ZYdE~caiiOG0evFkirKTZYeFgVV1O8162ddSgPZEfXJp43f06pHjX05FjB71tTyvA4HdJ3ezlDK9oRRDxgn9BlyCwh-koFTGjHq9qxuyr0U5imyCXjWJtkDeAxxT8uLExCzlxQYhTBTlpI-Y93QyVvP06v-WTbMRqVe~a0R5VnHPbT0iKLPSU4-PP8Du8fpqEcd2BUzOyCrwEP7KAViwxw24xDvBJRIvpdrd1KaIFEh9XGcsTsgEt0qlOsEin8cykSfVETgTzDkNJnIe7OigZCCD35hUa610lXCL4aT1ZnYVHL~WWIFZlIY~QOoy3wI4LpVLFiNaJLUA=">
-    <updated>2023-01-15T21:56:00Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:d6xxFgpBp7valVFcOKmaebG5k9~XDfTisJe639nVYcGWLy3RHZJAXNzWWHKqX~j~0vcVV4HDSVTtqYho6TytUHQpqkd3BnsMi299Ent6wrLuULtrriGZuk2zAzlH-B-FLKR~SOtrHGeEeLBjvGqw~BdgxAdD0O9nBC8PZUX6fc2T3KQXoQ56SOwY0QsDiiEGwej0moVc6LA0KNwUmr40y-l0g5hymktn4Aa7B8Z7Qf62ehM5aq~iLGvKqwavSwWglkKM9aLovQfv8Jl8iCx8TzAmCydr2I7bA7Q10Uv26gtvgc~wRWT8G1OvgAQsEv9qdARm0fBcLyqKnUolPY2eIFYuwSet4~iaHjdDD40DRgVCoawrp1Z11g1d5NzltcwxIRdvoLa7MLN0d1R4arZprawoB9x4IGnVwzJa7w5yPtF85ohMMca1SFsRooDrB8366y1dC2KcCSZdGmKTIbF07ttDzAHcTyAEDmHF-ESVD8HAFvXraFT5JCR8a9TIGhx9kUoNXi861KTO54m6khVD9wEcxhpKkG-EbM7uJfyu4OpOk~kgvT~shghjiMe9~gs3bVYMx0nSvgdVQ-94IZ2UEMHpuQZKbkAGAd4q-yf2DLsJQW1hFT0Bx0cvSXG-zUyIpIC2l3kJqTDk-~3dtufbngHXbTt7rMgDGOHH0rvsdIc=">
+    <updated>2023-01-28T19:08:22Z</updated>
     <i2p:block>93.157.12.248</i2p:block>
+    <i2p:block>185.213.155.252</i2p:block>
     <i2p:block>223.167.199.60</i2p:block>
+    <i2p:block>2a03:1b20:6:f011:0:0:0:a02e</i2p:block>
     <i2p:block>JbifzqZZqeTXtxK6KDqNUPWaW-phKqeS~tfJT82SIYI=</i2p:block>
     <i2p:block>QPUV1bW6arN2zp3gTBMvOEvgSuKbXUqk2oqHkb~UoSw=</i2p:block>
     <i2p:block>CyLg6w8lypk1gnAX-CdG8O4NCR86hq8ifge6QKXAoJg=</i2p:block>
     <i2p:block>DtQsGzkbeR3nilr6ZvywR2O7-f0XaaV~YfHXohqwjgI=</i2p:block>
     <i2p:block>lam824jtkYq4qTiZHT~TkdHoVTVRwnLghgFheZbgDhU=</i2p:block>
+    <i2p:block>Qqj3p9F0Y~qXAkSz3FYo~e~OfSgaM5qZ2OYUrzOtrgM=</i2p:block>
+    <i2p:block>NUo2wncm49XY8f~dzdxII5fnVopL9oT92KC9JC3IOFY=</i2p:block>
+    <i2p:block>GEpq15rG0XjIvP7oZCW9cmL8Dhb8eLSweTU3hZuT2fE=</i2p:block>
+    <i2p:block>aNBK4IQwYCejjMnD31hapWQvova~u1OINPnHCqceljw=</i2p:block>
+    <i2p:block>6lWUeurYBX4w6lsfPdkAxbFKXoGEXKxofXwlWOC3RQA=</i2p:block>
+    <i2p:block>xKAdoKJUvrSEGS0gREC4lEUawa4IKsVnQU189X~QQhk=</i2p:block>
+    <i2p:block>2EJgHsXnjQo8gHt-jmS-GlhXjqtHnNgWiK~QyQ0Rsh4=</i2p:block>
+    <i2p:block>o-atVIIK0N2Eu6r2Nq42cAVqlK6wJGrXqU0Ps3x0HmY=</i2p:block>
+    <i2p:block>2C-fFbGjOJks1mDYxlQ~~M3Q-tX9Dx~tyAUHPzfct~E=</i2p:block>
   </i2p:blocklist>
