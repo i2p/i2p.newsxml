@@ -1,6 +1,41 @@
 <div>
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362"
+  title="New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem"
+  href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0"
+  author="idk"
+  published="2023-03-13T17:00:00Z"
+  updated="2023-03-13T17:00:00Z">
+<details>
+<summary>Mitigations to DDOS attacks and tweaks to the Streaming subsystem</summary>
+</details>
+<p>
+We have elected to move forward the 2.2.0 release date, which will be occurring today, March 13, 2023.
+This release includes a changes across the NetDB, Floodfill, and Peer-Selection components which improve the ability of the router to survive DDOS attacks.
+The attacks are likely to continue, but the improvements to these systems will help to mitigate the risk of DDOS attacks by helping the router identify and de-prioritize routers that appear malicious.
+</p>
+<p>
+This release also adds replay protection to the Streaming subsystem, which prevents an attacker who can capture an encrypted packet from being able to re-use it by sending it to unintended recipients.
+This is a backward-compatible change, so older routers will still be able to use the streaming capabilities of newer routers.
+This issue was discovered and fixed internally, by the I2P development team, and is not related to the DDOS attacks.
+We have never encountered a replayed streaming packet in the wild and do not believe a streaming replay attack has ever taken place against the I2P network at this time.
+</p>
+<p>
+As you may have noticed, these release notes and the release itself have been signed by idk, and not zzz.
+zzz has chosen to step away from the project and his responsibilities are being taken on by other team members.
+As such, the project is working on replacing the network statistics infrastructure and moving the development forum to i2pforum.i2p.
+We thank zzz for providing these services for such a long time.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7"
   title="DDoS Update"
   href="http://zzz.i2p/topics/3593"

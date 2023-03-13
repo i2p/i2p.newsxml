@@ -124,6 +124,11 @@ for routers to verify the signature. If you do not have privileges, ask somebody
 does to generate it and check it in.
 Generation requires I2P 0.9.27-12 or higher.
 
+Before signing, create a symlink to the certificates directory in the
+directory you are signing from, usually this will be the `i2p.newsxml` checkout.
+
+        ln -s $HOME/i2p/certificates
+
 Input file is blocklist.txt. Format:
 One IPv4 or IPv6 address or base 64 router hash per line.
 No host names or netmasks (e.g. /24) are allowed.
