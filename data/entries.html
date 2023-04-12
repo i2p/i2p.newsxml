@@ -1,6 +1,34 @@
 <div>
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5"
+  title="New Release 2.2.1, Packaging fixes for Docker, Ubuntu Lunar and Debian Sid"
+  href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1"
+  author="idk"
+  published="2023-04-12T03:00:00Z"
+  updated="2023-04-12T03:00:00Z">
+<details>
+<summary>I2P 2.2.1 - maintenance release for 2.2.0</summary>
+</details>
+<p>
+After the I2P 2.2.0 release, which was moved forward to accelerate mitigations for the DDOS attacks, we learned about a few developing issues which made it necessary to build and release new packages.
+This release fixes an issue within Ubuntu Lunar and Debian Sid where the router console was inaccessible using an updated version of the jakarta package.
+Docker packages were not reading arguments correctly, resulting in inaccessible configuration files.
+This issue has also been resolved.
+The docker container is now also compatible with Podman.
+</p>
+<p>
+This release syncs translations with transifex and updates the GeoIP database.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362"
   title="New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem"
   href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0"
