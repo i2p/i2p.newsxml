@@ -8,3 +8,5 @@ build
 logs
 etc/*custom*
 build.old
+/certificates
+/blocklist.txt
