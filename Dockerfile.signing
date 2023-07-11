@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:oldstable
 ENV PATH=/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV PYTHONPATH=/opt/newsxml
 ENV LANG en_US.UTF-8  
