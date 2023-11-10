@@ -60,12 +60,12 @@ $ xmllint data/entries.html > /dev/null || echo FAIL
 To push the new entry into translations:
 
 $ tx push -s
-$ tx pull -a
+$ tx pull --use-git-timestamps -a
 
 
 To pull translations:
 
-$ tx pull -a
+$ tx pull --use-git-timestamps -a
 
 
 To build the feeds:
