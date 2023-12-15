@@ -1,5 +1,63 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルータのアップデート</header><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="2.1.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 非常に多いSSU2の修正</summary></details><p>我々は11月中にあった2.0.0のリリースから、幾つかの事を学びました。
+<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:" title="新リリース I2P 2.3.0 - セキュリティ修正、微調整可能なブロック一覧、DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - セキュリティ修正、微調整可能なブロック一覧、DTG API</summary></details><p>このリリースにはCVE-2023-36325のための修正が含まれます。
+CVE-2023-36325は、bloomフィルターに発生するコンテキスト混乱バグです。
+攻撃者は、唯一無二のmessageIDを含むI2NPメッセージを作成し、そのmessageIDをクライアントに送信します。
+そのメッセージは、bloomフィルターを通過した後、二回目のメッセージで再使用することができません。
+攻撃者はその後、同じメッセージをルーターへ直接送信します。
+ルーターはそのメッセージをbloomフィルターに渡し、削除します。
+これによって、messageIDが以前に見たことがあるという情報が漏れてしまい、攻撃者は、ルーターがクライアントをホストしていると信じる強い根拠を与えてしまいます。
+この問題は、bloomフィルターの機能を、メッセージがクライアントトンネルを通ったか、調査トンネルを通ったか、ルーターに直接送られたかに基づいて、異なるコンテキストに分離することで解決されました。
+通常の状況下で、この攻撃は成功するまでに数日かかり、攻撃する段階の間にルーターが再起動したり、誤検知の影響を受けやすいなど、いくつかの要因によって混乱する可能性があります。
+Java I2Pの利用者は、この攻撃を回避するために直ちに更新することを推奨します。</p>
+<p>このコンテキスト混乱バグを修正する過程で、我々はこの種の漏洩に対して防御的なコードを書くために、いくつかの計略を改めました。
+これには、netDb、転送量制限機構、floodfillルーターの動作に対する微調整が含まれます。</p>
+<p>このリリースは、初期設定の第二のhosts提供者としてnot_bobを追加し、更に、コンソールホームページに<a href="http://notbob.i2p">notbob.i2p</a>と<a href="http://ramble.i2p">ramble.i2p</a>を追加しました。</p>
+<p>このリリースには、微調整可能なブロック一覧も含まれています。
+ブロック一覧は半永続的で、ブロックされたIPアドレスは通常、ルーターが再起動するまでブロックされます。
+sybil攻撃中にブロック一覧の爆発的な増加を観測したユーザーは、ブロック一覧が一定間隔で項目を失効するように設定することで、より短いタイムアウトを選択することができます。
+この機能は初期設定では無効になっており、現時点では高度な利用者にのみ推奨されます。</p>
+<p>このリリースには、Desktop GUI(DTG)でプラグインを変更するためのAPIも含まれています。
+システムトレイにメニュー項目を追加できるようになり、ネイティブアプリケーションインタフェースを使用するプラグインをより直感的に起動できるようになりました。</p>
+<p>例によって、このリリースに更新することをおすすめします。
+セキュリティを保ち、ネットワークに貢献する最良の方法は、最新のリリースを稼働することです。</p>
+</article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="新リリース 2.2.1。Docker、Ubuntu Lunar、及びDebian Sid用のパッケージ化" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - 2.2.0用の保守リリース</summary></details><p>DDOS攻撃用の緩和策を短期で仕上げるため、前倒しにしたI2P 2.2.0リリースの後、いくつかの開発中の問題が判明し、新しいパッケージの構築とリリースが必要になりました。
+このリリースでは、Ubuntu LunarおよびDebian Sidにおいて、jakartaパッケージの更新版を使用してルーターコンソールにアクセスできない問題を修正します。
+Dockerパッケージでは引数を正しく読み込まず、その結果、構成ファイルにアクセスできないことがありました。
+この問題も解決されています。
+DockerコンテナはPodmanにも対応しました。</p>
+<p>このリリースでは、transifexと翻訳を同期させ、GeoIPデータベースを更新します。</p>
+<p>例によって、このリリースに更新することをおすすめします。
+セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+</article><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="2.2.0 新リリース。DDOS攻撃への緩和策と、ストリーミングサブシステムへの微調整" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>DDOS攻撃への緩和策と、ストリーミングサブシステムへの微調整</summary></details><p>我々は2.2.0のリリース日を、2023年3月13日の本日に行い、前倒しにする方針を決定しました。
+このリリースはDDOS攻撃を切り抜けるためのルーターの能力を改善するNetDb、Floodfill、及びピア選択の構成要素に渡る変更が含みます。
+今後も攻撃は続くと思われますが、これらのシステムへの改善により、ルーターが悪意があると思われるルーターを特定し、優先順位を下げることで、DDOS攻撃の危険を軽減する助けになるでしょう。</p>
+<p>このリリースでは、ストリーミングサブシステムに再生保護が追加され、暗号化パケットを捕らえられる攻撃者が、意図しない受信者にパケットを送信して再利用できるようになることを防ぎます。
+
+これは後方互換性のある変更であるため、古いルーターでも新しいルーターのストリーミング機能を使用することが可能です。
+この問題は、I2P開発チームが内部で発見し修正したもので、DDOS攻撃とは関係ありません。
+また、現時点で再生したストリーミングパケットに遭遇したことはなく、I2Pネットワークに対してストリーミング再生攻撃が行われたことはないと考えています。</p>
+<p>お気づきかもしれませんが、このリリースノートとリリースそのものは、zzzではなくidkが署名しています。
+zzzはプロジェクトから離れることを選択し、彼の使命はチームの他の一員によって担われています。
+そのため、プロジェクトはネットワーク統計の基盤を交換し、開発フォーラムをi2pforum.i2pに移行する作業を行っています。
+長い間、これらのサービスを提供してくれたzzzに感謝します。</p>
+<p>例によって、このリリースに更新することをおすすめします。
+セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+</article><article id="urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7" title="DDoS Update" href="http://zzz.i2p/topics/3593" author="zzz" published="2023-02-14T19:00:00Z" updated="2023-02-14T19:00:00Z"><details><summary>DDoS Update</summary></details><p>We have confirmed that the attacker controls a large number of routers.
+Our investigations and mitigations continue.</p>
+<p>This is a good time to remind people that even after 20 years, the I2P network is relatively small.
+We have no evidence that the attacker is attempting to deanonymize any particular user or hidden service.
+However, if you have a high-risk threat model, you should carefully consider whether I2P currently provides the protection you require.
+The best solution, in the long run, is to spread the word and grow the I2P network to increase security of our users.</p>
+<p>We will provide additional information here in the news feed and on <a href="http://zzz.i2p">zzz.i2p</a> as necessary.
+We ask for your patience as we work to improve I2P.</p>
+</article><article id="urn:uuid:6558c015-7767-45f1-b80a-07def923a88d" title="About the recent Denial of Service attacks" href="http://i2p-projekt.i2p/en/blog/post/2023/2/9/about_the_recent_denial_of_service_attacks" author="sadie,idk" published="2023-02-09T23:00:00Z" updated="2023-02-09T23:00:00Z"><details><summary>I2P remains intact with impaired performance</summary></details><p>The I2P network is currently being affected by a Denial of Service attack.
+  The floodfill function of the network has been affected, resulting in responses being disrupted and tunnel build success rates dropping.
+  Participants in the network have experienced difficulties connecting to I2P sites and using I2P services.
+  Mitigation strategies are being investigated and implemented gradually.</p>
+<p>While the attack has degraded performance, the network remains intact and usable.
+  Java I2P routers appear to be handling the issues better than i2pd routers for now.
+  Various mitigations should begin to appear in dev builds of both Java and C++ routers in the next week.</p>
+</article><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="2.1.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 非常に多いSSU2の修正</summary></details><p>我々は11月中にあった2.0.0のリリースから、幾つかの事を学びました。
 ルーターがこのリリースに更新されたことで、ネットワークでは、私たちの新しいSSU2トランスポートプロトコルが、約1％から60％以上になりました。
 まず、SSU2が堅牢であり、良き設計であり、安全なプロトコルであることを確認しました。
 しかし、2つ目は、プロトコルの実装において、細かいバグや稀に発生するバグを多数発見し、修正したことです。
@@ -10,7 +68,7 @@
 我々は、Bitcoinや他の非Bitcoinプロジェクトと協力して、I2Pネットワーク需要を減らしています。
 私たちは、輻輳時のネットワーク負荷を軽減するために、アルゴリズムを改善しました。
 また、i2pdと協力し、共通の輻輳制御戦略を開発しています。</p>
-<p>そのため、今回のリリースは6週間ほど前倒しし、皆様に修正をお届けすることにしました。
+<p>そのため、今回のリリースは6週間ほど前倒しにして、皆様に修正をお届けすることにしました。
 i2pdは先週、バージョン2.45.0をリリースしましたが、初期の成果は妙妙たるものです。
 新しいプロトコルと分散型ネットワークは、開発するには困難です。
 輻輳は、ほとんど前触れもなく、原因の手掛かりもわからないままやってくるものです。
@@ -31,8 +89,7 @@ i2pdは先週、バージョン2.45.0をリリースしましたが、初期の�
 我々は、AndroidとARMの装置、および無作為に他のルーターのごく一部で、初期設定でこれを有効にしています。
 これにより、今後3ヶ月でより多くの試験を行い、接続の移行機能を完成させ、残っている問題を修正することができます。
 11月に予定されている次のリリースでは、全員がこの機能を利用できるようにする予定です。
-手動での設定は必要ありません。
-</p>
+手動での設定は必要ありません。</p>
 <p>もちろん、このリリースには通常のバグ修正も含まれています。
 また、自動停頓検出機能を追加し、すでに稀な停頓を発見し、現在では修正されています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
@@ -80,11 +137,11 @@ SSU2は、パフォーマンスとセキュリティを大幅に改善させる�
 間もなくi2pdとの共同検査を開始し、今年後半にはネットワークに展開する予定です。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 新トンネルの構築メッセージを有効化</summary></details><p>今回のリリースでは、2021年に開発された2つのメジャーなプロトコルアップデートの展開が完了しました。
-ルーターのX25519暗号化への移行が加速され、年内にほぼすべてのルーターが再キーされる見込みです。
+ルーターのX25519暗号化への移行が加速され、年内にほぼすべてのルーターが鍵交換される見込みです。
 短いトンネル構築メッセージが有効になり、大幅な帯域幅の削減が可能になりました。</p>
 <p>新規インストールウィザードにテーマ選択パネルを追加しました。
 SSUのパフォーマンスを改善し、SSUのピアテストメッセージに関する問題を修正しました。
-トンネル構築のBloomフィルタを調整し、メモリ使用量を削減しました。
+トンネル構築のBloomフィルターを調整し、メモリ使用量を削減しました。
 Java以外のプラグインのサポートを強化しました。</p>
 <p>その他のニュースとしては、新しいUDP transport SSU2の設計が順調に進んでおり、来年初めには実装を開始できる見込みです。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
@@ -105,7 +162,7 @@ MuWireのデスクトップアプリケーションを使用している場合�
 MuWireプラグインを使用している場合は、直ちに<a href="/configplugins">バージョン0.8.7-b1にアップデートしてください</a>。</p>
 <p>脆弱性の詳細および最新のセキュリティ推奨事項に関する更新については
 <a href="http://muwire.i2p/security.html">muwire.i2p</a>をご覧ください。</p>
-</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6の修正</summary></details><p>0.9.50では、ルーターの暗号化鍵をECIES-X25519に移行しました。
+</article><article id="urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48" title="0.9.50 リリース" href="http://i2p-projekt.i2p/en/blog/post/2021/05/17/0.9.50-Release" author="zzz" published="2021-05-17T12:00:00Z" updated="2021-05-17T12:00:00Z"><details><summary>0.9.50 IPv6の修正</summary></details><p>0.9.50では、ルーターの暗号鍵をECIES-X25519に移行しました。
 受動的なDNS詮索からユーザーを保護するため、再シードにDNS over HTTPSを有効にしました。
 新しいUPnPのサポートを含む、IPv6アドレスに多数の修正と改善が行われています。</p>
 <p>長年にわたり発生していたSusiMailの破損バグをようやく修正しました。
@@ -122,10 +179,10 @@ SSU (UDP) トランスポートに関するいくつかの改善と修正によ�
 そして、完成に近づいています！移行が完了するまでには、数回のリリースが必要です。</p>
 <p>今回のリリースでは、混乱を最小限に抑えるため、新規インストールと既存のインストールのごく一部のみが新しい暗号化を使用します。
 (再起動時にランダムに選択) は新しい暗号化を使用します。
-ルーターが新しい暗号を使用するために「再キー」した場合、再起動後数日間は通常よりもトラフィックや信頼性が低下することがあります。
+ルーターが新しい暗号を使用するために「鍵交換」した場合、再起動後数日間は通常よりもトラフィックや信頼性が低下することがあります。
 これは、 ルーターが新しいアイデンティティを生成したためで、正常な動作です。
 しばらくすると、パフォーマンスが回復するはずです。</p>
-<p>過去に2回、デフォルトの署名の種類を変更する際に、ネットワークを「再キー」したことがあります。
+<p>過去に2回、デフォルトの署名の種類を変更する際に、ネットワークを「鍵交換」したことがあります。
 今回は初めてデフォルトの暗号化タイプを変更しました。
 うまくいけばスムーズにいくのですが、念のためゆっくり始めています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
@@ -292,7 +349,7 @@ Java 9向けの予備的修正を行いました。ただしまだ Java 9 の通
 Androidアプリへの影響はありません。</p>
 <p>CSRF保護の不足のため、ユーザがI2P-Bote起動中にJavaScript有効のブラウザ上で悪意のあるサイトを読み込むと、
 敵対者がI2P-Bote上で当該ユーザとしてメッセージ送信などのアクションを発火できてしまっていました。
-I2P-Boteアドレスの秘密キーの抽出もできていた可能性がありますが、これについての実証は行われていません。</p>
+I2P-Boteアドレスの秘密鍵の抽出もできていた可能性がありますが、これについての実証は行われていません。</p>
 <p>全I2P-Boteユーザは12月半ばにリリースされた I2P 0.9.28 以降、初回のルーター再起動で自動更新されるでしょう。
 しかし移行期にI2P・I2P-Bote を使用するつもりならば、安全のために、<a href="http://bote.i2p/install/">インストールページの指示に従い</a>、手動でアップグレードすることを推奨します。
 また、あなたが日ごろI2P-Bote起動中にJavaScript有効でサイトを閲覧している場合、新たな I2P-Boteアドレスの生成を検討すべきです。</p>
@@ -331,26 +388,26 @@ Str4d は <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Cr
 </article><article id="urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668" title="0.9.23 リリース" href="http://i2p-projekt.i2p/en/blog/post/2015/11/19/0.9.23-Release" author="str4d" published="2015-11-19T18:00:00Z" updated="2015-11-19T18:00:00Z"><details><summary>0.9.23 様々なバグ修正、I2PSnarkの細かな改善</summary></details><p>こんにちはI2P！ zzzがこれまで49のリリースに署名してきましたが、これは初めて私（str4d）が署名したリリースです。
 これは人員を含めたあらゆる事柄に関する冗長性の重要なテストです。</p>
 <p><b>保全作業</b></p>
-<p>私の署名キーは2年以上（0.9.9以降）にわたってルーターアップデート内にあります。
+<p>私の署名鍵は2年以上（0.9.9以降）にわたってルーターアップデート内にあります。
 ですから、最近のバージョンのI2Pを使用中なら、このアップデートは他の更新と変わらず簡単に済みます。
 しかし、0.9.9よりも古いバージョンを動かしている場合、まず手動で最近のものにアップデートする必要があります。
 最近のバージョン向けのアップデートファイルは <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">こちら</a> でダウンロードでき、手動でのアップデート方法の説明は <a href="http://i2p-projekt.i2p/en/download#update">こちら</a> で閲覧できます。
 手動アップデートが終われば、ルーターが 0.9.23 のアップデートを通常通り探し出しダウンロードします。</p>
-<p>パッケージマネージャ経由でI2Pをインストールしている場合はこの変更の影響を受けません。いつも通りアップデートできます。</p>
-<p><b>アップデート詳細</b></p>
-<p>RouterInfoを 強固な新署名 Ed25519 に移行することはうまくいっており、少なくともネットワークの半分はキーが再発行されたと既に見られています。
-このリリースはそのキー再発行プロセスを加速するものです。
+<p>パッケージマネージャ経由でI2Pをインストールしている場合はこの変更の影響を受けません。いつも通り更新できます。</p>
+<p><b>更新詳細</b></p>
+<p>ルーター情報を強固な新署名 Ed25519 に移行することはうまくいっており、少なくともネットワークの半分は鍵交換されたと既に見られています。
+このリリースはその鍵交換過程を加速するものです。
 ネットワークチャーンを減らすため、各々の再起動時でEd25519に変換する確率は少なくなります。
-キー再発行の際、新しいアイデンティティでネットワークに再統合される何日かの間、使用帯域幅は少なくなるでしょう。</p>
+鍵交換の際、新しいアイデンティティでネットワークに再統合される何日かの間、使用帯域幅は少なくなるでしょう。</p>
 <p>これが Java 6 をサポートする最後のリリースであることに注意してください。
 Java 7 または 8 にできるだけ早く更新してください。
 来たる Java 9 とI2Pを互換にすべく作業を既に行っており、一部の作業はこのリリースに含まれています。</p>
 <p>また、I2PSnarkの細かな改善を行い、またルーターコンソールに過去のニュース項目閲覧のための新ページを追加しました。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
-</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22がリリースされました" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 バグ修正とEd25519への移行を開始</summary></details><p>0.9.22 では、I2PSnark が完了前に固まることに対する修正を行いました。また RouterInfoを 強固な新署名 Ed25519 に移行し始めました。
-ネットワークチャーンを減らすため、各々の再起動時でEd25519に変換する確率は少なくなります。
-キー再発行の際、新しいアイデンティティでネットワークに再統合される何日かの間、使用帯域幅は少なくなるでしょう。
-全てがうまくいけば、キー再発行プロセスを次回のリリースで加速できるでしょう。</p>
+</article><article id="urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43" title="0.9.22がリリースされました" href="http://i2p-projekt.i2p/en/blog/post/2015/09/12/0.9.22-Release" author="zzz" published="2015-09-12T18:00:00Z" updated="2015-09-12T18:00:00Z"><details><summary>0.9.22 バグ修正とEd25519への移行を開始</summary></details><p>0.9.22 では、I2PSnark が完了前に固まることに対する修正を行いました。また ルーター情報を強固な新署名 Ed25519 に移行し始めました。
+ネットワークチャーンを減らすため、あなたのルーターが各々の再起動時でEd25519に変換する確率は少なくなります。
+鍵交換の際、新しいアイデンティティでネットワークに再統合される何日かの間、使用帯域幅は少なくなるでしょう。
+全てがうまくいけば、鍵交換過程を次回のリリースで加速できるでしょう。</p>
 <p>I2PCon Toronto は大成功でした！
 プレゼンテーションと動画の全ては <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PConページ</a> に一覧されています。</p>
 <p>例によって、このリリースにアップグレードすることをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>

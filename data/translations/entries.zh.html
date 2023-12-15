@@ -1,5 +1,62 @@
 <div>
-<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="2.1.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 包含大量 SSU2 修复</summary></details><p>自 11 月发布 2.0.0 以来，我们获知了一些情况。
+<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:" title="I2P 2.3.0 新版本 - 安全修复，可调的黑名单，DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - 安全修复，可调的黑名单，DTG API</summary></details><p>此版本包含 CVE-2023-36325 的修复。
+CVE-2023-36325 是一个发生在布隆过滤器中的上下文混淆错误。
+攻击者制作包含唯一 messageID 的 I2NP 消息，并将该 messageID 发送给客户端。
+该消息在通过布隆过滤器后，不允许在第二条消息中重复使用。
+随后，攻击者将相同的消息直接发送给路由。
+路由器将消息传递给布隆过滤器并被丢弃。
+这泄露了之前已经看到的 messageID 信息，使攻击者有充分的理由相信路由器承载了客户端。
+这个问题已经通过将布隆过滤器的功能分离到不同的上下文中得到了解决，这些上下文中是基于消息是通过客户端隧道，还是探测隧道直接发送到路由的。
+在正常情况下，这种攻击需要数天才能成功执行，并且可能受到攻击期间路由重启和对误报的灵敏度等若干因素的干扰。
+建议使用 Java I2P 的用户立即更新以免受攻击。</p>
+<p>在修复这个上下文混淆错误的过程中，我们修改了一些策略来防御这类型的泄漏。
+这包括对 netDb 的调整、速率限制机制和洪泛路由的行为。</p>
+<p>此版本添加了 not_bob 作为第二个默认hosts来源，并把<a href="http://notbob.i2p">notbob.i2p</a>和<a href="http://ramble.i2p">ramble.i2p</a>添加到控制台主页。</p>
+<p>这个版本还包含一个可调整的黑名单。
+黑名单是半永久性的，每个被封禁的IP地址会被一直屏蔽，直到路由器重新启动。
+在 sybil 攻击期间观察到黑名单爆炸性增长的用户可以通过将黑名单配置为按一定时间间隔使条目过期来选择更短的超时时间。
+此功能在默认情况下是关闭的，目前仅建议高级用户使用。</p>
+<p>该版本还包括一个API，用于使用桌面GUI(DTG)修改插件。
+现在可以将菜单项添加到系统托盘中，从而更直观地启动使用本地应用接口的插件。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="新版本 2.2.1，包含Docker，Ubuntu Lunar和Debian Sid的打包修复" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - 2.2.0 的维护修复</summary></details><p>I2P 2.2.0 版本向前推进以加快缓解 DDOS 攻击后，我们了解到一些开发问题，因此有必要构建和发布新包。
+此发布修复了 Ubuntu Lunar 和 Debian Sid 中的一个问题，即使用更新后的版本的 jakarta 包无法访问路由器控制台。
+Docker 包未正确读取参数，导致无法访问配置文件。
+此问题也已解决。
+docker 容器现在也与 Podman 兼容。</p>
+<p>本发布与 transifex 同步翻译并更新 GeoIP 数据库。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="新版本 2.2.0，包含DDOS攻击的缓解措施和 Streaming 子系统的调整" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>DDOS攻击的缓解措施和 Streaming 子系统的调整</summary></details><p>我们已选择将 2.2.0 的发布日期提前到今天，即 2023 年 3 月 13 日。
+此版本包括对网络数据库、洪泛和节点选择组件的修改，提高了路由器抵御 DDOS 攻击的能力。
+攻击可能会持续进行，但对这些系统的改进将通过帮助路由识别和降低路由评分来帮助减轻 DDOS 攻击的风险。</p>
+<p>此版本还为 Streaming 子系统添加了重放保护，以防止可以捕获加密数据包的攻击者通过将其发送给意外的接收者来重新使用它。
+这是一个向后兼容的更改，因此旧路由器仍然能够使用新路由器的流媒体功能。
+此问题由 I2P 开发团队在内部发现并修复，与 DDOS 攻击无关。
+我们从未在实际环境遇到过重放流数据包，并且不相信此时针对 I2P 网络发生过流重放攻击。</p>
+<p>您可能已经注意到，这些发行说明和发行版本身已由 idk 而非 zzz 签署。
+zzz 已选择退出该项目，他的职责由其他团队成员承担。
+因此，该项目正致力于更换网络统计基础设施并将开发论坛移至 i2pforum.i2p。
+我们感谢 zzz 长期以来提供这些服务。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7" title="DDoS 消息进展" href="http://zzz.i2p/topics/3593" author="zzz" published="2023-02-14T19:00:00Z" updated="2023-02-14T19:00:00Z"><details><summary>DDoS 消息进展</summary></details><p>我们已经确认攻击者控制了大量的路由器。
+我们的调查和缓解措施仍在继续当中。</p>
+<p>这是提醒人们即使在 20 年后，I2P 网络规模仍然相对较小的好时候。
+我们没有证据表明攻击者正试图对任何特定用户或隐藏服务进行去匿名化。
+但是，如果您有高风险威胁模型，您应该仔细考虑 I2P 目前是否提供了您需要的保护。
+从长远来看，最好的解决方案是宣传并发展 I2P 网络以提高我们用户的安全性。</p>
+<p>我们将在有必要时在新闻推送和<a href="http://zzz.i2p">zzz.i2p</a>提供更多信息。
+在我们努力改进 I2P 的过程中，请您耐心等待。</p>
+</article><article id="urn:uuid:6558c015-7767-45f1-b80a-07def923a88d" title="关于最近的拒绝服务攻击" href="http://i2p-projekt.i2p/en/blog/post/2023/2/9/about_the_recent_denial_of_service_attacks" author="sadie,idk" published="2023-02-09T23:00:00Z" updated="2023-02-09T23:00:00Z"><details><summary>I2P 保持完好，但性能受损</summary></details><p>I2P 网络目前正受到拒绝服务攻击的影响。
+网络的洪泛功能受到影响，导致响应中断，隧道构建成功率下降。
+网络参与者在连接到 I2P 站点和使用 I2P 服务时遇到困难。
+我们在正在逐步调查和实施缓解策略。</p>
+<p>虽然攻击降低了性能，但网络仍然完好无损且可用。
+目前，Java I2P 路由器似乎比 i2pd 路由器能更好地处理这些问题。
+下周，各种缓解措施应该会开始出现在 Java 和 C++ 路由器的开发版本中。</p>
+</article><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="2.1.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 包含大量 SSU2 修复</summary></details><p>自 11 月发布 2.0.0 以来，我们获知了一些情况。
 随着路由器更新到该版本，网络对我们新的 SSU2 传输协议的支持率从大约 1% 提高到 60% 以上。
 首先，我们已经确认 SSU2 是一个可靠、设计良好且安全的协议。
 其次，我们发现并修复了协议推行中的许多小错误或很少触发的错误。
@@ -21,7 +78,7 @@ i2pd 上周发布了他们的 2.45.0 版，早期的结果令人鼓舞。
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:65da828c-43de-49a4-98e7-b8bfeed8d341" title="最近的博客文章" href="http://i2p-projekt.i2p/en/blog/" author="zzz" published="2022-10-12T12:00:00Z" updated="2022-10-12T12:00:00Z"><details><summary>部分最近的博客文章</summary></details><p>这是我们网站部分最近的博客文章的链接：</p>
 <ul>
-<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/10/11/SSU2-Transport">有关我们新的SSU2 协议的概述</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/post/2022/10/11/SSU2-Transport">有关我们新的 SSU2 协议的概述</a></li>
 <li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/i2p-safety-reminder">有关I2P币及其他骗局的警告</a></li>
 <li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/26/meet-your-maintainer-divaexchange">与divs.exchange的Konrad的访谈</a></li>
 <li><a href="http://i2p-projekt.i2p/en/blog/post/2022/09/07/Meet_your_Maintainer_StormyCloud">与StormyCloud的Dustin的访谈</a></li>
@@ -47,7 +104,7 @@ i2pd 上周发布了他们的 2.45.0 版，早期的结果令人鼓舞。
  <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">在我们的博客文章上查看截图</a>。
 你可以在 <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob的博客</a>上查看Android版的说明和截图。</p>
 <p>路由器更新不会更新你的配置，你必须手动修改。
-非常感谢StormyCloud的支持。如果可能的话，请考虑<a href="http://stormycloud.i2p/donate.html">给他们捐赠</a>。</p>
+非常感谢 StormyCloud 的支持。如果可能的话，请考虑<a href="http://stormycloud.i2p/donate.html">给他们捐赠</a>。</p>
 </article><article id="urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73" title="1.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2022/05/23/1.8.0-Release" author="zzz" published="2022-05-23T12:00:00Z" updated="2022-05-23T12:00:00Z"><details><summary>1.8.0 包含错误修复</summary></details><p>本发布包含i2psnark，
 路由器，I2CP和UPnP的错误修复。
 修复了路由器软重启、IPv6、SSU 对等节点测试、网络数据库存储和隧道构建中的地址错误。
@@ -59,7 +116,7 @@ SSU2将带来实质性的性能和安全性改进。
 本发布包含一个默认关闭的初步发行。
 如果你想参与测试，请关注zzz.i2p的当前消息。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
-</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="安装必要的Java/Jpackage升级" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>最近Java的“Psychic Signatures”漏洞影响到I2P。当前Linux的I2P用户，或任何正在使用非捆绑JVM的I2P用户应当更新
+</article><article id="urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71" title="安装必要的 Java/Jpackage 升级" href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates" author="idk" published="2022-04-22T11:00:00Z" updated="2022-04-22T11:00:00Z"><details><summary></summary></details><p>最近Java的“Psychic Signatures”漏洞影响到I2P。当前Linux的I2P用户，或任何正在使用非捆绑JVM的I2P用户应当更新
 他们的JVM或切换到 Java 15 以下
 不包含该漏洞的版本。</p>
 <p>新的I2P一键安装包已使用
@@ -71,7 +128,7 @@ i2psnark 现在有一个新的种子编辑器。
 还大大降低了 NTCP2 的CPU占用。</p>
 <p>在新安装中，长期不受支持的 BOB 接口已被移除。
 除了 Debian 包以外，现有的安装将继续使用之。
-其余任何 BOB 应用的用户都应该要求开发人员切换到SAMv3协议。</p>
+其余任何 BOB 应用的用户都应该要求开发人员切换到 SAMv3 协议。</p>
 <p>我们得知自 1.6.1 发布以来，网络可靠性不断恶化。
 我们在发布以后很快就意识到了这个问题，然而我们花了近两个月才找到原因。
 我们最终确认为 i2pd 2.40.0 中的一个bug，
@@ -92,10 +149,10 @@ SSU2 将带来实质上的性能和安全提升。
 为路由迁移至 X25519 加密的步伐加快了，我们预计绝大部分路由在今年年底能完成切换。
 短隧道构建信息已启用以减少带宽使用。</p>
 <p>我们为新安装向导增添了一个主题选择面板。
-我们改善了SSU表现，修复了一个SSU对等节点测试信息的问题。
-调整了隧道构建Bloom过滤器以降低内存使用。
+我们改善了 SSU 表现，修复了一个 SSU 对等节点测试信息的问题。
+调整了隧道构建布隆过滤器以降低内存使用。
 我们改善了非Java插件的支持。</p>
-<p>另外，我们在设计新的UDP传输协议SSU2方面取得了重大进展，预计明年年初开始推行。</p>
+<p>另外，我们在设计新的 UDP 传输协议 SSU2 方面取得了重大进展，预计明年年初开始推行。</p>
 <p>如往常一样，我们建议您升级到这个版本。维护安全并帮助网络的最佳方式就是运行最新版本。</p>
 </article><article id="urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9" title="1.5.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2021/08/23/1.5.0-Release" author="zzz" published="2021-08-23T12:00:00Z" updated="2021-08-23T12:00:00Z"><details><summary>1.5.0 包含新的隧道搭建信息</summary></details><p>是的没错，在 0.9.x 发布9年后，我们直接从 0.9.50 跳到 1.5.0。
 这并不意味着有重大的API更改，也不意味着开发已经完成。

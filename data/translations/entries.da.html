@@ -1,5 +1,34 @@
 <div>
-<header title="I2P nyheder">Nyhedsfeed og router-opdateringer</header><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>Mitigations to DDOS attacks and tweaks to the Streaming subsystem</summary></details><p>We have elected to move forward the 2.2.0 release date, which will be occurring today, March 13, 2023.
+<header title="I2P nyheder">Nyhedsfeed og router-opdateringer</header><article id="urn:uuid:" title="New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</summary></details><p>This release contains fixes for CVE-2023-36325.
+  CVE-2023-36325 is a context-confusion bug which occurred in the bloom filter.
+  An attacker crafts an I2NP message containing a unique messageID, and sends that messageID to a client.
+  The message, after passing through the bloom filter, is not allowed to be re-used in a second message.
+  The attacker then sends the same message directly to the router.
+  The router passes the message to the bloom filter, and is dropped.
+  This leaks the information that the messageID has been seen before, giving the attacker a strong reason to believe that the router is hosting the client.
+  This has been fixed by separting the bloom filter's functionality into different contexts based on whether a message came down a client tunnel, an exploratory tunnel, was sent to the router directly.
+  Under normal circumstances, this attack takes several days to perform successfully and may be confounded by several factors such as routers restarting during the attack phase and sensitivity to false-positives.
+  Users of Java I2P are recommended to update immediately to avoid the attack.</p>
+<p>In the course of fixing this context confusion bug, we have revised some of our strategies to code defensively, against these types of leaks.
+  This includes tweaks to the netDb, the rate-limiting mechanisms, and the behavior of floodfill routers.</p>
+<p>This release adds not_bob as a second default hosts provider, and adds <a href="http://notbob.i2p">notbob.i2p</a> and <a href="http://ramble.i2p">ramble.i2p</a> to the console homepage.</p>
+<p>This release also contains a tweakable blocklist.
+  Blocklisting is semi-permanent, each blocked IP address is normally blocked until the router is restarted.
+  Users who observe explosive blocklist growth during sybil attacks may opt-in to shorter timeouts by configuring the blocklist to expire entries at an interval.
+  This feature is off-by-default and is only recommended for advanced users at this time.</p>
+<p>This release also includes an API for plugins to modify with the Desktop GUI(DTG).
+  It is now possible to add menu items to the system tray, enabling more intuitive launching of plugins which use native application interfaces.</p>
+<p>As usual, we recommend that you update to this release.
+  The best way to maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="New Release 2.2.1, Packaging fixes for Docker, Ubuntu Lunar and Debian Sid" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - maintenance release for 2.2.0</summary></details><p>After the I2P 2.2.0 release, which was moved forward to accelerate mitigations for the DDOS attacks, we learned about a few developing issues which made it necessary to build and release new packages.
+This release fixes an issue within Ubuntu Lunar and Debian Sid where the router console was inaccessible using an updated version of the jakarta package.
+Docker packages were not reading arguments correctly, resulting in inaccessible configuration files.
+This issue has also been resolved.
+The docker container is now also compatible with Podman.</p>
+<p>This release syncs translations with transifex and updates the GeoIP database.</p>
+<p>As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>Mitigations to DDOS attacks and tweaks to the Streaming subsystem</summary></details><p>We have elected to move forward the 2.2.0 release date, which will be occurring today, March 13, 2023.
 This release includes a changes across the NetDB, Floodfill, and Peer-Selection components which improve the ability of the router to survive DDOS attacks.
 The attacks are likely to continue, but the improvements to these systems will help to mitigate the risk of DDOS attacks by helping the router identify and de-prioritize routers that appear malicious.</p>
 <p>This release also adds replay protection to the Streaming subsystem, which prevents an attacker who can capture an encrypted packet from being able to re-use it by sending it to unintended recipients.
