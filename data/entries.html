@@ -1,6 +1,49 @@
 <div>
 <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7"
+  title="I2P 2.4.0 Release with Congestion Caps, Multi-NetDB"
+  href="http://i2p-projekt.i2p/en/blog/post/2023/12/14/i2p_2.4.0_release_with_congestion_caps_multi-netdb"
+  author="idk"
+  published="2023-12-14T20:00:00Z"
+  updated="2023-12-14T20:00:00Z">
+<details>
+<summary>I2P 2.4.0 Release with Congestion Cap and NetDB Security improvements</summary>
+</details>
+<p>
+  This release, I2P 2.4.0, continues our effort to improve the security and
+  stability of the I2P network with significant improvements to the Network
+  Database, an essential structure within the I2P network used for disovering
+  your peers.
+</p>
+<p>
+  The congestion handling changes will improve network stability by giving
+  routers the ability to relieve congested peers by avoiding them. This will
+  help the network limit the effect of tunnel spam. It will also help the
+  network heal during and after DDOS attacks.
+</p>
+<p>
+  They will also help secure individual routers and the applications that use
+  them. Routers can now defend against attackers by separating the NetDB into
+  multiple "Sub-DB's" which we use to prevent information leaks between
+  applications and the router. This also improves the information available to
+  Java routers about their NetDB activity and simplifies our support for
+  multihoming applications.
+</p>
+<p>
+  Also included are a number of bug-fixes and enhancements across the I2PSnark,
+  SusiMail, and Welcome applications. Metrics has been temporarily removed from
+  the console homepage due to a hostname conflict.
+</p>
+<p>
+  As usual, we recommend that you update to this release. The best way to maintain
+  security and help the network is to run the latest release. 
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:"
   title="New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API"
   href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0"
