@@ -1,12 +1,12 @@
 [
   {
-    "date": "2023-01-10",
-    "version": "2.3.0",
+    "date": "2023-12-18",
+    "version": "2.4.0",
     "minVersion": "0.9.9",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:b3a8f8100919323402dc897a8ccc2b62ea0c5d6c&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:6e178b121d7986ac956844152b2cf5e084e20e94&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
           "http://mgp6yzdxeoqds3wucnbhfrdgpjjyqbiqjdwcfezpul3or7bzm4ga.b32.i2p/2.3.0/i2pupdate.su3"
         ]
