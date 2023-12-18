@@ -1,5 +1,16 @@
 <div>
-<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:" title="I2P 2.3.0 新版本 - 安全修复，可调的黑名单，DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - 安全修复，可调的黑名单，DTG API</summary></details><p>此版本包含 CVE-2023-36325 的修复。
+<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升</summary></details><p>此版本 I2P 2.4.0 持续努力提高 I2P 网络的安全性和稳定性。
+其中包含对网络数据库的大幅改进，网络数据库是 I2P 网络中用于发现对等节点的基本结构。</p>
+<p>拥塞控制的改进将使路由器能够通过避开拥堵的对等节点从而提高网络稳定性。
+这将有助于网络限制隧道垃圾信息造成的影响。
+它还将有助于在 DDOS 攻击期间和之后修复网络。</p>
+<p>NetDb 的更改还有助于保护各个路由器以及使用它们的应用程序的安全。
+路由器现在可以通过将 NetDB 分成多个“子DB”来防御攻击者，我们使用这些“子DB”来防止应用程序和路由器之间的信息泄漏。
+这同时改进了 Java 路由器可用的有关其 NetDB 活动的信息，并简化了我们对多宿主应用程序的支持。</p>
+<p>还包括 I2PSnark 和 SusiMail 应用程序中的许多错误修复和功能增强。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:" title="I2P 2.3.0 新版本 - 安全修复，可调的黑名单，DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - 安全修复，可调的黑名单，DTG API</summary></details><p>此版本包含 CVE-2023-36325 的修复。
 CVE-2023-36325 是一个发生在布隆过滤器中的上下文混淆错误。
 攻击者制作包含唯一 messageID 的 I2NP 消息，并将该 messageID 发送给客户端。
 该消息在通过布隆过滤器后，不允许在第二条消息中重复使用。
@@ -14,7 +25,7 @@ CVE-2023-36325 是一个发生在布隆过滤器中的上下文混淆错误。
 <p>此版本添加了 not_bob 作为第二个默认hosts来源，并把<a href="http://notbob.i2p">notbob.i2p</a>和<a href="http://ramble.i2p">ramble.i2p</a>添加到控制台主页。</p>
 <p>这个版本还包含一个可调整的黑名单。
 黑名单是半永久性的，每个被封禁的IP地址会被一直屏蔽，直到路由器重新启动。
-在 sybil 攻击期间观察到黑名单爆炸性增长的用户可以通过将黑名单配置为按一定时间间隔使条目过期来选择更短的超时时间。
+在 sybil 攻击期间观察到黑名单爆炸性增长的用户可以通过将黑名单配置为按一定时间段使条目过期来缩短超时间隔。
 此功能在默认情况下是关闭的，目前仅建议高级用户使用。</p>
 <p>该版本还包括一个API，用于使用桌面GUI(DTG)修改插件。
 现在可以将菜单项添加到系统托盘中，从而更直观地启动使用本地应用接口的插件。</p>

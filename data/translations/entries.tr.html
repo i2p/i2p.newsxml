@@ -1,25 +1,36 @@
 <div>
-<header title="I2P Haberleri">Haber akışı ve yöneltici güncellemeleri</header><article id="urn:uuid:" title="Yeni I2P 2.3.0 sürümü yayınlandı. Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API</summary></details><p>Bu sürümde, CVE-2023-36325 için düzeltmeler bulunuyor.
-  CVE-2023-36325, bloom süzgecinde ortaya çıkan bir bağlam karışıklığı hatasıdır.
-  Bir saldırgan, benzersiz bir ileti kimliği olan bir I2NP iletisi oluşturur ve bu ileti kimliğini bir istemciye gönderir.
-  İleti bloom süzgecinden geçtikten sonra ikinci bir iletide kullanılmasına izin verilmez.
-  Saldırgan daha sonra aynı iletiyi doğrudan yönelticiye gönderir.
-  Yöneltici iletiyi bloom süzgecine iletir ve yok sayar.
-  Bu durum, messageID değerinin daha önce görüldüğü bilgisini sızdırarak saldırgana istemcinin yönelticide barındırıldığına inanması için güçlü bir neden verir.
-  Bu sorun, bloom süzgecinin işlevselliğinin, bir iletinin istemci tünelinden (bir keşif tüneli) gelip doğrudan yönelticiye gönderilip gönderilmediğine bağlı olarak farklı bağlamlara ayrılmasıyla düzeltildi.
-  Normal koşullar altında, bu saldırının başarılı bir şekilde gerçekleştirilmesi birkaç gün sürer ve saldırı aşamasında yönelticilerin yeniden başlatılması ve hatalı olumlu sonuçlara karşı duyarlılık gibi çeşitli faktörler nedeniyle kafa karıştırıcı olabilir.
-  Saldırıyı önlemek için Java I2P kullanıcılarının hemen güncelleme yapması önerilir.</p>
+<header title="I2P Haberleri">Haber akışı ve yöneltici güncellemeleri</header><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 sürümü tıkanıklık ve ağ veri tabanı güvenliği iyileştirmeleriyle yayınlandı" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 sürümü tıkanıklık ve ağ veri tabanı güvenliği iyileştirmeleriyle yayınlandı</summary></details><p>Bu sürümde, I2P 2.4.0, I2P ağının güvenliğini ve kararlılığını iyileştirme çabalarımızı sürdürüyor.
+Eşlerinizi keşfetmek için kullanılan I2P ağı içindeki önemli bir yapı olan ağ veri tabanında önemli iyileştirmeler bulunuyor.</p>
+<p>Tıkanıklık yönetimi değişiklikleri, yönelticilere tıkanıklık yaşayan eşlerden kaçınarak onları rahatlatma yeteneği vererek ağ kararlılığını artıracak.
+Böylece, ağda istenmeyen tünellerin etkisinin sınırlaması sağlanacak.
+Ayrıca DDOS saldırıları sırasında ve sonrasında ağın iyileşmesine de yardımcı olacak.</p>
+<p>Ağ veri tabanı değişiklikleri ayrıca tek tek yönelticilerin ve bunları kullanan uygulamaların güvenliğinin sağlanmasına da yardımcı oluyor.
+Yönlendiriciler artık ağ veri tabanını uygulamalarla yöneltici arasındaki bilgi sızıntısını önlemek için kullandığımız birden fazla "alt veri tabanına" ayırarak saldırganlara karşı savunma yapabiliyor.
+Bu aynı zamanda Java yönelticilerin ağ veri tabanı işlemleriyle ilgili güncel bilgilerini geliştiriyor ve çoklu sunucu uygulamalarına yönelik desteğimizi basitleştiriyor.</p>
+<p>Ayrıca I2PSnark ve SusiMail uygulamalarında çeşitli hata düzeltmeleri ve geliştirmeler de bulunuyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</article><article id="urn:uuid:" title="Yeni I2P 2.3.0 sürümü yayınlandı. Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API</summary></details><p>Bu sürümde, CVE-2023-36325 için düzeltmeler bulunuyor.
+CVE-2023-36325, bloom süzgecinde ortaya çıkan bir bağlam karışıklığı hatasıdır.
+Saldırgan, benzersiz bir ileti kimliği olan bir I2NP iletisi oluşturur ve bu ileti kimliğini bir istemciye gönderir.
+İletinin bloom süzgecinden geçtikten sonra ikinci bir iletide kullanılmasına izin verilmez.
+Saldırgan daha sonra aynı iletiyi doğrudan yönelticiye gönderir.
+Yöneltici iletiyi bloom süzgecine iletir ve bırakır.
+Böylece, ileti kimliğinin daha önce görüldüğü bilgisini sızdırarak saldırgana istemciyi bu yönelticinin barındırdığına inanması için güçlü bir neden verir.
+Bu sorun, bloom süzgecinin işlevselliğinin, bir iletinin istemci tünelinden (bir keşif tüneli) gelip doğrudan yönelticiye gönderilip gönderilmediğine bağlı olarak farklı bağlamlara ayrılmasıyla düzeltildi.
+Normal koşullar altında, bu saldırının başarılı bir şekilde gerçekleştirilmesi birkaç gün sürer ve saldırı aşamasında yönelticilerin yeniden başlatılması ve hatalı doğru sonuçlara karşı duyarlılık gibi çeşitli faktörler nedeniyle kafa karıştırıcı olabilir.
+Saldırıyı önlemek için Java I2P kullanıcılarının hemen güncelleme yapması önerilir.</p>
 <p>Bu bağlam karışıklığı hatasını düzeltme sürecinde, bazı stratejilerimizin kodunu bu tür sızıntılara karşı savunma amacıyla değiştirdik.
-  Bunlar ağ veri tabanı üzerinde yapılan değişiklikler, hız sınırlayıcı mekanizmaların ve otomatik doldurma yönelticilerinin davranışlarıdır.</p>
+Bunlar ağ veri tabanı üzerinde yapılan değişiklikler, hız sınırlayıcı mekanizmaların ve otomatik doldurma yönelticilerinin davranışlarıdır.</p>
 <p>Bu sürümde ikinci varsayılan sunucu hizmeti sağlayıcısı olarak not_bob eklendi ve konsol ana sayfasına <a href="http://notbob.i2p">notbob.i2p</a> ile <a href="http://ramble.i2p">ramble.i2p</a> eklendi.</p>
 <p>Bu sürümde ayrıca değiştirilebilir bir engelleme listesi bulunuyor.
-  Engelleme listesi yarı kalıcıdır. Engellenen her IP adresi normalde yöneltici yeniden başlatılana kadar engellenir.
-  Sybil saldırıları sırasında engellenenler listesinin aşırı hızlı arttığını gözlemleyen kullanıcılar, engellenenler listesini belirli aralıklarla kayıtların süresi dolacak şekilde yapılandırarak daha kısa zaman aşımı süreleri kullanmayı yeğleyebilir.
-  Bu özellik varsayılan olarak kapalıdır ve şu anda yalnızca uzman kullanıcıların kullanması önerilmektedir.</p>
+Engelleme listesi yarı kalıcıdır. Engellenen her IP adresi normalde yöneltici yeniden başlatılana kadar engellenir.
+Sybil saldırıları sırasında engellenenler listesinin aşırı hızlı arttığını gözlemleyen kullanıcılar, engellenenler listesini belirli aralıklarla kayıtların süresi dolacak şekilde yapılandırarak daha kısa zaman aşımı süreleri kullanmayı yeğleyebilir.
+Bu özellik varsayılan olarak kapalıdır ve şu anda yalnızca uzman kullanıcıların kullanması önerilmektedir.</p>
 <p>Bu sürümde ayrıca eklentilerin Masaüstü görsel kullanıcı arayüzü (DTG) ile değiştirilebilmesi için bir API bulunuyor.
-  Artık sistem tepsisine menü ögeleri eklenebilir. Böylece yerel uygulama arayüzlerini kullanan eklentiler daha sezgisel olarak başlatılabilir.</p>
+Artık sistem tepsisine menü ögeleri eklenebilir. Böylece yerel uygulama arayüzlerini kullanan eklentiler daha sezgisel olarak başlatılabilir.</p>
 <p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
-  Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
 </article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="Yeni 2.2.1 sürümü yayınlandı. Docker, Ubuntu, Lunar ve Debian Sid paketleme düzeltmeleri yapıldı" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - 2.2.0 sürümü için düzeltme sürümü</summary></details><p>DDOS saldırılarını zayıflatmayı hızlandırmak amacıyla öne alınan I2P 2.2.0 sürümünün ardından, yeni paketler oluşturmayı ve yayınlamayı gerekli kılan birkaç sorunu öğrendik.
 Bu sürüm, jakarta paketinin güncellenmiş bir sürümü kullanılarak yöneltici konsoluna erişilemeyen Ubuntu Lunar ve Debian Sid içindeki bir sorunu gideriyor.
 Docker paketleri bağımsız değişkenleri doğru okumuyordu ve bu da yapılandırma dosyalarına erişilememesine neden oluyordu.
