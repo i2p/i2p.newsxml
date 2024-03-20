@@ -22,8 +22,15 @@ if [ -z "$HREF" ]; then
 fi
 TITLE=${TITLE:-TITLE_HERE}
 AUTHOR=${AUTHOR:-AUTHOR_HERE}
+if [ -z "$SUMMARY_HERE" ]; then
+    SUMMARY_HERE="SUMMARY_HERE"
+fi
 
-sed -i "3i <article\n  id=\"urn:uuid:`$UUIDGEN`\"\n  title=\"$TITLE\"\n  href=\"$HREF\"\n  author=\"$AUTHOR\"\n  published=\"$DATE\"\n  updated=\"$DATE\">\n<details>\n<summary>SUMMARY_HERE</summary>\n</details>\n<p>\n\n</p>\n</article>\n\n\n" $ENTRIES
+if [ -z "$CONTENT_HERE" ]; then
+    CONTENT_HERE="<p>\n\n</p>"
+fi
+
+sed -i "3i <article\n  id=\"urn:uuid:`$UUIDGEN`\"\n  title=\"$TITLE\"\n  href=\"$HREF\"\n  author=\"$AUTHOR\"\n  published=\"$DATE\"\n  updated=\"$DATE\">\n<details>\n<summary>$SUMMARY_HERE</summary>\n</details>\n$CONTENT_HERE\n</article>\n\n\n" $ENTRIES
 
 if [ ! -z "$EDITOR" ]; then
     case "$EDITOR" in
