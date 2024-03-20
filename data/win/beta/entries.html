@@ -1,6 +1,56 @@
 <div>
     <header title="I2P News">News feed, and router updates</header>
 <article
+  id="urn:uuid:94cffa29-35bd-41d6-adc8-f5cb407f8012"
+  title="Easy-Install for Windows Release 2.4.9"
+  href="http://i2p-projekt.i2p/en/blog/post/2024/3/20/easy-install_for_windows_release_2.4.9"
+  author="idk"
+  published="2024-03-20T15:00:00Z"
+  updated="2024-03-20T15:00:00Z">
+<details>
+<summary>I2P Easy-Install Bundle for Windows 2.4.9</summary>
+</details>
+<p>
+    <p>This is a pre-release of the I2P Easy-Install Bundle for Windows.
+        This changes how the I2P bundle and browser profile manager are installed and integrated with the host system.
+        The Easy-Install bundle is now a "portable" system that can be moved to different locations within or between Windows file-systems while retaining all built-in functionality.
+        A shortcut for starting the I2P router is still provided by the installer for convenience, but the shortcuts for starting the I2P Browser are now integrated with the I2P desktop UI.</p>
+        
+        <p>The browser profile manager itself has been split away from the monolithic I2P router+Java/jpackage, and moved into an I2P plugin managed by the router.
+        While this was done primarily to reduce how complex the existing code was, this also results in behavior which is closer to the main distribution of I2P for Windows and will lead to a more flexible installer, which can bundle additional default plugins and may be suitable for installation as a Windows service.
+        I2P Plugins can also be updated independently of the router that hosts them, so it will be possible to update the browser profile manager independently of the router itself.
+        It also means that the browser profile manager can be un-installed by uninstalling the plugin, and much more importantly that the browser profile manager is now compatible with all Java I2P distributions.</p>
+        
+        <p><strong>Why a dev build 3 weeks before the release?</strong></p>
+        
+        <p>By further delineating the components of the bundle, these changes also affected how the release process happens.
+        In particular the build process of each component has been encapsulated in a CI description which can be reproduced on a local PC.
+        This simplifies and automates the build process by ensuring that up-to-date build tools are installed in a brand-new container for every build.
+        In effect this should speed up the release process for I2P Easy-Install for Windows considerably.
+        This release is a test-run of the new process, so I can document what is going on.
+        It breaks down roughly like this:</p>
+        
+        <ul>
+        <li>It takes ~22 minutes to compile all the targets for the <code>i2p.plugins.firefox</code> and make the resulting artifacts available. During this process, I must insert 1 HSM and enter 1 password. (This part used to be about 30 steps, now it takes 1)</li>
+        <li>It takes ~22 minutes to compile all the targets for the <code>i2p.firefox</code> project and make the resulting artifacts available. This process produces only unsigned artifacts identified by their hashes, and is non-interactive. (This part used to be around 60 steps the first time, and 40 steps each additional time)</li>
+        <li><code>i2p.firefox</code> updates are signed in their <code>.su3</code> form. The <code>NSIS</code>-powered <code>.exe</code> installer is the current updater. The next step is to sign <em>just this installer</em> and generate a torrent of the result. (This process used to depend on the previous build process and couldn't be done independently. Now it takes about 30 seconds)</li>
+        <li>Generate and sign a newsfeed to notify the users of an update. This process is the only process that is <strong>slower</strong> when containerized, because there are dozens of feeds to be signed in their respective containers. It takes about an hour.</li>
+        </ul>
+        
+        <p>For you the end user, nothing much should change.
+        You'll get your updates a lot faster, and have more options available for testing.
+        The same installer is used for the updater, and the process is handled the same way.
+        However for developers, testers, and maintainers, this release will result in big changes for the better.</p>
+        
+        <p>This release still embeds a <code>2.4.0</code> Java I2P router. No changes have been made to update the embedded router.
+        Network behavior will be unchanged until the official <code>2.5.0</code> release.</p>
+        
+</p>
+</article>
+
+
+
+<article
   id="urn:uuid:dba13cd7-443c-450d-a888-3ad8880f8a2d"
   title="Easy-Install for Windows Release 2.3.0"
   href="http://i2p-projekt.i2p/en/blog/post/2023/7/10/easy-install_for_windows_release_2.3.0"
