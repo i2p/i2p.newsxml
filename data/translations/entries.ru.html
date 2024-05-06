@@ -1,25 +1,57 @@
 <div>
-<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:" title="New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</summary></details><p>This release contains fixes for CVE-2023-36325.
-  CVE-2023-36325 is a context-confusion bug which occurred in the bloom filter.
-  An attacker crafts an I2NP message containing a unique messageID, and sends that messageID to a client.
-  The message, after passing through the bloom filter, is not allowed to be re-used in a second message.
-  The attacker then sends the same message directly to the router.
-  The router passes the message to the bloom filter, and is dropped.
-  This leaks the information that the messageID has been seen before, giving the attacker a strong reason to believe that the router is hosting the client.
-  This has been fixed by separting the bloom filter's functionality into different contexts based on whether a message came down a client tunnel, an exploratory tunnel, was sent to the router directly.
-  Under normal circumstances, this attack takes several days to perform successfully and may be confounded by several factors such as routers restarting during the attack phase and sensitivity to false-positives.
-  Users of Java I2P are recommended to update immediately to avoid the attack.</p>
+<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a" title="I2P 2.5.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released" author="idk" published="2024-05-06T10:00:00Z" updated="2024-05-06T10:00:00Z"><details><summary>I2P Release 2.5.1 released to address Denial-of-Service Attacks</summary></details><p>I2P 2.5.1 is released to address Denial-of-Service Attacks affecting the I2P network and services.
+With this release we disable the IP-based parts of the Sybil attack detection tool which were targeted to amplify the effect and duration of the attack.
+This should help the network return to normal operation.
+Those of you who have disabled the Sybil attack detection tool may safely re-enable it.
+Adjustments to other subsystems to improve RouterInfo validation and peer selection have also been made.</p>
+<p>Как обычно, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="Stormy Weather" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>Network Weather: Stormy. I2P is under attack.</summary></details><p>The I2P network is currently under a Denial-of-Service attack.
+This attack affects I2P and i2pd but in different ways and is having a serious effect on network health.
+Reachability of I2P sites is badly degraded.</p>
+<p>If you are hosting a service inside I2P and it is hosted on a Floodfill router, you should consider multihoming the service on a Floodfill-disabled router to improve reachability.
+Other mitigations are being discussed but a long-term, backward-compatible solution is still being worked on.</p>
+</article><article id="urn:uuid:d0b633da-0f36-409e-9b2a-9a3b03b033c3" title="Новый релиз I2P 2.5.0" href="http://i2p-projekt.i2p/en/blog/post/2024/04/08/new_release_i2p_2.5.0" author="idk" published="2024-04-08T10:00:00Z" updated="2024-04-08T10:00:00Z"><details><summary>Дополнительные улучшения приложений, аудит стратегии изоляции NetDB</summary></details><p>Этот выпуск, I2P 2.5.0, содержит больше улучшений, ориентированных на пользователя, чем выпуск 2.4.0, который был сосредоточен на реализации стратегии изоляции NetDB.</p>
+<p>В I2PSnark добавлены новые функции, например, возможность поиска по торрентам. Исправлены ошибки для улучшения совместимости с другими I2P-торрент-клиентами, такими как BiglyBT и qBittorrent. Мы хотели бы поблагодарить всех разработчиков, которые работали с libtorrent и qBittorrent, чтобы включить и улучшить их поддержку I2P. В SusiMail также добавлены новые функции, включая поддержку форматирования Markdown в письмах и возможность перетаскивать вложения в письма. Туннели, созданные с помощью менеджера Hidden Services, теперь поддерживают "Keepalive", что повышает производительность и совместимость с веб-технологиями, позволяя создавать более сложные I2P-сайты.</p>
+<p>During this release we also made several tweaks to the NetDB to improve its resilience to spam and to improve the router's ability to reject suspicious messages.
+This was part of an effort to "audit" the implementation of "Sub-DB isolation" defenses from the 2.4.0 release.
+This investigation uncovered one minor isolation-piercing event which we repaired.
+This issue was discovered and fixed internally by the I2P team.</p>
+<p>В этом релизе были внесены некоторые улучшения в процесс выпуска наших последующих дистрибутивов для Android и Windows. Это должно привести к улучшению доставки и доступности этих последующих продуктов.</p>
+<p>Как обычно, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</article><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="Релиз I2P 2.4.0 с улучшениями в области безопасности перегрузок и NetDB" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>Релиз I2P 2.4.0 с улучшениями в области безопасности перегрузок и NetDB</summary></details><p>This release, I2P 2.4.0, continues our effort to improve the security and stability of the I2P network.
+It contains significant improvements to the Network Database, an essential structure within the I2P network used for disovering your peers.</p>
+<p>The congestion handling changes will improve network stability by giving routers the ability to relieve congested peers by avoiding them.
+This will help the network limit the effect of tunnel spam.
+It will also help the network heal during and after DDOS attacks.</p>
+<p>The NetDb changes also help secure individual routers and the applications that use them. 
+Routers can now defend against attackers by separating the NetDB into multiple "Sub-DB's" which we use to prevent information leaks between applications and the router.
+This also improves the information available to Java routers about their NetDB activity and simplifies our support for multihoming applications.</p>
+<p>Также включен ряд исправлений и улучшений в приложениях I2PSnark и SusiMail.</p>
+<p>Как обычно, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</article><article id="urn:uuid:" title="New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</summary></details><p>This release contains fixes for CVE-2023-36325.
+CVE-2023-36325 is a context-confusion bug which occurred in the bloom filter.
+An attacker crafts an I2NP message containing a unique messageID, and sends that messageID to a client.
+The message, after passing through the bloom filter, is not allowed to be re-used in a second message.
+The attacker then sends the same message directly to the router.
+The router passes the message to the bloom filter, and is dropped.
+This leaks the information that the messageID has been seen before, giving the attacker a strong reason to believe that the router is hosting the client.
+This has been fixed by separting the bloom filter's functionality into different contexts based on whether a message came down a client tunnel, an exploratory tunnel, was sent to the router directly.
+Under normal circumstances, this attack takes several days to perform successfully and may be confounded by several factors such as routers restarting during the attack phase and sensitivity to false-positives.
+Users of Java I2P are recommended to update immediately to avoid the attack.</p>
 <p>In the course of fixing this context confusion bug, we have revised some of our strategies to code defensively, against these types of leaks.
-  This includes tweaks to the netDb, the rate-limiting mechanisms, and the behavior of floodfill routers.</p>
+This includes tweaks to the netDb, the rate-limiting mechanisms, and the behavior of floodfill routers.</p>
 <p>This release adds not_bob as a second default hosts provider, and adds <a href="http://notbob.i2p">notbob.i2p</a> and <a href="http://ramble.i2p">ramble.i2p</a> to the console homepage.</p>
 <p>This release also contains a tweakable blocklist.
-  Blocklisting is semi-permanent, each blocked IP address is normally blocked until the router is restarted.
-  Users who observe explosive blocklist growth during sybil attacks may opt-in to shorter timeouts by configuring the blocklist to expire entries at an interval.
-  This feature is off-by-default and is only recommended for advanced users at this time.</p>
+Blocklisting is semi-permanent, each blocked IP address is normally blocked until the router is restarted.
+Users who observe explosive blocklist growth during sybil attacks may opt-in to shorter timeouts by configuring the blocklist to expire entries at an interval.
+This feature is off-by-default and is only recommended for advanced users at this time.</p>
 <p>This release also includes an API for plugins to modify with the Desktop GUI(DTG).
-  It is now possible to add menu items to the system tray, enabling more intuitive launching of plugins which use native application interfaces.</p>
-<p>As usual, we recommend that you update to this release.
-  The best way to maintain security and help the network is to run the latest release.</p>
+It is now possible to add menu items to the system tray, enabling more intuitive launching of plugins which use native application interfaces.</p>
+<p>Как обычно, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
 </article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="New Release 2.2.1, Packaging fixes for Docker, Ubuntu Lunar and Debian Sid" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - maintenance release for 2.2.0</summary></details><p>After the I2P 2.2.0 release, which was moved forward to accelerate mitigations for the DDOS attacks, we learned about a few developing issues which made it necessary to build and release new packages.
 This release fixes an issue within Ubuntu Lunar and Debian Sid where the router console was inaccessible using an updated version of the jakarta package.
 Docker packages were not reading arguments correctly, resulting in inaccessible configuration files.

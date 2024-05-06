@@ -1,5 +1,31 @@
 <div>
-<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升</summary></details><p>此版本 I2P 2.4.0 持续努力提高 I2P 网络的安全性和稳定性。
+<header title="I2P 新闻">新闻订阅和软件更新</header><article id="urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a" title="I2P 2.5.1 已发布" href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released" author="idk" published="2024-05-06T10:00:00Z" updated="2024-05-06T10:00:00Z"><details><summary>I2P 版本 2.5.1 已发布以解决拒绝服务攻击</summary></details><p>I2P 2.5.1 的发布是为了解决影响 I2P 网络和服务的拒绝服务攻击。
+在此版本中，我们禁用了 Sybil 攻击检测工具的基于 IP 的部分，这些部分旨在放大攻击的影响和持续时间。
+这应该有助于网络恢复正常运行。
+那些已禁用 Sybil 攻击检测工具的人可以安全地重新启用它。
+其他子系统也进行了调整，以改进路由信息验证和对等节点选择。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="暴风雨天气" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>网络天气：暴风雨。 I2P 正在遭受攻击。</summary></details><p>I2P 网络目前正遭受拒绝服务攻击。
+此攻击以不同的方式影响 I2P 和 i2pd，并对网络健康状况造成严重影响。
+I2P 站点可达性严重下降。</p>
+<p>如果您在 I2P 内部托管服务，并且该服务托管在洪泛路由上，则应考虑在禁用 Floodfill 的路由器上对该服务采用多宿主形式，以提高可达性。
+其他缓解措施正在讨论中，但长期的、可向后兼容的解决方案仍需进一步研究。</p>
+</article><article id="urn:uuid:d0b633da-0f36-409e-9b2a-9a3b03b033c3" title="新版本 I2P 2.5.0" href="http://i2p-projekt.i2p/en/blog/post/2024/04/08/new_release_i2p_2.5.0" author="idk" published="2024-04-08T10:00:00Z" updated="2024-04-08T10:00:00Z"><details><summary>更多应用改善，NetDB隔离策略审计</summary></details><p>该版本 I2P 2.5.0 比 2.4.0 版本提供了更多面向用户的改进，后者侧重于实施 NetDB 隔离策略。</p>
+<p>I2PSnark增加了一些新功能，比如搜索种子。
+若干错误已经修复，以提高与其他I2P种子客户端如 BiglyBT 和 qBittorrent 的兼容性。
+我们要感谢所有与libtorrent和qBittorrent合作的开发人员，他们支持并改进了I2P支持。
+SusiMail还增加了一些新功能，包括支持邮件中的Markdown格式和将附件拖放到邮件中的功能。
+使用隐藏服务管理器创建的隧道现在支持“Keepalive”，这提高了性能和与网络技术的兼容性，使更复杂的I2P站点成为可能。</p>
+<p>在此版本中，我们还对 NetDB 进行了一些调整，以增强其对垃圾信息的韧性，并提高路由器阻挡可疑消息的能力。
+这是“审计” 2.4.0 版本中“子数据库隔离”防御实现的一部分。
+此次调查发现了一个小的隔离穿透事件并修复之。
+这个问题是 I2P 团队在内部发现并修复的。</p>
+<p>在这个版本中，我们对发布Android和Windows下游发行版的过程进行了一些改进。
+这将改善这些下游产品的交付和可用性。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 发布包含 Congestion 和 NetDB 安全提升</summary></details><p>此版本 I2P 2.4.0 持续努力提高 I2P 网络的安全性和稳定性。
 其中包含对网络数据库的大幅改进，网络数据库是 I2P 网络中用于发现对等节点的基本结构。</p>
 <p>拥塞控制的改进将使路由器能够通过避开拥堵的对等节点从而提高网络稳定性。
 这将有助于网络限制隧道垃圾信息造成的影响。
