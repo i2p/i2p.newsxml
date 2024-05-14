@@ -18,7 +18,7 @@ if [ -z "$HREF" ]; then
     else
         CHANGEME_URL_HERE=$(echo "$TITLE" | tr "[:upper:]" "[:lower:]" | sed 's| |_|g')
     fi
-    HREF="http://i2p-projekt.i2p/en/blog/post/"$(date +%Y)/$(date +%-m)/$(date +%-d)"/$CHANGEME_URL_HERE"
+    HREF="http://i2p-projekt.i2p/en/blog/post/"$(date +%Y)/$(date +%m)/$(date +%d)"/$CHANGEME_URL_HERE"
 fi
 TITLE=${TITLE:-TITLE_HERE}
 AUTHOR=${AUTHOR:-AUTHOR_HERE}
