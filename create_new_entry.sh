@@ -11,7 +11,9 @@
 
 ENTRIES=data/$I2P_OS/$I2P_BRANCH/entries.html
 UUIDGEN="`which uuidgen || which uuid`"
-DATE=$(date +%Y-%m-%dT%H:00:00Z)
+if  [ -z "$DATE" ]; then
+    DATE=$(date +%Y-%m-%dT%H:00:00Z)
+fi
 if [ -z "$HREF" ]; then
     if [ ! -z "$CHANGEME_URL_HERE" ]; then
         CHANGEME_URL_HERE=CHANGEME_URL_HERE
