@@ -1,11 +1,23 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a" title="I2P 2.5.1 リリース" href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released" author="idk" published="2024-05-06T10:00:00Z" updated="2024-05-06T10:00:00Z"><details><summary>サービス拒否攻撃に対処するI2Pリリース2.5.1をリリース</summary></details><p>I2P 2.5.1 は、I2Pネットワークとサービスに影響を及ぼすサービス拒否攻撃に対処するためにリリースされました。
+<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="I2P 2.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>I2P 2.6.0 Release</summary></details><p>This release, I2P 2.6.0, continues our work by fixing bugs, adding features, and improving the network's reliability.</p>
+<p>Newer routers will be favored when selecting floodfill routers.
+I2PSnark received features which improve the performance of PeX(Peer Exchange), in addition to bug fixes.
+Legacy transport protocols are being removed, simplifying the code in the UDP transports.
+Locally-hosted destination will be reachable by local clients without requesting their LeaseSet, improving performance and testability.
+Additional tweaks were made to peer selection strategies.</p>
+<p>I2P no longer allows I2P-over-Tor, connections from Tor exit IP addresses are now blocked.
+We discourage this because it degrades the performance of I2P and uses up the resources of Tor exits for no benefit.
+If you are a helpful person running both a Tor Exit and I2P we encourage you to continue to do so, using different IP addresses for each.
+Non-exit relays and Tor clients are unaffected by this and do not need to change anything.</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:2afb1b0a-0ba3-466b-a665-ccdd5ede9ccf" title="2.5.2 リリース" href="http://i2p-projekt.i2p/en/blog/post/2024/05/15/2.5.2-Release" author="zzz" published="2024-05-15T12:00:00Z" updated="2024-05-15T12:00:00Z"><details><summary>2.5.2 - HTTPの修正</summary></details><p>I2P 2.5.2では、2.5.0で発生した一部のHTTPコンテンツを切り詰めてしまうバグを修正しました。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a" title="I2P 2.5.1 リリース" href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released" author="idk" published="2024-05-06T10:00:00Z" updated="2024-05-06T10:00:00Z"><details><summary>サービス拒否攻撃に対処するI2Pリリース2.5.1をリリース</summary></details><p>I2P 2.5.1 は、I2Pネットワークとサービスに影響を及ぼすサービス拒否攻撃に対処するためにリリースされました。
 このリリースでは、攻撃の効果と期間を増幅するために標的にされたSybil攻撃検知器のIPに基づく部分を無効化しました。
 これにより、ネットワークは正常な動作に戻るはずです。
 Sybil攻撃検知器を無効にしている人は、安全に再び有効にしてください。
 また、ルーター情報の検証とピア選択を改善するために、他のサブシステムの調整も行われました。</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="荒天" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>ネットワーク天気: 荒天。I2Pは攻撃に曝されている。</summary></details><p>I2Pネットワークは現在、サービス拒否攻撃を受けています。
 
 この攻撃はI2Pとi2pdに影響を与えますが、その方法は異なっており、ネットワークの健全性に深刻な影響を及ぼしています。
@@ -24,8 +36,7 @@ SusiMailもまた、新機能が追加され、電子メール内でマークダ
 この問題はI2Pチームによって発見され、内部で修復されました。</p>
 <p>このリリースを通じて、AndroidとWindows用の我々の下流の配布にて、リリースの過程にいくつかの改善を行いました。
 その結果、これらの下流の所産の配送と入手しやすさが改善されるはずです。</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 Release with Congestion and NetDB Security improvements" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 Release with Congestion and NetDB Security improvements</summary></details><p>This release, I2P 2.4.0, continues our effort to improve the security and stability of the I2P network.
 It contains significant improvements to the Network Database, an essential structure within the I2P network used for disovering your peers.</p>
 <p>The congestion handling changes will improve network stability by giving routers the ability to relieve congested peers by avoiding them.
@@ -35,8 +46,7 @@ It will also help the network heal during and after DDOS attacks.</p>
 Routers can now defend against attackers by separating the NetDB into multiple "Sub-DB's" which we use to prevent information leaks between applications and the router.
 This also improves the information available to Java routers about their NetDB activity and simplifies our support for multihoming applications.</p>
 <p>Also included are a number of bug-fixes and enhancements across the I2PSnark and SusiMail applications.</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:" title="新リリース I2P 2.3.0 - セキュリティ修正、微調整可能なブロック一覧、DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - セキュリティ修正、微調整可能なブロック一覧、DTG API</summary></details><p>このリリースにはCVE-2023-36325のための修正が含まれます。
 CVE-2023-36325は、bloomフィルターに発生するコンテキスト混乱バグです。
 攻撃者は、唯一無二のmessageIDを含むI2NPメッセージを作成し、そのmessageIDをクライアントに送信します。
@@ -56,16 +66,14 @@ sybil攻撃中にブロック一覧の爆発的な増加を観測したユーザ
 この機能は初期設定では無効になっており、現時点では高度な利用者にのみ推奨されます。</p>
 <p>このリリースには、Desktop GUI(DTG)でプラグインを変更するためのAPIも含まれています。
 システムトレイにメニュー項目を追加できるようになり、ネイティブアプリケーションインタフェースを使用するプラグインをより直感的に起動できるようになりました。</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="新リリース 2.2.1。Docker、Ubuntu Lunar、及びDebian Sid用のパッケージ化" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - 2.2.0用の保守リリース</summary></details><p>DDOS攻撃用の緩和策を短期で仕上げるため、前倒しにしたI2P 2.2.0リリースの後、いくつかの開発中の問題が判明し、新しいパッケージの構築とリリースが必要になりました。
 このリリースでは、Ubuntu LunarおよびDebian Sidにおいて、jakartaパッケージの更新版を使用してルーターコンソールにアクセスできない問題を修正します。
 Dockerパッケージでは引数を正しく読み込まず、その結果、構成ファイルにアクセスできないことがありました。
 この問題も解決されています。
 DockerコンテナはPodmanにも対応しました。</p>
 <p>このリリースでは、transifexと翻訳を同期させ、GeoIPデータベースを更新します。</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="2.2.0 新リリース。DDOS攻撃への緩和策と、ストリーミングサブシステムへの微調整" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>DDOS攻撃への緩和策と、ストリーミングサブシステムへの微調整</summary></details><p>我々は2.2.0のリリース日を、2023年3月13日の本日に行い、前倒しにする方針を決定しました。
 このリリースはDDOS攻撃を切り抜けるためのルーターの能力を改善するNetDb、Floodfill、及びピア選択の構成要素に渡る変更が含みます。
 今後も攻撃は続くと思われますが、これらのシステムへの改善により、ルーターが悪意があると思われるルーターを特定し、優先順位を下げることで、DDOS攻撃の危険を軽減する助けになるでしょう。</p>
@@ -78,8 +86,7 @@ DockerコンテナはPodmanにも対応しました。</p>
 zzzはプロジェクトから離れることを選択し、彼の使命はチームの他の一員によって担われています。
 そのため、プロジェクトはネットワーク統計の基盤を交換し、開発フォーラムをi2pforum.i2pに移行する作業を行っています。
 長い間、これらのサービスを提供してくれたzzzに感謝します。</p>
-<p>例によって、このリリースに更新することをおすすめします。
-セキュリティを保ち、ネットワークに貢献する最高の方法は、最新のリリースを稼働することです。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7" title="DDoS Update" href="http://zzz.i2p/topics/3593" author="zzz" published="2023-02-14T19:00:00Z" updated="2023-02-14T19:00:00Z"><details><summary>DDoS Update</summary></details><p>We have confirmed that the attacker controls a large number of routers.
 Our investigations and mitigations continue.</p>
 <p>This is a good time to remind people that even after 20 years, the I2P network is relatively small.
