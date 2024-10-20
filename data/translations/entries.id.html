@@ -1,17 +1,29 @@
 <div>
-<header title="Berita I2P">Umpan berita, dan pembaruan router</header><article id="urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632" title="I2P 2.6.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released" author="idk" published="2024-08-06T13:00:00Z" updated="2024-08-06T13:00:00Z"><details><summary>I2P 2.6.1 Release</summary></details><p>I2P 2.6.1 is released in order to fix a User-Interface bug in the Hidden Services Manager application.
-This bug caused scrolling to be disabled, rendering some configuration inaccessible.</p>
+<header title="Berita I2P">Umpan berita, dan pembaruan router</header><article id="urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0" title="I2P 2.7.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release" author="idk" published="2024-10-08T10:00:00Z" updated="2024-10-08T10:00:00Z"><details><summary>I2P 2.7.0 Release</summary></details><p>This release, I2P 2.7.0, continues our work by fixing bugs, improving performance, and adding features.</p>
+<p>Access to information from the console and applications has been improved.
+Issues have been fixed in I2PSnark and SusiMail search.
+The netDB search embedded into the router console now operates in a more intuitive and useful way.
+Minor improvements have been made to diagnostic displays in advanced mode.</p>
+<p>Bugs have also been fixed to improve compatibility within the network.
+An issue with publishing leaseSets was solved which improves reliability major hidden services.
+I2PSnark no longer changes the infohash when a user changes only the trackers on an existing torrent.
+This prevents torrents from being unnecessarily disrupted by these changes.
+We welcomed this contribution from a new contributor.
+A conflict in the handling of a streaming library option was resolved to improve compatibility with other I2P implementations.</p>
 <p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik mempertahankan keamanan dan membantu jaringan adalah menjalankan rilisilis terbaru.</p>
-</article><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="I2P 2.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>I2P 2.6.0 Release</summary></details><p>This release, I2P 2.6.0, continues our work by fixing bugs, adding features, and improving the network's reliability.</p>
+</article><article id="urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632" title="I2P 2.6.1 telah dirilis" href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released" author="idk" published="2024-08-06T13:00:00Z" updated="2024-08-06T13:00:00Z"><details><summary>I2P 2.6.1 dirilis</summary></details><p>I2P 2.6.1 dirilis dalam rangka memperbaiki bug Antar-Muka di dalam aplikasi Hidden Service Manager.
+Bug ini menyebabkan tidak bisa melakukan pengguliran, membuat beberapa konfigurasi tidak dapat diakses.</p>
+<p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik mempertahankan keamanan dan membantu jaringan adalah menjalankan rilisilis terbaru.</p>
+</article><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="I2P 2.6.0 telah dirilis" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>I2P 2.6.0 dirilis</summary></details><p>Perilisan I2P 2.6.0 ini, melanjutkan pekerjaan kami dalam memperbaiki bug, penambahan fitur, dan meningkatkan keandalan jaringan.</p>
 <p>Newer routers will be favored when selecting floodfill routers.
 I2PSnark received features which improve the performance of PeX(Peer Exchange), in addition to bug fixes.
 Legacy transport protocols are being removed, simplifying the code in the UDP transports.
 Locally-hosted destination will be reachable by local clients without requesting their LeaseSet, improving performance and testability.
 Additional tweaks were made to peer selection strategies.</p>
-<p>I2P no longer allows I2P-over-Tor, connections from Tor exit IP addresses are now blocked.
-We discourage this because it degrades the performance of I2P and uses up the resources of Tor exits for no benefit.
-If you are a helpful person running both a Tor Exit and I2P we encourage you to continue to do so, using different IP addresses for each.
-Non-exit relays and Tor clients are unaffected by this and do not need to change anything.</p>
+<p>I2P tidak lagi mengizinkan I2P-over-Tor, sambungan dari Tor keluar alamat IP kini diblok.
+Kami tidak menyarankan hal ini karena hal itu menurunkan kinerja I2P dan menggunakan seluruh sumber daya Tor keluar tanpa manfaat.
+Jika Anda adalah orang yang suka membantu yang menjalankan baik Tor Exit dan I2P, kami menyarankan Anda untuk lanjut melakukan hal tersebut, menggunakan alamat IP berbeda untuk masing-masing.
+Non-exit relai dan klien Tor tidak terpengaruh oleh hal ini dan tidak perlu melakukan perubahan apapun.</p>
 <p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik mempertahankan keamanan dan membantu jaringan adalah menjalankan rilisilis terbaru.</p>
 </article><article id="urn:uuid:2afb1b0a-0ba3-466b-a665-ccdd5ede9ccf" title="2.5.2 Dirilis" href="http://i2p-projekt.i2p/en/blog/post/2024/05/15/2.5.2-Release" author="zzz" published="2024-05-15T12:00:00Z" updated="2024-05-15T12:00:00Z"><details><summary>2.5.2 dengan perbaikan HTTP</summary></details><p>I2P 2.5.2 dirilis untuk memperbaiki sebuah bug yang ditemukan di versi 2.5.0 yang kadang membuat konten HTTP menjadi terpotong.</p>
 <p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik mempertahankan keamanan dan membantu jaringan adalah menjalankan rilisilis terbaru.</p>
@@ -23,8 +35,7 @@ Penyesuaian pada subsistem lain untuk meningkatkan validasi Routerinfo dan pemil
 <p>Seperti biasanya, kami merekomendasikan agar Anda memperbarui ke rilis ini. Cara terbaik mempertahankan keamanan dan membantu jaringan adalah menjalankan rilisilis terbaru.</p>
 </article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="Cuaca Badai" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>Cuaca Jaringan: Badai. I2P sedang diserang.</summary></details><p>Jaringan I2P saat ini berada dalam serangan DOS.
 Serangan ini mempengaruhi I2P dan i2pd tetapi dengan cara yang berbeda dan mempunyai dampak serius pada kesehatan jaringan.
-Jangkauan situs I2P sangat terdegradasi.
-</p>
+Jangkauan situs I2P sangat terdegradasi.</p>
 <p>Jika Anda me-hosting layanan di dalam I2P dan di-hosting di floodfill router, Anda harus mempertimbangkan multihoming layanan pada router yang floodfill-nya dinonaktifkan, untuk meningkatkan jangkauan.
 Mitigasi lain sedang dibahas tetapi solusi jangka panjang dan kompatibel dengan versi -versi sebelumnya masih sedang dikerjakan.
 </p>
