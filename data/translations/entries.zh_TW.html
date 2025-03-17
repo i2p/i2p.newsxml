@@ -1,5 +1,19 @@
 <div>
-<header title="I2P 新聞">新聞提要和路由器更新</header><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 发布</summary></details><p>此版本通过修复错误、删除未使用的代码以及提高网络稳定性以改进 I2P。</p>
+<header title="I2P 新聞">新聞提要和路由器更新</header><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 发布" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 版本</summary></details><p>2.8.1 修复了 2.8.0 中出现问题的本地站点访问问题。
+我们在控制台中为多个应用程序添加了通知气泡，以突出显示应用的消息。
+我们修复了可能影响隧道可靠性的隧道测试错误。
+地址簿现在有一个新的“最新”选项卡，显示从您的订阅中添加的最新主机名。
+对暗色主题进行了若干处修复和改进。</p>
+<p>我们修复了之前在 Java 21 或更高版本上失败的安装程序。
+我们还修复了在 Linux 上安装到包含空格的目录路径出现的问题。
+对于使用 Docker 的用户，我们更新了过时的 Docker 容器和容器库。</p>
+<p>如往常一样，我们建议您升级到这个版本。
+维护安全并帮助网络的最佳方式就是运行最新版本。</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="2.8.0 访问本地站点失败" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 本地访问错误</summary></details><p>在 2.8.0 中，浏览本地站点（通过主机名或 b32）将失败。
+解决方法是使用 localhost 和服务器端口（通常为 7658）来绕过 I2P。
+例如，<a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>。
+我们对此问题深表歉意并努力修复中。</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 发布" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 发布</summary></details><p>此版本通过修复错误、删除未使用的代码以及提高网络稳定性以改进 I2P。</p>
 <p>我们改进了网络中拥堵的路由器的处理。
 UPnP 和 NAT 遍历中的问题已解决，以改善连接性和错误回报。
 我们现在有一个更激进的策略来从 NetDb 中删除赁集，以提高路由器性能并减轻过载。

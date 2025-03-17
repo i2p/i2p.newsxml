@@ -1,5 +1,18 @@
 <div>
-<header title="Notícias da I2P">Feed de notícias e atualizações do roteador</header><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="Versão 2.8.0 da I2P" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>Versão 2.8.0 da I2P</summary></details><p>Esta versão melhora a I2P corrigindo bugs, removendo código inutilizado e melhorando a estabilidade de rede.</p>
+<header title="Notícias da I2P">Feed de notícias e atualizações do roteador</header><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="Versão 2.8.1 da I2P Lançada" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>Versão 2.8.1 da I2P</summary></details><p>A versão 2.8.1 conserta acessos a sites locais que estavam quebrados na 2.8.0.
+Adicionamos bolhas de notificação em várias aplicações no painel para destacar mensagens da aplicação.
+Corrigimos um bug de teste de túnel que pode ter estado afetando a estabilidade de túnel.
+O catálogo de endereços agora possui uma nova aba "mais recente" que exibe os mais novos nomes de domínio adicionados de suas inscrições.
+Há várias correções e melhorias para tema escuro.</p>
+<p>Corrigimos o instalador que previamente falhava no Java 21 ou mais recente.
+Também corrigimos instalar em caminhos de diretórios que contêm espaços em Linux.
+Para aqueles de vocês que usam Docker, nós atualizamos bibliotecas e contêiner desatualizados do Docker.</p>
+<p>Como de costume, recomendamos que você atualize para esta versão. A melhor maneira de manter a segurança e ajudar a rede é executar a versão mais recente.</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Acesso a site local falha na 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>Bug de Acesso Local da 2.8.0</summary></details><p>Na 2.8.0, navegar para um site local (seja por nome de domínio ou b32) falhará.
+A solução paliativa é usar localhost e a porta do servidor, geralmente 7658, para contornar a I2P.
+Por exemplo, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Pedimos desculpas pelo problema e estamos trabalhando em uma correção.</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="Versão 2.8.0 da I2P" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>Versão 2.8.0 da I2P</summary></details><p>Esta versão melhora a I2P corrigindo bugs, removendo código inutilizado e melhorando a estabilidade de rede.</p>
 <p>Aprimoramos o tratamento de roteadores congestionados na rede.
 Problemas com UPnP e NAT traversal foram tratados para aprimorar a conectividade e o relatório de erros.
 Nós agora temos uma estratégia mais agressiva para a remoção de leasesets do BD de rede para melhorar o desempenho do roteador e mitigar sobrecargas.

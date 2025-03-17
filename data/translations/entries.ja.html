@@ -1,5 +1,18 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 リリース</summary></details><p>このリリースでは、バグ修正、不使用コードの削除、及びネットワーク安定性の改善によってI2Pを改善します。</p>
+<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 リリース</summary></details><p>2.8.1は、2.8.0の端末内にあるサイトへアクセスする際の欠陥を修正します。
+我々はアプリケーションのメッセージを強調するため、コンソール内のいくつかのアプリケーションに、通知の泡を追加しました。
+我々は、トンネルの信頼性に影響しうる、トンネル試験のバグを修正しました。
+アドレス帳は今、購読から追加された最近のホスト名を表示する「最新」タブを備えます。
+ダークテーマのいくつか修正と改善があります。</p>
+<p>我々は、Java 21以上で以前に不調だったインストーラーを修正しました。
+我々はまた、Linux上で空白を含むディレクトリーパスへのインストールを修正しました。
+Dockerを使用する方々のためには、我々は古いDockerコンテナとコンテナのライブラリを更新しました。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Local site access fails in 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Local Access Bug</summary></details><p>In 2.8.0, browsing to a local site (either by hostname or b32) will fail.
+The workaround is using localhost and the server port, usually 7658, to bypass I2P.
+For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+We apologize for the issue and are working on a fix.</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 リリース</summary></details><p>このリリースでは、バグ修正、不使用コードの削除、及びネットワーク安定性の改善によってI2Pを改善します。</p>
 <p>我々は、ネットワーク内の混雑したルーターの扱いを改善しました。
 UPnPとNATトラバーサルでの問題は、接続の改善とエラー報告によって対処されました。
 ルーターのパフォーマンス改善と負担軽減のため、NetDBから不要なleasesetを除去する、更なる能動的な方策があります。
