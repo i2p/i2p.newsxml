@@ -1,5 +1,23 @@
 <div>
-<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P version 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P version 2.8.0</summary></details><p>Cette version améliore I2P en corrigeant des bogues, en retirant du code inutilisé, et en améliorant la stabilité du réseau.</p>
+<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 Release</summary></details><p>2.8.2 fixes a bug causing SHA256 failures that was introduced in the 2.8.1 release.
+The bug primarily affected high-bandwidth routers.</p>
+<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 Release</summary></details><p>2.8.1 fixes accesses to local sites that were broken in 2.8.0.
+We have added notification bubbles to several applications in the console to highlight application messages.
+We fixed a tunnel test bug that may have been affecting tunnel reliability.
+The addressbook now has a new "latest" tab that displays the newest hostnames added from your subscriptions.
+There are several dark theme fixes and improvements.</p>
+<p>We fixed the installer that previously failed on Java 21 or higher.
+We also fixed installing to directory paths that contain spaces on Linux.
+For those of you that use Docker, we updated outdated Docker container and container libraries.</p>
+<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Local site access fails in 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Local Access Bug</summary></details><p>In 2.8.0, browsing to a local site (either by hostname or b32) will fail.
+The workaround is using localhost and the server port, usually 7658, to bypass I2P.
+For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+We apologize for the issue and are working on a fix.</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P version 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P version 2.8.0</summary></details><p>Cette version améliore I2P en corrigeant des bogues, en retirant du code inutilisé, et en améliorant la stabilité du réseau.</p>
 <p>Nous avons amélioré la gestion de congestion des routeurs sur le réseau.
 Les problèmes avec l'UPnP et le passage de NAT ont été adressés afin d'améliorer la connectivité et l'envoi d'erreurs.
 Nous avons maintenant une stratégie plus agressive pour le retrait des jeux de baux de la BDréseau pour améliorer les performances des routeurs et atténuer leur surcharge.

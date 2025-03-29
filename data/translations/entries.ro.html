@@ -1,5 +1,30 @@
 <div>
-<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0" title="I2P 2.7.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release" author="idk" published="2024-10-08T10:00:00Z" updated="2024-10-08T10:00:00Z"><details><summary>I2P 2.7.0 Release</summary></details><p>This release, I2P 2.7.0, continues our work by fixing bugs, improving performance, and adding features.</p>
+<header title="Ştiri I2P">Ştiri şi actualizări de router</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 Release</summary></details><p>2.8.2 fixes a bug causing SHA256 failures that was introduced in the 2.8.1 release.
+The bug primarily affected high-bandwidth routers.</p>
+<p>As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 Release</summary></details><p>2.8.1 fixes accesses to local sites that were broken in 2.8.0.
+We have added notification bubbles to several applications in the console to highlight application messages.
+We fixed a tunnel test bug that may have been affecting tunnel reliability.
+The addressbook now has a new "latest" tab that displays the newest hostnames added from your subscriptions.
+There are several dark theme fixes and improvements.</p>
+<p>We fixed the installer that previously failed on Java 21 or higher.
+We also fixed installing to directory paths that contain spaces on Linux.
+For those of you that use Docker, we updated outdated Docker container and container libraries.</p>
+<p>As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Local site access fails in 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Local Access Bug</summary></details><p>In 2.8.0, browsing to a local site (either by hostname or b32) will fail.
+The workaround is using localhost and the server port, usually 7658, to bypass I2P.
+For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+We apologize for the issue and are working on a fix.</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 Release</summary></details><p>This release improves I2P by fixing bugs, removing unused code, and improving network stability.</p>
+<p>We have improved handling of congested routers in the network.
+Issues in UPnP and NAT traversal were addressed to improve connectivity and error reporting.
+We now have a more aggressive strategy for leaseset removal from the NetDb to improve router performance and mitigate overload.
+Other changes were implemented to reduce the observability of events like a router rebooting or shutting down.</p>
+<p>As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.</p>
+</article><article id="urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0" title="I2P 2.7.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release" author="idk" published="2024-10-08T10:00:00Z" updated="2024-10-08T10:00:00Z"><details><summary>I2P 2.7.0 Release</summary></details><p>This release, I2P 2.7.0, continues our work by fixing bugs, improving performance, and adding features.</p>
 <p>Access to information from the console and applications has been improved.
 Issues have been fixed in I2PSnark and SusiMail search.
 The netDB search embedded into the router console now operates in a more intuitive and useful way.
