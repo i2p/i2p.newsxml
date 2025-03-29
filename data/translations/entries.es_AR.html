@@ -1,5 +1,26 @@
 <div>
-<header title="Noticias de I2P">Suscripción (feed) de noticias, y actualizaciones del router I2P</header><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="Lanzamiento de I2P 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>Lanzamiento de I2P 2.8.0</summary></details><p>Esta versión mejora I2P al corregir errores, eliminar código no utilizado y mejorar la estabilidad de la red.</p>
+<header title="Noticias de I2P">Suscripción (feed) de noticias, y actualizaciones del router I2P</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="Versión 2.8.2 Disponible" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>Versión 2.8.2 Disponible</summary></details><p>La versión 2.8.2 corrige un error que causaba fallos de SHA256 que se introdujo en la versión 2.8.1.
+El error afectaba principalmente a los enrutadores de alto ancho de banda.</p>
+<p>Como es habitual, le recomendamos que actualice a esta versión.
+La mejor manera de mantener la seguridad y ayudar a la red es ejecutar la última versión.</p>
+</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="Versión 2.8.1 Disponible" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>Lanzamiento de I2P 2.8.1</summary></details><p>La versión 2.8.1 corrige los accesos a sitios locales que se rompieron en 2.8.0.
+Hemos añadido burbujas de notificación a varias aplicaciones en la consola para destacar los mensajes de la aplicación.
+Hemos corregido un error en la prueba del túnel que podría haber estado afectando a la fiabilidad del túnel.
+La libreta de direcciones ahora tiene una nueva pestaña "última" que muestra los nombres de host más recientes añadidos de tus suscripciones.
+Hay varias correcciones y mejoras en el tema oscuro.
+</p>
+<p>Arreglamos el instalador que antes fallaba en Java 21 o superior.
+También arreglamos la instalación en rutas de directorio que contienen espacios en Linux.
+Para los que usáis Docker, actualizamos el contenedor de Docker y las librerías de contenedor que estaban desactualizadas.
+</p>
+<p>Como es habitual, le recomendamos que actualice a esta versión.
+La mejor manera de mantener la seguridad y ayudar a la red es ejecutar la última versión.</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="El acceso al sitio local falla en 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Error de acceso local</summary></details><p>En la versión 2.8.0, navegar a un sitio local (ya sea por nombre de host o b32) fallará.
+La solución alternativa es usar localhost y el puerto del servidor, generalmente 7658, para evitar I2P.
+Por ejemplo, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Pedimos disculpas por el problema y estamos trabajando en una solución.
+</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="Lanzamiento de I2P 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>Lanzamiento de I2P 2.8.0</summary></details><p>Esta versión mejora I2P al corregir errores, eliminar código no utilizado y mejorar la estabilidad de la red.</p>
 <p>Hemos mejorado el manejo de routers congestionados en la red. 
 Se abordaron problemas en UPnP y la transversalidad NAT para mejorar la conectividad y la notificación de errores. 
 Ahora tenemos una estrategia más agresiva para la eliminación de leasesets del NetDb con el fin de mejorar el rendimiento del router y mitigar la sobrecarga. 
