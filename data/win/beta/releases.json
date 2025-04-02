@@ -1,12 +1,12 @@
 [
   {
-    "date": "2025-2-12",
-    "version": "2.8.0",
+    "date": "2025-04-02",
+    "version": "2.8.2",
     "minVersion": "1.5.0",
     "minJavaVersion": "1.8",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:261ca5c3ba31fc9ad6aacf3624ee409515fc5cc3&dn=i2pwinupdate.su3&tr=http%3A%2F%2Ftracker2.postman.i2p%2Fannounce.php",
+        "torrent": "magnet:?xt=urn:btih:3225c32fec9efe61fa333c6f668245f5179384e2&dn=i2pwinupdate.su3&tr=http%3A%2F%2Ftracker2.postman.i2p%2Fannounce.php",
         "url": [
           "http://ekm3fu6fr5pxudhwjmdiea5dovc3jdi66hjgop4c7z7dfaw7spca.b32.i2p/i2pwinupdate.su3"
         ]
