@@ -1,5 +1,5 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:cEAH7Cn8fLYbrePPylMhIogEgu79quvDUFem9cljqWqRHA-IjCn518I2HeaF~LO3AgfES5F5T4BJxQg-X7AAk-JFDcZ4Zijd9uHt0tMckxF3s3ovkBFkVrc3mRgtltqMCw1eN0hXddubcXb1FI3-Gsn~Mq5q3xyYAy0sDEk~Pi0wkIq53DpeTBf29W8A-cxQPfY7kziMoUwpNfAKulq5h7SCHHEr-eUnrIP2aXmnlQMdwr4NA9-2-nBWwFKeVJDVUW7rTZMT5ukYWLN72t-JMLGy~5RdrnpyGiHA5M1~P6CMYmmme3rG8tG237kNe69KY7esXUMnVRVUjStuFOHviRVcBkemaJyYV~KBWvz4-XAAcf23FeG13novyvmWIRPSTrRKMC9b3~pq4xoeGcylb9iaJGwSGdZ~nx8v9J-8CWQVpcI6H5A9oXJAfSZ5yzo8t1V0kgWWVCWWzr1g~fCGliZ68RKNJg4IPuP5nPmOclVT66VtpsM7J-SgCJVe3Cz7GXp7lPnwxeP3n~52FVSBzRt47TH56mm9G8SUo8utnup5y1GFkFMaM57PixXTzpCf2LCWCn0LvL2lxydogEYBngWuhDOhbWxcP425EdpsdDXgea0mRAXbtxzhu9UTU9d7bFs2aYSACh0RBtKA8XYZhZsodPpfOC~Hf-2JvltFZwA=">
-    <updated>2025-01-21T14:47:54Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:PsskZz73h5k8jY6xtL39ZZ1zc-KvQ2QDKJdGEsboZsie-CaWGjV3~YGOVopBOKQJbFvD2-s~YVcFNrVi6LfA6c-6edUxD3KYZEtrts5x1GUEWFI6DOAHmuzEw-cHnGLacsyehh4NYIKrIq7Phm61C3Pq2FFcVKDOo-lZZsQpIJNpznvCZtDwM3SPq0i~p8ecScRzIuVu5ET8wvqyO3vooBqz6H~KikJd6tQmuWdZnSfaL0U8eX4PNMqUyVzPRX-KmOxVbEEq2u9QCSa6vWoz1grv-pusita5Wi8~mFNlewwNJgYIEQMIlBW2EP~i3ARDRRyB2RcBXI7rpj8SqsHvNfi~s7nOxyyJZFgYz6b55~JZH434LYc5bZz2YZFnqWYZpm8LX5Lc9~V86s8tdVtV17yVupXuBji0o82J-C79mBL7BUhiWy7dPfrD8~XieWPiWfmj8UThrkGplU4Dhq~tMv0GJ5TXnsnn2PLYCiUurDpJwPImSpUlfF18IeHgkhCct4~n-DlV4Dz3nGEQWR2w4uMNSRtaVJ2N4UG3uDtrrJGypFAp-kLlbPUw6EuG3cQhq2y6BE4I8Zex5BOfBNleCSuT8KB0EDaUk9sRc04-~4gIYfve0Ke1ulnBqJGYLB0srV~oCxrOp8xmQgcLTqhPDfqylUJjlV6QgVVVKgFxdco=">
+    <updated>2025-05-02T11:52:25Z</updated>
     <i2p:block>93.157.12.248</i2p:block>
     <i2p:block>185.213.155.252</i2p:block>
     <i2p:block>223.167.199.60</i2p:block>
@@ -96,12 +96,14 @@
     <i2p:block>38.242.206.110</i2p:block>
     <i2p:block>44.210.192.47</i2p:block>
     <i2p:block>46.53.244.68</i2p:block>
+    <i2p:block>52.60.61.249</i2p:block>
     <i2p:block>52.70.234.81</i2p:block>
     <i2p:block>77.165.6.8</i2p:block>
     <i2p:block>93.235.73.128</i2p:block>
     <i2p:block>98.15.244.49</i2p:block>
     <i2p:block>109.197.204.101</i2p:block>
     <i2p:block>109.197.205.47</i2p:block>
+    <i2p:block>110.137.220.12</i2p:block>
     <i2p:block>139.59.133.151</i2p:block>
     <i2p:block>145.239.83.230</i2p:block>
     <i2p:block>162.55.230.167</i2p:block>
