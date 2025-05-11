@@ -1,5 +1,5 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:PsskZz73h5k8jY6xtL39ZZ1zc-KvQ2QDKJdGEsboZsie-CaWGjV3~YGOVopBOKQJbFvD2-s~YVcFNrVi6LfA6c-6edUxD3KYZEtrts5x1GUEWFI6DOAHmuzEw-cHnGLacsyehh4NYIKrIq7Phm61C3Pq2FFcVKDOo-lZZsQpIJNpznvCZtDwM3SPq0i~p8ecScRzIuVu5ET8wvqyO3vooBqz6H~KikJd6tQmuWdZnSfaL0U8eX4PNMqUyVzPRX-KmOxVbEEq2u9QCSa6vWoz1grv-pusita5Wi8~mFNlewwNJgYIEQMIlBW2EP~i3ARDRRyB2RcBXI7rpj8SqsHvNfi~s7nOxyyJZFgYz6b55~JZH434LYc5bZz2YZFnqWYZpm8LX5Lc9~V86s8tdVtV17yVupXuBji0o82J-C79mBL7BUhiWy7dPfrD8~XieWPiWfmj8UThrkGplU4Dhq~tMv0GJ5TXnsnn2PLYCiUurDpJwPImSpUlfF18IeHgkhCct4~n-DlV4Dz3nGEQWR2w4uMNSRtaVJ2N4UG3uDtrrJGypFAp-kLlbPUw6EuG3cQhq2y6BE4I8Zex5BOfBNleCSuT8KB0EDaUk9sRc04-~4gIYfve0Ke1ulnBqJGYLB0srV~oCxrOp8xmQgcLTqhPDfqylUJjlV6QgVVVKgFxdco=">
-    <updated>2025-05-02T11:52:25Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:NUAbQZOcQOlRUAnLxjFsrxNfia6ckgqJ-164bLe7lVI8GfaKT61CjXb22DEFnDXri8buGVAOTs0PN-R-J2i4fRUp5qoW2JfZkRafWc~YAuwyMjoytx6aTKOkjJA-OZYFiLHA0sbodDagUajOsBVpwdF97GtNH2f9FyRy9f9j68jV-cGqPh4VEXbk50jFfL4v~ABhuj2xUbNmdJseKP2bQkC21kd0qMqeNfd0Wxpy9Ij-IODHV0tzd-JqgMntXBshMPWE5ywOfuCIpqMCvjvHIYlKKxOmi0e1Khx5wsJ0BnP-JdXB9xbLh0PUeFpZCDuxweOYPb~kihON85xLttRmcSXQ6wGfXechWzqx8bcWqhs501pUBvakEwPFgkkHG-tMHBfJPfLY~xCHGXOOOT0xNtEDuGyDbc-dA1D38a5O6ImKUW4xZUvv~NbQFG8zKfEIVJ5PHg1Ch2sqNB0NMNOP8DxZw311D-vR~yZndk11W~j8S7WLN7tor4t4FTGnPO1gdoMSW-NXR8wlnrkbEFrt6m-HVKZsf18mL~9T~dqaihWBuWi8mcX9ZfseuXdou-ip~FK4ktXVUNBKOADUseykp2GTgQYhZK~QCjppEILmVcf1LyIULqIFvOUhC6JZUX62xsM8jpCuBw3t2o7CjxzZYqRH55zeDDVrfGMAMR~IjKw=">
+    <updated>2025-05-11T22:04:43Z</updated>
     <i2p:block>93.157.12.248</i2p:block>
     <i2p:block>185.213.155.252</i2p:block>
     <i2p:block>223.167.199.60</i2p:block>
@@ -98,7 +98,9 @@
     <i2p:block>46.53.244.68</i2p:block>
     <i2p:block>52.60.61.249</i2p:block>
     <i2p:block>52.70.234.81</i2p:block>
+    <i2p:block>59.56.69.164</i2p:block>
     <i2p:block>77.165.6.8</i2p:block>
+    <i2p:block>91.138.224.31</i2p:block>
     <i2p:block>93.235.73.128</i2p:block>
     <i2p:block>98.15.244.49</i2p:block>
     <i2p:block>109.197.204.101</i2p:block>
