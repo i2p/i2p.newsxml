@@ -10,3 +10,5 @@ etc/*custom*
 build.old
 /certificates
 /blocklist.txt
+news.su3
+news.xml
