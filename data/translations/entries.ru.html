@@ -1,23 +1,35 @@
 <div>
-<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 Release</summary></details><p>2.8.2 fixes a bug causing SHA256 failures that was introduced in the 2.8.1 release.
-The bug primarily affected high-bandwidth routers.</p>
+<header title="Новости I2P">Новостной канал и обновления маршрутизатора</header><article id="urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a" title="Вышла версия 2.9.0" href="http://i2p-projekt.i2p/en/blog/post/2025/06/02/2.9.0_released" author="idk" published="2025-06-02T19:00:00Z" updated="2025-06-02T19:00:00Z"><details><summary>Релиз I2P 2.9.0</summary></details><p>I2P 2.9.0 — это релиз с исправлением ошибок и небольшим количеством новых функций.</p>
+<p>Улучшена производительности системы i2ptunnel за счёт оптимизации использования потоков.
+В NTCP2 улучшена защита от зондирующих атак.
+Система уведомлений интегрирована в большее количество приложений, чтобы нагляднее отображать статусы в I2PSnark и других приложениях.
+Исправлена автоматическая регистрация флудфилда.
+Пользователи могут заметить повышенное использование ресурсов при работе в качестве floodfill.
+Если этот режим сильно нагружает систему, floodfill можно отключить на странице /config.</p>
+<p>В консоли доступна новая функция — глобальная карта, которая показывает местоположение маршрутизаторов в вашем представлении netDb.
+Это узлы, которые помогают вашему маршрутизатору строить туннели и предоставлять анонимную связность сети.</p>
+<p>Продолжаются работы по внедрению протокола Datagram2, постквантовой криптографии и автоматической подстройки пропускной способности для туннелей.
+Через два релиза, начиная с версии 2.11.0, для I2P потребуется Java 17.</p>
 <p>Как и всегда, мы рекомендуем вам обновиться.
 Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
-</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 Release</summary></details><p>2.8.1 fixes accesses to local sites that were broken in 2.8.0.
-We have added notification bubbles to several applications in the console to highlight application messages.
-We fixed a tunnel test bug that may have been affecting tunnel reliability.
-The addressbook now has a new "latest" tab that displays the newest hostnames added from your subscriptions.
-There are several dark theme fixes and improvements.</p>
-<p>We fixed the installer that previously failed on Java 21 or higher.
-We also fixed installing to directory paths that contain spaces on Linux.
-For those of you that use Docker, we updated outdated Docker container and container libraries.</p>
+</article><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="Вышла 2.8.2" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>Релиз I2P 2.8.2</summary></details><p>В 2.8.2 исправлена проблема, приводящая к ошибкам SHA256, которая появилась в версии 2.8.1.
+Эта проблема проявлялась преимущественно у высокоскоростных маршрутизаторов.</p>
 <p>Как и всегда, мы рекомендуем вам обновиться.
 Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
-</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Local site access fails in 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Local Access Bug</summary></details><p>In 2.8.0, browsing to a local site (either by hostname or b32) will fail.
-The workaround is using localhost and the server port, usually 7658, to bypass I2P.
-For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
-We apologize for the issue and are working on a fix.</p>
-</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 Release</summary></details><p>This release improves I2P by fixing bugs, removing unused code, and improving network stability.</p>
+</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="Вышла 2.8.1" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>Релиз I2P 2.8.1</summary></details><p>В версии 2.8.1 исправлен доступ к локальным сайтам, которые не работали в 2.8.0. Мы добавили всплывающие уведомления в несколько приложений в консоли, чтобы выделять сообщения приложений.
+Мы исправили ошибку при тестировании туннеля, которая могла влиять на его стабильность.
+В адресной книге теперь есть новая вкладка «Последние», на которой отображаются самые новые имена хостов, добавленные из ваших подписок.
+Также была обновлена темная тема.</p>
+<p>Мы исправили установщик, который ранее не работал на Java 21 или выше.
+Мы также исправили установку в каталоги с пробелами в Linux.
+Для тех, кто использует Docker, мы обновили устаревшие контейнеры и библиотеки внутри контейнера.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Проблемы доступа к локальным сайтам в версии 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 баг с локальным доступом</summary></details><p>В версии 2.8.0 переход на локальный сайт (по имени хоста или b32) завершится ошибкой.
+Обходным путем является использование localhost и порта сервера, обычно 7658, для доступа на сайт напрямую (вне I2P).
+Например, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Приносим свои извинения за возникшую проблему и работаем над ее устранением.</p>
+</article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="Релиз I2P 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>Релиз I2P 2.8.0</summary></details><p>Этот релиз улучшает I2P, благодаря исправлениям ошибкок, удалению неиспользуемого кода и повышению стабильности сети.</p>
 <p>We have improved handling of congested routers in the network.
 Issues in UPnP and NAT traversal were addressed to improve connectivity and error reporting.
 We now have a more aggressive strategy for leaseset removal from the NetDb to improve router performance and mitigate overload.
