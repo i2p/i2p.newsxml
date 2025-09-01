@@ -1,5 +1,5 @@
-  <i2p:blocklist signer="zzz@mail.i2p" sig="6:NUAbQZOcQOlRUAnLxjFsrxNfia6ckgqJ-164bLe7lVI8GfaKT61CjXb22DEFnDXri8buGVAOTs0PN-R-J2i4fRUp5qoW2JfZkRafWc~YAuwyMjoytx6aTKOkjJA-OZYFiLHA0sbodDagUajOsBVpwdF97GtNH2f9FyRy9f9j68jV-cGqPh4VEXbk50jFfL4v~ABhuj2xUbNmdJseKP2bQkC21kd0qMqeNfd0Wxpy9Ij-IODHV0tzd-JqgMntXBshMPWE5ywOfuCIpqMCvjvHIYlKKxOmi0e1Khx5wsJ0BnP-JdXB9xbLh0PUeFpZCDuxweOYPb~kihON85xLttRmcSXQ6wGfXechWzqx8bcWqhs501pUBvakEwPFgkkHG-tMHBfJPfLY~xCHGXOOOT0xNtEDuGyDbc-dA1D38a5O6ImKUW4xZUvv~NbQFG8zKfEIVJ5PHg1Ch2sqNB0NMNOP8DxZw311D-vR~yZndk11W~j8S7WLN7tor4t4FTGnPO1gdoMSW-NXR8wlnrkbEFrt6m-HVKZsf18mL~9T~dqaihWBuWi8mcX9ZfseuXdou-ip~FK4ktXVUNBKOADUseykp2GTgQYhZK~QCjppEILmVcf1LyIULqIFvOUhC6JZUX62xsM8jpCuBw3t2o7CjxzZYqRH55zeDDVrfGMAMR~IjKw=">
-    <updated>2025-05-11T22:04:43Z</updated>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:Xx98jC4Ft0sUcSYq0WlRJTPDvmxhi0jf~l6eWr5cjtBgSi2HKZn83vSRv3bMofjiKIv2kxdrgBT7k2kWXc76dOcxDiwklxOzQtJxkERkQnSr9MCcW2Qo3egQ0g1Qj153dr2w6StC8UK2Pp883D-UrDeMS~FRZp7v98dADLklc8LvtYnAZlCBlKg4nn43KcHoG89LCTC8dnklahKnqNpdbTt4krJL3Kg11Xd-iO9w8wo5B53gUmKHlR4Jxx1jR~QMR~aChcRkDHfpkeprILWjjlM7mo5QAXw0ytFR3JxcO6kd5x1~VRPIj~UpKwa6HDUszw6fdpMYIV4CoTgZJ~WymTiZJaSIPvn4sNjQF93jhZs2Z13BiAaT~p-dhI7Z6NMIJuHmIez7g-4HjznEpx85TaG2KlfK3~n-QYqZlclbFwWuuvo5NcCrcX6wUUnNnS4YjFXYxzdppJ9LcCSlYwCrXMIDQKoisv-aiyoy~ntcf5wKdy6yM6zg17Lz2D6avWsMca0XX2s6drRQZhaa8yjGw9RL5q06KV6qopH4gffz-w4h~pi8p2S9hwPEOwGuZ8vdOLwE08CZdGm31eIdmMwH0Ms8~iSpEpsizHObod4l9tdAf47RPFHo1vwqhh~mRHQbjWqAh7VttquBUwKlNgEVYV1fPWFfKf874uDqUZfvgxE=">
+    <updated>2025-09-01T12:05:54Z</updated>
     <i2p:block>93.157.12.248</i2p:block>
     <i2p:block>185.213.155.252</i2p:block>
     <i2p:block>223.167.199.60</i2p:block>
@@ -88,6 +88,8 @@
     <i2p:block>jhyiaB9Nd2RRVInrmSi0rquBwJaLhhiPemlqj7HGo7k=</i2p:block>
     <i2p:block>1jhJoqpi5oFB6yvObMwAiiTi7DT8~WTIAd1zh1XSNEM=</i2p:block>
     <i2p:block>y8q2xWGfKdUzGVkapSZ~wJbqGWJ1vTaPUz0oChBp99M=</i2p:block>
+    <i2p:block>2VLCwzGYz7KYxZ1xTjfBjRdfkKVzJj5BJE1~K0rvNCg=</i2p:block>
+    <i2p:block>HcbQyKfOl4usRgc6YqxOvfHKvCnrbNCpDfg~5OUO-FY=</i2p:block>
     <i2p:block>3.225.127.222</i2p:block>
     <i2p:block>3.234.89.179</i2p:block>
     <i2p:block>5.250.198.133</i2p:block>
@@ -101,6 +103,9 @@
     <i2p:block>59.56.69.164</i2p:block>
     <i2p:block>77.165.6.8</i2p:block>
     <i2p:block>91.138.224.31</i2p:block>
+    <i2p:block>91.198.115.83</i2p:block>
+    <i2p:block>91.198.115.84</i2p:block>
+    <i2p:block>91.198.115.85</i2p:block>
     <i2p:block>93.235.73.128</i2p:block>
     <i2p:block>98.15.244.49</i2p:block>
     <i2p:block>109.197.204.101</i2p:block>
@@ -109,6 +114,8 @@
     <i2p:block>139.59.133.151</i2p:block>
     <i2p:block>145.239.83.230</i2p:block>
     <i2p:block>162.55.230.167</i2p:block>
+    <i2p:block>162.218.65.83</i2p:block>
+    <i2p:block>162.218.65.84</i2p:block>
     <i2p:block>162.218.65.219</i2p:block>
     <i2p:block>172.6.174.68</i2p:block>
     <i2p:block>174.27.149.30</i2p:block>
