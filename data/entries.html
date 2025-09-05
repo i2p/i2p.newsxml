@@ -15,11 +15,12 @@ I2P 2.10.0 is a maintenance release that includes bug fixes and new features.
 </p>
 <p>
 Work continues on the implementation and deployment of post-quantum cryptography in I2P.
-In this release post-quantum cryptography is available but disabled by default.
-Those of you interested in testing post-quantum support should get in touch on #i2p-dev in IRC2P.
+In this release post-quantum cryptography is available but not turned on by default for new tunnels.
+Those of you interested in testing post-quantum support should enable it via the "Hidden Service Manager" under "Encryption Types".
+Be sure to get in touch on #i2p-dev in IRC2P for help and to report any issues you encounter.
 </p>
 <p>
-I2PSnark has been improved by implementing support for datagram-based torrent trackers.
+I2PSnark now supports UDP trackers.
 This should help the network overall by reducing the load of torrent trackers.
 </p>
 <p>
@@ -28,12 +29,7 @@ I2P now has support for asynchronous address lookups and for DNS-like "Service R
 These will provide useful tools to developers building applications on I2P.
 </p>
 <p>
-Outside of the I2P router itself, there has been a major update to the Reseed Server.
-Those reseed operators who have been experiencing issues are advised to upgrade to the latest released version.
-</p>
-<p>
 In one release, at 2.11.0, I2P will require Java 17.
-This includes the Android version of I2P.
 </p>
 <p>
 As usual, we recommend that you update to this release.
