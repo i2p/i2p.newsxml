@@ -1,5 +1,26 @@
 <div>
-<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 リリース</summary></details><p>2.8.2は、2.8.1のリリースで導入されてしまった、SHA256の不具合を原因とするバグを修正します。
+<header title="I2P ニュース">ニュースフィードとルーターの更新</header><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="2.10.0 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>I2P 2.10.0 リリース</summary></details><p>I2P内での耐量子計算機暗号の実装と展開への取り組みを続けています。
+このリリースで耐量子計算機暗号が利用可能になりますが、初期設定では新規トンネル用に有効になりません。
+耐量子計算機暗号の対応の試用に興味がある場合は、"秘匿サービスマネージャー"で"暗号化の種類"から有効化してください。
+IRC2Pの #i2p-dev で助けを求めたり、遭遇したどんな問題も報告してください。</p>
+<p>I2PSnarkは今、UDPトラッカーに対応します。
+これは、トレントのトラッカーの負荷を軽減することで、ネットワーク全体の助けになるでしょう。</p>
+<p>秘匿モードの安定性が改善され、ルーター情報を使い果す可能性が低くなりました。</p>
+<p><b>重要！</b>　次のリリースでは、I2PはJava 17以降が必要です。</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a" title="2.9.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/06/02/2.9.0_released" author="idk" published="2025-06-02T19:00:00Z" updated="2025-06-02T19:00:00Z"><details><summary>I2P 2.9.0 Release</summary></details><p>I2P 2.9.0 is a maintenance release that includes bug fixes and work on new features.</p>
+<p>Thread usage has been improved to improve the performance of the i2ptunnel system.
+NTCP2 has been improved to resist probing attacks.
+The notification system has been integrated into more applications to provide better feedback to users from I2PSnark and the other applications.
+Automatic floodfill enrollment has been fixed.
+Users may observe increased resource usage when acting as floodfill.
+If this is not desired, floodfill mode can be disabled on the /config page.</p>
+<p>A new global map feature is available in the console which shows the locations of routers in your view of the netDb.
+These are the peers that help your router build tunnels and provide services anonymously.</p>
+<p>Work continues on implementing automatic bandwidth management for tunnels, the Datagram2 protocol, and Post-Quantum cryptography.
+In two releases, at 2.11.0, I2P will require Java 17.</p>
+<p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
+</article><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 リリース</summary></details><p>2.8.2は、2.8.1のリリースで導入されてしまった、SHA256の不具合を原因とするバグを修正します。
 このバグは主に、高帯域幅のルーターに影響します。</p>
 <p>例によって、このリリースに更新することをおすすめします。セキュリティを保ち、ネットワークに貢献する最高の方法は最新のリリースを動作させることです。</p>
 </article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 リリース" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 リリース</summary></details><p>2.8.1は、2.8.0の端末内にあるサイトへアクセスする際の欠陥を修正します。

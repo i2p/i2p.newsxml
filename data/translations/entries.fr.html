@@ -1,22 +1,45 @@
 <div>
-<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="2.8.2 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>I2P 2.8.2 Release</summary></details><p>2.8.2 fixes a bug causing SHA256 failures that was introduced in the 2.8.1 release.
-The bug primarily affected high-bandwidth routers.</p>
+<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="2.10.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>I2P 2.10.0 Release</summary></details><p>Work continues on the implementation and deployment of post-quantum cryptography in I2P.
+In this release post-quantum cryptography is available but not turned on by default for new tunnels.
+Those of you interested in testing post-quantum support should enable it via the "Hidden Service Manager" under "Encryption Types."
+Be sure to get in touch on #i2p-dev in IRC2P for help and to report any issues you encounter.</p>
+<p>I2PSnark now supports UDP trackers.
+This should help the network overall by reducing the load of torrent trackers.</p>
+<p>Stability improvements have been made to the Hidden Mode which will reduce the chance of running out of RouterInfos.</p>
+<p><b>Important!</b> In the next release, I2P will require Java 17 or later.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
 La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
-</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="2.8.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>I2P 2.8.1 Release</summary></details><p>2.8.1 fixes accesses to local sites that were broken in 2.8.0.
-We have added notification bubbles to several applications in the console to highlight application messages.
-We fixed a tunnel test bug that may have been affecting tunnel reliability.
-The addressbook now has a new "latest" tab that displays the newest hostnames added from your subscriptions.
-There are several dark theme fixes and improvements.</p>
-<p>We fixed the installer that previously failed on Java 21 or higher.
-We also fixed installing to directory paths that contain spaces on Linux.
-For those of you that use Docker, we updated outdated Docker container and container libraries.</p>
+</article><article id="urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a" title="La version 2.9.0 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/06/02/2.9.0_released" author="idk" published="2025-06-02T19:00:00Z" updated="2025-06-02T19:00:00Z"><details><summary>Sortie de la version 2.9.0 de I2P</summary></details><p>La version 2.9.0 est une mise à jour de maintenance qui inclut des corrections de bogues et l'avancée de nouvelles fonctionnalités.</p>
+<p>L'utilisation des threads a été améliorée pour obtenir de meilleures performances sur le système des tunnels I2P (i2ptunnels).
+NTCP2 a été amélioré pour mieux résister aux attaques par sondage.
+Le système de notification a été intégré à plus d'applications pour donner un meilleur retour aux utilisateurs d'I2PSnark et des autres applications. 
+L'enrôlement automatique des floodfill est opérationnel.
+Vous pourrez remarquer un usage plus important des ressources de votre machine si elle est enrolée en tant que floodfill.
+Si cela n'est pas désirable, le mode floodfill peut être désactivé dans la page de  /config.</p>
+<p>Une nouvelle fonctionnalité est disponible dans la console, cela vous permet de voir la localisation des autres routeurs présents dans votre base de donnée (netDb) sous la forme d'une carte.
+Ce sont ces pairs qui aident votre routeur à créer des tunnels et vous permettent d'accéder à des services anonymement. </p>
+<p>Le travail continue sur l'implémentation d'une gestion automatique de la bande passante des tunnels, du protocole Datagram2 et de la cryptographie post quantum.
+Dans deux versions, à la version 2.11.0, I2P nécessitera Java 17</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
 La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
-</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="Local site access fails in 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>2.8.0 Local Access Bug</summary></details><p>In 2.8.0, browsing to a local site (either by hostname or b32) will fail.
-The workaround is using localhost and the server port, usually 7658, to bypass I2P.
-For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
-We apologize for the issue and are working on a fix.</p>
+</article><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="La version 2.8.2 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>Sortie de la version 2.8.2 de I2P</summary></details><p>La version 2.8.2 corrige un bogue causant des échecs SHA256 qui avaient été introduits dans la version 2.8.1.
+Ce bogue affectait principalement les routeurs à large bande passante.</p>
+<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+</article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="La version 2.8.1 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>Sortie de la version 2.8.1 de I2P</summary></details><p>La version 2.8.1 corrige l'accès aux sites locaux qui ont été cassés dans la version 2.8.0.
+Nous avons ajouté des bulles de notification sur plusieurs applications dans la console pour mettre en avant les messages des applications.
+Nous avons corrigé un bogue dans les tests de tunnels qui affectait peut-être la fiabilité des tunnels.
+Le carnet d'adresses a maintenant un onglet "récent" qui affiche les noms de domaines les plus récemment ajoutés depuis vos abonnements.
+Il y a plusieurs correctifs concernant le thème sombre et des améliorations.</p>
+<p>Nous avons réparé l'installateur qui échouait précédemment avec Java 21 ou supérieur.
+Nous avons aussi réparé l'installation vers des dossiers ayant des espaces dans leur nom sous Linux.
+Pour ceux d'entre vous qui utilisent Docker, nous avons mis à jour les conteneurs ainsi que les bibliothèques Dockers qui étaient obsolètes.</p>
+<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
+La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+</article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="L'accès à des sites locaux échoue sur la version 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>Bogue d'accès aux sites locaux sur la version 2.8.0</summary></details><p>Sur la version 2.8.0, naviguer sur un site local (que cela soit par nom de domaine ou par l'adresse en base 32) échouera.
+La solution est en utilisant localhost et le port du serveur, habituellement 7658, pour contourner I2P.
+Par exemple, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Nous nous excusons pour le problème et travaillons sur un correctif.</p>
 </article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P version 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P version 2.8.0</summary></details><p>Cette version améliore I2P en corrigeant des bogues, en retirant du code inutilisé, et en améliorant la stabilité du réseau.</p>
 <p>Nous avons amélioré la gestion de congestion des routeurs sur le réseau.
 Les problèmes avec l'UPnP et le passage de NAT ont été adressés afin d'améliorer la connectivité et l'envoi d'erreurs.
@@ -29,19 +52,19 @@ La meilleure façon de maintenir la sécurité et d’aider le réseau est d’e
 Des erreurs ont été réglé dans la barre de recherche de I2PSnark et SusiMail.
 Le netDB embarqué dans le tableau de bord opère fonctionne d'une manière plus utile et plus intuitive.
 Plusieures améliorations mineures ont été effectuées dans les écrans de diagnostics dans le mode avancé. </p>
-<p>Bugs have also been fixed to improve compatibility within the network.
-An issue with publishing leaseSets was solved which improves reliability major hidden services.
-I2PSnark no longer changes the infohash when a user changes only the trackers on an existing torrent.
-This prevents torrents from being unnecessarily disrupted by these changes.
-We welcomed this contribution from a new contributor.
-A conflict in the handling of a streaming library option was resolved to improve compatibility with other I2P implementations.</p>
+<p>Des bogues ont aussi été corrigés pour améliorer la compatibilité parmi le réseau.
+Un problème avec la publication des leaseSets a été corrigé ce qui améliore la fiabilité de la majeure partie des services cachés.
+I2PSnark ne change plus le hash d'information quand un utilisateur change seulement les traceurs sur un torrent existant.
+Cela permet d'éviter d'interrompre inutilement les torrents pour ces changements.
+Nous avons chaleureusement accueilli cette contribution d'un nouveau contributeur.
+Un conflit dans la manipulation d'une option d'une bibliothèque de streaming a été résolu pour améliorer la compatibilité avec les autres implémentations d'I2P.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
 La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
-</article><article id="urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632" title="I2P 2.6.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released" author="idk" published="2024-08-06T13:00:00Z" updated="2024-08-06T13:00:00Z"><details><summary>I2P 2.6.1 Release</summary></details><p>I2P 2.6.1 is released in order to fix a User-Interface bug in the Hidden Services Manager application.
-This bug caused scrolling to be disabled, rendering some configuration inaccessible.</p>
+</article><article id="urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632" title="La version 2.6.1 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released" author="idk" published="2024-08-06T13:00:00Z" updated="2024-08-06T13:00:00Z"><details><summary>Sortie de la version 2.6.1 de I2P</summary></details><p>La version 2.6.1 est sortie de sorte à réparer un bogue dans l'interface utilisateur dans l'application de gestion des services cachés.
+Ce bogue désactivait le défilement de la page, rendant certains paramètres inaccessibles.</p>
 <p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
 La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
-</article><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="I2P 2.6.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>I2P 2.6.0 Release</summary></details><p>This release, I2P 2.6.0, continues our work by fixing bugs, adding features, and improving the network's reliability.</p>
+</article><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="La version 2.6.0 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>Sortie de la version 2.6.0 de I2P</summary></details><p>Cette version, I2P 2.6.0, continue notre travail de correction de bogues, ajout de fonctionnalités et d'amélioration de la fiabilité du réseau.</p>
 <p>Newer routers will be favored when selecting floodfill routers.
 I2PSnark received features which improve the performance of PeX(Peer Exchange), in addition to bug fixes.
 Legacy transport protocols are being removed, simplifying the code in the UDP transports.
