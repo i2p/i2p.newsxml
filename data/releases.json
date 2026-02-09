@@ -3,7 +3,7 @@
     "date": "2025-09-08",
     "version": "2.10.0",
     "minVersion": "0.9.9",
-    "minJavaVersion": "1.8",
+    "minJavaVersion": "17",
     "updates": {
       "su3": {
         "torrent": "magnet:?xt=urn:btih:b58df98856553c40dd8a483d2775e6dbdf214bf6&dn=i2pupdate-2.10.0.su3&tr=http://tracker2.postman.i2p/announce.php",
