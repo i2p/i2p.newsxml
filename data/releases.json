@@ -6,7 +6,7 @@
     "minJavaVersion": "17",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:ae6b3cb04109d530ad3d89b08e1489e33324cc40&dn=i2pupdate-2.11.0.su3&tr=http%3A%2F%2Ftracker2.postman.i2p%2Fannounce.php",
+        "torrent": "magnet:?xt=urn:btih:ae6b3cb04109d530ad3d89b08e1489e33324cc40&dn=i2pupdate-2.11.0.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
           "http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.11.0/i2pupdate.su3",
           "http://stats.i2p/i2p/2.11.0/i2pupdate.su3"
