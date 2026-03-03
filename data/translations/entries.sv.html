@@ -1,5 +1,19 @@
 <div>
-<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="2.10.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>I2P 2.10.0 Release</summary></details><p>Work continues on the implementation and deployment of post-quantum cryptography in I2P.
+<header title="I2P-nyheter">Nyheter och uppdateringar för routern</header><article id="urn:uuid:81b7a4f9-b254-4402-bfbe-60a1a891bc2b" title="I2P 2.11.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2026/02/09/i2p_2.11.0_release" author="idk" published="2026-02-09T15:00:00Z" updated="2026-02-09T15:00:00Z"><details><summary>I2P 2.11.0 Release</summary></details><p>As of this release, I2P now requires Java 17 or later.
+Please consult your operating system's documentation for how to update Java.
+I2P now also uses Jetty 12.
+Please check your router logs for migration issues.</p>
+<p>Work in this release continues to improve support for post-quantum cryptography.
+Post-Quantum crypto is now enabled at the ratchet layer by default.</p>
+<p>We have implemented the first round of mitigations to the ongoing spam attacks.
+Additional mitigations are being developed.</p>
+<p>The SAMv3 API has been upgraded to support new datagram types 2 and 3.</p>
+<p>Som vanligt rekommenderar vi att du uppdaterar till den här utgåvan.
+Det bästa sättet att upprätthålla säkerheten och hjälpa nätverket är att använda den senaste utgåvan.</p>
+</article><article id="urn:uuid:c97d2aea-4d1f-47a8-b3d2-3f4755325638" title="Stormy Weather" href="http://i2p-projekt.i2p/en/blog/post/2026/02/04/stormy_weather" author="idk" published="2026-02-04T11:00:00Z" updated="2026-02-04T11:00:00Z"><details><summary>Stormy Weather on I2P</summary></details><p>The I2P network is currently experiencing instability due to ongoing Denial-of-Service and resource exhaustion attacks.
+These attacks are impacting the performance and reliability of I2P services and hidden sites.
+The I2P Development Team is actively investigating and implementing mitigations to counter these attacks.</p>
+</article><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="2.10.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>I2P 2.10.0 Release</summary></details><p>Work continues on the implementation and deployment of post-quantum cryptography in I2P.
 In this release post-quantum cryptography is available but not turned on by default for new tunnels.
 Those of you interested in testing post-quantum support should enable it via the "Hidden Service Manager" under "Encryption Types."
 Be sure to get in touch on #i2p-dev in IRC2P for help and to report any issues you encounter.</p>
@@ -41,10 +55,10 @@ The workaround is using localhost and the server port, usually 7658, to bypass I
 For example, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
 We apologize for the issue and are working on a fix.</p>
 </article><article id="urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994" title="I2P 2.8.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="idk" published="2025-02-03T13:00:00Z" updated="2025-02-03T13:00:00Z"><details><summary>I2P 2.8.0 Release</summary></details><p>This release improves I2P by fixing bugs, removing unused code, and improving network stability.</p>
-<p>We have improved handling of congested routers in the network.
-Issues in UPnP and NAT traversal were addressed to improve connectivity and error reporting.
-We now have a more aggressive strategy for leaseset removal from the NetDb to improve router performance and mitigate overload.
-Other changes were implemented to reduce the observability of events like a router rebooting or shutting down.</p>
+<p>Vi har förbättrat hanteringen av överbelastade routrar i nätverket.
+Problem med UPnP- och NAT-traversering har åtgärdats för att förbättra anslutning och felrapportering.
+Vi har nu en mer aggressiv strategi för borttagning av leaseset från NetDb för att förbättra routerns prestanda och minska överbelastning.
+Andra ändringar har implementerats för att minska observerbarheten av händelser som att en router startar om eller stängs av.</p>
 <p>Som vanligt rekommenderar vi att du uppdaterar till den här utgåvan.
 Det bästa sättet att upprätthålla säkerheten och hjälpa nätverket är att använda den senaste utgåvan.</p>
 </article><article id="urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0" title="I2P 2.7.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release" author="idk" published="2024-10-08T10:00:00Z" updated="2024-10-08T10:00:00Z"><details><summary>I2P 2.7.0 Release</summary></details><p>This release, I2P 2.7.0, continues our work by fixing bugs, improving performance, and adding features.</p>
@@ -107,9 +121,9 @@ This should result in improved delivery and availability for these downstream pr
 Det bästa sättet att upprätthålla säkerheten och hjälpa nätverket är att använda den senaste utgåvan.</p>
 </article><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 Release with Congestion and NetDB Security improvements" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 Release with Congestion and NetDB Security improvements</summary></details><p>This release, I2P 2.4.0, continues our effort to improve the security and stability of the I2P network.
 It contains significant improvements to the Network Database, an essential structure within the I2P network used for disovering your peers.</p>
-<p>The congestion handling changes will improve network stability by giving routers the ability to relieve congested peers by avoiding them.
-This will help the network limit the effect of tunnel spam.
-It will also help the network heal during and after DDOS attacks.</p>
+<p>Ändringarna i hanteringen av överbelastning kommer att förbättra nätverksstabiliteten genom att ge routrar möjligheten att avlasta överbelastade peer-nätverk genom att undvika dem.
+Detta kommer att hjälpa nätverket att begränsa effekten av tunnelspam.
+Det kommer också att hjälpa nätverket att läka under och efter DDOS-attacker.</p>
 <p>The NetDb changes also help secure individual routers and the applications that use them. 
 Routers can now defend against attackers by separating the NetDB into multiple "Sub-DB's" which we use to prevent information leaks between applications and the router.
 This also improves the information available to Java routers about their NetDB activity and simplifies our support for multihoming applications.</p>
@@ -275,7 +289,7 @@ completing a full cryptography upgrade that started about 9 years ago.
 We expect to start joint testing with i2pd soon, and roll it out to the network later this year.</p>
 <p>Som vanligt rekommenderar vi att du uppdaterar till den här versionen. Det bästa sättet att
 upprätthålla säkerheten och hjälpa nätverket är att köra den senaste versionen.</p>
-</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 Utgåva" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
+</article><article id="urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf" title="1.6.0 utgåva" href="http://i2p-projekt.i2p/en/blog/post/2021/11/29/1.6.0-Release" author="zzz" published="2021-11-29T12:00:00Z" updated="2021-11-29T12:00:00Z"><details><summary>1.6.0 enables new tunnel build messages</summary></details><p>This release completes the rollout of two major protocol updates developed in 2021.
 The transition to X25519 encryption for routers is accelerated, and we expect almost all routers to be rekeyed by the end of the year.
 Short tunnel build messages are enabled for a significant bandwidth reduction.</p>
 <p>We added a theme selection panel to the new install wizard.

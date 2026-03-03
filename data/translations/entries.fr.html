@@ -1,14 +1,28 @@
 <div>
-<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="2.10.0 Release" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>I2P 2.10.0 Release</summary></details><p>Work continues on the implementation and deployment of post-quantum cryptography in I2P.
-In this release post-quantum cryptography is available but not turned on by default for new tunnels.
-Those of you interested in testing post-quantum support should enable it via the "Hidden Service Manager" under "Encryption Types."
-Be sure to get in touch on #i2p-dev in IRC2P for help and to report any issues you encounter.</p>
-<p>I2PSnark now supports UDP trackers.
-This should help the network overall by reducing the load of torrent trackers.</p>
-<p>Stability improvements have been made to the Hidden Mode which will reduce the chance of running out of RouterInfos.</p>
-<p><b>Important!</b> In the next release, I2P will require Java 17 or later.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<header title="Nouvelles d’I2P">Fil de nouvelles et mises à jour du routeur</header><article id="urn:uuid:81b7a4f9-b254-4402-bfbe-60a1a891bc2b" title="Sortie de la version 2.11.0 d'I2P" href="http://i2p-projekt.i2p/en/blog/post/2026/02/09/i2p_2.11.0_release" author="idk" published="2026-02-09T15:00:00Z" updated="2026-02-09T15:00:00Z"><details><summary>Sortie de la version 2.11.0 d'I2P</summary></details><p>À partir de cette mise à jour, I2P requiert Java 17 ou ultérieur.
+Veuillez consulter la documentation de votre système d'exploitation pour savoir comment mettre à jour Java.
+I2P utilise aussi maintenant Jetty 12.
+Veuillez regarder les registres du routeur pour vérifier s'il y aurait des problèmes dus à la migration.</p>
+<p>Cette mise à jour améliore encore le support du chiffrement post-quantum.
+Le chiffrement post-quantum est maintenant utilisé par défaut sur la couche ratchet.</p>
+<p>Nous avons implémenté une première stratégie d'atténuation contre l'attaque spam qui se déroule toujours.
+D'autres mesures de mitigations sont en cours de développement.</p>
+<p>L'API SAMv3 a été mise à jour pour prendre en charge les nouveaux types de datagrammes 2 et 3.</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
+</article><article id="urn:uuid:c97d2aea-4d1f-47a8-b3d2-3f4755325638" title="Météo orageuse" href="http://i2p-projekt.i2p/en/blog/post/2026/02/04/stormy_weather" author="idk" published="2026-02-04T11:00:00Z" updated="2026-02-04T11:00:00Z"><details><summary>Météo orageuse sur I2P</summary></details><p>Le réseau est sujet à des instabilités en ce moment dues à des attaques par déni de service et par épuisement des ressources.
+Ces attaques impactent la performance et la fiabilité des services d'I2P ainsi que les sites cachés.
+L'équipe de développement d'I2P enquête activement sur ces attaques et implémente des mitigations pour les contrer.</p>
+</article><article id="urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83" title="Sortie de la version 2.10.0" href="http://i2p-projekt.i2p/en/blog/post/2025/09/08/2.10.0_release" author="idk" published="2025-09-08T09:00:00Z" updated="2025-09-08T09:00:00Z"><details><summary>Sortie de la version 2.10.0 d'I2P</summary></details><p>Le travail continue sur l'implémentation et le déploiement du chiffrement post-quantum dans I2P.
+Dans cette mise à jour le chiffrement post-quantum est disponible, mais n'est pas activé par défaut sur les nouveaux tunnels.
+Pour celles et ceux intéressé.es de le tester, cela est activable sur la page du gestionnaire de service caché dans la partie "Type de chiffrement".
+N'hésitez pas à nous contacter sur #i2p-dev dans IRC2P pour avoir de l'aide ou si vous rencontrez un problème. </p>
+<p>I2PSnark prend maitenant en charge les trackers UDP.
+Cela devrait aider le réseau en réduisant la charge des trackers de torrents.</p>
+<p>Des améliorations de stabilité ont été faites au mode caché, ce qui permettra de réduire les chances de ne plus avoir de InfosRouteur.</p>
+<p><b>Important ! </b> Dans la prochaine mise à jour, I2P requerra Java 17 ou plus récent.</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a" title="La version 2.9.0 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/06/02/2.9.0_released" author="idk" published="2025-06-02T19:00:00Z" updated="2025-06-02T19:00:00Z"><details><summary>Sortie de la version 2.9.0 de I2P</summary></details><p>La version 2.9.0 est une mise à jour de maintenance qui inclut des corrections de bogues et l'avancée de nouvelles fonctionnalités.</p>
 <p>L'utilisation des threads a été améliorée pour obtenir de meilleures performances sur le système des tunnels I2P (i2ptunnels).
 NTCP2 a été amélioré pour mieux résister aux attaques par sondage.
@@ -20,12 +34,12 @@ Si cela n'est pas désirable, le mode floodfill peut être désactivé dans la p
 Ce sont ces pairs qui aident votre routeur à créer des tunnels et vous permettent d'accéder à des services anonymement. </p>
 <p>Le travail continue sur l'implémentation d'une gestion automatique de la bande passante des tunnels, du protocole Datagram2 et de la cryptographie post quantum.
 Dans deux versions, à la version 2.11.0, I2P nécessitera Java 17</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe" title="La version 2.8.2 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release" author="zzz" published="2025-03-29T12:00:00Z" updated="2025-03-29T12:00:00Z"><details><summary>Sortie de la version 2.8.2 de I2P</summary></details><p>La version 2.8.2 corrige un bogue causant des échecs SHA256 qui avaient été introduits dans la version 2.8.1.
 Ce bogue affectait principalement les routeurs à large bande passante.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce" title="La version 2.8.1 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release" author="zzz" published="2025-03-17T14:00:00Z" updated="2025-03-17T14:00:00Z"><details><summary>Sortie de la version 2.8.1 de I2P</summary></details><p>La version 2.8.1 corrige l'accès aux sites locaux qui ont été cassés dans la version 2.8.0.
 Nous avons ajouté des bulles de notification sur plusieurs applications dans la console pour mettre en avant les messages des applications.
 Nous avons corrigé un bogue dans les tests de tunnels qui affectait peut-être la fiabilité des tunnels.
@@ -34,8 +48,8 @@ Il y a plusieurs correctifs concernant le thème sombre et des améliorations.</
 <p>Nous avons réparé l'installateur qui échouait précédemment avec Java 21 ou supérieur.
 Nous avons aussi réparé l'installation vers des dossiers ayant des espaces dans leur nom sous Linux.
 Pour ceux d'entre vous qui utilisent Docker, nous avons mis à jour les conteneurs ainsi que les bibliothèques Dockers qui étaient obsolètes.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e" title="L'accès à des sites locaux échoue sur la version 2.8.0" href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release" author="zzz" published="2025-02-08T16:00:00Z" updated="2025-02-08T16:00:00Z"><details><summary>Bogue d'accès aux sites locaux sur la version 2.8.0</summary></details><p>Sur la version 2.8.0, naviguer sur un site local (que cela soit par nom de domaine ou par l'adresse en base 32) échouera.
 La solution est en utilisant localhost et le port du serveur, habituellement 7658, pour contourner I2P.
 Par exemple, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
@@ -45,8 +59,8 @@ Nous nous excusons pour le problème et travaillons sur un correctif.</p>
 Les problèmes avec l'UPnP et le passage de NAT ont été adressés afin d'améliorer la connectivité et l'envoi d'erreurs.
 Nous avons maintenant une stratégie plus agressive pour le retrait des jeux de baux de la BDréseau pour améliorer les performances des routeurs et atténuer leur surcharge.
 D'autres changements ont été implémentés pour réduire la visibilité d'évènements comme un routeur redémarrant ou s'éteignant</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0" title="I2P version 2.7.0" href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release" author="idk" published="2024-10-08T10:00:00Z" updated="2024-10-08T10:00:00Z"><details><summary>I2P version 2.7.0</summary></details><p>Avec cette version, I2P 2.7.0 continue notre travail sur le réglage de bugs, l'amélioration des performances, et en rajoutant de nouvelles fonctionnalités. </p>
 <p>L'accès aux informations depuis le tableau de bord et les applications à été amélioré.
 Des erreurs ont été réglé dans la barre de recherche de I2PSnark et SusiMail.
@@ -58,12 +72,12 @@ I2PSnark ne change plus le hash d'information quand un utilisateur change seulem
 Cela permet d'éviter d'interrompre inutilement les torrents pour ces changements.
 Nous avons chaleureusement accueilli cette contribution d'un nouveau contributeur.
 Un conflit dans la manipulation d'une option d'une bibliothèque de streaming a été résolu pour améliorer la compatibilité avec les autres implémentations d'I2P.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632" title="La version 2.6.1 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released" author="idk" published="2024-08-06T13:00:00Z" updated="2024-08-06T13:00:00Z"><details><summary>Sortie de la version 2.6.1 de I2P</summary></details><p>La version 2.6.1 est sortie de sorte à réparer un bogue dans l'interface utilisateur dans l'application de gestion des services cachés.
 Ce bogue désactivait le défilement de la page, rendant certains paramètres inaccessibles.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e" title="La version 2.6.0 de I2P est sortie" href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released" author="idk" published="2024-07-19T22:00:00Z" updated="2024-07-19T22:00:00Z"><details><summary>Sortie de la version 2.6.0 de I2P</summary></details><p>Cette version, I2P 2.6.0, continue notre travail de correction de bogues, ajout de fonctionnalités et d'amélioration de la fiabilité du réseau.</p>
 <p>Newer routers will be favored when selecting floodfill routers.
 I2PSnark received features which improve the performance of PeX(Peer Exchange), in addition to bug fixes.
@@ -74,19 +88,19 @@ Additional tweaks were made to peer selection strategies.</p>
 We discourage this because it degrades the performance of I2P and uses up the resources of Tor exits for no benefit.
 If you are a helpful person running both a Tor Exit and I2P we encourage you to continue to do so, using different IP addresses for each.
 Non-exit relays and Tor clients are unaffected by this and do not need to change anything.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:2afb1b0a-0ba3-466b-a665-ccdd5ede9ccf" title="2.5.2 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/05/15/2.5.2-Release" author="zzz" published="2024-05-15T12:00:00Z" updated="2024-05-15T12:00:00Z"><details><summary>2.5.2 with HTTP fix</summary></details><p>I2P 2.5.2 is released to fix a bug introduced in 2.5.0 causing truncation of some HTTP content.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a" title="I2P 2.5.1 Released" href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released" author="idk" published="2024-05-06T10:00:00Z" updated="2024-05-06T10:00:00Z"><details><summary>I2P Release 2.5.1 released to address Denial-of-Service Attacks</summary></details><p>I2P 2.5.1 is released to address Denial-of-Service Attacks affecting the I2P network and services.
 With this release we disable the IP-based parts of the Sybil attack detection tool which were targeted to amplify the effect and duration of the attack.
 This should help the network return to normal operation.
 Those of you who have disabled the Sybil attack detection tool may safely re-enable it.
 Adjustments to other subsystems to improve RouterInfo validation and peer selection have also been made.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
-</article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="Stormy Weather" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>Network Weather: Stormy. I2P is under attack.</summary></details><p>The I2P network is currently under a Denial-of-Service attack.
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
+</article><article id="urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d" title="Météo orageuse" href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather" author="idk" published="2024-04-25T22:00:00Z" updated="2024-04-25T22:00:00Z"><details><summary>Network Weather: Stormy. I2P is under attack.</summary></details><p>The I2P network is currently under a Denial-of-Service attack.
 This attack affects I2P and i2pd but in different ways and is having a serious effect on network health.
 Reachability of I2P sites is badly degraded.</p>
 <p>If you are hosting a service inside I2P and it is hosted on a Floodfill router, you should consider multihoming the service on a Floodfill-disabled router to improve reachability.
@@ -103,8 +117,8 @@ This investigation uncovered one minor isolation-piercing event which we repaire
 This issue was discovered and fixed internally by the I2P team.</p>
 <p>During this release several improvements were made to the process of releasing our downstream distributions for Android and Windows.
 This should result in improved delivery and availability for these downstream products.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7" title="I2P 2.4.0 Release with Congestion and NetDB Security improvements" href="http://i2p-projekt.i2p/en/blog/post/2023/12/18/i2p-release-2.4.0" author="idk" published="2023-12-18T20:00:00Z" updated="2023-12-18T20:00:00Z"><details><summary>I2P 2.4.0 Release with Congestion and NetDB Security improvements</summary></details><p>This release, I2P 2.4.0, continues our effort to improve the security and stability of the I2P network.
 It contains significant improvements to the Network Database, an essential structure within the I2P network used for disovering your peers.</p>
 <p>The congestion handling changes will improve network stability by giving routers the ability to relieve congested peers by avoiding them.
@@ -114,8 +128,8 @@ It will also help the network heal during and after DDOS attacks.</p>
 Routers can now defend against attackers by separating the NetDB into multiple "Sub-DB's" which we use to prevent information leaks between applications and the router.
 This also improves the information available to Java routers about their NetDB activity and simplifies our support for multihoming applications.</p>
 <p>Also included are a number of bug-fixes and enhancements across the I2PSnark and SusiMail applications.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:" title="New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API" href="http://i2p-projekt.i2p/en/blog/post/2023/06/25/new_release_2.3.0" author="idk" published="2023-06-25T12:00:00Z" updated="2023-06-25T12:00:00Z"><details><summary>I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</summary></details><p>This release contains fixes for CVE-2023-36325.
 CVE-2023-36325 is a context-confusion bug which occurred in the bloom filter.
 An attacker crafts an I2NP message containing a unique messageID, and sends that messageID to a client.
@@ -135,16 +149,16 @@ Users who observe explosive blocklist growth during sybil attacks may opt-in to 
 This feature is off-by-default and is only recommended for advanced users at this time.</p>
 <p>This release also includes an API for plugins to modify with the Desktop GUI(DTG).
 It is now possible to add menu items to the system tray, enabling more intuitive launching of plugins which use native application interfaces.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5" title="New Release 2.2.1, Packaging fixes for Docker, Ubuntu Lunar and Debian Sid" href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1" author="idk" published="2023-04-12T03:00:00Z" updated="2023-04-12T03:00:00Z"><details><summary>I2P 2.2.1 - maintenance release for 2.2.0</summary></details><p>After the I2P 2.2.0 release, which was moved forward to accelerate mitigations for the DDOS attacks, we learned about a few developing issues which made it necessary to build and release new packages.
 This release fixes an issue within Ubuntu Lunar and Debian Sid where the router console was inaccessible using an updated version of the jakarta package.
 Docker packages were not reading arguments correctly, resulting in inaccessible configuration files.
 This issue has also been resolved.
 The docker container is now also compatible with Podman.</p>
 <p>This release syncs translations with transifex and updates the GeoIP database.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362" title="New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem" href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0" author="idk" published="2023-03-13T17:00:00Z" updated="2023-03-13T17:00:00Z"><details><summary>Mitigations to DDOS attacks and tweaks to the Streaming subsystem</summary></details><p>We have elected to move forward the 2.2.0 release date, which will be occurring today, March 13, 2023.
 This release includes a changes across the NetDB, Floodfill, and Peer-Selection components which improve the ability of the router to survive DDOS attacks.
 The attacks are likely to continue, but the improvements to these systems will help to mitigate the risk of DDOS attacks by helping the router identify and de-prioritize routers that appear malicious.</p>
@@ -156,8 +170,8 @@ We have never encountered a replayed streaming packet in the wild and do not bel
 zzz has chosen to step away from the project and his responsibilities are being taken on by other team members.
 As such, the project is working on replacing the network statistics infrastructure and moving the development forum to i2pforum.i2p.
 We thank zzz for providing these services for such a long time.</p>
-<p>Comme d’habitude, nous recommandons que vous mettiez à jour vers cette version.
-La meilleure façon de maintenir la sécurité et d’aider le réseau est d’exécuter la dernière version</p>
+<p>Comme d’habitude, nous vous recommandons d'installer cette mise à jour.
+La meilleure façon de garder le réseau sécurisé et de l'aider est d'être sur la dernière version.</p>
 </article><article id="urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7" title="DDoS Update" href="http://zzz.i2p/topics/3593" author="zzz" published="2023-02-14T19:00:00Z" updated="2023-02-14T19:00:00Z"><details><summary>DDoS Update</summary></details><p>We have confirmed that the attacker controls a large number of routers.
 Our investigations and mitigations continue.</p>
 <p>This is a good time to remind people that even after 20 years, the I2P network is relatively small.
@@ -173,7 +187,7 @@ We ask for your patience as we work to improve I2P.</p>
 <p>While the attack has degraded performance, the network remains intact and usable.
   Java I2P routers appear to be handling the issues better than i2pd routers for now.
   Various mitigations should begin to appear in dev builds of both Java and C++ routers in the next week.</p>
-</article><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="2.1.0 Released" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 with numerous SSU2 fixes</summary></details><p>We have learned several things since our 2.0.0 release in November.
+</article><article id="urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007" title="Version 2.1.0 sortie" href="http://i2p-projekt.i2p/en/blog/post/2023/01/09/2.1.0-Release" author="zzz" published="2023-01-09T12:00:00Z" updated="2023-01-09T12:00:00Z"><details><summary>2.1.0 avec de nombreux correctifs SSU2</summary></details><p>We have learned several things since our 2.0.0 release in November.
 As routers have updated to that release, the network has gone from about 1% to over 60% support for our new SSU2 transport protocol.
 First, we have confirmed that SSU2 is a solid, well designed, and secure protocol.
 Second, however, we have found and fixed numerous minor or rarely-triggered bugs in the implementation of the protocol.
