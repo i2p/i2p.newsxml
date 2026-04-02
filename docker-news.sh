@@ -1,5 +1,13 @@
 #! /usr/bin/env sh
 dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+if [ grep darwin "$OSTYPE" > /dev/null ]; then
+    echo "Running on macOS, using greadlink to resolve path"
+    I2PHOME="$HOME/Library/Application Support/i2p"
+else
+    I2PHOME="$HOME/i2p/"
+fi
+
 echo "Changing to xml working dir: $dir"
 cd "$dir" || exit 1
 echo "Removing old backup build directory"
@@ -15,6 +23,6 @@ docker run -it \
     -u $(id -u):$(id -g) \
     --name i2p.newsxml.signing \
     -v $HOME/.i2p-plugin-keys/:/.i2p-plugin-keys/:ro \
-    -v $HOME/i2p/:/i2p/:ro \
+    -v $I2PHOME:/i2p/:ro \
     i2p.newsxml.signing
 docker cp i2p.newsxml.signing:/opt/i2p.newsxml/build build
