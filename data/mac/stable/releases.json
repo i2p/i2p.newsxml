@@ -1,14 +1,14 @@
 [
   {
-    "date": "2026-04-20",
-    "version": "2.12.0",
+    "date": "2026-07-20",
+    "version": "2.13.0",
     "minVersion": "0.9.9",
     "minJavaVersion": "17",
     "updates": {
       "su3": {
-        "torrent": "magnet:?xt=urn:btih:abf16a30894309cf5daf4b08a9dfc8ff080c631e&dn=I2P+Easy+Install+Mac+2.12.0&tr=http://tracker2.postman.i2p/announce.php",
+        "torrent": "magnet:?xt=urn:btih:b4bb6f566e29904c347bbd13fa9104f300f7edc1&tr=http://tracker2.postman.i2p/announce.php",                    
         "url": [
-          "http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.12.0/I2P-2.12.0.dmg.su3"
+          "http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.13.0/I2P-2.13.0.dmg.su3"
         ]
       }
     }
