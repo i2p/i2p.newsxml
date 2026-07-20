@@ -1,6 +1,51 @@
 <div>
 <header title="I2P 新聞">新闻订阅和软件更新</header>
 
+<article
+  id="urn:uuid:7a7e6b34-e814-4194-b5a3-0dd06c2075f9"
+  title="I2P 2.13.0 Release"
+  href="http://i2p-projekt.i2p/en/blog/2026/07/20/i2p_2.13.0_release"
+  author="idk"
+  published="2026-07-20T16:00:00Z"
+  updated="2026-07-20T16:00:00Z">
+<details>
+<summary>I2P 2.13.0 Release</summary>
+</details>
+<p>
+This release of I2P, 2.13.0, has been focused on post-quantum support, performance improvements, and bug fixes that improve usability.
+</p>
+<p>
+Since the 2.12.0 release (April 2026), development has focused on stronger encryption, better bandwidth management, network stability, and a more usable console.
+</p>
+<p>
+Post-quantum protection is now fully available on the main transport (NTCP2), guarding against future "harvest now, decrypt later" attacks.
+The underlying cryptography library has been updated with constant-time operations prevent timing-based attacks.
+Legacy transport code (SSU1) has been fully removed.
+</p>
+<p>
+Tunnels now have per-tunnel bandwidth limits, preventing any single tunnel from monopolizing your connection.
+The system is smarter about congestion.
+</p>
+<p>
+Peer discovery and selection have been tuned for reliability.
+Floodfills are tracked more accurately.
+</p>
+<p>
+The web interface now shows a world map of routers in search results for RouterInfos in the NetDB.
+</p>
+<p>
+Containers now handle log rotation automatically, drop privileges properly, manage IP addresses correctly in containerized environments, and start up more reliably.
+</p>
+<p>
+The BitTorrent client (i2psnark) reannounces faster after magnet links resolve, handles edge cases better, and cleans up bandwidth limiters on exit.
+The email client (Susimail) offers an experimental standalone build and removes old login code.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</article>
+
 <article id="urn:uuid:8be78aae-ef44-4da2-b1a2-f3eee6b0ae98" title="I2P 2.12.0 Release" href="http://i2p-projekt.i2p/en/blog/2026/04/20/i2p-2.12.0-release/" author="idk" published="2026-04-20T22:00:00Z" updated="2026-04-20T22:00:00Z">
 <details>
 <summary>I2P 2.12.0 Release</summary>
