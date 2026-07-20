@@ -8,8 +8,8 @@
       "su3": {
         "torrent": "magnet:?xt=urn:btih:9a84b05808176d2f790e29e7e561ec9404a2636a&dn=i2pupdate-2.13.0.su3&tr=http://tracker2.postman.i2p/announce.php",
         "url": [
-          "http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.12.0/i2pupdate.su3",
-          "http://stats.i2p/i2p/2.12.0/i2pupdate.su3"
+          "http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.13.0/i2pupdate.su3",
+          "http://stats.i2p/i2p/2.13.0/i2pupdate.su3"
         ]
       }
     }
