@@ -1,19 +1,23 @@
-FROM debian:oldoldstable
+FROM openjdk:17.0.2-jdk-bullseye
 ENV PATH=/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV PYTHONPATH=/opt/newsxml
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
+RUN echo "deb http://archive.debian.org/debian/ bullseye main contrib non-free" > /etc/apt/sources.list
+RUN echo "deb http://archive.debian.org/debian/ bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+#RUN echo "deb http://security.debian.org/debian-security bullseye/updates main contrib non-free" >> /etc/apt/sources.list
+RUN echo "deb http://archive.debian.org/debian/ bullseye-backports main contrib non-free" >> /etc/apt/sources.list
 RUN apt-get update 
-RUN apt-get install -y python \
-	python-dev \
-	virtualenv \
-	pip \
-	libxml2-dev \
-	libxslt1-dev \
-	openjdk-17-jdk \
-	locales
+RUN apt-get install -y python
+#RUN apt-get install -y python-dev
+RUN apt-get install -y virtualenv
+RUN apt-get install -y pip
+RUN apt-get install -y libxml2-dev
+RUN apt-get install -y libxslt1-dev
+RUN apt-get install -y locales
+RUN apt-get install -y openjdk-17-jre
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
     locale-gen
 COPY . /opt/i2p.newsxml

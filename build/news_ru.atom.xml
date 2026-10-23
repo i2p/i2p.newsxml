@@ -1,0 +1,1732 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:i2p="http://geti2p.net/en/docs/spec/updates" xmlns="http://www.w3.org/2005/Atom" xml:lang="ru">
+  <id>urn:uuid:60a76c80-d399-11d9-b91C-543213999af6</id>
+  <title>Новости I2P</title>
+  <updated>2026-10-23T01:39:31.031993+00:00</updated>
+  <link href="http://i2p-projekt.i2p/"/>
+  <link href="http://tc73n4kivdroccekirco7rhgxdg5f3cjvbaapabupeyzrqwv5guq.b32.i2p/news.atom.xml" rel="self"/>
+  <link href="http://dn3tvalnjz432qkqsvpfdqrwpqkw3ye4n4i2uyfr4jexvo3sp5ka.b32.i2p/news/news.atom.xml" rel="alternate"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Новостной канал и обновления маршрутизатора</subtitle>
+  <i2p:release date="2026-10-20" minVersion="0.9.9" minJavaVersion="17">
+    <i2p:version>2.14.0</i2p:version>
+    <i2p:update type="su3">
+      <i2p:torrent href="magnet:?xt=urn:btih:c4d86320d18e2695582cef4c6c3a983620b4e09a&amp;dn=i2pupdate-2.14.0.su3&amp;tr=http://opentracker.dg2.i2p/announce.php&amp;xl=21554514"/>
+      <i2p:url href="http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.14.0/i2pupdate.su3"/>
+      <i2p:url href="http://stats.i2p/i2p/2.14.0/i2pupdate.su3"/>
+    </i2p:update>
+  </i2p:release>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:ZkIGxnGgMTM2UwglKaEzIhUUWqNXN4Ue4PWeOjOwhvdxTX9wi5KpczisUFunWLDty31-88LT665pdW6kxagYtjk4pQPNM8Ejq7UTOjWMNt4AuxkrlKh44BWiEbhjR9BBLivQWn3IqkiXtLMOC-GOrZeG77RlUa9Nl3jNzCfwDWr8sjy7-dF8qg8t1r18HPojHqSvV8IR9jlV8GYp~T36uOXKP30VwYL91yNhQWOzZtVatnAeFUBVSFvWJR9IHjmre-RZnkcS7RgPLgbp1i-0mTQkm-jCAuJX~chBGWQYJqJvCRi9om0Y093WEqRyNzOO7VyLbTo85t8Nzk8nxNSOowLw0SBWp5IC19R4K10iOfN-kld7EQJz4dbXLpctITY4RaDLOF4be6lWIBm1rV1-wbxT17a3zZSCE7-MRfeSofVo0qKx~B57MeDkWNrYdfhzgagRnEHRyc8M84p3QsqcmSgGdsXeiN~RZcWNmSgedTJ8ctkTGq9LxCPjrfhsjbsnL6HS7MjhOg4-g9WWJrQ1~mr6ovso-bK2f6TwLiyGrd--NGoQCFyLBo8WgTTxwbr3jEidmSqnJUj6IwgZEbf7523K5s9NhsFIc9I8iNQjsIT110T0cEPT~zr5bCdoAkPIcQMyZ2zUXexAQWP~R49LCUxGHHUuoGnDXKCVe2nMcdk=">
+    <updated>2026-03-28T12:28:06Z</updated>
+    <i2p:block>93.157.12.248</i2p:block>
+    <i2p:block>185.213.155.252</i2p:block>
+    <i2p:block>223.167.199.60</i2p:block>
+    <i2p:block>2a03:1b20:6:f011:0:0:0:a02e</i2p:block>
+    <i2p:block>JbifzqZZqeTXtxK6KDqNUPWaW-phKqeS~tfJT82SIYI=</i2p:block>
+    <i2p:block>QPUV1bW6arN2zp3gTBMvOEvgSuKbXUqk2oqHkb~UoSw=</i2p:block>
+    <i2p:block>CyLg6w8lypk1gnAX-CdG8O4NCR86hq8ifge6QKXAoJg=</i2p:block>
+    <i2p:block>DtQsGzkbeR3nilr6ZvywR2O7-f0XaaV~YfHXohqwjgI=</i2p:block>
+    <i2p:block>lam824jtkYq4qTiZHT~TkdHoVTVRwnLghgFheZbgDhU=</i2p:block>
+    <i2p:block>Qqj3p9F0Y~qXAkSz3FYo~e~OfSgaM5qZ2OYUrzOtrgM=</i2p:block>
+    <i2p:block>NUo2wncm49XY8f~dzdxII5fnVopL9oT92KC9JC3IOFY=</i2p:block>
+    <i2p:block>GEpq15rG0XjIvP7oZCW9cmL8Dhb8eLSweTU3hZuT2fE=</i2p:block>
+    <i2p:block>aNBK4IQwYCejjMnD31hapWQvova~u1OINPnHCqceljw=</i2p:block>
+    <i2p:block>6lWUeurYBX4w6lsfPdkAxbFKXoGEXKxofXwlWOC3RQA=</i2p:block>
+    <i2p:block>xKAdoKJUvrSEGS0gREC4lEUawa4IKsVnQU189X~QQhk=</i2p:block>
+    <i2p:block>2EJgHsXnjQo8gHt-jmS-GlhXjqtHnNgWiK~QyQ0Rsh4=</i2p:block>
+    <i2p:block>o-atVIIK0N2Eu6r2Nq42cAVqlK6wJGrXqU0Ps3x0HmY=</i2p:block>
+    <i2p:block>2C-fFbGjOJks1mDYxlQ~~M3Q-tX9Dx~tyAUHPzfct~E=</i2p:block>
+    <i2p:block>Qc5rvLavMYNhzQBQfBgFkZbesEvGW~3nz1ZwllR1MoM=</i2p:block>
+    <i2p:block>0bLUiXtgYCzAy3533C~wjaUxUkH63JGSRlx2huH-6Bo=</i2p:block>
+    <i2p:block>3~ZOYyQFJAJXxuynetnoijOFjliGGmN9kZ5BkiSupy0=</i2p:block>
+    <i2p:block>4V3EsOGTWrIXJDNaGpOLZrnSGWgSxwgZ7Tsxb0txFtE=</i2p:block>
+    <i2p:block>4yr5497JpDG-K7s1unMbvWBPPfds72Qw27DNH9FpcKQ=</i2p:block>
+    <i2p:block>5MAAvwKgnG7hYbi93q0Luro~-AyIjO5xvUbABc2T3IU=</i2p:block>
+    <i2p:block>5SI8wX-KUefASp0KbjuQ2KaCyZboFHcsXsgwaONVqzc=</i2p:block>
+    <i2p:block>6lKXyJfzTrrt2B7R-p24FSMQQHmyPBb1JSp1N49wdrM=</i2p:block>
+    <i2p:block>6yUKWdxJKF0wtxd3Ro0VfkSlLe74gvM2b0IJbzm~mT0=</i2p:block>
+    <i2p:block>7NzcMy-ty6WICyPHbYBuGQlbcMs7dV-5lN2HIZ-PvuY=</i2p:block>
+    <i2p:block>9ELLjPmb9PBMTOeXqMsRmRfLRlctQMELTZFrkDBOiVA=</i2p:block>
+    <i2p:block>AQ2Wq8Guob3CI1jve~W5wErlaaSF-iZz9mhzKsFmWeo=</i2p:block>
+    <i2p:block>BhqgIK5aTiL8UosUjmBMsCl5NtNCFCZTu0wUSFt0Mkg=</i2p:block>
+    <i2p:block>cC8PmCV4AehT0hKPAfp3yP1DYJKFxmWBk8JWSVZT8Oo=</i2p:block>
+    <i2p:block>cfhT8b5PNxSIFhmg-6ZvP78W5eD9jtGBLjM~oIRRqoE=</i2p:block>
+    <i2p:block>fGe1bjAyj-V0kRJmbXbCGp9y0ZVkYDZksdvfBwo2nME=</i2p:block>
+    <i2p:block>G7d8g3yIjMTG1M6ui1zWf-YYYe0K3Pz8dCg~gRHM-KI=</i2p:block>
+    <i2p:block>Giy8ehFNw~RyB5KV5BCMzgMUMxVI2hiWFS3gdWPthCA=</i2p:block>
+    <i2p:block>HPDYhgrDNJK0STyIJM-A3Q~aMU9D63P-7Bw-Qs15Bmk=</i2p:block>
+    <i2p:block>I5rpywP3dJsP1bfKzp-QUsRCNgT2sO7sTqxuH8~AjmQ=</i2p:block>
+    <i2p:block>ioBAP6QWbWpzkUbmpKn2eWe~XlNmFuIsTJxvstMt2hU=</i2p:block>
+    <i2p:block>jizbTEmYpthOrW2louGRyR057W9G4vcOKtvk~lPqvYg=</i2p:block>
+    <i2p:block>JtgxUY6P7VcgJV3HQUzAaUSVInTR20PT8E34xvwkEck=</i2p:block>
+    <i2p:block>kISWAKZmX0n9C~vQ19oTdL9iWdLs1BfDrssNiZunubw=</i2p:block>
+    <i2p:block>krZK4oqwsee2Qsevb9b9n5jGuNrVaTJlt-nE8G8ft5w=</i2p:block>
+    <i2p:block>lj1A58-iv9W4V9r-jrHZISKncWlSYaQCYvQcBvZppEg=</i2p:block>
+    <i2p:block>N9GkaK294wlSRKaUicSimnxDwebUWKggFlrBUpe00KA=</i2p:block>
+    <i2p:block>Oy4ZaiVxxel1XAWW1p23JlekMGEFvWbWuizQMRnG~tc=</i2p:block>
+    <i2p:block>q1rjeEo0hB61qIcER59aEdQWsX8-gpW-K862deAJkp0=</i2p:block>
+    <i2p:block>QYkhWCudqWhty-TvJ-sFd0z5uLYBXHW5t61L-I6ltJU=</i2p:block>
+    <i2p:block>RDX~26d6ugO1C-DEhkEzPQaGHurvfgKL0cXZlqr4C6Y=</i2p:block>
+    <i2p:block>RjBVJtLfMhLgaSNDpv-D4UqybO5GWSgtcJqAqqd6L~Q=</i2p:block>
+    <i2p:block>S7-xKQ1wSqiqmjODZrTWprTD1L0dtiZlwT055DArGFw=</i2p:block>
+    <i2p:block>SdXmd046uxhAvscEM7ogR6HtH2eWBiyo4~XOnj3dr7c=</i2p:block>
+    <i2p:block>Sm6IkscEdA0vBy9Cx~VQcgB2f5e0fvQ2CEu8fkceL1s=</i2p:block>
+    <i2p:block>tFv6N4kwPdOlMXo8VqoOO3UrSsWAg~-5nadozzBm2Tc=</i2p:block>
+    <i2p:block>TJwtpwSS7yANCDPDfbGdx3f4lDQNYcfA-0X75jHbbNU=</i2p:block>
+    <i2p:block>w~1a6nvIBJfFHGur0mPJmjlwjSBOrWGTC-INPEesPJ0=</i2p:block>
+    <i2p:block>wMIJ9Ax~4kW-jkFQLTHfzSSBqaMSy3EKiBH8YUQjAVA=</i2p:block>
+    <i2p:block>wPorvAjMYj6FipnUHruA0dF2K-Xm~GngCY3QDIVlZyU=</i2p:block>
+    <i2p:block>wWP~J-g-e8Fok7NpTURpJJfeNTGB5S7F15QshyRn9n0=</i2p:block>
+    <i2p:block>X52PGfb8TysUDO7pvQIKGeoPcmWx4jwQJjoHLDD7A5Y=</i2p:block>
+    <i2p:block>xirj-SFuNcYapYv7vnkfa2peqqCzuWeKeUB937Odl3s=</i2p:block>
+    <i2p:block>xXvAxpq~FFyNx9bm6XlPVXNQ7vYfGkjC7nj0xWvNjwE=</i2p:block>
+    <i2p:block>YbIKZpPSqdohVjzi8s~N-D0t~bbayKM4hHcBk-fcJvY=</i2p:block>
+    <i2p:block>ynL10zIHBslFPSf1cmAONogYvNm1WrZ9bgE0txHzOr4=</i2p:block>
+    <i2p:block>YSfLfZVPUvvyQtAltBSJ2RHcU~uTiV0x0H4y~QIPczc=</i2p:block>
+    <i2p:block>ZTOVAP9GJYEKu8CjCQBmOigw79oyTVpQQguTDqwv2EU=</i2p:block>
+    <i2p:block>-xH2G0zblY4mRQxeb1WtXAJwyy8hlsrqpY3~fgPBnoU=</i2p:block>
+    <i2p:block>~CrJVoN00MNvEjZIWudnWFzjqDPDsZxKuFq1Y~Sh8fo=</i2p:block>
+    <i2p:block>8ej3XrMgI2IMIwP4X6~h9Nw4vtDV~2yX1nI7u-nOidg=</i2p:block>
+    <i2p:block>o0N6orDrgfMY29G4Z8Q7CRwhSnvw4LuuKhvadrtDsSE=</i2p:block>
+    <i2p:block>tATb9Xe-Tj5QqTm1u1zY1CZlqK0X6Ygn6LjnQBjb55w=</i2p:block>
+    <i2p:block>xnMzPiEhGe2mFuoN8PiB5voV-H2JLk4g5a054mVmFds=</i2p:block>
+    <i2p:block>yb2KWHXrtLdSGG4G53GXjVRilYXFDj7KzsHMLYCNK3o=</i2p:block>
+    <i2p:block>yQN8Qt0K0yi89DrMaMa0LhHpQkxj2X3zS0SATe5QAXI=</i2p:block>
+    <i2p:block>F~UzS1mTN3XYlnOfidMBv5Z4lHI7dsCZ8N5mxpyc-OU=</i2p:block>
+    <i2p:block>6NMfknVMawT~baK0VanEkbXvO2hJCLJ5rreieysRrNE=</i2p:block>
+    <i2p:block>MogB-V71uOsLBu5z9gW5sa3zzUfI5GD43selaYiOy4U=</i2p:block>
+    <i2p:block>~SN8k6Hid107ighTnxRSiwTwwPMjEpPbDEyEY--zD~U=</i2p:block>
+    <i2p:block>ixpaFrLz3C-Fo~6~TOKtQIsHRvmdC~hOFtmJenNz3-Y=</i2p:block>
+    <i2p:block>2l9Eg2BKOmu8hixe~UyElpu~~2RXkhBOM5j8rSqjsKs=</i2p:block>
+    <i2p:block>i1Viub4WK3l-6KbZHifQCY9aGwhU8JG3u5gg5fVJWlM=</i2p:block>
+    <i2p:block>nA-DRzbe33yVHcvITENBWKJ~yVVie6hngoQbB~MoYH0=</i2p:block>
+    <i2p:block>jDFMFtR3wmtuixX0LajCoW1Ko-fSU8sWTtkuqKM9ti8=</i2p:block>
+    <i2p:block>nRTKhTmfXEmpLGe7QmpEPOZr6C3SpX0ke~sgqcX8axA=</i2p:block>
+    <i2p:block>3lgHIOIADdUIoyJjWymzE1Xikx7RojrEBfYT6P7eLzk=</i2p:block>
+    <i2p:block>jhyiaB9Nd2RRVInrmSi0rquBwJaLhhiPemlqj7HGo7k=</i2p:block>
+    <i2p:block>1jhJoqpi5oFB6yvObMwAiiTi7DT8~WTIAd1zh1XSNEM=</i2p:block>
+    <i2p:block>y8q2xWGfKdUzGVkapSZ~wJbqGWJ1vTaPUz0oChBp99M=</i2p:block>
+    <i2p:block>2VLCwzGYz7KYxZ1xTjfBjRdfkKVzJj5BJE1~K0rvNCg=</i2p:block>
+    <i2p:block>HcbQyKfOl4usRgc6YqxOvfHKvCnrbNCpDfg~5OUO-FY=</i2p:block>
+    <i2p:block>tFPtta1sdB7ybYqXjHZnk2jcn2IHxaQUWhWRCVTJ-H0=</i2p:block>
+    <i2p:block>3.225.127.222</i2p:block>
+    <i2p:block>3.234.89.179</i2p:block>
+    <i2p:block>5.250.198.133</i2p:block>
+    <i2p:block>18.210.78.199</i2p:block>
+    <i2p:block>31.155.206.27</i2p:block>
+    <i2p:block>38.242.206.110</i2p:block>
+    <i2p:block>44.210.192.47</i2p:block>
+    <i2p:block>46.53.244.68</i2p:block>
+    <i2p:block>52.60.61.249</i2p:block>
+    <i2p:block>52.70.234.81</i2p:block>
+    <i2p:block>59.56.69.164</i2p:block>
+    <i2p:block>77.165.6.8</i2p:block>
+    <i2p:block>91.138.224.31</i2p:block>
+    <i2p:block>91.198.115.83</i2p:block>
+    <i2p:block>91.198.115.84</i2p:block>
+    <i2p:block>91.198.115.85</i2p:block>
+    <i2p:block>93.235.73.128</i2p:block>
+    <i2p:block>98.15.244.49</i2p:block>
+    <i2p:block>109.197.204.101</i2p:block>
+    <i2p:block>109.197.205.47</i2p:block>
+    <i2p:block>110.137.220.12</i2p:block>
+    <i2p:block>139.59.133.151</i2p:block>
+    <i2p:block>145.239.83.230</i2p:block>
+    <i2p:block>162.55.230.167</i2p:block>
+    <i2p:block>162.218.65.83</i2p:block>
+    <i2p:block>162.218.65.84</i2p:block>
+    <i2p:block>162.218.65.219</i2p:block>
+    <i2p:block>172.6.174.68</i2p:block>
+    <i2p:block>174.27.149.30</i2p:block>
+    <i2p:block>176.88.62.2</i2p:block>
+    <i2p:block>185.209.196.140</i2p:block>
+    <i2p:block>185.209.196.150</i2p:block>
+    <i2p:block>185.209.196.180</i2p:block>
+    <i2p:block>185.65.134.232</i2p:block>
+    <i2p:block>185.65.134.233</i2p:block>
+    <i2p:block>185.65.134.253</i2p:block>
+    <i2p:block>186.166.142.51</i2p:block>
+    <i2p:block>193.32.249.139</i2p:block>
+    <i2p:block>2a03:1b20:6:f011:0:0:0:a07e</i2p:block>
+  </i2p:blocklist>
+  <entry>
+    <id>urn:uuid:7a7e6b34-e814-4194-b5a3-0dd06c2075f9</id>
+    <title>I2P 2.13.0 Release</title>
+    <updated>2026-07-20T16:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release of I2P, 2.13.0, has been focused on post-quantum support, performance improvements, and bug fixes that improve usability.
+</p>
+<p>
+Since the 2.12.0 release (April 2026), development has focused on stronger encryption, better bandwidth management, network stability, and a more usable console.
+</p>
+<p>
+Post-quantum protection is now fully available on the main transport (NTCP2), guarding against future "harvest now, decrypt later" attacks.
+The underlying cryptography library has been updated with constant-time operations prevent timing-based attacks.
+Legacy transport code (SSU1) has been fully removed.
+</p>
+<p>
+Tunnels now have per-tunnel bandwidth limits, preventing any single tunnel from monopolizing your connection.
+The system is smarter about congestion.
+</p>
+<p>
+Peer discovery and selection have been tuned for reliability.
+Floodfills are tracked more accurately.
+</p>
+<p>
+The web interface now shows a world map of routers in search results for RouterInfos in the NetDB.
+</p>
+<p>
+Containers now handle log rotation automatically, drop privileges properly, manage IP addresses correctly in containerized environments, and start up more reliably.
+</p>
+<p>
+The BitTorrent client (i2psnark) reannounces faster after magnet links resolve, handles edge cases better, and cleans up bandwidth limiters on exit.
+The email client (Susimail) offers an experimental standalone build and removes old login code.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/07/20/i2p-2.13.0-release"/>
+    <summary>I2P 2.13.0 Release</summary>
+    <published>2026-07-20T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:8be78aae-ef44-4da2-b1a2-f3eee6b0ae98</id>
+    <title>I2P 2.12.0 Release</title>
+    <updated>2026-04-20T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release of I2P, 2.12.0, continues our work on improving the performance and security of the I2P network.
+It includes a number of bug fixes and improvements to the I2P software.
+</p>
+<p>
+Work continues on the implementation of post-quantum cryptography.
+Improvements to the existing post-quantum implementations improve stability and interoperability with other I2P implementations.
+We encourage early adopters to continue testing and providing feedback to the I2P team.
+</p>
+<p>
+A SAMv3 bug which was affecting applications by causing failed lookups has been fixed.
+Users of SAMv3 applications such as Bitcoin and Bittorrent clients should update to this release to resolve these issues.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/04/20/i2p-2.12.0-release/"/>
+    <summary>I2P 2.12.0 Release</summary>
+    <published>2026-04-20T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83</id>
+    <title>2.10.0 Release</title>
+    <updated>2025-09-08T09:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Work continues on the implementation and deployment of post-quantum cryptography in I2P.
+In this release post-quantum cryptography is available but not turned on by default for new tunnels.
+Those of you interested in testing post-quantum support should enable it via the "Hidden Service Manager" under "Encryption Types."
+Be sure to get in touch on #i2p-dev in IRC2P for help and to report any issues you encounter.</p>
+<p>I2PSnark now supports UDP trackers.
+This should help the network overall by reducing the load of torrent trackers.</p>
+<p>Stability improvements have been made to the Hidden Mode which will reduce the chance of running out of RouterInfos.</p>
+<p><b>Important!</b> In the next release, I2P will require Java 17 or later.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2025/09/08/i2p-2.10.0-release"/>
+    <summary>I2P 2.10.0 Release</summary>
+    <published>2025-09-08T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a</id>
+    <title>Вышла версия 2.9.0</title>
+    <updated>2025-06-02T19:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.9.0 — это релиз с исправлением ошибок и небольшим количеством новых функций.</p>
+<p>Улучшена производительности системы i2ptunnel за счёт оптимизации использования потоков.
+В NTCP2 улучшена защита от зондирующих атак.
+Система уведомлений интегрирована в большее количество приложений, чтобы нагляднее отображать статусы в I2PSnark и других приложениях.
+Исправлена автоматическая регистрация флудфилда.
+Пользователи могут заметить повышенное использование ресурсов при работе в качестве floodfill.
+Если этот режим сильно нагружает систему, floodfill можно отключить на странице /config.</p>
+<p>В консоли доступна новая функция — глобальная карта, которая показывает местоположение маршрутизаторов в вашем представлении netDb.
+Это узлы, которые помогают вашему маршрутизатору строить туннели и предоставлять анонимную связность сети.</p>
+<p>Продолжаются работы по внедрению протокола Datagram2, постквантовой криптографии и автоматической подстройки пропускной способности для туннелей.
+Через два релиза, начиная с версии 2.11.0, для I2P потребуется Java 17.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2025/06/02/i2p-2.9.0-release"/>
+    <summary>Релиз I2P 2.9.0</summary>
+    <published>2025-06-02T19:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe</id>
+    <title>Вышла 2.8.2</title>
+    <updated>2025-03-29T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В 2.8.2 исправлена проблема, приводящая к ошибкам SHA256, которая появилась в версии 2.8.1.
+Эта проблема проявлялась преимущественно у высокоскоростных маршрутизаторов.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release"/>
+    <summary>Релиз I2P 2.8.2</summary>
+    <published>2025-03-29T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce</id>
+    <title>Вышла 2.8.1</title>
+    <updated>2025-03-17T14:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В версии 2.8.1 исправлен доступ к локальным сайтам, которые не работали в 2.8.0. Мы добавили всплывающие уведомления в несколько приложений в консоли, чтобы выделять сообщения приложений.
+Мы исправили ошибку при тестировании туннеля, которая могла влиять на его стабильность.
+В адресной книге теперь есть новая вкладка «Последние», на которой отображаются самые новые имена хостов, добавленные из ваших подписок.
+Также была обновлена темная тема.</p>
+<p>Мы исправили установщик, который ранее не работал на Java 21 или выше.
+Мы также исправили установку в каталоги с пробелами в Linux.
+Для тех, кто использует Docker, мы обновили устаревшие контейнеры и библиотеки внутри контейнера.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release"/>
+    <summary>Релиз I2P 2.8.1</summary>
+    <published>2025-03-17T14:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e</id>
+    <title>Проблемы доступа к локальным сайтам в версии 2.8.0</title>
+    <updated>2025-02-08T16:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В версии 2.8.0 переход на локальный сайт (по имени хоста или b32) завершится ошибкой.
+Обходным путем является использование localhost и порта сервера, обычно 7658, для доступа на сайт напрямую (вне I2P).
+Например, <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Приносим свои извинения за возникшую проблему и работаем над ее устранением.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release"/>
+    <summary>2.8.0 баг с локальным доступом</summary>
+    <published>2025-02-08T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994</id>
+    <title>Релиз I2P 2.8.0</title>
+    <updated>2025-02-03T13:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Этот релиз улучшает I2P, благодаря исправлениям ошибкок, удалению неиспользуемого кода и повышению стабильности сети.</p>
+<p>We have improved handling of congested routers in the network.
+Issues in UPnP and NAT traversal were addressed to improve connectivity and error reporting.
+We now have a more aggressive strategy for leaseset removal from the NetDb to improve router performance and mitigate overload.
+Other changes were implemented to reduce the observability of events like a router rebooting or shutting down.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release"/>
+    <summary>Релиз I2P 2.8.0</summary>
+    <published>2025-02-03T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0</id>
+    <title>Релиз I2P 2.7.0</title>
+    <updated>2024-10-08T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В этом релизе, I2P 2.7.0, продолжена работа над исправлением ошибок, улучшением производительности и добавлением новых возможностей.</p>
+<p>Улучшен доступ к информации из консоли и приложений.
+Исправлены проблемы в I2PSnark и поиске в SusiMail.
+Поиск по netDB, встроенный в консоль маршрутизатора, стал более интуитивным и полезеным.
+Незначительные улучшения в отображение диагностической информации в расширенном режиме.
+</p>
+<p>Также были исправлены ошибки для улучшения совместимости внутри сети.
+Решена проблема с публикацией контактных данных адресатов (LeaseSets), что повышает надежность основных скрытых сервисов.
+I2PSnark больше не меняет infohash, если пользователь меняет только трекеры в существующем торренте.
+Это предотвращает ненужное дублирование торрентов.
+За это изменение мы благодарим нового участника проекта.
+Исправлен конфликт при обработке опции потоковой библиотеки, для улучшения совместимости с другими реализациями I2P.
+</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release"/>
+    <summary>Релиз I2P 2.7.0</summary>
+    <published>2024-10-08T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632</id>
+    <title>Релиз I2P 2.6.1</title>
+    <updated>2024-08-06T13:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия I2P 2.6.1 выпущена для исправления ошибки пользовательского интерфейса в приложении управления скрытыми сервисами.
+Эта ошибка приводила к неработающей прокрутке (скроллингу), что скрывало часть настроек.
+</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released"/>
+    <summary>Релиз I2P 2.6.1</summary>
+    <published>2024-08-06T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e</id>
+    <title>I2P 2.6.0 Released</title>
+    <updated>2024-07-19T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В этом релизе, I2P 2.6.0, продолжена работа над исправлением ошибок, добавлением новых возможностей и улучшением сетевой стабильности.</p>
+<p>Newer routers will be favored when selecting floodfill routers.
+I2PSnark received features which improve the performance of PeX(Peer Exchange), in addition to bug fixes.
+Legacy transport protocols are being removed, simplifying the code in the UDP transports.
+Locally-hosted destination will be reachable by local clients without requesting their LeaseSet, improving performance and testability.
+Additional tweaks were made to peer selection strategies.</p>
+<p>I2P no longer allows I2P-over-Tor, connections from Tor exit IP addresses are now blocked.
+We discourage this because it degrades the performance of I2P and uses up the resources of Tor exits for no benefit.
+If you are a helpful person running both a Tor Exit and I2P we encourage you to continue to do so, using different IP addresses for each.
+Non-exit relays and Tor clients are unaffected by this and do not need to change anything.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released"/>
+    <summary>I2P 2.6.0 Release</summary>
+    <published>2024-07-19T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2afb1b0a-0ba3-466b-a665-ccdd5ede9ccf</id>
+    <title>2.5.2 Released</title>
+    <updated>2024-05-15T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.5.2 is released to fix a bug introduced in 2.5.0 causing truncation of some HTTP content.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/05/15/2.5.2-Release"/>
+    <summary>2.5.2 with HTTP fix</summary>
+    <published>2024-05-15T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a</id>
+    <title>I2P 2.5.1 Released</title>
+    <updated>2024-05-06T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.5.1 is released to address Denial-of-Service Attacks affecting the I2P network and services.
+With this release we disable the IP-based parts of the Sybil attack detection tool which were targeted to amplify the effect and duration of the attack.
+This should help the network return to normal operation.
+Those of you who have disabled the Sybil attack detection tool may safely re-enable it.
+Adjustments to other subsystems to improve RouterInfo validation and peer selection have also been made.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released"/>
+    <summary>I2P Release 2.5.1 released to address Denial-of-Service Attacks</summary>
+    <published>2024-05-06T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d</id>
+    <title>Stormy Weather</title>
+    <updated>2024-04-25T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>The I2P network is currently under a Denial-of-Service attack.
+This attack affects I2P and i2pd but in different ways and is having a serious effect on network health.
+Reachability of I2P sites is badly degraded.</p>
+<p>If you are hosting a service inside I2P and it is hosted on a Floodfill router, you should consider multihoming the service on a Floodfill-disabled router to improve reachability.
+Other mitigations are being discussed but a long-term, backward-compatible solution is still being worked on.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather"/>
+    <summary>Network Weather: Stormy. I2P is under attack.</summary>
+    <published>2024-04-25T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:d0b633da-0f36-409e-9b2a-9a3b03b033c3</id>
+    <title>Новый релиз I2P 2.5.0</title>
+    <updated>2024-04-08T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Этот выпуск, I2P 2.5.0, содержит больше улучшений, ориентированных на пользователя, чем выпуск 2.4.0, который был сосредоточен на реализации стратегии изоляции NetDB.</p>
+<p>В I2PSnark добавлены новые функции, например, возможность поиска по торрентам. Исправлены ошибки для улучшения совместимости с другими I2P-торрент-клиентами, такими как BiglyBT и qBittorrent. Мы хотели бы поблагодарить всех разработчиков, которые работали с libtorrent и qBittorrent, чтобы включить и улучшить их поддержку I2P. В SusiMail также добавлены новые функции, включая поддержку форматирования Markdown в письмах и возможность перетаскивать вложения в письма. Туннели, созданные с помощью менеджера Hidden Services, теперь поддерживают "Keepalive", что повышает производительность и совместимость с веб-технологиями, позволяя создавать более сложные I2P-сайты.</p>
+<p>During this release we also made several tweaks to the NetDB to improve its resilience to spam and to improve the router's ability to reject suspicious messages.
+This was part of an effort to "audit" the implementation of "Sub-DB isolation" defenses from the 2.4.0 release.
+This investigation uncovered one minor isolation-piercing event which we repaired.
+This issue was discovered and fixed internally by the I2P team.</p>
+<p>В этом релизе были внесены некоторые улучшения в процесс выпуска наших последующих дистрибутивов для Android и Windows. Это должно привести к улучшению доставки и доступности этих последующих продуктов.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/04/08/new_release_i2p_2.5.0"/>
+    <summary>Дополнительные улучшения приложений, аудит стратегии изоляции NetDB</summary>
+    <published>2024-04-08T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7</id>
+    <title>Релиз I2P 2.4.0 с улучшениями в области безопасности перегрузок и NetDB</title>
+    <updated>2023-12-18T20:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>This release, I2P 2.4.0, continues our effort to improve the security and stability of the I2P network.
+It contains significant improvements to the Network Database, an essential structure within the I2P network used for disovering your peers.</p>
+<p>The congestion handling changes will improve network stability by giving routers the ability to relieve congested peers by avoiding them.
+This will help the network limit the effect of tunnel spam.
+It will also help the network heal during and after DDOS attacks.</p>
+<p>The NetDb changes also help secure individual routers and the applications that use them. 
+Routers can now defend against attackers by separating the NetDB into multiple "Sub-DB's" which we use to prevent information leaks between applications and the router.
+This also improves the information available to Java routers about their NetDB activity and simplifies our support for multihoming applications.</p>
+<p>Также включен ряд исправлений и улучшений в приложениях I2PSnark и SusiMail.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/12/18/i2p-2.4.0-release-with-congestion-and-netdb-security-improvements/"/>
+    <summary>Релиз I2P 2.4.0 с улучшениями в области безопасности перегрузок и NetDB</summary>
+    <published>2023-12-18T20:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:68a13d95-a56a-4a69-9888-4378e0d180ac</id>
+    <title>New Release I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</title>
+    <updated>2023-06-25T12:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>This release contains fixes for CVE-2023-36325.
+CVE-2023-36325 is a context-confusion bug which occurred in the bloom filter.
+An attacker crafts an I2NP message containing a unique messageID, and sends that messageID to a client.
+The message, after passing through the bloom filter, is not allowed to be re-used in a second message.
+The attacker then sends the same message directly to the router.
+The router passes the message to the bloom filter, and is dropped.
+This leaks the information that the messageID has been seen before, giving the attacker a strong reason to believe that the router is hosting the client.
+This has been fixed by separting the bloom filter's functionality into different contexts based on whether a message came down a client tunnel, an exploratory tunnel, was sent to the router directly.
+Under normal circumstances, this attack takes several days to perform successfully and may be confounded by several factors such as routers restarting during the attack phase and sensitivity to false-positives.
+Users of Java I2P are recommended to update immediately to avoid the attack.</p>
+<p>In the course of fixing this context confusion bug, we have revised some of our strategies to code defensively, against these types of leaks.
+This includes tweaks to the netDb, the rate-limiting mechanisms, and the behavior of floodfill routers.</p>
+<p>This release adds not_bob as a second default hosts provider, and adds <a href="http://notbob.i2p">notbob.i2p</a> and <a href="http://ramble.i2p">ramble.i2p</a> to the console homepage.</p>
+<p>This release also contains a tweakable blocklist.
+Blocklisting is semi-permanent, each blocked IP address is normally blocked until the router is restarted.
+Users who observe explosive blocklist growth during sybil attacks may opt-in to shorter timeouts by configuring the blocklist to expire entries at an interval.
+This feature is off-by-default and is only recommended for advanced users at this time.</p>
+<p>This release also includes an API for plugins to modify with the Desktop GUI(DTG).
+It is now possible to add menu items to the system tray, enabling more intuitive launching of plugins which use native application interfaces.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/06/25/i2p-release-2.3.0"/>
+    <summary>I2P 2.3.0 - Security Fixes, Tweakable blocklists, DTG API</summary>
+    <published>2023-06-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5</id>
+    <title>New Release 2.2.1, Packaging fixes for Docker, Ubuntu Lunar and Debian Sid</title>
+    <updated>2023-04-12T03:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>After the I2P 2.2.0 release, which was moved forward to accelerate mitigations for the DDOS attacks, we learned about a few developing issues which made it necessary to build and release new packages.
+This release fixes an issue within Ubuntu Lunar and Debian Sid where the router console was inaccessible using an updated version of the jakarta package.
+Docker packages were not reading arguments correctly, resulting in inaccessible configuration files.
+This issue has also been resolved.
+The docker container is now also compatible with Podman.</p>
+<p>This release syncs translations with transifex and updates the GeoIP database.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1"/>
+    <summary>I2P 2.2.1 - maintenance release for 2.2.0</summary>
+    <published>2023-04-12T03:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362</id>
+    <title>New Release 2.2.0, Mitigations to DDOS attacks and tweaks to the Streaming subsystem</title>
+    <updated>2023-03-13T17:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>We have elected to move forward the 2.2.0 release date, which will be occurring today, March 13, 2023.
+This release includes a changes across the NetDB, Floodfill, and Peer-Selection components which improve the ability of the router to survive DDOS attacks.
+The attacks are likely to continue, but the improvements to these systems will help to mitigate the risk of DDOS attacks by helping the router identify and de-prioritize routers that appear malicious.</p>
+<p>This release also adds replay protection to the Streaming subsystem, which prevents an attacker who can capture an encrypted packet from being able to re-use it by sending it to unintended recipients.
+This is a backward-compatible change, so older routers will still be able to use the streaming capabilities of newer routers.
+This issue was discovered and fixed internally, by the I2P development team, and is not related to the DDOS attacks.
+We have never encountered a replayed streaming packet in the wild and do not believe a streaming replay attack has ever taken place against the I2P network at this time.</p>
+<p>As you may have noticed, these release notes and the release itself have been signed by idk, and not zzz.
+zzz has chosen to step away from the project and his responsibilities are being taken on by other team members.
+As such, the project is working on replacing the network statistics infrastructure and moving the development forum to i2pforum.i2p.
+We thank zzz for providing these services for such a long time.</p>
+<p>Как и всегда, мы рекомендуем вам обновиться.
+Лучший способ оставаться в безопасности и помогать сети - использовать самую свежую версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0"/>
+    <summary>Mitigations to DDOS attacks and tweaks to the Streaming subsystem</summary>
+    <published>2023-03-13T17:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7</id>
+    <title>DDoS Update</title>
+    <updated>2023-02-14T19:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>We have confirmed that the attacker controls a large number of routers.
+Our investigations and mitigations continue.</p>
+<p>This is a good time to remind people that even after 20 years, the I2P network is relatively small.
+We have no evidence that the attacker is attempting to deanonymize any particular user or hidden service.
+However, if you have a high-risk threat model, you should carefully consider whether I2P currently provides the protection you require.
+The best solution, in the long run, is to spread the word and grow the I2P network to increase security of our users.</p>
+<p>We will provide additional information here in the news feed and on <a href="http://zzz.i2p">zzz.i2p</a> as necessary.
+We ask for your patience as we work to improve I2P.</p>
+</div>
+    </content>
+    <link href="http://zzz.i2p/topics/3593"/>
+    <summary>DDoS Update</summary>
+    <published>2023-02-14T19:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6558c015-7767-45f1-b80a-07def923a88d</id>
+    <title>About the recent Denial of Service attacks</title>
+    <updated>2023-02-09T23:00:00+00:00</updated>
+    <author>
+      <name>sadie,idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>The I2P network is currently being affected by a Denial of Service attack.
+  The floodfill function of the network has been affected, resulting in responses being disrupted and tunnel build success rates dropping.
+  Participants in the network have experienced difficulties connecting to I2P sites and using I2P services.
+  Mitigation strategies are being investigated and implemented gradually.</p>
+<p>While the attack has degraded performance, the network remains intact and usable.
+  Java I2P routers appear to be handling the issues better than i2pd routers for now.
+  Various mitigations should begin to appear in dev builds of both Java and C++ routers in the next week.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/2/9/about_the_recent_denial_of_service_attacks"/>
+    <summary>I2P remains intact with impaired performance</summary>
+    <published>2023-02-09T23:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007</id>
+    <title>Вышла версия 2.1.0</title>
+    <updated>2023-01-09T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>We have learned several things since our 2.0.0 release in November.
+As routers have updated to that release, the network has gone from about 1% to over 60% support for our new SSU2 transport protocol.
+First, we have confirmed that SSU2 is a solid, well designed, and secure protocol.
+Second, however, we have found and fixed numerous minor or rarely-triggered bugs in the implementation of the protocol.
+Cumulatively, the effects of these bugs have reduced the performance of the network.</p>
+<p>Also, we are aware of increased tunnel count and reduced tunnel build success rate in the network,
+possibly triggered by Bitcoin's new I2P transient address feature,
+but made worse by our SSU2 bugs and other congestion control problems.
+We are working with Bitcoin and other non-Bitcoin projects to reduce I2P network demands.
+We have improved our algorithms to reduce network load during times of congestion.
+We are also collaborating with i2pd to develop common congestion control strategies.</p>
+<p>Therefore, we have accelerated this release by about six weeks, to get the fixes out to everybody.
+i2pd released their version 2.45.0 last week and the early results are encouraging.
+New protocols, and distributed networks, are difficult to develop.
+Congestion can arrive with little warning and with little clue of the cause.
+Thank you for your patience as we have diagnosed and hopefully fixed the problems.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/01/09/2.1.0-release"/>
+    <summary>2.1.0 с многочисленными изменениями в SSU2</summary>
+    <published>2023-01-09T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:adf95235-a183-4870-b5fa-99752e3657d2</id>
+    <title>2.0.0 Released</title>
+    <updated>2022-11-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P release 2.0.0 enables our new UDP transport SSU2 for all users, after completion of minor features, testing, and numerous bug fixes.</p>
+<p>We also have fixes all over, including for the installer, network database, adding to the private address book, the Windows browser launcher, and IPv6 UPnP.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/11/21/2.0.0-release"/>
+    <summary>SSU2 Transport Enabled</summary>
+    <published>2022-11-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:65da828c-43de-49a4-98e7-b8bfeed8d341</id>
+    <title>Recent Blog Posts</title>
+    <updated>2022-10-12T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Here's links to several recent blog posts on our website:</p>
+<ul>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/10/11/SSU2-Transport">Overview of our new SSU2 transport</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/26/i2p-safety-reminder">A warning about I2P coins and other scams</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/26/meet-your-maintainer-divaexchange">An interview with Konrad from diva.exchange</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/07/Meet_your_Maintainer_StormyCloud">An interview with Dustin from StormyCloud</a></li>
+</ul></div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/"/>
+    <summary>A few recent blog posts</summary>
+    <published>2022-10-12T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5</id>
+    <title>1.9.0 Released</title>
+    <updated>2022-08-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>We have spent the last three months working on our new UDP transport protocol "SSU2"
+with a small number of volunteer testers.
+This release completes the implementation, including relay and peer testing.
+We are enabling it by default for Android and ARM platforms, and a small percentage of other routers at random.
+This will allow us to do much more testing in the next three months, finish the connection migration feature,
+and fix any remaining issues.
+We plan to enable it for everyone in the next release scheduled for November.
+No manual configuration is necessary.</p>
+<p>Of course, there's the usual collection of bug fixes in this release as well.
+We also added an automatic deadlock detector that has already found a rare deadlock that is now fixed.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release"/>
+    <summary>1.9.0 with SSU2 for testing</summary>
+    <published>2022-08-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7</id>
+    <title>Новый выходной прокси exit.stormycloud.i2p</title>
+    <updated>2022-08-05T11:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P "выходные прокси" (ноды выхода) могут быть использованы для доступа к интернет через
+ваш HTTP прокси тоннель.
+Как утрверждено на нашем <a href="http://i2p-projekt.i2p/en/meetings/314">месячном собрании</a>,
+<b>exit.stormycloud.i2p</b> теперь наш новый официальный рекомендованный выходной прокси на замену давно сдохшего <b>false.i2p</b>.
+Для дополнительной информации на StormyCloud <a href="http://stormycloud.i2p/">организации</a>,
+<a href="http://stormycloud.i2p/outproxy.html">выходной прокси</a>,
+и <a href="http://stormycloud.i2p/tos.html">условия использования</a>,
+смотри на <a href="http://stormycloud.i2p/">StormyCloud website</a>.</p>
+<p>We suggest you change your <a href="/i2ptunnel/edit?tunnel=0">Hidden Services Manager configuration</a>
+to specify <b>exit.stormycloud.i2p</b>
+in two places: <b>Outproxies</b> and <b>SSL Outproxies</b>.
+After editing, <b>scroll down and click Save</b>.
+See our <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">blog post for a screenshot</a>.
+For Android instructions and screenshots see <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob's blog</a>.</p>
+<p>Router updates will not update your configuration, you must edit it manually.
+Thanks to StormyCloud for their support, and please consider a <a href="http://stormycloud.i2p/donate.html">donation</a>.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud"/>
+    <summary>Новый выходной прокси</summary>
+    <published>2022-08-05T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73</id>
+    <title>Вышла версия 1.8.0</title>
+    <updated>2022-05-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>This release includes bug fixes in i2psnark,
+the router, I2CP, and UPnP.
+Router fixes address bugs in soft restart, IPv6, SSU peer testing,
+network database stores, and tunnel building.
+Router family handling and Sybil classification have also been
+significantly improved.</p>
+<p>Together with i2pd, we are developing our new UDP transport, SSU2.
+SSU2 will bring substantial performance and security improvements.
+It will also allow us to finally replace our last usage of the very slow ElGamal encryption,
+completing the full cryptography upgrade we started about 9 years ago.
+This release contains a preliminary implementation which is disabled by default.
+If you wish to participate in testing, please look for current information
+on zzz.i2p.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/05/23/1.8.0-release"/>
+    <summary>1.8.0 с исправлением ошибок</summary>
+    <published>2022-05-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71</id>
+    <title>Install essential Java/Jpackage updates</title>
+    <updated>2022-04-22T11:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>The recent Java "Psychic Signatues" vulnerability affects I2P. Current users of
+I2P on Linux, or any users of I2P who are using a non-bundled JVM should update
+their JVM or switch to a version which does not contain the vulnerability, below
+Java 15.</p>
+<p>New I2P Easy-Install bundles have been generated using the latest release of the
+Java Virtual Machine. Further details have been published in the respective
+bundle newsfeeds.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates"/>
+    <summary/>
+    <published>2022-04-22T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228</id>
+    <title>Вышла версия 1.7.0</title>
+    <updated>2022-02-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 1.7.0 содержит ряд улучшений в части производительности и надежности</p>
+<p>Теперь в системном лотке появляются всплывающие сообщения для платформ, поддерживающих его. В i2psnark есть новый редактор торрентов. Транспорт NTCP2 теперь реже, чем раньше, использует центральный процессор.</p>
+<p>Давно устаревшего интерфейса BOB не будет в новой версии. Он продолжит работать в уже установленных приложениях, за исключением пакетов Debian. Все, кто продолжает пользоваться BOB, должны попросить разработчиков конвертировать BOB в протокол SAMv3.</p>
+<p>Мы в курсе, что с момента выпуска версии 1.6.1 надежность сети неуклонно понижалась.
+Мы узнали о проблеме вскоре после выпуска версии, но нам потребовалось почти два месяца, чтобы выявить причину неисправности.
+В конце концов мы поняли, что причина — в ошибке в i2pd 2.40.0,
+и эта ошибка будет исправлена в версии 2.41.0, которая выйдет примерно в то же время, что и нынешняя версия.
+Попутно мы внесли несколько изменений в Java I2P, чтобы повысить
+надежность поиска и хранения сетевых баз данных и избежать неэффективных одноранговых узлов при выборе узлов в туннеле.
+Эти меры должны укрепить надежность сети при наличии неисправных или вредоносных маршрутизаторов.
+Кроме того, мы начинаем совместную программу по тестированию предварительных версий маршрутизаторов i2pd и Java I2P
+в изолированной тестовой сети, чтобы у нас была возможность выявить больше проблем до выхода версии, а не после него.</p>
+<p>Что еще нового? Мы продолжаем улучшать наш UDP-транспорт SSU2 (предложение 159) и уже начали его использовать. SSU2 станет эффективнее и безопаснее. Это позволит нам отказаться от невероятного медленного шифрования ElGamal, завершив полное обновление криптографии, которое началось около 9 лет назад. Мы надеемся вскоре начать совместное с i2pd тестирование и запустить обновления в Cети в этом году.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/02/21/1.7.0-release"/>
+    <summary>1.7.0 с улучшенной производительностью и повышенной надежностью</summary>
+    <published>2022-02-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf</id>
+    <title>Вышла версия 1.6.0</title>
+    <updated>2021-11-29T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Эта версия — последний шаг на пути к запуску двух основных обновлений протоколов, разработанных в 2021 году.
+Переход к шифрованию X25519 для маршрутизаторов ускорен, и мы ожидаем, что почти все маршрутизаторы будут перезапущены к концу года.
+Для значительного сокращения пропускной способности используются небольшие пакеты для построения туннелей.</p>
+<p>Мы добавили панель выбора темы в мастер установки.
+Мы улучшили производительность SSU и исправили проблему с одноранговыми тестовыми сообщениями SSU.
+Туннельная сборка фильтра Bloom была скорректирована для того, чтобы снизить нагрузку на память.
+Мы осуществляем расширенную поддержку плагинов, не связанных с Java .</p>
+<p>Помимо этого, мы продвинулись в разработке нашего нового UDP-транспорта SSU2 и надеемся начать его внедрение в начале следующего года.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/11/29/1.6.0-Release"/>
+    <summary>Версия 1.6.0 позволяет создавать новые типы пакетов для построения туннелей.</summary>
+    <published>2021-11-29T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9</id>
+    <title>Вышла версия 1.5.0</title>
+    <updated>2021-08-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Да, вам не привиделось — после 9 лет разработки 0.9.x мы переходим сразу с 0.9.50 на 1.5.0.
+Это не привело к значительному изменению API, как и не означает, что разработка завершена.
+Увеличение версии всего лишь отмечает нашу работу в предоставлении анонимности и безопасности нашим пользователям за почти 20 лет.</p>
+<p>В этом релизе была завершена работа над меньшими по размеру пакетами для построения туннелей, чтобы уменьшить требования к пропускной способности сети.
+Мы продолжаем перевод маршрутизаторов на шифрование X25519.
+Как и всегда, в новой версии исправлены ошибки и увеличена производительности.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/08/23/1.5.0-release"/>
+    <summary>1.5.0 с новыми типами пакетов для построения туннелей</summary>
+    <published>2021-08-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560</id>
+    <title>Уязвимость в MuWire Desktop</title>
+    <updated>2021-07-09T15:00:00+00:00</updated>
+    <author>
+      <name>zlatinb</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В программе MuWire Desktop была обнаружена проблема безопасности.
+Проблема не затрагивает модуль I2P-консоли, а также не имеет общего с ранее анонсированной проблемой в модуле.
+Если вы используете программу MuWire Desktop, вам следует срочно <a href="http://muwire.i2p/">обновиться до версии 0.8.8</a>.</p>
+<p>Детали проблемы будут опубликованы на сайте <a href="http://muwire.i2p/security.html">muwire.i2p</a> 15 июля 2021.</p>
+</div>
+    </content>
+    <link href="http://muwire.i2p/security.html"/>
+    <summary>Уязвимость в Muwire Desktop</summary>
+    <published>2021-07-09T15:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387</id>
+    <title>Уязвимость в модуле MuWire</title>
+    <updated>2021-07-07T11:00:00+00:00</updated>
+    <author>
+      <name>zlatinb</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В модуле MuWire была обнаружена проблема безопасности.
+Она не затрагивает десктопную программу.
+Если вы используете модуль MuWire для I2P-консоли, срочно <a href="/configplugins">обновитесь до версии 0.8.7-b1</a>.</p>
+<p>Подробности и информацию об уязвимости см. на <a href="http://muwire.i2p/security.html">muwire.i2p</a>.</p>
+</div>
+    </content>
+    <link href="http://muwire.i2p/security.html"/>
+    <summary>Уязвимость в модуле Muwire</summary>
+    <published>2021-07-07T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48</id>
+    <title>Вышла версия 0.9.50</title>
+    <updated>2021-05-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.50 продолжает переход на ECIES-X25519 для ключей шифрования маршрутизаторов.
+Мы включили поддержку DNS over HTTPS для системы начальной загрузки узлов, чтобы защитить пользователей от пассивного наблюдения за DNS-запросами.
+В этой версии исправлено большое количество ошибок и улучшена поддержка IPv6 и UPnP.</p>
+<p>Наконец-то была исправлена давняя ошибка с повреждением файлов SusiMail.
+Изменения в систему ограничения пропускной способности должны улучшить производительность сетевых туннелей.
+Также отметим улучшения наших Docker-контейнеров.
+Мы улучшили защиту для потенциально вредоносных и проблемных маршрутизаторов нашей сети I2P.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/05/17/0.9.50-release"/>
+    <summary>0.9.50 с исправлением ошибок IPv6</summary>
+    <published>2021-05-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3</id>
+    <title>Версия 0.9.49</title>
+    <updated>2021-02-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В 0.9.49 продолжены работы по улучшению скорости и безопасности I2P.
+Мы сделали ряд улучшений и исправлений в работе транспорта SSU (UDP), что должно ускорить его работу.
+С этим релизом также начинается миграция на новый, более быстрый протокол шифрования ECIES-X25519 для транзитных маршрутизаторов
+(для оконечных узлов этот протокол уже был активирован несколько релизов назад).
+Мы работали над спецификацией и протоколом нового шифрования несколько лет, и наконец приближаемся к его внедрению. Процесс полной миграции на новый протокол будет длиться несколько релизов.
+</p>
+<p>Чтобы уменьшить возможное негативное влияние на сеть, этот релиз активирует новое шифрование только для новых установок и очень малой части существующих (решение об активации будет выбрано случайно при перезапуске маршрутизатора).
+Если ваш маршрутизатор активирует новое шифрование, вы будете получать меньше трафика, чем обычно, а работа сети может быть не полностью стабильной в течение нескольких дней после запуска.
+Это нормально — процесс активации подразумевает создание нового идентификатора маршрутизатора.
+Производительность и стабильность вернётся в норму через какое-то время.</p>
+<p>Ранее в сети уже дважды менялись идентификаторы маршрутизаторов, когда происходила смена типа подписи на новый,
+но на этот раз мы впервые меняем тип шифрования.
+Всё должно пройти гладко, но мы страхуемся на всякий случай.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/02/17/0.9.49-release"/>
+    <summary>0.9.49 с исправлениями SSU и ускорением шифрования</summary>
+    <published>2021-02-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2f702241-c585-4151-a364-76c561621989</id>
+    <title>Версия 0.9.48</title>
+    <updated>2020-12-01T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.48 активирует наш новый протокол оконечного (end-to-end) шифрования (предложение 144) для большинства сервисов.
+Мы добавили начальную поддержку шифрования сообщений построения новых туннелей (предложение 152).
+Новая версия маршрутизатора получила заметное улучшение производительности.</p>
+<p>Пакеты для Ubuntu Xenial (16.04 LTS) более не поддерживаются.
+Пользователи этой платформы должны обновиться до актуальной версии ОС, чтобы продолжить получать обновления I2P.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/11/30/0.9.48-release"/>
+    <summary>0.9.48 с улучшением производительности</summary>
+    <published>2020-12-01T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:12c0f414-175a-401e-a35c-47307627a050</id>
+    <title>Версия 0.9.47</title>
+    <updated>2020-08-24T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.47 включает новый протокол сквозного (end-to-end) шифрования (предложение 144) по умолчанию для некоторых сервисов.
+Утилита анализа и блокировки Сивилл-нод (Sybil) также активирована по умолчанию.</p>
+<p>Отныне требуется Java 8 и новее.
+Пакеты для Debian Wheezy и Stretch, Ubuntu Trusty и Precise больше не поддерживаются.
+Пользователи перечисленных платформ должны обновить дистрибутив, чтобы продолжить получать обновления I2P.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/08/24/0.9.47-release"/>
+    <summary>0.9.47 с новым шифрованием</summary>
+    <published>2020-08-24T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9</id>
+    <title>Версия 0.9.46</title>
+    <updated>2020-05-25T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.46 содержит значительное увеличение производительности библиотеки потоковой передачи данных.
+Мы закончили разработку шифрования ECIES (предложение 144), теперь в меню есть опция для его активации с целью тестирования.</p>
+<p>Только для пользователей Windows:
+Эта версия исправляет уязвимость локального повышения привилегий,
+которое могло быть использовано из-под учётной записи локального пользователя.
+Пожалуйста, обновитесь до этой версии как можно быстрее.
+Благодарим Blaze Infosec за своевременно предоставленную информацию по этому вопросу.</p>
+<p>Это последняя версия, поддерживающая Java 7, пакеты Debian Wheezy и Stretch, а также пакеты Ubuntu Precise и Trusty.
+Пользователи указанных платформ должны обновить их для получения будущих обновлений I2P.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/05/25/0.9.46-release"/>
+    <summary>0.9.46 с исправлением ошибок</summary>
+    <published>2020-05-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869</id>
+    <title>Выпуск 0.9.45</title>
+    <updated>2020-02-25T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.45 содержит важные исправления для скрытого режима и теста ширины канала. В консоль добавлена тёмная тема. Мы продолжаем работать над улучшением производительности и разрабатываем новый алгоритм шифрования типа точка-точка (предложение 144)</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/02/25/0.9.45-release"/>
+    <summary>0.9.45 с исправленными ошибками</summary>
+    <published>2020-02-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5</id>
+    <title>Вышла версия 0.9.44</title>
+    <updated>2019-12-01T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.44 содержит важное исправление проблемы отказа в обслуживании в коде обработки новых типов шифрования скрытых сервисов.
+Пользователям рекомендуется как можно скорее установить это обновление.</p>
+<p>Релиз содержит первоначальную поддержку нового сквозного шифрования (предложение 144).
+Работа продолжится в этом проекте, и оно ещё не готово к использованию.
+Есть изменения в домашней странице консоли и новом встроенном HTML5 медиаплеере в i2psnark.
+Включены дополнительные исправления для файервола IPv6 сети.
+Исправления в построении тоннелей могут ускорить запуск для некоторых пользователей.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/12/01/0.9.44-release"/>
+    <summary>0.9.44 с исправлением ошибок</summary>
+    <published>2019-12-01T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b</id>
+    <title>Вышла версия 0.9.43</title>
+    <updated>2019-10-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p> В релизе 0.9.43  мы продолжаем работу над усилением функций безопасности и конфиденциальности и улучшением производительности.
+Реализация улучшений для системы получения контактных данных адресатов или (LeaseSet) (LS2) завершена.
+Мы начинаем реализацию более мощного и быстрого сквозного шифрования (предложение 144) для будущего выпуска.
+Исправлено несколько проблем с обнаружением адресов IPv6, и, конечно, несколько других ошибок.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/10/22/0.9.43-release"/>
+    <summary>0.9.43 с исправлением ошибок </summary>
+    <published>2019-10-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319</id>
+    <title>Вышла версия 0.9.42</title>
+    <updated>2019-08-27T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.42 продолжает работу по ускорению и повышению надежности I2P.
+Он включает в себя несколько изменений для ускорения UDP-транспортировки.
+Мы разделили файлы конфигурации, чтобы в будущем можно было работать с более модульной упаковкой.
+Мы продолжаем работу по внедрению новых предложений для более быстрого и безопасного шифрования.
+Также исправлено множество ошибок.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/08/27/0.9.42-release"/>
+    <summary>0.9.42 с исправлением ошибок </summary>
+    <published>2019-08-27T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f</id>
+    <title>0.9.41 Выпущена</title>
+    <updated>2019-07-02T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.41 продолжает работу по внедрению новых функций для предложения 123,
+включая аутентификацию для каждого клиента для зашифрованных арендных наборов.
+Консоль получила обновленный логотип I2P и несколько новых значков.
+Мы обновили установщик Linux.</p>
+<p>Запуск должен быть быстрее на таких платформах, как Raspberry Pi.
+Мы исправили несколько ошибок, в том числе несколько серьезных, влияющих на низкоуровневые сетевые сообщения.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/07/02/0.9.41-release"/>
+    <summary>0.9.41 с исправлением ошибок </summary>
+    <published>2019-07-02T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f</id>
+    <title>Вышла версия 0.9.40</title>
+    <updated>2019-05-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В 0.9.40 включена поддержка нового зашифрованного формата арендного набора.
+Мы отключили старый транспортный протокол NTCP 1.
+Есть новая функция импорта SusiDNS и новый механизм фильтрации сценариев для входящих соединений.</p>
+<p>Мы внесли много улучшений в собственный установщик OSX, а также обновили установщик IzPack.
+Продолжается работа по обновлению консоли новыми значками.
+Как обычно, мы исправили много ошибок!</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/05/07/0.9.40-release"/>
+    <summary>0.9.40 с новыми иконками</summary>
+    <published>2019-05-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e</id>
+    <title>Версия 0.9.39</title>
+    <updated>2019-03-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.39 содержит значительные изменения для новых типов сетевых баз данных (предложение 123).
+Мы добавили плагин i2pcontrol в качестве веб-приложения для поддержки разработки приложений, использующих RPC.
+Также было сделано множество улучшений производительности и исправлений ошибок.</p>
+<p>Были удалены темы оформления "Полночь" и "Классическая", чтобы облегчить поддержку кода.
+Пользователи этих тем теперь увидят темную или светлую тему.
+Также добавлены новые значки домашней страницы — первый шаг для обновления консоли.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/03/21/0.9.39-release"/>
+    <summary>0.9.39 с улучшениями производительности</summary>
+    <published>2019-03-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219</id>
+    <title>Версия 0.9.38</title>
+    <updated>2019-01-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В 0.9.38 добавлен новый мастер начальной настройки, с тестированием пропускной способности.
+Также добавлена поддержка последнего формата базы данных GeoIP.
+На нашем сайте выложен новый установщик профиля Firefox, и новый, нативный установщик программы для Mac OSX.
+Мы продолжаем работу над новым форматом netdb — LS2.</p>
+<p>В этом выпуске были устранены различные ошибки, включая проблемы с приложенными файлами в susimail и исправление для маршрутизаторов, имеющих связность только по IPv6.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/01/22/0.9.38-release"/>
+    <summary>0.9.38 с новым мастером начальной настройки</summary>
+    <published>2019-01-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a</id>
+    <title>Отчет о поездке на 35C3</title>
+    <updated>2019-01-21T12:00:00+00:00</updated>
+    <author>
+      <name>sadie</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Команда I2P присутствовала практически в полном составе на конференции Chaos Communication Congress 35C3 в Лейпциге, Германия.
+Были проведены ежедневные собрания для обсуждения прошедшего года и планов разработки в 2019 году.</p>
+<p>Информация о новом плане работ <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">доступна по ссылке</a>.</p>
+<p>Продолжается работа над LS2, Testnet и улучшением удобства использования веб-сайта и консоли маршрутизатора.
+Запланировано добавление I2P в дистрибутивы Tails, Debian и Ubuntu Disco. Мы всё ещё ищем разработчиков для работы над I2P-Bote и версией маршрутизатора для Android.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/get-involved/roadmap"/>
+    <summary>I2P на 35C3</summary>
+    <published>2019-01-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e</id>
+    <title>Версия 0.9.37</title>
+    <updated>2018-10-04T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.37 включает поддержку более быстрого и безопасного транспортного протокола NTCP2.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/10/04/0.9.37-release"/>
+    <summary>0.9.37 со включённым NTCP2</summary>
+    <published>2018-10-04T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774</id>
+    <title>Версия 0.9.36</title>
+    <updated>2018-08-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.36 включает в себя новый, более безопасный транспортный протокол под названием NTCP2.
+По умолчанию он отключен, но вы можете включить его для тестирования, добавив в<a href="/configadvanced">Расширенные настройки</a> строку <tt>i2np.ntcp2.enable=true</tt> и перезапустив клиент.
+NTCP2 будет включён в следующем релизе.</p>
+<p>Этот релиз также содержит некоторые улучшения производительности и исправления ошибок.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/08/23/0.9.36-release"/>
+    <summary>0.9.36 с NTCP2 и исправлениями ошибок</summary>
+    <published>2018-08-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4</id>
+    <title>Версия 0.9.35</title>
+    <updated>2018-06-26T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.35 привносит поддержку папок в SusiMail и новый мастер SSL Wizard для настройки HTTPS у скрытых сервисов.
+Также в релизе исправлено множество ошибок, особенно в SusiMail.</p>
+<p>Мы работаем над релизом 0.9.36, включающим новый установщик для OSX и новый, более быстрый и защищенный протокол с названием NTCP2.</p>
+<p>I2P будет на HOPE (Hackers On Planet Earth, конференция) в Нью-Йорке, 20-22 июля. Приходите знакомиться!</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/06/26/0.9.35-release"/>
+    <summary>0.9.35 с поддержкой папок в SusiMail и мастером настройки SSL</summary>
+    <published>2018-06-26T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a</id>
+    <title>Версия 0.9.34</title>
+    <updated>2018-04-10T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В версии 0.9.34 исправлено множество ошибок!
+Также есть улучшения в SusiMail, работе с IPv6 и выборе туннельных узлов.
+Добавлена поддержка схем IGD2 в UPnP.
+Осуществлена подготовка для улучшений, которые войдут в будущие релизы.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/04/10/0.9.34-release"/>
+    <summary>0.9.34 с исправлением ошибок</summary>
+    <published>2018-04-10T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c</id>
+    <title>Вышла версия 0.9.33</title>
+    <updated>2018-01-30T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.33 содержит множество исправлений ошибок, в том числе в i2psnark, i2ptunnel, streaming и SusiMail.
+Мы внедрили поддержку нескольких типов прокси в систему начальной загрузки для тех, кто не может использовать её напрямую.
+Эта версия по умолчанию устанавливает лимиты скорости для скрытых сервисов.
+Если вы администрируете высоконагруженные серверы, пожалуйста, проверьте и при необходимости перенастройте лимиты по вашему усмотрению.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/01/30/0.9.33-release"/>
+    <summary>0.9.33 с исправлением ошибок</summary>
+    <published>2018-01-30T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440</id>
+    <title>Счастливого Нового года! - 34C3</title>
+    <updated>2018-01-04T12:00:00+00:00</updated>
+    <author>
+      <name>echelon</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Команда I2P желает всем счастливого Нового года!</p>
+<p>Не менее 7 членов команды I2P встретились в Лейпциге с 27 по 30 декабря 2017. Помимо <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">встреч</a> за нашим столом мы встретили много друзей I2P отовсюду.
+Результаты встреч уже размещены на <a href="http://zzz.i2p" target="_blank">zzz.i2p</a>.</p>
+<p>Мы также раздали множество стикеров и дали информацию о нашем проекте всем, кто спрашивал.
+Наш ежегодный I2P ужин был большим успехом как благодарность всем присутствовавшим за постоянную поддержку I2P.</p>
+</div>
+    </content>
+    <link href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3"/>
+    <summary>Новый год и I2P на 34C3</summary>
+    <published>2018-01-04T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345</id>
+    <title>Вышла версия 0.9.32</title>
+    <updated>2017-11-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.32 содержит ряд исправлений консоли маршрутизатора и связанных с ним веб-приложений (адресная книга, i2psnark и susimail).
+Мы изменили логику работы настроенных имен хостов для публикуемой информации о маршрутизаторах, чтобы предотвратить часть атак перечисления с использованием DNS (enumeration attack).
+Также, была добавлена проверка для предотвращения атак на подмену адреса (rebinding attack) в консоль маршрутизатора.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/11/07/0.9.32-release"/>
+    <summary>Версия 0.9.32 с обновленной консолью</summary>
+    <published>2017-11-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce</id>
+    <title>Вышла версия 0.9.31</title>
+    <updated>2017-08-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Изменения в данном релизе намного более заметные, чем обычно!
+Мы обновили консоль маршрутизатора, чтобы сделать её проще
+для освоения, улучшили доступность и межбраузерную поддержку
+и в целом навели порядок.
+Это первый шаг в долгосрочном плане по улучшению пользовательского
+интерфейса консоли.
+Также мы добавили поддержку рейтингов и комментариев для торрентов
+в i2psnark.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/08/07/0.9.31-release"/>
+    <summary>Версия 0.9.31 с обновленной консолью</summary>
+    <published>2017-08-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b</id>
+    <title>Обращение к переводчикам</title>
+    <updated>2017-06-10T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>При подготовке к релизу версии 0.9.31, содержащему значительные обновления пользовательского интерфейса,
+у нас до сих пор остался довольно большой объем непереведенного текста, 
+который требует внимания. Если вы являетесь переводчиком, мы будем крайне признательны, 
+если на этом этапе релиза вы сможете уделить переводу немного больше времени, чем обычно. 
+Мы заранее опубликовали текст для перевода, 
+чтобы у вас было 3 недели для работы над ним.</p>
+<p>Если вы ещё не переводчик I2P, сейчас самое время поучаствовать! Пожалуйста, ознакомьтесь с <a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">Новым руководством для переводчиков</a>, чтобы приступить к работе.</p>
+</div>
+    </content>
+    <link href="https://www.transifex.com/otf/I2P/announcements/7243/"/>
+    <summary>Предстоящий релиз 0.9.31 содержит больше строк без перевода, чем обычно.</summary>
+    <published>2017-06-10T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f</id>
+    <title>Вышла версия 0.9.30</title>
+    <updated>2017-05-03T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Версия 0.9.30 содержит обновления Jetty до версии 9 и Tomcat до версии 8.
+Предыдущие версии более не поддерживаются и отсутствуют в новых релизах Debian Stretch и Ubuntu Zesty.
+Маршрутизатор перенесет файл конфигурации jetty.xml с каждого веб-сайта Jetty в Jetty 9.
+Это должно сработать для актуальных оригинальных версий, но может вызвать проблемы с модифицированными или старыми версиями.
+Убедитесь, что ваш веб-сайт работает корректно после обновления и свяжитесь с нами в IRC, если потребуется помощь.</p>
+<p>Некоторые плагины более не поддерживаются Jetty 9 и должны быть обновлены.
+Следующие плагины были обновлены для работы с 0.9.30, и ваш маршрутизатор должен обновить их после перезагрузки:
+i2pbote 0.4.6; zzzot 0.15.0.
+Следующие плагины (с текущими версиями) не работают с 0.9.30.
+Свяжитесь с подходящим разработчиком плагина чтобы узнать состояние новых версий:
+BwSchedule 0.0.36; i2pcontrol 0.11.</p>
+<p>Этот релиз также поддерживает миграцию старых (до 2014 года включительно) DSA-SHA1 скрытых сервисов на более безопасную EdDSA подпись. См. <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> для подробностей, включающих в себя руководство и ЧаВо.</p>
+<p>Примечание: на ARM-платформах, отличных от Android, таких как Raspberry Pi, база данных блок-файла будет обновлена при перезагрузке, что может занять несколько минут. Пожалуйста, подождите немного.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/05/03/0.9.30-release"/>
+    <summary>0.9.30 обновился до Jetty 9</summary>
+    <published>2017-05-03T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7</id>
+    <title>Вышла версия 0.9.29</title>
+    <updated>2017-02-27T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.29 содержит исправления для многочисленных тикетов на Trac, включая обходные решения для исправления поврежденных сжатых сообщений.
+Теперь мы поддерживаем NTP поверх IPv6.
+Мы добавили предварительную поддержку Docker.
+Теперь у нас есть переведенные man-страницы.
+Мы теперь передаем оригинальный заголовок Referer через HTTP прокси .
+Есть предварительные исправления для систем с Java 9, хотя мы пока не рекомендуем Java 9 для массового использования. </p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/02/27/0.9.29-release"/>
+    <summary>Релиз 0.9.29 содержит исправления ошибок</summary>
+    <published>2017-02-27T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b</id>
+    <title>Уязвимость безопасности I2P-Bote</title>
+    <updated>2017-01-20T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В I2P-Bote 0.4.5 исправлена уязвимость безопасности, присутствующая во всех предыдущих версиях плагина I2P-Bote. Android приложение не затронуто.</p>
+<p>При отображении email-сообщений пользователю большинство полей было экранировано. Однако имена файлов-
+вложений не были экранированы и могли использоваться для выполнения вредоносного кода в браузере
+со включенным JavaScript. Они теперь экранированы, и дополнительно политика безопасности контента
+была реализована для всех страниц.</p>
+<p>Все пользователи I2P-Bote получат обновления автоматически во время перезапуска роутера
+после релиза версии I2P 0.9.29 в середине февраля. Тем не менее, из соображений безопасности, мы рекомендуем вам
+<a href="http://bote.i2p/install/">следовать инструкции на странице установки</a> для
+обновления вручную, если вы планируете использовать I2P или I2P-Bote до выхода 0.9.29.</p>
+</div>
+    </content>
+    <link href="http://bote.i2p/news/0.4.5/"/>
+    <summary>Уязвимость безопасности I2P-Bote</summary>
+    <published>2017-01-20T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c</id>
+    <title>Вышла версия 0.9.28</title>
+    <updated>2016-12-12T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.28 содержит исправления для более чем 25 тикетов на баг-трекере Trac и обновления для многих пакетов включенного программного обеспечения, включая Jetty.
+Есть исправления для функции тестирования IPv6 пиров, представленной в последнем релизе.
+Мы продолжаем улучшать функцию обнаружения и блокирования потенциально злонамеренных пиров.
+Есть предварительные исправления для систем с Java 9, хотя мы пока не рекомендуем Java 9 для массового использования.
+</p>
+<p>I2P будет участвовать в 33C3, пожалуйста, не проходите мимо нашего стола и поделитесь с нами своими идеями по улучшению сети.
+Мы рассмотрим нашу Дорожную карту-2017 и приоритеты на 2017 год на Конгрессе.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/12/12/0.9.28-release"/>
+    <summary>Версия 0.9.28 содержит исправления ошибок</summary>
+    <published>2016-12-12T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a</id>
+    <title>Уязвимость безопасности I2P-Bote</title>
+    <updated>2016-11-28T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>В I2P-Bote 0.4.4 исправлена уязвимость безопасности, присутствующая во всех предыдущих версиях
+плагина I2P-Bote. Android приложение не затронуто.</p>
+<p>Недостаток защиты CSRF означал, что если пользователь запускал I2P-Bote, а затем загружал
+вредоносный сайт в браузере со включенным JavaScript, злоумышленник мог вызвать действия
+в I2P-Bote от имени пользователя, например, отправку сообщений. Это могло также 
+допустить извлечение личных ключей для I2P-Bote адресов, однако доказательства этой уязвимости не были протестированы.</p>
+<p>Все пользователи I2P-Bote получат обновления автоматически во время перезапуска роутера
+после релиза версии I2P 0.9.28 в середине декабря. Тем не менее, из соображений безопасности, мы рекомендуем вам
+<a href="http://bote.i2p/install/">следовать инструкции на странице установки</a> для
+обновления вручную, если вы планируете использовать I2P или I2P-Bote до выхода 0.9.28. Также следует
+рассмотреть вопрос о создании новых I2P-Bote-адресов, если вы обычно просматриваете веб-сайты со включенным JavaScript во время использования I2P-Bote.</p>
+</div>
+    </content>
+    <link href="http://bote.i2p/news/0.4.4/"/>
+    <summary>Уязвимость безопасности I2P-Bote</summary>
+    <published>2016-11-28T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3</id>
+    <title>Вышла версия 0.9.27</title>
+    <updated>2016-10-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.27 содержит ряд исправленных ошибок
+Обновленная GMP - библиотека для ускорения криптографических операций, включенная в релизе 0.9.26 только для новых установок и сборок под Debian, теперь включена в сетевое обновление до версии 0.9.27.
+Есть улучшения в транспортах IPv6, тестировании SSU пиров и скрытом режиме.</p>
+<p>Мы обновили ряд плагинов в ходе мероприятия <a href="http://i2p-projekt.i2p/en/blog/2016/06/01/I2P-Summer-Dev">I2P Summer</a>, и ваш маршрутизатор будет автоматически обновлять их после перезагрузки.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/10/17/0.9.27-release"/>
+    <summary>Версия 0.9.27 содержит исправления ошибок</summary>
+    <published>2016-10-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d</id>
+    <title>Заявка на создание сайта I2P на Stack Exchange</title>
+    <updated>2016-06-07T13:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Подсайт I2P теперь предлагается ко включению в Stack Exchange!
+Пожалуйста, <a href="https://area51.stackexchange.com/proposals/99297/i2p">проголосуйте за него</a> для старта начального этапа включения.</p>
+</div>
+    </content>
+    <link href="https://area51.stackexchange.com/proposals/99297/i2p"/>
+    <summary>Подсайт I2P предлагается ко включению на Stack Exchange!</summary>
+    <published>2016-06-07T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621</id>
+    <title>Релиз версии 0.9.26</title>
+    <updated>2016-06-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.26 содержит значительное обновление нашей нативной криптобиблиотеки, 
+новый протокол подписок адресной книги с цифровыми подписями,
+и значительные улучшения пакета для Debian/Ubuntu.</p>
+<p>Для улучшений по части криптографии мы перешли на GMP 6.0.0, а также добавили поддержку новых процессоров,
+что позволит значительно ускорить операции шифрования.
+Кроме того, теперь мы постоянно используем GMP-функции для предотвращения атак "бокового канала".
+Из соображений безопасности, изменения в GMP включены для новых установок и только для Debian/Ubuntu сборок;
+мы будем включать их (изменения в GMP) в сетевые обновления в версии 0.9.27.</p>
+<p>Для Debian/Ubuntu пакета мы добавили несколько пакетов-зависимостей,
+в том числе Jetty 8 и geoip, и удалили их эквивалентные части из сборки. (прим. пер. - вынесли некоторые возможности в отдельные пакеты-зависимости)</p>
+<p>Здесь содержится набор исправлений ошибок, включая исправление для бага таймера,
+приводящего к нестабильности и снижению производительности со временем.
+Как обычно, мы рекомендуем всем пользователям обновиться до этой версии.
+Лучший способ помочь сети и оставаться в безопасности - это использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/06/07/0.9.26-release"/>
+    <summary>0.9.26 содержит обновления криптографии, усовершенствования установочного пакета для Debian и исправления ошибок</summary>
+    <published>2016-06-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b</id>
+    <title>Вышла версия 0.9.25</title>
+    <updated>2016-03-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.25 содержит новую версию SAM, а именно: мажорное обновление v3.3, чтобы поддерживать сложные многопротокольные приложения. 
+Этот релиз добавляет QR-коды для расшаривания адресов скрытых служб, 
+и идентификационные иконки для того, чтобы визуально отличать адреса.</p>
+<p>Мы добавили новую страницу конфигурации - "Семейство маршрутизаторов" в консоли, 
+чтобы упростить объявление, что ваша группа маршрутизаторов управляется одним человеком. 
+Также внесено несколько изменений с целью увеличить пропускную способность сети и успешно построить туннель.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/03/22/0.9.25-release"/>
+    <summary>Релиз 0.9.25 содержит SAM 3.3, QR-коды и исправления ошибок</summary>
+    <published>2016-03-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e</id>
+    <title>Вышел релиз 0.9.24</title>
+    <updated>2016-01-27T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.24 содержит новую версию SAM (v3.2) и многочисленные исправления ошибок и улучшения эффективности.
+Обратите внимание на то, что это первый выпуск, требующий Java 7.
+Пожалуйста, обновитеcь на Java 7 или 8 как можно скорее. 
+Ваш маршрутизатор автоматически не обновится, если вы будете использовать Java 6.</p>
+<p>Чтобы предотвратить проблемы, вызванные древней commons-logging библиотекой, мы удалили ее.
+Это может привести очень старые плагины I2P-Bote (0.2.10 и ниже, подписанные Hungry Hobo) к сбою, если они имеют опцию "IMAP enabled".
+Рекомендуется исправление, чтобы заменить свой старый I2P-Bote плагин на текущий, подписанный str4d.
+Для более подробной информации см. <a href="http://bote.i2p/news/0.4.3"> этот пост </a>.</p>
+<p>У нас был большой <a href="http://i2p-projekt.i2p/en/blog/2016/01/23/32C3">32C3 конгресс</a> и мы добились значительных успехов по нашим планам в 2016 году.
+Эшелон выступил с докладом об истории I2P и его современном состоянии, его слайды <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">можно найти здесь</a> (PDF).
+Str4d присутствовал <a href="http://www.realworldcrypto.com/rwc2016/program">на Real World Crypto</a> и выступил с докладом о нашей криптографической миграции, 
+Его слайды <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">можно посмотреть здесь</a> (PDF).</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/01/27/0.9.24-release"/>
+    <summary>Релиз 0.9.24 содержит несколько исправлений ошибок и оптимизаций скорости.</summary>
+    <published>2016-01-27T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668</id>
+    <title>Вышла версия 0.9.23</title>
+    <updated>2015-11-19T18:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Привет I2P! Это первый релиз, подписанный мною (str4d), после 49 релизов, подписанных zzz. Проверка заменяемости различных частей проекта,
+включая его участников.</p>
+<p><b>На что следует обратить внимание в первую очередь</b></p>
+<p>Ключ моей подписи присутствовал в обновлениях более двух лет, начиная с версии 0.9.9,
+так что с последними версиями I2P проблем возникнуть не должно. Если же у вас версия старше, чем 0.9.9, 
+то ее сначала придется обновить вручную. Сами обновления можно взять <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">отсюда</a>, 
+а инструкции <a href="http://i2p-projekt.i2p/ru/download#update">отсюда</a>.
+ После этого ваш маршрутизатор обновится до 0.9.23 самостоятельно.</p>
+<p>Если вы устанавливали I2P через менеджер пакетов, то изменение вас не касается и обновление будет выполнено как обычно.</p>
+<p><b>Подробности обновления</b></p>
+<p>Переход маршрутизаторов на новую, более стойкую подпись Ed25519 протекает хорошо, уже обновилась половина сети. Данный релиз ускоряет этот процесс. Во избежание нарушения нормальной работы сети ваш маршрутизатор сменит тип подписи при старте с весьма небольшой вероятностью. Если такое случится, то в течение ближайших двух дней будет наблюдаться уменьшение трафика, пока новый адрес не интегрируется в сеть.</p>
+<p>Это последний релиз, поддерживающий Java 6. Обновитесь до 7 или 8 как можно скорее, ибо мы уже работаем над совместимостью с Java 9, в том числе уже и в данном релизе.</p>
+<p>Мы внесли незначительные улучшения в I2PSnark, а также добавили новую страницу в консоль маршрутизатора для просмотра старых новостей.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/11/19/0.9.23-release"/>
+    <summary>0.9.23 содержит различные исправления ошибок и небольшие улучшения I2PSnark</summary>
+    <published>2015-11-19T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43</id>
+    <title>Вышла версия 0.9.22</title>
+    <updated>2015-09-12T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.22 содержит исправления для i2psnark, зависающего перед завершением, и начинает миграцию маршрутизатора на новые, более сильные подписи Ed25519. Чтобы уменьшить вероятность сетевого коллапса, у вашего маршрутизатора будет очень небольшая вероятность преобразования в Ed25519, совместимый при каждом перезапуске. Когда узлы будут повторно введены в строй, мы ожидаем увидеть более низкое использование пропускной способности в течение нескольких дней, поскольку роутеры повторно интегрируются в сеть с ее новыми идентификационными данными. Если все пройдет нормально, то мы ускорим процесс повторного ввода роутеров в строй в следующем выпуске обновления.</p>
+<p>I2PCon Торонто был очень успешным! Все презентации и видео размещены на <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">странице I2PCon</a>.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/09/12/0.9.22-release"/>
+    <summary>0.9.22 с исправлениями ошибок и началом миграции на Ed25519</summary>
+    <published>2015-09-12T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a</id>
+    <title>Вышла версия 0.9.21</title>
+    <updated>2015-07-31T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.21 содержит несколько изменений, чтобы добавить емкость сети, повысить эффективность floodfills, &#13;
+&#13;
+и использовать более эффективно пропускную способность.&#13;
+&#13;
+Мы перевели общеклиентские туннели на тип подписи ECDSA и добавили  DSA fallback&#13;
+&#13;
+используя новые "многосеансные" возможности тех сайтов, которые не поддерживают ECDSA.</p>
+<p>Докладчики и расписание I2PCon Торонто 2015 были объявлены.&#13;
+Посмотрите <a href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/">страницу I2PCon </a> для деталей. &#13;
+Забронируйте место <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">на странице Eventbrite, посвященной I2PCon</a>.</p>
+<p>Как обычно, мы рекомендуем вам обновиться до последней версии. Лучший способ оставаться в безопасности и помогать сети — использовать последнюю версию.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/07/31/0.9.21-release"/>
+    <summary>0.9.21 с улучшениями производительности и исправлениями ошибок</summary>
+    <published>2015-07-31T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141</id>
+    <title>Известны докладчики и расписание I2PCon Торонто</title>
+    <updated>2015-07-22T12:00:00+00:00</updated>
+    <author>
+      <name>echelon</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Докладчики и расписание I2PCon Торонто 2015 были объявлены.&#13;
+Посмотрите <a href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/">страницу I2PCon </a> для деталей. &#13;
+Забронируйте место <a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">на странице Eventbrite, посвященной I2PCon</a>.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/"/>
+    <summary>Известны докладчики и расписание I2PCon Торонто 2015</summary>
+    <published>2015-07-19T18:00:00+00:00</published>
+  </entry>
+</feed>

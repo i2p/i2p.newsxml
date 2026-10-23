@@ -1,0 +1,1953 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:i2p="http://geti2p.net/en/docs/spec/updates" xmlns="http://www.w3.org/2005/Atom" xml:lang="tr">
+  <id>urn:uuid:60a76c80-d399-11d9-b91C-543213999af6</id>
+  <title>I2P News</title>
+  <updated>2026-10-23T01:45:29.242775+00:00</updated>
+  <link href="http://i2p-projekt.i2p/"/>
+  <link href="http://tc73n4kivdroccekirco7rhgxdg5f3cjvbaapabupeyzrqwv5guq.b32.i2p/news.atom.xml" rel="self"/>
+  <link href="http://dn3tvalnjz432qkqsvpfdqrwpqkw3ye4n4i2uyfr4jexvo3sp5ka.b32.i2p/news/news.atom.xml" rel="alternate"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>News feed, and router updates</subtitle>
+  <i2p:release date="2026-04-20" minVersion="1.5.0" minJavaVersion="17">
+    <i2p:version>2.12.0</i2p:version>
+    <i2p:update type="su3">
+      <i2p:torrent href="magnet:?xt=urn:btih:1bda6439eac99fd81eb0e1b4dfff444d51fe4f9f&amp;dn=i2pwinupdate.su3&amp;tr=http://tracker2.postman.i2p/announce.php"/>
+      <i2p:url href="http://cmlvk6ux6hayoagl2atqxu7qqut52xbhas7znkxjytjz7eivzs3q.b32.i2p/2.12.0/i2pwinupdate.su3"/>
+    </i2p:update>
+  </i2p:release>
+  <i2p:blocklist signer="zzz@mail.i2p" sig="6:ZkIGxnGgMTM2UwglKaEzIhUUWqNXN4Ue4PWeOjOwhvdxTX9wi5KpczisUFunWLDty31-88LT665pdW6kxagYtjk4pQPNM8Ejq7UTOjWMNt4AuxkrlKh44BWiEbhjR9BBLivQWn3IqkiXtLMOC-GOrZeG77RlUa9Nl3jNzCfwDWr8sjy7-dF8qg8t1r18HPojHqSvV8IR9jlV8GYp~T36uOXKP30VwYL91yNhQWOzZtVatnAeFUBVSFvWJR9IHjmre-RZnkcS7RgPLgbp1i-0mTQkm-jCAuJX~chBGWQYJqJvCRi9om0Y093WEqRyNzOO7VyLbTo85t8Nzk8nxNSOowLw0SBWp5IC19R4K10iOfN-kld7EQJz4dbXLpctITY4RaDLOF4be6lWIBm1rV1-wbxT17a3zZSCE7-MRfeSofVo0qKx~B57MeDkWNrYdfhzgagRnEHRyc8M84p3QsqcmSgGdsXeiN~RZcWNmSgedTJ8ctkTGq9LxCPjrfhsjbsnL6HS7MjhOg4-g9WWJrQ1~mr6ovso-bK2f6TwLiyGrd--NGoQCFyLBo8WgTTxwbr3jEidmSqnJUj6IwgZEbf7523K5s9NhsFIc9I8iNQjsIT110T0cEPT~zr5bCdoAkPIcQMyZ2zUXexAQWP~R49LCUxGHHUuoGnDXKCVe2nMcdk=">
+    <updated>2026-03-28T12:28:06Z</updated>
+    <i2p:block>93.157.12.248</i2p:block>
+    <i2p:block>185.213.155.252</i2p:block>
+    <i2p:block>223.167.199.60</i2p:block>
+    <i2p:block>2a03:1b20:6:f011:0:0:0:a02e</i2p:block>
+    <i2p:block>JbifzqZZqeTXtxK6KDqNUPWaW-phKqeS~tfJT82SIYI=</i2p:block>
+    <i2p:block>QPUV1bW6arN2zp3gTBMvOEvgSuKbXUqk2oqHkb~UoSw=</i2p:block>
+    <i2p:block>CyLg6w8lypk1gnAX-CdG8O4NCR86hq8ifge6QKXAoJg=</i2p:block>
+    <i2p:block>DtQsGzkbeR3nilr6ZvywR2O7-f0XaaV~YfHXohqwjgI=</i2p:block>
+    <i2p:block>lam824jtkYq4qTiZHT~TkdHoVTVRwnLghgFheZbgDhU=</i2p:block>
+    <i2p:block>Qqj3p9F0Y~qXAkSz3FYo~e~OfSgaM5qZ2OYUrzOtrgM=</i2p:block>
+    <i2p:block>NUo2wncm49XY8f~dzdxII5fnVopL9oT92KC9JC3IOFY=</i2p:block>
+    <i2p:block>GEpq15rG0XjIvP7oZCW9cmL8Dhb8eLSweTU3hZuT2fE=</i2p:block>
+    <i2p:block>aNBK4IQwYCejjMnD31hapWQvova~u1OINPnHCqceljw=</i2p:block>
+    <i2p:block>6lWUeurYBX4w6lsfPdkAxbFKXoGEXKxofXwlWOC3RQA=</i2p:block>
+    <i2p:block>xKAdoKJUvrSEGS0gREC4lEUawa4IKsVnQU189X~QQhk=</i2p:block>
+    <i2p:block>2EJgHsXnjQo8gHt-jmS-GlhXjqtHnNgWiK~QyQ0Rsh4=</i2p:block>
+    <i2p:block>o-atVIIK0N2Eu6r2Nq42cAVqlK6wJGrXqU0Ps3x0HmY=</i2p:block>
+    <i2p:block>2C-fFbGjOJks1mDYxlQ~~M3Q-tX9Dx~tyAUHPzfct~E=</i2p:block>
+    <i2p:block>Qc5rvLavMYNhzQBQfBgFkZbesEvGW~3nz1ZwllR1MoM=</i2p:block>
+    <i2p:block>0bLUiXtgYCzAy3533C~wjaUxUkH63JGSRlx2huH-6Bo=</i2p:block>
+    <i2p:block>3~ZOYyQFJAJXxuynetnoijOFjliGGmN9kZ5BkiSupy0=</i2p:block>
+    <i2p:block>4V3EsOGTWrIXJDNaGpOLZrnSGWgSxwgZ7Tsxb0txFtE=</i2p:block>
+    <i2p:block>4yr5497JpDG-K7s1unMbvWBPPfds72Qw27DNH9FpcKQ=</i2p:block>
+    <i2p:block>5MAAvwKgnG7hYbi93q0Luro~-AyIjO5xvUbABc2T3IU=</i2p:block>
+    <i2p:block>5SI8wX-KUefASp0KbjuQ2KaCyZboFHcsXsgwaONVqzc=</i2p:block>
+    <i2p:block>6lKXyJfzTrrt2B7R-p24FSMQQHmyPBb1JSp1N49wdrM=</i2p:block>
+    <i2p:block>6yUKWdxJKF0wtxd3Ro0VfkSlLe74gvM2b0IJbzm~mT0=</i2p:block>
+    <i2p:block>7NzcMy-ty6WICyPHbYBuGQlbcMs7dV-5lN2HIZ-PvuY=</i2p:block>
+    <i2p:block>9ELLjPmb9PBMTOeXqMsRmRfLRlctQMELTZFrkDBOiVA=</i2p:block>
+    <i2p:block>AQ2Wq8Guob3CI1jve~W5wErlaaSF-iZz9mhzKsFmWeo=</i2p:block>
+    <i2p:block>BhqgIK5aTiL8UosUjmBMsCl5NtNCFCZTu0wUSFt0Mkg=</i2p:block>
+    <i2p:block>cC8PmCV4AehT0hKPAfp3yP1DYJKFxmWBk8JWSVZT8Oo=</i2p:block>
+    <i2p:block>cfhT8b5PNxSIFhmg-6ZvP78W5eD9jtGBLjM~oIRRqoE=</i2p:block>
+    <i2p:block>fGe1bjAyj-V0kRJmbXbCGp9y0ZVkYDZksdvfBwo2nME=</i2p:block>
+    <i2p:block>G7d8g3yIjMTG1M6ui1zWf-YYYe0K3Pz8dCg~gRHM-KI=</i2p:block>
+    <i2p:block>Giy8ehFNw~RyB5KV5BCMzgMUMxVI2hiWFS3gdWPthCA=</i2p:block>
+    <i2p:block>HPDYhgrDNJK0STyIJM-A3Q~aMU9D63P-7Bw-Qs15Bmk=</i2p:block>
+    <i2p:block>I5rpywP3dJsP1bfKzp-QUsRCNgT2sO7sTqxuH8~AjmQ=</i2p:block>
+    <i2p:block>ioBAP6QWbWpzkUbmpKn2eWe~XlNmFuIsTJxvstMt2hU=</i2p:block>
+    <i2p:block>jizbTEmYpthOrW2louGRyR057W9G4vcOKtvk~lPqvYg=</i2p:block>
+    <i2p:block>JtgxUY6P7VcgJV3HQUzAaUSVInTR20PT8E34xvwkEck=</i2p:block>
+    <i2p:block>kISWAKZmX0n9C~vQ19oTdL9iWdLs1BfDrssNiZunubw=</i2p:block>
+    <i2p:block>krZK4oqwsee2Qsevb9b9n5jGuNrVaTJlt-nE8G8ft5w=</i2p:block>
+    <i2p:block>lj1A58-iv9W4V9r-jrHZISKncWlSYaQCYvQcBvZppEg=</i2p:block>
+    <i2p:block>N9GkaK294wlSRKaUicSimnxDwebUWKggFlrBUpe00KA=</i2p:block>
+    <i2p:block>Oy4ZaiVxxel1XAWW1p23JlekMGEFvWbWuizQMRnG~tc=</i2p:block>
+    <i2p:block>q1rjeEo0hB61qIcER59aEdQWsX8-gpW-K862deAJkp0=</i2p:block>
+    <i2p:block>QYkhWCudqWhty-TvJ-sFd0z5uLYBXHW5t61L-I6ltJU=</i2p:block>
+    <i2p:block>RDX~26d6ugO1C-DEhkEzPQaGHurvfgKL0cXZlqr4C6Y=</i2p:block>
+    <i2p:block>RjBVJtLfMhLgaSNDpv-D4UqybO5GWSgtcJqAqqd6L~Q=</i2p:block>
+    <i2p:block>S7-xKQ1wSqiqmjODZrTWprTD1L0dtiZlwT055DArGFw=</i2p:block>
+    <i2p:block>SdXmd046uxhAvscEM7ogR6HtH2eWBiyo4~XOnj3dr7c=</i2p:block>
+    <i2p:block>Sm6IkscEdA0vBy9Cx~VQcgB2f5e0fvQ2CEu8fkceL1s=</i2p:block>
+    <i2p:block>tFv6N4kwPdOlMXo8VqoOO3UrSsWAg~-5nadozzBm2Tc=</i2p:block>
+    <i2p:block>TJwtpwSS7yANCDPDfbGdx3f4lDQNYcfA-0X75jHbbNU=</i2p:block>
+    <i2p:block>w~1a6nvIBJfFHGur0mPJmjlwjSBOrWGTC-INPEesPJ0=</i2p:block>
+    <i2p:block>wMIJ9Ax~4kW-jkFQLTHfzSSBqaMSy3EKiBH8YUQjAVA=</i2p:block>
+    <i2p:block>wPorvAjMYj6FipnUHruA0dF2K-Xm~GngCY3QDIVlZyU=</i2p:block>
+    <i2p:block>wWP~J-g-e8Fok7NpTURpJJfeNTGB5S7F15QshyRn9n0=</i2p:block>
+    <i2p:block>X52PGfb8TysUDO7pvQIKGeoPcmWx4jwQJjoHLDD7A5Y=</i2p:block>
+    <i2p:block>xirj-SFuNcYapYv7vnkfa2peqqCzuWeKeUB937Odl3s=</i2p:block>
+    <i2p:block>xXvAxpq~FFyNx9bm6XlPVXNQ7vYfGkjC7nj0xWvNjwE=</i2p:block>
+    <i2p:block>YbIKZpPSqdohVjzi8s~N-D0t~bbayKM4hHcBk-fcJvY=</i2p:block>
+    <i2p:block>ynL10zIHBslFPSf1cmAONogYvNm1WrZ9bgE0txHzOr4=</i2p:block>
+    <i2p:block>YSfLfZVPUvvyQtAltBSJ2RHcU~uTiV0x0H4y~QIPczc=</i2p:block>
+    <i2p:block>ZTOVAP9GJYEKu8CjCQBmOigw79oyTVpQQguTDqwv2EU=</i2p:block>
+    <i2p:block>-xH2G0zblY4mRQxeb1WtXAJwyy8hlsrqpY3~fgPBnoU=</i2p:block>
+    <i2p:block>~CrJVoN00MNvEjZIWudnWFzjqDPDsZxKuFq1Y~Sh8fo=</i2p:block>
+    <i2p:block>8ej3XrMgI2IMIwP4X6~h9Nw4vtDV~2yX1nI7u-nOidg=</i2p:block>
+    <i2p:block>o0N6orDrgfMY29G4Z8Q7CRwhSnvw4LuuKhvadrtDsSE=</i2p:block>
+    <i2p:block>tATb9Xe-Tj5QqTm1u1zY1CZlqK0X6Ygn6LjnQBjb55w=</i2p:block>
+    <i2p:block>xnMzPiEhGe2mFuoN8PiB5voV-H2JLk4g5a054mVmFds=</i2p:block>
+    <i2p:block>yb2KWHXrtLdSGG4G53GXjVRilYXFDj7KzsHMLYCNK3o=</i2p:block>
+    <i2p:block>yQN8Qt0K0yi89DrMaMa0LhHpQkxj2X3zS0SATe5QAXI=</i2p:block>
+    <i2p:block>F~UzS1mTN3XYlnOfidMBv5Z4lHI7dsCZ8N5mxpyc-OU=</i2p:block>
+    <i2p:block>6NMfknVMawT~baK0VanEkbXvO2hJCLJ5rreieysRrNE=</i2p:block>
+    <i2p:block>MogB-V71uOsLBu5z9gW5sa3zzUfI5GD43selaYiOy4U=</i2p:block>
+    <i2p:block>~SN8k6Hid107ighTnxRSiwTwwPMjEpPbDEyEY--zD~U=</i2p:block>
+    <i2p:block>ixpaFrLz3C-Fo~6~TOKtQIsHRvmdC~hOFtmJenNz3-Y=</i2p:block>
+    <i2p:block>2l9Eg2BKOmu8hixe~UyElpu~~2RXkhBOM5j8rSqjsKs=</i2p:block>
+    <i2p:block>i1Viub4WK3l-6KbZHifQCY9aGwhU8JG3u5gg5fVJWlM=</i2p:block>
+    <i2p:block>nA-DRzbe33yVHcvITENBWKJ~yVVie6hngoQbB~MoYH0=</i2p:block>
+    <i2p:block>jDFMFtR3wmtuixX0LajCoW1Ko-fSU8sWTtkuqKM9ti8=</i2p:block>
+    <i2p:block>nRTKhTmfXEmpLGe7QmpEPOZr6C3SpX0ke~sgqcX8axA=</i2p:block>
+    <i2p:block>3lgHIOIADdUIoyJjWymzE1Xikx7RojrEBfYT6P7eLzk=</i2p:block>
+    <i2p:block>jhyiaB9Nd2RRVInrmSi0rquBwJaLhhiPemlqj7HGo7k=</i2p:block>
+    <i2p:block>1jhJoqpi5oFB6yvObMwAiiTi7DT8~WTIAd1zh1XSNEM=</i2p:block>
+    <i2p:block>y8q2xWGfKdUzGVkapSZ~wJbqGWJ1vTaPUz0oChBp99M=</i2p:block>
+    <i2p:block>2VLCwzGYz7KYxZ1xTjfBjRdfkKVzJj5BJE1~K0rvNCg=</i2p:block>
+    <i2p:block>HcbQyKfOl4usRgc6YqxOvfHKvCnrbNCpDfg~5OUO-FY=</i2p:block>
+    <i2p:block>tFPtta1sdB7ybYqXjHZnk2jcn2IHxaQUWhWRCVTJ-H0=</i2p:block>
+    <i2p:block>3.225.127.222</i2p:block>
+    <i2p:block>3.234.89.179</i2p:block>
+    <i2p:block>5.250.198.133</i2p:block>
+    <i2p:block>18.210.78.199</i2p:block>
+    <i2p:block>31.155.206.27</i2p:block>
+    <i2p:block>38.242.206.110</i2p:block>
+    <i2p:block>44.210.192.47</i2p:block>
+    <i2p:block>46.53.244.68</i2p:block>
+    <i2p:block>52.60.61.249</i2p:block>
+    <i2p:block>52.70.234.81</i2p:block>
+    <i2p:block>59.56.69.164</i2p:block>
+    <i2p:block>77.165.6.8</i2p:block>
+    <i2p:block>91.138.224.31</i2p:block>
+    <i2p:block>91.198.115.83</i2p:block>
+    <i2p:block>91.198.115.84</i2p:block>
+    <i2p:block>91.198.115.85</i2p:block>
+    <i2p:block>93.235.73.128</i2p:block>
+    <i2p:block>98.15.244.49</i2p:block>
+    <i2p:block>109.197.204.101</i2p:block>
+    <i2p:block>109.197.205.47</i2p:block>
+    <i2p:block>110.137.220.12</i2p:block>
+    <i2p:block>139.59.133.151</i2p:block>
+    <i2p:block>145.239.83.230</i2p:block>
+    <i2p:block>162.55.230.167</i2p:block>
+    <i2p:block>162.218.65.83</i2p:block>
+    <i2p:block>162.218.65.84</i2p:block>
+    <i2p:block>162.218.65.219</i2p:block>
+    <i2p:block>172.6.174.68</i2p:block>
+    <i2p:block>174.27.149.30</i2p:block>
+    <i2p:block>176.88.62.2</i2p:block>
+    <i2p:block>185.209.196.140</i2p:block>
+    <i2p:block>185.209.196.150</i2p:block>
+    <i2p:block>185.209.196.180</i2p:block>
+    <i2p:block>185.65.134.232</i2p:block>
+    <i2p:block>185.65.134.233</i2p:block>
+    <i2p:block>185.65.134.253</i2p:block>
+    <i2p:block>186.166.142.51</i2p:block>
+    <i2p:block>193.32.249.139</i2p:block>
+    <i2p:block>2a03:1b20:6:f011:0:0:0:a07e</i2p:block>
+  </i2p:blocklist>
+  <entry>
+    <id>urn:uuid:7a7e6b34-e814-4194-b5a3-0dd06c2075f9</id>
+    <title>I2P 2.13.0 Release</title>
+    <updated>2026-07-20T16:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release of I2P, 2.13.0, has been focused on post-quantum support, performance improvements, and bug fixes that improve usability.
+</p>
+<p>
+Since the 2.12.0 release (April 2026), development has focused on stronger encryption, better bandwidth management, network stability, and a more usable console.
+</p>
+<p>
+Post-quantum protection is now fully available on the main transport (NTCP2), guarding against future "harvest now, decrypt later" attacks.
+The underlying cryptography library has been updated with constant-time operations prevent timing-based attacks.
+Legacy transport code (SSU1) has been fully removed.
+</p>
+<p>
+Tunnels now have per-tunnel bandwidth limits, preventing any single tunnel from monopolizing your connection.
+The system is smarter about congestion.
+</p>
+<p>
+Peer discovery and selection have been tuned for reliability.
+Floodfills are tracked more accurately.
+</p>
+<p>
+The web interface now shows a world map of routers in search results for RouterInfos in the NetDB.
+</p>
+<p>
+Containers now handle log rotation automatically, drop privileges properly, manage IP addresses correctly in containerized environments, and start up more reliably.
+</p>
+<p>
+The BitTorrent client (i2psnark) reannounces faster after magnet links resolve, handles edge cases better, and cleans up bandwidth limiters on exit.
+The email client (Susimail) offers an experimental standalone build and removes old login code.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/07/20/i2p-2.13.0-release"/>
+    <summary>I2P 2.13.0 Release</summary>
+    <published>2026-07-20T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:8be78aae-ef44-4da2-b1a2-f3eee6b0ae98</id>
+    <title>I2P 2.12.0 Release</title>
+    <updated>2026-04-20T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release of I2P, 2.12.0, continues our work on improving the performance and security of the I2P network.
+It includes a number of bug fixes and improvements to the I2P software.
+</p>
+<p>
+Work continues on the implementation of post-quantum cryptography.
+Improvements to the existing post-quantum implementations improve stability and interoperability with other I2P implementations.
+We encourage early adopters to continue testing and providing feedback to the I2P team.
+</p>
+<p>
+A SAMv3 bug which was affecting applications by causing failed lookups has been fixed.
+Users of SAMv3 applications such as Bitcoin and Bittorrent clients should update to this release to resolve these issues.
+</p>
+<p>
+As usual, we recommend that you update to this release.
+The best way to maintain security and help the network is to run the latest release.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/04/20/i2p-2.12.0-release/"/>
+    <summary>I2P 2.12.0 Release</summary>
+    <published>2026-04-20T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:d102ee67-826e-4224-9afd-0ac70fc2e83b</id>
+    <title>I2P 2.12.0 Easy-Install Bundle Windows</title>
+    <updated>2026-04-20T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.12.0.
+It also updates the embedded I2P Firefox profile to 2.12.0.
+</p>
+<p>
+For a detailed changelog of I2P 2.12.0 changes, please see the <a href="/viewhistory">local changelog</a>.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/04/20/i2p-2.12.0-release/"/>
+    <summary>I2P 2.12.0 Easy-Install Bundle Windows</summary>
+    <published>2026-04-20T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1deabd2e-1125-43f5-b0fa-e21ebddc7a15</id>
+    <title>I2P Easy Install 2.11.0 Release, Fixed Certificate</title>
+    <updated>2026-04-02T17:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.11.0.
+It also updates the embedded I2P Firefox profile to 2.11.0.
+</p>
+<p>
+This release also re-introduces signing of the installer, which was preventing automatic updates on Windows 11.
+We thank our friends at StormyCloud for resolving the build and signing issues that have prevented updates for so long.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2026/04/02/i2p_easy_install_2.11.0_release_fixed_cert"/>
+    <summary>I2P Easy Install 2.11.0 Release, Fixed Certificate</summary>
+    <published>2026-04-02T17:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:81b7a4f9-b254-4402-bfbe-60a1a891bc2b</id>
+    <title>I2P 2.11.0 sürümü</title>
+    <updated>2026-02-09T15:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümden başlayarak, I2P için Java 17 veya üzeri gerektiriyor.
+Java yazılımını nasıl güncelleyeceğiniz ile ilgili bilgi almak için işletim sisteminizin belgelerine bakın.
+I2P artık Jetty 12 sürümünü kullanıyor.
+Lütfen yönlendirici günlüklerinizden aktarım sorunları olup olmadığına bakın.</p>
+<p>Bu sürümdeki çalışmalar, kuantum sonrası şifreleme desteğini geliştiriyor.
+Kuantum sonrası şifreleme artık varsayılan olarak ratchet katmanında kullanılıyor.</p>
+<p>Süren spam saldırılarına karşı ilk zayıflatma turunu uyguladık.
+Ek zayıflatmalar geliştiriliyor.</p>
+<p>SAMv3 API, yeni veri şeması 2 ve 3 türlerini desteklemek için yükseltildi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2026/02/09/i2p-2.11.0-release"/>
+    <summary>I2P 2.11.0 sürümü</summary>
+    <published>2026-02-09T15:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c97d2aea-4d1f-47a8-b3d2-3f4755325638</id>
+    <title>Fırtınalı Hava</title>
+    <updated>2026-02-04T11:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P ağında şu anda süren hizmet reddi ve kaynak tükenme saldırıları nedeniyle kararsızlık yaşanıyor.
+Bu saldırılar, I2P hizmetlerinin ve gizli sitelerin başarımını ve güvenilirliğini etkiliyor.
+I2P geliştirme ekibi, bu saldırıları etkin olarak araştırıyor ve zayıflatıcı önlemler alıyor.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2026/02/04/stormy_weather"/>
+    <summary>I2P ağında fırtına</summary>
+    <published>2026-02-04T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:e53da861-5014-4fe4-b943-95c4780083c5</id>
+    <title>I2P Easy-Install 2.10.0</title>
+    <updated>2025-09-17T21:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.10.0.
+It also updates the embedded I2P Firefox profile to 2.10.0.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/09/17/i2p_easy-install_2.10.0"/>
+    <summary>I2P Easy-Install 2.10.0</summary>
+    <published>2025-09-17T21:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:9817d655-bf7c-4310-8b13-20f4cf904f83</id>
+    <title>2.10.0 Sürümü Yayınlandı</title>
+    <updated>2025-09-08T09:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P üzerinde kuantum sonrası şifrelemenin uygulanması ve dağıtımı için çalışmalar sürüyor.
+Bu sürümde kuantum sonrası şifreleme var ancak yeni tüneller için varsayılan olarak açık değildir.
+Kuantum sonrası desteğini denemek isteyenler, "Şifreleme türleri" altındaki "Gizli hizmet yöneticisi" bölümünden açabilirler.
+Yardım almak için IRC2P üzerindeki #i2p-dev kanalına karşılaştığınız sorunları bildirdiğinizden emin olun.</p>
+<p>I2PSnark artık UDP izleyicilerini destekliyor.
+Torrent izleyicilerin yükü azaltılarak ağa genel olarak yardımcı olunması amaçlanıyor.</p>
+<p>Gizli kip kullanılırken, RouterInfos verilerinin tükenme olasılığını azaltacak kararlılık iyileştirmeleri yapıldı.</p>
+<p><b>Önemli!</b> Sonraki sürümde I2P için Java 17 ya da üzeri zorunlu olacak.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2025/09/08/i2p-2.10.0-release"/>
+    <summary>I2P 2.10.0 sürümü</summary>
+    <published>2025-09-08T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1d530419-42fd-4ab6-979c-644872a2a8b9</id>
+    <title>I2P Easy-Install 2.9.0</title>
+    <updated>2025-06-07T17:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.9.0.
+It also updates the embedded I2P Firefox profile to 2.9.0.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/06/07/i2p_easy-install_2.9.0_release"/>
+    <summary>I2P Easy-Install 2.9.0</summary>
+    <published>2025-06-07T17:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f2a6aabd-ee29-4f45-a8dd-7378e907016a</id>
+    <title>2.9.0 Sürümü Yayınlandı</title>
+    <updated>2025-06-02T19:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.9.0, hata düzeltmeleri ve yeni özellikler üzerinde çalışılmış bir bakım sürümüdür.</p>
+<p>I2ptunnel sisteminin başarımını artırmak için işlem kullanımı iyileştirildi.
+NTCP2, inceleme saldırılarına direnecek şekilde geliştirildi.
+Bildirim sistemi, kullanıcılara I2PSnark ve diğer uygulamalardan daha iyi geri bildirim sağlamak için daha fazla uygulama ile bütünleştirildi.
+Otomatik doldurma kaydı düzeltildi.
+Kullanıcıların, otomatik doldurma olarak davranırken artan kaynak kullanımını gözlemleyebilmesi sağlandı.
+Bu özellik istenmiyorsa, /config sayfasından otomatik doldurma kipinin kapatılması sağlandı.</p>
+<p>Konsola, netDb görünümünüzde yönelticilerin konumlarını gösteren yeni bir küresel harita özelliği eklendi.
+Bunlar, yönelticinizin tüneller oluşturmasını ve hizmetleri anonim olarak sağlamasını sağlayan eşlerdir.</p>
+<p>Tüneller, Datagram2 iletişim kuralı ve Post-Quantum şifreleme için otomatik bant genişliği yönetimini ekleme çalışmaları sürüyor.
+İki sürüm içinde, I2P 2.11.0 sürümünde Java 17 kullanılması zorunlu olacak.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2025/06/02/i2p-2.9.0-release"/>
+    <summary>I2P 2.9.0 sürümü</summary>
+    <published>2025-06-02T19:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:598e5703-364e-4806-9083-d1bdfc430d2e</id>
+    <title>I2P Easy-Install 2.8.2</title>
+    <updated>2025-04-02T14:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.8.2.
+It also updates the embedded I2P Firefox profile to 2.8.2.
+Due to the point release of I2P, 2.8.2 has become the final release to support Chrome and Chromium browsers due to the adoption of ManifestV3.
+Previously, this had been announced as 2.8.1.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release"/>
+    <summary>I2P Easy-Install 2.8.2</summary>
+    <published>2025-04-02T14:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:50254469-02a4-4615-bf33-8002e4f935fe</id>
+    <title>2.8.2 Sürümü Yayınlandı</title>
+    <updated>2025-03-29T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>2.8.2 sürümünde, 2.8.1 sürümünde tanıtılan SHA256 sorunlarına neden olan hata düzeltildi.
+Hata, öncelikle ban genişliği yüksek olan yönelticileri etkiledi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/29/2.8.2-Release"/>
+    <summary>I2P 2.8.2 sürümü</summary>
+    <published>2025-03-29T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:dc6880db-d329-4693-9c1c-ed02fa361864</id>
+    <title>I2P Easy-Install 2.8.1</title>
+    <updated>2025-03-21T13:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.8.1.
+It also updates the embedded I2P Firefox profile to 2.8.1.
+Chrome extension configuration has been removed from the profile manager.
+Chrome-specific proxy management has been retained for now.
+This will be the final release to support Chrome and Chromium browsers due to the adoption of ManifestV3.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release"/>
+    <summary>I2P Easy-Install 2.8.1</summary>
+    <published>2025-03-21T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:34d09336-48af-44d2-954c-c5fd879bd6ce</id>
+    <title>2.8.1 Sürümü Yayınlandı</title>
+    <updated>2025-03-17T14:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>2.8.1 sürümünde 2.8.0 sürümünde bozulan yerel sitelere erişim sağlandı.
+Uygulama iletilerini vurgulamak için konsoldaki çeşitli uygulamalara bildirim balonları eklendi.
+Tünel güvenilirliğini etkileyebilecek bir tünel sınama hatası hazırladık.
+Adres defterine aboneliklerinizden eklenen en yeni sunucu adlarını görüntüleyen yeni bir "son" sekmesi eklendi.
+Birkaç karanlık tema düzeltmesi ve iyileştirmeler yapıldı.</p>
+<p>Daha önce Java 21 ve üzeri sürümlerde çalışmayan kurucu düzeltildi.
+Linux üzerinde boşluk içeren klasör yollarına kurulum da düzenlendi.
+Docker kullananlar için, eski Docker kapsayıcısını ve kapsayıcı kitaplıkları güncellendi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/03/17/2.8.1-Release"/>
+    <summary>I2P 2.8.1 sürümü</summary>
+    <published>2025-03-17T14:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:847ddf63-9aa5-41e7-a3ac-48cb277d883e</id>
+    <title>2.8.0 sürümündeki yerel site erişim sorunları</title>
+    <updated>2025-02-08T16:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>2.8.0 sürümünde bir yerel siteye (sunucu adı veya b32 ile) gezinmek başarısız oluyordu.
+Geçici çözüm, I2P yönelticisini atlamak için localhost ve genellikle 7658 numaralı sunucu bağlantı noktasını kullanmak.
+Örnek: <a href="http://127.0.0.1:7658/">http://127.0.0.1:7658/</a>.
+Bu sorun için özür dileriz. Düzeltmek için çalışıyoruz.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release"/>
+    <summary>2.8.0 yerel erişim hatası</summary>
+    <published>2025-02-08T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:06f15e55-4cdb-4d17-9d55-a0b289017994</id>
+    <title>I2P 2.8.0 sürümü</title>
+    <updated>2025-02-03T13:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde, hataları düzelterek, kullanılmayan kodları kaldırarak ve ağ kararlılığını iyileştirerek I2P uygulamasını geliştiriyoruz.</p>
+<p>Ağdaki yoğun yönelticilerin işlenmesini iyileştirdik.
+UPnP ve NAT geçişindeki sorunlar, bağlantıyı ve hata bildirimini iyileştirmek için ele alındı.
+Artık yöneltici başarımını iyileştirmek ve aşırı yüklenmeyi azaltmak için NetDb içinden kiralama kümelerini kaldırmak üzere daha saldırgan bir strateji uyguluyoruz.
+Yönelticinin yeniden başlatılması veya kapanması gibi olayların gözlemlenebilirliğini azaltmak için başka değişiklikler yaptık.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release"/>
+    <summary>I2P 2.8.0 sürümü</summary>
+    <published>2025-02-03T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1d9a0eaf-148c-4c97-9c27-f8f15be29ef6</id>
+    <title>Easy-Install for Windows Release 2.8.0</title>
+    <updated>2024-10-12T16:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+This release updates the embedded I2P router to I2P 2.8.0.
+It also updates the embedded I2P Firefox profile to 2.8.0.
+</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2025/02/03/i2p_2.8.0_release"/>
+    <summary>I2P Easy-Install 2.8.0</summary>
+    <published>2024-10-12T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f6a17bb2-0c3c-4028-9e1e-bf1b9a9439c0</id>
+    <title>I2P 2.7.0 sürümü</title>
+    <updated>2024-10-08T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.7.0 sürümünde hataları düzelterek, başarımı iyileştirerek ve özellikler ekleyerek çalışmalarımızı sürdürüyoruz.</p>
+<p>Konsoldan ve uygulamalardan bilgilere erişim iyileştirildi.
+I2PSnark ve SusiMail aramasındaki sorunlar giderildi.
+Yöneltici konsoluna gömülü netDB araması artık daha sezgisel ve kullanışlı bir şekilde çalışıyor.
+Gelişmiş kipte tanılama ekranlarında küçük iyileştirmeler yapıldı.</p>
+<p>Ağ içindeki uyumluluğu iyileştirmek için hatalar da düzeltildi.
+Kiralama Kümelerini yayınlamayla ilgili bir sorun çözüldü ve bu da büyük gizli servislerin güvenilirliğini artırdı.
+I2PSnark üzerinde artık bir kullanıcı yalnızca var olan bir torrent üzerindeki izleyicileri değiştirdiğinde infohash değerinin değişmemesi sağlandı.
+Böylece, torrentlerin bu değişiklikler nedeniyle gereksiz yere kesintiye uğraması engellendi.
+Yeni bir katılımcının bu katkısını memnuniyetle karşıladık.
+Diğer I2P uygulamalarıyla uyumluluğu iyileştirmek için bir akış kitaplığı seçeneğinin işlenmesindeki bir çakışma sorunu çözüldü.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/10/08/i2p_2.7.0_release"/>
+    <summary>I2P 2.7.0 sürümü</summary>
+    <published>2024-10-08T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:818bda0d-22a4-48a9-9745-503db1d2f632</id>
+    <title>I2P 2.6.1 Sürümü Yayınlandı</title>
+    <updated>2024-08-06T13:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.6.1, Gizli Hizmetler Yöneticisi uygulamasındaki bir kullanıcı arayüzü hatasını düzeltmek için yayınlandı.
+Bu hata kaydırmanın etkisizleştirilmesine ve bazı yapılandırmaların erişilemez olmasına yol açıyordu.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/08/06/i2p_2.6.1_released"/>
+    <summary>I2P 2.6.1 sürümü</summary>
+    <published>2024-08-06T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:7a55a68d-d01e-4538-ab87-216550a4e40e</id>
+    <title>I2P 2.6.0 Sürümü Yayınladı</title>
+    <updated>2024-07-19T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.6.0 sürümünde hataları düzelterek, özellikler ekleyerek ve ağın güvenilirliğini iyileştirerek çalışmalarımızı sürdürüyoruz.</p>
+<p>Otomatik doldurma yönelticileri seçilirken daha yeni yönelticilerin yeğlenmesi sağlandı.
+I2PSnark, hata düzeltmelerinin yanında PeX(Peer Exchange) başarımı iyileştiren özellikler aldı.
+Eski aktarım iletişim kuralları kaldırıldı ve UDP aktarımlarının kodu basitleştirildi.
+Yerel olarak barındırılan hedef, yerel istemciler tarafından Kiralama Kümelerini istemeden 
+erişilebilir oldu ve bu da başarım ve denenebilirliği artırdı.
+Eş seçimi stratejilerinde ayarlamalar yapıldı.</p>
+<p>I2P artık I2P-over-Tor kullanılmasına izin vermiyor, Tor çıkış IP adreslerinden gelen bağlantılar artık engelleniyor.
+Bunu önermiyoruz çünkü I2P başarımını düşürüyor ve hiçbir fayda sağlamadan Tor çıkış aktarıcılarının kaynaklarını tüketiyor.
+Hem Tor çıkış aktarıcısı hem de I2P işleten yardımsever bir kişiyseniz, bunu yapmayı sürdürmek için her birinde farklı IP adresleri kullanmanızı öneririz.
+Çıkış dışındaki aktarıcılar ve Tor istemcileri bundan etkilenmez ve herhangi bir şeyi değiştirmeleri gerekmez.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/07/19/i2p_2.6.0_released"/>
+    <summary>I2P 2.6.0 sürümü</summary>
+    <published>2024-07-19T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2afb1b0a-0ba3-466b-a665-ccdd5ede9ccf</id>
+    <title>2.5.2 Sürümü Yayınlandı</title>
+    <updated>2024-05-15T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.5.2 ile 2.5.0 sürümünde ortaya çıkan ve bazı HTTP içeriklerinin kırpılmasına neden olan bir hata düzeltildi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/05/15/2.5.2-Release"/>
+    <summary>2.5.2 sürümü HTTP düzeltmesi ile yayınlandı</summary>
+    <published>2024-05-15T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f6735a6b-8405-4ee0-835b-b2826c4f254a</id>
+    <title>2.5.1 Sürümü Yayınlandı</title>
+    <updated>2024-05-06T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.5.1, I2P ağını ve hizmetlerini etkileyen hizmet reddi saldırılarını çözmek için yayımlandı.
+Bu sürümde, Sybil saldırı algılama aracının, saldırının etkisini ve süresini artırmayı hedefleyen IP tabanlı kısımlarını kullanımdan kaldırıyoruz.
+Bu uygulama, ağın normal çalışmaya dönmesine yardımcı olacak.
+Sybil saldırı algılama aracını kapatmış olan kullanıcılar, aracı güvenle yeniden etkinleştirebilir.
+RouterInfo doğrulamasını ve eş seçimini iyileştirmek için diğer alt sistemlerde de ayarlamalar yapıldı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/05/06/i2p_2.5.1_released"/>
+    <summary>I2P 2.5.1 hizmet reddi saldırılarının çözümüyle yayınlandı</summary>
+    <published>2024-05-06T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1dfa95f0-faed-4bb3-900a-c532b9ae5c9d</id>
+    <title>Fırtınalı Hava</title>
+    <updated>2024-04-25T22:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P ağına hizmet reddi saldırısı yapılıyor.
+Bu saldırı I2P ve i2pd uygulamalarını farklı şekillerde etkiliyor ve ağ sağlığı üzerinde ciddi bir etkisi var.
+I2P sitelerinin erişilebilirliği büyük ölçüde bozuldu.</p>
+<p>I2P üzerinde barındırdığınız bir hizmet varsa ve bu hizmet bir otomatik doldurma yönelticisinde barındırılıyorsa erişilebilirliği artırmak için hizmeti otomatik doldurma kullanılmayan bir yönelticide birden fazla sunucuya bağlamayı düşünmelisiniz.
+Diğer azaltımlar tartışılıyor ancak uzun vadeli, geriye dönük uyumlu bir çözüm üzerinde çalışmayı sürdürüyoruz.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/04/25/stormy_weather"/>
+    <summary>Ağ havası: Fırtınalı. I2p saldırıya uğradı.</summary>
+    <published>2024-04-25T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:d0b633da-0f36-409e-9b2a-9a3b03b033c3</id>
+    <title>Yeni I2P 2.5.0 sürümü yayınlandı</title>
+    <updated>2024-04-08T10:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.5.0 sürümünde, ağ veri tabanı (NetDB) yalıtım stratejisinin uygulanmasına odaklanan 2.4.0 sürümüne göre kullanıcı tarafında ek iyileştirmeler yapıldı.</p>
+<p>I2PSnark üzerine torrentlerde arama yapma gibi yeni özellikler eklendi.
+BiglyBT ve qBittorrent gibi diğer I2P torrent istemcileriyle uyumluluğu artırmak için sorunlar düzeltildi.
+I2P desteklerini etkinleştirmek ve geliştirmek için libtorrent ve qBittorrent ile çalışan tüm geliştiricilere teşekkür ederiz.
+E-postalarda Markdown biçimlendirmesi desteği ve ek dosyaları e-postalara sürükleyip bırakma yeteneği ile birlikte yeni SusiMail özellikleri eklendi.
+Gizli hizmetler yöneticisiyle oluşturulan tüneller artık başarım ve internet teknolojileriyle uyumluluğu geliştirerek daha gelişmiş I2P sitelerinin önünü açan "Keepalive" özelliğini destekliyor.</p>
+<p>Bu sürüm ile, ağ veri tabanının (NetDB) istenmeyen iletilere karşı direncini artırmak ve yönelticinin şüpheli iletileri reddetme yeteneğini geliştirmek için de birkaç değişiklik yaptık.
+Bu,nlar 2.4.0 sürümündeki "Alt veri tabanı yalıtımı" savunmalarının uygulanmasını "denetleme" çabasının bir parçasıydı.
+Bu araştırma sırasında, küçük bir yalıtımı aşma durumu ortaya çıktı.
+Bu sorun, I2P ekibi tarafından içeride bulundu ve düzeltildi.</p>
+<p>Bu sürüm ile, Android ve Windows için alt dağıtımlarımızı yayınlama sürecinde çeşitli iyileştirmeler yaptık.
+Bu iyileştirmeler, bu alt ürünler için aktarım ve bulunabilirliği iyileştirmiş olmalı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2024/04/08/new_release_i2p_2.5.0"/>
+    <summary>Ek uygulama iyileştirmeleri yapldı. NetDB yalıtım stratejisi denetimi</summary>
+    <published>2024-04-08T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6be01098-562b-48f9-b205-455c0d9665a7</id>
+    <title>I2P 2.4.0 sürümü tıkanıklık ve ağ veri tabanı (NetDB) güvenliği iyileştirmeleriyle yayınlandı</title>
+    <updated>2023-12-18T20:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde, I2P 2.4.0, I2P ağının güvenliğini ve kararlılığını iyileştirme çabalarımızı sürdürüyor.
+Eşlerinizi keşfetmek için kullanılan I2P ağı içindeki önemli bir yapı olan ağ veri tabanında önemli iyileştirmeler bulunuyor.</p>
+<p>Tıkanıklık yönetimi değişiklikleri, yönelticilere tıkanıklık yaşayan eşlerden kaçınarak onları rahatlatma yeteneği vererek ağ kararlılığını artıracak.
+Böylece, ağda istenmeyen tünellerin etkisinin sınırlaması sağlanacak.
+Ayrıca DDOS saldırıları sırasında ve sonrasında ağın iyileşmesine de yardımcı olacak.</p>
+<p>Ağ veri tabanı değişiklikleri ayrıca tek tek yönelticilerin ve bunları kullanan uygulamaların güvenliğinin sağlanmasına da yardımcı oluyor.
+Yönlendiriciler artık ağ veri tabanını uygulamalarla yöneltici arasındaki bilgi sızıntısını önlemek için kullandığımız birden fazla "alt veri tabanına" ayırarak saldırganlara karşı savunma yapabiliyor.
+Bu aynı zamanda Java yönelticilerin ağ veri tabanı işlemleriyle ilgili güncel bilgilerini geliştiriyor ve çoklu sunucu uygulamalarına yönelik desteğimizi basitleştiriyor.</p>
+<p>Ayrıca I2PSnark ve SusiMail uygulamalarında çeşitli hata düzeltmeleri ve geliştirmeler de bulunuyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/12/18/i2p-2.4.0-release-with-congestion-and-netdb-security-improvements/"/>
+    <summary>I2P 2.4.0 sürümü tıkanıklık ve ağ veri tabanı (NetDB) güvenliği iyileştirmeleriyle yayınlandı</summary>
+    <published>2023-12-18T20:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:68a13d95-a56a-4a69-9888-4378e0d180ac</id>
+    <title>Yeni I2P 2.3.0 sürümü yayınlandı. Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API</title>
+    <updated>2023-06-25T12:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde, CVE-2023-36325 için düzeltmeler bulunuyor.
+CVE-2023-36325, bloom süzgecinde ortaya çıkan bir bağlam karışıklığı hatasıdır.
+Saldırgan, benzersiz bir ileti kimliği olan bir I2NP iletisi oluşturur ve bu ileti kimliğini bir istemciye gönderir.
+İletinin bloom süzgecinden geçtikten sonra ikinci bir iletide kullanılmasına izin verilmez.
+Saldırgan daha sonra aynı iletiyi doğrudan yönelticiye gönderir.
+Yöneltici iletiyi bloom süzgecine iletir ve bırakır.
+Böylece, ileti kimliğinin daha önce görüldüğü bilgisini sızdırarak saldırgana istemciyi bu yönelticinin barındırdığına inanması için güçlü bir neden verir.
+Bu sorun, bloom süzgecinin işlevselliğinin, bir iletinin istemci tünelinden (bir keşif tüneli) gelip doğrudan yönelticiye gönderilip gönderilmediğine bağlı olarak farklı bağlamlara ayrılmasıyla düzeltildi.
+Normal koşullar altında, bu saldırının başarılı bir şekilde gerçekleştirilmesi birkaç gün sürer ve saldırı aşamasında yönelticilerin yeniden başlatılması ve hatalı doğru sonuçlara karşı duyarlılık gibi çeşitli faktörler nedeniyle kafa karıştırıcı olabilir.
+Saldırıyı önlemek için Java I2P kullanıcılarının hemen güncelleme yapması önerilir.</p>
+<p>Bu bağlam karışıklığı hatasını düzeltme sürecinde, bazı stratejilerimizin kodunu bu tür sızıntılara karşı savunma amacıyla değiştirdik.
+Bunlar ağ veri tabanı üzerinde yapılan değişiklikler, hız sınırlayıcı mekanizmaların ve otomatik doldurma yönelticilerinin davranışlarıdır.</p>
+<p>Bu sürümde ikinci varsayılan sunucu hizmeti sağlayıcısı olarak not_bob eklendi ve konsol ana sayfasına <a href="http://notbob.i2p">notbob.i2p</a> ile <a href="http://ramble.i2p">ramble.i2p</a> eklendi.</p>
+<p>Bu sürümde ayrıca değiştirilebilir bir engelleme listesi bulunuyor.
+Engelleme listesi yarı kalıcıdır. Engellenen her IP adresi normalde yöneltici yeniden başlatılana kadar engellenir.
+Sybil saldırıları sırasında engellenenler listesinin aşırı hızlı arttığını gözlemleyen kullanıcılar, engellenenler listesini belirli aralıklarla kayıtların süresi dolacak şekilde yapılandırarak daha kısa zaman aşımı süreleri kullanmayı yeğleyebilir.
+Bu özellik varsayılan olarak kapalıdır ve şu anda yalnızca uzman kullanıcıların kullanması önerilmektedir.</p>
+<p>Bu sürümde ayrıca eklentilerin Masaüstü görsel kullanıcı arayüzü (DTG) ile değiştirilebilmesi için bir API bulunuyor.
+Artık sistem tepsisine menü ögeleri eklenebilir. Böylece yerel uygulama arayüzlerini kullanan eklentiler daha sezgisel olarak başlatılabilir.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/06/25/i2p-release-2.3.0"/>
+    <summary>I2P 2.3.0 - Güvenlik düzeltmeleri, değiştirilebilir engelleme listeleri ve DTG API</summary>
+    <published>2023-06-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:d960054d-6e03-4638-b808-cd3dadae40d5</id>
+    <title>Yeni 2.2.1 sürümü yayınlandı. Docker, Ubuntu, Lunar ve Debian Sid paketleme düzeltmeleri yapıldı</title>
+    <updated>2023-04-12T03:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>DDOS saldırılarını zayıflatmayı hızlandırmak amacıyla öne alınan I2P 2.2.0 sürümünün ardından, yeni paketler oluşturmayı ve yayınlamayı gerekli kılan birkaç sorunu öğrendik.
+Bu sürüm, jakarta paketinin güncellenmiş bir sürümü kullanılarak yöneltici konsoluna erişilemeyen Ubuntu Lunar ve Debian Sid içindeki bir sorunu gideriyor.
+Docker paketleri bağımsız değişkenleri doğru okumuyordu ve bu da yapılandırma dosyalarına erişilememesine neden oluyordu.
+Bu sorun da çözüldü.
+Docker kapsayıcısı artık Podman ile de uyumlu.</p>
+<p>Bu sürümde, çevirileri transifex ile eşitlendi ve GeoIP ver itabanı güncellendi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/4/12/new_release_2.2.1"/>
+    <summary>I2P 2.2.1 - 2.2.0 sürümü için düzeltme sürümü</summary>
+    <published>2023-04-12T03:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:3b44ff84-d820-4976-bb4a-9c6e4dd3e362</id>
+    <title>Yeni 2.2.0, sürümünde DDOS saldırılarını zayıflatıldı ve akış alt sisteminde ince ayarlar yapıldı</title>
+    <updated>2023-03-13T17:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bugün yani 13 Mart 2023 tarihinde sunulacak olan 2.2.0 sürümünün çıkış tarihini erteledik.
+Bu sürümde, NetDB, Floodfill ve Peer-Selection bileşenlerinde, yönelticinin DDOS saldırılarına karşı hayatta kalma yeteneğini geliştiren bir değişiklik bulunuyor.
+Büyük olasılıkla saldırılar sürecektir. Ancak bu sistemlerde yapılan iyileştirmeler, yönelticinin kötü amaçlı görünen yönelticileri tanımlamasına ve önceliklerini kaldırmasına yardımcı olarak DDOS saldırısı riskini azaltmaya yardımcı olur.</p>
+<p>Bu sürümde ayrıca akış alt sistemine, şifrelenmiş bir paketi yakalayabilen bir saldırganın onu istenmeyen alıcılara göndererek yeniden kullanmasını önleyen yeniden oynatma koruması eklendi.
+Bu geriye dönük olarak uyumlu bir değişikliktir. Bu nedenle eski yönelticiler yeni yönelticilerin akış özelliklerini kullanmayı sürdürebilecektir.
+Bu sorun, I2P geliştirme ekibi tarafından keşfedildi, içeride düzeltildi ve DDOS saldırılarıyla ilgili değil.
+Vahşi doğada yeniden oynatılan bir akış paketiyle hiç karşılaşmadık ve şu anda I2P ağına karşı bir akış yeniden oynatma saldırısının gerçekleştiğine inanmıyoruz.</p>
+<p>Fark etmiş olabileceğiniz gibi, bu sürüm notları ve sürümün kendisi zzz tarafından değil idk tarafından imzalanmıştır.
+zzz projeden uzaklaşmayı seçti ve sorumlulukları diğer ekip üyeleri tarafından üstleniliyor.
+Bu nedenle proje, ağ istatistikleri altyapısını değiştirmeye ve geliştirme forumunu i2pforum.i2p üzerine taşımaya çalışıyor.
+Bu hizmetleri bu kadar uzun süre sağlayan zzz'ye teşekkür ediyoruz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir.
+Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/3/13/new_release_2.2.0"/>
+    <summary>DDOS saldırıları zayıflatıldı ve akış alt sisteminde ince ayarlar yapıldı</summary>
+    <published>2023-03-13T17:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:1a4d272b-8f28-4bb0-bab7-59953c1013f7</id>
+    <title>DDoS güncellemesi</title>
+    <updated>2023-02-14T19:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Saldırganın çok sayıda yönelticiyi kontrol ettiğini onayladık.
+Soruşturmalarımız ve zayıflatma çalışmalarımız sürüyor.</p>
+<p>Bu an, insanlara 20 yıl sonra bile I2P ağının nispeten küçük olduğunu hatırlatmak için iyi bir zaman.
+Saldırganın belirli bir kullanıcıyı veya gizli hizmeti anonimleştirmeye çalıştığına dair hiçbir kanıtımız yok.
+Ancak, yüksek riskli bir tehdit modeliniz varsa, I2P tarafından şu anda gerek duyduğunuz korumanın sağlanıp sağlanmadığını dikkatlice değerlendirmelisiniz.
+Uzun vadede en iyi çözüm, kullanıcılarımızın güvenliğini artırmak için bu bilgiyi yaymak ve I2P ağını büyütmektir.</p>
+<p>Gerektiğinde burada haber akışında ve <a href="http://zzz.i2p">zzz.i2p</a> üzerinde ek bilgi vereceğiz.
+Biz I2P geliştirmeleri üzerinde çalışırken sabırlı olmanızı rica ediyoruz.</p>
+</div>
+    </content>
+    <link href="http://zzz.i2p/topics/3593"/>
+    <summary>DDoS güncellemesi</summary>
+    <published>2023-02-14T19:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6558c015-7767-45f1-b80a-07def923a88d</id>
+    <title>Son hizmet reddi (DDoS) saldırıları hakkında</title>
+    <updated>2023-02-09T23:00:00+00:00</updated>
+    <author>
+      <name>sadie,idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P ağı şu anda bir hizmet reddi saldırısından etkileniyor.
+  Ağın otomatik doldurma işlevi etkilendi. Bu da yanıtların kesintiye uğramasına ve tünel oluşturma başarı oranlarının düşmesine neden oldu.
+  Ağa karkıda bulunanlar, I2P sitelerine bağlanma ve I2P hizmetlerini kullanma konusunda zorluklar yaşadı.
+  Zayıflatma stratejileri kademeli olarak araştırılıp uygulanıyor.</p>
+<p>Saldırı başarımı düşürmüş olsa da, ağ bozulmadan ve kullanılabilir durumda kaldı.
+  Java I2P yönelticileri, sorunlarla şimdilik i2pd yönlendiricilerinden daha iyi başa çıkıyor gibi görünüyor.
+  Önümüzdeki hafta hem Java hem de C++ yönelticilerinin geliştirme yapılarında çeşitli zayıflatmalar görünmeye başlayacak.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2023/2/9/about_the_recent_denial_of_service_attacks"/>
+    <summary>I2P bozulan başarımda bozulmadan kaldı</summary>
+    <published>2023-02-09T23:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:68f9a58c-de7f-493e-8cb7-c0ceeda78007</id>
+    <title>2.1.0 Sürümü Yayınlandı</title>
+    <updated>2023-01-09T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Kasım ayında yayınlanan 2.0.0 sürümünden bu yana birçok şey öğrendik.
+Yönelticiler bu sürüme güncellendikçe, yeni SSU2 aktarım iletişim kuralımız 
+için ağ desteği %1 oranından yaklaşık olarak %60 oranının üzerine çıktı.
+İlk olarak, SSU2 iletişim kuralının sağlam, iyi tasarlanmış ve güvenli olduğunu doğruladık.
+İkinci olarak, iletişim kuralının uygulanmasında çok sayıda küçük ya da nadiren karşılaşılan 
+hatalar bulduk ve düzelttik.
+Bu hataların toplu etkisi ağın başarımını düşürüyordu.</p>
+<p>Ayrıca, muhtemelen yeni Bitcoin I2P geçici adres özelliği tarafından tetiklenen ve 
+SSU2 hatalarımız ile diğer tıkanıklık denetimi sorunlarımız tarafından daha da 
+kötü duruma gelerek, ağda tünel sayısının artmasına ve tünel oluşturma başarı 
+oranının azalmasına neden olan sorunların farkındayız.
+I2P ağ isteklerini azaltmak için Bitcoin ve Bitcoin dışındaki diğer projelerle birlikte çalışıyoruz.
+Sıkışıklık zamanlarında ağ yükünü azaltmak için algoritmalarımızı geliştirdik.
+Ayrıca ortak tıkanıklık denetleme stratejileri geliştirmek için i2pd ile işbirliği yapıyoruz.</p>
+<p>Bu nedenle, düzeltmeleri herkese ulaştırmak için bu sürümü yaklaşık altı hafta öne aldık.
+i2pd geçen hafta 2.45.0 sürümünü yayınladı ve erken sonuçlar cesaret verici.
+Yeni iletişim kurallarının ve dağıtılmış ağların geliştirilmesi zordur.
+Tıkanıklık, çok az uyarıyla ve nedeni hakkında çok az ipucuyla ortaya çıkabilir.
+Sorunları bulup çözdüğümüzü umuyoruz. Sabrınız için teşekkür ederiz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2023/01/09/2.1.0-release"/>
+    <summary>2.1.0 sürümü çeşitli SSU2 düzeltmeleri ile yayınlandı</summary>
+    <published>2023-01-09T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:adf95235-a183-4870-b5fa-99752e3657d2</id>
+    <title>2.0.0 Sürümü Yayınlandı</title>
+    <updated>2022-11-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P 2.0.0 sürümü, küçük özelliklerin, denemelerin ve çok sayıda hata düzeltmesinin tamamlanmasından sonra yeni SSU2 UDP taşıyıcımızı tüm kullanıcılar için etkinleştirdi.</p>
+<p>Ayrıca kurucu, ağ veri tabanı, kişisel adres defterine ekleme, Windows tarayıcı başlatıcısı ve IPv6 UPnP ile birlikte pek çok düzeltme yaptık.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/11/21/2.0.0-release"/>
+    <summary>SSU2 taşıyıcısı etkinleştirildi</summary>
+    <published>2022-11-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:65da828c-43de-49a4-98e7-b8bfeed8d341</id>
+    <title>Son günlük yazıları</title>
+    <updated>2022-10-12T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Sitemizdeki son bir kaç günlük yazısının bağlantıları:</p>
+<ul>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/10/11/SSU2-Transport">Yeni SSU2 taşıyıcımıza genel bakış</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/26/i2p-safety-reminder">I2P taklitleri ve diğer dolandırıcılıklar hakkında uyarı</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/26/meet-your-maintainer-divaexchange">diva.exchange kuruluşundan Konrad ile söyleşi</a></li>
+<li><a href="http://i2p-projekt.i2p/en/blog/2022/09/07/Meet_your_Maintainer_StormyCloud">StormyCloud kuruluşundan Dustin ile söyleşi</a></li>
+</ul></div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/"/>
+    <summary>Son bir kaç günlük yazısı</summary>
+    <published>2022-10-12T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b998384f-08ae-4979-908b-2f57e72b05f5</id>
+    <title>1.9.0 Sürümü Yayınlandı</title>
+    <updated>2022-08-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Son üç ayı az sayıda gönüllü deneme kullanıcısıyla yeni UDP taşıyıcı iletişim kuralımız 
+"SSU2" üzerinde çalışarak geçirdik.
+Bu sürüm, aktarıcı ve eş sınaması ile birlikte uyarlamayı tamamlıyor.
+Bu özellikleri Android ve ARM platformları için varsayılan olarak ve diğer yönelticilerin 
+rastgele ve küçük bir yüzdesi için etkinleştiriyoruz.
+Böylece önümüzdeki üç ay içinde çok daha fazla deneme yapabileceğiz ve bağlantı 
+taşıma özelliğini tamamlayarak kalan sorunları giderebileceğiz.
+Kasım ayında çıkması planlanan bir sonraki sürümde bu özelliği herkes için etkinleştirmeyi 
+planlıyoruz.
+El ile herhangi bir yapılandırma gerekmiyor.</p>
+<p>Tabii ki, bu sürümde de olağan hata düzeltmeleri var.
+Ayrıca, zaten düzeltilmiş olan nadir bir kilitlenme için otomatik bir kilitlenme algılayıcısı ekledik.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/8/22/1.9.0-Release"/>
+    <summary>1.9.0 sürümü deneme için SSU2 ile yayınlandı</summary>
+    <published>2022-08-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:4c69e33a-6238-4b50-98ef-6ee00d2d8da7</id>
+    <title>Yeni çıkış vekil sunucusu exit.stormycloud.i2p</title>
+    <updated>2022-08-05T11:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>HTTP vekil sunucu tüneliniz üzerinden internete erişmek için I2P "çıkış vekil sunucuları"
+(çıkış düğümleri) kullanılabilir.
+<a href="http://i2p-projekt.i2p/en/meetings/314">Aylık toplantımızda</a> onaylandığı şekilde 
+<b>exit.stormycloud.i2p</b> uzun süredir kullanılmayan <b>false.i2p</b> 
+vekil sunucumuzun yerini alan resmi, önerilen dış vekil sunucumuzdur.
+StormyCloud <a href="http://stormycloud.i2p/">kuruluşu</a>, <a href="http://stormycloud.i2p/outproxy.html">çıkış vekil sunucusu</a> ve <a href="http://stormycloud.i2p/tos.html">hizmet koşulları</a> 
+hakkında ayrıntılı bilgi almak için <a href="http://stormycloud.i2p/">StormyCloud sitesine</a> bakabilirsiniz.</p>
+<p><a href="/i2ptunnel/edit?tunnel=0">Gizli Hizmetler Yöneticisi yapılandırmanızı</a>,
+iki yerde <b>exit.stormycloud.i2p</b> belirtecek şekilde değiştirmenizi 
+öneririz: <b>Outproxies</b> ve <b>SSL Outproxies</b>.
+Düzenlemeden sonra <b>aşağı kaydırıp Kaydet üzerine tıklayın</b>.
+Ekran görüntüsü için <a href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud">blog yazımıza bakabilirsiniz</a>.
+Android yönergeleri ve ekran görüntüleri için <a href="http://notbob.i2p/cgi-bin/blog.cgi?page=116">notbob blog</a> sitesine bakabilirsiniz.</p>
+<p>Yöneltici güncellemeleri yapılandırmanızı güncellemeyeceğinden el ile düzenlemeniz gerekir
+Teşekkürler StormyClod. Bağış yaparak bizi desteklemeyi düşünün.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/8/4/Enable-StormyCloud"/>
+    <summary>Yeni çıkış vekil sunucusu</summary>
+    <published>2022-08-05T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:ad7c438d-01c6-435b-b290-855190d73b73</id>
+    <title>1.8.0 Sürümü Yayınlandı</title>
+    <updated>2022-05-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde, i2psnark, yöneltici, I2CP ve UPnP
+üzerinde yapılmış hata düzeltmeleri bulunuyor.
+Yöneltici, yumuşak yeniden başlatma, IPv6, SSU 
+eş sınaması, ağ veri tabanı kaydetme ve tünel 
+oluşturma adres hataları düzeltildi.
+Yöneltici ailesi kullanımı ve Sybil sınıflandırması da 
+önemli ölçüde iyileştirildi.</p>
+<p>i2pd ile birlikte yeni SSU2 UDP taşıyıcımızı geliştiriyoruz. 
+SSU2, önemli başarım ve güvenlik iyileştirmeleri getirecek.
+Ayrıca, yaklaşık 9 yıl önce başlattığımız tam şifreleme 
+yükseltmesini tamamlıyoruz. Böylece çok yavaş ElGamal 
+şifrelemesini son kez kullanıyoruz ve nihayet değiştirebileceğiz.
+Bu sürümde, varsayılan olarak etkisizleştirilmiş bir ön 
+uygulama bulunuyor. Denemelere katkıda bulunmak
+istiyorsanız, zzz.i2p adresindeki güncel bilgileri bakabilirsiniz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/05/23/1.8.0-release"/>
+    <summary>1.8.0 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2022-05-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:0b18adce-f766-45bf-bf12-dc0b32951a71</id>
+    <title>Temel Java/JPackage güncellemeleri kuruldu</title>
+    <updated>2022-04-22T11:00:00+00:00</updated>
+    <author>
+      <name>idk</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Yeni bulunan Java "Psişik imzalar" güvenlik açığı I2P uygulamasını etkiliyor. 
+Linux için I2P kullanan veya kurulum paketinde bulunmayan bir JVM kullanan 
+I2P kullanıcıları, JVM yazılımlarını güncellemeli ya da bu güvenlik açığının 
+bulunmadığı Java 15 altındaki bir sürüme geçmeli.</p>
+<p>Son Java Virtual Machine sürümü kullanılarak yeni I2P Easy-Install kolay kurulum 
+paketleri oluşturuldu. Ayrıntılı bilgi almak için paket haber akışlarına bakabilirsiniz.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/post/2022/4/21/Easy-Install-Updates"/>
+    <summary/>
+    <published>2022-04-22T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5136d7e2-5957-4310-a69a-8882d9c88228</id>
+    <title>1.7.0 Sürümü Yayınlandı</title>
+    <updated>2022-02-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>1.7.0 sürümünde birkaç başarım ve güvenilirlik iyileştirmesi yapıldı.</p>
+<p>Artık destekleyen platformların sistem tepsisinde açılır iletiler var.
+Yeni bir i2psnark torrent düzenleyicisi var.
+NTCP2 taşıyıcısı artık çok daha az işlemci kullanıyor.</p>
+<p>Uzun süredir kullanımdan kaldırılan BOB arayüzü, yeni kurulumlar için kaldırıldı.
+Debian paketleri dışında var olan kurulumlarda çalışmayı sürdürecek.
+BOB uygulamalarının kalan tüm kullanıcıları, geliştiricilerden SAMv3 iletişim kuralına geçmelerini istemelidir.</p>
+<p>1.6.1 sürümümüzden bu yana ağ güvenilirliğinin giderek kötüleştiğini biliyoruz.
+Yayınlandıktan hemen sonra sorunun farkındaydık, ancak nedenini bulmamız neredeyse iki ayımızı aldı.
+Sonunda bunu i2pd 2.40.0 sürümünde bir hata olarak belirledik. 
+Düzeltmesi, bu sürümle yaklaşık olarak aynı zamanda çıkan 2.41.0 sürümünde olacak.
+Bu arada, ağ veri tabanı aramalarının ve depolarının sağlamlığını geliştirmek ile tünel eş seçiminde başarımı düşük olan 
+eşlerden kaçınmak için Java I2P tarafında birkaç değişiklik yaptık.
+Böylece, hatalı veya kötü niyetli yönelticilerin varlığında bile ağ daha sağlam olmalı.
+Ayrıca, yayın öncesi i2pd ve Java I2P yönelticilerini yalıtılmış bir deneme ağında 
+birlikte denemek için ortak bir program başlatıyoruz. Böylece daha fazla sorunu 
+sürümler yayınlandıktan sonra değil, yayınlanmadan önce bulabiliriz.</p>
+<p>Diğer yandan, yeni UDP taşıyıcımız "SSU2" (159 numaralı öneri) tasarımında büyük ilerleme kaydetmeyi sürdürüyoruz 
+ve kullanıma almaya başladık.
+SSU2, önemli başarım ve güvenlik iyileştirmeleri getirecek.
+Ayrıca, yaklaşık 9 yıl önce başlayan tam şifreleme yükseltmesini tamamlayarak, çok yavaş ElGamal şifrelemesini değiştirmeden önce son kez kullanacağız.
+Yakında i2pd ile ortak denemelere başlamayı ve bu yıl ağ üzerinde kullanıma sunmayı umuyoruz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2022/02/21/1.7.0-release"/>
+    <summary>1.7.0 sürümü güvenilirlik ve başarım iyileştirmeleri ile yayınlandı.</summary>
+    <published>2022-02-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:edd3c726-6c3e-4840-9801-5d41627ec1cf</id>
+    <title>1.6.0 Sürümü Yayınlandı</title>
+    <updated>2021-11-29T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde, 2021 yılında geliştirilen iki büyük iletişim kuralı güncellemesinin dağıtımını tamamlanıyor.
+Yöneltici için X25519 şifrelemesi geçişi hızlandı ve yıl sonuna kadar neredeyse tüm yönelticilerin yeniden anahtarlanmasını bekliyoruz.
+Bant genişliğinde önemli bir azalma sağlayacak olan kısa tünel oluşturma iletileri etkinleştirildi.</p>
+<p>Yeni kurulum yardımcısına tema seçim panosu eklendi.
+SSU başarımı iyileştirildi ve SSU eş sınaması iletileriyle ilgili bir sorun düzeltildi.
+Tünel oluşturma Bloom süzgeci, bellek kullanımını azaltacak şekilde ayarlandı.
+Java dışı eklenti desteği genişletildi.</p>
+<p>Diğer yandan, yeni UDP ulaşım SSU2 tasarımında harika bir ilerleme kaydettik ve önümüzdeki yılın başlarında uygulamaya geçirmeyi umuyoruz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/11/29/1.6.0-Release"/>
+    <summary>1.6.0 sürümünde yeni tünel oluşturma iletileri etkinleştirildi</summary>
+    <published>2021-11-29T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:87e8a1b1-d683-4e8e-9f5a-b1ac746b3ae9</id>
+    <title>1.5.0 Sürümü Yayınlandı</title>
+    <updated>2021-08-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Evet, doğru. 9 yıldır süren 0.9.x sürümlerinden sonra, doğrudan 0.9.50 sürümünden 1.5.0 sürümüne geçiyoruz.
+Bu durum, büyük bir API değişikliği olduğu ya da geliştirmenin tamamlandığı anlamına gelmiyor.
+Yaklaşık 20 yıldır kullanıcılarımıza anonimlik ve güvenlik sağlamak için süren çalışmaları onurlandırıyor.</p>
+<p>Bu sürüm, bant genişliğini azaltmak için daha küçük tünel oluşturma iletileri uygulamasını tamamlar.
+Ağ yönelticilerinin X25519 şifrelemesine geçişini sürdürüyoruz.
+Elbette çok sayıda hata düzeltmesi ve başarım iyileştirmesi de var.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/08/23/1.5.0-release"/>
+    <summary>1.5.0 sürümü yeni tünel oluşturma iletileri ile yayınlandı</summary>
+    <published>2021-08-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:e7a0f375-817f-4c8f-a961-43a81467f560</id>
+    <title>MuWire Masaüstü Güvenlik Açığı</title>
+    <updated>2021-07-09T15:00:00+00:00</updated>
+    <author>
+      <name>zlatinb</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>MuWire bağımsız masaüstü uygulamasında bir güvenlik açığı bulundu.
+Bu açık pano eklentisini etkilemiyor ve daha önce duyurulan eklenti sorunuyla ilgili değil.
+MuWire masaüstü uygulamasını kullanıyorsanız hemen <a href="http://muwire.i2p/">0.8.81 sürümüne güncellemelisiniz</a>.</p>
+<p>Sorunun ayrıntıları 15 Temmuz 2021 tarihinde <a href="http://muwire.i2p/security.html">muwire.i2p</a> 
+adresinde yayınlanacak.</p>
+</div>
+    </content>
+    <link href="http://muwire.i2p/security.html"/>
+    <summary>Muwire Masaüstü Güvenlik Açığı</summary>
+    <published>2021-07-09T15:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:0de64d0d-8357-49cf-8eea-e1d889cd7387</id>
+    <title>MuWire Eklentisi Güvenlik Açığı</title>
+    <updated>2021-07-07T11:00:00+00:00</updated>
+    <author>
+      <name>zlatinb</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>MuWire eklentisinde bir güvenlik açığı bulundu.
+Bu açık bağımsız masaüstü uygulamasını etkilemiyor.
+MuWire eklentisini kullanıyorsanız hemen <a href="/configplugins">0.8.7-b1 sürümüne güncellemelisiniz</a>.</p>
+<p>Güvenlik açığı ve güncellenmiş güvenlik önerileri hakkında
+ayrıntılı bilgi almak için <a href="http://muwire.i2p/security.html">muwire.i2p</a> adresine bakabilirsiniz.</p>
+</div>
+    </content>
+    <link href="http://muwire.i2p/security.html"/>
+    <summary>Muwire Eklentisi Güvenlik Açığı</summary>
+    <published>2021-07-07T11:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:9a6591a3-e663-4758-95d1-9fa4e0526d48</id>
+    <title>0.9.50 Sürümü Yayınlandı</title>
+    <updated>2021-05-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.50 sürümünde, yöneltici şifreleme anahtarları için ECIES-X25519 geçişi çalışmaları sürüyor.
+Kullanıcıları pasif DNS gözetlemesinden korumak için yeniden tohumlama işleminde HTTPS üzerinden DNS özelliği etkinleştirildi.
+Yeni UPnP desteği ile IPv6 adresleri için çok sayıda düzeltme ve iyileştirme yapıldı.</p>
+<p>Uzun süredir var olan bazı SusiMail bozulma hataları nihayet düzeltildi.
+Bant genişliği sınırlayıcısında yapılan değişiklikler ağ tüneli başarımını iyileştirmiş olmalı.
+Docker kapsayıcılarımızda birkaç iyileştirme yapıldı.
+Ağdaki olası kötü amaçlı ve hatalı yönelticilere karşı savunma geliştirildi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/05/17/0.9.50-release"/>
+    <summary>0.9.50 sürümü IPv6 düzeltmeleri ile yayınlandı</summary>
+    <published>2021-05-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f3629d00-d989-4082-9185-302139c1c9c3</id>
+    <title>0.9.49 Sürümü Yayınlandı</title>
+    <updated>2021-02-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.49 sürümünde I2P uygulamasını daha hızlı ve daha güvenli hale getirme çalışmaları sürüyor.
+SSU (UDP) taşıyıcısı için daha yüksek hızlar sağlayacak çeşitli iyileştirme ve düzeltmeler yapıldı.
+Ayrıca bu sürümde yönelticiler için yeni ve daha hızlı ECIES-X25519 şifrelemesine geçiş de başlatıldı.
+(Hedefler birkaç sürümdür bu şifrelemeyi kullanıyordu)
+Birkaç yıldır yeni şifreleme için teknik özellikler ve iletişim kuralları üzerine çalışıyoruz
+ve çalışmalarımızın sonuna yaklaşıyoruz! Geçişin tamamlanması birkaç sürüm alacak.</p>
+<p>Bu sürümde kesintiyi en aza indirmek için yalnızca yeni kurulumlar ve var olan kurulumların çok küçük bir
+yüzdesi (yeniden başlatma sırasında rastgele seçilir) yeni şifrelemeyi kullanacak.
+Yönelticiniz yeni şifrelemeyi kullanmak için "yeniden anahtarlama" yaparsa, yeniden başlatıldıktan sonraki birkaç gün boyunca normalden daha düşük trafik ya da daha düşük güvenilirlik görebilirsiniz.
+Yönelticiniz yeni bir kimlik oluşturduğundan bu durum normaldir. 
+Başarımınız bir süre sonra düzelecektir.</p>
+<p>Varsayılan imza türünü değiştirirken ağı daha önce iki kez "yeniden anahtarladık"
+ancak varsayılan şifreleme türünü ilk kez değiştiriyoruz.
+Her şeyin yolunda gideceğini umuyoruz. Ancak emin olmak için yavaş yavaş başlıyoruz.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2021/02/17/0.9.49-release"/>
+    <summary>0.9.49 sürümü SSU hata ayıklamaları ve daha hızlı şifreleme ile yayınlandı</summary>
+    <published>2021-02-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2f702241-c585-4151-a364-76c561621989</id>
+    <title>0.9.48 Sürümü Yayınlandı</title>
+    <updated>2020-12-01T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.48 sürümünde, çoğu hizmet için yeni uçtan uca şifreleme iletişim kuralı (öneri 144) kullanılıyor.
+Yeni tünel oluşturma ileti şifrelemesinin ön desteği eklendi (152 numaralı öneri).
+Yöneltici genelinde önemli başarım iyileştirmeleri yapıldı.</p>
+<p>Ubuntu Xenial (16.04 LTS) paketleri artık desteklenmiyor.
+Bu platformu kullanan kullanıcıların gelecekteki I2P güncellemelerini alabilmesi için sürümlerini yükseltmesi gerekiyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/11/30/0.9.48-release"/>
+    <summary>0.9.48 sürümü başarım iyileştirmeleri ile yayınlandı</summary>
+    <published>2020-12-01T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:12c0f414-175a-401e-a35c-47307627a050</id>
+    <title>0.9.47 Sürümü Yayınlandı</title>
+    <updated>2020-08-24T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.47 sürümünde bazı hizmetler için varsayılan olarak yeni uçtan uca şifreleme iletişim kuralı (144 numaralı öneri) kullanılıyor.
+Artık Sybil inceleme ve engelleme aracı varsayılan olarak etkin.</p>
+<p>Bu sürüm için Java 8 ve üzerindeki sürümler gereklidir.
+Wheezy ve Stretch Debian paketleri ile Precise and Trusty Ubuntu paketleri artık desteklenmiyor.
+Bu platformları kullanan kullanıcıların gelecekteki I2P güncellemelerini alabilmesi için sürümlerini yükseltmesi gerekiyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/08/24/0.9.47-release"/>
+    <summary>0.9.47 sürümünde yeni şifreleme kullanılıyor</summary>
+    <published>2020-08-24T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c9389925-50cd-47fe-abb2-20708f9d52b9</id>
+    <title>0.9.46 Sürümü Yayınlandı</title>
+    <updated>2020-05-25T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.46 sürümünde akış kitaplığında önemli başarım iyileştirmeleri yapıldı.
+ECIES şifreleme (144 numaralı öneri) geliştirilmesi tamamlandı ve bu özelliği denemek için etkinleştirme seçeneği sunuldu.</p>
+<p>Yalnızca Windows kullanıcıları:
+Bu sürümde, yerel kullanıcılar tarafından kötüye kullanılabilecek
+yerel izinleri yükseltme açığı düzeltildi.
+Lütfen en kısa sürede sürümünüzü güncelleyin.
+Sorunun açığa çıkması için sorumluluk alan Blaze Infosec teşekkürü hakediyor.</p>
+<p>Bu sürüm Java 7 sürümünü, Wheezy ve Stretch Debian paketlerini ve Precise and Trusty Ubuntu paketlerini destekleyen son sürüm.
+Bu platformları kullanan kullanıcıların gelecekteki I2P güncellemelerini alabilmesi için sürümlerini yükseltmesi gerekiyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/05/25/0.9.46-release"/>
+    <summary>0.9.46 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2020-05-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b35dd505-4fd2-451d-91c5-d148bc095869</id>
+    <title>0.9.45 Sürümü Yayınlandı</title>
+    <updated>2020-02-25T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.45 sürümünde gizli kip ve bant genişliği ölçümü için önemli düzeltmeler yapıldı.
+Pano karanlık temasında bir güncelleme yapıldı.
+Başarımı iyileştirme ve yeni uçtan uca şifreleme geliştirme çalışmalarını sürdürüyoruz (144 numaralı öneri).</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2020/02/25/0.9.45-release"/>
+    <summary>0.9.45 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2020-02-25T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:322cb1a3-e169-4879-a053-b99371ed85d5</id>
+    <title>0.9.44 Sürümü Yayınlandı</title>
+    <updated>2019-12-01T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.44 sürümünde gizli hizmetlerde yeni şifreleme türleri işlenirken hizmet reddi sorununa yol açan önemli bir hata düzeltildi.
+Tüm kullanıcıların en kısa sürede bu sürüme geçmesini öneriyoruz.</p>
+<p>Bu sürümde ayrıca yeni uçtan uca şifreleme desteği bulunuyor (144 numaralı öneri)
+Bu proje üzerindeki çalışmalar sürüyor ve henüz tamamlanmadı.
+Pano ana sayfasında bazı değişiklikler yapıldı ve i2psnark içine yeni HTML5 ortam oynatıcısı eklendi.
+Güvenlik duvarı arkasındaki IPv6 ağları için ek düzeltmeler yapıldı.
+Tünel oluşturma düzeltmeleri ile bazı kullanıcıların uygulamayı daha hızlı başlatması sağlandı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/12/01/0.9.44-release"/>
+    <summary>0.9.44 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2019-12-01T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:18696206-3dc9-439c-9eab-b2d6bada1e7b</id>
+    <title>0.9.43 Sürümü Yayınlandı</title>
+    <updated>2019-10-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.43 sürümünde daha güçlü güvenlik ve gizlilik özellikleri üzerindeki çalışmalar sürdürüldü ve başarımda iyileştirmeler yapıldı.
+Uygulamayı yeni "Kiralama kümesi" (LS2) standartlarına uyumlu hale getirme çalışmaları tamamlandı.
+Gelecek sürümlere eklenecek daha güçlü ve daha hızlı uçtan uca şifreleme (144 numaralı öneri) uyarlaması üzerinde çalışma başlandı.
+Bazı IPv6 adres algılama sorunları ile bazı hatalar düzeltildi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/10/22/0.9.43-release"/>
+    <summary>0.9.43 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2019-10-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b49344e5-2eff-4fb4-a52b-e8e5756e6319</id>
+    <title>0.9.42 Sürümü Yayınlandı</title>
+    <updated>2019-08-27T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.42 sürümünde I2P platformunu daha hızlı ve daha sağlam kılma üzerine çalışıldı.
+UDP taşıyıcısını hızlandıracak bir kaç değişiklik yapıldı.
+Gelecekte daha modüler bir paket oluşturmak için yapılandırma dosyaları ayrıldı.
+Daha hızlı ve güvenli şifreleme için yeni fikirler üzerinde çalışma sürdürüldü.
+Ayrıca çok sayıda hata düzeltmesi yapıldı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/08/27/0.9.42-release"/>
+    <summary>0.9.42 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2019-08-27T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:f5c9ec1d-7a95-4a17-8be4-c41664125e2f</id>
+    <title>0.9.41 Sürümü Yayınlandı</title>
+    <updated>2019-07-02T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.41 sürümünde 123  numaralı önerideki yeni özellikleri ekleme çalışmaları sürdürüldü.
+"Şifrelenmiş kiralama kümeleri" (EncryptedLeaseSets) için her istemcinin kimliğinin doğrulanması özelliği eklendi.
+Panodaki I2P logosu güncellendi ve bir kaç yeni simge eklendi.
+Linux kurucusu güncellendi.</p>
+<p>Başlangıç artık Raspberry Pi gibi platformlarda daha hızlı olmalı.
+Bazı alt düzey ağ iletilerini etkileyen ciddi sorunları ve bir kaç hatayı giderdik.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/07/02/0.9.41-release"/>
+    <summary>0.9.34 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2019-07-02T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6ed561d0-0f78-49e3-ab95-c6a10167155f</id>
+    <title>0.9.40 Sürümü Yayınlandı</title>
+    <updated>2019-05-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.40 sürümünde yeni "Şifrelenmiş kiralama kümesi" (EncryptedLeaseSet) biçimi destekleniyor. 
+Eski NTCP 1 taşıyıcı iletişim kuralı etkisizleştirildi.
+Yeni SusiDNS içe aktarma özelliği ve geliş bağlantıları için yeni betik ile süzme yöntemi eklendi. </p>
+<p>OSX doğal kurucusu üzerinde birçok geliştirme yapıldı ve IzPack kurucusu da güncellendi.
+Pano simgelerini yenileme çalışması sürüyor.
+Her zamanki gibi pek çok hata düzeltildi. </p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/05/07/0.9.40-release"/>
+    <summary>0.9.40 sürümünde yeni simgeler eklendi</summary>
+    <published>2019-05-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:e34fc8d5-02fc-40cd-af83-a699ca56282e</id>
+    <title>0.9.39 Sürümü Yayınlandı</title>
+    <updated>2019-03-21T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.39 sürümünde yeni ağ veri tabanı türleri (123  numaralı öneri) ile ilgili pek çok değişiklik yapıldı.
+RPC uygulamalarının geliştirilmesini desteklemek için i2pcontrol uygulama eki bir internet uygulaması olarak eklendi.
+Çeşitli başarım iyileştirmeleri ve hata düzeltmeleri yapıldı.</p>
+<p>Bakım yükünü azaltmak için Gece Yarısı ve Klasik temaları kaldırıldı.
+Daha önce bu temaları kullanan kullanıcılar koyu ya da açık temayı seçebilir.
+Ayrıca yeni ana sayfa simgeleri ve ilk pano güncelleme adımı eklendi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/03/21/0.9.39-release"/>
+    <summary>0.9.39 sürümü başarım iyileştirmeleri ile yayınlandı.</summary>
+    <published>2019-03-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:6c580177-a55b-400b-bb61-dc8a14d40219</id>
+    <title>0.9.38 Sürümü Yayınlandı</title>
+    <updated>2019-01-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.38 sürümünde bant genişliği sınaması da bulunan yeni bir kurulum yardımcısı var.
+Son GeoIP veri tabanı biçimi desteği eklendi.
+Sitemize yeni bir Firefox profili kurucusu ve yeni bir doğal Mac OS X kurucusu eklendi.
+Yeni "LS2" "Ağ veri tabanı" (NetDB) biçimini destekleme çalışmaları yapılıyor.</p>
+<p>Bu sürümde ayrıca SusiMail ek dosyaları ile ilgili çeşitli sorunlar ve yalnızca IPv6 ile çalışan yönelticiler ile ilgili bir düzeltme gibi çok sayıda hata düzeltmesi yapıldı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2019/01/22/0.9.38-release"/>
+    <summary>0.9.38 sürümü yeni kurulum yardımcısı ile yayınlandı.</summary>
+    <published>2019-01-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:dfeb655e-d305-42ba-88d4-0579550e5f8a</id>
+    <title>35C3 Gezi Raporu</title>
+    <updated>2019-01-21T12:00:00+00:00</updated>
+    <author>
+      <name>sadie</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P ekibi Leipzig'de düzenlenen 35C3 etkinliğine neredeyse tümüyle katıldı.
+Günlük toplantılarda geçen yıl yapılanlar gözden geçirildi ve 2019 yılı için tasarım ve geliştirme hedeflerine değinildi.</p>
+<p>Proje Vizyonu ve yeni Yol Haritasına <a href="http://i2p-projekt.i2p/en/get-involved/roadmap">buradan bakabilirsiniz</a>.</p>
+<p>LS2, Testnet ve sitemiz ile panonun kullanılabilirliğini iyileştirme çalışmalarımız sürüyor.
+Tails, Debian ve Ubuntu Disco üzerinde çalışmak için planımız üzerinde çalışıyoruz. Hala Android ve I2P_Bote düzeltmelerine yardımcı olacak insan kaynağına ihtiyacımız var.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/get-involved/roadmap"/>
+    <summary>I2P 35C3 Etkinliğinde</summary>
+    <published>2019-01-21T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:b02623a0-5936-4fb6-aaa8-2a3d81c2f01e</id>
+    <title>0.9.37 Sürümü Yayınlandı</title>
+    <updated>2018-10-04T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.37 sürümünde NTCP2 adında daha hızlı ve daha güvenli bir taşıyıcı iletişim kuralı kullanılıyor.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/10/04/0.9.37-release"/>
+    <summary>0.9.37 sürümünde NTCP2 etkinleştirildi</summary>
+    <published>2018-10-04T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:678f9d11-a129-40ea-b68a-0b3d4c433774</id>
+    <title>0.9.36 Sürümü Yayınlandı</title>
+    <updated>2018-08-23T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.36 sürümünde NTCP2 olarak adlandırılan yeni ve daha güvenli bir taşıyıcı iletişim kuralı bulunuyor.
+Varsayılan olarak etkisizleştirilmiştir ancak denemek için <a href="/configadvanced">gelişmiş yapılandırma</a> bölümünden <tt>i2np.ntcp2.enable=true</tt> seçeneğini ekleyip yeniden başlatabilirsiniz.
+NTCP2 gelecek sürümde varsayılan olarak etkinleştirilecek.</p>
+<p>Bu sürümde ayrıca bazı başarım iyileştirmeleri ve hata düzeltmeleri yapıldı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/08/23/0.9.36-release"/>
+    <summary>0.9.36 sürümü NTCP2 ve hata düzeltmeleri ile yayınlandı</summary>
+    <published>2018-08-23T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:32750025-4fc9-4858-a6bb-4ad9c28657c4</id>
+    <title>0.9.35 Sürümü Yayınlandı</title>
+    <updated>2018-06-26T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.35 sürümünde SusiMail uygulaması için klasör desteği ile gizli hizmetler siteniz için HTTPS kurulumu yapmanıza yardımcı olacak yeni bir SSL yardımcısı bulunuyor.
+Ayrıca özellikle SusiMail üzerinde olmak üzere çeşitli hata düzeltmeleri yapıldı.</p>
+<p>0.9.36 sürümüne hazırlık olarak, yeni bir OSX kurucusu ve NTCP2 olarak adlandırılan daha güvenli ve daha hızlı bir taşıyıcı iletişim kuralı gibi bir kaç şey üzerinde sıkı çalışıyoruz.</p>
+<p>I2P ekibi 20-22 Temmuz arasında New York City HOPE etkinliğine katılıyor. Merhaba demek için bizi bulun!</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/06/26/0.9.35-release"/>
+    <summary>0.9.35 sürümü SusiMail klasörleri ve SSL yardımcısı ile yayınlandı</summary>
+    <published>2018-06-26T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:40eaa552-2afb-4485-ab68-426f3f2aa17a</id>
+    <title>0.9.34 Sürümü Yayınlandı</title>
+    <updated>2018-04-10T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.34 sürümünde birçok hata düzeltmesi bulunuyor!
+SusiMail, IPv6 dağıtımı, ve eş tünel seçimi için iyileştirmeler yapıldı.
+UPnP için IGD2 şemaları desteği eklendi.
+Ayrıca sonraki sürümlerde göreceğiniz iyileştirmeler için hazırlıklar yapıldı.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/04/10/0.9.34-release"/>
+    <summary>0.9.34 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2018-04-10T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:344db535-fa7b-429a-8e7e-417c2772270c</id>
+    <title>0.9.33 Sürümü Yayınlandı</title>
+    <updated>2018-01-30T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.33 sürümünde i2psnark, i2ptunnel, akış ve SusiMail üzerinde çok sayıda hata düzeltildi. 
+Yeniden tohumlanan sitelere erişemeyenler için bir kaç yeniden tohumlama vekil sunucusu türü daha destekleniyor.
+Artık gizli hizmetler yönetimi bölümündeki hız sınırlamaları varsayılan olarak uygulanıyor.
+Yüksek trafikli site kullanıcılarının bu sınırları gözden geçirdikten sonra ayarlaması gerekebilir.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2018/01/30/0.9.33-release"/>
+    <summary>0.9.33 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2018-01-30T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:a6fc490b-2877-4cbf-afa8-d6e7d4637440</id>
+    <title>Mutlu yıllar! - 34C3</title>
+    <updated>2018-01-04T12:00:00+00:00</updated>
+    <author>
+      <name>echelon</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P ekibi olarak herkesin yeni yılını kutlarız!</p>
+<p>I2P ekibinin en az 7 üyesi 27 - 30 Aralık 2017 tarihleri arasında Leipzig 34C3 etkinliğine katıldı. Masamızdaki <a href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3" target="_blank">görüşmelerin</a> yanında her tarafta I2P dostları ile görüştük.
+Görüşme sonuçları <a href="http://zzz.i2p" target="_blank">zzz.i2p</a> üzerine eklendi bile.</p>
+<p>Ayrıca çok sayıda etiket dağıttık ve soranlara projemiz hakkında bilgi verdik.
+Yıllık I2P yemeğimiz çok başarılıydı. Katılan herkese I2P projesini destekledikleri için teşekkür ederiz.</p>
+</div>
+    </content>
+    <link href="http://zzz.i2p/topics/2437-meetings-dec-27-30-at-34c3"/>
+    <summary>Yeni yıl ve I2P 34C3 Etkinliği</summary>
+    <published>2018-01-04T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:062c316b-2148-4aae-a0d3-81faeb715345</id>
+    <title>0.9.32 Sürümü Yayınlandı</title>
+    <updated>2017-11-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.32 sürümünde yöneltici panosunda ve ilgili internet uygulamalarında (adres defteri, i2psnark ve SusiMail) çeşitli hata düzeltmeleri yapıldı.
+Ayrıca DNS üzerinden yapılan bazı ağ listeleme saldırılarını engellemek amacıyla yayınlanmış yöneltici bilgileri için yapılandırılmış sunucu adlarının işlenme yöntemi değiştirildi.
+Yeniden bağlanma saldırılarını engellemek amacıyla panoya bazı denetimler eklendi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/11/07/0.9.32-release"/>
+    <summary>0.9.32 sürümü pano güncellemeleri ile yayınlandı</summary>
+    <published>2017-11-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:48298a7a-e365-4719-a6ac-cb335cf0a4ce</id>
+    <title>0.9.31 Sürümü Yayınlandı</title>
+    <updated>2017-08-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Bu sürümde her zamankine göre daha çok fark edilecek değişiklikler yapıldı!
+Yöneltici panosunu yenilenerek görünümünü sadeleştirildi, erişimi kolaylaştırıldı, 
+farklı tarayıcılarda kullanılabilmesini sağlandı ve içeriği toparlandı.
+Bu işlemler yöneltici panosunun daha kullanıcı dostu bir arayüze sahip olması
+için uzun dönemde yapılacak işlemlerin ilk adımını oluşturdu.
+Ayrıca i2psnark üzerine torrent değerlendirme ve yorum yapma özelliği eklendi.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/08/07/0.9.31-release"/>
+    <summary>0.9.31 sürümü pano güncellemeleri ile yayınlandı</summary>
+    <published>2017-08-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:2ce9a846-4d7e-11e7-b788-00163e5e6c1b</id>
+    <title>Çevirmenlere Duyuru</title>
+    <updated>2017-06-10T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.31 sürümü hazırlanırken, kullanıcı arayüzünde önemli güncellemeler yapıldığından
+normal olarak çevrilmesi gerekenden çok daha fazla sayıda dizgenin çevrilmesi
+gerekiyor. Çevirilerimizi yapıyorsanız çevirilerin zamanında yetişmesi için 
+bu sürüme normal sürümlerden daha fazla zaman ayırabilirseniz minnettar oluruz.
+Üzerinde daha rahat çalışabilmeniz için dizgeleri üç hafta erken yayınladık.</p>
+<p>Bir I2P çevirmeni değilseniz katkıda bulunmaya başlayabilirsiniz! Ayrıntılı
+bilgi almak için 
+<a href="http://i2p-projekt.i2p/en/get-involved/guides/new-translators" target="_blank">Yeni Çevirmen Rehberi</a>
+bölümüne bakabilirsiniz.</p>
+</div>
+    </content>
+    <link href="https://www.transifex.com/otf/I2P/announcements/7243/"/>
+    <summary>Yayınlanacak 0.9.31 sürümünde normalden daha fazla sayıda dizgenin çevrilmesi gerekecek.</summary>
+    <published>2017-06-10T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:3b9b01cf-23ec-4aeb-ab20-2f79e8396c4f</id>
+    <title>0.9.30 Sürümü Yayınlandı</title>
+    <updated>2017-05-03T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.30 sürümünde Jetty 9 ve Tomcat 8 güncellemeleri bulunuyor.
+Önceki sürümler artık desteklenmiyor ve yakında yayınlanacak olan Debian Stretch ve Ubuntu Zesty sürümlerinde bulunmayacak.
+Yöneltici her site için eski jetty.xml yapılandırma dosyasını yeni Jetty 9 ayarlarına göre değiştirecek.
+Son sürümlerde kullanılan ve üzerinde değişiklik yapılmamış ayarların sorunsuz çalışması gerekir. Ancak üzerinde değişiklik yapılmış ya da çok eski yapılandırma dosyaları çalışmayabilir.
+Güncelleme sonrasında Jetty sitenizin çalıştığından emin olun. Yardıma gerek duyarsanız bizimle IRC kanalında görüşebilirsiniz.</p>
+<p>Jetty 9 ile uyumlu olmadığı için güncellenmesi gereken bir kaç uygulama eki var.
+Yönelticinizi yeniden başlatırsanız, şu uygulama eklerini 0.9.30 sürümüyle çalışabilecek şekilde güncellemesi beklenir:
+i2pbote 0.4.6; zzzot 0.15.0.
+Şu uygulama ekleri (geçerli sürümleri ile listelenen) 0.9.30 sürümü ile çalışmaz.
+Yeni sürümlerin durumu ile uygulama eki geliştiricisi ile iletişim görüşün:
+BwSchedule 0.0.36; i2pcontrol 0.11.</p>
+<p>Bu sürüm ayrıca eski (2014 ve daha öncesi) DSA-SHA1 gizli hizmetlerinin daha güvenli EdDSA imza türüne aktarılmasını destekler.
+Ayrıntılı bilgi almak, rehber ve SSS için <a href="http://zzz.i2p/topics/2271">zzz.i2p</a> adresine bakabilirsiniz.</p>
+<p>Not: Raspberry Pi gibi Android çalıştırmayan ARM platformlarında, yeniden başlatma sırasında blok dosyası veri tabanı güncellenir ve bu işlem bir kaç dakika sürebilir.
+Lütfen sabırla bekleyin.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/05/03/0.9.30-release"/>
+    <summary>0.9.30 sürümünde Jetty uygulaması 9. sürüme güncellendi</summary>
+    <published>2017-05-03T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5f5166f0-a1c3-4ca9-9db0-32a157eb6ca7</id>
+    <title>0.9.29 Sürümü Yayınlandı</title>
+    <updated>2017-02-27T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.29 sürümünde, bozuk sıkıştırılmış iletilerle ilgili çözümleri de içeren çeşitli Trac bildirimleri düzeltildi
+Artık IPv6 üzerinden NTP destekleniyor.
+Ön Docker desteği eklendi.
+Rehber sayfalarını çevirme olanağı eklendi.
+Artık HTTP vekil sunucusu üzerinden aynı kaynaktan gelen yönlendirme üst bilgileri aktarılıyor.
+Java 9 için ek düzeltmeler yapıldı. Bununla birlikte henüz genel amaçlar için Java 9 kullanılmasını önermiyoruz.</p>
+<p>Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2017/02/27/0.9.29-release"/>
+    <summary>0.9.29 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2017-02-27T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:cb742cac-df38-11e6-aed3-00163e5e6c1b</id>
+    <title>I2P-Bote Güvenlik Açığı</title>
+    <updated>2017-01-20T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P-Bote uygulama ekinin daha önceki sürümlerinde bulunan bir güvenlik açığı I2P-Bote 0.4.5 sürümünde giderildi. Android uygulaması etkilenmedi.</p>
+<p>E-postalar kullanıcılara görüntülenirken, çoğu alan atlanıyordu. Ancak eklerin dosya adları 
+atlanmadığından, bu alan JavaScript etkinleştirilmiş olan bir tarayıcıda kötü niyetli 
+kodları yürütmek için kullanılabiliyordu. 
+Şimdi bu alanlar da atlanıyor ve ek olarak tüm sayfalar için bir İçerik Güvenliği İlkesi 
+uygulanıyor.</p>
+<p>Tüm I2P-Bote kullanıcılarının sürümleri, Şubat ayı ortasında I2P 0.9.29 sürümünün
+yayınlanmasından sonra yönelticilerini yeniden başlattıklarında otomatik olarak yükseltilecek.
+Bununla birlikte o zamana kadar olan aralıkta I2P ya da I2P-Bote kullanmayı planlıyorsanız güncellemeyi el ile yapmak için <a href="http://bote.i2p/install/">kurulum sayfasındaki adımları uygulamanız</a> önerilir.</p>
+</div>
+    </content>
+    <link href="http://bote.i2p/news/0.4.5/"/>
+    <summary>I2P-Bote Güvenlik Açığı</summary>
+    <published>2017-01-20T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:91ad7d6c-a1e1-4e3c-b9bc-0b3b2742153c</id>
+    <title>0.9.28 Sürümü Yayınlandı</title>
+    <updated>2016-12-12T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.28 sürümünde, Jetty uygulaması da dahil olmak üzere birlikte sunulan yazılım paketleri için 25 üzerinde Trac bildirimi düzeltildi
+Önceki sürümde sunulan IPv&amp; eş sınaması özelliğinde bazı düzeltmeler yapıldı.
+Zararlı olabilecek eşleri algılayıp engellemek için geliştirmeler yapıldı.
+Java 9 için ek düzeltmeler yapıldı. Bununla birlikte henüz genel amaçlar için Java 9 kullanılmasını önermiyoruz.</p>
+<p>I2P ekibi 33C3 numaralı bölümde olacak. Ağı nasıl genişleteceğimiz hakkında fikir vermek için masamıza uğrayabilirsiniz.
+Kongrede 2017 önceliklerini ve 2017 yol haritasını gözden geçireceğiz.</p>
+<p>Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/12/12/0.9.28-release"/>
+    <summary>0.9.28 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2016-12-12T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:00015ff6-b556-11e6-adb4-00163e5e6c1a</id>
+    <title>I2P-Bote Güvenlik Açığı</title>
+    <updated>2016-11-28T12:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>I2P-Bote uygulama ekinin daha önceki sürümlerinde bulunan bir güvenlik açığı I2P-Bote 0.4.4 sürümünde giderildi. Android uygulaması etkilenmedi.</p>
+<p>CSRF korumasının olmaması, I2P-Bote çalıştıran bir kullanıcının JavaScript
+etkinleştirilmiş bir tarayıcıda kötü amaçlı site bir site yüklemesi durumunda, 
+diğer taraf kullanıcı adına I2P-Bote üzerinde ileti göndermek gibi işlemleri tetikleyebilir.
+Bu da etkinleştirilmiş olabilir
+Bu durum, herhangi bir denenmiş güvenlik açığı kanıtı olmasa da, I2P-Bote adreslerinin
+kişisel anahtarlarının ortaya çıkarılmasına yol açabilir.</p>
+<p>Tüm I2P-Bote kullanıcılarının sürümleri, Aralık ayı ortasında I2P 0.9.28 sürümünün
+yayınlanmasından sonra yönelticilerini yeniden başlattıklarında otomatik olarak yükseltilecek.
+Bununla birlikte o zamana kadar olan aralıkta I2P ya da I2P-Bote kullanmayı planlıyorsanız güncellemeyi el ile yapmak için <a href="http://bote.i2p/install/">kurulum sayfasındaki adımları uygulamanız</a> önerilir.
+Ayrıca I2P-Bote ile çalışırken düzenli olarak JavaScript kullanan sitelere bakıyorsanız yeni 
+I2P-Bote adresleri üretmeyi de düşünmelisiniz.</p>
+</div>
+    </content>
+    <link href="http://bote.i2p/news/0.4.4/"/>
+    <summary>I2P-Bote Güvenlik Açığı</summary>
+    <published>2016-11-28T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c1d01ac3-81e7-4acd-bacd-d9178089e8c3</id>
+    <title>0.9.27 Sürümü Yayınlandı</title>
+    <updated>2016-10-17T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.27 sürümünde çeşitli hata düzeltmeleri bulunuyor.
+Şifrelemeyi hızlandırmak için güncellenen ve 0.9.26 sürümünde yalnızca yeni Debian kurulumları için eklenen GMP kitaplığı şimdi ağ içi güncellemelerine eklendi.
+IPv6 taşıyıcıları, SSU eş sınaması ve gizli kip konularında iyileştirmeler yapıldı.</p>
+<p><a href="http://i2p-projekt.i2p/en/blog/2016/06/01/I2P-Summer-Dev">I2P Summer</a> kampı sırasında çeşitli uygulama ekleri güncellendi. Yönelticiniz yeniden başlatıldıktan sonra otomatik olarak güncellenecek.</p>
+<p>Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/10/17/0.9.27-release"/>
+    <summary>0.9.27 sürümü bazı hata düzeltmeleri ile yayınlandı</summary>
+    <published>2016-10-17T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:7e818120-88f8-401a-88fe-8db4ba20ad4d</id>
+    <title>I2P Stack Exchange önerisi</title>
+    <updated>2016-06-07T13:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Artık I2P için Stack Exchange üzerinde bir öneri sitesi var!
+Lütfen deneme aşamasının başlaması için <a href="https://area51.stackexchange.com/proposals/99297/i2p">kullanın</a>.</p>
+</div>
+    </content>
+    <link href="https://area51.stackexchange.com/proposals/99297/i2p"/>
+    <summary>I2P Stack Exchange üzerinde önerilen bir site!</summary>
+    <published>2016-06-07T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:5b1ccc70-2160-44cd-ad1e-2f0be6beb621</id>
+    <title>0.9.26 Sürümü Yayınlandı</title>
+    <updated>2016-06-07T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.26 sürümünde doğal şifreleme kitaplığında büyük bir güncelleme,
+yeni bir imzalar ile adres defteri aboneliği iletişim kuralı ve
+Debian/Ubuntu paketleri için büyük gelişmeler var.</p>
+<p>Şifreleme GMP 6.0.0 sürümüne yükseltildi ve şifreleme hızını önemli ölçüde arttıran
+daha yeni işlemleci destekleri de eklendi.
+Ayrıca artık yan kanal saldırılarını engellemek için sabit zamanlı GMP işlevleri kullanılıyor.
+Not: GMP değişiklikleri yalnızca yeni kurulumlar ve Debian/Ubuntu yapımları için etkin. Ağ güncellemelerine ise 0.9.27 sürümünde eklenecek.</p>
+<p>Debian/Ubuntu yapımları için Jetty 8 ve Geoip gibi bazı paket bağımlılıkları eklendi ve 
+eşdeğer kodlar kaldırıldı.</p>
+<p>Ayrıca zaman içinde tutarsızlık ve başarım düşmesi gibi sorunlara yol açan
+zamanlayıcı hatasını da içeren birkaç düzeltme yapıldı.
+Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/06/07/0.9.26-release"/>
+    <summary>0.9.26 sürümü şifreleme güncellemeleri, Debian paketi geliştirmeleri ve hata düzeltmeleri ile yayınlandı.</summary>
+    <published>2016-06-07T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:c6f7228d-3330-4422-a651-ef9d8ca3484b</id>
+    <title>0.9.25 Sürümü Yayınlandı</title>
+    <updated>2016-03-22T12:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.25 sürümünde karmaşık çoklu iletişim kuralı uygulamalarını destekleyen yeni SAM, v3.3 sürümü bulunuyor.
+Gizli hizmet adreslerini paylaşmak için QR kodları ve
+adresleri gözle ayırt edebilmek için "identicon" görselleri eklendi.</p>
+<p>Tek kişi tarafından işletilen bir yöneltici grubunu daha kolay belirtmek için
+panoya yeni "yöneltici ailesi" yapılandırma bölümü eklendi.
+Ağ kapasitesini ve tünel açma başarımını arttıracak bir kaç değişiklik yapıldı.</p>
+<p>Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/03/22/0.9.25-release"/>
+    <summary>0.9.25 sürümü SAM 3.3, QR kodları ve hata düzeltmeleri ile yayınlandı</summary>
+    <published>2016-03-22T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:8390114d-8e50-45fd-8b4d-3e613bdd034e</id>
+    <title>0.9.24 Sürümü Yayınlandı</title>
+    <updated>2016-01-27T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.24 sürümünde yeni SAM (v3.2) sürümünü ve çeşitli hata ve hızlandırma düzeltmelerini içeriyor.
+Bu sürümün çalışması için Java 7 gerekiyor.
+En kısa sürede Java 7 ya da 8 sürümüne yükseltmeyi unutmayın.
+Java 6 kullanıyorsanız, yönelticiniz otomatik olarak güncellenmez.</p>
+<p>Eski ortak günlükleme kitaplığından kaynaklanan sorunları engellemek için kaldırdık.
+Çok eski I2P-Bote uygulama ekleri (HungryHobo tarafından imzalanmış 0.2.10 ve altındaki sürümler) IMAP ayarı etkinleştirilmiş ise çöküyor.
+Düzeltmek için eski I2P-Bote uygulama ekinizi str4d tarafından imzalanmış güncel sürüm ile değiştirmeniz önerilir.
+Ayrıntılı bilgi almak için <a href="http://bote.i2p/news/0.4.3">bu iletiye bakabilirsiniz</a>.</p>
+<p><a href="http://i2p-projekt.i2p/en/blog/2016/01/23/32C3">32C3 Kongresi</a> harika oldu ve 2016 proje planlarımızda iyi gidiyor.
+Echelon I2P geçmişi ve güncel durumu üzerine konuştu <a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/ccc/2015/I2P_Still_alive.pdf">sunumuna buradan erişebilirsiniz</a> (pdf).
+Str4d <a href="http://www.realworldcrypto.com/rwc2016/program">Real World Crypto</a> oturumuna katılarak şifreleme uygulamalarımız üzerine konuştu. 
+<a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/media/rwc/2016/rwc2016-str4d-slides.pdf">Sunumuna buradan erişebilirsiniz</a> (pdf).</p>
+<p>Herzamanki gibi tüm kullanıcıların yeni sürüme yükseltmesini öneriyoruz.
+Ağa yardımcı olmak ve güvende kalmak için güncel sürümü kullanmalısınız.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2016/01/27/0.9.24-release"/>
+    <summary>0.9.24 sürümü bazı hata düzeltmeleri ve hızlandırmalar ile yayınlandı</summary>
+    <published>2016-01-27T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:91d19b26-0d7c-4e4a-aa7b-c22d4f400668</id>
+    <title>0.9.23 Sürümü Yayınlandı</title>
+    <updated>2015-11-19T18:00:00+00:00</updated>
+    <author>
+      <name>str4d</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>Merhaba I2P! Bu sürüm zzz tarafından imzalanan 49 sürümden sonra benim tarafımdan imzalanan (str4d) ilk sürüm. İnsanlar dahil, yedekli çalışmamızı gösteren önemli bir sınav.</p>
+<p><b>Temizlik</b></p>
+<p>İmza anahtarım iki yıldan uzun zamandır yöneltici güncellemelerinde bulunuyordu 
+(0.9.9 sürümünden sonra). Son I2P sürümlerinden birini kullanıyorsanız güncelleme
+işlemi diğer güncellemeler kadar kolay olur. 0.9.9 öncesindeki bir sürümü kullanıyorsanız
+önce daha yeni bir sürüme el ile güncellemeniz gerekir. Son sürümlerin dosyaları
+<a href="http://whnxvjwjhzsske5yevyokhskllvtisv5ueokw6yvh6t7zqrpra2q.b32.i2p/releases/">buradan indirilebilir</a>
+el ile güncelleme hakkındaki bilgiler için ise
+<a href="http://i2p-projekt.i2p/en/download#update">buraya bakabilirsiniz</a>.
+El ile güncelleme işlemini tamamladığınızda, yöneltici 0.9.23 sürümünü bulup indirebilir.</p>
+<p>I2P uygulamasını paket yöneticisi ile kurduysanız, değişikliklerden etkinlenmeyecek
+ve normal şekilde güncelleme yapabileceksiniz.</p>
+<p><b>Güncelleme ayrıntıları</b></p>
+<p>"Yöneltici bilgileri" (RouterInfo) için yeni ve daha güçlü Ed25519 imzalarına 
+geçme işlemi iyi gidiyor. Ağın en az yarısındaki anahtarların değiştiği öngörülüyor. 
+Bu sürümde anahtar değiştirme işlemi hızlandırıldı. Ağda karışıklık yaratmamak için 
+yönelticiniz her yeniden başlatmada az sayıda Ed25519 değişimi yapar. Anahtar 
+değişimi yapıldığında, yeni kimliğin ağ ile bütünleşeceği ilk bir kaç gün bant 
+genişliği kullanımınız daha düşük olabilir.</p>
+<p>Bu sürüm Java 6 destekleyen son sürümdür. En kısa sürede Java 7 ya da 8 sürümüne yükseltmeyi unutmayın. I2P uygulamasının yakında yayınlanacak Java 9 ile uyumlu
+olacak şekilde geliştirmeye başladık ve bazı değişiklikler bu sürümde yapıldı bile.</p>
+<p>Ayrıca I2PSnark üzerinde bazı küçük geliştirmeler yaparak, yöneltici panosuna
+eski haber ögelerinin görüntülenebileceği yeni bir sayfa ekledik.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/11/19/0.9.23-release"/>
+    <summary>0.9.23 sürümü çeşitli hata düzeltmeleri ve I2PSnark geliştirmeleri ile yayınlandı</summary>
+    <published>2015-11-19T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:fe93e501-255c-4558-af7e-1cd433939b43</id>
+    <title>0.9.22 Sürümü Yayınlandı</title>
+    <updated>2015-09-12T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.22 sürümünde, tamamlanmadan önce takılmaya yol açan i2psnark sorunu çözüldü ve yöneltici bilgilerinin yeni ve daha güçlü Ed25519 imzalarına aktarılması sağlandı. Ağ kargaşası oluşturmamak için yönelticiniz her yeniden başlatılmada yalnızca küçük olasılıklı bir Ed25519 dönüşümü yapacak. Anahtar yeniden oluşturulduğunda, yeni kimlik ağ üzerine eklenene kadar bir kaç gün boyunca düşük bant genişliği kullanımı görebilirsiniz. Herşey yolunda giderse, sonraki sürümde yeniden anahtar oluşturma işlemini hızlandıracağız.</p>
+<p>I2PCon Toronto toplantısı çok başarılıydı! Tüm sunum ve görüntülere <a href="http://i2p-projekt.i2p/en/about/i2pcon/2015">I2PCon sayfasından ulaşabilirsiniz</a>.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/09/12/0.9.22-release"/>
+    <summary>0.9.22 sürümünde hata düzeltmeleri yapıldı ve Ed25519 geçişi başlatıldı</summary>
+    <published>2015-09-12T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:49713025-cfb8-4ebb-aaaa-7805333efa6a</id>
+    <title>0.9.21 Sürümü Yayınlandı</title>
+    <updated>2015-07-31T18:00:00+00:00</updated>
+    <author>
+      <name>zzz</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>0.9.21 sürümü ağ kapasitesini arttıran çeşitli değişiklikler, otomatik doldurma (floodfill) etkinliğini arttıran ve bant
+genişliğini daha etkin kullanan özellikler ile yayınlandı. 
+Paylaşılan istemci tünellerini ECDSA imzaları ile birleştirdik ve ECDSA desteklemeyen siteler için yeni "bir kaç oturum" yeteneğini değerlendiren DSA kullanılmasını sağladık.</p>
+<p>2015 yılında Toronta'da yapılacak I2PCon Konferansının konuşmacıları ve takvimi duyuruldu.
+Ayrıntılar için <a href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/">I2PCon sayfasına</a> bakabilirsiniz.
+<a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a> konferansı için yerinizi ayırtın.</p>
+<p>Her zamanki gibi yeni sürüme güncellemeniz önerilir. Güvenliği korumanın ve ağa yardımcı olmanın en iyi yolu güncel sürümü kullanmaktır.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/07/31/0.9.21-release"/>
+    <summary>0.9.21 sürümü başarım iyileştirmeleri ve hata düzeltmeleri ile yayınlandı.</summary>
+    <published>2015-07-31T18:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>urn:uuid:53ba215d-6cf2-489c-8135-10248e06a141</id>
+    <title>I2PCon Toronto konuşmacıları ve takvimi duyuruldu</title>
+    <updated>2015-07-22T12:00:00+00:00</updated>
+    <author>
+      <name>echelon</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml"><p>2015 yılında Toronta'da yapılacak I2PCon Konferansının konuşmacıları ve takvimi duyuruldu.
+Ayrıntılar için <a href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/">I2PCon sayfasına</a> bakabilirsiniz.
+<a href="http://www.eventbrite.ca/e/i2p-meetup-tickets-17773984466">Eventbrite I2PCon</a> konferansı için yerinizi ayırtın.</p>
+</div>
+    </content>
+    <link href="http://i2p-projekt.i2p/en/blog/2015/07/16/i2pcon/"/>
+    <summary>I2PCon Toronto 2015 konuşmacıları ve takvimi duyuruldu</summary>
+    <published>2015-07-19T18:00:00+00:00</published>
+  </entry>
+</feed>
